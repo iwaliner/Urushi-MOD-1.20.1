@@ -1,0 +1,24 @@
+{
+  "name": "坐垫",
+  "category": "urushi:useful_items",
+  "icon": "urushi:red_cushion",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 30,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "坐垫一共有16种颜色。$(br2)右击可以放下坐垫，对其再次右击可以坐上去。坐下时按下潜行键，可以再站起来。$(br2)当生物靠近坐垫时会自动坐在上面，并且无法主动挣脱。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:cushion_red",
+      "text": ""
+    }
+    
+  ]
+}

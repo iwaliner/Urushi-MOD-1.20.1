@@ -1,0 +1,51 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "bbb",
+
+    "ptp",
+
+    "rrr"
+
+  ],
+
+  "key": {
+
+    "t": {
+
+     "item": "minecraft:candle"
+
+    },
+
+    "p": {
+
+     "item": "minecraft:paper"
+
+    },
+
+    "b": {
+
+     "item": "urushi:black_urushi_slab"
+
+    },
+
+    "r": {
+
+    "item": "urushi:smooth_red_urushi_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:kasuga_lantern",
+
+    "count": 16
+
+  }
+
+}

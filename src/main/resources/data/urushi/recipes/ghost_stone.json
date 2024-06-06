@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "minecraft:stone"
+
+    },
+
+    {
+
+      "item": "urushi:ghost_core"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:ghost_stone",
+
+    "count": 1
+
+  }
+
+}

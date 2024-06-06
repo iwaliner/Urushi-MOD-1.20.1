@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_kakuriyo_dirt",
+  "display": {
+    "icon": {
+      "item": "urushi:ghost_core"
+    },
+    "title": {
+      "translate": "advancements.urushi.ghost_core.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.ghost_core.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ghost_core": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:ghost_core"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ghost_core"
+    ]
+  ]
+}

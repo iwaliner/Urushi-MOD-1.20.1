@@ -1,0 +1,7 @@
+{
+    "parent": "urushi:block/bars_edge_base",
+    "textures": {
+       "0": "urushi:block/plaster_magenta",
+		"particle": "urushi:block/plaster_magenta"
+    }
+}

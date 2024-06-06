@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/half_slab_base",
+  "textures": {
+    "tex": "urushi:block/plaster_light_blue"
+  }
+}

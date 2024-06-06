@@ -1,0 +1,41 @@
+{
+
+
+
+  "type": "urushi:polishing",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+     "item": "urushi:sakura_log"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:stripped_sakura_log"
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:sakura_planks"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:sakura_button",
+
+      "count": 1
+
+  }
+
+}

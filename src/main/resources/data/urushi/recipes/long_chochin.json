@@ -1,0 +1,45 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    " s ",
+
+    "ptp",
+
+    " s "
+
+  ],
+
+  "key": {
+
+    "t": {
+
+     "item": "minecraft:candle"
+
+    },
+
+    "p": {
+
+     "item": "minecraft:paper"
+
+    },
+
+    "s": {
+
+    "tag": "minecraft:wooden_slabs"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:long_chochin",
+
+    "count": 16
+
+  }
+
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "urushi:block/bars",
+    "textures": {
+       "0": "urushi:block/plaster_light_blue",
+		"particle": "urushi:block/plaster_light_blue"
+    }
+}

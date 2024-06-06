@@ -1,0 +1,29 @@
+{
+  "name": "铁锤",
+  "category": "urushi:useful_items",
+  "icon": "urushi:hammer",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 40,
+
+  "pages": [
+   {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:hammer",
+        "count": 1
+      },
+      "text": "铁锤不仅可以锻造打刀，还可以更改一部分方块的连接情况。$(br2)例如各类连通玻璃（或玻璃板）、以及带有木框的各类方块等，默认状态下带有连接材质。在单人下、按下C键以切换放置的方块是否回合默认状态下的方块连接；多人模式下则是潜行时放置的方块不会与默认状态下的连接。$(br2)使用铁锤右击可以将方块在两种状态下切换。"
+    },
+      {
+      "type": "patchouli:image",
+      "text": "被说明绕晕了？实际试试就知道了",
+      "images": [
+        "urushi:textures/gui/patchouli/framed_blocks.png"
+      ]
+    }
+    
+  ]
+}

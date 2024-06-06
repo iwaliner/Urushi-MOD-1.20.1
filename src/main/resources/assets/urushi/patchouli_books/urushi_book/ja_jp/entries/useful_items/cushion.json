@@ -1,0 +1,24 @@
+{
+  "name": "座布団",
+  "category": "urushi:useful_items",
+  "icon": "urushi:red_cushion",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 30,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "設置した座布団に対して右クリックすると座ることができます。スニークで座り状態の解除ができます。$(br2)モブを近づけるとモブが座布団に座ります。モブは自力で座布団から抜け出すことができません。$(br2)座布団は16色あります。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:cushion_red",
+      "text": ""
+    }
+    
+  ]
+}

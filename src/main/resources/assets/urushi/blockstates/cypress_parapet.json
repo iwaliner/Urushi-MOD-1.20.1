@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,on_slab=false": {
+      "model": "urushi:block/parapet_cypress",
+      "y": 270
+    },
+    "facing=north,on_slab=false": {
+      "model": "urushi:block/parapet_cypress",
+      "y": 180
+    },
+    "facing=south,on_slab=false": {
+      "model": "urushi:block/parapet_cypress"
+    },
+    "facing=west,on_slab=false": {
+      "model": "urushi:block/parapet_cypress",
+      "y": 90
+    },
+    "facing=east,on_slab=true": {
+      "model": "urushi:block/parapet_cypress_on_slab",
+      "y": 270
+    },
+    "facing=north,on_slab=true": {
+      "model": "urushi:block/parapet_cypress_on_slab",
+      "y": 180
+    },
+    "facing=south,on_slab=true": {
+      "model": "urushi:block/parapet_cypress_on_slab"
+    },
+    "facing=west,on_slab=true": {
+      "model": "urushi:block/parapet_cypress_on_slab",
+      "y": 90
+    }
+  }
+}

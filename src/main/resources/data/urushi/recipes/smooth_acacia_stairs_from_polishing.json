@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "minecraft:acacia_stairs"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:smooth_acacia_stairs"
+
+  }
+
+}

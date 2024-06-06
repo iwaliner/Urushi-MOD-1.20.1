@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:purple_plaster"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:purple_plaster_slab",
+
+    "count": 6
+
+  }
+
+}

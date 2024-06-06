@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:magenta_plaster"
+    },
+    {
+      "item": "urushi:oak_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:oak_framed_magenta_plaster",
+    "count": 2
+  }
+}

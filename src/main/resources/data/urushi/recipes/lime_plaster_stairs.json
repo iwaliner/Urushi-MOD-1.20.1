@@ -1,0 +1,33 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#  ",
+
+    "## ",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:lime_plaster"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:lime_plaster_stairs",
+
+    "count": 4
+
+  }
+
+}

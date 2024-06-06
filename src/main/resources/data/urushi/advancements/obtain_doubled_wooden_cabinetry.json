@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_wooden_cabinetry",
+  "display": {
+    "icon": {
+      "item": "urushi:doubled_wooden_cabinetry"
+    },
+    "title": {
+      "translate": "advancements.urushi.doubled_wooden_cabinetry.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.doubled_wooden_cabinetry.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "doubled_wooden_cabinetry": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:doubled_wooden_cabinetry"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "doubled_wooden_cabinetry"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "W#W",
+
+    "W#W"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "tag": "forge:rods/wooden"
+
+    },
+
+    "W": {
+
+      "item": "urushi:smooth_japanese_cedar_slab"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:japanese_cedar_fushiranma",
+
+    "count": 3
+
+  }
+
+}

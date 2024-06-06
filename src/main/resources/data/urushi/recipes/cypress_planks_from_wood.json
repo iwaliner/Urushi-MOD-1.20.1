@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:cypress_wood"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:cypress_planks",
+
+      "count": 4
+
+  }
+
+}

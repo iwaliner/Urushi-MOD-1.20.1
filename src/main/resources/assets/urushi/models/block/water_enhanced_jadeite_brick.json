@@ -1,0 +1,12 @@
+{
+
+    "parent": "block/cube_all",
+
+    "textures": {
+
+        "all": "urushi:block/jadeite_block_brick_water"
+
+    }
+
+}
+

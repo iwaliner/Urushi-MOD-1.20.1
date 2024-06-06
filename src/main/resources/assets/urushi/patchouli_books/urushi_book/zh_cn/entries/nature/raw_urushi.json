@@ -1,0 +1,58 @@
+{
+  "name": "生漆与色漆",
+  "category": "urushi:nature",
+  "icon": "urushi:raw_urushi_ball",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 10,
+
+  "pages": [
+  {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:chiseled_lacquer_log",
+        "count": 1
+      },
+      "text": "制作朱漆与黑漆之前，先要制备一些生漆。首先，使用燧石或工具等右击漆木原木，将其变为割开的漆木原木。$(br2)下一页继续。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "使用燧石或铲、斧、镐、剑、锄右击",
+      "images": [
+        "urushi:textures/gui/patchouli/chiseled_lacquer_tree.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:raw_urushi_ball",
+        "count": 1
+      },
+      "text": "一定时间后，隔开的漆木原木的正面的材质将会发生变化。$(br2)这时候使用碗右击就可以获得生漆了。$(br2)当然，也可以使用发射器向漆木原木发射碗，以此达到自动化。$(br2)下一页继续。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/raw_urushi.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:red_urushi_ball",
+        "count": 1
+      },
+      "text": "使用红色或黑色染料来合成对应的小份染料后，就可以和生漆合成出朱漆或黑漆了。$(br2)朱漆和黑漆可以和木板等合成后，可以添上独有的色彩。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "朱漆是地位的象征！",
+      "recipe": "urushi:red_urushi_planks",
+      "text": ""
+    }
+    
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type\u003dbottom": {
+      "model": "urushi:block/half_slab_yomi_stone"
+    },
+    "type\u003ddouble": {
+      "model": "urushi:block/yomi_stone"
+    },
+    "type\u003dtop": {
+      "model": "urushi:block/upper_slab_yomi_stone"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "鬼灯球火把",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:lantern_plant_torch",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 20,
+
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:lantern_plant_torch",
+        "count": 1
+      },
+      "text": "由鬼灯球所制作的光源，可以产生亮度为15的光（原版火把为亮度14）。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:lantern_plant_torch",
+      "text": ""
+    }
+  ]
+}

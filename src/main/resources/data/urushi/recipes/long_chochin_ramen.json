@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "c  ",
+
+    " i ",
+
+    "   "
+
+  ],
+
+  "key": {
+
+    "c": {
+
+     "item": "urushi:long_chochin"
+
+    },
+
+    "i": {
+
+     "item": "minecraft:ink_sac"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:ramen_long_chochin",
+
+    "count": 1
+
+  }
+
+}

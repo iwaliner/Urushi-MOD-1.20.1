@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+    "item": "urushi:smooth_japanese_cedar_slab"
+    }
+  ],
+  "result": {
+  "item": "urushi:japanese_cedar_wall_for_framed_blocks",
+"count": 4
+  }
+}

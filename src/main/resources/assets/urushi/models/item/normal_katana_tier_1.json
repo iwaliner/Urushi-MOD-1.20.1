@@ -1,0 +1,15 @@
+{
+  "parent": "urushi:item/handheld_katana_covered",
+  "textures": {
+    "layer0": "urushi:item/katana_covered"
+  },
+    "overrides": [
+        {
+            "predicate": {
+                "urushi:ishurting": 1
+            },
+            "model": "urushi:item/normal_katana_swinging"
+        }
+    ]
+    
+}

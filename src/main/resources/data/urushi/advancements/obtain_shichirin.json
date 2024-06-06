@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_amber_igniter",
+  "display": {
+    "icon": {
+      "item": "urushi:shichirin"
+    },
+    "title": {
+      "translate": "advancements.urushi.shichirin.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.shichirin.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shichirin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:shichirin"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shichirin"
+    ]
+  ]
+}

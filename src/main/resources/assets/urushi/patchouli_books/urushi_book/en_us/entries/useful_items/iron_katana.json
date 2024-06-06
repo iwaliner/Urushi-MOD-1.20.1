@@ -1,0 +1,24 @@
+{
+  "name": "Iron Katana",
+  "category": "urushi:useful_items",
+  "icon": "urushi:iron_katana",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 35,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Left-click to unsheath and attack. The left-click attack does not deal area damage.$(br2)Right-click to unsheath and sprint foward, to deal half the damage with all surrounding mobs."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:iron_katana",
+      "text": ""
+    }
+    
+  ]
+}

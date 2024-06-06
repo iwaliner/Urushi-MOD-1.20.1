@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:plaster"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:cypress_wall_for_framed_blocks"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:cypress_framed_plaster",
+
+
+
+    "count": 2
+
+
+
+  }
+
+
+
+}

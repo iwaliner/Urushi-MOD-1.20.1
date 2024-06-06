@@ -1,0 +1,33 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#  ",
+
+    "## ",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:brown_plaster"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:brown_plaster_stairs",
+
+    "count": 4
+
+  }
+
+}

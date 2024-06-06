@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "urushi:block/gold_leaf_block",
+        "top": "urushi:block/gold_leaf_block",
+        "side": "urushi:block/gold_leaf_block"
+    }
+}

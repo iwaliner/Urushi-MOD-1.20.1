@@ -1,0 +1,49 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:horizontal_brown_plaster_bars"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:brown_plaster_bars",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

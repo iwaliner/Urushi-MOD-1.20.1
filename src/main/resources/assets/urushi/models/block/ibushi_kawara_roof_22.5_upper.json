@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "urushi:block/roof_22.5_upper",
+	"textures": {
+		"0": "urushi:block/kawara_block_ibushi",
+		"particle": "urushi:block/kawara_block_ibushi"
+	}
+}

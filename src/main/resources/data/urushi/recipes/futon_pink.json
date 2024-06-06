@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    " wf",
+
+    "fff"
+
+  ],
+
+  "key": {
+
+    "f": {
+
+     "item": "minecraft:feather"
+
+    },
+
+    "w": {
+
+     "item": "minecraft:pink_wool"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:pink_futon",
+
+    "count": 1
+
+  }
+
+}

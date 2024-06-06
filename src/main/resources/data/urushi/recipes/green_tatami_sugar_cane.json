@@ -1,0 +1,81 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+    "item": "minecraft:sugar_cane"
+
+
+
+    },
+
+
+
+    {
+
+
+
+    "item": "minecraft:sugar_cane"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "minecraft:sugar_cane"
+
+
+
+    },
+
+
+
+    {
+
+
+
+     "tag": "forge:string"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:green_tatami",
+
+
+
+    "count": 4
+
+
+
+  }
+
+
+
+}

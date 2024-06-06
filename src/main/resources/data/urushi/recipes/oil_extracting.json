@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:oil_extracting",
+
+  "ingredients": [
+
+  {
+
+   "tag": "urushi:oil_extractor_insertable"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:vegetable_oil"
+
+  }
+
+}

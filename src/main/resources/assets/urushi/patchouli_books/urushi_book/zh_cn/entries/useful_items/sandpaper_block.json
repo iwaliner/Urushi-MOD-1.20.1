@@ -1,0 +1,24 @@
+{
+  "name": "砂纸块",
+  "category": "urushi:useful_items",
+  "icon": "urushi:sandpaper_block",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 20,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "砂纸块需要与粘性活塞组合使用。$(br2)使用粘性活塞推动砂纸块后，就可以打磨附近的方块；例如可以对原木进行去皮。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:sandpaper_block",
+      "text": ""
+    }
+    
+  ]
+}

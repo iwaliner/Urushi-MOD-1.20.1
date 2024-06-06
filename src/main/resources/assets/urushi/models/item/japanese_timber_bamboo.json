@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "urushi:item/bamboo_item"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "urushi:event": 1
+            },
+            "model": "urushi:item/japanese_timber_bamboo_shogatsu"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross", "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "urushi:block/double_eulalia_upper"
+  }
+}

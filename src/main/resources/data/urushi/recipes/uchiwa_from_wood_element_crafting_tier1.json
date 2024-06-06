@@ -1,0 +1,41 @@
+{
+
+  "type": "urushi:wood_element_tier1_crafting",
+
+  "ingredients": [
+
+  {
+
+    "item": "urushi:wood_amber"
+
+    },
+
+    {
+
+    "item": "urushi:japanese_timber_bamboo"
+
+    },
+
+    {
+
+   "tag": "forge:string"
+
+    },
+
+    {
+
+      "item": "minecraft:paper"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:uchiwa"
+
+  },
+
+  "reiryoku": 50
+
+}

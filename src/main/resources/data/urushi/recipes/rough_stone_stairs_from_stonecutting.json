@@ -1,0 +1,15 @@
+{
+
+  "type": "minecraft:stonecutting",
+
+  "ingredient": {
+
+    "item": "minecraft:cobblestone"
+
+  },
+
+  "result": "urushi:rough_stone_stairs",
+
+  "count": 1
+
+}

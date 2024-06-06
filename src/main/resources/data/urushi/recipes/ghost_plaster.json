@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:plaster"
+
+    },
+
+    {
+
+      "item": "urushi:ghost_core"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:ghost_plaster",
+
+    "count": 1
+
+  }
+
+}

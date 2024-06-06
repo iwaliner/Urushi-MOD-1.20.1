@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "urushi:cobbled_yomi_stone"
+    }
+  },
+  "result": {
+    "item": "urushi:polished_yomi_stone",
+    "count": 4
+  }
+}

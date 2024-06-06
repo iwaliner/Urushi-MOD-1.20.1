@@ -1,0 +1,58 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+   "W W",
+ "W W"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "W": {
+
+
+
+      "item": "urushi:purple_plaster"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:purple_plaster_bars",
+
+
+
+    "count": 16
+
+
+
+  }
+
+
+
+}

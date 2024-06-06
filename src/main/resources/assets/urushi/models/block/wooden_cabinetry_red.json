@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "urushi:block/tansu_top_red",
+        "front": "urushi:block/tansu_front_red",
+        "side": "urushi:block/tansu_back_red"
+    }
+}

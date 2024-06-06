@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:fox_eating",
+
+  "ingredients": [
+
+  {
+
+    "item": "urushi:abura_age"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:kitsunebi"
+
+  }
+
+}

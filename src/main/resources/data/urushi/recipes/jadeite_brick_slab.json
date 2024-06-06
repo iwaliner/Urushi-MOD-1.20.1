@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:jadeite_brick"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:jadeite_brick_slab",
+
+    "count": 6
+
+  }
+
+}

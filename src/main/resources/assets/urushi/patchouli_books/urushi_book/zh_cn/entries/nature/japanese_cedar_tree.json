@@ -1,0 +1,25 @@
+{
+  "name": "柳杉树",
+  "category": "urushi:nature",
+  "icon": "urushi:japanese_cedar_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 30,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "柳杉树在针叶林或幽世群系里自然生成。$(br2)将4个柳杉树苗摆成2x2的形状后，可以种出大型柳杉树。$(br2)柳杉木及其制品的色泽沉着冷静，便于搭建日式建筑。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "柳杉和扁柏，花粉症的幕后黑手",
+      "images": [
+        "urushi:textures/gui/patchouli/japanese_cedar_tree.png"
+      ]
+    }
+    
+  ]
+}

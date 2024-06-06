@@ -1,0 +1,8 @@
+{
+	"parent": "urushi:block/tank_base",
+	"textures": {
+		"0": "urushi:block/tank_water_tier1",
+		"1": "urushi:block/planks_smooth_birch",
+		"particle": "urushi:block/tank_water_tier1"
+	}
+}

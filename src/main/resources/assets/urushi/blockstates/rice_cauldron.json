@@ -1,0 +1,157 @@
+{
+
+  "variants": {
+
+    "variant=0,facing=east": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 270
+
+    },
+
+    "variant=0,facing=west": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 90
+
+    },
+
+    "variant=0,facing=north": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 180
+
+    },
+
+    "variant=0,facing=south": {
+
+      "model": "urushi:block/kama_closed"
+
+    },
+
+    "variant=1,facing=east": {
+
+      "model": "urushi:block/kama_empty",
+
+      "y": 270
+
+    },
+
+    "variant=1,facing=west": {
+
+      "model": "urushi:block/kama_empty",
+
+      "y": 90
+
+    },
+
+    "variant=1,facing=north": {
+
+      "model": "urushi:block/kama_empty",
+
+      "y": 180
+
+    },
+
+    "variant=1,facing=south": {
+
+      "model": "urushi:block/kama_empty"
+
+    },
+
+    "variant=2,facing=east": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 270
+
+    },
+
+    "variant=2,facing=west": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 90
+
+    },
+
+    "variant=2,facing=north": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 180
+
+    },
+
+    "variant=2,facing=south": {
+
+      "model": "urushi:block/kama_closed"
+
+    },
+
+    "variant=3,facing=east": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 270
+
+    },
+
+    "variant=3,facing=west": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 90
+
+    },
+
+    "variant=3,facing=north": {
+
+      "model": "urushi:block/kama_closed",
+
+      "y": 180
+
+    },
+
+    "variant=3,facing=south": {
+
+      "model": "urushi:block/kama_closed"
+
+    },
+
+    "variant=4,facing=east": {
+
+      "model": "urushi:block/kama_rice",
+
+      "y": 270
+
+    },
+
+    "variant=4,facing=west": {
+
+      "model": "urushi:block/kama_rice",
+
+      "y": 90
+
+    },
+
+    "variant=4,facing=north": {
+
+      "model": "urushi:block/kama_rice",
+
+      "y": 180
+
+    },
+
+    "variant=4,facing=south": {
+
+      "model": "urushi:block/kama_rice"
+
+    }
+
+  }
+
+}

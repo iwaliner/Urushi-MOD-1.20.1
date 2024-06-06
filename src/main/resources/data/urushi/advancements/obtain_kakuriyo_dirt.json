@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:root",
+  "display": {
+    "icon": {
+      "item": "urushi:kakuriyo_dirt"
+    },
+    "title": {
+      "translate": "advancements.urushi.kakuriyo_dirt.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.kakuriyo_dirt.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kakuriyo_dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:kakuriyo_dirt"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kakuriyo_dirt"
+    ]
+  ]
+}

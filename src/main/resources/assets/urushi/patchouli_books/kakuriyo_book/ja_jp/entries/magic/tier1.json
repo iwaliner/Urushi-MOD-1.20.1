@@ -1,0 +1,185 @@
+{
+  "name": "tier1の進め方",
+  "category": "urushi:magic",
+  "icon": "urushi:wood_element_sacred_rock",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 5,
+
+  "pages": [
+   {
+      "type": "patchouli:text",
+      "text": "漆MODのでは五行思想に則り、木気、火気、土気、金気、水気の5つの元素の霊力で魔術が扱えます。"
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:rock",
+        "count": 1
+      },
+      "text": "まずは石切り台で丸石から小石の塊を作成しましょう。"
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:sazare_ishi",
+        "count": 1
+      },
+      "text": "小石の塊の上に鍾乳石を置いて放置すると、小石の塊がさざれ石へと変化します。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/sazare_ishi.png"
+      ]
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:shide",
+      "text": "紙から紙垂を作成しましょう。$(br2)「紙垂」は「しで」と読みます。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_paper",
+        "count": 1
+      },
+      "text": "元素が木気のブロックに対して紙垂で右クリックすると、紙垂が木気の紙垂になります。$(br2)ほかの元素も同様です。"
+    },
+     {
+      "type": "patchouli:text",
+      "text": "しめ縄が巻かれた木気の岩を作成しましょう。$(br2)2枚の紙垂が描かれた面の正面に何かしらの木気のブロックを置いて放置すると、そのブロックが消滅して木気の霊力が1だけ生産されます。$(br2)右クリックして現在の霊力貯蔵量を確認できます。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_sacred_rock",
+      "text": "木気はサトウキビや竹、マダケが、火気は炎やホオズキが、土気は土やソウルサンドが、金気は丸石が、水気はサボテンやコンブ、雪が霊力生産に便利です。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:petrified_log_with_wood_amber",
+        "count": 1
+      },
+      "text": "切り込みが入った漆の原木のすぐ近くに特定の動物がいる状態で、切り込みが入った漆の原木の上に黄泉石または黄泉石の丸石を置いて放置します。$(br2)すると動物が吸い込まれ、切り込みが入った漆の原木は各元素の琥珀が含まれた珪化木へと変化します。$(br2)特定の動物とは、木気はニワトリ、火気はヒツジ、土気はウシ、金気はウマ、水気はブタが該当します。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "座布団で拘束すると楽",
+      "images": [
+        "urushi:textures/gui/patchouli/petrified_log_with_amber.png"
+      ]
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_amber",
+        "count": 1
+      },
+      "text": "木気の琥珀が含まれた珪化木からは木気の琥珀がドロップします。ほかの元素も同様です。$(br2)ちなみに「珪化木」は「けいかぼく」と読み、簡単に説明すると木が地中で長い年月をかけて石に変化したもののことです。$(br)「琥珀」は「こはく」と読み、樹液が地中で長い年月をかけて鉱物に変化したものです。"
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:petrified_log",
+        "count": 1
+      },
+      "text": "近くに動物がいない状態で切り込みが入った漆の原木の上に黄泉石または黄泉石の丸石を置いて放置すると、珪化木になります。$(br2)珪化木からは珪化木の板材が作成できます。$(br2)珪化木も珪化木の板材も適正ツールはツルハシで、火で消失することがありません。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "シラカバの木気の伝達口を作成しましょう。$(br2)霊力を出力できるブロックの側面にシフト右クリックで伝達口を設置すると、送信先のブロックまでのルートが開通している場合にパーティクルとともに霊力を1ずつ輸送します。$(br2)レッドストーン入力を与えると霊力輸送を停止できます。$(br2)右クリックして現在の霊力貯蔵量を確認できます。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_emitter_tier1",
+      "text": ""
+    },
+     {
+      "type": "patchouli:text",
+      "text": "シラカバの三方を作成しましょう。$(br2)右クリックすると手に持っているアイテムを三方の上に置くことができます。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:sanbo_tier1",
+      "text": ""
+    },
+     {
+      "type": "patchouli:text",
+      "text": "シラカバの木気の儀式台を作成しましょう。$(br2)儀式台を東西南北から囲むようにシラカバの三方を4つ設置し、三方にレシピ通りの順序で素材を置いて儀式台に霊力を供給すると霊力を用いたアイテム作成ができます。$(br2)しかし作成にはまだ準備が必要です。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_crafting_table_tier1",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "シラカバの反射鏡を作成しましょう。$(br2)反射鏡を用いると、霊力の輸送経路を曲げることができます。上下と東西南北の6方向だけでなく、北北東などの細かな方角にも曲げられます。$(br2)入射角と等しい反射角の方角に経路が曲がります。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:mirror_tier1",
+      "text": ""
+    },
+     {
+      "type": "patchouli:image",
+      "text": "例1",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_1.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "例2",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_2.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "例3",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_3.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "三方が邪魔で側面からは霊力供給ができないので、斜め方向、上または下から行う。これで儀式台が扱える。",
+      "images": [
+        "urushi:textures/gui/patchouli/element_crafting.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_tank_tier1",
+        "count": 1
+      },
+      "text": "シラカバの木気の大幣を作成しましょう。$(br2)大幣は霊力の入力も出力もできるので霊力の貯蔵に適しています。$(br2)大幣を中継地点とすることで霊力輸送の経路を分岐させたり合流させたりできます。"
+    },
+     {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/tank.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_magatama",
+        "count": 1
+      },
+      "text": "木気の勾玉を作成しましょう。$(br2)大幣に対して右クリックすると大幣に貯蔵されている霊力を勾玉へ移すことができます。$(br2)霊力を消費するアイテムを使用する場合、プレイヤーのインベントリ内に勾玉を入れておく必要があります。"
+    }
+  ]
+}

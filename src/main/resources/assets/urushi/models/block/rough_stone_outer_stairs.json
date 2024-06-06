@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "urushi:block/rough_stone",
+        "top": "urushi:block/rough_stone",
+        "side": "urushi:block/rough_stone"
+    }
+}

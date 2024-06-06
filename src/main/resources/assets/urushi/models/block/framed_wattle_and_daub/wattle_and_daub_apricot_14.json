@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/dirt_wall",
+        "down": "urushi:block/dirt_wall",
+        "up": "urushi:block/dirt_wall",
+        "north": "urushi:block/dirt_wall",
+        "east": "urushi:block/connectable/framed_wattle_and_daub/wattle_and_daub_apricot_10",
+        "south": "urushi:block/connectable/framed_wattle_and_daub/wattle_and_daub_apricot_9",
+        "west": "urushi:block/dirt_wall"
+    }
+}

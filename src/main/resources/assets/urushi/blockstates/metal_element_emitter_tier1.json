@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/metal_element_emitter_tier1",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/metal_element_emitter_tier1",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/metal_element_emitter_tier1"
+    },
+    "facing=east": {
+      "model": "urushi:block/metal_element_emitter_tier1",
+      "y": 90
+    }
+  }
+}

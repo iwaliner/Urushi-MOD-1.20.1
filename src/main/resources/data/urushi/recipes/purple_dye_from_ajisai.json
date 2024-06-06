@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:ajisai"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "minecraft:purple_dye",
+
+      "count": 2
+
+  }
+
+}

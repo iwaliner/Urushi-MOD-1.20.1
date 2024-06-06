@@ -1,0 +1,6 @@
+{
+  "name": "魔術要素",
+  "description": "魔術にはtier1、tier2の段階があり、まずはtier1からはじめることができます。$(br2)各元素で別々のアイテムとなっている場合は、木気のものを紹介していきます。",
+  "icon": "urushi:earth_element_magatama",
+  "sortnum": 10
+}

@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:cobbled_yomi_stone"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:cobbled_yomi_stone_wall",
+
+    "count": 6
+
+  }
+
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "urushi:item/iron_dust_tiny_rust"
+    }
+}

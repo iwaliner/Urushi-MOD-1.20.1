@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/inner_stairs_base",
+  "textures": {
+    "tex": "urushi:block/plaster_blue"
+  }
+}

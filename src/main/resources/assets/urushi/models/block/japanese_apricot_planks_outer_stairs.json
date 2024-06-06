@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "urushi:block/ume_planks",
+        "top": "urushi:block/ume_planks",
+        "side": "urushi:block/ume_planks"
+    }
+}

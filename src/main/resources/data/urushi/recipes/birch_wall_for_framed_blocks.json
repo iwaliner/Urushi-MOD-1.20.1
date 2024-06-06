@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+    "item": "urushi:smooth_birch_slab"
+    }
+  ],
+  "result": {
+  "item": "urushi:birch_wall_for_framed_blocks",
+"count": 4
+  }
+}

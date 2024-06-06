@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "urushi:shrine_portal",
+      "weight": 1
+    }
+  ],
+  "placement": {
+   "salt": 886592,
+
+    "spacing": 34,
+
+    "separation": 8,
+
+    "type": "minecraft:random_spread"
+  }
+}

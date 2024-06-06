@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "urushi:block/sakura_planks",
+        "top": "urushi:block/sakura_planks",
+        "side": "urushi:block/sakura_planks"
+    }
+}

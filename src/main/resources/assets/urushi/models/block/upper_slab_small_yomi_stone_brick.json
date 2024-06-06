@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/upper_slab_base",
+  "textures": {
+    "tex": "urushi:block/yomi_stone_small_bricks"
+  }
+}

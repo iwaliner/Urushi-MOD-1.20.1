@@ -1,0 +1,81 @@
+{
+
+
+
+  "type": "urushi:fire_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:fire_amber"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:fire_enhanced_jadeite"
+
+
+
+  },
+
+
+
+  "reiryoku": 50
+
+
+
+}

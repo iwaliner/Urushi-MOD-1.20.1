@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "BBB",
+
+    "BDB",
+
+    "BBB"
+
+  ],
+
+  "key": {
+
+    "D": {
+
+     "item": "urushi:red_urushi_ball"
+
+    },
+
+    "B": {
+
+    "item": "urushi:doubled_wooden_cabinetry"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:doubled_red_urushi_wooden_cabinetry",
+
+    "count": 8
+
+  }
+
+}

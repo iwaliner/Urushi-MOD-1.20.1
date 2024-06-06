@@ -1,0 +1,33 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#  ",
+
+    "## ",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:rough_stone"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:rough_stone_stairs",
+
+    "count": 4
+
+  }
+
+}

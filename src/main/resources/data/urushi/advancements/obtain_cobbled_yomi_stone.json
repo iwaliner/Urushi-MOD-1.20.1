@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_kakuriyo_dirt",
+  "display": {
+    "icon": {
+      "item": "urushi:cobbled_yomi_stone"
+    },
+    "title": {
+      "translate": "advancements.urushi.cobbled_yomi_stone.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.cobbled_yomi_stone.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cobbled_yomi_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:cobbled_yomi_stone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cobbled_yomi_stone"
+    ]
+  ]
+}

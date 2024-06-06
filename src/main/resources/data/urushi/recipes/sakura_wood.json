@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "##",
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:sakura_log"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:sakura_wood",
+
+    "count": 3
+
+  }
+
+}

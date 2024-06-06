@@ -1,0 +1,275 @@
+{
+    "multipart": [
+        {   "when": { "facing": "north","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_enabled" }
+        },
+        {   "when": { "facing": "north","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_zero" }
+        },
+        {   "when": { "facing": "south","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_enabled", "y": 180 }
+        },
+        {   "when": { "facing": "south","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_zero", "y": 180 }
+        },
+        {   "when": { "facing": "east","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_enabled", "y": 90 }
+        },
+        {   "when": { "facing": "east","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_zero", "y": 90 }
+        },
+        {   "when": { "facing": "west","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_enabled", "y": 270 }
+        },
+        {   "when": { "facing": "west","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_zero", "y": 270 }
+        },
+        {   "when": { "facing": "down","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_enabled", "x": 90 }
+        },
+        {   "when": { "facing": "down","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_zero", "x": 90 }
+        },
+        {   "when": { "facing": "up","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_enabled", "x": 270 }
+        },
+        {   "when": { "facing": "up","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_base_zero", "x": 270 }
+        },
+        {   "when": { "facing": "north","zero": "false","south": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_enabled" }
+        },
+        {   "when": { "facing": "north","zero": "true","south": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_zero" }
+        },
+        {   "when": { "facing": "south","zero": "false","north": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_enabled", "y": 180 }
+        },
+        {   "when": { "facing": "south","zero": "true","north": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_zero", "y": 180 }
+        },
+        {   "when": { "facing": "east","zero": "false","west": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_enabled", "y": 90 }
+        },
+        {   "when": { "facing": "east","zero": "true","west": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_zero", "y": 90 }
+        },
+        {   "when": { "facing": "west","zero": "false","east": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_enabled", "y": 270 }
+        },
+        {   "when": { "facing": "west","zero": "true","east": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_zero", "y": 270 }
+        },
+        {   "when": { "facing": "down","zero": "false","up": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_enabled", "x": 90 }
+        },
+        {   "when": { "facing": "down","zero": "true","up": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_zero", "x": 90 }
+        },
+        {   "when": { "facing": "up","zero": "false","down": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_enabled", "x": 270 }
+        },
+        {   "when": { "facing": "up","zero": "true","down": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_straight_zero", "x": 270 }
+        },
+        {   "when": { "facing": "north","zero": "false","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled" }
+        },
+        {   "when": { "facing": "north","zero": "true","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero" }
+        },
+        {   "when": { "facing": "south","zero": "false","north": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "y": 180 }
+        },
+        {   "when": { "facing": "south","zero": "true","north": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "y": 180 }
+        },
+        {   "when": { "facing": "east","zero": "false","west": "false","north": "true","south": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "y": 90 }
+        },
+        {   "when": { "facing": "east","zero": "true","west": "false","north": "true","south": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "y": 90 }
+        },
+        {   "when": { "facing": "west","zero": "false","east": "false","north": "false","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "y": 270 }
+        },
+        {   "when": { "facing": "west","zero": "true","east": "false","north": "false","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "y": 270 }
+        },
+        {   "when": { "facing": "down","zero": "false","up": "false","north": "false","south": "false","east": "false","west": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "x": 90 }
+        },
+        {   "when": { "facing": "down","zero": "true","up": "false","north": "false","south": "false","east": "false","west": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "x": 90 }
+        },
+        {   "when": { "facing": "down","zero": "false","up": "false","north": "true","south": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "x": 90, "y": 90 }
+        },
+        {   "when": { "facing": "down","zero": "true","up": "false","north": "true","south": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "x": 90, "y": 90 }
+        },
+        {   "when": { "facing": "down","zero": "false","up": "false","north": "false","south": "false","east": "true","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "x": 90, "y": 180 }
+        },
+        {   "when": { "facing": "down","zero": "true","up": "false","north": "false","south": "false","east": "true","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "x": 90, "y": 180 }
+        },
+        {   "when": { "facing": "down","zero": "false","up": "false","north": "false","south": "true","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "x": 90, "y": 270 }
+        },
+        {   "when": { "facing": "down","zero": "true","up": "false","north": "false","south": "true","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "x": 90, "y": 270 }
+        },
+        
+        
+        
+        
+        
+        
+        {   "when": { "facing": "up","zero": "false","down": "false","north": "false","south": "false","east": "false","west": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "x": 270 }
+        },
+        {   "when": { "facing": "up","zero": "true","down": "false","north": "false","south": "false","east": "false","west": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "x": 270 }
+        },
+        {   "when": { "facing": "up","zero": "false","down": "false","north": "true","south": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "x": 270, "y": 90 }
+        },
+        {   "when": { "facing": "up","zero": "true","down": "false","north": "true","south": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "x": 270, "y": 90 }
+        },
+        {   "when": { "facing": "up","zero": "false","down": "false","north": "false","south": "false","east": "true","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "x": 270, "y": 180 }
+        },
+        {   "when": { "facing": "up","zero": "true","down": "false","north": "false","south": "false","east": "true","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "x": 270, "y": 180 }
+        },
+        {   "when": { "facing": "up","zero": "false","down": "false","north": "false","south": "true","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_enabled", "x": 270, "y": 270 }
+        },
+        {   "when": { "facing": "up","zero": "true","down": "false","north": "false","south": "true","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_left_zero", "x": 270, "y": 270 }
+        },
+        
+        
+        
+        {   "when": { "facing": "north","zero": "false","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_right_enabled" }
+        },
+        {   "when": { "facing": "north","zero": "true","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_right_zero" }
+        },
+        {   "when": { "facing": "south","zero": "false","north": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_right_enabled", "y": 180 }
+        },
+        {   "when": { "facing": "south","zero": "true","north": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_right_zero", "y": 180 }
+        },
+        {   "when": { "facing": "east","zero": "false","west": "false","north": "false","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_right_enabled", "y": 90 }
+        },
+        {   "when": { "facing": "east","zero": "true","west": "false","north": "false","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_right_zero", "y": 90 }
+        },
+        {   "when": { "facing": "west","zero": "false","east": "false","north": "true","south": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_right_enabled", "y": 270 }
+        },
+        {   "when": { "facing": "west","zero": "true","east": "false","north": "true","south": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_right_zero", "y": 270 }
+        },
+        
+        
+        
+        
+        
+        {   "when": { "facing": "north","zero": "false","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_enabled" }
+        },
+        {   "when": { "facing": "north","zero": "true","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_zero" }
+        },
+        {   "when": { "facing": "south","zero": "false","north": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_enabled", "y": 180 }
+        },
+        {   "when": { "facing": "south","zero": "true","north": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_zero", "y": 180 }
+        },
+        {   "when": { "facing": "east","zero": "false","north": "false","south": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_enabled", "y": 90 }
+        },
+        {   "when": { "facing": "east","zero": "true","north": "false","south": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_zero", "y": 90 }
+        },
+        {   "when": { "facing": "west","zero": "false","north": "false","south": "false","east": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_enabled", "y": 270 }
+        },
+        {   "when": { "facing": "west","zero": "true","north": "false","south": "false","east": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_zero", "y": 270 }
+        },
+        {   "when": { "facing": "down","zero": "false","north": "false","south": "false","east": "false","up": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_enabled", "x": 90 }
+        },
+        {   "when": { "facing": "down","zero": "true","north": "false","south": "false","east": "false","up": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_zero", "x": 90 }
+        },
+        {   "when": { "facing": "up","zero": "false","north": "false","south": "false","east": "false","down": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_enabled", "x": 270 }
+        },
+        {   "when": { "facing": "up","zero": "true","north": "false","south": "false","east": "false","down": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_center_zero", "x": 270 }
+        },
+        
+        
+        
+        {   "when": { "facing": "north","zero": "false","up": "false","down": "true","south": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_enabled" }
+        },
+        {   "when": { "facing": "north","zero": "true","up": "false","down": "true","south": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_zero" }
+        },
+        {   "when": { "facing": "south","zero": "false","up": "false","down": "true","north": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_enabled", "y": 180 }
+        },
+        {   "when": { "facing": "south","zero": "true","up": "false","down": "true","north": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_zero", "y": 180 }
+        },
+        {   "when": { "facing": "east","zero": "false","up": "false","down": "true","south": "false","north": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_enabled", "y": 90 }
+        },
+        {   "when": { "facing": "east","zero": "true","up": "false","down": "true","south": "false","north": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_zero", "y": 90 }
+        },
+        {   "when": { "facing": "west","zero": "false","up": "false","down": "true","south": "false","east": "false","north": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_enabled", "y": 270 }
+        },
+        {   "when": { "facing": "west","zero": "true","up": "false","down": "true","south": "false","east": "false","north": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_zero", "y": 270 }
+        },
+        
+        
+        {   "when": { "facing": "north","zero": "false","up": "true","down": "false","south": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_enabled", "y": 180, "x": 180 }
+        },
+        {   "when": { "facing": "north","zero": "true","up": "true","down": "false","south": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_zero", "y": 180, "x": 180 }
+        },
+        {   "when": { "facing": "south","zero": "false","up": "true","down": "false","north": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_enabled", "x": 180 }
+        },
+        {   "when": { "facing": "south","zero": "true","up": "true","down": "false","north": "false","east": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_zero" , "x": 180}
+        },
+        {   "when": { "facing": "east","zero": "false","up": "true","down": "false","south": "false","north": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_enabled", "y": 270, "x": 180 }
+        },
+        {   "when": { "facing": "east","zero": "true","up": "true","down": "false","south": "false","north": "false","west": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_zero", "y": 270 , "x": 180}
+        },
+        {   "when": { "facing": "west","zero": "false","up": "true","down": "false","south": "false","east": "false","north": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_enabled", "y":90, "x": 180 }
+        },
+        {   "when": { "facing": "west","zero": "true","up": "true","down": "false","south": "false","east": "false","north": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_bottom_zero", "y": 90, "x": 180 }
+        }
+    ]
+}

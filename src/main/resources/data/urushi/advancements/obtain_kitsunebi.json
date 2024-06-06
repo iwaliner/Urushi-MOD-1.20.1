@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_magatama",
+  "display": {
+    "icon": {
+      "item": "urushi:kitsunebi"
+    },
+    "title": {
+      "translate": "advancements.urushi.kitsunebi.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.kitsunebi.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kitsunebi": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:kitsunebi"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kitsunebi"
+    ]
+  ]
+}

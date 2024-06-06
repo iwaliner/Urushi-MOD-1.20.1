@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "urushi:japanese_apricot_planks"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:smooth_japanese_apricot_planks"
+
+  }
+
+}

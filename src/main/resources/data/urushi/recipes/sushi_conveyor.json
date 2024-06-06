@@ -1,0 +1,85 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "sss",
+
+
+
+    "bcb",
+
+
+
+    "bbb"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "c": {
+
+
+
+     "tag": "forge:ingots/copper"
+
+
+
+    },
+
+"b": {
+
+
+
+      "item": "urushi:bamboo_block"
+
+
+
+    },
+
+    "s": {
+
+
+
+      "item": "urushi:japanese_timber_bamboo"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:sushi_conveyor",
+
+
+
+    "count": 4
+
+
+
+  }
+
+
+
+}

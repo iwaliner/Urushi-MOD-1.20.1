@@ -1,0 +1,24 @@
+{
+  "name": "やすりブロック",
+  "category": "urushi:useful_items",
+  "icon": "urushi:sandpaper_block",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 20,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "やすりブロックは粘着ピストンと組み合わせて使います。$(br2)粘着ピストンの正面にやすりブロックを設置して粘着ピストンを動かすと、やすりに隣接したブロックが磨かれます。原木の樹皮を剥ぐこともできます。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:sandpaper_block",
+      "text": ""
+    }
+    
+  ]
+}

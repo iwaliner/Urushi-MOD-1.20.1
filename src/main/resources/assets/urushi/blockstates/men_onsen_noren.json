@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=west,variant=false": {
+      "model": "urushi:block/noren_onsen_men_left",
+      "y": 270
+    },
+    "facing=south,variant=false": {
+      "model": "urushi:block/noren_onsen_men_left",
+      "y": 180
+    },
+    "facing=north,variant=false": {
+      "model": "urushi:block/noren_onsen_men_left"
+    },
+    "facing=east,variant=false": {
+      "model": "urushi:block/noren_onsen_men_left",
+      "y": 90
+    },
+    "facing=west,variant=true": {
+      "model": "urushi:block/noren_onsen_men_right",
+      "y": 270
+    },
+    "facing=south,variant=true": {
+      "model": "urushi:block/noren_onsen_men_right",
+      "y": 180
+    },
+    "facing=north,variant=true": {
+      "model": "urushi:block/noren_onsen_men_right"
+    },
+    "facing=east,variant=true": {
+      "model": "urushi:block/noren_onsen_men_right",
+      "y": 90
+    }
+  }
+}

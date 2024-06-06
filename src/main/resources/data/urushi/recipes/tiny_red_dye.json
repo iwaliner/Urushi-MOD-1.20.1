@@ -1,0 +1,25 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "tag": "forge:dyes/red"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:tiny_red_dye",
+
+    "count": 16
+
+  }
+
+}

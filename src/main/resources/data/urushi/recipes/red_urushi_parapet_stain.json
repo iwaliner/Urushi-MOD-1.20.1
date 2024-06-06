@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "BBB",
+
+    "BDB",
+
+    "BBB"
+
+  ],
+
+  "key": {
+
+    "D": {
+
+     "item": "urushi:red_urushi_ball"
+
+    },
+
+    "B": {
+
+    "tag": "urushi:parapet"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:red_urushi_parapet",
+
+    "count": 8
+
+  }
+
+}

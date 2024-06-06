@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "group": "wooden_slab",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:smooth_cypress_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:smooth_cypress_slab",
+
+    "count": 6
+
+  }
+
+}

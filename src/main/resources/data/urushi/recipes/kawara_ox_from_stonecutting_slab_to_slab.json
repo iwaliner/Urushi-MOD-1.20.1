@@ -1,0 +1,15 @@
+{
+
+  "type": "minecraft:stonecutting",
+
+  "ingredient": {
+
+    "item": "urushi:copper_kawara_slab"
+
+  },
+
+  "result": "urushi:cupric_oxide_kawara_slab",
+
+  "count": 1
+
+}

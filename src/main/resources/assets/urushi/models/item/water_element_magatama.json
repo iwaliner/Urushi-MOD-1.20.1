@@ -1,0 +1,98 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "urushi:item/magatama_water"
+  },
+    "overrides": [
+        {
+            "predicate": {
+                "urushi:stored_amount": 0
+            },
+            "model": "urushi:item/water_element_magatama_0"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 1
+            },
+            "model": "urushi:item/water_element_magatama_1"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 2
+            },
+            "model": "urushi:item/water_element_magatama_2"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 3
+            },
+            "model": "urushi:item/water_element_magatama_3"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 4
+            },
+            "model": "urushi:item/water_element_magatama_4"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 5
+            },
+            "model": "urushi:item/water_element_magatama_5"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 6
+            },
+            "model": "urushi:item/water_element_magatama_6"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 7
+            },
+            "model": "urushi:item/water_element_magatama_7"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount":8
+            },
+            "model": "urushi:item/water_element_magatama_8"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 9
+            },
+            "model": "urushi:item/water_element_magatama_9"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 10
+            },
+            "model": "urushi:item/water_element_magatama_10"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 11
+            },
+            "model": "urushi:item/water_element_magatama_11"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount":12
+            },
+            "model": "urushi:item/water_element_magatama_12"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 13
+            },
+            "model": "urushi:item/water_element_magatama_13"
+        },
+        {
+            "predicate": {
+                "urushi:stored_amount": 14
+            },
+            "model": "urushi:item/water_element_magatama_14"
+        }
+    ]
+}

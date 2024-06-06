@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:japanese_apricot_log"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:japanese_apricot_planks",
+
+      "count": 4
+
+  }
+
+}

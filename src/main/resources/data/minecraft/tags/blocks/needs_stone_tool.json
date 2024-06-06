@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:ironsand_ore",
+    "urushi:hot_ironsand",
+    "urushi:hot_iron_plate",
+    "urushi:quenched_iron_plate",
+    "urushi:crushed_iron",
+    "urushi:stacked_iron",
+    "urushi:hot_iron_ingot_1",
+    "urushi:hot_iron_ingot_2",
+    "urushi:hot_iron_ingot_3",
+    "urushi:hot_iron_ingot_4",
+    "urushi:hot_iron_ingot_5",
+    "urushi:hot_iron_blade_1",
+    "urushi:hot_iron_blade_2",
+    "urushi:quenched_iron_blade",
+    "urushi:chalcopyrite_ore",
+    "urushi:limonite_ore"
+  ]
+}

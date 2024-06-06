@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "sn",
+
+    "ns"
+
+  ],
+
+  "key": {
+
+    "s": {
+
+     "item": "minecraft:cobblestone_slab"
+
+    },
+
+    "n": {
+
+"item": "minecraft:cobblestone"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:rough_stone",
+
+    "count": 3
+
+  }
+
+}

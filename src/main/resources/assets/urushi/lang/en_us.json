@@ -1,0 +1,2428 @@
+{
+
+    "itemGroup.urushi": "Urushi",
+
+   "block.urushi.japanese_timber_bamboo": "Japanese Timber Bamboo",
+
+   "block.urushi.bamboo_wall": "Bamboo Wall",
+
+    "block.urushi.goldfish_bowl": "Goldfish Bowl",
+
+    "block.urushi.andon": "Andon Lantern",
+
+   "block.urushi.wattle_and_daub": "Wattle and Daub",
+
+   "block.urushi.wattle_and_daub_slab": "Wattle and Daub Slab",
+
+   "block.urushi.wattle_and_daub_stairs": "Wattle and Daub Stairs",
+
+   "block.urushi.plaster": "Sikkui",
+
+   "block.urushi.plaster_slab": "Sikkui Slab",
+
+   "block.urushi.plaster_stairs": "Sikkui Stairs",
+
+   "block.urushi.smooth_oak_planks": "Smooth Oak Planks",
+
+   "block.urushi.smooth_oak_slab": "Smooth Oak Slab",
+
+   "block.urushi.smooth_oak_stairs": "Smooth Oak Stairs",
+
+   "block.urushi.smooth_spruce_planks": "Smooth Spruce Planks",
+
+   "block.urushi.smooth_spruce_slab": "Smooth Spruce Slab",
+
+   "block.urushi.smooth_spruce_stairs": "Smooth Spruce Stairs",
+
+   "block.urushi.smooth_birch_planks": "Smooth Birch Planks",
+
+   "block.urushi.smooth_birch_slab": "Smooth Birch Slab",
+
+   "block.urushi.smooth_birch_stairs": "Smooth Birch Stairs",
+
+   "block.urushi.smooth_jungle_planks": "Smooth Jungle Planks",
+
+   "block.urushi.smooth_jungle_slab": "Smooth Jungle Slab",
+
+   "block.urushi.smooth_jungle_stairs": "Smooth Jungle Stairs",
+
+   "block.urushi.smooth_acacia_planks": "Smooth Acacia Planks",
+
+   "block.urushi.smooth_acacia_slab": "Smooth Acacia Slab",
+
+   "block.urushi.smooth_acacia_stairs": "Smooth Acacia Stairs",
+
+   "block.urushi.smooth_dark_oak_planks": "Smooth Dark Oak Planks",
+
+   "block.urushi.smooth_dark_oak_slab": "Smooth Dark Oak Slab",
+
+   "block.urushi.smooth_dark_oak_stairs": "Smooth Dark Oak Stairs",
+
+   "block.urushi.namako": "Namako",
+
+   "block.urushi.green_tatami": "Green Tatami",
+
+   "block.urushi.brown_tatami": "Brown Tatami",
+
+   "item.urushi.raw_ibushi_kawara": "Unfired Ibushi Kawara",
+
+   "item.urushi.ibushi_kawara": "Ibushi Kawara",
+
+   "item.urushi.copper_kawara": "Copper Kawara",
+
+   "item.urushi.cupric_oxide_kawara": "Cupric Oxide Kawara",
+
+    "block.urushi.ariake_andon": "Ariake Andon Lantern",
+
+   "block.urushi.ibushi_kawara_block": "Ibushi Kawara Block",
+
+   "block.urushi.ibushi_kawara_slab": "Ibushi Kawara Slab",
+
+   "block.urushi.ibushi_kawara_stairs": "Ibushi Kawara Stairs",
+
+   "block.urushi.copper_kawara_block": "Copper Kawara Block",
+
+   "block.urushi.copper_kawara_slab": "Copper Kawara Slab",
+
+   "block.urushi.copper_kawara_stairs": "Copper Kawara Stairs",
+
+   "block.urushi.cupric_oxide_kawara_block": "Cupric Oxide Kawara Block",
+
+   "block.urushi.cupric_oxide_kawara_slab": "Cupric Oxide Kawara Slab",
+
+   "block.urushi.cupric_oxide_kawara_stairs": "Cupric Oxide Kawara Stairs",
+
+   "block.urushi.iron_giboshi": "Iron Giboshi",
+
+   "block.urushi.gold_giboshi": "Golden Giboshi",
+
+   "block.urushi.japanese_apricot_sapling": "Japanese Apricot Sapling",
+
+   "block.urushi.japanese_apricot_leaves": "Japanese Apricot Leaves",
+
+   "block.urushi.glowing_japanese_apricot_sapling": "Glowing Japanese Apricot Sapling",
+
+   "block.urushi.glowing_japanese_apricot_leaves": "Glowing Japanese Apricot Leaves",
+
+   "block.urushi.japanese_apricot_log": "Japanese Apricot Log",
+
+   "block.urushi.stripped_japanese_apricot_log": "Stripped Japanese Apricot Log",
+
+   "block.urushi.japanese_apricot_wood": "Japanese Apricot Wood",
+
+   "block.urushi.stripped_japanese_apricot_wood": "Stripped Japanese Apricot Wood",
+
+   "block.urushi.japanese_apricot_planks": "Japanese Apricot Planks",
+
+   "block.urushi.japanese_apricot_slab": "Japanese Apricot Slab",
+
+   "block.urushi.japanese_apricot_stairs": "Japanese Apricot Stairs",
+
+   "block.urushi.japanese_apricot_fence": "Japanese Apricot Fence",
+
+   "block.urushi.japanese_apricot_fence_gate": "Japanese Apricot Fence Gate",
+
+   "block.urushi.japanese_apricot_door": "Japanese Apricot Door",
+
+   "block.urushi.japanese_apricot_pressure_plate": "Japanese Apricot Pressure Plate",
+
+   "block.urushi.japanese_apricot_button": "Japanese Apricot Button",
+
+   "block.urushi.japanese_apricot_trapdoor": "Japanese Apricot Trapdoor",
+
+   "block.urushi.smooth_japanese_apricot_planks": "Smooth Japanese Apricot Planks",
+
+   "block.urushi.smooth_japanese_apricot_slab": "Smooth Japanese Apricot Slab",
+
+   "block.urushi.smooth_japanese_apricot_stairs": "Smooth Japanese Apricot Stairs",
+
+   "item.urushi.japanese_apricot_bark": "Japanese Apricot Bark",
+
+   "block.urushi.sakura_sapling": "Sakura Sapling",
+
+   "block.urushi.big_sakura_sapling": "Big Sakura Sapling",
+
+   "block.urushi.sakura_leaves": "Sakura Leaves",
+
+   "block.urushi.glowing_sakura_sapling": "Glowing Sakura Sapling",
+
+   "block.urushi.glowing_big_sakura_sapling": "Glowing Big Sakura Sapling",
+
+   "block.urushi.glowing_sakura_leaves": "Glowing Sakura Leaves",
+
+   "block.urushi.sakura_log": "Sakura Log",
+
+   "block.urushi.stripped_sakura_log": "Stripped Sakura Log",
+
+   "block.urushi.sakura_wood": "Sakura Wood",
+
+   "block.urushi.stripped_sakura_wood": "Stripped Sakura Wood",
+
+   "block.urushi.sakura_planks": "Sakura Planks",
+
+   "block.urushi.sakura_slab": "Sakura Slab",
+
+   "block.urushi.sakura_stairs": "Sakura Stairs",
+
+   "block.urushi.sakura_fence": "Sakura Fence",
+
+   "block.urushi.sakura_fence_gate": "Sakura Fence Gate",
+
+   "block.urushi.sakura_door": "Sakura Door",
+
+   "block.urushi.sakura_pressure_plate": "Sakura Pressure Plate",
+
+   "block.urushi.sakura_button": "Sakura Button",
+
+   "block.urushi.sakura_trapdoor": "Sakura Trapdoor",
+
+   "block.urushi.smooth_sakura_planks": "Smooth Sakura Planks",
+
+   "block.urushi.smooth_sakura_slab": "Smooth Sakura Slab",
+
+   "block.urushi.smooth_sakura_stairs": "Smooth Sakura Stairs",
+
+   "item.urushi.sakura_bark": "Sakura Bark",
+
+   "block.urushi.cypress_sapling": "Cypress Sapling",
+
+   "block.urushi.cypress_leaves": "Cypress Leaves",
+
+   "block.urushi.cypress_log": "Cypress Log",
+
+   "block.urushi.stripped_cypress_log": "Stripped Cypress Log",
+
+   "block.urushi.cypress_wood": "Cypress Wood",
+
+   "block.urushi.stripped_cypress_wood": "Stripped Cypress Wood",
+
+   "block.urushi.cypress_planks": "Cypress Planks",
+
+   "block.urushi.cypress_slab": "Cypress Slab",
+
+   "block.urushi.cypress_stairs": "Cypress Stairs",
+
+   "block.urushi.cypress_fence": "Cypress Fence",
+
+   "block.urushi.cypress_fence_gate": "Cypress Fence Gate",
+
+   "block.urushi.cypress_door": "Cypress Door",
+
+   "block.urushi.cypress_pressure_plate": "Cypress Pressure Plate",
+
+   "block.urushi.cypress_button": "Cypress Button",
+
+   "block.urushi.cypress_trapdoor": "Cypress Trapdoor",
+
+   "block.urushi.smooth_cypress_planks": "Smooth Cypress Planks",
+
+   "block.urushi.smooth_cypress_slab": "Smooth Cypress Slab",
+
+   "block.urushi.smooth_cypress_stairs": "Smooth Cypress Stairs",
+
+   "item.urushi.cypress_bark": "Cypress Bark",
+
+   "block.urushi.lacquer_sapling": "Lacquer Sapling",
+
+   "block.urushi.lacquer_leaves": "Lacquer Leaves",
+
+   "block.urushi.lacquer_log": "Lacquer Log",
+
+   "block.urushi.chiseled_lacquer_log": "Chiseled Lacquer Log",
+
+   "block.urushi.wooden_cabinetry": "Wooden Cabinetry",
+
+   "block.urushi.wooden_cabinetry_slab": "Wooden Cabinetry Slab",
+
+   "block.urushi.raw_urushi_layer": "Raw Urushi Layer",
+
+   "block.urushi.stripped_red_urushi_log": "Stripped Red Urushi Log",
+
+   "block.urushi.stripped_red_urushi_wood": "Stripped Red Urushi Wood",
+
+   "block.urushi.red_urushi_planks": "Red Urushi Planks",
+
+   "block.urushi.red_urushi_slab": "Red Urushi Slab",
+
+   "block.urushi.red_urushi_stairs": "Red Urushi Stairs",
+
+   "block.urushi.red_urushi_fence": "Red Urushi Fence",
+
+   "block.urushi.red_urushi_fence_gate": "Red Urushi Fence Gate",
+
+   "block.urushi.red_urushi_door": "Red Urushi Door",
+
+   "block.urushi.red_urushi_trapdoor": "Red Urushi Trapdoor",
+
+   "block.urushi.red_urushi_pressure_plate": "Red Urushi Pressure Plate",
+
+   "block.urushi.red_urushi_button": "Red Urushi Button",
+
+   "block.urushi.smooth_red_urushi_planks": "Smooth Red Urushi Planks",
+
+   "block.urushi.smooth_red_urushi_slab": "Smooth Red Urushi Slab",
+
+   "block.urushi.smooth_red_urushi_stairs": "Smooth Red Urushi Stairs",
+
+   "block.urushi.stripped_black_urushi_log": "Stripped Black Urushi Log",
+
+   "block.urushi.stripped_black_urushi_wood": "Stripped Black Urushi Wood",
+
+   "block.urushi.black_urushi_planks": "Black Urushi Planks",
+
+   "block.urushi.black_urushi_slab": "Black Urushi Slab",
+
+   "block.urushi.black_urushi_stairs": "Black Urushi Stairs",
+
+   "block.urushi.black_urushi_fence": "Black Urushi Fence",
+
+   "block.urushi.black_urushi_fence_gate": "Black Urushi Fence Gate",
+
+   "block.urushi.black_urushi_door": "Black Urushi Door",
+
+   "block.urushi.black_urushi_trapdoor": "Black Urushi Trapdoor",
+
+   "block.urushi.black_urushi_pressure_plate": "Black Urushi Pressure Plate",
+
+   "block.urushi.black_urushi_button": "Black Urushi Button",
+
+   "block.urushi.smooth_black_urushi_planks": "Smooth Black Urushi Planks",
+
+   "block.urushi.smooth_black_urushi_slab": "Smooth Black Urushi Slab",
+
+   "block.urushi.smooth_black_urushi_stairs": "Smooth Black Urushi Stairs",
+
+    "item.urushi.raw_urushi_ball": "Raw Urushi Bowl",
+
+    "item.urushi.red_urushi_ball": "Red Urushi Bowl",
+
+    "item.urushi.black_urushi_ball": "Black Urushi Bowl",
+
+    "container.woodencabinetry": "Wooden Cabinetry",
+
+    "container.woodencabinetryslab": "Wooden Cabinetry Slab",
+
+   "block.urushi.rice_crop": "Rice Ears",
+
+   "block.urushi.paddy_field": "Paddy Field",
+
+    "block.urushi.azuki_crop": "Red Bean",
+
+    "block.urushi.tawara": "Tawara Bag",
+
+   "block.urushi.oak_parapet": "Oak Parapet",
+
+   "block.urushi.spruce_parapet": "Spruce Parapet",
+
+   "block.urushi.birch_parapet": "Birch Parapet",
+
+   "block.urushi.jungle_parapet": "Jungle Parapet",
+
+   "block.urushi.acacia_parapet": "Acacia Parapet",
+
+   "block.urushi.dark_oak_parapet": "Dark Oak Parapet",
+
+   "block.urushi.japanese_apricot_parapet": "Japanese Apricot Parapet",
+
+   "block.urushi.sakura_parapet": "Sakura Parapet",
+
+   "block.urushi.cypress_parapet": "Cypress Parapet",
+
+   "block.urushi.red_urushi_parapet": "Red Urushi Parapet",
+
+   "block.urushi.black_urushi_parapet": "Black Urushi Parapet",
+
+   "item.urushi.raw_rice": "Raw Rice",
+
+   "item.urushi.rice": "Rice",
+
+   "item.urushi.rice_malt": "Rice Malt",
+
+   "item.urushi.rice_ball": "Rice Ball",
+
+   "item.urushi.rice_cake": "Rice Cake",
+
+   "item.urushi.roasted_rice_cake": "Roasted Rice Cake",
+
+   "item.urushi.gyudon": "Gyudon",
+
+   "item.urushi.butadon": "Butadon",
+
+   "item.urushi.sakura_mochi": "Sakura Mochi",
+
+   "item.urushi.ohagi": "Ohagi",
+
+   "item.urushi.color_dango": "Sansyoku Dango",
+
+   "item.urushi.mitarashi_dango": "Mitarashi Dango",
+
+   "item.urushi.kusa_dango": "Kusa Dango",
+
+   "item.urushi.bamboo_charcoal": "Bamboo Charcoal",
+
+   "block.urushi.bamboo_block": "Bamboo Block",
+
+   "block.urushi.bamboo_slab": "Bamboo Slab",
+
+   "block.urushi.bamboo_stairs": "Bamboo Stairs",
+
+   "block.urushi.blank_fusuma": "Blank Fusuma",
+
+   "block.urushi.blue_seigaiha_fusuma": "Light Blue Seigaiha Fusuma",
+
+   "block.urushi.blue_sayagata_fusuma": "Light Blue Sayagata Fusuma",
+
+   "block.urushi.sliding_glass_door": "Sliding Glass Door",
+
+   "block.urushi.oak_shoji_pane": "Oak Shoji Pane",
+
+   "block.urushi.spruce_shoji_pane": "Spruce Shoji Pane",
+
+   "block.urushi.birch_shoji_pane": "Birch Shoji Pane",
+
+   "block.urushi.jungle_shoji_pane": "Jungle Shoji Pane",
+
+   "block.urushi.acacia_shoji_pane": "Acacia Shoji Pane",
+
+   "block.urushi.dark_oak_shoji_pane": "Dark Oak Shoji Pane",
+
+   "block.urushi.japanese_apricot_shoji_pane": "Japanese Apricot Shoji Pane",
+
+   "block.urushi.sakura_shoji_pane": "Sakura Shoji Pane",
+
+   "block.urushi.cypress_shoji_pane": "Cypress Shoji Pane",
+
+   "block.urushi.red_urushi_shoji_pane": "Red Urushi Shoji Pane",
+
+   "block.urushi.black_urushi_shoji_pane": "Black Urushi Shoji Pane",
+
+   "block.urushi.oak_shoji": "Oak Shoji",
+
+   "block.urushi.spruce_shoji": "Spruce Shoji",
+
+   "block.urushi.birch_shoji": "Birch Shoji",
+
+   "block.urushi.jungle_shoji": "Jungle Shoji",
+
+   "block.urushi.acacia_shoji": "Acacia Shoji",
+
+   "block.urushi.dark_oak_shoji": "Dark Oak Shoji",
+
+   "block.urushi.japanese_apricot_shoji": "Japanese Apricot Shoji",
+
+   "block.urushi.sakura_shoji": "Sakura Shoji",
+
+   "block.urushi.cypress_shoji": "Cypress Shoji",
+
+   "block.urushi.red_urushi_shoji": "Red Urushi Shoji",
+
+   "block.urushi.black_urushi_shoji": "Black Urushi Shoji",
+
+   "block.urushi.soy_crop": "Soy Beans",
+
+   "block.urushi.kitsunebi": "Kitsunebi",
+
+   "item.urushi.kitsunebi": "Kitsunebi",
+
+   "item.urushi.tofu": "Tofu",
+
+    "item.urushi.abura_age": "Abura-age",
+
+   "block.urushi.green_tatami_carpet": "Green Tatami Carpet",
+
+   "block.urushi.brown_tatami_carpet": "Brown Tatami Carpet",
+
+   "block.urushi.fox_hopper": "Advanced Hopper",
+
+   "block.urushi.sand_coast": "Sand Coast",
+
+   "block.urushi.thatched_block": "Thatched Block",
+
+   "block.urushi.thatched_slab": "Thatched Slab",
+
+   "block.urushi.thatched_stairs": "Thatched Stairs",
+
+   "item.urushi.carp_bucket": "Bucket of Carp",
+
+   "item.urushi.carp": "Carp",
+
+   "item.urushi.sweetfish_bucket": "Bucket of Sweetfish",
+
+   "item.urushi.sweetfish": "Raw Sweetfish",
+
+   "item.urushi.goldfish_bucket": "Bucket of Goldfish",
+
+   "item.urushi.goldfish": "Goldfish",
+
+   "block.urushi.blank_antique_fusuma": "Blank Antique Fusuma",
+
+    "container.foxhopper": "Advanced Hopper",
+
+   "block.urushi.concrete": "Concrete",
+
+   "block.urushi.concrete_slab": "Concrete Slab",
+
+   "block.urushi.concrete_stairs": "Concrete Stairs",
+
+   "block.urushi.dirty_concrete": "Dirty Concrete",
+
+   "block.urushi.dirty_concrete_slab": "Dirty Concrete Slab",
+
+   "block.urushi.dirty_concrete_stairs": "Dirty Concrete Stairs",
+
+   "block.urushi.lidless_groove": "Lidless Groove",
+
+   "block.urushi.groove": "Groove",
+
+   "block.urushi.mesh_groove": "Mesh Groove",
+
+   "block.urushi.thatched_roof_45": "Thatched Roof for Stairs",
+
+   "block.urushi.thatched_roof_225": "Thatched Roof for Slab",
+
+   "block.urushi.ibushi_kawara_roof_45": "Ibushi Kawara Roof for Stairs",
+
+   "block.urushi.ibushi_kawara_roof_225": "Ibushi Kawara Roof for Slab",
+
+   "block.urushi.copper_kawara_roof_45": "Copper Kawara Roof for Stairs",
+
+   "block.urushi.copper_kawara_roof_225": "Copper Kawara Roof for Slab",
+
+   "block.urushi.cupric_oxide_kawara_roof_45": "Cupric Oxide Kawara Roof for Stairs",
+
+   "block.urushi.cupric_oxide_kawara_roof_225": "Cupric Oxide Kawara Roof for Slab",
+
+   "block.urushi.bamboo_charcoal_block": "Bamboo Charcoal Block",
+
+   "block.urushi.oak_framed_plaster": "Oak-Framed Sikkui",
+
+   "block.urushi.spruce_framed_plaster": "Spruce-Framed Sikkui",
+
+   "block.urushi.birch_framed_plaster": "Birch-Framed Sikkui",
+
+   "block.urushi.jungle_framed_plaster": "Jungle-Framed Sikkui",
+
+   "block.urushi.acacia_framed_plaster": "Acacia-Framed Sikkui",
+
+   "block.urushi.dark_oak_framed_plaster": "Dark-Oak-Framed Sikkui",
+
+   "block.urushi.japanese_apricot_framed_plaster": "Japanese-Apricot-Framed Sikkui",
+
+   "block.urushi.sakura_framed_plaster": "Sakura-Framed Sikkui",
+
+   "block.urushi.cypress_framed_plaster": "Cypress-Framed Sikkui",
+
+   "block.urushi.red_framed_plaster": "Red-Urushi-Framed Sikkui",
+
+   "block.urushi.black_framed_plaster": "Black-Urushi-Framed Sikkui",
+
+   "block.urushi.connectable_glass": "Connectable Glass",
+
+   "block.urushi.connectable_glass_pane": "Connectable Glass Pane",
+
+   "block.urushi.metal_framed_glass": "Metal-Framed Glass",
+
+   "block.urushi.metal_framed_glass_pane": "Metal-Framed Glass Pane",
+
+   "block.urushi.oil_extractor": "Oil Extractor",
+
+   "block.urushi.fryer": "Fryer",
+
+   "block.urushi.rough_stone": "Rough Stone",
+
+   "block.urushi.rough_stone_slab": "Rough Stone Slab",
+
+   "block.urushi.rough_stone_stairs": "Rough Stone Stairs",
+
+   "block.urushi.rough_stone_wall": "Rough Stone Wall",
+
+   "item.urushi.vegetable_oil": "Vegetable Oil",
+
+   "item.urushi.karaage": "Karaage",
+
+   "entity.urushi.carp": "Carp",
+
+   "entity.urushi.sweetfish": "Sweetfish",
+
+   "entity.urushi.goldfish": "Goldfish",
+
+   "entity.urushi.ghost": "Ghost",
+
+   "entity.urushi.red_oni": "Red Oni",
+
+    "container.fryer": "Fryer",
+
+   "block.urushi.ironsand_ore": "Ironsand Ore",
+
+   "block.urushi.normal_iron_ingot_0": "Hot Iron Ingot (tier 1)",
+
+   "block.urushi.normal_iron_ingot_1": "Hot Iron Ingot (tier 2)",
+
+   "block.urushi.normal_iron_ingot_2": "Hot Iron Ingot (tier 3)",
+
+   "block.urushi.normal_iron_ingot_3": "Hot Iron Ingot (tier 4)",
+
+   "block.urushi.normal_iron_ingot_4": "Hot Iron Ingot (tier 5)",
+
+   "block.urushi.normal_iron_ingot_5": "Hot Iron Ingot (tier 6)",
+
+   "block.urushi.normal_iron_ingot_6": "Hot Iron Ingot (tier 7)",
+
+   "block.urushi.normal_iron_ingot_7": "Hot Iron Ingot (tier 8)",
+
+   "block.urushi.normal_iron_ingot_8": "Hot Iron Ingot (tier 9)",
+
+   "block.urushi.normal_iron_ingot_9": "Hot Iron Ingot (tier 10)",
+
+   "item.urushi.hammer": "Hammer",
+
+   "item.urushi.ironsand": "Ironsand",
+
+   "item.urushi.normal_hot_katana_blade_tier_1": "Hot Katana Blade (tier 1)",
+
+   "item.urushi.normal_hot_katana_blade_tier_2": "Hot Katana Blade (tier 2)",
+
+   "item.urushi.normal_hot_katana_blade_tier_3": "Hot Katana Blade (tier 3)",
+
+   "item.urushi.normal_hot_katana_blade_tier_4": "Hot Katana Blade (tier 4)",
+
+   "item.urushi.normal_hot_katana_blade_tier_5": "Hot Katana Blade (tier 5)",
+
+   "item.urushi.normal_hot_katana_blade_tier_6": "Hot Katana Blade (tier 6)",
+
+   "item.urushi.normal_hot_katana_blade_tier_7": "Hot Katana Blade (tier 7)",
+
+   "item.urushi.normal_hot_katana_blade_tier_8": "Hot Katana Blade (tier 8)",
+
+   "item.urushi.normal_hot_katana_blade_tier_9": "Hot Katana Blade (tier 9)",
+
+   "item.urushi.normal_hot_katana_blade_tier_10": "Hot Katana Blade (tier 10)",
+
+   "item.urushi.normal_katana_blade_tier_1": "Katana Blade (tier 1)",
+
+   "item.urushi.normal_katana_blade_tier_2": "Katana Blade (tier 2)",
+
+   "item.urushi.normal_katana_blade_tier_3": "Katana Blade (tier 3)",
+
+   "item.urushi.normal_katana_blade_tier_4": "Katana Blade (tier 4)",
+
+   "item.urushi.normal_katana_blade_tier_5": "Katana Blade (tier 5)",
+
+   "item.urushi.normal_katana_blade_tier_6": "Katana Blade (tier 6)",
+
+   "item.urushi.normal_katana_blade_tier_7": "Katana Blade (tier 7)",
+
+   "item.urushi.normal_katana_blade_tier_8": "Katana Blade (tier 8)",
+
+   "item.urushi.normal_katana_blade_tier_9": "Katana Blade (tier 9)",
+
+   "item.urushi.normal_katana_blade_tier_10": "Katana Blade (tier 10)",
+
+   "item.urushi.normal_katana_tier_1": "Katana (tier 1)",
+
+   "item.urushi.normal_katana_tier_2": "Katana (tier 2)",
+
+   "item.urushi.normal_katana_tier_3": "Katana (tier 3)",
+
+   "item.urushi.normal_katana_tier_4": "Katana (tier 4)",
+
+   "item.urushi.normal_katana_tier_5": "Katana (tier 5)",
+
+   "item.urushi.normal_katana_tier_6": "Katana (tier 6)",
+
+   "item.urushi.normal_katana_tier_7": "Katana (tier 7)",
+
+   "item.urushi.normal_katana_tier_8": "Katana (tier 8)",
+
+   "item.urushi.normal_katana_tier_9": "Katana (tier 9)",
+
+   "item.urushi.normal_katana_tier_10": "Katana (tier 10)",
+
+   "item.urushi.tkg": "Tamago Kake Gohan",
+
+   "item.urushi.kusa_mochi": "Kusa Mochi",
+
+   "item.urushi.wood_chip": "Wood Chip",
+
+    "info.urushi.chiseled_lacquer_log": "Right-click Lacquer Log with flint or any tools to obtain.",
+
+    "info.urushi.raw_urushi_layer": "Generates from Chiseled Lacquer Log.",
+
+    "info.urushi.kitsunebi2": "Give Abura-age to a fox to obtain.",
+
+    "info.urushi.kitsunebi": "A throwable invisible light block",
+
+    "info.urushi.fox_hopper": "The attraction range is about 3 blocks above.",
+
+    "info.urushi.framed_block1": "The textures are connected with each other by default.",
+
+    "info.urushi.framed_block2": "On singleplayer, toggle switching with key",
+
+    "info.urushi.framed_block3": "to place blocks that aren't connected to blocks in default mode.",
+
+    "info.urushi.framed_block4": "On multiplayer, blocks placed while sneaking aren't connected to ones in default mode. ",
+
+    "info.urushi.iron_ingot": "Place it on a block and use Hammer to smash it.",
+
+    "info.urushi.roof_45": "Place it on any kind of Stairs.",
+
+    "info.urushi.roof_225": "Place it on any kind of Slabs.",
+
+   "block.urushi.red_noren": "Red Noren",
+
+   "block.urushi.cyan_noren": "Cyan Noren",
+
+   "block.urushi.magenta_noren": "Magenta Noren",
+
+   "block.urushi.deep_blue_noren": "Blue Noren",
+
+   "block.urushi.men_onsen_noren": "Onsen Noren for Men",
+
+   "block.urushi.women_onsen_noren": "Onsen Noren for Women",
+
+   "block.urushi.sushi_noren": "Sushi Noren",
+
+   "block.urushi.doubled_wooden_cabinetry": "Doubled Wooden Cabinetry",
+
+   "block.urushi.red_urushi_wooden_cabinetry_slab": "Red Urushi Wooden Cabinetry Slab",
+
+   "block.urushi.red_urushi_wooden_cabinetry": "Red Urushi Wooden Cabinetry",
+
+   "block.urushi.doubled_red_urushi_wooden_cabinetry": "Red Urushi Doubled Wooden Cabinetry",
+
+   "block.urushi.hiwadabuki_block": "Hiwadabuki Block",
+
+   "block.urushi.hiwadabuki_slab": "Hiwadabuki Slab",
+
+   "block.urushi.hiwadabuki_stairs": "Hiwadabuki Stairs",
+
+   "block.urushi.hiwadabuki_roof_45": "Hiwadabuki Roof for Stairs",
+
+   "block.urushi.hiwadabuki_roof_225": "Hiwadabuki Roof for Slabs",
+
+   "block.urushi.ibushi_kawara_wall": "Ibushi Kawara Wall",
+
+   "block.urushi.copper_kawara_wall": "Copper Kawara Wall",
+
+   "block.urushi.cupric_oxide_kawara_wall": "Cupric Oxide Kawara Wall",
+
+    "container.doubledwoodencabinetry": "Doubled Wooden Cabinetry",
+
+   "block.urushi.kasuga_lantern": "Kasuga Lantern",
+
+   "block.urushi.dough": "Noodle Dough",
+
+   "block.urushi.udon": "Udon",
+
+    "block.urushi.salt_and_sand": "Salty Sand",
+
+   "item.urushi.yokan": "Yokan",
+
+   "item.urushi.sakura_yokan": "Sakura Yokan",
+
+   "item.urushi.sekihan": "Sekihan",
+
+   "item.urushi.kanten_powder": "Kanten Powder",
+
+   "item.urushi.salt": "Salt",
+
+   "item.urushi.kitsune_udon": "Kitsune Udon",
+
+   "item.urushi.noodle_knife": "Noodle Knife",
+
+    "info.urushi.salt": "Right-click Salty Sand to obtain.",
+
+    "info.urushi.noodleknife": "Do some noodle-doodle cutting stuff!",
+
+    "info.urushi.saltandsand": "In Ocean or Beach biomes, Sand in contact with water transforms into this.",
+
+   "info.urushi.udon": "To obtain, use Noodle Knife to Noodle Dough.",
+
+   "block.urushi.dirt_furnace": "Dirt Furnace",
+
+   "block.urushi.rice_cauldron": "Rice Cauldron",
+
+   "block.urushi.oak_bars": "Oak Bars",
+
+   "block.urushi.spruce_bars": "Spruce Bars",
+
+   "block.urushi.birch_bars": "Birch Bars",
+
+   "block.urushi.jungle_bars": "Jungle Bars",
+
+   "block.urushi.acacia_bars": "Acacia Bars",
+
+   "block.urushi.dark_oak_bars": "Dark Oak Bars",
+
+   "block.urushi.green_bars": "Green Bars",
+
+   "block.urushi.plaster_bars": "Sikkui Bars",
+
+   "block.urushi.kakejiku_1": "Kakejiku",
+
+   "block.urushi.kakejiku_2": "Kakejiku",
+
+   "block.urushi.kakejiku_3": "Kakejiku",
+
+   "block.urushi.kakejiku_4": "Kakejiku",
+
+   "block.urushi.kakejiku_5": "Kakejiku",
+
+   "block.urushi.kakejiku_6": "Kakejiku",
+
+   "block.urushi.kakejiku_7": "Kakejiku",
+
+   "block.urushi.kakejiku_8": "Kakejiku",
+
+   "block.urushi.kakejiku_9": "Kakejiku",
+
+   "block.urushi.kakejiku_10": "Kakejiku",
+
+   "block.urushi.kakejiku_11": "Kakejiku",
+
+   "block.urushi.kakejiku_12": "Kakejiku",
+
+   "block.urushi.kakejiku_13": "Kakejiku",
+
+   "block.urushi.kakejiku_14": "Kakejiku",
+
+   "block.urushi.white_futon": "White Futon",
+
+   "block.urushi.orange_futon": "Orange Futon",
+
+   "block.urushi.magenta_futon": "Magenta Futon",
+
+   "block.urushi.light_blue_futon": "Light Blue Futon",
+
+   "block.urushi.yellow_futon": "Yellow Futon",
+
+   "block.urushi.lime_futon": "Lime Futon",
+
+   "block.urushi.pink_futon": "Pink Futon",
+
+   "block.urushi.gray_futon": "Gray Futon",
+
+   "block.urushi.light_gray_futon": "Light Gray Futon",
+
+   "block.urushi.cyan_futon": "Cyan Futon",
+
+   "block.urushi.purple_futon": "Purple Futon",
+
+   "block.urushi.blue_futon": "Blue Futon",
+
+   "block.urushi.brown_futon": "Brown Futon",
+
+   "block.urushi.green_futon": "Green Futon",
+
+   "block.urushi.red_futon": "Red Futon",
+
+   "block.urushi.black_futon": "Black Futon",
+
+   "item.urushi.white_cushion": "White Zabuton",
+
+   "item.urushi.orange_cushion": "Orange Zabuton",
+
+   "item.urushi.magenta_cushion": "Magenta Zabuton",
+
+   "item.urushi.light_blue_cushion": "Light Blue Zabuton",
+
+   "item.urushi.yellow_cushion": "Yellow Zabuton",
+
+   "item.urushi.lime_cushion": "Lime Zabuton",
+
+   "item.urushi.pink_cushion": "Pink Zabuton",
+
+   "item.urushi.gray_cushion": "Gray Zabuton",
+
+   "item.urushi.light_gray_cushion": "Light Gray Zabuton",
+
+   "item.urushi.cyan_cushion": "Cyan Zabuton",
+
+   "item.urushi.purple_cushion": "Purple Zabuton",
+
+   "item.urushi.blue_cushion": "Blue Zabuton",
+
+   "item.urushi.brown_cushion": "Brown Zabuton",
+
+   "item.urushi.green_cushion": "Green Zabuton",
+
+   "item.urushi.red_cushion": "Red Zabuton",
+
+   "item.urushi.black_cushion": "Black Zabuton",
+
+   "entity.urushi.cushion": "Zabuton",
+
+   "entity.urushi.rice_food": "Rice",
+
+   "entity.urushi.sekihan_food": "Sekihan",
+
+    "entity.urushi.tkg_food": "Tamago Kake Gohan",
+
+   "entity.urushi.gyudon_food": "Gyudon",
+
+   "entity.urushi.butadon_food": "Butadon",
+
+    "info.urushi.kakejiku": "Right-click to change the characters.",
+
+   "info.urushi.dirtfurnace": "Ignite and place Rice Cauldron above.",
+
+    "info.urushi.ricecauldron": "After placing Dirt Furnace below, put Raw Rice inside.",
+
+   "item.urushi.climbing_rope": "Climbing Rope",
+
+    "info.urushi.climbing_rope": "Set a long rope to low ground or underground.",
+
+   "block.urushi.rope": "Rope",
+
+   "item.urushi.open_wagasa": "Paper Umbrella (open)",
+
+   "item.urushi.close_wagasa": "Paper Umbrella (close)",
+
+    "info.urushi.wagasa": "Eliminates falling damage.",
+
+   "item.urushi.tiny_red_dye": "Tiny Red Dye",
+
+   "item.urushi.tiny_black_dye": "Tiny Black Dye",
+
+   "block.urushi.senbakoki": "Senbakoki",
+
+    "info.urushi.rawrice": "Use Rice Ears on Senbakoki to obtain 2x Raw Rice.",
+
+    "info.urushi.rawurushi": "Use Bowl on Chiseled Lacquer Log to obtain.",
+
+    "info.urushi.placeablefood": "Right-click while sneaking to place food on ground.",
+
+   "gui.jei.category.urushi.frying": "Frying",
+
+   "gui.jei.category.urushi.frying.time.seconds": "5s",
+
+   "gui.jei.category.urushi.hammering": "Hammering",
+
+    "gui.jei.category.urushi.hammering.text": "Right-click a lot",
+
+   "gui.jei.category.urushi.oil_extracting": "Oil Extracting",
+
+    "gui.jei.category.urushi.oil_extracting.text": "Insert",
+
+    "gui.jei.category.urushi.throwing_in": "Cooling",
+
+    "gui.jei.category.urushi.throwing_in.text": "Throw into Water",
+
+   "gui.jei.category.urushi.senbakoki": "Threshing",
+
+    "gui.jei.category.urushi.senbakoki.text": "Dispenser or right-click",
+
+    "entity.urushi.abura_age_food": "Abura-age",
+
+   "entity.urushi.tofu_food": "Tofu",
+
+   "entity.urushi.kitsune_udon_food": "Kitsune Udon",
+
+   "entity.urushi.karaage_food": "Karaage",
+
+   "block.urushi.oak_fushiranma": "Oak Fushiranma",
+
+   "block.urushi.spruce_fushiranma": "Spruce Fushiranma",
+
+   "block.urushi.birch_fushiranma": "Birch Fushiranma",
+
+   "block.urushi.jungle_fushiranma": "Jungle Fushiranma",
+
+   "block.urushi.acacia_fushiranma": "Acacia Fushiranma",
+
+   "block.urushi.dark_oak_fushiranma": "Dark Oak Fushiranma",
+
+   "block.urushi.japanese_apricot_fushiranma": "Japanese Apricot Fushiranma",
+
+   "block.urushi.sakura_fushiranma": "Sakura Fushiranma",
+
+   "block.urushi.cypress_fushiranma": "Cypress Fushiranma",
+
+   "block.urushi.red_urushi_fushiranma": "Red Urushi Fushiranma",
+
+   "block.urushi.black_urushi_fushiranma": "Black Urushi Fushiranma",
+
+   "fluid.urushi.hot_spring_water": "Hot Spring Water",
+
+   "block.urushi.hot_spring_water": "Hot Spring Water",
+
+   "item.urushi.hot_spring_water_bucket": "Hot Spring Water Bucket",
+
+   "gui.jei.category.urushi.fox_eating": "Fox Eating",
+
+    "gui.jei.category.urushi.fox_eating.text": "Feed this to a fox",
+
+   "block.urushi.senryoubako": "Senryoubako",
+
+   "entity.urushi.kusa_dango_food": "Kusa Dango",
+
+   "entity.urushi.color_dango_food": "Color Dango",
+
+   "entity.urushi.mitarashi_dango_food": "Mitarashi Dango",
+
+   "entity.urushi.rice_cake_food": "Rice Cake",
+
+   "entity.urushi.roasted_rice_cake_food": "Roasted Rice Cake",
+
+   "block.urushi.japanese_cedar_log": "Japanese Cedar Log",
+
+    "block.urushi.japanese_cedar_wood": "Japanese Cedar Wood",
+
+    "block.urushi.stripped_japanese_cedar_log": "Stripped Japanese Cedar Log",
+
+    "block.urushi.stripped_japanese_cedar_wood": "Stripped Japanese Cedar Wood",
+
+    "block.urushi.japanese_cedar_sapling": "Japanese Cedar Sapling",
+
+    "block.urushi.japanese_cedar_leaves": "Japanese Cedar Leaves",
+
+    "block.urushi.japanese_cedar_planks": "Japanese Cedar Planks",
+
+    "block.urushi.japanese_cedar_slab": "Japanese Cedar Slab",
+
+    "block.urushi.japanese_cedar_stairs": "Japanese Cedar Stairs",
+
+    "block.urushi.japanese_cedar_fence": "Japanese Cedar Fence",
+
+    "block.urushi.japanese_cedar_fence_gate": "Japanese Cedar Fence Gate",
+
+    "block.urushi.japanese_cedar_door": "Japanese Cedar Door",
+
+    "block.urushi.japanese_cedar_trapdoor": "Japanese Cedar Trapdoor",
+
+    "block.urushi.japanese_cedar_pressure_plate": "Japanese Cedar Pressure Plate",
+
+    "block.urushi.japanese_cedar_button": "Japanese Cedar Button",
+
+    "block.urushi.smooth_japanese_cedar_planks": "Smooth Japanese Cedar Planks",
+
+    "block.urushi.smooth_japanese_cedar_slab": "Smooth Japanese Cedar Slab",
+
+    "block.urushi.smooth_japanese_cedar_stairs": "Smooth Japanese Cedar Stairs",
+
+    "block.urushi.japanese_cedar_parapet": "Japanese Cedar Parapet",
+
+    "block.urushi.japanese_cedar_shoji_pane": "Japanese Cedar Shoji Pane",
+
+    "block.urushi.japanese_cedar_shoji": "Japanese Cedar Shoji",
+
+    "item.urushi.japanese_cedar_bark": "Japanese Cedar Bark",
+
+    "block.urushi.japanese_cedar_framed_plaster": "Japanese-Cedar-Framed Sikkui",
+
+    "block.urushi.red_leaves": "Red Leaves",
+
+    "block.urushi.orange_leaves": "Orange Leaves",
+
+    "block.urushi.yellow_leaves": "Yellow Leaves",
+
+    "block.urushi.red_sapling": "Red Sapling",
+
+    "block.urushi.orange_sapling": "Orange Sapling",
+
+    "block.urushi.yellow_sapling": "Yellow Sapling",
+
+    "block.urushi.stone_trapdoor": "Stone Trapdoor",
+
+    "block.urushi.yomi_stone": "Yomi Stone",
+
+    "block.urushi.cobbled_yomi_stone": "Cobbled Yomi Stone",
+
+    "block.urushi.polished_yomi_stone": "Polished Yomi Stone",
+
+    "block.urushi.large_yomi_stone_bricks": "Large Yomi Stone Bricks",
+
+    "block.urushi.small_yomi_stone_bricks": "Small Yomi Stone Bricks",
+
+    "block.urushi.yomi_stone_slab": "Yomi Stone Slab",
+
+    "block.urushi.cobbled_yomi_stone_slab": "Cobbled Yomi Stone Slab",
+
+    "block.urushi.polished_yomi_stone_slab": "Polished Yomi Stone Slab",
+
+    "block.urushi.large_yomi_stone_brick_slab": "Large Yomi Stone Brick Slab",
+
+    "block.urushi.small_yomi_stone_brick_slab": "Small Yomi Stone Brick Slab",
+
+    "block.urushi.yomi_stone_stairs": "Yomi Stone Stairs",
+
+    "block.urushi.cobbled_yomi_stone_stairs": "Cobbled Yomi Stone Stairs",
+
+    "block.urushi.polished_yomi_stone_stairs": "Polished Yomi Stone Stairs",
+
+    "block.urushi.large_yomi_stone_brick_stairs": "Large Yomi Stone Brick Stairs",
+
+    "block.urushi.small_yomi_stone_brick_stairs": "Small Yomi Stone Brick Stairs",
+
+    "block.urushi.yomi_stone_trapdoor": "Yomi Stone Trapdoor",
+
+    "block.urushi.cobbled_yomi_stone_wall": "Cobbled Yomi Stone Wall",
+
+    "block.urushi.polished_yomi_stone_wall": "Polished Yomi Stone Wall",
+
+    "block.urushi.large_yomi_stone_brick_wall": "Large Yomi Stone Brick Wall",
+
+    "block.urushi.small_yomi_stone_brick_wall": "Small Yomi Stone Brick Wall",
+
+    "block.urushi.jadeite_ore": "Jadeite Ore",
+
+    "block.urushi.yomi_gold_ore": "Yomi Gold Ore",
+
+    "block.urushi.quartz_cluster": "Quartz Cluster",
+
+    "item.urushi.jadeite": "Jadeite",
+
+    "item.urushi.enhanced_jadeite": "Enhanced Jadeite",
+
+    "block.urushi.shiitake": "Shiitake Mushroom",
+
+    "block.urushi.eulalia": "Eulalia",
+
+    "block.urushi.lycoris": "Lycoris",
+
+    "item.urushi.ghost_core": "Ghost Core",
+
+    "block.urushi.kakuriyo_portal_core": "Kakuriyo Portal Core",
+
+    "block.urushi.ghost_kakuriyo_portal_core": "Ghost Kakuriyo Portal Core",
+
+    "block.urushi.red_kakuriyo_portal_frame": "Red Kakuriyo Portal Frame",
+
+    "block.urushi.ghost_red_kakuriyo_portal_frame": "Ghost Red Kakuriyo Portal Frame",
+
+    "block.urushi.black_kakuriyo_portal_frame": "Black Kakuriyo Portal Frame",
+
+    "block.urushi.ghost_black_kakuriyo_portal_frame": "Ghost Black Kakuriyo Portal Frame",
+
+    "block.urushi.ghost_dirt": "Ghost Dirt",
+
+    "block.urushi.ghost_stone": "Ghost Stone",
+
+    "block.urushi.fallen_red_leaves": "Fallen Red Leaves",
+
+    "block.urushi.fallen_orange_leaves": "Fallen Orange Leaves",
+
+    "block.urushi.fallen_yellow_leaves": "Fallen Yellow Leaves",
+
+    "block.urushi.fallen_japanese_apricot_leaves": "Fallen Japanese Apricot Leaves",
+
+    "block.urushi.fallen_sakura_leaves": "Fallen Sakura Leaves",
+
+    "block.urushi.grass_block_with_fallen_red_leaves": "Grass Block With Fallen Red Leaves",
+
+    "block.urushi.grass_block_with_fallen_orange_leaves": "Grass Block With Fallen Orange Leaves",
+
+    "block.urushi.grass_block_with_fallen_yellow_leaves": "Grass Block With Fallen Yellow Leaves",
+
+    "block.urushi.grass_block_with_fallen_japanese_apricot_leaves": "Grass Block With Fallen Japanese Apricot Leaves",
+
+    "block.urushi.grass_block_with_fallen_sakura_leaves": "Grass Block With Fallen Sakura Leaves",
+
+    "item.urushi.yomotsuhegui_fruit": "Yomotsuhegui Fruit",
+
+    "item.urushi.lantern_plant_fruit": "Lantern Plant Fruit",
+
+    "itemGroup.urushi_wood": "Urushi-Woods",
+
+    "itemGroup.urushi_food": "Urushi-Cooking",
+
+    "info.urushi.ghost_block": "A kind of passable translucent block.",
+
+    "info.urushi.ghost_block2": "Mimics the normal block when powered by redstone.",
+
+    "block.urushi.japanese_cedar_fushiranma": "Japanese Cedar Fushiranma",
+
+    "info.urushi.wood_element_block": "Block Element : WOOD",
+
+    "info.urushi.fire_element_block": "Block Element : FIRE",
+
+    "info.urushi.earth_element_block": "Block Element : EARTH",
+
+    "info.urushi.metal_element_block": "Block Element : METAL",
+
+    "info.urushi.water_element_block": "Block Element : WATER",
+
+    "info.urushi.wood_element": "WOOD",
+
+    "info.urushi.fire_element": "FIRE",
+
+    "info.urushi.earth_element": "EARTH",
+
+    "info.urushi.metal_element": "METAL",
+
+    "info.urushi.water_element": "WATER",
+
+    "info.urushi.wood_element_of_block": "WOOD Element Block",
+
+    "info.urushi.fire_element_of_block": "FIRE Element Block",
+
+    "info.urushi.earth_element_of_block": "EARTH Element Block",
+
+    "info.urushi.metal_element_of_block": "METAL Element Block",
+
+    "info.urushi.water_element_of_block": "WATER Element Block",
+
+    "info.urushi.blank": "     ",
+
+    "info.urushi.sandpaper_block": "File neighbor blocks when moved by Piston.",
+
+    "block.urushi.oak_framed_wattle_and_daub": "Oak-Framed Wattle and Daub",
+
+    "block.urushi.spruce_framed_wattle_and_daub": "Spruce-Framed Wattle and Daub",
+
+    "block.urushi.birch_framed_wattle_and_daub": "Birch-Framed Wattle and Daub",
+
+    "block.urushi.jungle_framed_wattle_and_daub": "Jungle-Framed Wattle and Daub",
+
+    "block.urushi.acacia_framed_wattle_and_daub": "Acacia-Framed Wattle and Daub",
+
+    "block.urushi.dark_oak_framed_wattle_and_daub": "Dark-Oak-Framed Wattle and Daub",
+
+    "block.urushi.japanese_apricot_framed_wattle_and_daub": "Japanese-Apricot-Framed Wattle and Daub",
+
+    "block.urushi.sakura_framed_wattle_and_daub": "Sakura-Framed Wattle and Daub",
+
+    "block.urushi.cypress_framed_wattle_and_daub": "Cypress-Framed Wattle and Daub",
+
+    "block.urushi.japanese_cedar_framed_wattle_and_daub": "Japanese-Cedar-Framed Wattle and Daub",
+
+    "block.urushi.red_urushi_framed_wattle_and_daub": "Red-Urushi-Framed Wattle and Daub",
+
+    "block.urushi.black_urushi_framed_wattle_and_daub": "Black-Urushi-Framed Wattle and Daub",
+
+    "block.urushi.magma_slab": "Magma Slab",
+
+    "block.urushi.magma_stairs": "Magma Stairs",
+
+    "block.urushi.sandpaper_block": "Sandpaper Block",
+
+    "block.urushi.lantern_plant_torch": "Lantern Plant Torch",
+
+    "block.urushi.invisible_button": "Invisible Button",
+
+    "block.urushi.invisible_lever": "Invisible Lever",
+
+    "block.urushi.invisible_pressure_plate": "Invisible Pressure Plate",
+
+    "block.urushi.jadeite_block": "Jadeite Block",
+
+    "block.urushi.jadeite_slab": "Jadeite Slab",
+
+    "block.urushi.jadeite_stairs": "Jadeite Stairs",
+
+    "block.urushi.jadeite_brick": "Jadeite Bricks",
+
+    "block.urushi.jadeite_brick_slab": "Jadeite Brick Slab",
+
+    "block.urushi.jadeite_brick_stairs": "Jadeite Brick Stairs",
+
+    "block.urushi.smooth_jadeite_block": "Smooth Jadeite Block",
+
+    "block.urushi.smooth_jadeite_slab": "Smooth Jadeite Slab",
+
+    "block.urushi.smooth_jadeite_stairs": "Smooth Jadeite Stairs",
+
+    "block.urushi.jadeite_pillar": "Jadeite Pillar",
+
+    "block.urushi.kakuriyo_dirt": "Kakuriyo Dirt",
+
+    "block.urushi.kakuriyo_grass_block": "Kakuriyo Grass Block",
+
+    "item.urushi.wood_element_magatama": "Wood Element Magatama",
+
+    "item.urushi.fire_element_magatama": "Fire Element Magatama",
+
+    "item.urushi.earth_element_magatama": "Earth Element Magatama",
+
+    "item.urushi.metal_element_magatama": "Metal Element Magatama",
+
+    "item.urushi.water_element_magatama": "Water Element Magatama",
+
+    "item.urushi.wood_amber": "Wood Amber",
+
+    "item.urushi.fire_amber": "Fire Amber",
+
+    "item.urushi.earth_amber": "Earth Amber",
+
+    "item.urushi.metal_amber": "Metal Amber",
+
+    "item.urushi.water_amber": "Water Amber",
+
+    "block.urushi.oak_framed_sand_coast": "Oak-Framed Sand Coast",
+
+    "block.urushi.spruce_framed_sand_coast": "Spruce-Framed Sand Coast",
+
+    "block.urushi.birch_framed_sand_coast": "Birch-Framed Sand Coast",
+
+    "block.urushi.jungle_framed_sand_coast": "Jungle-Framed Sand Coast",
+
+    "block.urushi.acacia_framed_sand_coast": "Acacia-Framed Sand Coast",
+
+    "block.urushi.dark_oak_framed_sand_coast": "Dark-Oak-Framed Sand Coast",
+
+    "block.urushi.japanese_apricot_framed_sand_coast": "Japanese-Apricot-Framed Sand Coast",
+
+    "block.urushi.sakura_framed_sand_coast": "Sakura-Framed Sand Coast",
+
+    "block.urushi.cypress_framed_sand_coast": "Cypress-Framed Sand Coast",
+
+    "block.urushi.japanese_cedar_framed_sand_coast": "Japanese-Cedar-Framed Sand Coast",
+
+    "block.urushi.red_urushi_framed_sand_coast": "Red-Urushi-Framed Sand Coast",
+
+    "block.urushi.black_urushi_framed_sand_coast": "Black-Urushi-Framed Sand Coast",
+
+    "block.urushi.petrified_log": "Petrified Log",
+
+    "block.urushi.petrified_log_with_wood_amber": "Petrified Log With Wood Amber",
+
+    "block.urushi.petrified_log_with_fire_amber": "Petrified Log With Fire Amber",
+
+    "block.urushi.petrified_log_with_earth_amber": "Petrified Log With Earth Amber",
+
+    "block.urushi.petrified_log_with_metal_amber": "Petrified Log With Metal Amber",
+
+    "block.urushi.petrified_log_with_water_amber": "Petrified Log With Water Amber",
+
+    "block.urushi.petrified_planks": "Petrified Planks",
+
+    "block.urushi.kakuriyo_grass_block_with_fallen_red_leaves": "Kakuriyo Grass Block With Fallen Red Leaves",
+
+    "block.urushi.kakuriyo_grass_block_with_fallen_orange_leaves": "Kakuriyo Grass Block With Fallen Orange Leaves",
+
+    "block.urushi.kakuriyo_grass_block_with_fallen_yellow_leaves": "Kakuriyo Grass Block With Fallen Yellow Leaves",
+
+    "block.urushi.kakuriyo_grass_block_with_fallen_japanese_apricot_leaves": "Kakuriyo Grass Block With Fallen Japanese Apricot Leaves",
+
+    "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "Kakuriyo Grass Block With Fallen Sakura Leaves",
+
+   "gui.jei.category.urushi.chiseled_lacquer_log": "Extracting",
+
+    "gui.jei.category.urushi.chiseled_lacquer_log.text": "Dispenser or right-click",
+
+    "sounds.urushi.wind_bell": "Sound of wind bell",
+
+   "info.urushi.under_development": "Now under development. Wait for the future update!",
+
+   "block.urushi.wind_bell": "Wind Bell",
+
+   "item.urushi.sweetfish_with_salt": "Sweetfish with Salt",
+
+   "item.urushi.cooked_sweetfish": "Cooked Sweetfish",
+
+   "item.urushi.cooked_sweetfish_with_salt": "Salt-grilled Sweetfish",
+
+   "block.urushi.oak_shitamiita": "Oak Shitamiita",
+
+   "block.urushi.spruce_shitamiita": "Spruce Shitamiita",
+
+   "block.urushi.birch_shitamiita": "Birch Shitamiita",
+
+   "block.urushi.jungle_shitamiita": "Jungle Shitamiita",
+
+   "block.urushi.acacia_shitamiita": "Acacia Shitamiita",
+
+   "block.urushi.dark_oak_shitamiita": "Dark Oak Shitamiita",
+
+   "block.urushi.japanese_apricot_shitamiita": "Japanese Apricot Shitamiita",
+
+   "block.urushi.sakura_shitamiita": "Sakura Shitamiita",
+
+   "block.urushi.cypress_shitamiita": "Cypress Shitamiita",
+
+   "block.urushi.japanese_cedar_shitamiita": "Japanese Cedar Shitamiita",
+
+   "block.urushi.red_urushi_shitamiita": "Red Urushi Shitamiita",
+
+   "block.urushi.black_urushi_shitamiita": "Black Urushi Shitamiita",
+
+   "block.urushi.oak_shitamiita_slab": "Oak Shitamiita Slab",
+
+   "block.urushi.spruce_shitamiita_slab": "Spruce Shitamiita Slab",
+
+   "block.urushi.birch_shitamiita_slab": "Birch Shitamiita Slab",
+
+   "block.urushi.jungle_shitamiita_slab": "Jungle Shitamiita Slab",
+
+   "block.urushi.acacia_shitamiita_slab": "Acacia Shitamiita Slab",
+
+   "block.urushi.dark_oak_shitamiita_slab": "Dark Oak Shitamiita Slab",
+
+   "block.urushi.japanese_apricot_shitamiita_slab": "Japanese Apricot Shitamiita Slab",
+
+   "block.urushi.sakura_shitamiita_slab": "Sakura Shitamiita Slab",
+
+   "block.urushi.cypress_shitamiita_slab": "Cypress Shitamiita Slab",
+
+   "block.urushi.japanese_cedar_shitamiita_slab": "Japanese Cedar Shitamiita Slab",
+
+   "block.urushi.red_urushi_shitamiita_slab": "Red Urushi Shitamiita Slab",
+
+   "block.urushi.black_urushi_shitamiita_slab": "Black Urushi Shitamiita Slab",
+
+   "gui.jei.category.urushi.polishing": "Polishing",
+
+   "gui.jei.category.urushi.polishing.text": "Move with Piston",
+
+    "info.urushi.dimension.kakuriyo": "Kakuriyo",
+
+    "info.urushi.shichirin.message": "Fire intensity:    ",
+
+    "info.urushi.undercooked": "UNDERCOOKED LEVEL",
+
+    "info.urushi.wellcooked": "WELL-COOKED LEVEL",
+
+    "info.urushi.overcooked": "OVERCOOKED LEVEL",
+
+    "info.urushi.shichirin1": "Ignite by amber, put fuel inside, and use Uchiwa to control!",
+
+    "info.urushi.shichirin2": "The intensity of the fire does not affect the cooking result for the first 5 seconds.",
+
+    "info.urushi.shichirin3": "Make the duration of ☆ and the duration of ★ as equal as possible!",
+
+    "info.urushi.uchiwa": "Sweeps grass, flowers, and leaves!",
+
+    "block.urushi.unfired_shichirin": "Unfired Shichirin Stove",
+
+    "block.urushi.unfinished_shichirin": "Unfinished Shichirin Stove",
+
+    "block.urushi.shichirin": "Shichirin Stove",
+
+    "block.urushi.long_chochin": "Chochin Lantern",
+
+    "block.urushi.izakaya_long_chochin": "Izakaya Chochin Lantern",
+
+    "block.urushi.eigyouchu_long_chochin": "EIgyouchu Chochin Lantern",
+
+    "block.urushi.oden_long_chochin": "Oden Chochin Lantern",
+
+    "block.urushi.ramen_long_chochin": "Ramen Chochin Lantern",
+
+    "block.urushi.shokujidokoro_long_chochin": "Shokujidokoro Chochin Lantern",
+
+    "item.urushi.uchiwa": "Uchiwa",
+
+    "itemGroup.urushi_magic": "Urushi-Magic",
+
+    "block.urushi.sanbo_tier1": "Birch Sanbo",
+
+    "block.urushi.wood_element_sacred_rock": "Wood Element Sacred Rock",
+
+    "block.urushi.fire_element_sacred_rock": "Fire Element Sacred Rock",
+
+    "block.urushi.earth_element_sacred_rock": "Earth Element Sacred Rock",
+
+    "block.urushi.metal_element_sacred_rock": "Metal Element Sacred Rock",
+
+    "block.urushi.water_element_sacred_rock": "Water Element Sacred Rock",
+
+    "block.urushi.wood_element_emitter_tier1": "Birch Wood Element Emitter",
+
+    "block.urushi.fire_element_emitter_tier1": "Birch Fire Element Emitter",
+
+    "block.urushi.earth_element_emitter_tier1": "Birch Earth Element Emitter",
+
+    "block.urushi.metal_element_emitter_tier1": "Birch Metal Element Emitter",
+
+    "block.urushi.water_element_emitter_tier1": "Birch Water Element Emitter",
+
+    "block.urushi.wood_element_tank_tier1": "Birch Wood Element Onusa",
+
+    "block.urushi.fire_element_tank_tier1": "Birch Fire Element Onusa",
+
+    "block.urushi.earth_element_tank_tier1": "Birch Earth Element Onusa",
+
+    "block.urushi.metal_element_tank_tier1": "Birch Metal Element Onusa",
+
+    "block.urushi.water_element_tank_tier1": "Birch Water Element Onusa",
+
+    "block.urushi.wood_element_crafting_table_tier1": "Birch Wood Element Altar",
+
+    "block.urushi.fire_element_crafting_table_tier1": "Birch Fire Element Altar",
+
+    "block.urushi.earth_element_crafting_table_tier1": "Birch Earth Element Altar",
+
+    "block.urushi.metal_element_crafting_table_tier1": "Birch Metal Element Altar",
+
+    "block.urushi.water_element_crafting_table_tier1": "Birch Water Element Altar",
+
+    "block.urushi.mirror_tier1": "Birch Mirror",
+
+    "item.urushi.amber_igniter": "Amber Igniter",
+
+    "info.urushi.stored_reiryoku_amount": "Stored Reiryoku: ",
+
+    "info.urushi.wood_element_item": "Needs Wood Element Magatama",
+
+    "info.urushi.fire_element_item": "Needs Fire Element Magatama",
+
+    "info.urushi.earth_element_item": "Needs Earth Element Magatama",
+
+    "info.urushi.metal_element_item": "Needs Metal Element Magatama",
+
+    "info.urushi.water_element_item": "Needs Water Element Magatama",
+
+    "info.urushi.magatama1": "Store Reiryoku inside it by right-click on Onusa.",
+
+    "info.urushi.magatama2": "By placing it inside inventory, various items become usable.",
+
+    "info.urushi.sanbo": "Items can be crafted in conjunction with a Birch Altar.",
+
+    "info.urushi.sacred_rock1": "Naturally generated in Kakuriyo Dimension.",
+
+    "info.urushi.sacred_rock2": "When you place a block of specific element in front of this, the block will be transformed into Reiryoku.",
+
+    "info.urushi.sacred_rock3": "The face which has long paper is the front.",
+
+    "info.urushi.emitter1": "Extracts Reiyouku from containers.",
+
+    "info.urushi.emitter2": "Send a redstone signal to be idle.",
+
+    "info.urushi.emitter3": "Curve the Reiryoku signals with a Mirror.",
+
+    "info.urushi.emitter4": "Place a Onusa at Reiyoku crossing points.",
+
+    "info.urushi.tank1": "Stores Reiyoku.",
+
+    "info.urushi.tank2": "Place this at crossing points of Reiryoku signals.",
+
+    "info.urushi.mirror1": "Curves and reflects Reiryoku signals.",
+
+    "info.urushi.mirror2": "You can also curve signals diagonally.",
+
+    "info.urushi.mirror3": "Right-click to change the angle horizontally.",
+
+    "info.urushi.mirror4": "Shift+Right-click to change the angle vertically.",
+
+    "info.urushi.element_crafting_table1": "Can process Ritual crafting by placing four Birch Sanbos around this.",
+
+    "info.urushi.element_crafting_table2": "You need to send specific type of Reiryoku to start crafting.",
+
+    "info.urushi.amber_igniter1": "Consumes 10 FIRE element Reiryoku to ignite a Shichirin Stove.",
+
+    "info.urushi.uchiwa3": "Consumes 1 WOOD element Reiryoku to manipulate the fire of Shichirin Stove.",
+
+    "info.urushi.uchiwa2": "Consumes 1 WOOD element Reiryoku per 10 block.",
+
+    "info.urushi.kitsunebi3": "Consumes 10 FIRE element Reiryoku to place or toss this.",
+
+    "info.urushi.wagasa2": "Consumes WOOD element Reiryoku to use.",
+
+    "info.urushi.wood_amber": "Drop form Petrified Log With Wood Amber",
+
+    "info.urushi.fire_amber": "Drop from Petrified Log With Fire Amber",
+
+    "info.urushi.earth_amber": "Drop from Petrified Log WIth Earth Amber",
+
+    "info.urushi.metal_amber": "Drop from Petrified Log With Metal Amber",
+
+    "info.urushi.water_amber": "Drop from Petrified Log With Water Amber",
+
+    "info.urushi.petrified_log_with_wood_amber": "Place a Yomi Stone or a Cobbled Yomi Stone on a Chiseled Lacquer Log, with a Chicken around, and wait to obtain.",
+
+    "info.urushi.petrified_log_with_fire_amber": "Place a Yomi Stone or a Cobbled Yomi Stone on a Chiseled Lacquer Log, with a Sheep around, and wait to obtain.",
+
+    "info.urushi.petrified_log_with_earth_amber": "Place a Yomi Stone or a Cobbled Yomi Stone on a Chiseled Lacquer Log, with a Cow around, and wait to obtain.",
+
+    "info.urushi.petrified_log_with_metal_amber": "Place a Yomi Stone or a Cobbled Yomi Stone on a Chiseled Lacquer Log, with a Horse around, and wait to obtain.",
+
+    "info.urushi.petrified_log_with_water_amber": "Place a Yomi Stone or a Cobbled Yomi Stone on a Chiseled Lacquer Log, with a Pig around, and wait to obtain.",
+
+    "info.urushi.small_flower": "Duplicatable with Bone Meal",
+
+    "info.urushi.stored_wood_reiryoku.message": "Stored Wood Element Reiryoku：",
+
+    "info.urushi.stored_fire_reiryoku.message": "Stored Fire Element Reiryoku：",
+
+    "info.urushi.stored_earth_reiryoku.message": "Stored Earth Element Reiryoku：",
+
+    "info.urushi.stored_metal_reiryoku.message": "Stored Metal Element Reiryoku：",
+
+    "info.urushi.stored_water_reiryoku.message": "Stored Water Element Reiryoku：",
+
+    "info.urushi.tier1": "tier1",
+
+    "info.urushi.tier2": "tier2",
+
+    "info.urushi.tier3": "tier3",
+
+    "block.urushi.white_stained_wooden_cabinetry_slab": "White Stained Wooden Cabinetry Slab",
+
+    "block.urushi.orange_stained_wooden_cabinetry_slab": "Orange Stained Wooden Cabinetry Slab",
+
+    "block.urushi.magenta_stained_wooden_cabinetry_slab": "Magenta Stained Wooden Cabinetry Slab",
+
+    "block.urushi.light_blue_stained_wooden_cabinetry_slab": "Light Blue Stained Wooden Cabinetry Slab",
+
+    "block.urushi.yellow_stained_wooden_cabinetry_slab": "Yellow Stained Wooden Cabinetry Slab",
+
+    "block.urushi.lime_stained_wooden_cabinetry_slab": "Lime Stained Wooden Cabinetry Slab",
+
+    "block.urushi.pink_stained_wooden_cabinetry_slab": "Pink Stained Wooden Cabinetry Slab",
+
+    "block.urushi.gray_stained_wooden_cabinetry_slab": "Gray Stained Wooden Cabinetry Slab",
+
+    "block.urushi.light_gray_stained_wooden_cabinetry_slab": "Light Gray Stained Wooden Cabinetry Slab",
+
+    "block.urushi.cyan_stained_wooden_cabinetry_slab": "Cyan Stained Wooden Cabinetry Slab",
+
+    "block.urushi.purple_stained_wooden_cabinetry_slab": "Purple Stained Wooden Cabinetry Slab",
+
+    "block.urushi.blue_stained_wooden_cabinetry_slab": "Blue Stained Wooden Cabinetry Slab",
+
+    "block.urushi.brown_stained_wooden_cabinetry_slab": "Brown Stained Wooden Cabinetry Slab",
+
+    "block.urushi.green_stained_wooden_cabinetry_slab": "Green Stained Wooden Cabinetry Slab",
+
+    "block.urushi.red_stained_wooden_cabinetry_slab": "Red Stained Wooden Cabinetry Slab",
+
+    "block.urushi.black_stained_wooden_cabinetry_slab": "Black Stained Wooden Cabinetry Slab",
+
+    "block.urushi.white_stained_wooden_cabinetry": "White Stained Wooden Cabinetry",
+
+    "block.urushi.orange_stained_wooden_cabinetry": "Orange Stained Wooden Cabinetry",
+
+    "block.urushi.magenta_stained_wooden_cabinetry": "Magenta Stained Wooden Cabinetry",
+
+    "block.urushi.light_blue_stained_wooden_cabinetry": "Light Blue Stained Wooden Cabinetry",
+
+    "block.urushi.yellow_stained_wooden_cabinetry": "Yellow Stained Wooden Cabinetry",
+
+    "block.urushi.lime_stained_wooden_cabinetry": "Lime Stained Wooden Cabinetry",
+
+    "block.urushi.pink_stained_wooden_cabinetry": "Pink Stained Wooden Cabinetry",
+
+    "block.urushi.gray_stained_wooden_cabinetry": "Gray Stained Wooden Cabinetry",
+
+    "block.urushi.light_gray_stained_wooden_cabinetry": "Light Gray Stained Wooden Cabinetry",
+
+    "block.urushi.cyan_stained_wooden_cabinetry": "Cyan Stained Wooden Cabinetry",
+
+    "block.urushi.purple_stained_wooden_cabinetry": "Purple Stained Wooden Cabinetry",
+
+    "block.urushi.blue_stained_wooden_cabinetry": "Blue Stained Wooden Cabinetry",
+
+    "block.urushi.brown_stained_wooden_cabinetry": "Brown Stained Wooden Cabinetry",
+
+    "block.urushi.green_stained_wooden_cabinetry": "Green Stained Wooden Cabinetry",
+
+    "block.urushi.red_stained_wooden_cabinetry": "Red Stained Wooden Cabinetry",
+
+    "block.urushi.black_stained_wooden_cabinetry": "Black Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_white_stained_wooden_cabinetry": "Doubled White Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_orange_stained_wooden_cabinetry": "Doubled Orange Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_magenta_stained_wooden_cabinetry": "Doubled Magenta Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_light_blue_stained_wooden_cabinetry": "Doubled Light Blue Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_yellow_stained_wooden_cabinetry": "Doubled Yellow Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_lime_stained_wooden_cabinetry": "Doubled Lime Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_pink_stained_wooden_cabinetry": "Doubled Pink Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_gray_stained_wooden_cabinetry": "Doubled Gray Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_light_gray_stained_wooden_cabinetry": "Doubled Light Gray Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_cyan_stained_wooden_cabinetry": "Doubled Cyan Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_purple_stained_wooden_cabinetry": "Doubled Purple Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_blue_stained_wooden_cabinetry": "Doubled Blue Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_brown_stained_wooden_cabinetry": "Doubled Brown Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_green_stained_wooden_cabinetry": "Doubled Green Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_red_stained_wooden_cabinetry": "Doubled Red Stained Wooden Cabinetry",
+
+    "block.urushi.doubled_black_stained_wooden_cabinetry": "Doubled Black Stained Wooden Cabinetry",
+
+    "gui.jei.category.urushi.wood_element_tier1_crafting": "Ritual",
+
+    "gui.jei.category.urushi.fire_element_tier1_crafting": "Ritual",
+
+    "gui.jei.category.urushi.earth_element_tier1_crafting": "Ritual",
+
+    "gui.jei.category.urushi.metal_element_tier1_crafting": "Ritual",
+
+    "gui.jei.category.urushi.water_element_tier1_crafting": "Ritual",
+
+    "gui.jei.category.urushi.wood_element_crafting.reiryoku": "Wood Element Reiryoku",
+
+    "gui.jei.category.urushi.fire_element_crafting.reiryoku": "Fire Element Reiryoku",
+
+    "gui.jei.category.urushi.earth_element_crafting.reiryoku": "Earth Element Reiryoku",
+
+    "gui.jei.category.urushi.metal_element_crafting.reiryoku": "Metal Element Reiryoku",
+
+    "gui.jei.category.urushi.water_element_crafting.reiryoku": "Water Element Reiryoku",
+
+    "advancements.urushi.root.title": "Urushi",
+
+    "advancements.urushi.root.description": "A Japanese style architecture and magic mod",
+
+    "advancements.urushi.lacquer_sapling.title": "Traditional",
+
+    "advancements.urushi.lacquer_sapling.description": "Obtain a Lacquer Sapling",
+
+    "advancements.urushi.raw_urushi.title": "Squishy-Sticky",
+
+    "advancements.urushi.raw_urushi.description": "Have some Raw Urushi in your inventory",
+
+    "advancements.urushi.climbing_rope.title": "Acrophobia",
+
+    "advancements.urushi.climbing_rope.description": "Craft a Climbing Rope",
+
+    "advancements.urushi.wooden_cabinetry_slab.title": "High Card",
+
+    "advancements.urushi.wooden_cabinetry_slab.description": "Craft a Wooden Cabinetry Slab",
+
+    "advancements.urushi.wooden_cabinetry.title": "Two Pair",
+
+    "advancements.urushi.wooden_cabinetry.description": "Merge your Cabinery Slabs together",
+
+    "advancements.urushi.doubled_wooden_cabinetry.title": "Four of a Kind",
+
+    "advancements.urushi.doubled_wooden_cabinetry.description": "Double your Cabinery",
+
+    "advancements.urushi.japanese_timber_bamboo.title": "Once upon a time, in the bamboo forest...",
+
+    "advancements.urushi.japanese_timber_bamboo.description": "...a Timber Bamboo cutter came across",
+
+    "advancements.urushi.bamboo_charcoal.title": "Easy Fuel, Easy Coal",
+
+    "advancements.urushi.bamboo_charcoal.description": "Obtain some Bamboo Charcoal",
+
+    "advancements.urushi.kakuriyo_dirt.title": "Kamikakushi",
+
+    "advancements.urushi.kakuriyo_dirt.description": "Grab some Kakuriyo Dirt in Kakuriyo Dimension",
+
+    "advancements.urushi.cobbled_yomi_stone.title": "Death 'n' Roll",
+
+    "advancements.urushi.cobbled_yomi_stone.description": "Obtain Cobbled Yomi Stone",
+
+    "advancements.urushi.ghost_core.title": "Where are the Lazy Bones?",
+
+    "advancements.urushi.ghost_core.description": "Obtain Ghost Core",
+
+    "advancements.urushi.lantern_plant_fruit.title": "Deeply Missed",
+
+    "advancements.urushi.lantern_plant_fruit.description": "Pick some Lantern Plant Fruit",
+
+    "advancements.urushi.lantern_plant_torch.title": "Lightbringers",
+
+    "advancements.urushi.lantern_plant_torch.description": "Craft some torch by Lantern Plant Fruit",
+
+    "advancements.urushi.sacred_rock.title": "Naturism",
+
+    "advancements.urushi.sacred_rock.description": "These Sacred Rocks consume blocks!?",
+
+    "advancements.urushi.emitter_tier1.title": "Make Your Move",
+
+    "advancements.urushi.emitter_tier1.description": "Craft a Birch Emitter",
+
+    "advancements.urushi.crafting_table_tier1.title": "Preparation of Rites",
+
+    "advancements.urushi.crafting_table_tier1.description": "Craft a Birch Altar",
+
+    "advancements.urushi.mirror_tier1.title": "Ray Tracing",
+
+    "advancements.urushi.mirror_tier1.description": "Craft a Birch Mirror",
+
+    "advancements.urushi.tank_tier1.title": "Storing Technique",
+
+    "advancements.urushi.tank_tier1.description": "Craft a Birch Onusa",
+
+    "advancements.urushi.magatama.title": "I Ritual Summon a Magatama!",
+
+    "advancements.urushi.magatama.description": "Craft Magatama of any Element",
+
+    "advancements.urushi.wagasa.title": "Parachuting",
+
+    "advancements.urushi.wagasa.description": "Obtain Paper Umbrella",
+
+    "advancements.urushi.uchiwa.title": "Summertime Memories",
+
+    "advancements.urushi.uchiwa.description": "Obtain Uchiwa",
+
+    "advancements.urushi.amber_igniter.title": "Yoshii(TM) Flint, Best Flint",
+
+    "advancements.urushi.amber_igniter.description": "Obtain Amber Igniter",
+
+    "advancements.urushi.shichirin.title": "Burn",
+
+    "advancements.urushi.shichirin.description": "Fire a Shichirin Stove",
+
+    "advancements.urushi.kitsunebi.title": "Ghost Light",
+
+    "advancements.urushi.kitsunebi.description": "Where is the Kitsunebi...?",
+
+    "advancements.urushi.fox_hopper.title": "What Does the Fox Play?",
+
+    "advancements.urushi.fox_hopper.description": "Construct a better hopper",
+
+    "block.urushi.orange_plaster": "Orange Sikkui",
+
+    "block.urushi.orange_plaster_slab": "Orange Sikkui Slab",
+
+    "block.urushi.orange_plaster_stairs": "Orange Sikkui Stairs",
+
+   "block.urushi.magenta_plaster": "Magenta Sikkui",
+
+    "block.urushi.magenta_plaster_slab": "Magenta Sikkui Slab",
+
+    "block.urushi.magenta_plaster_stairs": "Magenta Sikkui Stairs",
+
+    "block.urushi.light_blue_plaster": "Light Blue Sikkui",
+
+    "block.urushi.light_blue_plaster_slab": "Light Blue Sikkui Slab",
+
+    "block.urushi.light_blue_plaster_stairs": "Light Blue Sikkui Stairs",
+
+    "block.urushi.yellow_plaster": "Yellow Plaster",
+
+    "block.urushi.yellow_plaster_slab": "Yellow Plaster Slab",
+
+    "block.urushi.yellow_plaster_stairs": "Yellow Plaster Stairs",
+
+    "block.urushi.lime_plaster": "Lime Sikkui",
+
+    "block.urushi.lime_plaster_slab": "Lime Sikkui Slab",
+
+    "block.urushi.lime_plaster_stairs": "Lime Sikkui Stairs",
+
+    "block.urushi.pink_plaster": "Pink Sikkui",
+
+    "block.urushi.pink_plaster_slab": "Pink Sikkui Slab",
+
+    "block.urushi.pink_plaster_stairs": "Pink Sikkui Stairs",
+
+    "block.urushi.light_gray_plaster": "Light Gray Sikkui",
+
+    "block.urushi.light_gray_plaster_slab": "Light Gray Sikkui Slab",
+
+    "block.urushi.light_gray_plaster_stairs": "Light Gray Sikkui Stairs",
+
+    "block.urushi.gray_plaster": "Gray Sikkui",
+
+    "block.urushi.gray_plaster_slab": "Gray Sikkui Slab",
+
+    "block.urushi.gray_plaster_stairs": "Gray Sikkui Stairs",
+
+    "block.urushi.cyan_plaster": "Cyan Sikkui",
+
+    "block.urushi.cyan_plaster_slab": "Cyan Sikkui Slab",
+
+    "block.urushi.cyan_plaster_stairs": "Cyan Sikkui Stairs",
+
+    "block.urushi.purple_plaster": "Purple Sikkui",
+
+    "block.urushi.purple_plaster_slab": "Purple Sikkui Slab",
+
+    "block.urushi.purple_plaster_stairs": "Purple Sikkui Stairs",
+
+    "block.urushi.blue_plaster": "Blue Sikkui",
+
+    "block.urushi.blue_plaster_slab": "Blue Sikkui Slab",
+
+    "block.urushi.blue_plaster_stairs": "Blue Sikkui Stairs",
+
+    "block.urushi.brown_plaster": "Brown Sikkui",
+
+    "block.urushi.brown_plaster_slab": "Brown Sikkui Slab",
+
+    "block.urushi.brown_plaster_stairs": "Brown Sikkui Stairs",
+
+    "block.urushi.green_plaster": "Green Sikkui",
+
+    "block.urushi.green_plaster_slab": "Green Sikkui Slab",
+
+    "block.urushi.green_plaster_stairs": "Green Sikkui Stairs",
+
+    "block.urushi.red_plaster": "Red Sikkui",
+
+    "block.urushi.red_plaster_slab": "Red Sikkui Slab",
+
+    "block.urushi.red_plaster_stairs": "Red Sikkui Stairs",
+
+    "block.urushi.black_plaster": "Black Sikkui",
+
+    "block.urushi.black_plaster_slab": "Black Sikkui Slab",
+
+    "block.urushi.black_plaster_stairs": "Black Sikkui Stairs",
+
+    "block.urushi.copper_giboshi": "Copper Giboshi",
+
+    "block.urushi.ghost_plaster": "Ghost Plaster",
+
+    "block.urushi.ghost_sand_coast": "Ghost Sand Coast",
+
+    "block.urushi.ghost_wattle_and_daub": "Ghost Wattle and Daub",
+
+    "block.urushi.ghost_concrete": "Ghost Concrete",
+
+    "block.urushi.lantern_plant_block": "Lantern Plant Lantern",
+
+    "item.urushi.shiitake_goggles": "Shiitake Goggles",
+
+    "block.urushi.oak_board_window": "Oak Board Window",
+
+    "block.urushi.spruce_board_window": "Spruce Board Window",
+
+    "block.urushi.birch_board_window": "Birch Board Window",
+
+    "block.urushi.jungle_board_window": "Jungle Board Window",
+
+    "block.urushi.acacia_board_window": "Acacia Board Window",
+
+    "block.urushi.dark_oak_board_window": "Dark Oak Board Window",
+
+    "block.urushi.japanese_apricot_board_window": "Japanese Apricot Board Window",
+
+    "block.urushi.sakura_board_window": "Sakura Board Window",
+
+    "block.urushi.cypress_board_window": "Cypress Board Window",
+
+    "block.urushi.japanese_cedar_board_window": "Japanese Cedar Board Window",
+
+    "block.urushi.red_urushi_board_window": "Red Urushi Board Window",
+
+    "block.urushi.black_urushi_board_window": "Black Urushi Board Window",
+
+    "item.urushi.roasted_shiitake": "Roasted Shiitake Mushroom",
+
+    "item.urushi.onsen_egg": "Hot Spring Egg",
+
+    "item.urushi.so": "So Cheese",
+
+    "item.urushi.cheese_gyudon": "Cheese Gyudon",
+
+    "item.urushi.cheese_gyudon_with_onsen_egg": "Cheese Gyudon with Hot Spring Egg",
+
+    "info.urushi.shiitake_goggles": "Does not aggravate Endermen.",
+
+    "info.urushi.onsen_egg": "Throw a Egg into Hot Spring Water to obtain.",
+
+    "block.urushi.ajisai": "Hydrangea",
+
+    "block.urushi.ishigaki_block": "Ishigaki Block",
+
+    "block.urushi.ishigaki_slab": "Ishigaki Slab",
+
+    "block.urushi.ishigaki_stairs": "Ishigaki Stairs",
+
+    "block.urushi.ishigaki_wall": "Ishigaki Wall",
+
+    "block.urushi.pendant_light": "Pendant Light",
+
+    "block.urushi.concrete_block_wall": "Concrete Block Wall",
+
+    "block.urushi.hot_ironsand": "Hot Ironsand",
+
+    "block.urushi.hot_iron_plate": "Hot Iron Plate",
+
+    "block.urushi.quenched_iron_plate": "Quenched Iron Plate",
+
+    "block.urushi.crushed_iron": "Crushed Iron Plate",
+
+    "block.urushi.stacked_iron": "Stacked Iron Plate",
+
+    "block.urushi.hot_iron_ingot_1": "Hot Iron Ingot",
+
+    "block.urushi.hot_iron_ingot_2": "Hot Iron Ingot",
+
+    "block.urushi.hot_iron_ingot_3": "Hot Iron Ingot",
+
+    "block.urushi.hot_iron_ingot_4": "Hot Iron Ingot",
+
+    "block.urushi.hot_iron_ingot_5": "Hot Iron Ingot",
+
+    "block.urushi.hot_iron_blade_1": "Forged Iron Ingot",
+
+    "block.urushi.hot_iron_blade_2": "Hot Iron Blade",
+
+    "block.urushi.quenched_iron_blade": "Quenched Iron Blade",
+
+    "item.urushi.iron_katana": "Iron Katana",
+
+    "item.urushi.wood_element_paper": "Wood Element Shide",
+
+    "item.urushi.fire_element_paper": "Fire Element Shide",
+
+    "item.urushi.earth_element_paper": "Earth Element Shide",
+
+    "item.urushi.metal_element_paper": "Metal Element Shide",
+
+    "item.urushi.water_element_paper": "Water Element Shide",
+
+    "block.urushi.rock": "Rock",
+
+    "block.urushi.sazare_ishi": "Weatherd Rock",
+
+    "block.urushi.oak_yukimi_shoji": "Oak Yukimi Shoji",
+
+    "block.urushi.spruce_yukimi_shoji": "Spruce Yukimi Shoji",
+
+    "block.urushi.birch_yukimi_shoji": "Birch Yukimi Shoji",
+
+    "block.urushi.jungle_yukimi_shoji": "Jungle Yukimi Shoji",
+
+    "block.urushi.acacia_yukimi_shoji": "Acacia Yukimi Shoji",
+
+    "block.urushi.dark_oak_yukimi_shoji": "Dark Oak Yukimi Shoji",
+
+    "block.urushi.japanese_apricot_yukimi_shoji": "Japanese Apricot Yukimi Shoji",
+
+    "block.urushi.sakura_yukimi_shoji": "Sakura Yukimi Shoji",
+
+    "block.urushi.cypress_yukimi_shoji": "Cypress Yukimi Shoji",
+
+    "block.urushi.japanese_cedar_yukimi_shoji": "Japanese Cedar Yukimi Shoji",
+
+    "block.urushi.red_urushi_yukimi_shoji": "Red Urushi Yukimi Shoji",
+
+    "block.urushi.black_urushi_yukimi_shoji": "Black Urushi Yukimi Shoji",
+
+    "info.urushi.removed": "This item has been removed. ",
+
+    "info.urushi.rock": "This will transform into Weathered Rock when a Pointed Dripstone is placed above.",
+
+    "info.urushi.sazare_ishi": "When Pointed Dripstone is placed above a Rock, the Rock will transform into this. ",
+
+    "info.urushi.slot_rice_cauldron": "Input: ABOVE, Output: OTHER FACES",
+
+    "info.urushi.slot_fryer": "Input: ABOVE, Fuel: SIDES, Output: BELOW",
+
+    "info.urushi.slot_oil_extractor": "Input: ABOVE, Output: BELOW",
+
+    "info.urushi.slot_shichirin": "Input: ABOVE, Fuel: SIDES, Output: BELOW",
+
+    "info.urushi.slot_sanbo": "Input: ABOVE, Output: OTHER FACES",
+
+    "info.urushi.katana": "Right-click to leaps foward and sweep attack by dealing half of damage.",
+
+    "info.urushi.wood_element_paper": "Use Shide to a WOOD Element block to obtain. ",
+
+    "info.urushi.fire_element_paper": "Use Shide to a FIRE Element block to obtain. ",
+
+    "info.urushi.earth_element_paper": "Use Shide to an Earth Element block to obtain. ",
+
+    "info.urushi.metal_element_paper": "Use Shide to a Metal Element block to obtain. ",
+
+    "info.urushi.water_element_paper": "Use Shide to a Water Element block to obtain. ",
+
+     "block.urushi.oak_framed_orange_plaster": "Oak-Framed Orange Sikkui",
+"block.urushi.oak_framed_magenta_plaster": "Oak-Framed Magenta Sikkui",
+"block.urushi.oak_framed_light_blue_plaster": "Oak-Framed Light Blue Sikkui",
+"block.urushi.oak_framed_yellow_plaster": "Oak-Framed Yellow Sikkui",
+"block.urushi.oak_framed_lime_plaster": "Oak-Framed Lime Sikkui",
+"block.urushi.oak_framed_pink_plaster": "Oak-Framed Pink Sikkui",
+"block.urushi.oak_framed_gray_plaster": "Oak-Framed Gray Sikkui",
+"block.urushi.oak_framed_light_gray_plaster": "Oak-Framed Light Gray Sikkui",
+"block.urushi.oak_framed_cyan_plaster": "Oak-Framed Cyan Sikkui",
+"block.urushi.oak_framed_purple_plaster": "Oak-Framed Purple Sikkui",
+"block.urushi.oak_framed_blue_plaster": "Oak-Framed Blue Sikkui",
+"block.urushi.oak_framed_brown_plaster": "Oak-Framed Brown Sikkui",
+"block.urushi.oak_framed_green_plaster": "Oak-Framed Green Sikkui",
+"block.urushi.oak_framed_red_plaster": "Oak-Framed Red Sikkui",
+"block.urushi.oak_framed_black_plaster": "Oak-Framed Black Sikkui",
+"block.urushi.spruce_framed_orange_plaster": "Spruce-Framed Orange Sikkui",
+"block.urushi.spruce_framed_magenta_plaster": "Spruce-Framed Magenta Sikkui",
+"block.urushi.spruce_framed_light_blue_plaster": "Spruce-Framed Light Blue Sikkui",
+"block.urushi.spruce_framed_yellow_plaster": "Spruce-Framed Yellow Sikkui",
+"block.urushi.spruce_framed_lime_plaster": "Spruce-Framed Lime Sikkui",
+"block.urushi.spruce_framed_pink_plaster": "Spruce-Framed Pink Sikkui",
+"block.urushi.spruce_framed_gray_plaster": "Spruce-Framed Gray Sikkui",
+"block.urushi.spruce_framed_light_gray_plaster": "Spruce-Framed Light Gray Sikkui",
+"block.urushi.spruce_framed_cyan_plaster": "Spruce-Framed Cyan Sikkui",
+"block.urushi.spruce_framed_purple_plaster": "Spruce-Framed Purple Sikkui",
+"block.urushi.spruce_framed_blue_plaster": "Spruce-Framed Blue Sikkui",
+"block.urushi.spruce_framed_brown_plaster": "Spruce-Framed Brown Sikkui",
+"block.urushi.spruce_framed_green_plaster": "Spruce-Framed Green Sikkui",
+"block.urushi.spruce_framed_red_plaster": "Spruce-Framed Red Sikkui",
+"block.urushi.spruce_framed_black_plaster": "Spruce-Framed Black Sikkui",
+"block.urushi.birch_framed_orange_plaster": "Birch-Framed Orange Sikkui",
+"block.urushi.birch_framed_magenta_plaster": "Birch-Framed Magenta Sikkui",
+"block.urushi.birch_framed_light_blue_plaster": "Birch-Framed Light Blue Sikkui",
+"block.urushi.birch_framed_yellow_plaster": "Birch-Framed Yellow Sikkui",
+"block.urushi.birch_framed_lime_plaster": "Birch-Framed Lime Sikkui",
+"block.urushi.birch_framed_pink_plaster": "Birch-Framed Pink Sikkui",
+"block.urushi.birch_framed_gray_plaster": "Birch-Framed Gray Sikkui",
+"block.urushi.birch_framed_light_gray_plaster": "Birch-Framed Light Gray Sikkui",
+"block.urushi.birch_framed_cyan_plaster": "Birch-Framed Cyan Sikkui",
+"block.urushi.birch_framed_purple_plaster": "Birch-Framed Purple Sikkui",
+"block.urushi.birch_framed_blue_plaster": "Birch-Framed Blue Sikkui",
+"block.urushi.birch_framed_brown_plaster": "Birch-Framed Brown Sikkui",
+"block.urushi.birch_framed_green_plaster": "Birch-Framed Green Sikkui",
+"block.urushi.birch_framed_red_plaster": "Birch-Framed Red Sikkui",
+"block.urushi.birch_framed_black_plaster": "Birch-Framed Black Sikkui",
+"block.urushi.jungle_framed_orange_plaster": "Jungle-Framed Orange Sikkui",
+"block.urushi.jungle_framed_magenta_plaster": "Jungle-Framed Magenta Sikkui",
+"block.urushi.jungle_framed_light_blue_plaster": "Jungle-Framed Light Blue Sikkui",
+"block.urushi.jungle_framed_yellow_plaster": "Jungle-Framed Yellow Sikkui",
+"block.urushi.jungle_framed_lime_plaster": "Jungle-Framed Lime Sikkui",
+"block.urushi.jungle_framed_pink_plaster": "Jungle-Framed Pink Sikkui",
+"block.urushi.jungle_framed_gray_plaster": "Jungle-Framed Gray Sikkui",
+"block.urushi.jungle_framed_light_gray_plaster": "Jungle-Framed Light Gray Sikkui",
+"block.urushi.jungle_framed_cyan_plaster": "Jungle-Framed Cyan Sikkui",
+"block.urushi.jungle_framed_purple_plaster": "Jungle-Framed Purple Sikkui",
+"block.urushi.jungle_framed_blue_plaster": "Jungle-Framed Blue Sikkui",
+"block.urushi.jungle_framed_brown_plaster": "Jungle-Framed Brown Sikkui",
+"block.urushi.jungle_framed_green_plaster": "Jungle-Framed Green Sikkui",
+"block.urushi.jungle_framed_red_plaster": "Jungle-Framed Red Sikkui",
+"block.urushi.jungle_framed_black_plaster": "Jungle-Framed Black Sikkui",
+"block.urushi.acacia_framed_orange_plaster": "Acacia-Framed Orange Sikkui",
+"block.urushi.acacia_framed_magenta_plaster": "Acacia-Framed Magenta Sikkui",
+"block.urushi.acacia_framed_light_blue_plaster": "Acacia-Framed Light Blue Sikkui",
+"block.urushi.acacia_framed_yellow_plaster": "Acacia-Framed Yellow Sikkui",
+"block.urushi.acacia_framed_lime_plaster": "Acacia-Framed Lime Sikkui",
+"block.urushi.acacia_framed_pink_plaster": "Acacia-Framed Pink Sikkui",
+"block.urushi.acacia_framed_gray_plaster": "Acacia-Framed Gray Sikkui",
+"block.urushi.acacia_framed_light_gray_plaster": "Acacia-Framed Light Gray Sikkui",
+"block.urushi.acacia_framed_cyan_plaster": "Acacia-Framed Cyan Sikkui",
+"block.urushi.acacia_framed_purple_plaster": "Acacia-Framed Purple Sikkui",
+"block.urushi.acacia_framed_blue_plaster": "Acacia-Framed Blue Sikkui",
+"block.urushi.acacia_framed_brown_plaster": "Acacia-Framed Brown Sikkui",
+"block.urushi.acacia_framed_green_plaster": "Acacia-Framed Green Sikkui",
+"block.urushi.acacia_framed_red_plaster": "Acacia-Framed Red Sikkui",
+"block.urushi.acacia_framed_black_plaster": "Acacia-Framed Black Sikkui",
+"block.urushi.dark_oak_framed_orange_plaster": "Dark-Oak-Framed Orange Sikkui",
+"block.urushi.dark_oak_framed_magenta_plaster": "Dark-Oak-Framed Magenta Sikkui",
+"block.urushi.dark_oak_framed_light_blue_plaster": "Dark-Oak-Framed Light Blue Sikkui",
+"block.urushi.dark_oak_framed_yellow_plaster": "Dark-Oak-Framed Yellow Sikkui",
+"block.urushi.dark_oak_framed_lime_plaster": "Dark-Oak-Framed Lime Sikkui",
+"block.urushi.dark_oak_framed_pink_plaster": "Dark-Oak-Framed Pink Sikkui",
+"block.urushi.dark_oak_framed_gray_plaster": "Dark-Oak-Framed Gray Sikkui",
+"block.urushi.dark_oak_framed_light_gray_plaster": "Dark-Oak-Framed Light Gray Sikkui",
+"block.urushi.dark_oak_framed_cyan_plaster": "Dark-Oak-Framed Cyan Sikkui",
+"block.urushi.dark_oak_framed_purple_plaster": "Dark-Oak-Framed Purple Sikkui",
+"block.urushi.dark_oak_framed_blue_plaster": "Dark-Oak-Framed Blue Sikkui",
+"block.urushi.dark_oak_framed_brown_plaster": "Dark-Oak-Framed Brown Sikkui",
+"block.urushi.dark_oak_framed_green_plaster": "Dark-Oak-Framed Green Sikkui",
+"block.urushi.dark_oak_framed_red_plaster": "Dark-Oak-Framed Red Sikkui",
+"block.urushi.dark_oak_framed_black_plaster": "Dark-Oak-Framed Black Sikkui",
+    "block.urushi.japanese_apricot_framed_orange_plaster": "Japanese-Apricot-Framed Orange Sikkui",
+"block.urushi.japanese_apricot_framed_magenta_plaster": "Japanese-Apricot-Framed Magenta Sikkui",
+"block.urushi.japanese_apricot_framed_light_blue_plaster": "Japanese-Apricot-Framed Light Blue Sikkui",
+"block.urushi.japanese_apricot_framed_yellow_plaster": "Japanese-Apricot-Framed Yellow Sikkui",
+"block.urushi.japanese_apricot_framed_lime_plaster": "Japanese-Apricot-Framed Lime Sikkui",
+"block.urushi.japanese_apricot_framed_pink_plaster": "Japanese-Apricot-Framed Pink Sikkui",
+"block.urushi.japanese_apricot_framed_gray_plaster": "Japanese-Apricot-Framed Gray Sikkui",
+"block.urushi.japanese_apricot_framed_light_gray_plaster": "Japanese-Apricot-Framed Light Gray Sikkui",
+"block.urushi.japanese_apricot_framed_cyan_plaster": "Japanese-Apricot-Framed Cyan Sikkui",
+"block.urushi.japanese_apricot_framed_purple_plaster": "Japanese-Apricot-Framed Purple Sikkui",
+"block.urushi.japanese_apricot_framed_blue_plaster": "Japanese-Apricot-Framed Blue Sikkui",
+"block.urushi.japanese_apricot_framed_brown_plaster": "Japanese-Apricot-Framed Brown Sikkui",
+"block.urushi.japanese_apricot_framed_green_plaster": "Japanese-Apricot-Framed Green Sikkui",
+"block.urushi.japanese_apricot_framed_red_plaster": "Japanese-Apricot-Framed Red Sikkui",
+"block.urushi.japanese_apricot_framed_black_plaster": "Japanese-Apricot-Framed Black Sikkui",
+"block.urushi.sakura_framed_orange_plaster": "Sakura-Framed Orange Sikkui",
+"block.urushi.sakura_framed_magenta_plaster": "Sakura-Framed Magenta Sikkui",
+"block.urushi.sakura_framed_light_blue_plaster": "Sakura-Framed Light Blue Sikkui",
+"block.urushi.sakura_framed_yellow_plaster": "Sakura-Framed Yellow Sikkui",
+"block.urushi.sakura_framed_lime_plaster": "Sakura-Framed Lime Sikkui",
+"block.urushi.sakura_framed_pink_plaster": "Sakura-Framed Pink Sikkui",
+"block.urushi.sakura_framed_gray_plaster": "Sakura-Framed Gray Sikkui",
+"block.urushi.sakura_framed_light_gray_plaster": "Sakura-Framed Light Gray Sikkui",
+"block.urushi.sakura_framed_cyan_plaster": "Sakura-Framed Cyan Sikkui",
+"block.urushi.sakura_framed_purple_plaster": "Sakura-Framed Purple Sikkui",
+"block.urushi.sakura_framed_blue_plaster": "Sakura-Framed Blue Sikkui",
+"block.urushi.sakura_framed_brown_plaster": "Sakura-Framed Brown Sikkui",
+"block.urushi.sakura_framed_green_plaster": "Sakura-Framed Green Sikkui",
+"block.urushi.sakura_framed_red_plaster": "Sakura-Framed Red Sikkui",
+"block.urushi.sakura_framed_black_plaster": "Sakura-Framed Black Sikkui",
+"block.urushi.cypress_framed_orange_plaster": "Cypress-Framed Orange Sikkui",
+"block.urushi.cypress_framed_magenta_plaster": "Cypress-Framed Magenta Sikkui",
+"block.urushi.cypress_framed_light_blue_plaster": "Cypress-Framed Light Blue Sikkui",
+"block.urushi.cypress_framed_yellow_plaster": "Cypress-Framed Yellow Sikkui",
+"block.urushi.cypress_framed_lime_plaster": "Cypress-Framed Lime Sikkui",
+"block.urushi.cypress_framed_pink_plaster": "Cypress-Framed Pink Sikkui",
+"block.urushi.cypress_framed_gray_plaster": "Cypress-Framed Gray Sikkui",
+"block.urushi.cypress_framed_light_gray_plaster": "Cypress-Framed Light Gray Sikkui",
+"block.urushi.cypress_framed_cyan_plaster": "Cypress-Framed Cyan Sikkui",
+"block.urushi.cypress_framed_purple_plaster": "Cypress-Framed Purple Sikkui",
+"block.urushi.cypress_framed_blue_plaster": "Cypress-Framed Blue Sikkui",
+"block.urushi.cypress_framed_brown_plaster": "Cypress-Framed Brown Sikkui",
+"block.urushi.cypress_framed_green_plaster": "Cypress-Framed Green Sikkui",
+"block.urushi.cypress_framed_red_plaster": "Cypress-Framed Red Sikkui",
+"block.urushi.cypress_framed_black_plaster": "Cypress-Framed Black Sikkui",
+"block.urushi.japanese_cedar_framed_orange_plaster": "Japanese-Cedar-Framed Orange Sikkui",
+"block.urushi.japanese_cedar_framed_magenta_plaster": "Japanese-Cedar-Framed Magenta Sikkui",
+"block.urushi.japanese_cedar_framed_light_blue_plaster": "Japanese-Cedar-Framed Light Blue Sikkui",
+"block.urushi.japanese_cedar_framed_yellow_plaster": "Japanese-Cedar-Framed Yellow Sikkui",
+"block.urushi.japanese_cedar_framed_lime_plaster": "Japanese-Cedar-Framed Lime Sikkui",
+"block.urushi.japanese_cedar_framed_pink_plaster": "Japanese-Cedar-Framed Pink Sikkui",
+"block.urushi.japanese_cedar_framed_gray_plaster": "Japanese-Cedar-Framed Gray Sikkui",
+"block.urushi.japanese_cedar_framed_light_gray_plaster": "Japanese-Cedar-Framed Light Gray Sikkui",
+"block.urushi.japanese_cedar_framed_cyan_plaster": "Japanese-Cedar-Framed Cyan Sikkui",
+"block.urushi.japanese_cedar_framed_purple_plaster": "Japanese-Cedar-Framed Purple Sikkui",
+"block.urushi.japanese_cedar_framed_blue_plaster": "Japanese-Cedar-Framed Blue Sikkui",
+"block.urushi.japanese_cedar_framed_brown_plaster": "Japanese-Cedar-Framed Brown Sikkui",
+"block.urushi.japanese_cedar_framed_green_plaster": "Japanese-Cedar-Framed Green Sikkui",
+"block.urushi.japanese_cedar_framed_red_plaster": "Japanese-Cedar-Framed Red Sikkui",
+"block.urushi.japanese_cedar_framed_black_plaster": "Japanese-Cedar-Framed Black Sikkui",
+"block.urushi.red_framed_orange_plaster": "Red-Urushi-Framed Orange Sikkui",
+"block.urushi.red_framed_magenta_plaster": "Red-Urushi-Framed Magenta Sikkui",
+"block.urushi.red_framed_light_blue_plaster": "Red-Urushi-Framed Light Blue Sikkui",
+"block.urushi.red_framed_yellow_plaster": "Red-Urushi-Framed Yellow Sikkui",
+"block.urushi.red_framed_lime_plaster": "Red-Urushi-Framed Lime Sikkui",
+"block.urushi.red_framed_pink_plaster": "Red-Urushi-Framed Pink Sikkui",
+"block.urushi.red_framed_gray_plaster": "Red-Urushi-Framed Gray Sikkui",
+"block.urushi.red_framed_light_gray_plaster": "Red-Urushi-Framed Light Gray Sikkui",
+"block.urushi.red_framed_cyan_plaster": "Red-Urushi-Framed Cyan Sikkui",
+"block.urushi.red_framed_purple_plaster": "Red-Urushi-Framed Purple Sikkui",
+"block.urushi.red_framed_blue_plaster": "Red-Urushi-Framed Blue Sikkui",
+"block.urushi.red_framed_brown_plaster": "Red-Urushi-Framed Brown Sikkui",
+"block.urushi.red_framed_green_plaster": "Red-Urushi-Framed Green Sikkui",
+"block.urushi.red_framed_red_plaster": "Red-Urushi-Framed Red Sikkui",
+"block.urushi.red_framed_black_plaster": "Red-Urushi-Framed Black Sikkui",
+"block.urushi.black_framed_orange_plaster": "Black-Urushi-Framed Orange Sikkui",
+"block.urushi.black_framed_magenta_plaster": "Black-Urushi-Framed Magenta Sikkui",
+"block.urushi.black_framed_light_blue_plaster": "Black-Urushi-Framed Light Blue Sikkui",
+"block.urushi.black_framed_yellow_plaster": "Black-Urushi-Framed Yellow Sikkui",
+"block.urushi.black_framed_lime_plaster": "Black-Urushi-Framed Lime Sikkui",
+"block.urushi.black_framed_pink_plaster": "Black-Urushi-Framed Pink Sikkui",
+"block.urushi.black_framed_gray_plaster": "Black-Urushi-Framed Gray Sikkui",
+"block.urushi.black_framed_light_gray_plaster": "Black-Urushi-Framed Light Gray Sikkui",
+"block.urushi.black_framed_cyan_plaster": "Black-Urushi-Framed Cyan Sikkui",
+"block.urushi.black_framed_purple_plaster": "Black-Urushi-Framed Purple Sikkui",
+"block.urushi.black_framed_blue_plaster": "Black-Urushi-Framed Blue Sikkui",
+"block.urushi.black_framed_brown_plaster": "Black-Urushi-Framed Brown Sikkui",
+"block.urushi.black_framed_green_plaster": "Black-Urushi-Framed Green Sikkui",
+"block.urushi.black_framed_red_plaster": "Black-Urushi-Framed Red Sikkui",
+"block.urushi.black_framed_black_plaster": "Black-Urushi-Framed Black Sikkui",
+"itemGroup.urushi_plaster": "Urushi-Sikkui",
+
+    "item.urushi.baked_mochocho": "Red Bean Cake",
+    "info.urushi.obanyaki": "Oban-yaki",
+    "info.urushi.kaitenyaki": "Kaiten-yaki",
+    "info.urushi.imagawayaki": "Imagawa-yaki",
+    "info.urushi.oyaki": "Oyaki",
+    "info.urushi.gozasourou": "Gozasoro",
+    "info.urushi.hammer": "Right-click on blocks to change the texture conection.",
+    "item.urushi.shide": "Shide",
+    "item.urushi.tsuna": "Tuna",
+    "item.urushi.tsuna_sashimi": "Tuna Sashimi",
+    "item.urushi.salmon_sashimi": "Salmon Sashimi",
+    "item.urushi.squid_sashimi": "Squid Sashimi",
+    "item.urushi.salmon_roe": "Salmon Roe",
+    "item.urushi.tsuna_sushi": "Tuna Sushi",
+    "item.urushi.salmon_sushi": "Salmon Sushi",
+    "item.urushi.squid_sushi": "Squid Sushi",
+    "item.urushi.egg_sushi": "Egg Sushi",
+    "item.urushi.salmon_roe_sushi": "Salmon Roe Sushi",
+    "item.urushi.inari": "Inari Sushi",
+    "item.urushi.syari": "Syari Sushi Rice",
+    "block.urushi.sushi_conveyor": "Conveyor for Sushi",
+    "entity.urushi.tsuna_sushi_food": "Tuna Sushi",
+    "entity.urushi.salmon_sushi_food": "Salmon Sushi",
+    "entity.urushi.squid_sushi_food": "Squid Sushi",
+    "entity.urushi.egg_sushi_food": "Egg Sushi",
+    "entity.urushi.salmon_roe_sushi_food": "Salmon Roe Sushi",
+    "entity.urushi.inari_food": "Inari Sushi",
+    "block.urushi.urushi_hopper": "Urushi Hopper",
+	"container.urushihopper": "Urushi Hopper",
+    "info.urushi.urushi_hopper": "A cheaper but slower hopper",
+    "item.urushi.yakitori": "Yakitori",
+    "item.urushi.hiyayakko": "Hiyayakko Tofu",
+    "item.urushi.matured_japanese_apricot_fruit": "Ripe Plum",
+    "item.urushi.pickled_japanese_apricot": "Pickled Plum",
+    "block.urushi.green_onion_crop": "Green Onion",
+    "item.urushi.wood_enhanced_jadeite": "Wood Enhanced Jadeite",
+    "item.urushi.fire_enhanced_jadeite": "Fire Enhanced Jadeite",
+    "item.urushi.earth_enhanced_jadeite": "Earth Enhanced Jadeite",
+    "item.urushi.metal_enhanced_jadeite": "Metal Enhanced Jadeite",
+    "item.urushi.water_enhanced_jadeite": "Water Enhanced Jadeite",
+    "block.urushi.wood_enhanced_jadeite_brick": "Wood Enhanced Jadeite Brick",
+    "block.urushi.fire_enhanced_jadeite_brick": "Fire Enhanced Jadeite Brick",
+    "block.urushi.earth_enhanced_jadeite_brick": "Earth Enhanced Jadeite Brick",
+    "block.urushi.metal_enhanced_jadeite_brick": "Metal Enhanced Jadeite Brick",
+    "block.urushi.water_enhanced_jadeite_brick": "Water Enhanced Jadeite Brick",
+    "block.urushi.wood_element_hokora": "Wood Element Hokora",
+    "block.urushi.fire_element_hokora": "Fire Element Hokora",
+    "block.urushi.earth_element_hokora": "Earth Element Hokora",
+    "block.urushi.metal_element_hokora": "Metal Element Hokora",
+    "block.urushi.water_element_hokora": "Water Element Hokora",
+    "block.urushi.wood_element_crafting_table_tier2": "Jadeite Wood Element Altar",
+    "block.urushi.fire_element_crafting_table_tier2": "Jadeite Fire Element Altar",
+    "block.urushi.earth_element_crafting_table_tier2": "Jadeite Earth Element Altar",
+    "block.urushi.metal_element_crafting_table_tier2": "Jadeite Metal Element Altar",
+    "block.urushi.water_element_crafting_table_tier2": "Jadeite Water Element Altar",
+    "gui.jei.category.urushi.wood_element_tier2_crafting": "Ritual",
+    "gui.jei.category.urushi.fire_element_tier2_crafting": "Ritual",
+    "gui.jei.category.urushi.earth_element_tier2_crafting": "Ritual",
+    "gui.jei.category.urushi.metal_element_tier2_crafting": "Ritual",
+    "gui.jei.category.urushi.water_element_tier2_crafting": "Ritual",
+    "info.urushi.hokora": "Right-click or use a Hopper to insert the required item to generate 5 Reiryoku.",
+    "info.urushi.wood_hokora": "Required Item : Ripe Plum",
+    "info.urushi.fire_hokora": "Required Item : Wheat",
+    "info.urushi.earth_hokora": "Required Item : Rice Ear",
+    "info.urushi.metal_hokora": "Required Item : Green Onion",
+    "info.urushi.water_hokora": "Required Item : Soy Beans",
+    "info.urushi.cypress_sapling": "Generates on hills",
+    "info.urushi.japanese_cedar_sapling": "Generates on hills and in the Kakuriyo Dimension",
+    "info.urushi.lacquer_sapling": "Generates in Forests, spawner chests and chests in villages on Plains.",
+
+   "patchouli.urushi.kakuriyo_book.name": "Trip to the Underroot",
+   "patchouli.urushi.kakuriyo_book.subtitle": "Utsushiyo Banare",
+   "patchouli.urushi.kakuriyo_book.landing_text": "The guide that helps you travel through the worlds of Urushi. Ready for your $(#cc3345)afterlife$(#000)?",
+   "patchouli.urushi.urushi_book.name": "About Urushi",
+   "patchouli.urushi.urushi_book.subtitle": "Japanese Blocks!",
+   "patchouli.urushi.urushi_book.landing_text": "Urushi adds many Japanese blocks. Also, urushi has magic contents.",
+   "item.urushi.yakitori": "Yakitori",
+    "item.urushi.hiyayakko": "Hiyayakko",
+   "fluid_type.urushi.hot_spring_fluid": "Hot Spring Water",
+   "block.urushi.fermentation_barrel": "Fermentation Barrel",
+   "block.urushi.fermentation_barrel_with_rice": "Fermentation Barrel with Rice",
+   "block.urushi.fermentation_barrel_with_rice_malt": "Fermentation Barrel with Rice Malt",
+   "block.urushi.fermentation_barrel_with_shikomi_miso": "Fermentation Barrel with Shikomi Miso",
+   "block.urushi.fermentation_barrel_with_miso": "Fermentation Barrel with Miso",
+   "item.urushi.shikomi_miso": "Shikomi Miso",
+   "item.urushi.miso": "Miso",
+   "item.urushi.miso_soup": "Miso Soup",
+   "item.urushi.green_onion_and_raw_egg_gyudon": "Gyudon with Green Onion and Raw Egg",
+   "item.urushi.mustard_leaf_and_cod_caviar_gyudon": "Gyudon with Mustard Leaf, Cod Caviar and Mayonnaise",
+   "item.urushi.gold_leaf": "Gold Leaf",
+   "block.urushi.gold_leaf_block": "Gold Leaf Block",
+   "block.urushi.gold_leaf_slab": "Gold Leaf Slab",
+   "block.urushi.gold_leaf_stairs": "Gold Leaf Stairs",
+   "info.urushi.crop": "This is a crop and can be planted on Farmland. ",
+   "info.urushi.fermentation_barrel": "Place, fill and left to ferment",
+   "info.urushi.fermentation_barrel2": "Right-click on Fermentation Barrel with at least 8 items to obtain",
+   "info.urushi.rice_malt": "Put 8 Rice in Fermentation Barrel to obtain",
+   "info.urushi.miso": "Put 8 Shikomi Miso in Fermentation Barrel to obtain",
+   "block.urushi.oak_wall_for_framed_blocks": "Oak Wall",
+   "block.urushi.spruce_wall_for_framed_blocks": "Spruce Wall",
+   "block.urushi.birch_wall_for_framed_blocks": "Birch Wall",
+   "block.urushi.jungle_wall_for_framed_blocks": "Jungle Wall",
+   "block.urushi.acacia_wall_for_framed_blocks": "Acacia Wall",
+   "block.urushi.dark_oak_wall_for_framed_blocks": "Dark Oak Wall",
+   "block.urushi.japanese_apricot_wall_for_framed_blocks": "Japanese Apricot Wall",
+   "block.urushi.sakura_wall_for_framed_blocks": "Sakura Wall",
+   "block.urushi.cypress_wall_for_framed_blocks": "Cypress Wall",
+   "block.urushi.japanese_cedar_wall_for_framed_blocks": "Japanese Cedar Wall",
+   "block.urushi.red_urushi_wall_for_framed_blocks": "Red Urushi Wall",
+   "block.urushi.black_urushi_wall_for_framed_blocks": "Black Urushi Wall",
+   "block.urushi.auto_crafting_table": "Auto Crafting Table",
+   "block.urushi.advanced_auto_crafting_table": "Advanced Auto Crafting Table",
+   "block.urushi.vertical_plaster_slab": "Vertical Sikkui Slab",
+   "block.urushi.vertical_orange_plaster_slab": "Vertical Orange Sikkui Slab",
+   "block.urushi.vertical_magenta_plaster_slab": "Vertical Magenta Sikkui Slab",
+   "block.urushi.vertical_light_blue_plaster_slab": "Vertical Light Blue Sikkui Slab",
+   "block.urushi.vertical_yellow_plaster_slab": "Vertical Yellow Sikkui Slab",
+   "block.urushi.vertical_lime_plaster_slab": "Vertical Lime Sikkui Slab",
+   "block.urushi.vertical_pink_plaster_slab": "Vertical Pink Sikkui Slab",
+   "block.urushi.vertical_light_gray_plaster_slab": "Vertical Light Gray Sikkui Slab",
+   "block.urushi.vertical_gray_plaster_slab": "Vertical Gray Sikkui Slab",
+   "block.urushi.vertical_cyan_plaster_slab": "Vertical Cyan Sikkui Slab",
+   "block.urushi.vertical_purple_plaster_slab": "Vertical Purple Sikkui Slab",
+   "block.urushi.vertical_blue_plaster_slab": "Vertical Blue Sikkui Slab",
+   "block.urushi.vertical_brown_plaster_slab": "Vertical Brown Sikkui Slab",
+   "block.urushi.vertical_green_plaster_slab": "Vertical Green Sikkui Slab",
+   "block.urushi.vertical_red_plaster_slab": "Vertical Red Sikkui Slab",
+   "block.urushi.vertical_black_plaster_slab": "Vertical Black Sikkui Slab",
+   "block.urushi.orange_plaster_bars": "Orange Sikkui Bars",
+   "block.urushi.magenta_plaster_bars": "Magenta Sikkui Bars",
+   "block.urushi.light_blue_plaster_bars": "Light Blue Sikkui Bars",
+   "block.urushi.yellow_plaster_bars": "Yellow Sikkui Bars",
+   "block.urushi.lime_plaster_bars": "Lime Sikkui Bars",
+   "block.urushi.pink_plaster_bars": "Pink Sikkui Bars",
+   "block.urushi.light_gray_plaster_bars": "Light Gray Sikkui Bars",
+   "block.urushi.gray_plaster_bars": "Gray Sikkui Bars",
+   "block.urushi.cyan_plaster_bars": "Cyan Sikkui Bars",
+   "block.urushi.purple_plaster_bars": "Purple Sikkui Bars",
+   "block.urushi.blue_plaster_bars": "Blue Sikkui Bars",
+   "block.urushi.brown_plaster_bars": "Brown Sikkui Bars",
+   "block.urushi.green_plaster_bars": "Green Sikkui Bars",
+   "block.urushi.red_plaster_bars": "Red Sikkui Bars",
+   "block.urushi.black_plaster_bars": "Black Sikkui Bars",
+   "block.urushi.horizontal_plaster_bars": "Horizontal Sikkui Bars",
+   "block.urushi.horizontal_orange_plaster_bars": "Horizontal Orange Sikkui Bars",
+   "block.urushi.horizontal_magenta_plaster_bars": "Horizontal Magenta Sikkui Bars",
+   "block.urushi.horizontal_light_blue_plaster_bars": "Horizontal Light Blue Sikkui Bars",
+   "block.urushi.horizontal_yellow_plaster_bars": "Horizontal Yellow Sikkui Bars",
+   "block.urushi.horizontal_lime_plaster_bars": "Horizontal Lime Sikkui Bars",
+   "block.urushi.horizontal_pink_plaster_bars": "Horizontal Pink Sikkui Bars",
+   "block.urushi.horizontal_light_gray_plaster_bars": "Horizontal Light Gray Sikkui Bars",
+   "block.urushi.horizontal_gray_plaster_bars": "Horizontal Gray Sikkui Bars",
+   "block.urushi.horizontal_cyan_plaster_bars": "Horizontal Cyan Sikkui Bars",
+   "block.urushi.horizontal_purple_plaster_bars": "Horizontal Purple Sikkui Bars",
+   "block.urushi.horizontal_blue_plaster_bars": "Horizontal Blue Sikkui Bars",
+   "block.urushi.horizontal_brown_plaster_bars": "Horizontal Brown Sikkui Bars",
+   "block.urushi.horizontal_green_plaster_bars": "Horizontal Green Sikkui Bars",
+   "block.urushi.horizontal_red_plaster_bars": "Horizontal Red Sikkui Bars",
+   "block.urushi.horizontal_black_plaster_bars": "Horizontal Black Sikkui Bars",
+   "block.urushi.vertical_smooth_oak_slab": "Vertical Smooth Oak Slab",
+   "block.urushi.vertical_smooth_spruce_slab": "Vertical Smooth Spruce Slab",
+   "block.urushi.vertical_smooth_birch_slab": "Vertical Smooth Birch Slab",
+   "block.urushi.vertical_smooth_jungle_slab": "Vertical Smooth Jungle Slab",
+   "block.urushi.vertical_smooth_acacia_slab": "Vertical Smooth Acacia Slab",
+   "block.urushi.vertical_smooth_dark_oak_slab": "Vertical Smooth Dark Oak Slab",
+   "block.urushi.vertical_smooth_japanese_apricot_slab": "Vertical Smooth Japanese Apricot Slab",
+   "block.urushi.vertical_smooth_sakura_slab": "Vertical Smooth Sakura Slab",
+   "block.urushi.vertical_smooth_cypress_slab": "Vertical Smooth Cypress Slab",
+   "block.urushi.vertical_smooth_japanese_cedar_slab": "Vertical Smooth Japanese Cedar Slab",
+   "block.urushi.vertical_smooth_red_urushi_slab": "Vertical Smooth Red Urushi Slab",
+   "block.urushi.vertical_smooth_black_urushi_slab": "Vertical Smooth Black Urushi Slab",
+   "block.urushi.japanese_apricot_bars": "Japanese Apricot Bars",
+   "block.urushi.sakura_bars": "Sakura Bars",
+   "block.urushi.cypress_bars": "Cypress Bars",
+   "block.urushi.japanese_cedar_bars": "Japanese Cedar Bars",
+   "block.urushi.red_urushi_bars": "Red Urushi Bars",
+   "block.urushi.black_urushi_bars": "Black Urushi Bars",
+   "block.urushi.horizontal_oak_bars": "Horizontal Oak Bars",
+   "block.urushi.horizontal_spruce_bars": "Horizontal Spruce Bars",
+   "block.urushi.horizontal_birch_bars": "Horizontal Birch Bars",
+   "block.urushi.horizontal_jungle_bars": "Horizontal Jungle Bars",
+   "block.urushi.horizontal_acacia_bars": "Horizontal Acacia Bars",
+   "block.urushi.horizontal_dark_oak_bars": "Horizontal Dark Oak Bars",
+   "block.urushi.horizontal_japanese_apricot_bars": "Horizontal Japanese Apricot Bars",
+   "block.urushi.horizontal_sakura_bars": "Horizontal Sakura Bars",
+   "block.urushi.horizontal_cypress_bars": "Horizontal Cypress Bars",
+   "block.urushi.horizontal_japanese_cedar_bars": "Horizontal Japanese Cedar Bars",
+   "block.urushi.horizontal_red_urushi_bars": "Horizontal Red Urushi Bars",
+   "block.urushi.horizontal_black_urushi_bars": "Horizontal Black Urushi Bars",
+   "block.urushi.horizontal_green_bars": "Horizontal Green Bars",
+   "item.urushi.bamboo_cup": "Bamboo Cup",
+   "item.urushi.water_bamboo_cup": "Water Bamboo Cup",
+   "item.urushi.milk_bamboo_cup": "Milk Bamboo Cup",
+   "item.urushi.soy_source_bamboo_cup": "Soy Source Bamboo Cup",
+   "item.urushi.gravel_sushi": "Gravel Sushi!?",
+   "entity.urushi.gravel_sushi_food": "Gravel Sushi!?",
+   "item.urushi.minced_tuna_bowl": "Minced Tuna Bowl",
+   "item.urushi.kansui_powder": "Kansui Powder",
+   "block.urushi.alkaline_dough": "Alkaline Noodle Dough",
+   "block.urushi.alkaline_noodles": "Alkaline Noodles",
+   "item.urushi.soy_source_ramen": "Soy Source Ramen",
+   "item.urushi.miso_ramen": "Miso Ramen",
+   "item.urushi.tonkotsu_ramen": "Tonkotsu Ramen",
+   "item.urushi.salt_ramen": "Salt Ramen",
+   "info.urushi.auto_crafting_table": "You can automate craftings at this workbench.",
+   "info.urushi.auto_crafting_table2": "If there is a chest or other storage block on the direction of the △ mark, the result item is automatically carried out to that storage block. If not, the result item is dropped as an item.",
+   "info.urushi.bamboo_cup": "This resembles a Glass Bottle, but can be filled with liquids and can be stacked up to 64.",
+   "info.urushi.filled_bamboo_cup": "Can be stacked up to 64",
+   "info.urushi.water_bamboo_cup": "As with Watter Bottle, can be turned into Mud when used against Dirt",
+   "info.urushi.milk_bamboo_cup": "Like the Milk Bucket, the effect disappears when you drink it.",
+   "info.urushi.udon": "Place Noodle Dough and cut it with a Noodle Knife to obtain.",
+   "info.urushi.alkaline_noodles": "Place Alkaline Noodle Dough and cut it with a Noodle Knife to obtain.",
+   "info.urushi.bars": "When you place on the ground or ceiling, it doesn't connect to the wall. When you place on a horizontal side, it connects to the wall.",
+   "biome.urushi.autumn_forest": "Autumn Forest",
+   "biome.urushi.cedar_forest": "Cedar Forest",
+   "biome.urushi.eulalia_plains": "Eulalia Plains",
+   "biome.urushi.sakura_forest": "Sakura Forest",
+   "block.urushi.mirror_tier2": "Jadeite Mirror",
+   "block.urushi.wood_element_emitter_tier2": "Jedeite Wood Element Emitter",
+   "block.urushi.fire_element_emitter_tier2": "Jedeite Fire Element Emitter",
+   "block.urushi.earth_element_emitter_tier2": "Jedeite Earth Element Emitter",
+   "block.urushi.metal_element_emitter_tier2": "Jedeite Metal Element Emitter",
+   "block.urushi.water_element_emitter_tier2": "Jedeite Water Element Emitter",
+   "container.urushi_auto_crafting_table": "Auto Crafting Table",
+   "block.urushi.limonite_ore": "Limonite Ore",
+   "block.urushi.chalcopyrite_ore": "Chalcopyrite Ore"
+   
+}

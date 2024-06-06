@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:red_urushi_slab",
+    "urushi:black_urushi_slab",
+    "urushi:japanese_apricot_slab",
+    "urushi:japanese_cedar_slab",
+    "urushi:cypress_slab",
+    "urushi:sakura_slab",
+    "urushi:bamboo_slab"
+  ]
+}

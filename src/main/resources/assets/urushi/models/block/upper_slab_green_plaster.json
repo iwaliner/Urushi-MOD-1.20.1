@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/upper_slab_base",
+  "textures": {
+    "tex": "urushi:block/plaster_green"
+  }
+}

@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:wood_element_tier1_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:wood_amber"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:wood_enhanced_jadeite"
+
+
+
+  },
+
+
+
+  "reiryoku": 50
+
+
+
+}

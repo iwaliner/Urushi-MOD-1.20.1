@@ -1,0 +1,25 @@
+{
+  "name": "杉はどこ？",
+  "category": "urushi:nature",
+  "icon": "urushi:japanese_cedar_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 30,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "杉の樹木はタイガ系統のバイオーム、そして幽世ディメンション内に自然生成されます。$(br2)苗木を4つ並べることで巨大な杉の木を生やすことができます。$(br2)杉から作れるブロックのテクスチャは落ち着いた色合いで使いやすいのでオススメです。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "これが杉の樹木",
+      "images": [
+        "urushi:textures/gui/patchouli/japanese_cedar_tree.png"
+      ]
+    }
+    
+  ]
+}

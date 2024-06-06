@@ -1,0 +1,41 @@
+{
+
+
+
+  "type": "urushi:polishing",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+     "item": "urushi:japanese_apricot_log"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:stripped_japanese_apricot_log"
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Urushi Hopper",
+  "category": "urushi:useful_items",
+  "icon": "urushi:urushi_hopper",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A hopper using Urushi materials and costs cheaper than iron.$(br2)Though its speed is 1/4 of vanilla hoppers, and has only 1 inventory slot."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:urushi_hopper",
+      "text": ""
+    }
+    
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "桂竹",
+  "category": "urushi:nature",
+  "icon": "urushi:japanese_timber_bamboo",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 35,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "桂竹会在森林群系中自然生成，也可通过原版竹子进行合成。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "竹子里不会有辉夜公主的……吧？",
+      "images": [
+        "urushi:textures/gui/patchouli/japanese_timber_bamboo.png"
+      ]
+    }
+    
+  ]
+}

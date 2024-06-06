@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves", "render_type": "minecraft:cutout",
+    "textures": {
+        "all": "urushi:block/ume_leaves"
+    }
+}

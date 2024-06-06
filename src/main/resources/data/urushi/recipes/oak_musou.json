@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "WWW",
+
+    "# #",
+
+    "WWW"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "tag": "forge:rods/wooden"
+
+    },
+
+    "W": {
+
+      "item": "urushi:smooth_oak_slab"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:oak_board_window",
+
+    "count": 8
+
+  }
+
+}

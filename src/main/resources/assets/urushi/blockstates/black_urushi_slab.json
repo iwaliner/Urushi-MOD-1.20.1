@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_black_urushi_stained"
+    },
+    "type=double": {
+      "model": "urushi:block/planks_black_urushi_stained"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_black_urushi_stained"
+    }
+  }
+}

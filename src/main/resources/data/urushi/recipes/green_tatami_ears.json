@@ -1,0 +1,41 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+    "item": "urushi:rice_crop"
+
+    },
+
+    {
+
+    "item": "urushi:rice_crop"
+
+    },
+
+    {
+
+   "item": "urushi:rice_crop"
+
+    },
+
+    {
+
+     "tag": "forge:string"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:green_tatami",
+
+    "count": 4
+
+  }
+
+}

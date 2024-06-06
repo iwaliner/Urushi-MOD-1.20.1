@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_kitsunebi",
+  "display": {
+    "icon": {
+      "item": "urushi:fox_hopper"
+    },
+    "title": {
+      "translate": "advancements.urushi.fox_hopper.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.fox_hopper.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fox_hopper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:fox_hopper"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fox_hopper"
+    ]
+  ]
+}

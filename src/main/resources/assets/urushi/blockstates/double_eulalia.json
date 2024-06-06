@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "urushi:block/tall_eulalia_bottom"
+    },
+    "half=upper": {
+      "model": "urushi:block/tall_eulalia_top"
+    }
+  }
+}

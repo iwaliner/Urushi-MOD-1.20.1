@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "minecraft:orange_wool"
+
+    },
+
+    {
+
+      "tag": "forge:string"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:orange_cushion",
+
+    "count": 4
+
+  }
+
+}

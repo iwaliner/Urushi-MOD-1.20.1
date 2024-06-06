@@ -1,0 +1,81 @@
+{
+
+
+
+  "type": "urushi:metal_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+  "item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:metal_amber"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:metal_enhanced_jadeite"
+
+
+
+  },
+
+
+
+  "reiryoku": 50
+
+
+
+}

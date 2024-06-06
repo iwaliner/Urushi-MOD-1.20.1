@@ -1,0 +1,27 @@
+{
+  "name": "狐火",
+  "category": "urushi:magic",
+  "icon": "urushi:kitsunebi",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 15,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:kitsunebi",
+        "count": 1
+      },
+      "text": "狐火は不可視の光源です。ブロックに対して使用で通常設置、空中で使用すれば狐火を飛ばして着弾地点に設置です。$(br2)キツネに油揚げを食べさせることで狐火になるので、ほかのアイテムをキツネにあげて狐火を口から離してもらいましょう。$(br2)なお、使用するためには霊力が10以上貯められた火気の勾玉をインベントリにいれておく必要があります。"
+    },
+     {
+      "type": "patchouli:image",
+      "text": "狐火を手に持っているときのみ、近くの狐火の位置に炎のパーティクルが現れるので狐火の設置位置を確認できます。",
+      "images": [
+        "urushi:textures/gui/patchouli/kitsunebi.png"
+      ]
+    }
+  ]
+}

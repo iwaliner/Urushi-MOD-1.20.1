@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/plaster_lime",
+        "down": "urushi:block/planks_smooth_dark_oak",
+        "up": "urushi:block/plaster_lime",
+        "north": "urushi:block/plaster_lime",
+        "east": "urushi:block/connectable/framed_plaster_lime/plaster_dark_oak_12",
+        "south": "urushi:block/connectable/framed_plaster_lime/plaster_dark_oak_2",
+        "west": "urushi:block/connectable/framed_plaster_lime/plaster_dark_oak_11"
+    }
+}

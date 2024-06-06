@@ -1,0 +1,7 @@
+{
+    "parent": "urushi:block/parapet_base_on_slab",
+    "textures": {
+       "0": "urushi:block/planks_smooth_spruce",
+		"particle": "urushi:block/planks_smooth_spruce"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "法术要素",
+  "description": "Urushi的法术内容从低到高分别为等阶1、等阶2。$(br2)尽管实际操作中有五种元素的法术，本书中将全部以木气元素为例进行介绍。",
+  "icon": "urushi:earth_element_magatama",
+  "sortnum": 10
+}

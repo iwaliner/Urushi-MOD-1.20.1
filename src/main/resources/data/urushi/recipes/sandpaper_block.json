@@ -1,0 +1,43 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+   {
+
+       "tag": "minecraft:sand"
+
+    },
+
+     {
+
+      "tag": "forge:gravel"
+
+    },
+
+    {
+
+      "item": "minecraft:amethyst_shard"
+
+    },
+
+    {
+
+     "item": "minecraft:paper"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:sandpaper_block",
+
+    "count": 1
+
+  }
+
+}

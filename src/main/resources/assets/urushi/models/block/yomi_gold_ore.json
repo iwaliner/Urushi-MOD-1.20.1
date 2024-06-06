@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "urushi:block/gold_ore_yomi"
+  }
+}

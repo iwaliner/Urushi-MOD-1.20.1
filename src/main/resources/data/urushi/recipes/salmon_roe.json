@@ -1,0 +1,54 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+      "item": "minecraft:salmon"
+
+
+
+    },
+    {
+
+
+
+      "item": "minecraft:egg"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:salmon_roe",
+
+
+
+      "count": 4
+
+
+
+  }
+
+
+
+}

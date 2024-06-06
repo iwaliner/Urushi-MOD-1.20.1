@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "minecraft:jungle_planks"
+
+    },
+
+    {
+
+      "item": "urushi:smooth_jungle_slab"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:jungle_shitamiita",
+
+    "count": 2
+
+  }
+
+}

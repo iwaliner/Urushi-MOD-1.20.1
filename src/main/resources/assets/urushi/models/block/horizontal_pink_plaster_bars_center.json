@@ -1,0 +1,7 @@
+{
+    "parent": "urushi:block/horizontal_bars_center_base",
+    "textures": {
+       "0": "urushi:block/plaster_pink",
+		"particle": "urushi:block/plaster_pink"
+    }
+}

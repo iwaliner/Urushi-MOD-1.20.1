@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:concrete"
+
+    },
+
+    {
+
+      "item": "urushi:ghost_core"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:ghost_concrete",
+
+    "count": 1
+
+  }
+
+}

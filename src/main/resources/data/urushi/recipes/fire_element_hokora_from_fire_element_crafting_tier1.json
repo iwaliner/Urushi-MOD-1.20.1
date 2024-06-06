@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:fire_element_tier1_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "urushi:fire_enhanced_jadeite_brick"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "urushi:jadeite_block"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "urushi:jadeite_brick"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:jadeite_block"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:fire_element_hokora"
+
+
+
+  },
+
+
+
+  "reiryoku": 50
+
+
+
+}

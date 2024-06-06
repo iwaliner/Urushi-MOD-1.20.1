@@ -1,0 +1,36 @@
+{
+  "name": "Wooden Cabinetry",
+  "category": "urushi:useful_items",
+  "icon": "urushi:wooden_cabinetry",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Wooden Cabinetry Slab costs 8 wooden slabs but has the same capacity as a Chest.$(br)Also you can double or quadurple its capacity by 2 or 4 of them.$(br)Cabinaries are also dyeable.$(br2)Continues on the next page."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "Wooden Cabinetry Slab",
+      "recipe": "urushi:wooden_cabinetry_slab",
+      "text": "Same capacity as Chest"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "Wooden Cabinary",
+      "recipe": "urushi:wooden_cabinetry",
+      "text": "Same capacity as Large Chest"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "Doubled Wooden Cabinetry",
+      "recipe": "urushi:doubled_wooden_cabinetry",
+      "text": "Double capacity of a Large Chest"
+    }
+    
+  ]
+}

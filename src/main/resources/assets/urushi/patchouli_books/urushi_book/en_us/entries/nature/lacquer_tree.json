@@ -1,0 +1,25 @@
+{
+  "name": "Lacquer Tree",
+  "category": "urushi:nature",
+  "icon": "urushi:lacquer_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Lacquer Trees spawn in Forest biomes, but are easy to miss due to their texture.$(br2)Their saplings can also be found from the Bonus Chest, Dungeon chests, chests in Plain Villages, or drop from their leaves."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Lacquer Tree",
+      "images": [
+        "urushi:textures/gui/patchouli/lacquer_tree.png"
+      ]
+    }
+    
+  ]
+}

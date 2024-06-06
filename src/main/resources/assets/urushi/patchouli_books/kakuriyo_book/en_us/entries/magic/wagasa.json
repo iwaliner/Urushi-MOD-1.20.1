@@ -1,0 +1,20 @@
+{
+  "name": "Paper Umbrella",
+  "category": "urushi:magic",
+  "icon": "urushi:open_wagasa",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 20,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:open_wagasa",
+        "count": 1
+      },
+      "text": "Right click to open and close the umbrella.$(br2)When open, it slows down the fall and negates all falling damage.$(br2)It consumes Wood Reiyoku, so a Wood Element Magatama with enough Reiyoku is needed."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/ibushi_kawara_roof_45",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/ibushi_kawara_roof_45",
+      "y": 180
+      
+    },
+    "facing=north": {
+      "model": "urushi:block/ibushi_kawara_roof_45"
+    },
+    "facing=east": {
+      "model": "urushi:block/ibushi_kawara_roof_45",
+      "y": 90
+    }
+  }
+}

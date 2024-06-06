@@ -1,0 +1,15 @@
+{
+
+  "type": "minecraft:stonecutting",
+
+  "ingredient": {
+
+    "item": "urushi:copper_kawara_block"
+
+  },
+
+  "result": "urushi:copper_kawara_stairs",
+
+  "count": 1
+
+}

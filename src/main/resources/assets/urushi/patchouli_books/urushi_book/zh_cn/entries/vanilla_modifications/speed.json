@@ -1,0 +1,18 @@
+{
+  "name": "移动速度上升",
+  "category": "urushi:vanilla_modifications",
+  "icon": "minecraft:rabbit_foot",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "由于原版的玩家移动速度较慢，所以移动时连续放置方块一定会断断续续的。$(br2)因此漆MOD将玩家的移动速度提高了16%，同步了移动速度与放置方块的速度。$(br2)如果不喜欢的话，也可以在配置文件里关闭。"
+    }
+    
+  ]
+}

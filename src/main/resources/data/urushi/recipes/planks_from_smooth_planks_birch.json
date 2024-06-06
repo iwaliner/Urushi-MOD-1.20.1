@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:smooth_birch_planks"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "minecraft:birch_planks",
+
+      "count": 1
+
+  }
+
+}

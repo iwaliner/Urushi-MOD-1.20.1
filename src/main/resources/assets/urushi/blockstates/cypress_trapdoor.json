@@ -1,0 +1,276 @@
+{
+  "variants": {
+    "facing=east,half=bottom,open=false,east=false,west=false": {
+      "model": "urushi:block/cypress_trapdoor_bottom",
+      "y": 90
+    },
+    "facing=east,half=bottom,open=false,east=true,west=true": {
+      "model": "urushi:block/cypress_trapdoor_center_bottom",
+      "y": 90
+    },
+    "facing=east,half=bottom,open=false,east=false,west=true": {
+      "model": "urushi:block/cypress_trapdoor_upper_bottom",
+      "y": 90
+    },
+    "facing=east,half=bottom,open=false,east=true,west=false": {
+      "model": "urushi:block/cypress_trapdoor_under_bottom",
+      "y": 90
+    },
+    "facing=east,half=top,open=false,east=false,west=false": {
+      "model": "urushi:block/cypress_trapdoor_top",
+      "y": 90
+    },
+    "facing=east,half=top,open=false,east=true,west=true": {
+      "model": "urushi:block/cypress_trapdoor_center_top",
+      "y": 90
+    },
+    "facing=east,half=top,open=false,east=false,west=true": {
+      "model": "urushi:block/cypress_trapdoor_upper_top",
+      "y": 90
+    },
+    "facing=east,half=top,open=false,east=true,west=false": {
+      "model": "urushi:block/cypress_trapdoor_under_top",
+      "y": 90
+    },
+    "facing=north,half=bottom,open=false,south=false,north=false": {
+      "model": "urushi:block/cypress_trapdoor_bottom"
+    },
+    "facing=north,half=bottom,open=false,south=true,north=true": {
+      "model": "urushi:block/cypress_trapdoor_center_bottom"
+    },
+    "facing=north,half=bottom,open=false,south=true,north=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_bottom"
+    },
+    "facing=north,half=bottom,open=false,south=false,north=true": {
+      "model": "urushi:block/cypress_trapdoor_under_bottom"
+    },
+    "facing=north,half=top,open=false,south=false,north=false": {
+      "model": "urushi:block/cypress_trapdoor_top"
+    },
+    "facing=north,half=top,open=false,south=true,north=true": {
+      "model": "urushi:block/cypress_trapdoor_center_top"
+    },
+    "facing=north,half=top,open=false,south=true,north=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_top"
+    },
+    "facing=north,half=top,open=false,south=false,north=true": {
+      "model": "urushi:block/cypress_trapdoor_under_top"
+    },
+    "facing=south,half=bottom,open=false,north=false,south=false": {
+      "model": "urushi:block/cypress_trapdoor_bottom",
+      "y": 180
+    },
+    "facing=south,half=bottom,open=false,north=true,south=true": {
+      "model": "urushi:block/cypress_trapdoor_center_bottom",
+      "y": 180
+    },
+    "facing=south,half=bottom,open=false,north=true,south=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_bottom",
+      "y": 180
+    },
+    "facing=south,half=bottom,open=false,north=false,south=true": {
+      "model": "urushi:block/cypress_trapdoor_under_bottom",
+      "y": 180
+    },
+    "facing=south,half=top,open=false,north=false,south=false": {
+      "model": "urushi:block/cypress_trapdoor_top",
+      "y": 180
+    },
+    "facing=south,half=top,open=false,north=true,south=true": {
+      "model": "urushi:block/cypress_trapdoor_center_top",
+      "y": 180
+    },
+    "facing=south,half=top,open=false,north=true,south=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_top",
+      "y": 180
+    },
+    "facing=south,half=top,open=false,north=false,south=true": {
+      "model": "urushi:block/cypress_trapdoor_under_top",
+      "y": 180
+    },
+    "facing=west,half=bottom,open=false,east=false,west=false": {
+      "model": "urushi:block/cypress_trapdoor_bottom",
+      "y": 270
+    },
+    "facing=west,half=bottom,open=false,east=true,west=true": {
+      "model": "urushi:block/cypress_trapdoor_center_bottom",
+      "y": 270
+    },
+    "facing=west,half=bottom,open=false,east=true,west=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_bottom",
+      "y": 270
+    },
+    "facing=west,half=bottom,open=false,east=false,west=true": {
+      "model": "urushi:block/cypress_trapdoor_under_bottom",
+      "y": 270
+    },
+    "facing=west,half=top,open=false,east=false,west=false": {
+      "model": "urushi:block/cypress_trapdoor_top",
+      "y": 270
+    },
+     "facing=west,half=top,open=false,east=true,west=true": {
+      "model": "urushi:block/cypress_trapdoor_center_top",
+      "y": 270
+    },
+    "facing=west,half=top,open=false,east=true,west=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_top",
+      "y": 270
+    },
+    "facing=west,half=top,open=false,east=false,west=true": {
+      "model": "urushi:block/cypress_trapdoor_under_top",
+      "y": 270
+    },
+    
+    
+    "facing=east,half=bottom,open=true,up=false,down=false": {
+      "model": "urushi:block/cypress_trapdoor_open",
+      "y": 90
+    },
+    "facing=east,half=top,open=true,up=false,down=false": {
+      "model": "urushi:block/cypress_trapdoor_open",
+      "x": 180,
+      "y": 270
+    },
+    "facing=north,half=bottom,open=true,up=false,down=false": {
+      "model": "urushi:block/cypress_trapdoor_open"
+    },
+    "facing=north,half=top,open=true,up=false,down=false": {
+      "model": "urushi:block/cypress_trapdoor_open",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,open=true,up=false,down=false": {
+      "model": "urushi:block/cypress_trapdoor_open",
+      "y": 180
+    },
+    "facing=south,half=top,open=true,up=false,down=false": {
+      "model": "urushi:block/cypress_trapdoor_open",
+      "x": 180,
+      "y": 0
+    },
+    "facing=west,half=bottom,open=true,up=false,down=false": {
+      "model": "urushi:block/cypress_trapdoor_open",
+      "y": 270
+    },
+    "facing=west,half=top,open=true,up=false,down=false": {
+      "model": "urushi:block/cypress_trapdoor_open",
+      "x": 180,
+      "y": 90
+    },
+    
+    
+    
+   
+    "facing=east,half=bottom,open=true,up=true,down=true": {
+      "model": "urushi:block/cypress_trapdoor_center_open",
+      "y": 90
+    },
+    "facing=east,half=top,open=true,up=true,down=true": {
+      "model": "urushi:block/cypress_trapdoor_center_open",
+      "x": 180,
+      "y": 270
+    },
+    "facing=north,half=bottom,open=true,up=true,down=true": {
+      "model": "urushi:block/cypress_trapdoor_center_open"
+    },
+    "facing=north,half=top,open=true,up=true,down=true": {
+      "model": "urushi:block/cypress_trapdoor_center_open",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,open=true,up=true,down=true": {
+      "model": "urushi:block/cypress_trapdoor_center_open",
+      "y": 180
+    },
+    "facing=south,half=top,open=true,up=true,down=true": {
+      "model": "urushi:block/cypress_trapdoor_center_open",
+      "x": 180,
+      "y": 0
+    },
+    "facing=west,half=bottom,open=true,up=true,down=true": {
+      "model": "urushi:block/cypress_trapdoor_center_open",
+      "y": 270
+    },
+    "facing=west,half=top,open=true,up=true,down=true": {
+      "model": "urushi:block/cypress_trapdoor_center_open",
+      "x": 180,
+      "y": 90
+    },
+    
+    
+   
+    "facing=east,half=bottom,open=true,up=true,down=false": {
+      "model": "urushi:block/cypress_trapdoor_under_open",
+      "y": 90
+    },
+    "facing=east,half=top,open=true,up=true,down=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_open",
+      "x": 180,
+      "y": 270
+    },
+    "facing=north,half=bottom,open=true,up=true,down=false": {
+      "model": "urushi:block/cypress_trapdoor_under_open"
+    },
+    "facing=north,half=top,open=true,up=true,down=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_open",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,open=true,up=true,down=false": {
+      "model": "urushi:block/cypress_trapdoor_under_open",
+      "y": 180
+    },
+    "facing=south,half=top,open=true,up=true,down=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_open",
+      "x": 180,
+      "y": 0
+    },
+    "facing=west,half=bottom,open=true,up=true,down=false": {
+      "model": "urushi:block/cypress_trapdoor_under_open",
+      "y": 270
+    },
+    "facing=west,half=top,open=true,up=true,down=false": {
+      "model": "urushi:block/cypress_trapdoor_upper_open",
+      "x": 180,
+      "y": 90
+    },
+    
+    
+    
+    "facing=east,half=bottom,open=true,up=false,down=true": {
+      "model": "urushi:block/cypress_trapdoor_upper_open",
+      "y": 90
+    },
+    "facing=east,half=top,open=true,up=false,down=true": {
+      "model": "urushi:block/cypress_trapdoor_under_open",
+      "x": 180,
+      "y": 270
+    },
+    "facing=north,half=bottom,open=true,up=false,down=true": {
+      "model": "urushi:block/cypress_trapdoor_upper_open"
+    },
+    "facing=north,half=top,open=true,up=false,down=true": {
+      "model": "urushi:block/cypress_trapdoor_under_open",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,open=true,up=false,down=true": {
+      "model": "urushi:block/cypress_trapdoor_upper_open",
+      "y": 180
+    },
+    "facing=south,half=top,open=true,up=false,down=true": {
+      "model": "urushi:block/cypress_trapdoor_under_open",
+      "x": 180,
+      "y": 0
+    },
+    "facing=west,half=bottom,open=true,up=false,down=true": {
+      "model": "urushi:block/cypress_trapdoor_upper_open",
+      "y": 270
+    },
+    "facing=west,half=top,open=true,up=false,down=true": {
+      "model": "urushi:block/cypress_trapdoor_under_open",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

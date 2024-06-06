@@ -1,0 +1,24 @@
+{
+  "name": "Shichirin Stove",
+  "category": "urushi:magic",
+  "icon": "urushi:shichirin",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 30,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:shichirin",
+        "count": 1
+      },
+      "text": "Grilling food using a Shichirin Stove adds a potion effect to the baked food. $(br2)Put Coal, Charcoal or Bamboo Charcoal by a Hopper or right-clicking, and ignite with an Amber Igniter. Use an Uchiwa to control the heat."
+    },
+     {
+      "type": "text",
+      "text": "If UNDERCOOKED is written on the cooked food, you will get Hunger effect. If WELL-COOKED, you will get Regeneration effect. If OVERCOOKED, you will get Poison effect.$(br2)The higher the level number, the stronger the effect. $(br2)If WELL COOKED LEVEL 5 is written, you will get Absorption effect as well as Regeneration effect."
+    }
+  ]
+}

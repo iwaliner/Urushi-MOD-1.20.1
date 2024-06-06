@@ -1,0 +1,36 @@
+{
+  "name": "抽屉柜",
+  "category": "urushi:useful_items",
+  "icon": "urushi:wooden_cabinetry",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "使用8个木板台阶可以合成抽屉柜台阶，一个抽屉柜台阶和一个原版箱子的容量相等。$(br)使用两个抽屉柜台阶以合成抽屉柜，再使用2个抽屉柜以合成大型抽屉柜，内容也是等倍扩大。$(br)抽屉柜也可以被染色。$(br2)下一页继续。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "抽屉柜台阶",
+      "recipe": "urushi:wooden_cabinetry_slab",
+      "text": "与箱子容量相等"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "抽屉柜",
+      "recipe": "urushi:wooden_cabinetry",
+      "text": "与大型箱子容量相等"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "大型抽屉柜",
+      "recipe": "urushi:doubled_wooden_cabinetry",
+      "text": "是大型箱子容量的2倍"
+    }
+    
+  ]
+}

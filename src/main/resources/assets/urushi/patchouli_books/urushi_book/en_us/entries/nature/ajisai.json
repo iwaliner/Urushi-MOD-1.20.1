@@ -1,0 +1,25 @@
+{
+  "name": "Hydrangea",
+  "category": "urushi:nature",
+  "icon": "urushi:ajisai",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 40,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Hydrangea flowers generate in Swamp Biomes.$(br2)These flowers can be crafted into purple dye."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Hydrangea",
+      "images": [
+        "urushi:textures/gui/patchouli/ajisai.png"
+      ]
+    }
+    
+  ]
+}

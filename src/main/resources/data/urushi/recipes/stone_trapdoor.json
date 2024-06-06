@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "minecraft:stone"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:stone_trapdoor",
+
+    "count": 3
+
+  }
+
+}

@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:crushed_iron"
+
+    },
+
+    {
+
+      "item": "urushi:crushed_iron"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:stacked_iron",
+
+    "count": 1
+
+  }
+
+}

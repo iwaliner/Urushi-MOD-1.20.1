@@ -1,0 +1,15 @@
+{
+
+  "type": "minecraft:stonecutting",
+
+  "ingredient": {
+
+    "item": "urushi:ibushi_kawara_slab"
+
+  },
+
+  "result": "urushi:ibushi_kawara_roof_45",
+
+  "count": 1
+
+}

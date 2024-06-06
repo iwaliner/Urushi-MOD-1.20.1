@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "urushi:block/rice_stage0"
+    },
+    "age=1": {
+      "model": "urushi:block/rice_stage1"
+    },
+    "age=2": {
+      "model": "urushi:block/rice_stage3"
+    },
+    "age=3": {
+      "model": "urushi:block/rice_stage5"
+    },
+    "age=4": {
+      "model": "urushi:block/rice_stage7"
+    },
+    "age=5": {
+      "model": "urushi:block/rice_stage7"
+    },
+    "age=6": {
+      "model": "urushi:block/rice_stage7"
+    },
+    "age=7": {
+      "model": "urushi:block/rice_stage7"
+    }
+  }
+}

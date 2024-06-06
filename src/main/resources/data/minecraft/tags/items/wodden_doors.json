@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:red_urushi_door",
+    "urushi:black_urushi_door",
+    "urushi:japanese_apricot_door",
+    "urushi:japanese_cedar_door",
+    "urushi:cypress_door",
+    "urushi:sakura_door"
+  ]
+}

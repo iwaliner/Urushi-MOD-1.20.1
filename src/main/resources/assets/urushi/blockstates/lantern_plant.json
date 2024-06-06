@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "urushi:block/lantern_plant_stage0"
+    },
+    "age=1,lit=false": {
+      "model": "urushi:block/lantern_plant_stage1"
+    },
+    "age=1,lit=true": {
+      "model": "urushi:block/lantern_plant_stage2"
+    }
+  }
+}

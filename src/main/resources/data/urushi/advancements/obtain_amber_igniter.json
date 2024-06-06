@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_uchiwa",
+  "display": {
+    "icon": {
+      "item": "urushi:amber_igniter"
+    },
+    "title": {
+      "translate": "advancements.urushi.amber_igniter.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.amber_igniter.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "amber_igniter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:amber_igniter"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "amber_igniter"
+    ]
+  ]
+}

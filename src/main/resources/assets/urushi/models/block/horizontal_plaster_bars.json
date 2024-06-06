@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "urushi:block/horizontal_bars_inventory_base",
+	"textures": {
+		"0": "urushi:block/plaster"
+	}
+}

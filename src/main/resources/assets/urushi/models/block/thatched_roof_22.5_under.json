@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "urushi:block/roof_22.5_under",
+	"textures": {
+		"0": "urushi:block/kaya",
+		"particle": "urushi:block/kaya"
+	}
+}

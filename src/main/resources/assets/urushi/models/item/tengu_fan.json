@@ -1,0 +1,14 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+         "layer0": "urushi:item/tengu_uchiwa"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "urushi:item/tengu_fan_blocking"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "urushi:block/brown_tatami_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "urushi:block/brown_tatami"
+    },
+    "axis=z": {
+      "model": "urushi:block/brown_tatami_horizontal",
+      "x": 90
+    }
+  }
+}

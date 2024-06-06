@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:green_tatami"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:brown_tatami",
+
+      "count": 1
+
+  }
+
+}

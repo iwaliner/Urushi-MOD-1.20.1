@@ -1,0 +1,49 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:oak_bars"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:horizontal_oak_bars",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

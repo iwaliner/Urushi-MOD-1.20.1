@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "urushi:block/fox_hopper"
+    },
+    "facing=east": {
+      "model": "urushi:block/fox_hopper_side",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "urushi:block/fox_hopper_side"
+    },
+    "facing=south": {
+      "model": "urushi:block/fox_hopper_side",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "urushi:block/fox_hopper_side",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross", "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "urushi:block/lantern_plant_torch"
+  }
+}

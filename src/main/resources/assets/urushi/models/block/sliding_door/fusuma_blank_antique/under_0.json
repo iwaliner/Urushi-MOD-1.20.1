@@ -1,0 +1,7 @@
+{
+	"parent": "urushi:block/sliding_door/sliding_door_under_0",
+	"textures": {
+		"0": "urushi:block/fusuma_blank_antique_under",
+		"1": "urushi:block/fusuma_side"
+	}
+}

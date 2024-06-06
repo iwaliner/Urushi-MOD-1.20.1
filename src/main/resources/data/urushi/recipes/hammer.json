@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    " i",
+
+    "s "
+
+  ],
+
+  "key": {
+
+    "i": {
+
+     "item": "minecraft:iron_block"
+
+    },
+
+    "s": {
+
+    "tag": "forge:rods/wooden"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:hammer",
+
+    "count": 1
+
+  }
+
+}

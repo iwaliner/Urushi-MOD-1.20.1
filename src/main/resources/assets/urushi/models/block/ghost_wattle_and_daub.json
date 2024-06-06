@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all","render_type": "minecraft:translucent",
+    "textures": {
+        "all": "urushi:block/ghost_dirt_wall"
+    }
+}

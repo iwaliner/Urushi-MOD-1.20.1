@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/plaster_yellow",
+        "down": "urushi:block/planks_smooth_acacia",
+        "up": "urushi:block/planks_smooth_acacia",
+        "north": "urushi:block/plaster_yellow",
+        "east": "urushi:block/connectable/framed_plaster_yellow/plaster_acacia_6",
+        "south": "urushi:block/plaster_yellow",
+        "west": "urushi:block/connectable/framed_plaster_yellow/plaster_acacia_6"
+    }
+}

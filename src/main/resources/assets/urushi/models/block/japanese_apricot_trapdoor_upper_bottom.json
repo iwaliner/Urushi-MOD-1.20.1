@@ -1,0 +1,7 @@
+{
+  "parent": "urushi:block/connectable_trapdoor_bottom_base",
+  "textures": {
+  "1": "urushi:block/ume_planks",
+    "texture": "urushi:block/ume_trapdoor_upper"
+  }
+}

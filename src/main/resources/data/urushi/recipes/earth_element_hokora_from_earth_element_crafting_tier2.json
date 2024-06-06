@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:earth_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "urushi:earth_enhanced_jadeite_brick"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "urushi:jadeite_block"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "urushi:jadeite_brick"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:jadeite_block"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:earth_element_hokora"
+
+
+
+  },
+
+
+
+  "reiryoku": 50
+
+
+
+}

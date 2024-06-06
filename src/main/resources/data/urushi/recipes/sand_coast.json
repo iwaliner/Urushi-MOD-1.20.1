@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "urushi:wattle_and_daub"
+
+    },
+
+    {
+
+      "tag": "minecraft:sand"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:sand_coast",
+
+    "count": 2
+
+  }
+
+}

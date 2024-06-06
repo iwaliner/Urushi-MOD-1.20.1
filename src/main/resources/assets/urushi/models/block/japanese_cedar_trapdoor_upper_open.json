@@ -1,0 +1,7 @@
+{
+  "parent": "urushi:block/connectable_trapdoor_open_base",
+  "textures": {
+  "1": "urushi:block/japanese_cedar_planks",
+    "texture": "urushi:block/japanese_cedar_trapdoor_upper"
+  }
+}

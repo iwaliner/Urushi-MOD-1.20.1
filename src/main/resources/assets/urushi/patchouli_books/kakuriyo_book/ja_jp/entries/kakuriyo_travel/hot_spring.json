@@ -1,0 +1,29 @@
+{
+  "name": "温泉",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:hot_spring_water_bucket",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 25,
+
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:hot_spring_water_bucket",
+        "count": 1
+      },
+      "text": "幽世ディメンション内には凝灰岩とともに温泉が生成されます。温泉に浸かったモブには再生効果が付与されます。$(br2)温泉水はバケツですくうことができ、水と同様に無限に増やせます。また、温泉水に卵を入れることで卵が温泉卵に変化します。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "立派な温泉施設を建設しよう",
+      "images": [
+        "urushi:textures/gui/patchouli/onsen.png"
+      ]
+    }
+    
+  ]
+}

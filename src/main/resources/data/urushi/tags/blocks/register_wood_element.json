@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+  "#minecraft:crops",
+  "#minecraft:logs",
+  "#minecraft:planks",
+  "#minecraft:saplings",
+  "#minecraft:leaves",
+  "#minecraft:flowers",
+  "#minecraft:tall_flowers",
+  "#minecraft:wooden_slabs",
+  "#minecraft:wooden_stairs",
+  "urushi:japanese_timber_bamboo",
+  "minecraft:red_mushroom",
+  "minecraft:brown_mushroom",
+  "minecraft:bamboo",
+  "minecraft:sugar_cane"
+  ]
+}

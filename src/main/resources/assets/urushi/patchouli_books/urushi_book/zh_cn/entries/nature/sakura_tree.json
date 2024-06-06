@@ -1,0 +1,25 @@
+{
+  "name": "樱花树",
+  "category": "urushi:nature",
+  "icon": "urushi:big_sakura_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "樱花树会在森林群系或幽世维度下自然生成。$(br2)将樱花树树苗与荧石粉合成后，长出来的树将会发出亮度等级15的光。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "故乡的萨库拉开了",
+      "images": [
+        "urushi:textures/gui/patchouli/sakura_tree.png"
+      ]
+    }
+    
+  ]
+}

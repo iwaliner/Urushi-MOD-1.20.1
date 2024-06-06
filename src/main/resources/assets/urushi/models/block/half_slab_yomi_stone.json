@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/half_slab_base",
+  "textures": {
+    "tex": "urushi:block/yomi_stone"
+  }
+}

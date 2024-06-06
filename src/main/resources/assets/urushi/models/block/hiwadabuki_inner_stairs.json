@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "urushi:block/hiwada",
+        "top": "urushi:block/hiwada",
+        "side": "urushi:block/hiwada"
+    }
+}

@@ -1,0 +1,54 @@
+{
+	"parent": "block/block","render_type": "minecraft:cutout_mipped",
+	"textures": {
+		"0": "urushi:block/sazare_ishi",
+		"1": "urushi:block/shimenawa_1_fire",
+		"2": "urushi:block/shimenawa_2_fire",
+		"3": "urushi:block/shimenawa_3_fire",
+		"particle": "urushi:block/sazare_ishi"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [14, 16, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 13, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 13, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 13, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 13, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 13, 13], "texture": "#0"},
+				"down": {"uv": [0, 0, 13, 13], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 0, 0.99],
+			"to": [14, 16, 0.99],
+			"faces": {
+				"north": {"uv": [3, 0, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [14.01, 0, 1],
+			"to": [14.01, 16, 14],
+			"faces": {
+				
+				"east": {"uv": [2, 0, 15, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [0.99, 0, 1],
+			"to": [0.99, 16, 14],
+			"faces": {
+				
+				"west": {"uv": [1, 0, 14, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [1, 0, 14.01],
+			"to": [14, 16, 14.01],
+			"faces": {
+				"south": {"uv": [3, 0, 16, 16], "texture": "#3"}
+			}
+		}
+	]
+}

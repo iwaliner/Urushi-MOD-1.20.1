@@ -1,0 +1,143 @@
+{
+    "multipart": [
+        {   "when": { "north": "true","south": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/light_gray_plaster",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/light_gray_plaster",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_0", "uvlock": true }
+        },
+        {   "when": {"north": "false","south": "false","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_1", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_2", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_3", "uvlock": true }
+        },
+       {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_4", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_4", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_4", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_4", "y": 270, "uvlock": true }
+        },
+         {   "when": { "north": "true","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_5", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_5", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_6", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_6", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_6", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_6", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_7", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_7", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_7", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_7", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_8",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_8", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_8", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_8", "y":270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_9",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_9", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_10",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_10", "y": 90,  "uvlock": true }
+        },
+      
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_12",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_12", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_12", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_12", "y": 270,  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_13",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_13", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_13", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_13", "y": 270,  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_14",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_14", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_14", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_14", "y": 270,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","east": "true","west": "true"},
+            "apply": { "model": "urushi:block/smooth_planks_black_urushi_stained",  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_15",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_15", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_15", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_gray/plaster_black_15", "y": 270,  "uvlock": true }
+        }
+    ]
+}

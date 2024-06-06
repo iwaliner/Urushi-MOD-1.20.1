@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop","render_type": "minecraft:cutout",
+    "textures": {
+        "crop": "urushi:block/rice_1"
+    }
+}

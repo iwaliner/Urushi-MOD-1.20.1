@@ -1,0 +1,185 @@
+{
+  "name": "等阶1法术的推进",
+  "category": "urushi:magic",
+  "icon": "urushi:wood_element_sacred_rock",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 5,
+
+  "pages": [
+   {
+      "type": "patchouli:text",
+      "text": "漆MOD以五行思想为蓝本，你可以自由操纵木气、火气、土气、金气、水气共5种元素的灵力及对应的法术种种。"
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:rock",
+        "count": 1
+      },
+      "text": "首先使用切石机将原石切成石块。"
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:sazare_ishi",
+        "count": 1
+      },
+      "text": "在石块上放置钟乳石后，过一会石块就会被变为蚀刻石块。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/sazare_ishi.png"
+      ]
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:shide",
+      "text": "使用纸合成纸垂。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_paper",
+        "count": 1
+      },
+      "text": "使用纸垂右击木气元素方块，就可以将其变为木气纸垂。$(br2)其他的元素的也类似，后文不再赘述。"
+    },
+     {
+      "type": "patchouli:text",
+      "text": "再合成几个木气磐座吧。$(br2)将木气方块放置在磐座有2个纸垂的那面时，木气方块将会被磐座所吸取，每1块方块转化为1点灵力。$(br2)右击磐座可以查看目前的灵力储量。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_sacred_rock",
+      "text": "Sugar Cane, Bamboo, and Japanese Timber Bamboo are useful for generating Wood Element Reiryoku. Fire and Lantern Plant are useful for generating Fire Element Reiryoku. Dirt and Soul Sand are useful forgenerating Earth Element Reiryoku. Cactus, Kelp, and Snow are useful for generating Water Element Reiryoku."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:petrified_log_with_wood_amber",
+        "count": 1
+      },
+      "text": "在割开的漆木原木上方放置黄泉石或黄泉石原石，并且附近存在特定动物的情况下，$(br)一定时间后将会吸取动物，并将割开的漆木原木转化为含各元素琥珀的硅化原木。$(br2)各元素对应的特定的动物为：木气-鸡、火气-绵羊、土气-牛、金气-马，水气-猪。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "用坐垫固定动物会更轻松",
+      "images": [
+        "urushi:textures/gui/patchouli/petrified_log_with_amber.png"
+      ]
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_amber",
+        "count": 1
+      },
+      "text": "破坏含木气琥珀的硅化原木后将会掉落木气琥珀，其他元素同理。$(br2)注：简单来说，“硅化木”是木头在地下长年累月后变成的化石。$(br)“琥珀”则是树液在地下长年累月后形成的宝石或矿物。"
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:petrified_log",
+        "count": 1
+      },
+      "text": "当割开的漆木原木上方放置黄泉石或黄泉石，且附近没有动物存在的情况下，割开的漆木原木将会变成硅化原木。$(br2)硅化木及其制品需要使用镐来挖掘，并且这些方块不会因为被火点燃而燃烧至烬。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "再合成几个白桦木木气喷口吧。$(br2)右击能够输出灵力的方块的侧面以设置灵力喷口，并在传输途径另一端存在接收方块的时候，将会自动开始传输灵力；每1个粒子会传输1点灵力。$(br2)使用红石充能可以暂停喷口的灵力传输。$(br2)右击可以确认喷口内目前的灵力储量。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_emitter_tier1",
+      "text": ""
+    },
+     {
+      "type": "patchouli:text",
+      "text": "再合成几个白桦木三宝供盘吧。$(br2)右击即可将手上的物品放置在三宝供盘上，空手右击以取出。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:sanbo_tier1",
+      "text": ""
+    },
+     {
+      "type": "patchouli:text",
+      "text": "再合成白桦木木气仪式台吧。$(br2)在仪式台的四个侧面各放上1个白桦木三宝供盘后，根据配方将素材放在供盘上，并向仪式台供给灵力即可开始制作物品的仪式。$(br2)不过，还需要再做一些其他的准备才能正式开始合成仪式。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_crafting_table_tier1",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "再合成一些白桦木反射镜吧。$(br2)反射镜不仅可以面向上下与东西南北共6个方向，诸如北偏东这样细微的角度也是可以调整的。$(br2)当灵力接触到反射镜时，会像光的反射一样，以入射角等大的反射角把灵力路径反射出去。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:mirror_tier1",
+      "text": ""
+    },
+     {
+      "type": "patchouli:image",
+      "text": "例1",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_1.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "例2",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_2.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "例3",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_3.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "由于三宝供盘会挡住仪式台的正面与侧面，因此需要从斜向或者上下向仪式台传输灵力。",
+      "images": [
+        "urushi:textures/gui/patchouli/element_crafting.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_tank_tier1",
+        "count": 1
+      },
+      "text": "再合成白桦木木气大币吧。$(br2)大币可以输入、输出或储存灵力。$(br2)在灵力输送路径的交汇处可以使用大币，来产生路径上的分歧或合流。"
+    },
+     {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/tank.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_magatama",
+        "count": 1
+      },
+      "text": "再合成木气勾玉吧。$(br2)手持勾玉右击大币，可以将大币内存储的灵力转移到勾玉里。$(br2)将勾玉放在物品栏里，可以使用各种各样需要消耗灵力的物品与道具。"
+    }
+  ]
+}

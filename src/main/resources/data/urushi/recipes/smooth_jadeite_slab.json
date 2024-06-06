@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:smooth_jadeite_block"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:smooth_jadeite_slab",
+
+    "count": 6
+
+  }
+
+}

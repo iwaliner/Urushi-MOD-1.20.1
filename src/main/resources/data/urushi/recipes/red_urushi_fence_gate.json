@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "group": "wooden_fence",
+
+  "pattern": [
+
+    "#W#",
+
+    "#W#"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "tag": "forge:rods/wooden"
+
+    },
+
+    "W": {
+
+      "item": "urushi:red_urushi_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:red_urushi_fence_gate",
+
+    "count": 1
+
+  }
+
+}

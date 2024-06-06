@@ -1,0 +1,29 @@
+{
+  "name": "Hot Springs",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:hot_spring_water_bucket",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 25,
+
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:hot_spring_water_bucket",
+        "count": 1
+      },
+      "text": "Hot springs are generated along with tuff in the Kakuriyo Dimension. It applies Generation when soaking in it.$(br2)Its water can be scooped up with a bucket, to make an infinite spring water source. Also, Eggs placed inside hot spring water turn into Hot Spring Eggs."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Build a great hot spring facility!",
+      "images": [
+        "urushi:textures/gui/patchouli/onsen.png"
+      ]
+    }
+    
+  ]
+}

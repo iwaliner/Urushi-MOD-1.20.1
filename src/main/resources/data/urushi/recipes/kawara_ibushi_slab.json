@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:ibushi_kawara_block"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:ibushi_kawara_slab",
+
+    "count": 6
+
+  }
+
+}

@@ -1,0 +1,70 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "minecraft:cod"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "minecraft:grass"
+
+
+
+    },
+    {
+
+
+
+      "item": "urushi:gyudon"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:mustard_leaf_and_cod_caviar_gyudon",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

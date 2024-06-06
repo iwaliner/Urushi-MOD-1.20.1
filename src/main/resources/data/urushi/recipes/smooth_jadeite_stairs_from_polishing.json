@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "urushi:jadeite_stairs"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:smooth_jadeite_stairs"
+
+  }
+
+}

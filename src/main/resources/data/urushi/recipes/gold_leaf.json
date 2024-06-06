@@ -1,0 +1,58 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+     "tag": "forge:nuggets/gold"
+
+
+
+    },
+     {
+
+
+
+      "tag": "forge:nuggets/gold"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:gold_leaf",
+
+
+
+    "count": 8
+
+
+
+  }
+
+
+
+}

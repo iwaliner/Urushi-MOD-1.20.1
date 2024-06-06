@@ -1,0 +1,42 @@
+{
+  "name": "等阶2法术的延伸",
+  "category": "urushi:magic",
+  "icon": "urushi:wood_enhanced_jadeite",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 10,
+
+  "pages": [
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_enhanced_jadeite_brick",
+      "text": "合成一些木气加持的翡翠砖吧。$(br2)这类砖块被用作合成素材，也可以进行装饰。"
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_hokora",
+        "count": 1
+      },
+      "text": "合成木气神龛吧。$(br)手持特定物品右击、或使用漏斗等方法将特定物品放入神龛后，过一会神龛将会将每1个物品转化为5点对应属性的灵力。$(br)各元素对应的特定的物品为：木气-熟梅子、火气-小麦、土气-稻穗、金气-葱、水气-大豆。$(br)使用神龛就可以更轻松地生产灵力了。"
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_crafting_table_tier2",
+        "count": 1
+      },
+      "text": "再合成翡翠木气仪式台吧。其使用方法和白桦木木气仪式台一致。$(br2)翡翠仪式台不仅可以合成等阶1的物品，还可以合成更多等阶2的物品。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_amber",
+        "count": 1
+      },
+      "text": "在等阶2下，使用4个燧石便可以仪式合成出各个元素的琥珀了。这样制作法术相关的物品就更轻松了。"
+    }
+  ]
+}

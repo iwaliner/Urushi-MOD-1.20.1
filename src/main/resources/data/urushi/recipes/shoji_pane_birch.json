@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "X#X",
+
+    "###",
+
+    "X#X"
+
+  ],
+
+  "key": {
+
+    "X": {
+
+     "item": "minecraft:paper"
+
+    },
+
+    "#": {
+
+    "item": "urushi:smooth_birch_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:birch_shoji_pane",
+
+    "count": 32
+
+  }
+
+}

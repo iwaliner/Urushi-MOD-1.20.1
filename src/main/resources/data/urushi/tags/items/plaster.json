@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:plaster",
+    "urushi:orange_plaster",
+    "urushi:magenta_plaster",
+    "urushi:light_blue_plaster",
+    "urushi:yellow_plaster",
+    "urushi:lime_plaster",
+    "urushi:pink_plaster",
+    "urushi:light_gray_plaster",
+    "urushi:gray_plaster",
+    "urushi:cyan_plaster",
+    "urushi:purple_plaster",
+    "urushi:blue_plaster",
+    "urushi:green_plaster",
+    "urushi:red_plaster",
+    "urushi:brown_plaster",
+    "urushi:black_plaster"
+  ]
+}

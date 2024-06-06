@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "urushi:block/tawara",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "urushi:block/tawara",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "urushi:block/tawara"
+    },
+    "facing=west": {
+      "model": "urushi:block/tawara",
+      "y": 90
+    }
+  }
+}

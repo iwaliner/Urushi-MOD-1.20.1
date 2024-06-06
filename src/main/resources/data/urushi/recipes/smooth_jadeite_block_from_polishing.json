@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "urushi:jadeite_block"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:smooth_jadeite_block"
+
+  }
+
+}

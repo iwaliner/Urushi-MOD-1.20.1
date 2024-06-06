@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "urushi:so"
+
+    },
+
+    {
+
+      "item": "urushi:gyudon"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:cheese_gyudon",
+
+    "count": 1
+
+  }
+
+}

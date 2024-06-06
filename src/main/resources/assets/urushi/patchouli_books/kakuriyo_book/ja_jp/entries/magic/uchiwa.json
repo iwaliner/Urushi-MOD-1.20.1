@@ -1,0 +1,20 @@
+{
+  "name": "うちわ",
+  "category": "urushi:magic",
+  "icon": "urushi:uchiwa",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 25,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:uchiwa",
+        "count": 1
+      },
+      "text": "うちわを使用すると、近くの草、花、葉を範囲破壊できます。また、七輪の火力調節にも活躍します。$(br2)インベントリ内に配置した木気の勾玉の霊力を消費して機能します。"
+    }
+  ]
+}

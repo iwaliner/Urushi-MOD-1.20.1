@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "minecraft:oak_sapling"
+
+    },
+
+    {
+
+      "tag": "forge:dyes/red"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:red_sapling",
+
+    "count": 1
+
+  }
+
+}

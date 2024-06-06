@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "# ",
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:ibushi_kawara_slab"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:ibushi_kawara_roof_225",
+
+    "count": 3
+
+  }
+
+}

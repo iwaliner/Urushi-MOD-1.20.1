@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "urushi:block/ghost_dirt"
+    },
+    "powered=true": {
+      "model": "minecraft:block/dirt"
+    }
+  }
+}

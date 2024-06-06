@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:japanese_apricot_log",
+    "urushi:stripped_japanese_apricot_log",
+    "urushi:japanese_apricot_wood",
+    "urushi:stripped_japanese_apricot_wood",
+     "urushi:lacquer_log",
+    "urushi:cypress_log",
+    "urushi:stripped_cypress_log",
+    "urushi:cypress_wood",
+    "urushi:stripped_cypress_wood",
+    "urushi:sakura_log",
+    "urushi:stripped_sakura_log",
+    "urushi:sakura_wood",
+    "urushi:stripped_sakura_wood",
+    "urushi:japanese_cedar_log",
+    "urushi:stripped_japanese_cedar_log",
+    "urushi:japanese_cedar_wood",
+    "urushi:stripped_japanese_cedar_wood"
+  ]
+}

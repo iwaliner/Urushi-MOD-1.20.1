@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "urushi:lidless_groove"
+
+    },
+
+    {
+
+      "tag": "forge:nuggets/iron"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:mesh_groove",
+
+    "count": 1
+
+  }
+
+}

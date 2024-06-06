@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/sand_wall",
+        "down": "urushi:block/planks_smooth_black_urushi",
+        "up": "urushi:block/sand_wall",
+        "north": "urushi:block/sand_wall",
+        "east": "urushi:block/connectable/framed_sand_coast/sand_coast_black_12",
+        "south": "urushi:block/connectable/framed_sand_coast/sand_coast_black_2",
+        "west": "urushi:block/connectable/framed_sand_coast/sand_coast_black_11"
+    }
+}

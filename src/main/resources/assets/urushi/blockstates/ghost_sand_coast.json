@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "urushi:block/ghost_sand_coast"
+    },
+    "powered=true": {
+      "model": "urushi:block/sand_coast"
+    }
+  }
+}

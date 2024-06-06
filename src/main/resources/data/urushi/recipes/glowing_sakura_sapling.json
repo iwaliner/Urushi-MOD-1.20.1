@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+    "item": "minecraft:glowstone_dust"
+
+    },
+
+    {
+
+    "item": "urushi:sakura_sapling"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:glowing_sakura_sapling",
+
+    "count": 1
+
+  }
+
+}

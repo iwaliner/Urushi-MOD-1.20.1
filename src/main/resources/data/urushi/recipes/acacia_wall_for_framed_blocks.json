@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+    "item": "urushi:smooth_acacia_slab"
+    }
+  ],
+  "result": {
+  "item": "urushi:acacia_wall_for_framed_blocks",
+"count": 4
+  }
+}

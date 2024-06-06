@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:doubled_wooden_cabinetry"
+    },
+    {
+    "tag": "forge:dyes/green"
+    }
+  ],
+  "result": {
+    "item": "urushi:doubled_green_stained_wooden_cabinetry"
+  }
+}

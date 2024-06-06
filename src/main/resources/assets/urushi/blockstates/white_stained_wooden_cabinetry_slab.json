@@ -1,0 +1,96 @@
+{
+  "variants": {
+    "facing=north,open=false,type=bottom": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_under_slab"
+    },
+    "facing=north,open=false,type=double": {
+      "model": "urushi:block/white_stained_wooden_cabinetry"
+    },
+    "facing=north,open=false,type=top": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_upper_slab"
+    },
+    "facing=south,open=false,type=bottom": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_under_slab",
+      "y": 180
+    },
+    "facing=south,open=false,type=double": {
+      "model": "urushi:block/white_stained_wooden_cabinetry",
+      "y": 180
+    },
+    "facing=south,open=false,type=top": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_upper_slab",
+      "y": 180
+    },
+    "facing=west,open=false,type=bottom": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_under_slab",
+      "y": 270
+    },
+    "facing=west,open=false,type=double": {
+      "model": "urushi:block/white_stained_wooden_cabinetry",
+      "y": 270
+    },
+    "facing=west,open=false,type=top": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_upper_slab",
+      "y": 270
+    },
+    "facing=east,open=false,type=bottom": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_under_slab",
+      "y": 90
+    },
+    "facing=east,open=false,type=double": {
+      "model": "urushi:block/white_stained_wooden_cabinetry",
+      "y": 90
+    },
+    "facing=east,open=false,type=top": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_upper_slab",
+      "y": 90
+    },
+    
+    
+    "facing=north,open=true,type=bottom": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_under_slab_open"
+    },
+    "facing=north,open=true,type=double": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_open"
+    },
+    "facing=north,open=true,type=top": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_upper_slab_open"
+    },
+    "facing=south,open=true,type=bottom": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_under_slab_open",
+      "y": 180
+    },
+    "facing=south,open=true,type=double": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_open",
+      "y": 180
+    },
+    "facing=south,open=true,type=top": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_upper_slab_open",
+      "y": 180
+    },
+    "facing=west,open=true,type=bottom": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_under_slab_open",
+      "y": 270
+    },
+    "facing=west,open=true,type=double": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_open",
+      "y": 270
+    },
+    "facing=west,open=true,type=top": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_upper_slab_open",
+      "y": 270
+    },
+    "facing=east,open=true,type=bottom": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_under_slab_open",
+      "y": 90
+    },
+    "facing=east,open=true,type=double": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_open",
+      "y": 90
+    },
+    "facing=east,open=true,type=top": {
+      "model": "urushi:block/white_stained_wooden_cabinetry_upper_slab_open",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "parent": "urushi:obtain_mirror_tier1",
+  "display": {
+    "icon": {
+      "item": "urushi:wood_element_tank_tier1"
+    },
+    "title": {
+      "translate": "advancements.urushi.tank_tier1.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.tank_tier1.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wood_element_tank_tier1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:wood_element_tank_tier1"
+            ]
+          }
+        ]
+      }
+    },
+    "fire_element_tank_tier1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:fire_element_tank_tier1"
+            ]
+          }
+        ]
+      }
+    },
+    "earth_element_tank_tier1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:earth_element_tank_tier1"
+            ]
+          }
+        ]
+      }
+    },
+    "metal_element_tank_tier1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:metal_element_tank_tier1"
+            ]
+          }
+        ]
+      }
+    },
+    "water_element_tank_tier1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:water_element_tank_tier1"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wood_element_tank_tier1",
+      "fire_element_tank_tier1",
+      "earth_element_tank_tier1",
+      "metal_element_tank_tier1",
+      "water_element_tank_tier1"
+    ]
+  ]
+}

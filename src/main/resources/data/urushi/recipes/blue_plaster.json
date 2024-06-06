@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "BBB",
+
+    "BDB",
+
+    "BBB"
+
+  ],
+
+  "key": {
+
+    "D": {
+
+   "tag": "forge:dyes/blue"
+
+      },
+
+    "B": {
+
+    "tag": "urushi:plaster"
+
+   }
+
+  },
+
+  "result": {
+
+    "item": "urushi:blue_plaster",
+
+    "count": 8
+
+  }
+
+}

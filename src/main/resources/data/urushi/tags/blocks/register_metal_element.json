@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+   "#minecraft:base_stone_overworld",
+  "#minecraft:beacon_base_blocks",
+  "#minecraft:rails",
+  "#minecraft:sand",
+  "#forge:gravel",
+  "minecraft:dripstone_block",
+  "minecraft:pointed_dripstone",
+  "urushi:gold_leaf_block",
+  "urushi:gold_leaf_slab",
+  "urushi:gold_leaf_stairs",
+  "#forge:cobblestone",
+  "#forge:sand",
+  "#forge:sandstone",
+  "#forge:stone",
+   "minecraft:bedrock"
+  ]
+}

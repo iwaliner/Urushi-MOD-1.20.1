@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "WWW",
+
+    "# #",
+
+    "WWW"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "tag": "forge:rods/wooden"
+
+    },
+
+    "W": {
+
+      "item": "urushi:smooth_jungle_slab"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:jungle_board_window",
+
+    "count": 8
+
+  }
+
+}

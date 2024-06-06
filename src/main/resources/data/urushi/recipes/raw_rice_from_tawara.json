@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:tawara"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:raw_rice",
+
+      "count": 9
+
+  }
+
+}

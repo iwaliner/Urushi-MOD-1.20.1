@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "tag": "forge:crops/soybean"
+
+
+
+    },
+
+
+
+    {
+      "tag": "forge:crops/soybean"
+    },
+     {
+      "item": "urushi:rice_malt"
+    },
+     {
+      "tag": "forge:dust/salt"
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:shikomi_miso",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

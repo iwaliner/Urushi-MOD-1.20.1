@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:plaster"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:sakura_wall_for_framed_blocks"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:sakura_framed_plaster",
+
+
+
+    "count": 2
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+    "item": "urushi:smooth_spruce_slab"
+    }
+  ],
+  "result": {
+  "item": "urushi:spruce_wall_for_framed_blocks",
+"count": 4
+  }
+}

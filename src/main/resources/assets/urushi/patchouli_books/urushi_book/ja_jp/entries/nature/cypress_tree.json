@@ -1,0 +1,25 @@
+{
+  "name": "檜はどこ？",
+  "category": "urushi:nature",
+  "icon": "urushi:cypress_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 25,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "檜の樹木はタイガ系統のバイオームに自然生成されます。$(br2)苗木を4つ並べることで巨大な杉の木を生やすことができます。$(br2)樹皮からは檜皮ブロックがクラフトできます。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "これが檜の樹木",
+      "images": [
+        "urushi:textures/gui/patchouli/cypress_tree.png"
+      ]
+    }
+    
+  ]
+}

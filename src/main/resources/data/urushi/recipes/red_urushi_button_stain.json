@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "BBB",
+
+    "BDB",
+
+    "BBB"
+
+  ],
+
+  "key": {
+
+    "D": {
+
+     "item": "urushi:red_urushi_ball"
+
+    },
+
+    "B": {
+
+    "tag": "minecraft:wooden_buttons"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:red_urushi_button",
+
+    "count": 8
+
+  }
+
+}

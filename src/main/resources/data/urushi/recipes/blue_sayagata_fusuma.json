@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "urushi:blank_fusuma"
+
+    },
+
+    {
+
+      "item": "minecraft:string"
+
+    },
+
+    {
+
+      "tag": "forge:dyes/light_blue"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:blue_sayagata_fusuma",
+
+    "count": 1
+
+  }
+
+}

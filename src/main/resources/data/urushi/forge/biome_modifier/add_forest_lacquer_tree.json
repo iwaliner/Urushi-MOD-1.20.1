@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:forest",
+  "features": "urushi:forest_lacquer",
+  "step": "vegetal_decoration"
+}

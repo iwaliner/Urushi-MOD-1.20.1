@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "minecraft:cobblestone_slab"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"minecraft:stone_slab"
+
+  }
+
+}

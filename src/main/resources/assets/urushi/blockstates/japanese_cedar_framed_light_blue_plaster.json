@@ -1,0 +1,143 @@
+{
+    "multipart": [
+        {   "when": { "north": "true","south": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/light_blue_plaster",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/light_blue_plaster",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_0", "uvlock": true }
+        },
+        {   "when": {"north": "false","south": "false","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_1", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_2", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_3", "uvlock": true }
+        },
+       {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_4", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_4", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_4", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_4", "y": 270, "uvlock": true }
+        },
+         {   "when": { "north": "true","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_5", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_5", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_6", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_6", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_6", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_6", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_7", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_7", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_7", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_7", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_8",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_8", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_8", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_8", "y":270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_9",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_9", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_10",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_10", "y": 90,  "uvlock": true }
+        },
+      
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_12",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_12", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_12", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_12", "y": 270,  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_13",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_13", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_13", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_13", "y": 270,  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_14",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_14", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_14", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_14", "y": 270,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","east": "true","west": "true"},
+            "apply": { "model": "urushi:block/smooth_japanese_cedar_planks",  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_15",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_15", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_15", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_plaster_light_blue/plaster_cedar_15", "y": 270,  "uvlock": true }
+        }
+    ]
+}

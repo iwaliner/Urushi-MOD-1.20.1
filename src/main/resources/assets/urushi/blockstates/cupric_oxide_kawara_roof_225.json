@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=north,type=bottom": {
+      "model": "urushi:block/cupric_oxide_kawara_roof_22.5_under"
+    },
+    "facing=north,type=double": {
+      "model": "urushi:block/copper_kawara_block"
+    },
+    "facing=north,type=top": {
+      "model": "urushi:block/cupric_oxide_kawara_roof_22.5_upper"
+    },
+    "facing=south,type=bottom": {
+      "model": "urushi:block/cupric_oxide_kawara_roof_22.5_under",
+      "y": 180
+    },
+    "facing=south,type=double": {
+      "model": "urushi:block/copper_kawara_block",
+      "y": 180
+    },
+    "facing=south,type=top": {
+      "model": "urushi:block/cupric_oxide_kawara_roof_22.5_upper",
+      "y": 180
+    },
+    "facing=west,type=bottom": {
+      "model": "urushi:block/cupric_oxide_kawara_roof_22.5_under",
+      "y": 270
+    },
+    "facing=west,type=double": {
+      "model": "urushi:block/copper_kawara_block",
+      "y": 270
+    },
+    "facing=west,type=top": {
+      "model": "urushi:block/cupric_oxide_kawara_roof_22.5_upper",
+      "y": 270
+    },
+    "facing=east,type=bottom": {
+      "model": "urushi:block/cupric_oxide_kawara_roof_22.5_under",
+      "y": 90
+    },
+    "facing=east,type=double": {
+      "model": "urushi:block/copper_kawara_block",
+      "y": 90
+    },
+    "facing=east,type=top": {
+      "model": "urushi:block/cupric_oxide_kawara_roof_22.5_upper",
+      "y": 90
+    }
+  }
+}

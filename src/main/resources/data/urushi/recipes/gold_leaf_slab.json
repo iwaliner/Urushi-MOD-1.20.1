@@ -1,0 +1,57 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "###"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+      "item": "urushi:gold_leaf_block"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:gold_leaf_slab",
+
+
+
+    "count": 6
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Sandpapaer Block",
+  "category": "urushi:useful_items",
+  "icon": "urushi:sandpaper_block",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 20,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Use the Sandpaper Block along with Sticky Piston.$(br2)When you place the grindstone block in front of a sticky piston and activate the piston, the blocks adjacent to the grindstone will be polished. It can also strip bark from logs."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:sandpaper_block",
+      "text": ""
+    }
+    
+  ]
+}

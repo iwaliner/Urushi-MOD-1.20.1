@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#",
+
+    "#"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:jadeite_block"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:jadeite_pillar",
+
+    "count": 2
+
+  }
+
+}

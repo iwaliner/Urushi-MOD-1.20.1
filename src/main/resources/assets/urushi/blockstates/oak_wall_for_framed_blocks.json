@@ -1,0 +1,41 @@
+{
+
+  "variants": {
+
+    "facing=east": {
+
+      "model": "urushi:block/oak_wall_for_framed_blocks",
+
+      "y": 90
+
+    },
+
+    "facing=north": {
+
+      "model": "urushi:block/oak_wall_for_framed_blocks"
+
+    },
+
+
+    "facing=south": {
+
+      "model": "urushi:block/oak_wall_for_framed_blocks",
+
+      "y": 180
+
+    },
+
+    "facing=west": {
+
+      "model": "urushi:block/oak_wall_for_framed_blocks",
+
+      "y": 270
+
+    }
+
+
+  
+
+  }
+
+}

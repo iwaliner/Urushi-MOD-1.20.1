@@ -1,0 +1,70 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "minecraft:wheat"
+
+
+
+    },
+
+
+
+    {
+
+
+
+       "item": "urushi:kansui_powder"
+
+
+
+    },
+     {
+
+
+
+       "item": "urushi:water_bamboo_cup"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:alkaline_dough",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

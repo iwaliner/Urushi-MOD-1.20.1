@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "urushi:block/cupric_oxide_kawara_block",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "urushi:block/cupric_oxide_kawara_block",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "urushi:block/cupric_oxide_kawara_block"
+    },
+    "facing=west": {
+      "model": "urushi:block/cupric_oxide_kawara_block",
+      "y": 90
+    }
+  }
+}

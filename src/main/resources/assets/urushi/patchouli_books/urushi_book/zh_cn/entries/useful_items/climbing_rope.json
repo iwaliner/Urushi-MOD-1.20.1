@@ -1,0 +1,24 @@
+{
+  "name": "降索",
+  "category": "urushi:useful_items",
+  "icon": "urushi:climbing_rope",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 10,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "使用降索右击可以向下方的地面瞬间放下一条绳索，绳索可以作为梯子进行攀爬。$(br2)无论绳子的长度有多长，在使用时都仅消耗1个降索。$(br2)通过降索放下的绳子如沙子或砂砾一样为重力方块，因此可以借助火把进行回收。然而，手动放置的绳子并不会受重力影响。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:climbing_rope",
+      "text": ""
+    }
+    
+  ]
+}

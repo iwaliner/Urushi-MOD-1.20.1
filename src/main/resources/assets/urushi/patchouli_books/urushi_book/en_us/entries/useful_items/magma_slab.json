@@ -1,0 +1,24 @@
+{
+  "name": "Magma Slab",
+  "category": "urushi:useful_items",
+  "icon": "urushi:magma_slab",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 25,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Troble collecting items when Magma Blocks in your mob trap? Magma Slab is on your way!$(br2)Place hoppers under Magma Slabs to gather dropped items.$(br2)Plus, Magma Stairs are avaliable too!"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:magma_slab",
+      "text": ""
+    }
+    
+  ]
+}

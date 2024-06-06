@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "urushi:sazare_ishi"
+
+    },
+
+    {
+
+      "item": "urushi:climbing_rope"
+
+    },
+
+    {
+
+      "item": "urushi:wood_element_paper"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:wood_element_sacred_rock",
+
+    "count": 1
+
+  }
+
+}

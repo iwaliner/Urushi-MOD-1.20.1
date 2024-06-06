@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "##",
+
+
+
+    "##"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+      "item": "urushi:metal_enhanced_jadeite"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:metal_enhanced_jadeite_brick",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

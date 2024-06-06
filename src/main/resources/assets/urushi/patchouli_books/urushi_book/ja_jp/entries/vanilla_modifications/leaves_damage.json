@@ -1,0 +1,18 @@
+{
+  "name": "葉の上は落下ダメージ無効",
+  "category": "urushi:vanilla_modifications",
+  "icon": "minecraft:oak_leaves",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "葉は柔らかくてクッションのように働くという印象がありますが、Minecraftでは葉の上に落下した場合も落下ダメージが発生します。$(br2)そこで、葉ブロックの上に落下した場合に落下ダメージを受けないように変更しています。$(br2)ただし自身の中心軸が葉ブロックの座標ではなく隣のブロックの座標の中にある場合、着地時に身体の一部が葉ブロックに載っていたとしても通常通りダメージを受けます。"
+    }
+    
+  ]
+}

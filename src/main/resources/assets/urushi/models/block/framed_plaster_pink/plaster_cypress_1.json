@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/plaster_pink",
+        "down": "urushi:block/plaster_pink",
+        "up": "urushi:block/planks_smooth_cypress",
+        "north": "urushi:block/connectable/framed_plaster_pink/plaster_cypress_1",
+        "east": "urushi:block/connectable/framed_plaster_pink/plaster_cypress_1",
+        "south": "urushi:block/connectable/framed_plaster_pink/plaster_cypress_1",
+        "west": "urushi:block/connectable/framed_plaster_pink/plaster_cypress_1"
+    }
+}

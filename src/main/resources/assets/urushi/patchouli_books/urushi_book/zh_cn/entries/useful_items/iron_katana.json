@@ -1,0 +1,24 @@
+{
+  "name": "打刀",
+  "category": "urushi:useful_items",
+  "icon": "urushi:iron_katana",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 35,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "左击可以拔刀对单体进行攻击，但不会发生横扫。$(br2)右击可以拔刀向前突进，并对路径上的生物造成攻击力一半的伤害。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:iron_katana",
+      "text": ""
+    }
+    
+  ]
+}

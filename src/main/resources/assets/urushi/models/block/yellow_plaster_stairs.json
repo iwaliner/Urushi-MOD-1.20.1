@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/stairs_base",
+  "textures": {
+    "tex": "urushi:block/plaster_yellow"
+  }
+}

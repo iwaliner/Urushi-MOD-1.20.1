@@ -1,0 +1,36 @@
+{
+  "name": "箪笥",
+  "category": "urushi:useful_items",
+  "icon": "urushi:wooden_cabinetry",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "箪笥のハーフブロックは8つの板材のハーフブロックから作成でき、チェストと同等の内容量をもつブロックです。$(br)箪笥のハーフブロック2つで箪笥、箪笥2つで大容量の箪笥が作成できます。$(br)大容量の箪笥はラージチェスト2つ分の内容量です。$(br)これらは染色が可能です。$(br2)説明は次のページに続きます。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "箪笥のハーフブロック",
+      "recipe": "urushi:wooden_cabinetry_slab",
+      "text": "チェストと同じ内容量"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "箪笥",
+      "recipe": "urushi:wooden_cabinetry",
+      "text": "ラージチェストと同じ内容量"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "大容量の箪笥",
+      "recipe": "urushi:doubled_wooden_cabinetry",
+      "text": "ラージチェスト2つと同じ内容量"
+    }
+    
+  ]
+}

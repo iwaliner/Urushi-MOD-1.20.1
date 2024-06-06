@@ -1,0 +1,20 @@
+{
+  "name": "团扇",
+  "category": "urushi:magic",
+  "icon": "urushi:uchiwa",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 25,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:uchiwa",
+        "count": 1
+      },
+      "text": "使用团扇可以一下子吹飞附近大量的草、花以及树叶，还可以调节七厘烤炉的火焰。$(br2)使用团扇需要消耗木气灵力，因此物品栏内需要有存有灵力的木气勾玉。"
+    }
+  ]
+}

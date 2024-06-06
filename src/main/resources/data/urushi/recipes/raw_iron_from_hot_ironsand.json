@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:throwing_in",
+
+  "ingredients": [
+
+  {
+
+    "item": "urushi:hot_ironsand"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"minecraft:raw_iron"
+
+  }
+
+}

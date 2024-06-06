@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "urushi:japanese_apricot_shoji"
+
+    },
+
+    {
+
+      "tag": "forge:glass_panes"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:japanese_apricot_yukimi_shoji",
+
+    "count": 1
+
+  }
+
+}

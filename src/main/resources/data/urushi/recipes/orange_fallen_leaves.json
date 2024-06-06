@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:orange_leaves"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:fallen_orange_leaves",
+
+    "count": 6
+
+  }
+
+}

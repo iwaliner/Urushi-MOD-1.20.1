@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "urushi:block/japanese_cedar_door_bottom",
+    "top": "urushi:block/japanese_cedar_door_top"
+  }
+}

@@ -1,0 +1,41 @@
+{
+
+
+
+  "type": "urushi:polishing",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+     "item": "urushi:cypress_wood"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:stripped_cypress_wood"
+
+
+
+  }
+
+
+
+}

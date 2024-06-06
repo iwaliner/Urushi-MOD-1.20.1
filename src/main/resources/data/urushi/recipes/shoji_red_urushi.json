@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#",
+
+    "#"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+     "item": "urushi:red_urushi_shoji_pane"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:red_urushi_shoji",
+
+    "count": 1
+
+  }
+
+}

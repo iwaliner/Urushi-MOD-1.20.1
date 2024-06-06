@@ -1,0 +1,75 @@
+{
+
+
+
+  "type": "urushi:wood_element_tier1_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:crafting_table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+    "item": "minecraft:quartz"
+
+
+
+    },
+    {
+
+
+
+   "item": "urushi:wood_enhanced_jadeite_brick"
+
+
+
+    },
+    {
+
+
+
+  "item": "minecraft:quartz"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:wood_element_crafting_table_tier2"
+
+
+
+  },
+
+
+
+  "reiryoku": 50
+
+
+
+}

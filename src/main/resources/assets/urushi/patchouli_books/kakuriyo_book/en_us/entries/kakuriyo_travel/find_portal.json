@@ -1,0 +1,25 @@
+{
+  "name": "Way to the Kakuriyo",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:ghost_kakuriyo_portal_core",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Kakuriyo, or \"The Otherworld\", is a dimension where non-human beings inhabit. $(br2)The Kakuriyo Portal generates on the ground in the Overworld."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "The Kakuriyo Portal!",
+      "images": [
+        "urushi:textures/gui/patchouli/ghost_kakuriyo_portal.png"
+      ]
+    }
+    
+  ]
+}

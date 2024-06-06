@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:wooden_cabinetry"
+    },
+    {
+    "tag": "forge:dyes/orange"
+    }
+  ],
+  "result": {
+    "item": "urushi:orange_stained_wooden_cabinetry"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_lacquer_sapling",
+  "display": {
+    "icon": {
+      "item": "urushi:raw_urushi_ball"
+    },
+    "title": {
+      "translate": "advancements.urushi.raw_urushi.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.raw_urushi.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "raw_urushi": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:raw_urushi_ball"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "raw_urushi"
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "urushi:kakuriyo_portal",
+  "config": {
+    "kakuriyo_portal": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "urushi:ghost_red_kakuriyo_portal_frame",
+        "Properties": {
+          "axis": "y",
+          "powered": "false"
+        }
+      }
+    }
+  }
+}

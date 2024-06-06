@@ -1,0 +1,58 @@
+{
+  "name": "漆の製法",
+  "category": "urushi:nature",
+  "icon": "urushi:raw_urushi_ball",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 10,
+
+  "pages": [
+  {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:chiseled_lacquer_log",
+        "count": 1
+      },
+      "text": "朱漆や黒漆を作成するためには生漆が必要です。そのためには、まずは漆の原木に対して火打石または何かしらの道具で右クリックし、漆の原木に切り込みを入れる作業が必要です。$(br2)説明は次のページに続きます。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "火打石またはツルハシ、斧、シャベル、クワ、剣で右クリック",
+      "images": [
+        "urushi:textures/gui/patchouli/chiseled_lacquer_tree.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:raw_urushi_ball",
+        "count": 1
+      },
+      "text": "切り込みを入れた漆の原木は時間経過で傷部分のテクスチャが替わります。$(br2)この状態でボウルを持って右クリックするとボウルに生漆が満たされます。$(br2)切り込みを入れた漆の原木に向けたディスペンサーにボウルを入れて作動させることでも生漆を入手できます。$(br2)説明は次のページに続きます。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/raw_urushi.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:red_urushi_ball",
+        "count": 1
+      },
+      "text": "赤色の染料を単体クラフトで少量の赤色の染料が、黒色の染料を単体クラフトで少量の黒色の染料が手に入ります。$(br2)これを生漆とクラフトすることで朱漆や黒漆が作成できます。$(br2)朱漆や黒漆は板材などに色をつけることができます。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "朱漆の板材",
+      "recipe": "urushi:red_urushi_planks",
+      "text": ""
+    }
+    
+  ]
+}

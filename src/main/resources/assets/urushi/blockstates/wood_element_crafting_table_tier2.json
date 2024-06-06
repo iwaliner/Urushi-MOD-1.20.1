@@ -1,0 +1,19 @@
+{
+
+  "variants": {
+
+    "lit=false": {
+
+      "model": "urushi:block/wood_element_crafting_table_tier2_idle"
+
+        },
+
+    "lit=true": {
+
+      "model": "urushi:block/wood_element_crafting_table_tier2_lit"
+
+    }
+
+  }
+
+}

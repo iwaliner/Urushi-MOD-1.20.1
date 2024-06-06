@@ -1,0 +1,93 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    " gm",
+
+
+
+    " m ",
+
+
+
+    "s  "
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    
+
+
+
+    "g": {
+
+
+
+      "tag": "forge:weed"
+
+
+
+    },
+
+
+
+    "m": {
+
+
+
+     "item": "urushi:rice_cake"
+
+
+
+    },
+
+
+
+    "s": {
+
+
+
+    "tag": "forge:rods/wooden"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:kusa_dango",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

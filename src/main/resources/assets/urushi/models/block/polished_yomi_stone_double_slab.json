@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "urushi:block/yomi_stone_polished_slab",
+    "end": "urushi:block/yomi_stone_polished"
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"render_type": "minecraft:translucent",
+	"textures": {
+		"5": "urushi:block/vegetable_oil"
+	},
+	"elements": [
+		{
+			"from": [1, 12, 1],
+			"to": [15, 12, 15],
+			"faces": {
+				"up": {"uv": [1, 1, 15, 15], "texture": "#5"}
+			}
+		}
+	]
+}

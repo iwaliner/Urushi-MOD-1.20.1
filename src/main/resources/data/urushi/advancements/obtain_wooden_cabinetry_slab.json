@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_climbing_rope",
+  "display": {
+    "icon": {
+      "item": "urushi:wooden_cabinetry_slab"
+    },
+    "title": {
+      "translate": "advancements.urushi.wooden_cabinetry_slab.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.wooden_cabinetry_slab.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wooden_cabinetry_slab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:wooden_cabinetry_slab"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wooden_cabinetry_slab"
+    ]
+  ]
+}

@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "minecraft:pink_wool"
+
+    },
+
+    {
+
+      "tag": "forge:string"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:pink_cushion",
+
+    "count": 4
+
+  }
+
+}

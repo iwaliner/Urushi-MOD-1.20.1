@@ -1,0 +1,62 @@
+
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "minecraft:gravel"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:syari"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:gravel_sushi",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

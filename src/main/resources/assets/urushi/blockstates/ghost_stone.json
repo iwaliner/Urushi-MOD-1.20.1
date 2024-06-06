@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "urushi:block/ghost_stone"
+    },
+    "powered=true": {
+      "model": "minecraft:block/stone"
+    }
+  }
+}

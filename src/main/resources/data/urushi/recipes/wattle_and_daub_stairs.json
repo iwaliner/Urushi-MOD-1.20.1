@@ -1,0 +1,33 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#  ",
+
+    "## ",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:wattle_and_daub"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:wattle_and_daub_stairs",
+
+    "count": 4
+
+  }
+
+}

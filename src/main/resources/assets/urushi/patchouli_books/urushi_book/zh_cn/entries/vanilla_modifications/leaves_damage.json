@@ -1,0 +1,18 @@
+{
+  "name": "叶子上的摔落伤害",
+  "category": "urushi:vanilla_modifications",
+  "icon": "minecraft:oak_leaves",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "因为树叶堆给人的印象很柔软，所以MC里也得整个这东西。$(br2)因此，装载了漆MOD的时候，摔落到树叶上将不会受到任何摔落伤害。$(br2)然而，如果玩家的坐标中心是并没有在叶子方块内，则还是会受到摔落伤害，与粘液块的边缘判定类似。$(br)这一项可以在配置文件中进行开关。"
+    }
+    
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:stripped_japanese_apricot_log",
+    "urushi:stripped_sakura_log",
+    "urushi:stripped_cypress_log",
+    "urushi:stripped_japanese_cedar_log"
+  ]
+}

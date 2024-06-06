@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_rough_stone"
+    },
+    "type=double": {
+      "model": "urushi:block/rough_stone"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_rough_stone"
+    }
+  }
+}

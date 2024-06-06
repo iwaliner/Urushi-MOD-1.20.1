@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_glass_pane_side",
+    "textures": {
+       "edge": "urushi:block/planks_smooth_japanese_cedar",
+        "pane": "urushi:block/shoji_japanese_cedar_pane"
+    }
+}

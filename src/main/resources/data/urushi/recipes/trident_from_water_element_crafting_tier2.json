@@ -1,0 +1,75 @@
+{
+
+
+
+  "type": "urushi:water_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:heart_of_the_sea"
+
+
+
+    },
+
+
+
+    {
+
+
+
+  "tag": "forge:ingots/iron"
+
+
+
+    },
+    {
+
+
+
+   "item": "minecraft:prismarine_shard"
+
+
+
+    },
+    {
+
+
+
+   "item": "minecraft:prismarine_shard"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"minecraft:trident"
+
+
+
+  },
+
+
+
+  "reiryoku": 300
+
+
+
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "urushi:block/under_slab_orientable",
+    "textures": {
+        "top": "urushi:block/tansu_stained_top_light_blue",
+        "front": "urushi:block/tansu_stained_front_light_blue",
+        "side": "urushi:block/tansu_stained_back_light_blue"
+    }
+}

@@ -1,0 +1,292 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "false","east": "false","west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_0a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "false","north": "false","south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_0b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "true","east": "false","west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_1a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "true","north": "false","south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_1b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "false","east": "false","west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_2a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "false","north": "false","south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_2b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "true","east": "false","west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_3a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "true","north": "false","south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_3b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "false","east": "true","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_4a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "false","north": "true","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_4b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "false","east": "true","west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_5a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "false","north": "true","south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_5b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "false","east": "false","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_6a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "false","north": "false","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_6b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "false","east": "true","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_7a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "false","north": "true","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_7b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "true","east": "true","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_8a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "true","north": "true","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_8b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "true","east": "true","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_9a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "true","north": "true","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_9b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "false","east": "true","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_10a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "false","north": "true","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_10b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "true","east": "true","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_11a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "true","north": "true","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_11b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "false","east": "true","west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_12a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "false","north": "true","south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_12b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "false","east": "false","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_13a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "false","north": "false","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_13b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "true","east": "true","west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_14a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "true","north": "true","south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_14b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "false","down": "true","east": "false","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_15a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "false","down": "true","north": "false","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_15b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "true","east": "true","west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_16a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "true","north": "true","south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_16b"
+      }
+    },
+    {
+      "when": {
+        "facing": "north|south","up": "true","down": "true","east": "false","west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_17a"
+      }
+    },
+    {
+      "when": {
+        "facing": "east|west","up": "true","down": "true","north": "false","south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/connectable_glass/glass_pane_17b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "urushi:block/bars_center_base",
+    "textures": {
+       "0": "urushi:block/plaster",
+		"particle": "urushi:block/plaster"
+    }
+}

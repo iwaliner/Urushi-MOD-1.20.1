@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:brown_plaster"
+    },
+    {
+      "item": "urushi:birch_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:birch_framed_brown_plaster",
+    "count": 2
+  }
+}

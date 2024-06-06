@@ -1,0 +1,33 @@
+{
+  "name": "Hammer",
+  "category": "urushi:useful_items",
+  "icon": "urushi:hammer",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 40,
+
+  "pages": [
+   {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:hammer",
+        "count": 1
+      },
+      "text": "Hammer is useful for knife blacksmithing, and other purposes.$(br2)Right-click to change how textures of certain blocks connect, such as Connectable Glass, Framed blocks, and other blocks have connecting textures."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Some blocks have connected textures by default.$(br2)In singleplayer, toggle with 'C' key to place blocks unconnected to ones in default.$(br2)In multiplayer, sneaking while placing prevents default connections."
+    },
+      {
+      "type": "patchouli:image",
+      "text": "Set connection like this",
+      "images": [
+        "urushi:textures/gui/patchouli/framed_blocks.png"
+      ]
+    }
+    
+  ]
+}

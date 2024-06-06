@@ -1,0 +1,24 @@
+{
+  "name": "Climbing Rope",
+  "category": "urushi:useful_items",
+  "icon": "urushi:climbing_rope",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 10,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Climbing Rope allows you to set a climbable rope, from where you right-click to the ground, costing only one Climbing Rope regardless of length.$(br2)Ropes created with the item fall like sand, but not hand-placed ones."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:climbing_rope",
+      "text": ""
+    }
+    
+  ]
+}

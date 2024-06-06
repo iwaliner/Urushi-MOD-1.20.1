@@ -1,0 +1,50 @@
+{
+  "multipart": [
+    {
+     "when": {
+        "axis": "x", "hanging": "true"
+      },
+      "apply": {
+        "model": "urushi:block/rope_hanging",
+      "x": 90,
+      "y": 90
+      }
+    },
+     {
+     "when": {
+         "axis": "x", "hanging": "false"
+      },
+      "apply": {
+        "model": "urushi:block/rope",
+      "x": 90,
+      "y": 90
+      }
+    },
+    {
+     "when": {
+        "axis": "z", "hanging": "true"
+      },
+      "apply": {
+        "model": "urushi:block/rope_hanging",
+      "x": 90
+      }
+    },
+     {
+     "when": {
+         "axis": "z", "hanging": "false"
+      },
+      "apply": {
+        "model": "urushi:block/rope",
+      "x": 90
+      }
+    },
+    {
+     "when": {
+         "axis": "y"
+      },
+      "apply": {
+        "model": "urushi:block/rope"
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "parent": "urushi:obtain_cobbled_yomi_stone",
+  "display": {
+    "icon": {
+      "item": "urushi:wood_element_sacred_rock"
+    },
+    "title": {
+      "translate": "advancements.urushi.sacred_rock.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.sacred_rock.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wood_element_sacred_rock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:wood_element_sacred_rock"
+            ]
+          }
+        ]
+      }
+    },
+    "fire_element_sacred_rock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:fire_element_sacred_rock"
+            ]
+          }
+        ]
+      }
+    },
+    "earth_element_sacred_rock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:earth_element_sacred_rock"
+            ]
+          }
+        ]
+      }
+    },
+    "metal_element_sacred_rock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:metal_element_sacred_rock"
+            ]
+          }
+        ]
+      }
+    },
+    "water_element_sacred_rock": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:water_element_sacred_rock"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wood_element_sacred_rock",
+      "fire_element_sacred_rock",
+      "earth_element_sacred_rock",
+      "metal_element_sacred_rock",
+      "water_element_sacred_rock"
+    ]
+  ]
+}

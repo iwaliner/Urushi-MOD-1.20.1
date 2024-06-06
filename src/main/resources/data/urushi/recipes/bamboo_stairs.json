@@ -1,0 +1,33 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#  ",
+
+    "## ",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:bamboo_block"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:bamboo_stairs",
+
+    "count": 4
+
+  }
+
+}

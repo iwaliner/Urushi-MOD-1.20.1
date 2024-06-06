@@ -1,0 +1,18 @@
+{
+  "name": "Speed Up!",
+  "category": "urushi:vanilla_modifications",
+  "icon": "minecraft:rabbit_foot",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The vanilla player moving speed is uncomforatble for placing blocks while walking.$(br2)Now player has a 16% speed-up, which is the same as block-placing speed.$(br2)Therefore there will be less misses on building!"
+    }
+    
+  ]
+}

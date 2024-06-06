@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "urushi:kakuriyo_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+   "salt": 88659,
+
+    "spacing": 34,
+
+    "separation": 8,
+
+    "type": "minecraft:random_spread"
+  }
+}

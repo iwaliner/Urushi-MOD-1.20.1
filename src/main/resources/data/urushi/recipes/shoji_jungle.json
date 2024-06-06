@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#",
+
+    "#"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+     "item": "urushi:jungle_shoji_pane"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:jungle_shoji",
+
+    "count": 1
+
+  }
+
+}

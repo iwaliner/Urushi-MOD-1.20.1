@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:root",
+  "display": {
+    "icon": {
+      "item": "urushi:lacquer_sapling"
+    },
+    "title": {
+      "translate": "advancements.urushi.lacquer_sapling.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.lacquer_sapling.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lacquer_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:lacquer_sapling"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lacquer_sapling"
+    ]
+  ]
+}

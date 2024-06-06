@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "urushi:block/red_urushi_planks"
+  }
+}

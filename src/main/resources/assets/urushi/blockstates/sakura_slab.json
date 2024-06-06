@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_sakura"
+    },
+    "type=double": {
+      "model": "urushi:block/sakura_planks"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_sakura"
+    }
+  }
+}

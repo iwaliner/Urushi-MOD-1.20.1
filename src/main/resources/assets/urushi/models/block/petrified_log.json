@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "urushi:block/petrified_log_top",
+        "side": "urushi:block/petrified_log_side"
+    }
+}

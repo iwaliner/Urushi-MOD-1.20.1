@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/outer_stairs_base",
+  "textures": {
+    "tex": "urushi:block/yomi_stone_small_bricks"
+  }
+}

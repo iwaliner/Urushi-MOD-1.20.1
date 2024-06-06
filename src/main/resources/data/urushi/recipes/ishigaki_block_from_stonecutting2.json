@@ -1,0 +1,15 @@
+{
+
+  "type": "minecraft:stonecutting",
+
+  "ingredient": {
+
+    "item": "urushi:rough_stone"
+
+  },
+
+  "result": "urushi:ishigaki_block",
+
+  "count": 1
+
+}

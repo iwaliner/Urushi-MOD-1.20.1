@@ -1,0 +1,25 @@
+{
+  "name": "扁柏树",
+  "category": "urushi:nature",
+  "icon": "urushi:cypress_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 25,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "扁柏树会在针叶林群系下自然生成。$(br2)将4个扁柏树苗摆成2x2的形状后，可以种出大型扁柏树。$(br2)使用便柏树的树皮可以制作扁柏树皮块。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "柏树一下，你就知道",
+      "images": [
+        "urushi:textures/gui/patchouli/cypress_tree.png"
+      ]
+    }
+    
+  ]
+}

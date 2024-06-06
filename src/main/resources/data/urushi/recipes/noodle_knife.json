@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "rrr",
+
+    " ii",
+
+    "iii"
+
+  ],
+
+  "key": {
+
+    "i": {
+
+      "tag": "forge:ingots/iron"
+
+    },
+
+     "r": {
+
+      "tag": "forge:rods/wooden"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:noodle_knife",
+
+    "count": 1
+
+  }
+
+}

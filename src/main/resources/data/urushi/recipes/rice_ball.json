@@ -1,0 +1,33 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    " # ",
+
+    "###",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:rice"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:rice_ball",
+
+    "count": 10
+
+  }
+
+}

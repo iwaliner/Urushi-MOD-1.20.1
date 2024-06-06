@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "urushi:block/sakura_door_bottom",
+    "top": "urushi:block/sakura_door_top"
+  }
+}

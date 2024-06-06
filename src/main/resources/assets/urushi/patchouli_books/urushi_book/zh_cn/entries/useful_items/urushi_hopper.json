@@ -1,0 +1,24 @@
+{
+  "name": "漆木漏斗",
+  "category": "urushi:useful_items",
+  "icon": "urushi:urushi_hopper",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "使用漆木作为素材，不使用铁锭的一种低成本漏斗。$(br2)不过一分钱一分货，其输送速度为原版漏斗的1/4，且只有1个盛放物品的格子。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:urushi_hopper",
+      "text": ""
+    }
+    
+  ]
+}

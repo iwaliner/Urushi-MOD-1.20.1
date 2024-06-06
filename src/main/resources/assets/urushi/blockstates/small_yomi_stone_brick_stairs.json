@@ -1,0 +1,209 @@
+{
+  "variants": {
+    "facing\u003deast,half\u003dbottom,shape\u003dinner_left": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003deast,half\u003dbottom,shape\u003dinner_right": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs"
+    },
+    "facing\u003deast,half\u003dbottom,shape\u003douter_left": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003deast,half\u003dbottom,shape\u003douter_right": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs"
+    },
+    "facing\u003deast,half\u003dbottom,shape\u003dstraight": {
+      "model": "urushi:block/small_yomi_stone_brick_stairs"
+    },
+    "facing\u003deast,half\u003dtop,shape\u003dinner_left": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing\u003deast,half\u003dtop,shape\u003dinner_right": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003deast,half\u003dtop,shape\u003douter_left": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing\u003deast,half\u003dtop,shape\u003douter_right": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003deast,half\u003dtop,shape\u003dstraight": {
+      "model": "urushi:block/small_yomi_stone_brick_stairs",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dbottom,shape\u003dinner_left": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dbottom,shape\u003dinner_right": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dbottom,shape\u003douter_left": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dbottom,shape\u003douter_right": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dbottom,shape\u003dstraight": {
+      "model": "urushi:block/small_yomi_stone_brick_stairs",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dtop,shape\u003dinner_left": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dtop,shape\u003dinner_right": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dtop,shape\u003douter_left": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dtop,shape\u003douter_right": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing\u003dnorth,half\u003dtop,shape\u003dstraight": {
+      "model": "urushi:block/small_yomi_stone_brick_stairs",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003dsouth,half\u003dbottom,shape\u003dinner_left": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs"
+    },
+    "facing\u003dsouth,half\u003dbottom,shape\u003dinner_right": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003dsouth,half\u003dbottom,shape\u003douter_left": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs"
+    },
+    "facing\u003dsouth,half\u003dbottom,shape\u003douter_right": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003dsouth,half\u003dbottom,shape\u003dstraight": {
+      "model": "urushi:block/small_yomi_stone_brick_stairs",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003dsouth,half\u003dtop,shape\u003dinner_left": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003dsouth,half\u003dtop,shape\u003dinner_right": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dsouth,half\u003dtop,shape\u003douter_left": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003dsouth,half\u003dtop,shape\u003douter_right": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dsouth,half\u003dtop,shape\u003dstraight": {
+      "model": "urushi:block/small_yomi_stone_brick_stairs",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dbottom,shape\u003dinner_left": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dbottom,shape\u003dinner_right": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dbottom,shape\u003douter_left": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dbottom,shape\u003douter_right": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dbottom,shape\u003dstraight": {
+      "model": "urushi:block/small_yomi_stone_brick_stairs",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dtop,shape\u003dinner_left": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dtop,shape\u003dinner_right": {
+      "model": "urushi:block/small_yomi_stone_brick_inner_stairs",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dtop,shape\u003douter_left": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dtop,shape\u003douter_right": {
+      "model": "urushi:block/small_yomi_stone_brick_outer_stairs",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing\u003dwest,half\u003dtop,shape\u003dstraight": {
+      "model": "urushi:block/small_yomi_stone_brick_stairs",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    }
+  }
+}

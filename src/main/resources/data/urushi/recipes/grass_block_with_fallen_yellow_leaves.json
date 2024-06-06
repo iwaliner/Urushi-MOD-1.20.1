@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "minecraft:grass_block"
+
+    },
+
+    {
+
+      "item": "urushi:fallen_yellow_leaves"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:grass_block_with_fallen_yellow_leaves",
+
+    "count": 1
+
+  }
+
+}

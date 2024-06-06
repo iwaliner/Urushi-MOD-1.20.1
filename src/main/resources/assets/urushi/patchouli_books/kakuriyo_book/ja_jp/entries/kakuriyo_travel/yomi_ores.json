@@ -1,0 +1,23 @@
+{
+  "name": "黄泉石の鉱石に関して",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:yomi_gold_ore",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 10,
+
+  "pages": [
+    {
+      "type": "text",
+      "text": "褐鉄鉱、黄銅鉱、黄泉石の金鉱石は幸運のついていないツルハシで掘っても複数の原石をドロップします。$(br2)褐鉄鉱は鉄の原石のほかに水晶が、黄銅鉱は銅の原石のほかに鉄の原石が副産物としてドロップします。$(br2)そのためバニラの鉱石よりも効率よくインゴットを集められます。なお、翡翠鉱石は幸運のついていないツルハシで掘った場合1つしか翡翠をドロップしません。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "金属採掘は黄泉の世界で！",
+      "images": [
+        "urushi:textures/gui/patchouli/yomi_ore.png"
+      ]
+    }
+  ]
+}

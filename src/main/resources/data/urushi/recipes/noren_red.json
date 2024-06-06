@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "XX",
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+     "item": "minecraft:red_wool"
+
+    },
+
+    "X": {
+
+    "tag": "forge:bamboo"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:red_noren",
+
+    "count": 8
+
+  }
+
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_lantern_plant_fruit",
+  "display": {
+    "icon": {
+      "item": "urushi:lantern_plant_torch"
+    },
+    "title": {
+      "translate": "advancements.urushi.lantern_plant_torch.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.lantern_plant_torch.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lantern_plant_torch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:lantern_plant_torch"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lantern_plant_torch"
+    ]
+  ]
+}

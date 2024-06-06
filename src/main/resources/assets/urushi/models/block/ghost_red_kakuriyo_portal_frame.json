@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column","render_type": "minecraft:translucent",
+    "textures": {
+        "end": "urushi:block/kakuriyo_portal_frame_red_top_ghost",
+        "side": "urushi:block/kakuriyo_portal_frame_red_ghost"
+    }
+}

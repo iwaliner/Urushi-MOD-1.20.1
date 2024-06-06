@@ -1,0 +1,73 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "urushi:block/oil_extractor"
+      }
+    },
+    {
+      "when": {
+        "level": "1"
+      },
+      "apply": {
+        "model": "urushi:block/oil_extractor_contents1"
+      }
+    },
+    {
+      "when": {
+        "level": "2"
+      },
+      "apply": {
+        "model": "urushi:block/oil_extractor_contents2"
+      }
+    },
+    {
+      "when": {
+        "level": "3"
+      },
+      "apply": {
+        "model": "urushi:block/oil_extractor_contents3"
+      }
+    },
+    {
+      "when": {
+        "level": "4"
+      },
+      "apply": {
+        "model": "urushi:block/oil_extractor_contents4"
+      }
+    },
+    {
+      "when": {
+        "level": "5"
+      },
+      "apply": {
+        "model": "urushi:block/oil_extractor_contents5"
+      }
+    },
+    {
+      "when": {
+        "level": "6"
+      },
+      "apply": {
+        "model": "urushi:block/oil_extractor_contents6"
+      }
+    },
+    {
+      "when": {
+        "level": "7"
+      },
+      "apply": {
+        "model": "urushi:block/oil_extractor_contents7"
+      }
+    },
+    {
+      "when": {
+        "level": "8"
+      },
+      "apply": {
+        "model": "urushi:block/oil_extractor_ready"
+      }
+    }
+  ]
+}

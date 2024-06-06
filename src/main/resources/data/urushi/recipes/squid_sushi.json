@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:squid_sashimi"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:syari"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:squid_sushi",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

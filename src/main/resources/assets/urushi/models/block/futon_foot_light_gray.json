@@ -1,0 +1,8 @@
+{
+    "parent": "urushi:block/futon_foot_base",
+    "textures": {
+        "0": "urushi:block/futon_foot_light_gray",
+		"2": "urushi:block/futon_side",
+		"particle": "urushi:block/futon_side"
+    }
+}

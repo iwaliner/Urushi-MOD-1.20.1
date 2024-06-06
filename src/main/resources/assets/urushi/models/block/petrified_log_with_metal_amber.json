@@ -1,0 +1,33 @@
+{
+	"parent": "block/block","render_type": "minecraft:cutout_mipped",
+	"ambientocclusion": false,
+	"textures": {
+		"0": "urushi:block/petrified_log_side",
+		"1": "urushi:block/petrified_log_top",
+		"2": "urushi:block/petrifired_log_side_amber_metal",
+		"3": "urushi:block/petrifired_log_side_outer",
+		"particle": "urushi:block/petrified_log_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 0, -0.1],
+			"to": [16, 16, -0.1],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		}
+	]
+}

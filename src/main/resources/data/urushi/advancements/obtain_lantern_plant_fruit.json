@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_cobbled_yomi_stone",
+  "display": {
+    "icon": {
+      "item": "urushi:lantern_plant_fruit"
+    },
+    "title": {
+      "translate": "advancements.urushi.lantern_plant_fruit.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.lantern_plant_fruit.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lantern_plant_fruit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:lantern_plant_fruit"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lantern_plant_fruit"
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "铁矿沙",
+  "category": "urushi:nature",
+  "icon": "urushi:ironsand_ore",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 45,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "铁矿沙会在沙漠群系以外的群系里，有沙子的地方里自然生成。$(br2)破坏铁矿砂可以获得砂铁，以此来锻冶打刀。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "是铁矿沙不是铁矿砂，是砂铁不是沙铁",
+      "images": [
+        "urushi:textures/gui/patchouli/ironsand_ore.png"
+      ]
+    }
+    
+  ]
+}

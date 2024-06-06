@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:root",
+  "display": {
+    "icon": {
+      "item": "urushi:japanese_timber_bamboo"
+    },
+    "title": {
+      "translate": "advancements.urushi.japanese_timber_bamboo.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.japanese_timber_bamboo.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "japanese_timber_bamboo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:japanese_timber_bamboo"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "japanese_timber_bamboo"
+    ]
+  ]
+}

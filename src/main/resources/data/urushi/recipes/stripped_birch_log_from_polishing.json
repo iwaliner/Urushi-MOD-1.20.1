@@ -1,0 +1,41 @@
+{
+
+
+
+  "type": "urushi:polishing",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+     "item": "minecraft:birch_log"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"minecraft:stripped_birch_log"
+
+
+
+  }
+
+
+
+}

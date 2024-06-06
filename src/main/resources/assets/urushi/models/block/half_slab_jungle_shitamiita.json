@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "urushi:block/shitamiita_jungle",
+        "top": "urushi:block/shitamiita_jungle",
+        "side": "urushi:block/shitamiita_jungle"
+    }
+}

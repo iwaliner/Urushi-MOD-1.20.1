@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:black_urushi_planks"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:black_urushi_button",
+
+      "count": 1
+
+  }
+
+}

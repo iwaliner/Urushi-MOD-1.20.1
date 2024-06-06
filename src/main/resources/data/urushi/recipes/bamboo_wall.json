@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:bamboo_slab"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:bamboo_wall",
+
+    "count": 16
+
+  }
+
+}

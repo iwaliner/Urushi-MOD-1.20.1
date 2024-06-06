@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "urushi:block/fushiranma_japanese_apricot",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "urushi:block/fushiranma_japanese_apricot",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "urushi:block/fushiranma_japanese_apricot"
+    },
+    "facing=west": {
+      "model": "urushi:block/fushiranma_japanese_apricot",
+      "y": 90
+    }
+  }
+}

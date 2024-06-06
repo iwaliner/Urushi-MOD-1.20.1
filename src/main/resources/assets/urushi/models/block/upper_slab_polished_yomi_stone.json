@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "side": "urushi:block/yomi_stone_polished_slab",
+    "bottom": "urushi:block/yomi_stone_polished",
+    "top": "urushi:block/yomi_stone_polished"
+  }
+}

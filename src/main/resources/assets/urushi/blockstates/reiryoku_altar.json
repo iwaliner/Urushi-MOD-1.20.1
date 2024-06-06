@@ -1,0 +1,55 @@
+{
+    "multipart": [
+        {   "when": { "facing": "north"},
+            "apply": { "model": "urushi:block/rice_hokora" }
+        },
+        {   "when": { "facing": "south"},
+            "apply": { "model": "urushi:block/rice_hokora", "y": 180 }
+        },
+        {   "when": { "facing": "east"},
+            "apply": { "model": "urushi:block/rice_hokora", "y": 90 }
+        },
+        {   "when": { "facing": "west"},
+            "apply": { "model": "urushi:block/rice_hokora", "y": 270 }
+        },
+        
+        
+        
+        {   "when": { "north": "true","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_enabled" }
+        },
+        {   "when": { "north": "true","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_zero" }
+        },
+        {   "when": { "south": "true","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_enabled", "y": 180 }
+        },
+        {   "when": { "south": "true","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_zero", "y": 180 }
+        },
+        {   "when": { "east": "true","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_enabled", "y": 90 }
+        },
+        {   "when": { "east": "true","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_zero", "y": 90 }
+        },
+        {   "when": { "west": "true","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_enabled", "y": 270 }
+        },
+        {   "when": { "west": "true","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_zero", "y": 270 }
+        },
+        {   "when": { "down": "true","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_enabled", "x": 90 }
+        },
+        {   "when": { "down": "true","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_zero", "x": 90 }
+        },
+        {   "when": { "up": "true","zero": "false"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_enabled", "x": 270 }
+        },
+        {   "when": { "up": "true","zero": "true"},
+            "apply": { "model": "urushi:block/pipe/reiryoku_pipe_end_zero", "x": 270 }
+        }
+    ]
+}

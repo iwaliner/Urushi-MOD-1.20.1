@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "urushi:block/yomi_vines"
+    },
+    "berries=true": {
+      "model": "urushi:block/yomi_vines_lit"
+    }
+  }
+}

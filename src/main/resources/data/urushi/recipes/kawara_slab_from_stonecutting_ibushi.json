@@ -1,0 +1,15 @@
+{
+
+  "type": "minecraft:stonecutting",
+
+  "ingredient": {
+
+    "item": "urushi:ibushi_kawara_block"
+
+  },
+
+  "result": "urushi:ibushi_kawara_slab",
+
+  "count": 2
+
+}

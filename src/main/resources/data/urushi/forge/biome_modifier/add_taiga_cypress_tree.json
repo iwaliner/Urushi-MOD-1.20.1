@@ -1,0 +1,11 @@
+{
+
+  "type": "forge:add_features",
+
+  "biomes": "#minecraft:is_taiga",
+
+  "features": "urushi:hill_cypress",
+
+  "step": "vegetal_decoration"
+
+}

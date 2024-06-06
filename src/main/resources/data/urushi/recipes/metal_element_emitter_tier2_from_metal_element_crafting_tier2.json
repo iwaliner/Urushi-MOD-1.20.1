@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:metal_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:gunpowder"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "minecraft:quartz"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "urushi:metal_enhanced_jadeite"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "minecraft:quartz"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:metal_element_emitter_tier2"
+
+
+
+  },
+
+
+
+  "reiryoku": 50
+
+
+
+}

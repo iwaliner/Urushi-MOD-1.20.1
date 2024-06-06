@@ -1,0 +1,7 @@
+{
+    "parent": "urushi:block/bars_edge_base",
+    "textures": {
+       "0": "urushi:block/planks_smooth_oak",
+		"particle": "urushi:block/planks_smooth_oak"
+    }
+}

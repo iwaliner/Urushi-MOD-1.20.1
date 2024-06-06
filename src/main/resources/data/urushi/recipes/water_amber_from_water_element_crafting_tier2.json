@@ -1,0 +1,75 @@
+{
+
+
+
+  "type": "urushi:water_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:flint"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "minecraft:flint"
+
+
+
+    },
+    {
+
+
+
+   "item": "minecraft:flint"
+
+
+
+    },
+    {
+
+
+
+   "item": "minecraft:flint"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:water_amber"
+
+
+
+  },
+
+
+
+  "reiryoku": 200
+
+
+
+}

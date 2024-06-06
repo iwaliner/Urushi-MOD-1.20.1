@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/rock",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/rock",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/rock"
+    },
+    "facing=east": {
+      "model": "urushi:block/rock",
+      "y": 90
+    }
+  }
+}

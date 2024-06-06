@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:sand_coast"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:dark_oak_wall_for_framed_blocks"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:dark_oak_framed_sand_coast",
+
+
+
+    "count": 2
+
+
+
+  }
+
+
+
+}

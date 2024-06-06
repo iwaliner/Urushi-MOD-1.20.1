@@ -1,0 +1,6 @@
+{
+  "name": "Magic",
+  "description": "Magic has tier 1 and tier 2 stages, starting from tier 1.$(br2)If there are seperate items for each element, only the Wood element ones will take place as examples.",
+  "icon": "urushi:earth_element_magatama",
+  "sortnum": 10
+}

@@ -1,0 +1,25 @@
+{
+  "name": "砂鉄鉱石はどこ？",
+  "category": "urushi:nature",
+  "icon": "urushi:ironsand_ore",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 45,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "砂鉄鉱石は砂漠系統のバイオーム以外の砂地に自然生成されます。$(br2)砂鉄鉱石からは砂鉄がドロップします。$(br2)刀の鍛冶に使用するアイテムです。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "これが砂鉄鉱石",
+      "images": [
+        "urushi:textures/gui/patchouli/ironsand_ore.png"
+      ]
+    }
+    
+  ]
+}

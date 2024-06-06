@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/outer_stairs_base",
+  "textures": {
+    "tex": "urushi:block/planks_smooth_japanese_cedar"
+  }
+}

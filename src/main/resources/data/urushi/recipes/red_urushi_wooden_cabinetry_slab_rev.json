@@ -1,0 +1,27 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+
+
+    {
+
+      "item": "urushi:red_urushi_wooden_cabinetry"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:red_urushi_wooden_cabinetry_slab",
+
+    "count": 2
+
+  }
+
+}

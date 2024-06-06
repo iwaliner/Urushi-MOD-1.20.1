@@ -1,0 +1,18 @@
+{
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
+	"parent": "block/block",
+	"textures": {
+		"0": "urushi:block/element_puzzle_controller_b",
+		"particle": "urushi:block/element_puzzle_controller_b"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 0.1, 16],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#0"}
+			}
+		}
+	]
+}

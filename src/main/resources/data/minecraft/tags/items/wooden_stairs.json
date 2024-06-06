@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:red_urushi_stairs",
+    "urushi:black_urushi_stairs",
+    "urushi:japanese_apricot_stairs",
+    "urushi:japanese_cedar_stairs",
+    "urushi:cypress_stairs",
+    "urushi:sakura_stairs",
+    "urushi:bamboo_stairs"
+  ]
+}

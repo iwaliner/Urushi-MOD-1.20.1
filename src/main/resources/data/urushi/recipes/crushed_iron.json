@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:quenched_iron_plate"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:crushed_iron",
+
+    "count": 2
+
+  }
+
+}

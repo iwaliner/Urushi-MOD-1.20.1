@@ -1,0 +1,7 @@
+{
+	"parent": "urushi:block/sliding_door/sliding_door_upper_2_inverted",
+	"textures": {
+		"2": "urushi:block/shoji_dark_oak_upper",
+		"1": "urushi:block/planks_smooth_dark_oak"
+	}
+}

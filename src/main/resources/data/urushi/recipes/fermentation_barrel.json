@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PRP",
+    "P P",
+    "PRP"
+      ],
+  "key": {
+  
+   "R": {
+	"item": "urushi:climbing_rope"
+    },
+    
+	 "P": {
+    "tag": "minecraft:planks"
+    }
+  },
+
+  "result": {
+    "item": "urushi:fermentation_barrel",
+    "count": 1
+  }
+}

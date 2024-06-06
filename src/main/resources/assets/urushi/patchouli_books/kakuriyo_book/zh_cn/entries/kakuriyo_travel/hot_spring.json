@@ -1,0 +1,29 @@
+{
+  "name": "温泉",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:hot_spring_water_bucket",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 25,
+
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:hot_spring_water_bucket",
+        "count": 1
+      },
+      "text": "幽世维度内将会随机生成凝灰岩与温泉。浸泡在温泉中的生物（或是死物？）将会被赋予生命恢复效果。$(br2)用桶盛取温泉水后，也可像无限水一样构建无限温泉水。此外，向温泉水中投入（不是摔入）鸡蛋还可以获得温泉蛋。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "泡去烦恼，泡去疲劳",
+      "images": [
+        "urushi:textures/gui/patchouli/onsen.png"
+      ]
+    }
+    
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:root",
+  "display": {
+    "icon": {
+      "item": "urushi:climbing_rope"
+    },
+    "title": {
+      "translate": "advancements.urushi.climbing_rope.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.climbing_rope.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "climbing_rope": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:climbing_rope"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "climbing_rope"
+    ]
+  ]
+}

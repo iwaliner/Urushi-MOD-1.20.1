@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "minecraft:dark_oak_planks"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:smooth_dark_oak_planks"
+
+  }
+
+}

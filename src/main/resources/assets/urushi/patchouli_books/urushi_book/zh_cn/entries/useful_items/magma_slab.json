@@ -1,0 +1,24 @@
+{
+  "name": "岩浆块台阶",
+  "category": "urushi:useful_items",
+  "icon": "urushi:magma_slab",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 25,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "处死怪物时总是想要个半透明方块，好让底下的漏斗接着，但原版岩浆块却碍手碍脚的？岩浆块台阶帮您忙！$(br2)此外，还有岩浆块楼梯供您选择。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:magma_slab",
+      "text": ""
+    }
+    
+  ]
+}

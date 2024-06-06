@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:connectable_glass"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:connectable_glass_pane",
+
+    "count": 16
+
+  }
+
+}

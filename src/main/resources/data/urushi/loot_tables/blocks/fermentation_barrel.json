@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:block",
+
+  "pools": [
+
+    {
+
+      "rolls": 1,
+
+      "entries": [
+
+        {
+
+          "type": "minecraft:item",
+
+          "name": "urushi:fermentation_barrel"
+
+        }
+
+      ],
+
+      "conditions": [
+
+        {
+
+          "condition": "minecraft:survives_explosion"
+
+        }
+
+      ]
+
+    }
+
+  ]
+
+}

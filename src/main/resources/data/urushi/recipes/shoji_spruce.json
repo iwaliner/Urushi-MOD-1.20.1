@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#",
+
+    "#"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+     "item": "urushi:spruce_shoji_pane"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:spruce_shoji",
+
+    "count": 1
+
+  }
+
+}

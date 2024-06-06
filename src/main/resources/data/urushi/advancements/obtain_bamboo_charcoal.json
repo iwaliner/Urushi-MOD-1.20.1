@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_japanese_timber_bamboo",
+  "display": {
+    "icon": {
+      "item": "urushi:bamboo_charcoal"
+    },
+    "title": {
+      "translate": "advancements.urushi.bamboo_charcoal.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.bamboo_charcoal.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bamboo_charcoal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:bamboo_charcoal"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bamboo_charcoal"
+    ]
+  ]
+}

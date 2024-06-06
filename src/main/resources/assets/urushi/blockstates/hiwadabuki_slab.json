@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_hiwadabuki"
+    },
+    "type=double": {
+      "model": "urushi:block/hiwadabuki_block"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_hiwadabuki"
+    }
+  }
+}

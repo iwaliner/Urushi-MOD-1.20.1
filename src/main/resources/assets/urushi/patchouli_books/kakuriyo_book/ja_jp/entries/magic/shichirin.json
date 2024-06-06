@@ -1,0 +1,24 @@
+{
+  "name": "七輪",
+  "category": "urushi:magic",
+  "icon": "urushi:shichirin",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 30,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:shichirin",
+        "count": 1
+      },
+      "text": "七輪を使って食べ物を焼くと、焼きあがった食べ物にポーション効果がつきます。$(br2)石炭、木炭または竹炭を右クリックまたは側面からホッパーなどで投入し、琥珀の火打金で着火します。うちわを使って火力を調節することで調理することができます。"
+    },
+     {
+      "type": "text",
+      "text": "調理後のアイテム説明欄に「生焼け」と書かれている場合は空腹効果、「美味」と書かれている場合は再生効果、「焼きすぎ」と書かれている場合は毒効果が食べたプレイヤーに付与されます。$(br2)レベルの数値が大きいほど強めの効果がつきます。「美味 レベル5」の場合は、再生効果のほかに衝撃吸収効果もつきます。"
+    }
+  ]
+}

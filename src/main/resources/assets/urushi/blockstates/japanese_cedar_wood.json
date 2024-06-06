@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "urushi:block/japanese_cedar_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "urushi:block/japanese_cedar_wood"
+    },
+    "axis=z": {
+      "model": "urushi:block/japanese_cedar_wood",
+      "x": 90
+    }
+  }
+}

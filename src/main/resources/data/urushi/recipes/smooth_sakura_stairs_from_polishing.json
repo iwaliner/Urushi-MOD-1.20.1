@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "urushi:sakura_stairs"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:smooth_sakura_stairs"
+
+  }
+
+}

@@ -1,0 +1,58 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+    "tag": "minecraft:planks"
+
+
+
+    },
+     {
+
+
+
+      "item": "urushi:gold_leaf"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:gold_leaf_block",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

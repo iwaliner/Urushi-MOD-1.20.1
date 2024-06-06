@@ -1,0 +1,6 @@
+{
+	"parent": "urushi:block/kakejiku_under_base","render_type": "minecraft:cutout",
+	"textures": {
+		"0": "urushi:block/kakejiku_takumi_under"
+	}
+}

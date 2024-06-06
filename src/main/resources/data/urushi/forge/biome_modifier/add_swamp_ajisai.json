@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:swamp",
+  "features": "urushi:swamp_ajisai",
+  "step": "vegetal_decoration"
+}

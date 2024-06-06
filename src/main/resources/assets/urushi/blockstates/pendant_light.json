@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "urushi:block/pendant_light"
+    },
+    "lit=true": {
+      "model": "urushi:block/pendant_light_lit"
+    }
+  }
+}

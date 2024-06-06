@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "urushi:block/fire_element_crafting_table_tier1_idle"
+        },
+    "lit=true": {
+      "model": "urushi:block/fire_element_crafting_table_tier1_lit"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+
+    "item": "urushi:japanese_timber_bamboo"
+
+  },
+
+  "result": "urushi:bamboo_charcoal",
+
+  "experience": 0.1,
+
+  "cookingtime": 40
+
+}

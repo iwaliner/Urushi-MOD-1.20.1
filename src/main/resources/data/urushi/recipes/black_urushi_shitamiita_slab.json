@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:black_urushi_shitamiita"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:black_urushi_shitamiita_slab",
+
+    "count": 6
+
+  }
+
+}

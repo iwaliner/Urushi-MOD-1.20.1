@@ -1,0 +1,24 @@
+{
+  "name": "玉鋼の刀",
+  "category": "urushi:useful_items",
+  "icon": "urushi:iron_katana",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 35,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "左クリックで抜刀し攻撃ができます。左クリックの攻撃では範囲ダメージは発生しません。$(br2)右クリックすると抜刀した上で前方に突進します。この際、攻撃力の半分のダメージを周囲のすべてのモブに与えます。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:iron_katana",
+      "text": ""
+    }
+    
+  ]
+}

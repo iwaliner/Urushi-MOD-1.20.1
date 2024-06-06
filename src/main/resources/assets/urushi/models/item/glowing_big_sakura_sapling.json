@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "urushi:item/sakura_sapling_large_glowing"
+    }
+}
+

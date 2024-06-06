@@ -1,0 +1,7 @@
+{
+	"parent": "urushi:block/sliding_door/sliding_door_under_2",
+	"render_type": "minecraft:cutout","textures": {
+		"0": "urushi:block/yukimi_shoji_inverted_spruce_under",
+		"1": "urushi:block/planks_smooth_spruce"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"textures": {
+		"1": "urushi:block/concrete_wall_top",
+		"particle": "urushi:block/concrete_wall_side",
+		"texture": "urushi:block/concrete_wall_side"
+	},
+	"elements": [
+		{
+			"from": [4.001, 0.001, 0],
+			"to": [11.999, 15.999, 4],
+			"faces": {
+				"north": {"uv": [8, 0, 16, 16], "texture": "#texture"},
+				"east": {"uv": [8, 0, 4, 16], "texture": "#texture"},
+				"south": {"uv": [0, 0, 7.998, 15.998], "texture": "#texture"},
+				"west": {"uv": [4, 0, 0, 16], "texture": "#texture"},
+				"up": {"uv": [0, 4, 8, 8], "texture": "#1"},
+				"down": {"uv": [0, 8, 8, 4], "texture": "#1"}
+			}
+		}
+	]
+}

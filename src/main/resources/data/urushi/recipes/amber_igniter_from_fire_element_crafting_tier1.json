@@ -1,0 +1,41 @@
+{
+
+  "type": "urushi:fire_element_tier1_crafting",
+
+  "ingredients": [
+
+  {
+
+    "item": "urushi:fire_amber"
+
+    },
+
+    {
+
+    "item": "minecraft:flint_and_steel"
+
+    },
+
+    {
+
+     "tag": "minecraft:planks"
+
+    },
+
+    {
+
+    "item": "minecraft:blaze_powder"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:amber_igniter"
+
+  },
+
+  "reiryoku": 50
+
+}

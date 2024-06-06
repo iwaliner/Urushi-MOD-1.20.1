@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:copper_kawara_wall"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:cupric_oxide_kawara_wall",
+
+      "count": 1
+
+  }
+
+}

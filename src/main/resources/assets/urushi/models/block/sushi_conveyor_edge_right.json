@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"1": "urushi:block/sushi_conveyor_top",
+		"2": "urushi:block/sushi_conveyor_side_1",
+		"4": "urushi:block/sushi_conveyor_front",
+		"particle": "urushi:block/sushi_conveyor_side_2"
+	},
+	"elements": [
+		{
+			"from": [0, 13, 2],
+			"to": [2, 15, 14],
+			"faces": {
+				"north": {"uv": [14, 1, 16, 3], "texture": "#4"},
+				"east": {"uv": [14, 1, 2, 3], "texture": "#2"},
+				"south": {"uv": [0, 1, 2, 3], "texture": "#4"},
+				"west": {"uv": [2, 1, 14, 3], "texture": "#2"},
+				"up": {"uv": [14, 14, 16, 2], "texture": "#1"}
+			}
+		}
+	]
+}

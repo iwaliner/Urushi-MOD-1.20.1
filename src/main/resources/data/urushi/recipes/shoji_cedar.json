@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#",
+
+    "#"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+     "item": "urushi:japanese_cedar_shoji_pane"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:japanese_cedar_shoji",
+
+    "count": 1
+
+  }
+
+}

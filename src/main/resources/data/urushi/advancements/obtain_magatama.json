@@ -1,0 +1,89 @@
+{
+  "parent": "urushi:obtain_tank_tier1",
+  "display": {
+    "icon": {
+      "item": "urushi:wood_element_magatama"
+    },
+    "title": {
+      "translate": "advancements.urushi.magatama.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.magatama.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wood_element_magatama": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:wood_element_magatama"
+            ]
+          }
+        ]
+      }
+    },
+    "fire_element_magatama": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:fire_element_magatama"
+            ]
+          }
+        ]
+      }
+    },
+    "earth_element_magatama": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:earth_element_magatama"
+            ]
+          }
+        ]
+      }
+    },
+    "metal_element_magatama": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:metal_element_magatama"
+            ]
+          }
+        ]
+      }
+    },
+    "water_element_magatama": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:water_element_magatama"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wood_element_magatama",
+      "fire_element_magatama",
+      "earth_element_magatama",
+      "metal_element_magatama",
+      "water_element_magatama"
+    ]
+  ]
+}

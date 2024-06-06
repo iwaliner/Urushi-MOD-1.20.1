@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "urushi:item/masu_rice_raw"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "urushi:is_april_fools": 1
+            },
+            "model": "urushi:item/masu_rice_raw_rainbow"
+        }
+    ]
+}

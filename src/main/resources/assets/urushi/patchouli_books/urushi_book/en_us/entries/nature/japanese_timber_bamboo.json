@@ -1,0 +1,25 @@
+{
+  "name": "Japanese Timber Bamboo",
+  "category": "urushi:nature",
+  "icon": "urushi:japanese_timber_bamboo",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 35,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Japanese Timber Bamboo generate in Forest biomes.$(br2)These bamboos can alse be crafted from vanilla bamboos."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Japanese Timber Bamboo",
+      "images": [
+        "urushi:textures/gui/patchouli/japanese_timber_bamboo.png"
+      ]
+    }
+    
+  ]
+}

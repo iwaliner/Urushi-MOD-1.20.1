@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:water_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "urushi:water_enhanced_jadeite_brick"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "urushi:jadeite_block"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "urushi:jadeite_brick"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:jadeite_block"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:water_element_hokora"
+
+
+
+  },
+
+
+
+  "reiryoku": 50
+
+
+
+}

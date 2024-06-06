@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:spruce_shitamiita"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:spruce_shitamiita_slab",
+
+    "count": 6
+
+  }
+
+}

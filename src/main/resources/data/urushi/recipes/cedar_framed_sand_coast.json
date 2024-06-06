@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:sand_coast"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:japanese_cedar_wall_for_framed_blocks"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:japanese_cedar_framed_sand_coast",
+
+
+
+    "count": 2
+
+
+
+  }
+
+
+
+}

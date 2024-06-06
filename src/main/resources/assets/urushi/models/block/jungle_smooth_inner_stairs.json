@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "urushi:block/planks_smooth_jungle",
+        "top": "urushi:block/planks_smooth_jungle",
+        "side": "urushi:block/planks_smooth_jungle"
+    }
+}

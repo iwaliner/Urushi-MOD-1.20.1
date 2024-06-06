@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "urushi:polished_yomi_stone"
+    }
+  },
+  "result": {
+    "item": "urushi:large_yomi_stone_bricks",
+    "count": 4
+  }
+}

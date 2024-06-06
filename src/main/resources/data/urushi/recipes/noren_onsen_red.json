@@ -1,0 +1,73 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:red_noren"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:red_noren"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:milk_bamboo_cup"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:women_onsen_noren",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

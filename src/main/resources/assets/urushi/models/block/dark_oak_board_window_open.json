@@ -1,0 +1,7 @@
+{
+	"parent": "urushi:block/board_window_open_base",
+	"textures": {
+		"0": "urushi:block/planks_smooth_dark_oak",
+		"particle": "urushi:block/planks_smooth_dark_oak"
+	}
+}

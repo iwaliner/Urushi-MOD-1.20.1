@@ -1,0 +1,69 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "minecraft:water_bucket"
+
+
+
+    },
+
+{
+
+
+
+      "item": "minecraft:seagrass"
+
+
+
+    },
+
+    {
+
+
+
+      "tag": "forge:glass"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:goldfish_bowl",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

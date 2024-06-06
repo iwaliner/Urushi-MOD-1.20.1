@@ -1,0 +1,24 @@
+{
+  "name": "降下用の縄",
+  "category": "urushi:useful_items",
+  "icon": "urushi:climbing_rope",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 10,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "降下用の縄は右クリックした地点からその真下の地面まで縄を一瞬で設置するアイテムです。縄ははしごのように上り下りできます。$(br2)どれだけ長い距離に縄を設置したとしても使用時のアイテム消費は1つのみです。$(br2)このアイテムを使うことで生成される縄は砂利のように自由落下するので、松明などを用いれば縄の回収が容易です。なお自分で設置し直した縄は自由落下しません。"
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:climbing_rope",
+      "text": ""
+    }
+    
+  ]
+}

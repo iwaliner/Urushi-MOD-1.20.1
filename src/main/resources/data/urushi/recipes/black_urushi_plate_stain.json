@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "BBB",
+
+    "BDB",
+
+    "BBB"
+
+  ],
+
+  "key": {
+
+    "D": {
+
+     "item": "urushi:black_urushi_ball"
+
+    },
+
+    "B": {
+
+    "tag": "minecraft:wooden_pressure_plates"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:black_urushi_pressure_plate",
+
+    "count": 8
+
+  }
+
+}

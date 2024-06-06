@@ -1,0 +1,58 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+   "W W",
+ "W W"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "W": {
+
+
+
+      "item": "urushi:lime_plaster"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:lime_plaster_bars",
+
+
+
+    "count": 16
+
+
+
+  }
+
+
+
+}

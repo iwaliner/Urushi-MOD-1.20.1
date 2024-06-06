@@ -1,0 +1,37 @@
+{
+
+  "variants": {
+
+    "facing=west": {
+
+      "model": "urushi:block/element_puzzle_controller_a",
+
+      "y": 270
+
+    },
+
+    "facing=south": {
+
+      "model": "urushi:block/element_puzzle_controller_a",
+
+      "y": 180
+
+    },
+
+    "facing=north": {
+
+      "model": "urushi:block/element_puzzle_controller_a"
+
+    },
+
+    "facing=east": {
+
+      "model": "urushi:block/element_puzzle_controller_a",
+
+      "y": 90
+
+    }
+
+  }
+
+}

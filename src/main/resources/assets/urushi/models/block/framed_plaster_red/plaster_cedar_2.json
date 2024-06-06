@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/plaster_red",
+        "down": "urushi:block/planks_smooth_japanese_cedar",
+        "up": "urushi:block/plaster_red",
+        "north": "urushi:block/connectable/framed_plaster_red/plaster_cedar_2",
+        "east": "urushi:block/connectable/framed_plaster_red/plaster_cedar_2",
+        "south": "urushi:block/connectable/framed_plaster_red/plaster_cedar_2",
+        "west": "urushi:block/connectable/framed_plaster_red/plaster_cedar_2"
+    }
+}

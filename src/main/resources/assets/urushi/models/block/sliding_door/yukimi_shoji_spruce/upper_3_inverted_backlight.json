@@ -1,0 +1,7 @@
+{
+	"parent": "urushi:block/sliding_door/sliding_door_upper_3_inverted",
+	"render_type": "minecraft:cutout","textures": {
+		"2": "urushi:block/yukimi_shoji_spruce_upper",
+		"1": "urushi:block/planks_smooth_spruce"
+	}
+}

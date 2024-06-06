@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "urushi:block/shitamiita_acacia",
+        "top": "urushi:block/shitamiita_acacia",
+        "side": "urushi:block/shitamiita_acacia"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/plaster_cyan",
+        "down": "urushi:block/planks_smooth_jungle",
+        "up": "urushi:block/planks_smooth_jungle",
+        "north": "urushi:block/plaster_cyan",
+        "east": "urushi:block/connectable/framed_plaster_cyan/plaster_jungle_6",
+        "south": "urushi:block/plaster_cyan",
+        "west": "urushi:block/connectable/framed_plaster_cyan/plaster_jungle_6"
+    }
+}

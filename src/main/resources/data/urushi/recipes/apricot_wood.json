@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "##",
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:japanese_apricot_log"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:japanese_apricot_wood",
+
+    "count": 3
+
+  }
+
+}

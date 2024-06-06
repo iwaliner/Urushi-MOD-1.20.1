@@ -1,0 +1,93 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "  n",
+
+
+
+    " c ",
+
+
+
+    "s  "
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    
+
+
+
+    "n": {
+
+
+
+      "tag": "forge:crops/greenonion"
+
+
+
+    },
+
+
+
+    "c": {
+
+
+
+     "item": "minecraft:cooked_chicken"
+
+
+
+    },
+
+
+
+    "s": {
+
+
+
+    "tag": "forge:rods/wooden"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:yakitori",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

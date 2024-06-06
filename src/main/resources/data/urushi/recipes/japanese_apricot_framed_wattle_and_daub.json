@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:wattle_and_daub"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:japanese_apricot_wall_for_framed_blocks"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:japanese_apricot_framed_wattle_and_daub",
+
+
+
+    "count": 2
+
+
+
+  }
+
+
+
+}

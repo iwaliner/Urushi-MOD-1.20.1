@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:lantern_plant_fruit"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "minecraft:glowstone_dust",
+
+      "count": 1
+
+  }
+
+}

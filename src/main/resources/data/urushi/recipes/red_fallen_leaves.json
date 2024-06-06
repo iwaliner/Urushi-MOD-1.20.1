@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:red_leaves"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:fallen_red_leaves",
+
+    "count": 6
+
+  }
+
+}

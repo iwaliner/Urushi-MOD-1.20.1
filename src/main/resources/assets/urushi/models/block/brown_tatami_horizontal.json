@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+        "end": "urushi:block/tatami_top_brown",
+        "side": "urushi:block/tatami_brown"
+  }
+}

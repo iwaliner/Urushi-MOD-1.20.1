@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:item/handheld_katana",
+  "textures": {
+    "layer0": "urushi:item/katana_blade_9"
+  }
+}

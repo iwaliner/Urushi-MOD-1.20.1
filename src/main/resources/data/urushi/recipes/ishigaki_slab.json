@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:ishigaki_block"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:ishigaki_slab",
+
+    "count": 6
+
+  }
+
+}

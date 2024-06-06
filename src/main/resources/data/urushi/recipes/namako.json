@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "X#X",
+
+    "#X#",
+
+    "X#X"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+     "item": "urushi:ibushi_kawara"
+
+    },
+
+    "X": {
+
+    "item": "urushi:plaster"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:namako",
+
+    "count": 6
+
+  }
+
+}

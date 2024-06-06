@@ -1,0 +1,110 @@
+{
+
+    "multipart": [
+  	    {   "when": { "facing": "north"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor", "y": 180 }
+
+        },
+        {   "when": { "facing": "south"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor"}
+
+        },
+        {   "when": { "facing": "east"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor", "y": 270 }
+
+        },
+        {   "when": { "facing": "west"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor", "y": 90 }
+
+        },
+
+        {   "when": { "facing": "north","north": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_front", "y": 180 }
+
+        },
+        {   "when": { "facing": "north","south": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_back", "y": 180 }
+
+        },
+        {   "when": { "facing": "north","east": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_right", "y": 180 }
+
+        },
+        {   "when": { "facing": "north","west": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_left", "y": 180 }
+
+        },
+        
+		{   "when": { "facing": "east","north": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_left", "y": 270 }
+
+        },
+        {   "when": { "facing": "east","south": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_right", "y": 270 }
+
+        },
+        {   "when": { "facing": "east","east": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_front", "y": 270 }
+
+        },
+        {   "when": { "facing": "east","west": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_back", "y": 270 }
+
+        },
+        
+		{   "when": { "facing": "west","north": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_right", "y": 90 }
+
+        },
+        {   "when": { "facing": "west","south": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_left", "y": 90 }
+
+        },
+        {   "when": { "facing": "west","east": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_back", "y": 90 }
+
+        },
+        {   "when": { "facing": "west","west": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_front", "y": 90 }
+
+        },       
+		{   "when": { "facing": "south","north": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_back"}
+
+        },
+        {   "when": { "facing": "south","south": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_front"}
+
+        },
+        {   "when": { "facing": "south","east": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_left" }
+
+        },
+        {   "when": { "facing": "south","west": "false"},
+
+            "apply": { "model": "urushi:block/sushi_conveyor_edge_right" }
+
+        }
+
+    ]
+
+}

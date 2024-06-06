@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "ttt",
+
+    " g ",
+
+    " t "
+
+  ],
+
+  "key": {
+
+  "t": {
+
+     "item": "urushi:smooth_birch_planks"
+
+    },
+
+   "g": {
+
+     "item": "urushi:iron_giboshi"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:sanbo_tier1",
+
+    "count": 1
+
+  }
+
+}

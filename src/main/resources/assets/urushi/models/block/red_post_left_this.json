@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "urushi:block/planks_smooth_red_urushi",
+		"particle": "urushi:block/planks_smooth_red_urushi"
+	},
+	"elements": [
+		{
+			"from": [11, 5, 14],
+			"to": [16, 11, 16],
+			"faces": {
+				"north": {"uv": [0, 5, 6, 11], "texture": "#0"},
+				"east": {"uv": [0, 0, 3, 6], "texture": "#0"},
+				"south": {"uv": [0, 5, 6, 11], "texture": "#0"},
+				"west": {"uv": [0, 0, 3, 6], "texture": "#0"},
+				"up": {"uv": [0, 0, 6, 3], "texture": "#0"},
+				"down": {"uv": [0, 0, 6, 3], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "red_post_one_wall",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

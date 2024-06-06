@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:concrete"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:concrete_slab",
+
+    "count": 6
+
+  }
+
+}

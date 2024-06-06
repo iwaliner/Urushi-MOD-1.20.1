@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/kakuriyo_portal_core",
+        "down": "urushi:block/kakuriyo_portal_core_top",
+        "up": "urushi:block/kakuriyo_portal_core_top",
+        "north": "urushi:block/kakuriyo_portal_core",
+        "east": "urushi:block/kakuriyo_portal_core",
+        "south": "urushi:block/kakuriyo_portal_core",
+        "west": "urushi:block/kakuriyo_portal_core"
+    }
+}

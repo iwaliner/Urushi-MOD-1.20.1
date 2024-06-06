@@ -1,0 +1,12 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "urushi:rice_crop"
+    }
+  ],
+  "book": "urushi:urushi_book"
+}

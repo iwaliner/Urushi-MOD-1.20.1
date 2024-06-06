@@ -1,0 +1,25 @@
+{
+  "name": "Ironsand Ore",
+  "category": "urushi:nature",
+  "icon": "urushi:ironsand_ore",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 45,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ironsand Ores generate in sandy areas outside of Desert biomes.$(br2)These ores drop Ironsand when dig.$(br2)Ironsand is a material of a special knife -- Katana."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Ironsand Ore",
+      "images": [
+        "urushi:textures/gui/patchouli/ironsand_ore.png"
+      ]
+    }
+    
+  ]
+}

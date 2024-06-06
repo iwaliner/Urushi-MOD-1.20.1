@@ -1,0 +1,33 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "#  ",
+
+    "## ",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:thatched_slab"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:thatched_roof_45",
+
+    "count": 6
+
+  }
+
+}

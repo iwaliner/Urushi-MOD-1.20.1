@@ -1,0 +1,15 @@
+{
+
+  "type": "minecraft:stonecutting",
+
+  "ingredient": {
+
+    "item": "minecraft:cobblestone"
+
+  },
+
+  "result": "urushi:ishigaki_slab",
+
+  "count": 2
+
+}

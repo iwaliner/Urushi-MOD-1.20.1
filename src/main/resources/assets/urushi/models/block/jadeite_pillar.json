@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "urushi:block/jadeite_block_pillar_top",
+        "side": "urushi:block/jadeite_block_pillar_side"
+    }
+}

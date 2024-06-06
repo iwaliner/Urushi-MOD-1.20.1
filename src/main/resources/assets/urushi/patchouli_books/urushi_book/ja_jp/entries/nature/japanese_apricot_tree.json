@@ -1,0 +1,25 @@
+{
+  "name": "梅はどこ？",
+  "category": "urushi:nature",
+  "icon": "urushi:japanese_apricot_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 20,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "梅の樹木は森林バイオームに自然生成されます。$(br2)葉は苗木のほかに完熟した梅の実をドロップします。$(br2)グロウストーンと苗木をクラフトしてできた苗木は、成長すると葉が明るさ15で発光する樹木になります。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "これが梅の樹木",
+      "images": [
+        "urushi:textures/gui/patchouli/japanese_apricot_tree.png"
+      ]
+    }
+    
+  ]
+}

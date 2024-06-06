@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "urushi:block/sakura_pressure_plate"
+    },
+    "powered=true": {
+      "model": "urushi:block/sakura_pressure_plate_down"
+    }
+  }
+}

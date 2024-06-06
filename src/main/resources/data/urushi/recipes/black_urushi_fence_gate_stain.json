@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "BBB",
+
+    "BDB",
+
+    "BBB"
+
+  ],
+
+  "key": {
+
+    "D": {
+
+     "item": "urushi:black_urushi_ball"
+
+    },
+
+    "B": {
+
+    "tag": "forge:fence_gates/wooden"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:black_urushi_fence_gate",
+
+    "count": 8
+
+  }
+
+}

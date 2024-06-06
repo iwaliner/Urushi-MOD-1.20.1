@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "# ",
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:cupric_oxide_kawara_slab"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:cupric_oxide_kawara_roof_225",
+
+    "count": 3
+
+  }
+
+}

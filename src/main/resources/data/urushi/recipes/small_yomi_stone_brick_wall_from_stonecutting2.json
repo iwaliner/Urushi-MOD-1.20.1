@@ -1,0 +1,15 @@
+{
+
+  "type": "minecraft:stonecutting",
+
+  "ingredient": {
+
+    "item": "urushi:yomi_stone"
+
+  },
+
+  "result": "urushi:small_yomi_stone_brick_wall",
+
+  "count": 1
+
+}

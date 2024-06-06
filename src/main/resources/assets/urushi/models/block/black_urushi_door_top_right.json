@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "urushi:block/door_black_under",
+    "top": "urushi:block/door_black_upper"
+  }
+}

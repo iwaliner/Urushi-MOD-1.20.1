@@ -1,0 +1,10 @@
+{
+  "name": "patchouli.urushi.kakuriyo_book.name",
+  "landing_text": "patchouli.urushi.kakuriyo_book.landing_text",
+  "subtitle": "patchouli.urushi.kakuriyo_book.subtitle",
+  "creative_tab": "urushi:urushi",
+  "book_texture": "patchouli:textures/gui/book_brown.png",
+  "index_icon": "urushi:textures/item/guidebook.png",
+  "use_resource_pack": true,
+  "model": "urushi:kakuriyo_book"
+}

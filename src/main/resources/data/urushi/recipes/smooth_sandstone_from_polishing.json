@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "minecraft:sandstone"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"minecraft:smooth_sandstone"
+
+  }
+
+}

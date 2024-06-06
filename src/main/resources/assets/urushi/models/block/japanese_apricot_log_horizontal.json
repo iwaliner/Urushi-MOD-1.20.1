@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+        "end": "urushi:block/ume_log_top",
+        "side": "urushi:block/ume_log"
+  }
+}

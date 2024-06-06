@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/earth_element_hokora",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/earth_element_hokora",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/earth_element_hokora"
+    },
+    "facing=east": {
+      "model": "urushi:block/earth_element_hokora",
+      "y": 90
+    }
+  }
+}

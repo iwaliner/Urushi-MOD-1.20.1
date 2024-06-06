@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+        "end": "urushi:block/kakuriyo_portal_frame_red_top",
+        "side": "urushi:block/kakuriyo_portal_frame_red"
+  }
+}

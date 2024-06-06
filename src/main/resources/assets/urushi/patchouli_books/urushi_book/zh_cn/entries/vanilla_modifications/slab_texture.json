@@ -1,0 +1,25 @@
+{
+  "name": "台阶侧面的材质",
+  "category": "urushi:vanilla_modifications",
+  "icon": "minecraft:polished_granite_slab",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 10,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "磨制花岗岩、闪长岩、安山岩、黑石等各类磨制石头对应的台阶侧面材质，在原版里是和其上面一致的。$(br2)如果不喜欢的话，那么漆MOD还提供了一种侧面具有没有被打磨的材质的这类台阶。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/slab_texture.png"
+      ]
+    }
+    
+  ]
+}

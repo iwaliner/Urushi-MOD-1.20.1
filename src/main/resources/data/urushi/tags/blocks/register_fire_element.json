@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+  "#minecraft:fire",
+  "#minecraft:campfires",
+  "minecraft:torch",
+  "minecraft:soul_torch",
+  "minecraft:magma_block",
+  "urushi:lantern_plant",
+  "urushi:magma_slab",
+   "urushi:magma_stairs",
+  "urushi:lantern_plant_block",
+  "urushi:lantern_plant_torch",
+  "#forge:netherrack"
+  ]
+}

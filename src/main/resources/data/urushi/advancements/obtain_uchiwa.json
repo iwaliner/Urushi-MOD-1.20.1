@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_magatama",
+  "display": {
+    "icon": {
+      "item": "urushi:uchiwa"
+    },
+    "title": {
+      "translate": "advancements.urushi.uchiwa.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.uchiwa.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "uchiwa": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:uchiwa"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "uchiwa"
+    ]
+  ]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_inventory",
+    "textures": {
+        "wall": "urushi:block/yomi_stone_bricks"
+    }
+}

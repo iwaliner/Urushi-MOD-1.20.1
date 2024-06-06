@@ -1,0 +1,17 @@
+{
+
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+
+    "item": "urushi:hot_iron_ingot_5"
+
+  },
+
+  "result": "urushi:hot_iron_blade_1",
+
+  "experience": 0.2,
+
+  "cookingtime": 100
+
+}

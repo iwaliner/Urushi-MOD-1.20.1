@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:polishing",
+
+  "ingredients": [
+
+  {
+
+     "item": "minecraft:spruce_planks"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:smooth_spruce_planks"
+
+  }
+
+}

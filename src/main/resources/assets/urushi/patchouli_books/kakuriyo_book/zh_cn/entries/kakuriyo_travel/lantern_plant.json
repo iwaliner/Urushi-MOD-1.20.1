@@ -1,0 +1,29 @@
+{
+  "name": "鬼灯球",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:lantern_plant_fruit",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:lantern_plant_fruit",
+        "count": 1
+      },
+      "text": "鬼灯球生长在幽界维度的地上地下等各种地方，最高可生长至2格。$(br2)右击结果的鬼灯球植株，可以点亮并使其变为亮度为15的光源。$(br2)鬼灯球吃起来还挺“鬼”异的。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "中间的那株已经被点亮了",
+      "images": [
+        "urushi:textures/gui/patchouli/lantern_plant.png"
+      ]
+    }
+    
+  ]
+}

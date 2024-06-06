@@ -1,0 +1,25 @@
+{
+	"cblackit": "Made with Blockbench",
+	"parent": "block/block", "render_type": "minecraft:cutout",
+	"texture_size": [16, 16],
+	"textures": {
+		"1": "urushi:block/glass_slide_door_side",
+		"2": "urushi:block/glass_slide_door_upper",
+		"3": "urushi:block/null",
+		"particle": "urushi:block/glass_slide_door_upper"
+	},
+	"elements": [
+		{
+			"from": [13, 0, 8],
+			"to": [29, 16, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 2], "texture": "#3"}
+			}
+		}
+	]
+}

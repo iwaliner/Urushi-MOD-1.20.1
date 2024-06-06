@@ -1,0 +1,26 @@
+{
+  "name": "Lantern Plant Torch",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:lantern_plant_torch",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 20,
+
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:lantern_plant_torch",
+        "count": 1
+      },
+      "text": "Not lanterns, but torches made from the Lantern Plants. A Lantern Plant Torch has a light level of 15, 1 level brighter than the vanilla torches."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:lantern_plant_torch",
+      "text": ""
+    }
+  ]
+}

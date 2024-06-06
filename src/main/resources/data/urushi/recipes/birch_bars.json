@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "W W",
+
+    "W W"
+
+  ],
+
+  "key": {
+
+    "W": {
+
+      "item": "urushi:smooth_birch_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:birch_bars",
+
+    "count": 16
+
+  }
+
+}

@@ -1,0 +1,186 @@
+{
+
+  "multipart": [
+
+    {
+    "when": {
+
+        "facing": "east|west"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_center"
+
+      }
+
+    },
+    {
+    "when": {
+
+        "facing": "north|south"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_center",
+        "y": 90,
+
+        "uvlock": true
+
+      }
+
+    },
+
+    {
+
+      "when": {
+
+        "down": "true","facing":"east|west"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_edge",
+
+        "uvlock": true
+
+      }
+
+    },
+    {
+
+      "when": {
+
+        "up": "true","facing":"east|west"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_edge",
+         "x": 180,
+
+        "uvlock": true
+
+      }
+
+    },
+    {
+
+      "when": {
+
+        "south": "true","facing":"east|west"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_edge",
+         "x": 90,
+
+        "uvlock": true
+
+      }
+
+    },
+    {
+
+      "when": {
+
+        "north": "true","facing":"east|west"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_edge",
+         "x": 270,
+
+        "uvlock": true
+
+      }
+
+    },
+    {
+
+      "when": {
+
+        "down": "true","facing":"north|south"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_edge",
+        "y": 90,
+
+        "uvlock": true
+
+      }
+
+    },
+    {
+
+      "when": {
+
+        "up": "true","facing":"north|south"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_edge",
+         "x": 180,
+         "y": 90,
+
+        "uvlock": true
+
+      }
+
+    },
+    {
+
+      "when": {
+
+        "west": "true","facing":"north|south"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_edge",
+         "x": 90,
+         "y": 90,
+
+        "uvlock": true
+
+      }
+
+    },
+    {
+
+      "when": {
+
+        "east": "true","facing":"north|south"
+
+      },
+
+      "apply": {
+
+        "model": "urushi:block/horizontal_light_gray_plaster_bars_edge",
+         "x": 270,
+         "y": 90,
+
+        "uvlock": true
+
+      }
+
+    }
+
+  ]
+
+}

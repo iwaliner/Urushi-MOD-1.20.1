@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:cypress_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:cypress_pressure_plate",
+
+    "count": 1
+
+  }
+
+}

@@ -1,0 +1,29 @@
+{
+  "name": "金槌",
+  "category": "urushi:useful_items",
+  "icon": "urushi:hammer",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 40,
+
+  "pages": [
+   {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:hammer",
+        "count": 1
+      },
+      "text": "ハンマーは刀鍛冶の工程で要求されますが、それ以外にも機能があります。枠付きブロックのテクスチャ接続の変更機能です。$(br2)つながるガラス、つながるガラス板、金属枠付きガラス、金属枠付きガラス板と、すべての木枠付き土壁・砂壁・漆喰は枠のテクスチャがつながりますが、シングルプレイではCキーでトグル操作、マルチプレイではスニークしながらの設置で枠をつなげないようにできます。$(br2)ハンマーで右クリックすることで、設置後でもこの二つの状態を切り替えることができます。"
+    },
+      {
+      "type": "patchouli:image",
+      "text": "このような設置ができる",
+      "images": [
+        "urushi:textures/gui/patchouli/framed_blocks.png"
+      ]
+    }
+    
+  ]
+}

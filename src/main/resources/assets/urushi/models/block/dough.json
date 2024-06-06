@@ -1,0 +1,21 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"0": "urushi:block/udon",
+		"particle": "urushi:block/udon"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 3],
+			"to": [16, 2, 13],
+			"faces": {
+				"north": {"uv": [0, 13, 16, 15], "texture": "#0"},
+				"east": {"uv": [3, 5, 13, 7], "texture": "#0"},
+				"south": {"uv": [0, 1, 16, 3], "texture": "#0"},
+				"west": {"uv": [11, 16, 1, 14], "texture": "#0"},
+				"up": {"uv": [0, 3, 16, 13], "texture": "#0"},
+				"down": {"uv": [0, 3, 16, 13], "texture": "#0"}
+			}
+		}
+	]
+}

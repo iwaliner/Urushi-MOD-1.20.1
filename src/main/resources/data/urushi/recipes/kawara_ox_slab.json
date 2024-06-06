@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:copper_kawara_slab"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:cupric_oxide_kawara_slab",
+
+      "count": 1
+
+  }
+
+}

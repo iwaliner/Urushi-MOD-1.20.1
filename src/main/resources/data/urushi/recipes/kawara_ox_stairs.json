@@ -1,0 +1,23 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "urushi:copper_kawara_stairs"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:cupric_oxide_kawara_stairs",
+
+      "count": 1
+
+  }
+
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:item/handheld_katana_swinging",
+  "textures": {
+    "layer0": "urushi:item/katana"
+  }
+}

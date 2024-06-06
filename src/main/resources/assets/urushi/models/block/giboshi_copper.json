@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "urushi:block/giboshi_base",
+	"textures": {
+		"0": "urushi:block/giboshi_copper",
+		"particle": "urushi:block/giboshi_copper"
+	}
+}

@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "i i",
+
+    "ioi",
+
+    "iii"
+
+  ],
+
+  "key": {
+
+  "o": {
+
+     "item": "urushi:vegetable_oil"
+
+    },
+
+    "i": {
+
+      "tag": "forge:ingots/iron"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:fryer",
+
+    "count": 1
+
+  }
+
+}

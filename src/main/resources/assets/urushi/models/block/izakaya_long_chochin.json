@@ -1,0 +1,9 @@
+{
+	"parent": "urushi:block/long_chochin_base",
+	"textures": {
+		"side": "urushi:block/chochin_long",
+		"top": "urushi:block/chochin_long_top",
+		"front": "urushi:block/chochin_long_izakaya",
+		"particle": "urushi:block/chochin_long"
+	}
+}

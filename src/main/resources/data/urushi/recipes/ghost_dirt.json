@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "minecraft:dirt"
+
+    },
+
+    {
+
+      "item": "urushi:ghost_core"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:ghost_dirt",
+
+    "count": 1
+
+  }
+
+}

@@ -1,0 +1,26 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block", "render_type": "minecraft:cutout",
+	"elements": [
+		{
+			"from": [0, 0, 15],
+			"to": [16, 15, 15],
+			"faces": {
+				"north": {"uv": [0, 1, 16, 16], "texture": "#0"},
+				"south": {"uv": [16, 1, 0, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 15, 15],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "texture": "#0"},
+				"east": {"uv": [12, 0, 13, 1], "texture": "#0"},
+				"south": {"uv": [16, 0, 0, 1], "texture": "#0"},
+				"west": {"uv": [5, 0, 6, 1], "texture": "#0"},
+				"up": {"uv": [16, 0, 0, 1], "texture": "#0"},
+				"down": {"uv": [16, 0, 0, 1], "texture": "#0"}
+			}
+		}
+	]
+}

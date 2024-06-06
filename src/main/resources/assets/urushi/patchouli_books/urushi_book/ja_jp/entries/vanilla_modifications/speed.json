@@ -1,0 +1,18 @@
+{
+  "name": "移動速度を上昇",
+  "category": "urushi:vanilla_modifications",
+  "icon": "minecraft:rabbit_foot",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "バニラのプレイヤーの移動速度では、歩きながらブロックを連続で設置しようとすると設置ミスが必ず発生します。$(br2)そこでプレイヤーの移動速度を16%アップすることにより、歩く速度をブロックの設置速度と同じにする変更を行っています。$(br2)これによりブロックの置きミスはほとんどなくなるでしょう。"
+    }
+    
+  ]
+}

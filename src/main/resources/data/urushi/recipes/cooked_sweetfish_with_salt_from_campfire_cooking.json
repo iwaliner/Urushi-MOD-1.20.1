@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "urushi:sweetfish_with_salt"
+  },
+  "result": "urushi:cooked_sweetfish_with_salt",
+  "experience": 0.35,
+  "cookingtime": 600
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "urushi:block/wall_shiitake"
+    },
+    "facing=west": {
+      "model": "urushi:block/wall_shiitake",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "urushi:block/wall_shiitake",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "urushi:block/wall_shiitake",
+      "y": 180
+    }
+  }
+}

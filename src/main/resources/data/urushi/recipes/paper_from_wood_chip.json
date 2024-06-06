@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:wood_chip"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:wood_chip"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "minecraft:paper",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube","render_type": "minecraft:translucent",
+    "textures": {
+        "particle": "urushi:block/kakuriyo_portal_core_ghost",
+        "down": "urushi:block/kakuriyo_portal_core_top_ghost",
+        "up": "urushi:block/kakuriyo_portal_core_top_ghost",
+        "north": "urushi:block/kakuriyo_portal_core_ghost",
+        "east": "urushi:block/kakuriyo_portal_core_ghost",
+        "south": "urushi:block/kakuriyo_portal_core_ghost",
+        "west": "urushi:block/kakuriyo_portal_core_ghost"
+    }
+}

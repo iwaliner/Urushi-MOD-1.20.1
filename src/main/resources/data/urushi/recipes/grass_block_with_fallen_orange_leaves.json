@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+
+      "item": "minecraft:grass_block"
+
+    },
+
+    {
+
+      "item": "urushi:fallen_orange_leaves"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:grass_block_with_fallen_orange_leaves",
+
+    "count": 1
+
+  }
+
+}

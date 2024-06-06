@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross", "render_type": "minecraft:cutout",
+    "textures": {
+        "cross": "urushi:block/orange_sapling"
+    }
+}

@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:light_gray_plaster"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:light_gray_plaster_slab",
+
+    "count": 6
+
+  }
+
+}

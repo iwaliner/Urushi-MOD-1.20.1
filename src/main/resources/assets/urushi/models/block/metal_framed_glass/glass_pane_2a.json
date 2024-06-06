@@ -1,0 +1,11 @@
+{
+	"parent": "urushi:block/connectable_glass_pane_base","render_type": "minecraft:cutout",
+	"textures": {
+		"front": "urushi:block/framed_glass_metal_2",
+		"east": "urushi:block/glass_pane_metal",
+		"west": "urushi:block/glass_pane_metal",
+		"up": "urushi:block/framed_glass_15",
+		"down": "urushi:block/glass_pane_metal",
+		"particle": "urushi:block/glass_pane_metal"
+	}
+}

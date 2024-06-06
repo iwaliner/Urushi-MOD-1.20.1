@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "urushi:block/shitamiita_japanese_cedar",
+        "top": "urushi:block/shitamiita_japanese_cedar",
+        "side": "urushi:block/shitamiita_japanese_cedar"
+    }
+}

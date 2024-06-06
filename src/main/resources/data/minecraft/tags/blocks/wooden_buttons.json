@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:red_urushi_button",
+    "urushi:black_urushi_button",
+    "urushi:japanese_apricot_button",
+    "urushi:cypress_button",
+    "urushi:sakura_button",
+    "urushi:japanese_cedar_button"
+  ]
+}

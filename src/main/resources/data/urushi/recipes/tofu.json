@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "##",
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+ "tag": "forge:crops/soybean"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:tofu",
+
+    "count": 1
+
+  }
+
+}

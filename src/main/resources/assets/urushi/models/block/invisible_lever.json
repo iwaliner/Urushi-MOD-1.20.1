@@ -1,0 +1,34 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"1": "urushi:block/invisible_lever_base",
+		"particle": "urushi:block/invisible_lever",
+		"lever": "urushi:block/invisible_lever"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 4],
+			"to": [11, 3, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 6, 3], "texture": "#1"},
+				"east": {"uv": [8, 0, 16, 3], "texture": "#1"},
+				"south": {"uv": [0, 0, 6, 3], "texture": "#1"},
+				"west": {"uv": [8, 0, 16, 3], "texture": "#1"},
+				"up": {"uv": [0, 8, 6, 16], "texture": "#1"},
+				"down": {"uv": [0, 8, 6, 16], "texture": "#1", "cullface": "down"}
+			}
+		},
+		{
+			"from": [7, 1, 7],
+			"to": [9, 11, 9],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [7, 6, 9, 16], "texture": "#lever"},
+				"east": {"uv": [7, 6, 9, 16], "texture": "#lever"},
+				"south": {"uv": [7, 6, 9, 16], "texture": "#lever"},
+				"west": {"uv": [7, 6, 9, 16], "texture": "#lever"},
+				"up": {"uv": [7, 6, 9, 8], "texture": "#lever"}
+			}
+		}
+	]
+}

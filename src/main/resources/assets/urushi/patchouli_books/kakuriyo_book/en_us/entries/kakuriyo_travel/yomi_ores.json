@@ -1,0 +1,23 @@
+{
+  "name": "The Yomi Ores",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:yomi_gold_ore",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 10,
+
+  "pages": [
+    {
+      "type": "text",
+      "text": "Limonite Ore,  Chalcopyrite Ore, and Yomi Gold Ore drop multiple metal ores even when using a pickaxe without Fortune enchantment.$(br2)Limonite Ore drops not only Raw Iron, but Nether Quartz. Chalcopyrite Ore drops not only Raw Copper, but Raw Iron.$(br2)From these reasons, collecting bronze, iron and gold will be more efficient. Notice that Jade Ores will only drop 1 Jade when mining without Fortune."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Mining Straight Down!",
+      "images": [
+        "urushi:textures/gui/patchouli/yomi_ore.png"
+      ]
+    }
+  ]
+}

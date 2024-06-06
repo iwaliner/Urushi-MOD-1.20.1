@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "urushi:block/futon_head_base",
+	"textures": {
+		"1": "urushi:block/futon_yellow",
+		"2": "urushi:block/futon_side",
+		"particle": "urushi:block/futon_side"
+	}
+}

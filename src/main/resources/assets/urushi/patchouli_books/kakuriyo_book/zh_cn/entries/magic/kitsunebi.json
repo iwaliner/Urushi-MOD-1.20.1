@@ -1,0 +1,27 @@
+{
+  "name": "item.urushi.kitsunebi",
+  "category": "urushi:magic",
+  "icon": "urushi:kitsunebi",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 15,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:kitsunebi",
+        "count": 1
+      },
+      "text": "狐火，又称鬼火，是一种不可见的光源。右击方块以放置，或对空中使用以投掷并放置狐火。$(br2)狐狸在食用油豆腐后会产生狐火，此时可以用其他物品从狐狸的口中将狐火取出。$(br2)在食用狐火时，工具栏内必须存在灵力存量不小于10的火气勾玉。"
+    },
+     {
+      "type": "patchouli:image",
+      "text": "手持狐火时，会以粒子显示附近的狐火所在的位置。",
+      "images": [
+        "urushi:textures/gui/patchouli/kitsunebi.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "urushi:block/half_slab_base",
+  "textures": {
+    "tex": "urushi:block/japanese_cedar_planks"
+  }
+}

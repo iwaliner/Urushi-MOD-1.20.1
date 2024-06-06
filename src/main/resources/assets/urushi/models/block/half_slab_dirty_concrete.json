@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "urushi:block/concrete_dirty",
+        "top": "urushi:block/concrete_dirty",
+        "side": "urushi:block/concrete_dirty"
+    }
+}

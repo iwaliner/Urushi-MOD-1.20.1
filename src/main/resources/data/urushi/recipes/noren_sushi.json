@@ -1,0 +1,37 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "urushi:deep_blue_noren"
+
+    },
+
+    {
+
+      "item": "urushi:deep_blue_noren"
+
+    },
+
+    {
+
+      "item": "minecraft:cod"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:sushi_noren",
+
+    "count": 1
+
+  }
+
+}

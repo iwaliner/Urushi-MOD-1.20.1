@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "##",
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:rice_crop"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:thatched_block",
+
+    "count": 8
+
+  }
+
+}

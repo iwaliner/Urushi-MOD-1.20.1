@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+   
+
+    {
+
+      "item": "urushi:jungle_shoji"
+
+    },
+
+    {
+
+      "tag": "forge:glass_panes"
+
+    }
+
+  ],
+
+  "result": {
+
+    "item": "urushi:jungle_yukimi_shoji",
+
+    "count": 1
+
+  }
+
+}

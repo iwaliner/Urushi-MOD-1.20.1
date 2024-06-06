@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "urushi:block/plaster",
+        "top": "urushi:block/plaster",
+        "side": "urushi:block/plaster"
+    }
+}

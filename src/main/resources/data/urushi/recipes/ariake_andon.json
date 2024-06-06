@@ -1,0 +1,101 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    " b ",
+
+
+
+    "ptp",
+
+
+
+    " s "
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "t": {
+
+
+
+     "item": "minecraft:candle"
+
+
+
+    },
+
+
+
+    "p": {
+
+
+
+     "item": "minecraft:paper"
+
+
+
+    },
+
+
+
+    "b": {
+
+
+
+     "item": "urushi:smooth_black_urushi_planks"
+
+
+
+    },
+
+
+
+    "s": {
+
+
+
+    "item": "urushi:red_urushi_wall_for_framed_blocks"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:ariake_andon",
+
+
+
+    "count": 16
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,20 @@
+{
+  "name": "蛇眼油纸伞",
+  "category": "urushi:magic",
+  "icon": "urushi:open_wagasa",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 20,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:open_wagasa",
+        "count": 1
+      },
+      "text": "右击即可开关蛇眼油纸伞。$(br2)当蛇眼油纸伞开启时，将会减缓摔落速度，并免除摔落伤害。$(br2)使用蛇眼油纸伞需要消耗木气灵力，因此物品栏内需要有存有灵力的木气勾玉。"
+    }
+  ]
+}

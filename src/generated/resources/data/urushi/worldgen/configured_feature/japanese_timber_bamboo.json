@@ -1,0 +1,14 @@
+{
+  "type": "urushi:bamboo",
+  "config": {
+    "bamboo": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "urushi:japanese_timber_bamboo",
+        "Properties": {
+          "age": "0"
+        }
+      }
+    }
+  }
+}

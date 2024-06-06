@@ -1,0 +1,7 @@
+{
+	"parent": "urushi:block/sliding_door/sliding_door_under_8",
+	"textures": {
+		"0": "urushi:block/shoji_japanese_cedar_under",
+		"1": "urushi:block/planks_smooth_japanese_cedar"
+	}
+}

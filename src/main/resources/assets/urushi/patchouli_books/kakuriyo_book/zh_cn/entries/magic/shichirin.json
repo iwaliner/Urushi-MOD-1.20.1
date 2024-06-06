@@ -1,0 +1,24 @@
+{
+  "name": "block.urushi.shichirin",
+  "category": "urushi:magic",
+  "icon": "urushi:shichirin",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 30,
+
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:shichirin",
+        "count": 1
+      },
+      "text": "使用七轮可以代替营火烤制食物，并使食物带有额外药水效果。$(br2)将煤炭、木炭等右击烤炉或通过漏斗从侧面输入到烤炉中之后，再使用打火琥珀点火。那之后，使用团扇调节烤炉的火力。"
+    },
+     {
+      "type": "text",
+      "text": "烤制后的食物会带有“夹生”、“完美”、“过火”三种之一的说明，食用不同说明的食物时会赋予玩家不同的效果。其中，“夹生”会给予饥饿效果、“完美”会给予生命恢复效果、“过火”会给予中毒效果。$(br2)说明上标注的等级越高，对应的效果就越强。“完美 等级5”的情况下，还会额外赋予伤害吸收效果。"
+    }
+  ]
+}

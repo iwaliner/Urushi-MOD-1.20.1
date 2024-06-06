@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:blank_fusuma"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "minecraft:sugar"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:blank_antique_fusuma",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

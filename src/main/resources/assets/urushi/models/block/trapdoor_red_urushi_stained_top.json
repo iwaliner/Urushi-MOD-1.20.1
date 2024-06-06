@@ -1,0 +1,6 @@
+{
+    "parent": "block/template_orientable_trapdoor_top",
+    "textures": {
+        "texture": "urushi:block/planks_red_urushi_stained_trapdoor"
+    }
+}

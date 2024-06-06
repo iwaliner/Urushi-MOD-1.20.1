@@ -1,0 +1,70 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "minecraft:egg"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:green_onion_crop"
+
+
+
+    },
+    {
+
+
+
+      "item": "urushi:gyudon"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:green_onion_and_raw_egg_gyudon",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

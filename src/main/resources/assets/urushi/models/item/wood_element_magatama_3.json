@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "urushi:item/magatama_wood",
+    "layer1": "urushi:item/bars/wood_3"
+  }
+}

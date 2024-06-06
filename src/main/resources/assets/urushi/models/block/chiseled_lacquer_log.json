@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "urushi:block/urushi_log_top",
+        "front": "urushi:block/urushi_log_damaged",
+        "side": "urushi:block/urushi_log"
+    }
+}

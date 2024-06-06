@@ -1,0 +1,33 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###",
+
+    "###",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:raw_rice"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:tawara",
+
+    "count": 1
+
+  }
+
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/polished_rock_slab_under_base",
+  "textures": {
+    "0": "minecraft:block/polished_blackstone",
+    "particle": "minecraft:block/polished_blackstone"
+  }
+}

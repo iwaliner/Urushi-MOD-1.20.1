@@ -1,0 +1,75 @@
+{
+
+
+
+  "type": "urushi:metal_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:amethyst_block"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "minecraft:amethyst_block"
+
+
+
+    },
+    {
+
+
+
+   "item": "minecraft:amethyst_block"
+
+
+
+    },
+    {
+
+
+
+   "item": "minecraft:amethyst_block"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"minecraft:budding_amethyst"
+
+
+
+  },
+
+
+
+  "reiryoku": 200
+
+
+
+}

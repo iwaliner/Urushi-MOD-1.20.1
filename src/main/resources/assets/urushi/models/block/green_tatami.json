@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "urushi:block/tatami_top_green",
+        "side": "urushi:block/tatami_green"
+    }
+}

@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:frying",
+
+  "ingredients": [
+
+  {
+
+    "item": "minecraft:chicken"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:karaage"
+
+  }
+
+}

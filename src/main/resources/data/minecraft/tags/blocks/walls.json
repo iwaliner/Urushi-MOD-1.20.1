@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:cobbled_yomi_stone_wall",
+    "urushi:polished_yomi_stone_wall",
+    "urushi:large_yomi_stone_brick_wall",
+    "urushi:small_yomi_stone_brick_wall",
+    "urushi:rough_stone_wall",
+    "urushi:ibushi_kawara_wall",
+    "urushi:copper_kawara_wall",
+    "urushi:cupric_oxide_kawara_wall"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+
+  "variants": {
+
+    "facing=west": {
+
+      "model": "urushi:block/vertical_slab_magenta_plaster",
+
+      "y": 270
+
+    },
+
+    "facing=south": {
+
+      "model": "urushi:block/vertical_slab_magenta_plaster",
+
+      "y": 180
+
+    },
+
+    "facing=north": {
+
+      "model": "urushi:block/vertical_slab_magenta_plaster"
+
+    },
+
+    "facing=east": {
+
+      "model": "urushi:block/vertical_slab_magenta_plaster",
+
+      "y": 90
+
+    }
+
+  }
+
+}

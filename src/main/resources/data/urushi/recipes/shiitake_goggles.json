@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "s s"
+
+  ],
+
+  "key": {
+
+    "s": {
+
+      "item": "urushi:shiitake"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:shiitake_goggles",
+
+    "count": 1
+
+  }
+
+}

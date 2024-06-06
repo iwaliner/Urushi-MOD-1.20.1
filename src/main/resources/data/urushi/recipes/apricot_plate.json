@@ -1,0 +1,29 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "##"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:japanese_apricot_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:japanese_apricot_pressure_plate",
+
+    "count": 1
+
+  }
+
+}

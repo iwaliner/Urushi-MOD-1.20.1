@@ -1,0 +1,25 @@
+{
+  "name": "Side Textures of Slabs",
+  "category": "urushi:vanilla_modifications",
+  "icon": "minecraft:polished_granite_slab",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 10,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The textures on the sides of Polished Stones' Slabs are the same as their upper side textures.$(br2)Now with Urushi Mod, you can have resembled versions which ther sides are polished too."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/slab_texture.png"
+      ]
+    }
+    
+  ]
+}

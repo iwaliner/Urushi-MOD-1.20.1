@@ -1,0 +1,60 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:matured_japanese_apricot_fruit"
+
+
+
+    },
+
+
+
+    {
+
+
+"tag": "forge:salt"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:pickled_japanese_apricot",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

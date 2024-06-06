@@ -1,0 +1,21 @@
+{
+
+  "type": "urushi:hammering",
+
+  "ingredients": [
+
+  {
+
+    "item": "urushi:hot_iron_blade_1"
+
+    }
+
+  ],
+
+  "result": {
+
+  "item":"urushi:hot_iron_blade_2"
+
+  }
+
+}

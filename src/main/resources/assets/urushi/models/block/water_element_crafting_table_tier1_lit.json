@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/crafting_table_water_tier1",
+        "down": "urushi:block/crafting_table_bottom_water_tier1",
+        "up": "urushi:block/crafting_table_water_tier1",
+        "north": "urushi:block/crafting_table_side_water_tier1",
+        "east": "urushi:block/crafting_table_side_water_tier1",
+        "south": "urushi:block/crafting_table_side_water_tier1",
+        "west": "urushi:block/crafting_table_side_water_tier1"
+    }
+}

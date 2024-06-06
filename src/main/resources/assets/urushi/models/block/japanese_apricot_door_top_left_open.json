@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "urushi:block/ume_door_bottom",
+    "top": "urushi:block/ume_door_top"
+  }
+}

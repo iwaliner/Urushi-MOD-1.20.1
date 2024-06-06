@@ -1,0 +1,42 @@
+{
+  "name": "Keep Proceeding With Tier 2",
+  "category": "urushi:magic",
+  "icon": "urushi:wood_enhanced_jadeite",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 10,
+
+  "pages": [
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_enhanced_jadeite_brick",
+      "text": "Craft some Wood Enhanced Jadeite Bricks.$(br2)They act as a kind of crafting material."
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_hokora",
+        "count": 1
+      },
+      "text": "Craft a Wood Enhanced Hokora.$(br)Right-click or use a hopper to send required items inside, to transform into 5 Reiyoku per item.$(br)The required items are Ripe Plum for Wood, Wheat for Fire, Rice Ear for Earth, Green Onion for Metal, and Soy Beans for Water."
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_crafting_table_tier2",
+        "count": 1
+      },
+      "text": "Craft a Jadeite Wood Element Altar. The usage is as same as the Birch Altars.$(br2)Not only Tier 1 recipes, it can also craft a lot more Tier 2 recipes."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_amber",
+        "count": 1
+      },
+      "text": "In Tier 2, Ambers of each element can be easily crafted, by 4 flints on a Jadeite Altar. This makes doing magic much easier."
+    }
+  ]
+}

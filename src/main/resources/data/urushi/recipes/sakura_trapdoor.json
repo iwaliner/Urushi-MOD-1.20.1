@@ -1,0 +1,31 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "###",
+
+    "###"
+
+  ],
+
+  "key": {
+
+    "#": {
+
+      "item": "urushi:sakura_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:sakura_trapdoor",
+
+    "count": 2
+
+  }
+
+}

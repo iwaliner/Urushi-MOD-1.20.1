@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:wooden_cabinetry_slab"
+    },
+    {
+    "tag": "forge:dyes/yellow"
+    }
+  ],
+  "result": {
+    "item": "urushi:yellow_stained_wooden_cabinetry_slab"
+  }
+}

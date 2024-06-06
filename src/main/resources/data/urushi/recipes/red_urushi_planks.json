@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "BBB",
+
+    "BDB",
+
+    "BBB"
+
+  ],
+
+  "key": {
+
+    "D": {
+
+     "item": "urushi:red_urushi_ball"
+
+    },
+
+    "B": {
+
+    "tag": "minecraft:planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:red_urushi_planks",
+
+    "count": 8
+
+  }
+
+}

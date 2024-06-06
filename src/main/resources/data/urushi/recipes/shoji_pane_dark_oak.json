@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "X#X",
+
+    "###",
+
+    "X#X"
+
+  ],
+
+  "key": {
+
+    "X": {
+
+     "item": "minecraft:paper"
+
+    },
+
+    "#": {
+
+    "item": "urushi:smooth_dark_oak_planks"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:dark_oak_shoji_pane",
+
+    "count": 32
+
+  }
+
+}

@@ -1,0 +1,25 @@
+{
+  "name": "桜はどこ？",
+  "category": "urushi:nature",
+  "icon": "urushi:big_sakura_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "桜の樹木は森林バイオーム、そして幽世ディメンション内に自然生成されます。$(br2)グロウストーンと苗木をクラフトしてできた苗木は、成長すると葉が明るさ15で発光する樹木になります。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "これが桜の樹木",
+      "images": [
+        "urushi:textures/gui/patchouli/sakura_tree.png"
+      ]
+    }
+    
+  ]
+}

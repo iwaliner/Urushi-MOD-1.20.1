@@ -1,0 +1,25 @@
+{
+  "name": "漆树",
+  "category": "urushi:nature",
+  "icon": "urushi:lacquer_sapling",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 5,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "漆树在森林群系中自然生成，由于生成概率较低且容易与橡树混淆，还仔细留意。$(br2)漆树树苗除了从漆树树叶中自然掉落外，还可以在奖励箱、地牢宝箱或平原村庄的箱子里获得。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "一切的开始",
+      "images": [
+        "urushi:textures/gui/patchouli/lacquer_tree.png"
+      ]
+    }
+    
+  ]
+}

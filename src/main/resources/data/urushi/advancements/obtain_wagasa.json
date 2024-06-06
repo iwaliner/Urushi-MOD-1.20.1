@@ -1,0 +1,50 @@
+{
+  "parent": "urushi:obtain_magatama",
+  "display": {
+    "icon": {
+      "item": "urushi:open_wagasa"
+    },
+    "title": {
+      "translate": "advancements.urushi.wagasa.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.wagasa.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "open_wagasa": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:open_wagasa"
+            ]
+          }
+        ]
+      }
+    },
+    "close_wagasa": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:close_wagasa"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "open_wagasa",
+      "close_wagasa"
+    ]
+  ]
+}

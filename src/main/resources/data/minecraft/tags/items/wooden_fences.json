@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:red_urushi_fence",
+    "urushi:black_urushi_fence",
+    "urushi:japanese_apricot_fence",
+    "urushi:japanese_cedar_fence",
+    "urushi:cypress_fence",
+    "urushi:sakura_fence"
+  ]
+}

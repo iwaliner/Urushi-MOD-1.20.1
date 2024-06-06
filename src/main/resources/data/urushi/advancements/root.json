@@ -1,0 +1,30 @@
+{
+   "display": {
+     "icon": {
+       "item": "urushi:kasuga_lantern"
+     },
+     "title": {
+      "translate": "advancements.urushi.root.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.root.description"
+    },
+     "background": "urushi:textures/block/shitamiita_japanese_cedar.png",
+     "frame": "task"
+   },
+   "criteria": {
+     "requirement": {
+       "trigger": "minecraft:inventory_changed",
+       "conditions": {
+         "items": [
+           {
+             "items": [
+               "urushi:rice_crop"
+             ],
+             "count": 1
+           }
+         ]
+       }
+     }
+   }
+ }

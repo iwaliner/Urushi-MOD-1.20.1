@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/metal_element_sacred_rock",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/metal_element_sacred_rock",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/metal_element_sacred_rock"
+    },
+    "facing=east": {
+      "model": "urushi:block/metal_element_sacred_rock",
+      "y": 90
+    }
+  }
+}

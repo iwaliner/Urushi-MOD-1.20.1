@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_thatched"
+    },
+    "type=double": {
+      "model": "urushi:block/thatched_block"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_thatched"
+    }
+  }
+}

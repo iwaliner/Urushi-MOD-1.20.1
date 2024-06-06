@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "urushi:block/stripped_sakura_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "urushi:block/stripped_sakura_log"
+    },
+    "axis=z": {
+      "model": "urushi:block/stripped_sakura_log_horizontal",
+      "x": 90
+    }
+  }
+}

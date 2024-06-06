@@ -1,0 +1,39 @@
+{
+
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+
+    "BBB",
+
+    "BDB",
+
+    "BBB"
+
+  ],
+
+  "key": {
+
+    "D": {
+
+     "item": "urushi:black_urushi_ball"
+
+    },
+
+    "B": {
+
+    "tag": "minecraft:wooden_stairs"
+
+    }
+
+  },
+
+  "result": {
+
+    "item": "urushi:black_urushi_stairs",
+
+    "count": 8
+
+  }
+
+}

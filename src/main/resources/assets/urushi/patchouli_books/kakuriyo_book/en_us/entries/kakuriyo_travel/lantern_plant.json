@@ -1,0 +1,29 @@
+{
+  "name": "Lantern Plants",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:lantern_plant_fruit",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:lantern_plant_fruit",
+        "count": 1
+      },
+      "text": "Lantern Plants are a special plant in the Kakuriyo Dimension. They grow on and off the ground and can grow to 2 blocks.$(br2)Right-click to lit the plant as a 15 level light source when it is mature.$(br2)Also, its fruit is edible."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "The plant in the middle has been lit by right-click",
+      "images": [
+        "urushi:textures/gui/patchouli/lantern_plant.png"
+      ]
+    }
+    
+  ]
+}

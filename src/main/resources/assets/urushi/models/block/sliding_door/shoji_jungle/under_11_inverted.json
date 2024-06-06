@@ -1,0 +1,7 @@
+{
+	"parent": "urushi:block/sliding_door/sliding_door_under_11_inverted",
+	"textures": {
+		"0": "urushi:block/shoji_jungle_under",
+		"1": "urushi:block/planks_smooth_jungle"
+	}
+}

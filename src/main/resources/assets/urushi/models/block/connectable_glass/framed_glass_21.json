@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube", "render_type": "minecraft:cutout",
+    "textures": {
+        "particle": "urushi:block/framed_glass_0",
+        "down": "urushi:block/framed_glass_1",
+        "up": "urushi:block/framed_glass_15",
+        "north": "urushi:block/framed_glass_15",
+        "east": "urushi:block/framed_glass_12",
+        "south": "urushi:block/framed_glass_2",
+        "west": "urushi:block/framed_glass_11"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:rice_crop",
+    "urushi:azuki_crop",
+    "urushi:soy_crop"
+  ]
+}

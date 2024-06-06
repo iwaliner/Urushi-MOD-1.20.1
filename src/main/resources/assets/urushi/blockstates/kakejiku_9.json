@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=west,bottom=false": {
+      "model": "urushi:block/kakejiku_upper_kachoufugetsu",
+      "y": 90
+    },
+    "facing=south,bottom=false": {
+      "model": "urushi:block/kakejiku_upper_kachoufugetsu"
+    },
+    "facing=north,bottom=false": {
+      "model": "urushi:block/kakejiku_upper_kachoufugetsu",
+      "y": 180
+    },
+    "facing=east,bottom=false": {
+      "model": "urushi:block/kakejiku_upper_kachoufugetsu",
+      "y": 270
+    },
+    "facing=west,bottom=true": {
+      "model": "urushi:block/kakejiku_under_kachoufugetsu",
+      "y": 90
+    },
+    "facing=south,bottom=true": {
+      "model": "urushi:block/kakejiku_under_kachoufugetsu"
+    },
+    "facing=north,bottom=true": {
+      "model": "urushi:block/kakejiku_under_kachoufugetsu",
+      "y": 180
+    },
+    "facing=east,bottom=true": {
+      "model": "urushi:block/kakejiku_under_kachoufugetsu",
+      "y": 270
+    }
+  }
+}

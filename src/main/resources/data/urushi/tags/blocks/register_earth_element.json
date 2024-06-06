@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+   "#minecraft:dirt",
+  "urushi:wattle_and_daub",
+  "urushi:wattle_and_daub_slab",
+  "urushi:wattle_and_daub_stairs",
+   "minecraft:soul_sand",
+   "minecraft:soul_soil"
+  ]
+}

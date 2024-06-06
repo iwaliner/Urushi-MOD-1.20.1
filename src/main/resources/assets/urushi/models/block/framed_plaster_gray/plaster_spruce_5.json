@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/plaster_gray",
+        "down": "urushi:block/planks_smooth_spruce",
+        "up": "urushi:block/planks_smooth_spruce",
+        "north": "urushi:block/plaster_gray",
+        "east": "urushi:block/connectable/framed_plaster_gray/plaster_spruce_6",
+        "south": "urushi:block/plaster_gray",
+        "west": "urushi:block/connectable/framed_plaster_gray/plaster_spruce_6"
+    }
+}
