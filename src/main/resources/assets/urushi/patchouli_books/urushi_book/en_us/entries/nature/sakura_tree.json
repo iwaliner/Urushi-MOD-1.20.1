@@ -1,5 +1,5 @@
 {
-  "name": "Sakura Tree",
+  "name": "Kobore Sakura Tree",
   "category": "urushi:nature",
   "icon": "urushi:big_sakura_sapling",
   "priority": true,
@@ -11,11 +11,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Sakura Trees generate in Forest biomes or Kakuriyo Dimension.$(br2)Craft its sapling with glowstone for a Glowing Sapling, which leaves have a light level of 15."
+      "text": "Kobore Sakura Trees generate in Forest biomes or Kakuriyo Dimension.$(br2)Craft its sapling with glowstone for a Glowing Sapling, which leaves have a light level of 15."
     },
     {
       "type": "patchouli:image",
-      "text": "Sakura Tree",
+      "text": "Kobore Sakura Tree",
       "images": [
         "urushi:textures/gui/patchouli/sakura_tree.png"
       ]

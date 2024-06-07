@@ -138,51 +138,51 @@
 
    "item.urushi.japanese_apricot_bark": "Japanese Apricot Bark",
 
-   "block.urushi.sakura_sapling": "Sakura Sapling",
+   "block.urushi.sakura_sapling": "Kobore Sakura Sapling",
 
-   "block.urushi.big_sakura_sapling": "Big Sakura Sapling",
+   "block.urushi.big_sakura_sapling": "Big Kobore Sakura Sapling",
 
-   "block.urushi.sakura_leaves": "Sakura Leaves",
+   "block.urushi.sakura_leaves": "Kobore Sakura Leaves",
 
-   "block.urushi.glowing_sakura_sapling": "Glowing Sakura Sapling",
+   "block.urushi.glowing_sakura_sapling": "Glowing Kobore Sakura Sapling",
 
-   "block.urushi.glowing_big_sakura_sapling": "Glowing Big Sakura Sapling",
+   "block.urushi.glowing_big_sakura_sapling": "Glowing Big Kobore Sakura Sapling",
 
-   "block.urushi.glowing_sakura_leaves": "Glowing Sakura Leaves",
+   "block.urushi.glowing_sakura_leaves": "Glowing Kobore Sakura Leaves",
 
-   "block.urushi.sakura_log": "Sakura Log",
+   "block.urushi.sakura_log": "Kobore Sakura Log",
 
-   "block.urushi.stripped_sakura_log": "Stripped Sakura Log",
+   "block.urushi.stripped_sakura_log": "Stripped Kobore Sakura Log",
 
-   "block.urushi.sakura_wood": "Sakura Wood",
+   "block.urushi.sakura_wood": "Kobore Sakura Wood",
 
-   "block.urushi.stripped_sakura_wood": "Stripped Sakura Wood",
+   "block.urushi.stripped_sakura_wood": "Stripped Kobore Sakura Wood",
 
-   "block.urushi.sakura_planks": "Sakura Planks",
+   "block.urushi.sakura_planks": "Kobore Sakura Planks",
 
-   "block.urushi.sakura_slab": "Sakura Slab",
+   "block.urushi.sakura_slab": "Kobore Sakura Slab",
 
-   "block.urushi.sakura_stairs": "Sakura Stairs",
+   "block.urushi.sakura_stairs": "Kobore Sakura Stairs",
 
-   "block.urushi.sakura_fence": "Sakura Fence",
+   "block.urushi.sakura_fence": "Kobore Sakura Fence",
 
-   "block.urushi.sakura_fence_gate": "Sakura Fence Gate",
+   "block.urushi.sakura_fence_gate": "Kobore Sakura Fence Gate",
 
-   "block.urushi.sakura_door": "Sakura Door",
+   "block.urushi.sakura_door": "Kobore Sakura Door",
 
-   "block.urushi.sakura_pressure_plate": "Sakura Pressure Plate",
+   "block.urushi.sakura_pressure_plate": "Kobore Sakura Pressure Plate",
 
-   "block.urushi.sakura_button": "Sakura Button",
+   "block.urushi.sakura_button": "Kobore Sakura Button",
 
-   "block.urushi.sakura_trapdoor": "Sakura Trapdoor",
+   "block.urushi.sakura_trapdoor": "Kobore Sakura Trapdoor",
 
-   "block.urushi.smooth_sakura_planks": "Smooth Sakura Planks",
+   "block.urushi.smooth_sakura_planks": "Smooth Kobore Sakura Planks",
 
-   "block.urushi.smooth_sakura_slab": "Smooth Sakura Slab",
+   "block.urushi.smooth_sakura_slab": "Smooth Kobore Sakura Slab",
 
-   "block.urushi.smooth_sakura_stairs": "Smooth Sakura Stairs",
+   "block.urushi.smooth_sakura_stairs": "Smooth Kobore Sakura Stairs",
 
-   "item.urushi.sakura_bark": "Sakura Bark",
+   "item.urushi.sakura_bark": "Kobore Sakura Bark",
 
    "block.urushi.cypress_sapling": "Cypress Sapling",
 
@@ -324,7 +324,7 @@
 
    "block.urushi.japanese_apricot_parapet": "Japanese Apricot Parapet",
 
-   "block.urushi.sakura_parapet": "Sakura Parapet",
+   "block.urushi.sakura_parapet": "Kobore Sakura Parapet",
 
    "block.urushi.cypress_parapet": "Cypress Parapet",
 
@@ -348,7 +348,7 @@
 
    "item.urushi.butadon": "Butadon",
 
-   "item.urushi.sakura_mochi": "Sakura Mochi",
+   "item.urushi.sakura_mochi": "Kobore Sakura Mochi",
 
    "item.urushi.ohagi": "Ohagi",
 
@@ -388,7 +388,7 @@
 
    "block.urushi.japanese_apricot_shoji_pane": "Japanese Apricot Shoji Pane",
 
-   "block.urushi.sakura_shoji_pane": "Sakura Shoji Pane",
+   "block.urushi.sakura_shoji_pane": "Kobore Sakura Shoji Pane",
 
    "block.urushi.cypress_shoji_pane": "Cypress Shoji Pane",
 
@@ -410,7 +410,7 @@
 
    "block.urushi.japanese_apricot_shoji": "Japanese Apricot Shoji",
 
-   "block.urushi.sakura_shoji": "Sakura Shoji",
+   "block.urushi.sakura_shoji": "Kobore Sakura Shoji",
 
    "block.urushi.cypress_shoji": "Cypress Shoji",
 
@@ -508,7 +508,7 @@
 
    "block.urushi.japanese_apricot_framed_plaster": "Japanese-Apricot-Framed Sikkui",
 
-   "block.urushi.sakura_framed_plaster": "Sakura-Framed Sikkui",
+   "block.urushi.sakura_framed_plaster": "Kobore Sakura-Framed Sikkui",
 
    "block.urushi.cypress_framed_plaster": "Cypress-Framed Sikkui",
 
@@ -718,7 +718,7 @@
 
    "item.urushi.yokan": "Yokan",
 
-   "item.urushi.sakura_yokan": "Sakura Yokan",
+   "item.urushi.sakura_yokan": "Kobore Sakura Yokan",
 
    "item.urushi.sekihan": "Sekihan",
 
@@ -934,7 +934,7 @@
 
    "block.urushi.japanese_apricot_fushiranma": "Japanese Apricot Fushiranma",
 
-   "block.urushi.sakura_fushiranma": "Sakura Fushiranma",
+   "block.urushi.sakura_fushiranma": "Kobore Sakura Fushiranma",
 
    "block.urushi.cypress_fushiranma": "Cypress Fushiranma",
 
@@ -1106,7 +1106,7 @@
 
     "block.urushi.fallen_japanese_apricot_leaves": "Fallen Japanese Apricot Leaves",
 
-    "block.urushi.fallen_sakura_leaves": "Fallen Sakura Leaves",
+    "block.urushi.fallen_sakura_leaves": "Fallen Kobore Sakura Leaves",
 
     "block.urushi.grass_block_with_fallen_red_leaves": "Grass Block With Fallen Red Leaves",
 
@@ -1116,7 +1116,7 @@
 
     "block.urushi.grass_block_with_fallen_japanese_apricot_leaves": "Grass Block With Fallen Japanese Apricot Leaves",
 
-    "block.urushi.grass_block_with_fallen_sakura_leaves": "Grass Block With Fallen Sakura Leaves",
+    "block.urushi.grass_block_with_fallen_sakura_leaves": "Grass Block With Fallen Kobore Sakura Leaves",
 
     "item.urushi.yomotsuhegui_fruit": "Yomotsuhegui Fruit",
 
@@ -1180,7 +1180,7 @@
 
     "block.urushi.japanese_apricot_framed_wattle_and_daub": "Japanese-Apricot-Framed Wattle and Daub",
 
-    "block.urushi.sakura_framed_wattle_and_daub": "Sakura-Framed Wattle and Daub",
+    "block.urushi.sakura_framed_wattle_and_daub": "Kobore Sakura-Framed Wattle and Daub",
 
     "block.urushi.cypress_framed_wattle_and_daub": "Cypress-Framed Wattle and Daub",
 
@@ -1262,7 +1262,7 @@
 
     "block.urushi.japanese_apricot_framed_sand_coast": "Japanese-Apricot-Framed Sand Coast",
 
-    "block.urushi.sakura_framed_sand_coast": "Sakura-Framed Sand Coast",
+    "block.urushi.sakura_framed_sand_coast": "Kobore Sakura-Framed Sand Coast",
 
     "block.urushi.cypress_framed_sand_coast": "Cypress-Framed Sand Coast",
 
@@ -1294,7 +1294,7 @@
 
     "block.urushi.kakuriyo_grass_block_with_fallen_japanese_apricot_leaves": "Kakuriyo Grass Block With Fallen Japanese Apricot Leaves",
 
-    "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "Kakuriyo Grass Block With Fallen Sakura Leaves",
+    "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "Kakuriyo Grass Block With Fallen Kobore Sakura Leaves",
 
    "gui.jei.category.urushi.chiseled_lacquer_log": "Extracting",
 
@@ -1326,7 +1326,7 @@
 
    "block.urushi.japanese_apricot_shitamiita": "Japanese Apricot Shitamiita",
 
-   "block.urushi.sakura_shitamiita": "Sakura Shitamiita",
+   "block.urushi.sakura_shitamiita": "Kobore Sakura Shitamiita",
 
    "block.urushi.cypress_shitamiita": "Cypress Shitamiita",
 
@@ -1350,7 +1350,7 @@
 
    "block.urushi.japanese_apricot_shitamiita_slab": "Japanese Apricot Shitamiita Slab",
 
-   "block.urushi.sakura_shitamiita_slab": "Sakura Shitamiita Slab",
+   "block.urushi.sakura_shitamiita_slab": "Kobore Sakura Shitamiita Slab",
 
    "block.urushi.cypress_shitamiita_slab": "Cypress Shitamiita Slab",
 
@@ -1884,7 +1884,7 @@
 
     "block.urushi.japanese_apricot_board_window": "Japanese Apricot Board Window",
 
-    "block.urushi.sakura_board_window": "Sakura Board Window",
+    "block.urushi.sakura_board_window": "Kobore Sakura Board Window",
 
     "block.urushi.cypress_board_window": "Cypress Board Window",
 
@@ -1978,7 +1978,7 @@
 
     "block.urushi.japanese_apricot_yukimi_shoji": "Japanese Apricot Yukimi Shoji",
 
-    "block.urushi.sakura_yukimi_shoji": "Sakura Yukimi Shoji",
+    "block.urushi.sakura_yukimi_shoji": "Kobore Sakura Yukimi Shoji",
 
     "block.urushi.cypress_yukimi_shoji": "Cypress Yukimi Shoji",
 
@@ -2121,21 +2121,21 @@
 "block.urushi.japanese_apricot_framed_green_plaster": "Japanese-Apricot-Framed Green Sikkui",
 "block.urushi.japanese_apricot_framed_red_plaster": "Japanese-Apricot-Framed Red Sikkui",
 "block.urushi.japanese_apricot_framed_black_plaster": "Japanese-Apricot-Framed Black Sikkui",
-"block.urushi.sakura_framed_orange_plaster": "Sakura-Framed Orange Sikkui",
-"block.urushi.sakura_framed_magenta_plaster": "Sakura-Framed Magenta Sikkui",
-"block.urushi.sakura_framed_light_blue_plaster": "Sakura-Framed Light Blue Sikkui",
-"block.urushi.sakura_framed_yellow_plaster": "Sakura-Framed Yellow Sikkui",
-"block.urushi.sakura_framed_lime_plaster": "Sakura-Framed Lime Sikkui",
-"block.urushi.sakura_framed_pink_plaster": "Sakura-Framed Pink Sikkui",
-"block.urushi.sakura_framed_gray_plaster": "Sakura-Framed Gray Sikkui",
-"block.urushi.sakura_framed_light_gray_plaster": "Sakura-Framed Light Gray Sikkui",
-"block.urushi.sakura_framed_cyan_plaster": "Sakura-Framed Cyan Sikkui",
-"block.urushi.sakura_framed_purple_plaster": "Sakura-Framed Purple Sikkui",
-"block.urushi.sakura_framed_blue_plaster": "Sakura-Framed Blue Sikkui",
-"block.urushi.sakura_framed_brown_plaster": "Sakura-Framed Brown Sikkui",
-"block.urushi.sakura_framed_green_plaster": "Sakura-Framed Green Sikkui",
-"block.urushi.sakura_framed_red_plaster": "Sakura-Framed Red Sikkui",
-"block.urushi.sakura_framed_black_plaster": "Sakura-Framed Black Sikkui",
+"block.urushi.sakura_framed_orange_plaster": "Kobore Sakura-Framed Orange Sikkui",
+"block.urushi.sakura_framed_magenta_plaster": "Kobore Sakura-Framed Magenta Sikkui",
+"block.urushi.sakura_framed_light_blue_plaster": "Kobore Sakura-Framed Light Blue Sikkui",
+"block.urushi.sakura_framed_yellow_plaster": "Kobore Sakura-Framed Yellow Sikkui",
+"block.urushi.sakura_framed_lime_plaster": "Kobore Sakura-Framed Lime Sikkui",
+"block.urushi.sakura_framed_pink_plaster": "Kobore Sakura-Framed Pink Sikkui",
+"block.urushi.sakura_framed_gray_plaster": "Kobore Sakura-Framed Gray Sikkui",
+"block.urushi.sakura_framed_light_gray_plaster": "Kobore Sakura-Framed Light Gray Sikkui",
+"block.urushi.sakura_framed_cyan_plaster": "Kobore Sakura-Framed Cyan Sikkui",
+"block.urushi.sakura_framed_purple_plaster": "Kobore Sakura-Framed Purple Sikkui",
+"block.urushi.sakura_framed_blue_plaster": "Kobore Sakura-Framed Blue Sikkui",
+"block.urushi.sakura_framed_brown_plaster": "Kobore Sakura-Framed Brown Sikkui",
+"block.urushi.sakura_framed_green_plaster": "Kobore Sakura-Framed Green Sikkui",
+"block.urushi.sakura_framed_red_plaster": "Kobore Sakura-Framed Red Sikkui",
+"block.urushi.sakura_framed_black_plaster": "Kobore Sakura-Framed Black Sikkui",
 "block.urushi.cypress_framed_orange_plaster": "Cypress-Framed Orange Sikkui",
 "block.urushi.cypress_framed_magenta_plaster": "Cypress-Framed Magenta Sikkui",
 "block.urushi.cypress_framed_light_blue_plaster": "Cypress-Framed Light Blue Sikkui",
@@ -2303,7 +2303,7 @@
    "block.urushi.acacia_wall_for_framed_blocks": "Acacia Wall",
    "block.urushi.dark_oak_wall_for_framed_blocks": "Dark Oak Wall",
    "block.urushi.japanese_apricot_wall_for_framed_blocks": "Japanese Apricot Wall",
-   "block.urushi.sakura_wall_for_framed_blocks": "Sakura Wall",
+   "block.urushi.sakura_wall_for_framed_blocks": "Kobore Sakura Wall",
    "block.urushi.cypress_wall_for_framed_blocks": "Cypress Wall",
    "block.urushi.japanese_cedar_wall_for_framed_blocks": "Japanese Cedar Wall",
    "block.urushi.red_urushi_wall_for_framed_blocks": "Red Urushi Wall",
@@ -2364,13 +2364,13 @@
    "block.urushi.vertical_smooth_acacia_slab": "Vertical Smooth Acacia Slab",
    "block.urushi.vertical_smooth_dark_oak_slab": "Vertical Smooth Dark Oak Slab",
    "block.urushi.vertical_smooth_japanese_apricot_slab": "Vertical Smooth Japanese Apricot Slab",
-   "block.urushi.vertical_smooth_sakura_slab": "Vertical Smooth Sakura Slab",
+   "block.urushi.vertical_smooth_sakura_slab": "Vertical Smooth Kobore Sakura Slab",
    "block.urushi.vertical_smooth_cypress_slab": "Vertical Smooth Cypress Slab",
    "block.urushi.vertical_smooth_japanese_cedar_slab": "Vertical Smooth Japanese Cedar Slab",
    "block.urushi.vertical_smooth_red_urushi_slab": "Vertical Smooth Red Urushi Slab",
    "block.urushi.vertical_smooth_black_urushi_slab": "Vertical Smooth Black Urushi Slab",
    "block.urushi.japanese_apricot_bars": "Japanese Apricot Bars",
-   "block.urushi.sakura_bars": "Sakura Bars",
+   "block.urushi.sakura_bars": "Kobore Sakura Bars",
    "block.urushi.cypress_bars": "Cypress Bars",
    "block.urushi.japanese_cedar_bars": "Japanese Cedar Bars",
    "block.urushi.red_urushi_bars": "Red Urushi Bars",
@@ -2382,7 +2382,7 @@
    "block.urushi.horizontal_acacia_bars": "Horizontal Acacia Bars",
    "block.urushi.horizontal_dark_oak_bars": "Horizontal Dark Oak Bars",
    "block.urushi.horizontal_japanese_apricot_bars": "Horizontal Japanese Apricot Bars",
-   "block.urushi.horizontal_sakura_bars": "Horizontal Sakura Bars",
+   "block.urushi.horizontal_sakura_bars": "Horizontal Kobore Sakura Bars",
    "block.urushi.horizontal_cypress_bars": "Horizontal Cypress Bars",
    "block.urushi.horizontal_japanese_cedar_bars": "Horizontal Japanese Cedar Bars",
    "block.urushi.horizontal_red_urushi_bars": "Horizontal Red Urushi Bars",
@@ -2414,7 +2414,7 @@
    "biome.urushi.autumn_forest": "Autumn Forest",
    "biome.urushi.cedar_forest": "Cedar Forest",
    "biome.urushi.eulalia_plains": "Eulalia Plains",
-   "biome.urushi.sakura_forest": "Sakura Forest",
+   "biome.urushi.sakura_forest": "Kobore Sakura Forest",
    "block.urushi.mirror_tier2": "Jadeite Mirror",
    "block.urushi.wood_element_emitter_tier2": "Jedeite Wood Element Emitter",
    "block.urushi.fire_element_emitter_tier2": "Jedeite Fire Element Emitter",

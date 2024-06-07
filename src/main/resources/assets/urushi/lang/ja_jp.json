@@ -138,51 +138,51 @@
 
    "item.urushi.japanese_apricot_bark": "梅の樹皮",
 
-   "block.urushi.sakura_sapling": "桜の苗木",
+   "block.urushi.sakura_sapling": "こぼれ桜の苗木",
 
-   "block.urushi.big_sakura_sapling": "大きな桜の苗木",
+   "block.urushi.big_sakura_sapling": "大きなこぼれ桜の苗木",
 
-   "block.urushi.sakura_leaves": "桜の葉",
+   "block.urushi.sakura_leaves": "こぼれ桜の葉",
 
-   "block.urushi.glowing_sakura_sapling": "輝く桜の苗木",
+   "block.urushi.glowing_sakura_sapling": "輝くこぼれ桜の苗木",
 
-   "block.urushi.glowing_big_sakura_sapling": "輝く大きな桜の苗木",
+   "block.urushi.glowing_big_sakura_sapling": "輝く大きなこぼれ桜の苗木",
 
-   "block.urushi.glowing_sakura_leaves": "輝く桜の葉",
+   "block.urushi.glowing_sakura_leaves": "輝くこぼれ桜の葉",
 
-   "block.urushi.sakura_log": "桜の原木",
+   "block.urushi.sakura_log": "こぼれ桜の原木",
 
-   "block.urushi.stripped_sakura_log": "樹皮を剝いだ桜の原木",
+   "block.urushi.stripped_sakura_log": "樹皮を剝いだこぼれ桜の原木",
 
-   "block.urushi.sakura_wood": "桜の木",
+   "block.urushi.sakura_wood": "こぼれ桜の木",
 
-   "block.urushi.stripped_sakura_wood": "樹皮を剝いだ桜の木",
+   "block.urushi.stripped_sakura_wood": "樹皮を剝いだこぼれ桜の木",
 
-   "block.urushi.sakura_planks": "桜の板材",
+   "block.urushi.sakura_planks": "こぼれ桜の板材",
 
-   "block.urushi.sakura_slab": "桜のハーフブロック",
+   "block.urushi.sakura_slab": "こぼれ桜のハーフブロック",
 
-   "block.urushi.sakura_stairs": "桜の階段",
+   "block.urushi.sakura_stairs": "こぼれ桜の階段",
 
-   "block.urushi.sakura_fence": "桜のフェンス",
+   "block.urushi.sakura_fence": "こぼれ桜のフェンス",
 
-   "block.urushi.sakura_fence_gate": "桜のフェンスゲート",
+   "block.urushi.sakura_fence_gate": "こぼれ桜のフェンスゲート",
 
-   "block.urushi.sakura_door": "桜のドア",
+   "block.urushi.sakura_door": "こぼれ桜のドア",
 
-   "block.urushi.sakura_pressure_plate": "桜の感圧版",
+   "block.urushi.sakura_pressure_plate": "こぼれ桜の感圧版",
 
-   "block.urushi.sakura_button": "桜のボタン",
+   "block.urushi.sakura_button": "こぼれ桜のボタン",
 
-   "block.urushi.sakura_trapdoor": "桜のトラップドア",
+   "block.urushi.sakura_trapdoor": "こぼれ桜のトラップドア",
 
-   "block.urushi.smooth_sakura_planks": "滑らかな桜の板材",
+   "block.urushi.smooth_sakura_planks": "滑らかなこぼれ桜の板材",
 
-   "block.urushi.smooth_sakura_slab": "滑らかな桜のハーフブロック",
+   "block.urushi.smooth_sakura_slab": "滑らかなこぼれ桜のハーフブロック",
 
-   "block.urushi.smooth_sakura_stairs": "滑らかな桜の階段",
+   "block.urushi.smooth_sakura_stairs": "滑らかなこぼれ桜の階段",
 
-   "item.urushi.sakura_bark": "桜の樹皮",
+   "item.urushi.sakura_bark": "こぼれ桜の樹皮",
 
    "block.urushi.cypress_sapling": "檜の板材",
 
@@ -324,7 +324,7 @@
 
    "block.urushi.japanese_apricot_parapet": "梅の欄干",
 
-   "block.urushi.sakura_parapet": "桜の欄干",
+   "block.urushi.sakura_parapet": "こぼれ桜の欄干",
 
    "block.urushi.cypress_parapet": "檜の欄干",
 
@@ -348,7 +348,7 @@
 
    "item.urushi.butadon": "豚丼",
 
-   "item.urushi.sakura_mochi": "桜餅",
+   "item.urushi.sakura_mochi": "こぼれ桜餅",
 
    "item.urushi.ohagi": "おはぎ",
 
@@ -388,7 +388,7 @@
 
    "block.urushi.japanese_apricot_shoji_pane": "梅の欄間障子",
 
-   "block.urushi.sakura_shoji_pane": "桜の欄間障子",
+   "block.urushi.sakura_shoji_pane": "こぼれ桜の欄間障子",
 
    "block.urushi.cypress_shoji_pane": "檜の欄間障子",
 
@@ -410,7 +410,7 @@
 
    "block.urushi.japanese_apricot_shoji": "梅の障子戸",
 
-   "block.urushi.sakura_shoji": "桜の障子戸",
+   "block.urushi.sakura_shoji": "こぼれ桜の障子戸",
 
    "block.urushi.cypress_shoji": "檜の障子戸",
 
@@ -508,7 +508,7 @@
 
    "block.urushi.japanese_apricot_framed_plaster": "梅の木枠付き漆喰",
 
-   "block.urushi.sakura_framed_plaster": "桜の木枠付き漆喰",
+   "block.urushi.sakura_framed_plaster": "こぼれ桜の木枠付き漆喰",
 
    "block.urushi.cypress_framed_plaster": "檜の木枠付き漆喰",
 
@@ -718,7 +718,7 @@
 
    "item.urushi.yokan": "羊羹",
 
-   "item.urushi.sakura_yokan": "桜羊羹",
+   "item.urushi.sakura_yokan": "こぼれ桜羊羹",
 
    "item.urushi.sekihan": "赤飯",
 
@@ -934,7 +934,7 @@
 
    "block.urushi.japanese_apricot_fushiranma": "梅の竹節欄間",
 
-   "block.urushi.sakura_fushiranma": "桜の竹節欄間",
+   "block.urushi.sakura_fushiranma": "こぼれ桜の竹節欄間",
 
    "block.urushi.cypress_fushiranma": "檜の竹節欄間",
 
@@ -1106,7 +1106,7 @@
 
     "block.urushi.fallen_japanese_apricot_leaves": "梅の落ち葉",
 
-    "block.urushi.fallen_sakura_leaves": "桜の落ち葉",
+    "block.urushi.fallen_sakura_leaves": "こぼれ桜の落ち葉",
 
     "block.urushi.grass_block_with_fallen_red_leaves": "赤く色付いた落ち葉付きの草ブロック",
 
@@ -1116,7 +1116,7 @@
 
     "block.urushi.grass_block_with_fallen_japanese_apricot_leaves": "梅の落ち葉付きの草ブロック",
 
-    "block.urushi.grass_block_with_fallen_sakura_leaves": "桜の落ち葉付きの草ブロック",
+    "block.urushi.grass_block_with_fallen_sakura_leaves": "こぼれ桜の落ち葉付きの草ブロック",
 
     "item.urushi.yomotsuhegui_fruit": "ヨモツヘグイの果実",
 
@@ -1180,7 +1180,7 @@
 
     "block.urushi.japanese_apricot_framed_wattle_and_daub": "梅の木枠付き土壁",
 
-    "block.urushi.sakura_framed_wattle_and_daub": "桜の木枠付き土壁",
+    "block.urushi.sakura_framed_wattle_and_daub": "こぼれ桜の木枠付き土壁",
 
     "block.urushi.cypress_framed_wattle_and_daub": "檜の木枠付き土壁",
 
@@ -1262,7 +1262,7 @@
 
     "block.urushi.japanese_apricot_framed_sand_coast": "梅の木枠付き砂壁",
 
-    "block.urushi.sakura_framed_sand_coast": "桜の木枠付き砂壁",
+    "block.urushi.sakura_framed_sand_coast": "こぼれ桜の木枠付き砂壁",
 
     "block.urushi.cypress_framed_sand_coast": "檜の木枠付き砂壁",
 
@@ -1294,7 +1294,7 @@
 
     "block.urushi.kakuriyo_grass_block_with_fallen_japanese_apricot_leaves": "梅の落ち葉付きの繁茂した幽世土",
 
-    "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "桜の落ち葉付きの繁茂した幽世土",
+    "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "こぼれ桜の落ち葉付きの繁茂した幽世土",
 
     "gui.jei.category.urushi.chiseled_lacquer_log": "抽出",
 
@@ -1326,7 +1326,7 @@
 
    "block.urushi.japanese_apricot_shitamiita": "下見板張りの梅の板材",
 
-   "block.urushi.sakura_shitamiita": "下見板張りの桜の板材",
+   "block.urushi.sakura_shitamiita": "下見板張りのこぼれ桜の板材",
 
    "block.urushi.cypress_shitamiita": "下見板張りの檜の板材",
 
@@ -1350,7 +1350,7 @@
 
    "block.urushi.japanese_apricot_shitamiita_slab": "下見板張りの梅の板材のハーフブロック",
 
-   "block.urushi.sakura_shitamiita_slab": "下見板張りの桜の板材のハーフブロック",
+   "block.urushi.sakura_shitamiita_slab": "下見板張りのこぼれ桜の板材のハーフブロック",
 
    "block.urushi.cypress_shitamiita_slab": "下見板張りの檜の板材のハーフブロック",
 
@@ -1884,7 +1884,7 @@
 
     "block.urushi.japanese_apricot_board_window": "梅の無双連子窓",
 
-    "block.urushi.sakura_board_window": "桜の無双連子窓",
+    "block.urushi.sakura_board_window": "こぼれ桜の無双連子窓",
 
     "block.urushi.cypress_board_window": "檜の無双連子窓",
 
@@ -1978,7 +1978,7 @@
 
     "block.urushi.japanese_apricot_yukimi_shoji": "梅の雪見障子",
 
-    "block.urushi.sakura_yukimi_shoji": "桜の雪見障子",
+    "block.urushi.sakura_yukimi_shoji": "こぼれ桜の雪見障子",
 
     "block.urushi.cypress_yukimi_shoji": "檜の雪見障子",
 
@@ -2121,21 +2121,21 @@
     "block.urushi.japanese_apricot_framed_green_plaster": "梅の木枠付きの緑色の漆喰",
     "block.urushi.japanese_apricot_framed_red_plaster": "梅の木枠付きの赤色の漆喰",
     "block.urushi.japanese_apricot_framed_black_plaster": "梅の木枠付きの黒色の漆喰",
-    "block.urushi.sakura_framed_orange_plaster": "桜の木枠付きの橙色の漆喰",
-    "block.urushi.sakura_framed_magenta_plaster": "桜の木枠付きの赤紫色の漆喰",
-    "block.urushi.sakura_framed_light_blue_plaster": "桜の木枠付きの空色の漆喰",
-    "block.urushi.sakura_framed_yellow_plaster": "桜の木枠付きの黄色の漆喰",
-    "block.urushi.sakura_framed_lime_plaster": "桜の木枠付きの黄緑色の漆喰",
-    "block.urushi.sakura_framed_pink_plaster": "桜の木枠付きの桃色の漆喰",
-    "block.urushi.sakura_framed_gray_plaster": "桜の木枠付きの灰色の漆喰",
-    "block.urushi.sakura_framed_light_gray_plaster": "桜の木枠付きの薄灰色の漆喰",
-    "block.urushi.sakura_framed_cyan_plaster": "桜の木枠付きの青緑色の漆喰",
-    "block.urushi.sakura_framed_purple_plaster": "桜の木枠付きの紫色の漆喰",
-    "block.urushi.sakura_framed_blue_plaster": "桜の木枠付きの青色の漆喰",
-    "block.urushi.sakura_framed_brown_plaster": "桜の木枠付きの茶色の漆喰",
-    "block.urushi.sakura_framed_green_plaster": "桜の木枠付きの緑色の漆喰",
-    "block.urushi.sakura_framed_red_plaster": "桜の木枠付きの赤色の漆喰",
-    "block.urushi.sakura_framed_black_plaster": "桜の木枠付きの黒色の漆喰",
+    "block.urushi.sakura_framed_orange_plaster": "こぼれ桜の木枠付きの橙色の漆喰",
+    "block.urushi.sakura_framed_magenta_plaster": "こぼれ桜の木枠付きの赤紫色の漆喰",
+    "block.urushi.sakura_framed_light_blue_plaster": "こぼれ桜の木枠付きの空色の漆喰",
+    "block.urushi.sakura_framed_yellow_plaster": "こぼれ桜の木枠付きの黄色の漆喰",
+    "block.urushi.sakura_framed_lime_plaster": "こぼれ桜の木枠付きの黄緑色の漆喰",
+    "block.urushi.sakura_framed_pink_plaster": "こぼれ桜の木枠付きの桃色の漆喰",
+    "block.urushi.sakura_framed_gray_plaster": "こぼれ桜の木枠付きの灰色の漆喰",
+    "block.urushi.sakura_framed_light_gray_plaster": "こぼれ桜の木枠付きの薄灰色の漆喰",
+    "block.urushi.sakura_framed_cyan_plaster": "こぼれ桜の木枠付きの青緑色の漆喰",
+    "block.urushi.sakura_framed_purple_plaster": "こぼれ桜の木枠付きの紫色の漆喰",
+    "block.urushi.sakura_framed_blue_plaster": "こぼれ桜の木枠付きの青色の漆喰",
+    "block.urushi.sakura_framed_brown_plaster": "こぼれ桜の木枠付きの茶色の漆喰",
+    "block.urushi.sakura_framed_green_plaster": "こぼれ桜の木枠付きの緑色の漆喰",
+    "block.urushi.sakura_framed_red_plaster": "こぼれ桜の木枠付きの赤色の漆喰",
+    "block.urushi.sakura_framed_black_plaster": "こぼれ桜の木枠付きの黒色の漆喰",
     "block.urushi.cypress_framed_orange_plaster": "檜の木枠付きの橙色の漆喰",
     "block.urushi.cypress_framed_magenta_plaster": "檜の木枠付きの赤紫色の漆喰",
     "block.urushi.cypress_framed_light_blue_plaster": "檜の木枠付きの空色の漆喰",
@@ -2300,7 +2300,7 @@
    "block.urushi.acacia_wall_for_framed_blocks": "アカシアの壁",
    "block.urushi.dark_oak_wall_for_framed_blocks": "ダークオークの壁",
    "block.urushi.japanese_apricot_wall_for_framed_blocks": "梅の壁",
-   "block.urushi.sakura_wall_for_framed_blocks": "桜の壁",
+   "block.urushi.sakura_wall_for_framed_blocks": "こぼれ桜の壁",
    "block.urushi.cypress_wall_for_framed_blocks": "檜の壁",
    "block.urushi.japanese_cedar_wall_for_framed_blocks": "杉の壁",
    "block.urushi.red_urushi_wall_for_framed_blocks": "朱漆の壁",
@@ -2361,13 +2361,13 @@
    "block.urushi.vertical_smooth_acacia_slab": "滑らかなアカシアの縦ハーフブロック",
    "block.urushi.vertical_smooth_dark_oak_slab": "滑らかなダークオークの縦ハーフブロック",
    "block.urushi.vertical_smooth_japanese_apricot_slab": "滑らかな梅の縦ハーフブロック",
-   "block.urushi.vertical_smooth_sakura_slab": "滑らかな桜の縦ハーフブロック",
+   "block.urushi.vertical_smooth_sakura_slab": "滑らかなこぼれ桜の縦ハーフブロック",
    "block.urushi.vertical_smooth_cypress_slab": "滑らかな檜の縦ハーフブロック",
    "block.urushi.vertical_smooth_japanese_cedar_slab": "滑らかな杉の縦ハーフブロック",
    "block.urushi.vertical_smooth_red_urushi_slab": "滑らかな朱漆の縦ハーフブロック",
    "block.urushi.vertical_smooth_black_urushi_slab": "滑らかな黒漆の縦ハーフブロック",
    "block.urushi.japanese_apricot_bars": "梅の五本柱",
-   "block.urushi.sakura_bars": "桜の五本柱",
+   "block.urushi.sakura_bars": "こぼれ桜の五本柱",
    "block.urushi.cypress_bars": "檜の五本柱",
    "block.urushi.japanese_cedar_bars": "杉の五本柱",
    "block.urushi.red_urushi_bars": "朱漆の五本柱",
@@ -2379,7 +2379,7 @@
    "block.urushi.horizontal_acacia_bars": "アカシアの横向き五本柱",
    "block.urushi.horizontal_dark_oak_bars": "ダークオークの横向き五本柱",
    "block.urushi.horizontal_japanese_apricot_bars": "梅の横向き五本柱",
-   "block.urushi.horizontal_sakura_bars": "桜の横向き五本柱",
+   "block.urushi.horizontal_sakura_bars": "こぼれ桜の横向き五本柱",
    "block.urushi.horizontal_cypress_bars": "檜の横向き五本柱",
    "block.urushi.horizontal_japanese_cedar_bars": "杉の横向き五本柱",
    "block.urushi.horizontal_red_urushi_bars": "朱漆の横向き五本柱",
@@ -2411,7 +2411,7 @@
    "biome.urushi.autumn_forest": "秋の森",
    "biome.urushi.cedar_forest": "杉の森",
    "biome.urushi.eulalia_plains": "すすき平原",
-   "biome.urushi.sakura_forest": "桜の森",
+   "biome.urushi.sakura_forest": "こぼれ桜の森",
    "block.urushi.mirror_tier2": "翡翠の反射鏡",
    "block.urushi.wood_element_emitter_tier2": "翡翠の木気の伝達口",
    "block.urushi.fire_element_emitter_tier2": "翡翠の火気の伝達口",
