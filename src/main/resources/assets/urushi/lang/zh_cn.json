@@ -138,51 +138,51 @@
 
   "item.urushi.japanese_apricot_bark": "梅树树皮",
 
-  "block.urushi.sakura_sapling": "樱花树苗",
+  "block.urushi.sakura_sapling": "落樱树苗",
 
-  "block.urushi.big_sakura_sapling": "大型樱花树苗",
+  "block.urushi.big_sakura_sapling": "大型落樱树苗",
 
-  "block.urushi.sakura_leaves": "樱花树叶",
+  "block.urushi.sakura_leaves": "落樱树叶",
 
-  "block.urushi.glowing_sakura_sapling": "荧光樱花树苗",
+  "block.urushi.glowing_sakura_sapling": "荧光落樱树苗",
 
-  "block.urushi.glowing_big_sakura_sapling": "大型荧光樱花树苗",
+  "block.urushi.glowing_big_sakura_sapling": "大型荧光落樱树苗",
 
-  "block.urushi.glowing_sakura_leaves": "荧光樱花树叶",
+  "block.urushi.glowing_sakura_leaves": "荧光落樱树叶",
 
-  "block.urushi.sakura_log": "樱花原木",
+  "block.urushi.sakura_log": "落樱原木",
 
-  "block.urushi.stripped_sakura_log": "去皮樱花原木",
+  "block.urushi.stripped_sakura_log": "去皮落樱原木",
 
-  "block.urushi.sakura_wood": "樱花木",
+  "block.urushi.sakura_wood": "落樱木",
 
-  "block.urushi.stripped_sakura_wood": "去皮樱花木",
+  "block.urushi.stripped_sakura_wood": "去皮落樱木",
 
-  "block.urushi.sakura_planks": "樱花木板",
+  "block.urushi.sakura_planks": "落樱木板",
 
-  "block.urushi.sakura_slab": "樱花木台阶",
+  "block.urushi.sakura_slab": "落樱木台阶",
 
-  "block.urushi.sakura_stairs": "樱花木楼梯",
+  "block.urushi.sakura_stairs": "落樱木楼梯",
 
-  "block.urushi.sakura_fence": "樱花木栅栏",
+  "block.urushi.sakura_fence": "落樱木栅栏",
 
-  "block.urushi.sakura_fence_gate": "樱花木栅栏门",
+  "block.urushi.sakura_fence_gate": "落樱木栅栏门",
 
-  "block.urushi.sakura_door": "樱花木门",
+  "block.urushi.sakura_door": "落樱木门",
 
-  "block.urushi.sakura_pressure_plate": "樱花木压力板",
+  "block.urushi.sakura_pressure_plate": "落樱木压力板",
 
-  "block.urushi.sakura_button": "樱花木按钮",
+  "block.urushi.sakura_button": "落樱木按钮",
 
-  "block.urushi.sakura_trapdoor": "樱花木活板门",
+  "block.urushi.sakura_trapdoor": "落樱木活板门",
 
-  "block.urushi.smooth_sakura_planks": "平滑樱花木板",
+  "block.urushi.smooth_sakura_planks": "平滑落樱木板",
 
-  "block.urushi.smooth_sakura_slab": "平滑樱花木台阶",
+  "block.urushi.smooth_sakura_slab": "平滑落樱木台阶",
 
-  "block.urushi.smooth_sakura_stairs": "平滑樱花木楼梯",
+  "block.urushi.smooth_sakura_stairs": "平滑落樱木楼梯",
 
-  "item.urushi.sakura_bark": "樱花树皮",
+  "item.urushi.sakura_bark": "落樱树皮",
 
   "block.urushi.cypress_sapling": "扁柏树苗",
 
@@ -324,7 +324,7 @@
 
   "block.urushi.japanese_apricot_parapet": "梅木栏杆",
 
-  "block.urushi.sakura_parapet": "樱花木栏杆",
+  "block.urushi.sakura_parapet": "落樱木栏杆",
 
   "block.urushi.cypress_parapet": "扁柏木栏杆",
 
@@ -388,7 +388,7 @@
 
   "block.urushi.japanese_apricot_shoji_pane": "梅木障子门上窗",
 
-  "block.urushi.sakura_shoji_pane": "樱花木障子门上窗",
+  "block.urushi.sakura_shoji_pane": "落樱木障子门上窗",
 
   "block.urushi.cypress_shoji_pane": "扁柏木障子门上窗",
 
@@ -410,7 +410,7 @@
 
   "block.urushi.japanese_apricot_shoji": "梅木障子门",
 
-  "block.urushi.sakura_shoji": "樱花木障子门",
+  "block.urushi.sakura_shoji": "落樱木障子门",
 
   "block.urushi.cypress_shoji": "扁柏木障子门",
 
@@ -508,7 +508,7 @@
 
   "block.urushi.japanese_apricot_framed_plaster": "梅木框灰泥",
 
-  "block.urushi.sakura_framed_plaster": "樱花木框灰泥",
+  "block.urushi.sakura_framed_plaster": "落樱木框灰泥",
 
   "block.urushi.cypress_framed_plaster": "扁柏木框灰泥",
 
@@ -932,7 +932,7 @@
 
   "block.urushi.japanese_apricot_fushiranma": "梅木叉型门上窗",
 
-  "block.urushi.sakura_fushiranma": "樱花木叉型门上窗",
+  "block.urushi.sakura_fushiranma": "落樱木叉型门上窗",
 
   "block.urushi.cypress_fushiranma": "扁柏木叉型门上窗",
 
@@ -1104,7 +1104,7 @@
 
   "block.urushi.fallen_japanese_apricot_leaves": "梅树落叶堆",
 
-  "block.urushi.fallen_sakura_leaves": "樱花树落叶堆",
+  "block.urushi.fallen_sakura_leaves": "落樱树落叶堆",
 
   "block.urushi.grass_block_with_fallen_red_leaves": "被红色落叶覆盖的草方块",
 
@@ -1114,7 +1114,7 @@
 
   "block.urushi.grass_block_with_fallen_japanese_apricot_leaves": "被梅树落叶覆盖的草方块",
 
-  "block.urushi.grass_block_with_fallen_sakura_leaves": "被樱花树落叶覆盖的草方块",
+  "block.urushi.grass_block_with_fallen_sakura_leaves": "被落樱树落叶覆盖的草方块",
 
   "item.urushi.yomotsuhegui_fruit": "黄泉户契之果",
 
@@ -1178,7 +1178,7 @@
 
   "block.urushi.japanese_apricot_framed_wattle_and_daub": "梅木框土坯",
 
-  "block.urushi.sakura_framed_wattle_and_daub": "樱花木框土坯",
+  "block.urushi.sakura_framed_wattle_and_daub": "落樱木框土坯",
 
   "block.urushi.cypress_framed_wattle_and_daub": "扁柏木框土坯",
 
@@ -1260,7 +1260,7 @@
 
   "block.urushi.japanese_apricot_framed_sand_coast": "梅木框砂墙",
 
-  "block.urushi.sakura_framed_sand_coast": "樱花木框砂墙",
+  "block.urushi.sakura_framed_sand_coast": "落樱木框砂墙",
 
   "block.urushi.cypress_framed_sand_coast": "扁柏木框砂墙",
 
@@ -1292,7 +1292,7 @@
 
   "block.urushi.kakuriyo_grass_block_with_fallen_japanese_apricot_leaves": "被梅树落叶覆盖的幽世草方块",
 
-  "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "被樱花树落叶覆盖的幽世草方块",
+  "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "被落樱树落叶覆盖的幽世草方块",
 
   "gui.jei.category.urushi.chiseled_lacquer_log": "提取",
 
@@ -1324,7 +1324,7 @@
 
   "block.urushi.japanese_apricot_shitamiita": "梅木楔纹板",
 
-  "block.urushi.sakura_shitamiita": "樱花木楔纹板",
+  "block.urushi.sakura_shitamiita": "落樱木楔纹板",
 
   "block.urushi.cypress_shitamiita": "扁柏木楔纹板",
 
@@ -1348,7 +1348,7 @@
 
   "block.urushi.japanese_apricot_shitamiita_slab": "梅木楔纹板台阶",
 
-  "block.urushi.sakura_shitamiita_slab": "樱花木楔纹板台阶",
+  "block.urushi.sakura_shitamiita_slab": "落樱木楔纹板台阶",
 
   "block.urushi.cypress_shitamiita_slab": "扁柏木楔纹板台阶",
 
@@ -1882,7 +1882,7 @@
 
     "block.urushi.japanese_apricot_board_window": "梅木直棂推拉窗",
 
-    "block.urushi.sakura_board_window": "樱花木直棂推拉窗",
+    "block.urushi.sakura_board_window": "落樱木直棂推拉窗",
 
     "block.urushi.cypress_board_window": "扁柏木直棂推拉窗",
 
@@ -1976,7 +1976,7 @@
 
     "block.urushi.japanese_apricot_yukimi_shoji": "梅木雪见障子门",
 
-    "block.urushi.sakura_yukimi_shoji": "樱花木雪见障子门",
+    "block.urushi.sakura_yukimi_shoji": "落樱木雪见障子门",
 
     "block.urushi.cypress_yukimi_shoji": "扁柏木雪见障子门",
 
@@ -2119,21 +2119,21 @@
     "block.urushi.japanese_apricot_framed_green_plaster": "梅木框绿色灰泥",
     "block.urushi.japanese_apricot_framed_red_plaster": "梅木框红色灰泥",
     "block.urushi.japanese_apricot_framed_black_plaster": "梅木框黑色灰泥",
-    "block.urushi.sakura_framed_orange_plaster": "樱花木框橙色灰泥",
-    "block.urushi.sakura_framed_magenta_plaster": "樱花木框品红色灰泥",
-    "block.urushi.sakura_framed_light_blue_plaster": "樱花木框淡蓝色灰泥",
-    "block.urushi.sakura_framed_yellow_plaster": "樱花木框黄色灰泥",
-    "block.urushi.sakura_framed_lime_plaster": "樱花木框黄绿色灰泥",
-    "block.urushi.sakura_framed_pink_plaster": "樱花木框粉红色灰泥",
-    "block.urushi.sakura_framed_gray_plaster": "樱花木框灰色灰泥",
-    "block.urushi.sakura_framed_light_gray_plaster": "樱花木框淡灰色灰泥",
-    "block.urushi.sakura_framed_cyan_plaster": "樱花木框青色灰泥",
-    "block.urushi.sakura_framed_purple_plaster": "樱花木框紫色灰泥",
-    "block.urushi.sakura_framed_blue_plaster": "樱花木框蓝色灰泥",
-    "block.urushi.sakura_framed_brown_plaster": "樱花木框棕色灰泥",
-    "block.urushi.sakura_framed_green_plaster": "樱花木框绿色灰泥",
-    "block.urushi.sakura_framed_red_plaster": "樱花木框红色灰泥",
-    "block.urushi.sakura_framed_black_plaster": "樱花木框黑色灰泥",
+    "block.urushi.sakura_framed_orange_plaster": "落樱木框橙色灰泥",
+    "block.urushi.sakura_framed_magenta_plaster": "落樱木框品红色灰泥",
+    "block.urushi.sakura_framed_light_blue_plaster": "落樱木框淡蓝色灰泥",
+    "block.urushi.sakura_framed_yellow_plaster": "落樱木框黄色灰泥",
+    "block.urushi.sakura_framed_lime_plaster": "落樱木框黄绿色灰泥",
+    "block.urushi.sakura_framed_pink_plaster": "落樱木框粉红色灰泥",
+    "block.urushi.sakura_framed_gray_plaster": "落樱木框灰色灰泥",
+    "block.urushi.sakura_framed_light_gray_plaster": "落樱木框淡灰色灰泥",
+    "block.urushi.sakura_framed_cyan_plaster": "落樱木框青色灰泥",
+    "block.urushi.sakura_framed_purple_plaster": "落樱木框紫色灰泥",
+    "block.urushi.sakura_framed_blue_plaster": "落樱木框蓝色灰泥",
+    "block.urushi.sakura_framed_brown_plaster": "落樱木框棕色灰泥",
+    "block.urushi.sakura_framed_green_plaster": "落樱木框绿色灰泥",
+    "block.urushi.sakura_framed_red_plaster": "落樱木框红色灰泥",
+    "block.urushi.sakura_framed_black_plaster": "落樱木框黑色灰泥",
     "block.urushi.cypress_framed_orange_plaster": "扁柏木框橙色灰泥",
     "block.urushi.cypress_framed_magenta_plaster": "扁柏木框品红色灰泥",
     "block.urushi.cypress_framed_light_blue_plaster": "扁柏木框淡蓝色灰泥",
@@ -2298,7 +2298,7 @@
   "block.urushi.acacia_wall_for_framed_blocks": "平滑金合欢木墙板",
   "block.urushi.dark_oak_wall_for_framed_blocks": "平滑深色橡木墙板",
   "block.urushi.japanese_apricot_wall_for_framed_blocks": "平滑梅木墙板",
-  "block.urushi.sakura_wall_for_framed_blocks": "平滑樱花木墙板",
+  "block.urushi.sakura_wall_for_framed_blocks": "平滑落樱木墙板",
   "block.urushi.cypress_wall_for_framed_blocks": "平滑扁柏木墙板",
   "block.urushi.japanese_cedar_wall_for_framed_blocks": "平滑柳杉木墙板",
   "block.urushi.red_urushi_wall_for_framed_blocks": "平滑朱漆木墙板",
@@ -2359,13 +2359,13 @@
   "block.urushi.vertical_smooth_acacia_slab": "平滑金合欢木竖直台阶",
   "block.urushi.vertical_smooth_dark_oak_slab": "平滑深色橡木竖直台阶",
   "block.urushi.vertical_smooth_japanese_apricot_slab": "平滑梅木竖直台阶",
-  "block.urushi.vertical_smooth_sakura_slab": "平滑樱花木竖直台阶",
+  "block.urushi.vertical_smooth_sakura_slab": "平滑落樱木竖直台阶",
   "block.urushi.vertical_smooth_cypress_slab": "平滑扁柏木竖直台阶",
   "block.urushi.vertical_smooth_japanese_cedar_slab": "平滑柳杉木竖直台阶",
   "block.urushi.vertical_smooth_red_urushi_slab": "平滑朱漆木竖直台阶",
   "block.urushi.vertical_smooth_black_urushi_slab": "平滑黑漆木竖直台阶",
   "block.urushi.japanese_apricot_bars": "梅木屏风柱",
-  "block.urushi.sakura_bars": "樱花木屏风柱",
+  "block.urushi.sakura_bars": "落樱木屏风柱",
   "block.urushi.cypress_bars": "扁柏屏风柱",
   "block.urushi.japanese_cedar_bars": "柳杉木屏风柱",
   "block.urushi.red_urushi_bars": "朱漆木屏风柱",
@@ -2377,7 +2377,7 @@
   "block.urushi.horizontal_acacia_bars": "金合欢木横向屏风柱",
   "block.urushi.horizontal_dark_oak_bars": "深色橡木横向屏风柱",
   "block.urushi.horizontal_japanese_apricot_bars": "梅木横向屏风柱",
-  "block.urushi.horizontal_sakura_bars": "樱花木横向屏风柱",
+  "block.urushi.horizontal_sakura_bars": "落樱木横向屏风柱",
   "block.urushi.horizontal_cypress_bars": "扁柏木横向屏风柱",
   "block.urushi.horizontal_japanese_cedar_bars": "柳杉木横向屏风柱",
   "block.urushi.horizontal_red_urushi_bars": "朱漆木横向屏风柱",
@@ -2409,7 +2409,7 @@
   "biome.urushi.autumn_forest": "秋叶森林",
   "biome.urushi.cedar_forest": "柳杉森林",
   "biome.urushi.eulalia_plains": "芒草平原",
-  "biome.urushi.sakura_forest": "樱花森林",
+  "biome.urushi.sakura_forest": "落樱森林",
   "block.urushi.mirror_tier2": "翡翠反射镜",
   "block.urushi.wood_element_emitter_tier2": "翡翠木气喷口",
   "block.urushi.fire_element_emitter_tier2": "翡翠火气喷口",
@@ -2417,7 +2417,7 @@
   "block.urushi.metal_element_emitter_tier2": "翡翠金气喷口",
   "block.urushi.water_element_emitter_tier2": "翡翠水气喷口",
   "container.urushi_auto_crafting_table": "自动工作台",
-  "block.urushi.limonite_ore": "Limonite Ore",
-   "block.urushi.chalcopyrite_ore": "Chalcopyrite Ore"
+  "block.urushi.limonite_ore": "褐铁矿石",
+   "block.urushi.chalcopyrite_ore": "黄铜矿石"
 
 }

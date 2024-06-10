@@ -1,5 +1,5 @@
 {
-  "name": "樱花树",
+  "name": "落樱树",
   "category": "urushi:nature",
   "icon": "urushi:big_sakura_sapling",
   "priority": true,
@@ -11,7 +11,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "樱花树会在森林群系或幽世维度下自然生成。$(br2)将樱花树树苗与荧石粉合成后，长出来的树将会发出亮度等级15的光。"
+      "text": "落樱树会在森林群系或幽世维度下自然生成。$(br2)将落樱树树苗与荧石粉合成后，长出来的树将会发出亮度等级15的光。"
     },
     {
       "type": "patchouli:image",
