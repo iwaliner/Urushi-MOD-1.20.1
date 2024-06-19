@@ -2,6 +2,7 @@ package com.iwaliner.urushi.entiity;
 
 import com.iwaliner.urushi.EntityRegister;
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.item.CushionItem;
 import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -142,6 +143,20 @@ public class CushionEntity extends Entity {
     /**右クリック時の処理*/
     @Override
     public InteractionResult interact(Player player, InteractionHand hand) {
+        if(hand==InteractionHand.OFF_HAND){
+            return InteractionResult.FAIL;
+        }
+        if(player.getItemInHand(hand).getItem() instanceof CushionItem){
+            CushionItem cushionItem= (CushionItem) player.getItemInHand(hand).getItem();
+            CushionEntity entity = new CushionEntity(level(), this.getX(), this.getY(),  this.getZ());
+            entity.moveTo(this.getX(), this.getY()+0.2D,  this.getZ(),player.getXRot(), 0.0F);
+            entity.setType(cushionItem.getColor());
+            level().addFreshEntity(entity);
+            player.getItemInHand(hand).shrink(1);
+            level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+
+            return InteractionResult.SUCCESS;
+        }
         if (!this.level().isClientSide()&&this.getPassengers().isEmpty())
         {
 

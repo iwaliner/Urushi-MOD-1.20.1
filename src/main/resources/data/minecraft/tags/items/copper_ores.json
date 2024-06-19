@@ -1,6 +1,11 @@
-{
-  "replace": false,
-  "values": [
-    "urushi:yomi_copper_ore"
-  ]
+{
+
+  "replace": false,
+
+  "values": [
+
+    "urushi:chalcopyrite_ore"
+
+  ]
+
 }

@@ -22,6 +22,14 @@ public abstract class FoodEntity extends Entity {
     public FoodEntity(Item item, EntityType<?> p_i48580_1_, Level p_i48580_2_) {
         super(p_i48580_1_, p_i48580_2_);
         itemContains=item;
+        this.blocksBuilding=true;
+    }
+    public boolean canBeCollidedWith() {
+        return true;
+    }
+
+    public boolean isPushable() {
+        return true;
     }
     /**プレイヤーがエンティティを殴れるかどうか。ItemEntityならfalseだし、ShulkerBulletならtrue。*/
     public boolean isPickable() {
@@ -43,11 +51,11 @@ public abstract class FoodEntity extends Entity {
             return false;
         } else {
             if ( !this.level().isClientSide) {
-                this.discard();  //このエンティティを抹消
+                this.discard();
                 this.markHurt();
                 this.playSound(SoundEvents.ITEM_PICKUP, 1.0F, 1.0F);
                 ItemStack itemStack=new ItemStack(itemContains);
-                this.spawnAtLocation(itemStack);  //ItemEntityをスポーン
+                this.spawnAtLocation(itemStack);
             }
 
             return true;
@@ -97,10 +105,5 @@ public abstract class FoodEntity extends Entity {
 
     }
 
-    /**このメソッドがないとエンティティの見た目どころかF3+B時の当たり判定すら反映されない*/
-   /* @Override
-    public Packet<?> getAddEntityPacket() {
-        return NetworkHooks.getEntitySpawningPacket(this);
-    }
-*/
+
 }

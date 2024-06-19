@@ -20,7 +20,9 @@ public class CushionItem extends Item {
         super(p_i48487_1_);
         this.color=dyeColor;
     }
-
+    public  DyeColor getColor(){
+        return color;
+    }
     @Override
     public InteractionResult useOn(UseOnContext context) {
         if (!(context.getLevel() instanceof ServerLevel)) {

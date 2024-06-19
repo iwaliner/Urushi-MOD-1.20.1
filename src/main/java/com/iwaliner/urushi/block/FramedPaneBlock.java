@@ -3,6 +3,7 @@ package com.iwaliner.urushi.block;
 import com.google.common.collect.Maps;
 import com.iwaliner.urushi.ClientSetUp;
 import com.iwaliner.urushi.ConfigUrushi;
+import com.iwaliner.urushi.network.FramedBlockTextureConnectionProvider;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.ChatFormatting;
@@ -11,7 +12,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
- 
+
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -33,6 +35,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public class FramedPaneBlock extends HorizonalRotateBlock{
@@ -155,7 +159,14 @@ public class FramedPaneBlock extends HorizonalRotateBlock{
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_49915_) {
         p_49915_.add(NORTH, EAST, WEST, SOUTH,UP,DOWN,VARIANT,FACING);
     }
+    private boolean textureConnection(Player player){
+        AtomicBoolean b = new AtomicBoolean(false);
+        player.getCapability(FramedBlockTextureConnectionProvider.FRAMED_BLOCK_TEXTURE_CONNECTION).ifPresent(data -> {
+            b.set(data.isPressed());
 
+        });
+        return b.get();
+    }
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext p_196258_1_) {
 
@@ -195,7 +206,7 @@ public class FramedPaneBlock extends HorizonalRotateBlock{
                     .setValue(DOWN, Boolean.valueOf(this.connectsTo(thisState, bState)))
                     .setValue(FACING, p_196258_1_.getHorizontalDirection().getOpposite())
                     .setValue(VARIANT,
-                            ClientSetUp.connectionKey.isDown() )
+                            textureConnection(Objects.requireNonNull(p_196258_1_.getPlayer())) )
                     ;
 
             return newState;

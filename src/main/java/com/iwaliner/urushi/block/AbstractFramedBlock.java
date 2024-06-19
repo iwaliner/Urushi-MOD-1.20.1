@@ -4,8 +4,7 @@ import com.google.common.collect.Maps;
 
 import com.iwaliner.urushi.ClientSetUp;
 import com.iwaliner.urushi.ConfigUrushi;
-import com.iwaliner.urushi.packet.ClientKeyPressPacket;
-import com.iwaliner.urushi.packet.ServerKeyPressPacket;
+import com.iwaliner.urushi.network.FramedBlockTextureConnectionProvider;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.ChatFormatting;
@@ -17,6 +16,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -37,6 +37,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public class AbstractFramedBlock extends Block {
@@ -175,7 +177,14 @@ public class AbstractFramedBlock extends Block {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_49915_) {
         p_49915_.add(NORTH, EAST, WEST, SOUTH,UP,DOWN,VARIANT);
     }
+    private boolean textureConnection(Player player){
+        AtomicBoolean b = new AtomicBoolean(false);
+        player.getCapability(FramedBlockTextureConnectionProvider.FRAMED_BLOCK_TEXTURE_CONNECTION).ifPresent(data -> {
+            b.set(data.isPressed());
 
+        });
+        return b.get();
+    }
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Level iblockreader =context.getLevel();
@@ -203,7 +212,7 @@ try {
             .setValue(UP, Boolean.valueOf(this.connectsTo(thisState, aState)))
             .setValue(DOWN, Boolean.valueOf(this.connectsTo(thisState, bState)))
             .setValue(VARIANT,
-                    ClientSetUp.connectionKey.isDown() )
+                    textureConnection(Objects.requireNonNull(context.getPlayer())) )
             ;
 
     return newState;

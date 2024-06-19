@@ -3,6 +3,8 @@ package com.iwaliner.urushi;
 import com.iwaliner.urushi.block.*;
 import com.iwaliner.urushi.blockentity.ShichirinBlockEntity;
 
+import com.iwaliner.urushi.network.FramedBlockTextureConnectionData;
+import com.iwaliner.urushi.network.FramedBlockTextureConnectionProvider;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
@@ -16,6 +18,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -47,8 +50,10 @@ import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.EntityEvent;
@@ -641,7 +646,7 @@ public class ModCoreUrushi {
         }
         if(block instanceof AbstractFramedBlock||block instanceof FramedPaneBlock){
             tooltipList.add((Component.translatable("info.urushi.framed_block1" )).withStyle(ChatFormatting.GRAY));
-            String keyString=  ClientSetUp.connectionKey.getKey().getName();
+            String keyString= ClientSetUp. connectionKey.getKey().getName();
             String begin=".";
             int beginIndex = keyString.indexOf(begin);
             String preExtractedKey = keyString.substring(beginIndex+1);
@@ -650,7 +655,6 @@ public class ModCoreUrushi {
             tooltipList.add((Component.translatable("info.urushi.framed_block2")
                     .append(" '"+extractedKey+"' ").append(Component.translatable("info.urushi.framed_block3")))
                     .withStyle(ChatFormatting.GRAY));
-            tooltipList.add((Component.translatable("info.urushi.framed_block4")).withStyle(ChatFormatting.GRAY));
 
         }
     }
@@ -748,6 +752,17 @@ public class ModCoreUrushi {
             }
         }
     }
-
+    @SubscribeEvent
+    public void AttachCapabilitiesPlayer(AttachCapabilitiesEvent<Entity> event) {
+        if(event.getObject() instanceof Player) {
+            if(!event.getObject().getCapability(FramedBlockTextureConnectionProvider.FRAMED_BLOCK_TEXTURE_CONNECTION).isPresent()) {
+                event.addCapability(new ResourceLocation(ModID, "properties"), new FramedBlockTextureConnectionProvider());
+            }
+        }
+    }
+    @SubscribeEvent
+    public void RegisterCapabilities(RegisterCapabilitiesEvent event) {
+        event.register(FramedBlockTextureConnectionData.class);
+    }
 
 }

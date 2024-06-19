@@ -1,6 +1,11 @@
-{
-  "replace": false,
-  "values": [
-    "urushi:yomi_iron_ore"
-  ]
+{
+
+  "replace": false,
+
+  "values": [
+
+    "urushi:limonite_ore"
+
+  ]
+
 }
