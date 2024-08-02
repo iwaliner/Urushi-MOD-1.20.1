@@ -654,13 +654,11 @@
 
     "info.urushi.fox_hopper": "The attraction range is about 3 blocks above.",
 
-    "info.urushi.framed_block1": "The textures are connected with each other by default.",
+     "info.urushi.framed_block1": "The textures are connected with each other by default.",
 
-    "info.urushi.framed_block2": "On singleplayer, toggle switching with key",
+    "info.urushi.framed_block2": "Toggle switching with key",
 
     "info.urushi.framed_block3": "to place blocks that aren't connected to blocks in default mode.",
-
-    "info.urushi.framed_block4": "On multiplayer, blocks placed while sneaking aren't connected to ones in default mode. ",
 
     "info.urushi.iron_ingot": "Place it on a block and use Hammer to smash it.",
 
@@ -2423,6 +2421,8 @@
    "block.urushi.water_element_emitter_tier2": "Jedeite Water Element Emitter",
    "container.urushi_auto_crafting_table": "Auto Crafting Table",
    "block.urushi.limonite_ore": "Limonite Ore",
-   "block.urushi.chalcopyrite_ore": "Chalcopyrite Ore"
+   "block.urushi.chalcopyrite_ore": "Chalcopyrite Ore",
+   "key.urushi.category": "Urushi",
+   "key.urushi.connectionKey": "Switch Texture Connections for Framed Blocks"
    
 }

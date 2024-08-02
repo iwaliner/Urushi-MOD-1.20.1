@@ -48,7 +48,7 @@ public class HotSpringWaterBlock extends LiquidBlock {
         if (entity instanceof LivingEntity) {
             if (((LivingEntity) entity).getEffect(MobEffects.REGENERATION)==null) {
             //      ((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 3 * 20, 0), entity);
-            ((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.REGENERATION, 10 * 20, 0), entity);
+            ((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.REGENERATION, 10 * 20, 1), entity);
         }
         }else if(entity instanceof ItemEntity){
             ItemEntity itemEntity= (ItemEntity) entity;

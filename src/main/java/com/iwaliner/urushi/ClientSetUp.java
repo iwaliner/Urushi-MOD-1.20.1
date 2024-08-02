@@ -62,7 +62,10 @@ public class ClientSetUp {
 
 
     public static KeyMapping connectionKey = new ToggleKeyMappingPlus("key.urushi.connectionKey", KeyConflictContext.IN_GAME, InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_C, "key.urushi.category");
-
+    @SubscribeEvent
+    public static void keyRegister(RegisterKeyMappingsEvent event) {
+        event.register(ClientSetUp.connectionKey);
+    }
 
     /**エンティティの見た目を登録*/
     @SubscribeEvent

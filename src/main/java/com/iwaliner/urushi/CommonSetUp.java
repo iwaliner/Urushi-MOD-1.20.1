@@ -1,5 +1,6 @@
 package com.iwaliner.urushi;
 
+import com.iwaliner.urushi.network.NetworkAccess;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Zombie;
@@ -20,5 +21,6 @@ public class CommonSetUp {
     @SubscribeEvent
     public static void RegisterRendererEvent(FMLCommonSetupEvent event) {
         SpawnPlacements.register(EntityRegister.Ghost.get(),SpawnPlacements.Type.ON_GROUND, Heightmap.Types.WORLD_SURFACE, Monster::checkMonsterSpawnRules);
+        NetworkAccess.register();
     }
 }

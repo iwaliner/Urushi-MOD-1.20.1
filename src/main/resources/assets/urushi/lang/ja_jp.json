@@ -654,13 +654,11 @@
 
    "info.urushi.fox_hopper": "3ブロック上に落ちているアイテムも回収できる",
 
-   "info.urushi.framed_block1": "このブロックはテクスチャが互いに繋がる。",
+    "info.urushi.framed_block1": "このブロックはテクスチャが互いに繋がる。",
 
    "info.urushi.framed_block2": "通常ブロックと枠が接続しないブロックが",
 
-   "info.urushi.framed_block3": "キーのトグル切り替えで設置できる。(シングルプレイ)",
-
-   "info.urushi.framed_block4": "シフト時に通常ブロックと枠が接続しないブロックが設置される。(マルチプレイ)",
+   "info.urushi.framed_block3": "キーのトグル切り替えで設置できる。",
 
    "info.urushi.iron_ingot": "設置して金槌で叩こう",
 
@@ -2420,6 +2418,8 @@
    "block.urushi.water_element_emitter_tier2": "翡翠の水気の伝達口",
    "container.urushi_auto_crafting_table": "自動作業台",
    "block.urushi.limonite_ore": "褐鉄鉱",
-   "block.urushi.chalcopyrite_ore": "黄銅鉱"
+   "block.urushi.chalcopyrite_ore": "黄銅鉱",
+   "key.urushi.category": "漆MOD",
+   "key.urushi.connectionKey": "枠付きブロックの接続切り替え"
    
 }

@@ -656,11 +656,9 @@
 
   "info.urushi.framed_block1": "此类方块默认状态下带有连接材质",
 
-  "info.urushi.framed_block2": "单人游戏下，按下",
+  "info.urushi.framed_block2": "按下",
 
   "info.urushi.framed_block3": "键可切换放下的方块是否与默认状态下的方块连接",
-
-  "info.urushi.framed_block4": "多人游戏下，潜行时放置可令放下的方块与默认状态下的方块不连接",
 
   "info.urushi.iron_ingot": "右击以放置，再使用铁锤有节奏地敲打",
 
@@ -2418,6 +2416,8 @@
   "block.urushi.water_element_emitter_tier2": "翡翠水气喷口",
   "container.urushi_auto_crafting_table": "自动工作台",
   "block.urushi.limonite_ore": "褐铁矿石",
-   "block.urushi.chalcopyrite_ore": "黄铜矿石"
+   "block.urushi.chalcopyrite_ore": "黄铜矿石",
+   "key.urushi.category": "Urushi",
+   "key.urushi.connectionKey": "Switch Texture Connections for Framed Blocks"
 
 }
