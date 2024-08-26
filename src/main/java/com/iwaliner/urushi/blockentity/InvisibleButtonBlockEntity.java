@@ -27,10 +27,12 @@ public class InvisibleButtonBlockEntity extends BlockEntity {
         tag.putInt("time", this.time);
     }
     public static void tick(Level level, BlockPos pos, BlockState state, InvisibleButtonBlockEntity blockEntity) {
-        --blockEntity.time;
-        if(!level.isClientSide()&&blockEntity.time<=0) {
-            level.setBlock(pos, ItemAndBlockRegister.hidden_invisible_button.get().defaultBlockState().setValue(HiddenInvisibleButtonBlock.POWERED,state.getValue(InvisibleButtonBlock.POWERED)).setValue(HiddenInvisibleButtonBlock.FACING,state.getValue(InvisibleButtonBlock.FACING)).setValue(HiddenInvisibleButtonBlock.FACE,state.getValue(InvisibleButtonBlock.FACE)), 2);
-        }
+      if(state.getBlock() instanceof InvisibleButtonBlock) {
+          --blockEntity.time;
+          if (!level.isClientSide() && blockEntity.time <= 0) {
+              level.setBlock(pos, ItemAndBlockRegister.hidden_invisible_button.get().defaultBlockState().setValue(HiddenInvisibleButtonBlock.POWERED, state.getValue(InvisibleButtonBlock.POWERED)).setValue(HiddenInvisibleButtonBlock.FACING, state.getValue(InvisibleButtonBlock.FACING)).setValue(HiddenInvisibleButtonBlock.FACE, state.getValue(InvisibleButtonBlock.FACE)), 2);
+          }
+      }
     }
 
 

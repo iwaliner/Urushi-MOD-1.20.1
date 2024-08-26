@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:red_plaster"
+
+
+
+  },
+
+
+
+  "result": "urushi:vertical_red_plaster_slab",
+
+
+
+  "count": 2
+
+
+
+}

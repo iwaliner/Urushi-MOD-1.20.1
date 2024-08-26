@@ -4,6 +4,7 @@ package com.iwaliner.urushi.blockentity;
 
 import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.TagUrushi;
 import com.iwaliner.urushi.block.DirtFurnaceBlock;
 import com.iwaliner.urushi.block.RiceCauldronBlock;
 import net.minecraft.core.BlockPos;
@@ -27,6 +28,7 @@ import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.SpawnerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.data.ForgeItemTagsProvider;
 
 import javax.annotation.Nullable;
 
@@ -139,37 +141,39 @@ public  class RiceCauldronBlockEntity extends BaseContainerBlockEntity implement
 
 
     public static void tick(Level level, BlockPos pos, BlockState bs, RiceCauldronBlockEntity blockEntity) {
-        ItemStack slot0Stack=blockEntity.items.get(0);
-        Item slot0Item=slot0Stack.getItem();
-        ItemStack slot1Stack=blockEntity.items.get(1);
-        Item slot1Item=slot1Stack.getItem();
-        BlockState state=level.getBlockState(pos);
+        if (bs.getBlock() instanceof RiceCauldronBlock) {
+            ItemStack slot0Stack = blockEntity.items.get(0);
+            Item slot0Item = slot0Stack.getItem();
+            ItemStack slot1Stack = blockEntity.items.get(1);
+            Item slot1Item = slot1Stack.getItem();
+            BlockState state = level.getBlockState(pos);
 
-        //スロットに入ってるアイテムに対応した見た目のブロックにする
-        if(blockEntity.processingTime==0&&!level.isClientSide()){
-            if(slot0Stack.getCount()>0){
-                level.setBlock(pos, state.setValue(RiceCauldronBlock.VARIANT, Integer.valueOf(2)), 2);
-            }else if(slot0Stack.isEmpty()&&slot1Stack.isEmpty()&&state.getValue(RiceCauldronBlock.VARIANT)!=1){
-                level.setBlock(pos, state.setValue(RiceCauldronBlock.VARIANT, Integer.valueOf(0)), 2);
+            //スロットに入ってるアイテムに対応した見た目のブロックにする
+            if (blockEntity.processingTime == 0 && !level.isClientSide()) {
+                if (slot0Stack.getCount() > 0) {
+                    level.setBlock(pos, state.setValue(RiceCauldronBlock.VARIANT, Integer.valueOf(2)), 2);
+                } else if (slot0Stack.isEmpty() && slot1Stack.isEmpty() && state.getValue(RiceCauldronBlock.VARIANT) != 1) {
+                    level.setBlock(pos, state.setValue(RiceCauldronBlock.VARIANT, Integer.valueOf(0)), 2);
+                }
             }
-        }
 
-        //アイテム変化
-        if(level.getBlockState(pos.below()).getBlock()== ItemAndBlockRegister.dirt_furnace.get()&&level.getBlockState(pos.below()).getValue(DirtFurnaceBlock.LIT)){
-            if(slot0Stack.getCount()>0&&slot1Stack.isEmpty()){
-                if(blockEntity.processingTime<100){
-                    blockEntity.processingTime++;
-                }else{
-                    blockEntity.setItem(1, new ItemStack(ItemAndBlockRegister.rice.get(),slot0Stack.getCount()));
-                    blockEntity.setItem(0, ItemStack.EMPTY);
-                    blockEntity.processingTime = 0;
-                    if(!level.isClientSide()) {
-                        level.setBlock(pos, state.setValue(RiceCauldronBlock.VARIANT, Integer.valueOf(3)), 2);
+            //アイテム変化
+            if (level.getBlockState(pos.below()).getBlock() == ItemAndBlockRegister.dirt_furnace.get() && level.getBlockState(pos.below()).getValue(DirtFurnaceBlock.LIT)) {
+                if (slot0Stack.getCount() > 0 && slot1Stack.isEmpty()) {
+                    if (blockEntity.processingTime < 100) {
+                        blockEntity.processingTime++;
+                    } else {
+                        blockEntity.setItem(1, new ItemStack(ItemAndBlockRegister.rice.get(), slot0Stack.getCount()));
+                        blockEntity.setItem(0, ItemStack.EMPTY);
+                        blockEntity.processingTime = 0;
+                        if (!level.isClientSide()) {
+                            level.setBlock(pos, state.setValue(RiceCauldronBlock.VARIANT, Integer.valueOf(3)), 2);
+                        }
                     }
+
                 }
 
             }
-
         }
     }
 
@@ -178,7 +182,7 @@ public  class RiceCauldronBlockEntity extends BaseContainerBlockEntity implement
         if (i == 1) {
             return false;
         }  else {
-            return this.items.get(0).getCount()==0&&this.items.get(1).getCount()==0&&stack.getItem()== ItemAndBlockRegister.raw_rice.get();
+            return this.items.get(0).getCount()==0&&this.items.get(1).getCount()==0&&stack.is(TagUrushi.RICE);
         }
     }
 

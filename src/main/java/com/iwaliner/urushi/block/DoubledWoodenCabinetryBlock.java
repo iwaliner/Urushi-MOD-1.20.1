@@ -103,14 +103,12 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
     public boolean hasAnalogOutputSignal(BlockState p_149740_1_) {
         return true;
     }
-    @Override
-    public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
-        return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
+    public BlockState rotate(BlockState p_52716_, Rotation p_52717_) {
+        return p_52716_.setValue(FACING, p_52717_.rotate(p_52716_.getValue(FACING)));
     }
 
-    @Override
-    public BlockState mirror(BlockState state, Mirror mirror) {
-        return state.rotate(mirror.getRotation(state.getValue(FACING)));
+    public BlockState mirror(BlockState p_52713_, Mirror p_52714_) {
+        return p_52713_.rotate(p_52714_.getRotation(p_52713_.getValue(FACING)));
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_206840_1_) {

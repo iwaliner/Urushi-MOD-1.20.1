@@ -28,9 +28,11 @@ public class InvisiblePressurePlateBlockEntity extends BlockEntity {
         tag.putInt("time", this.time);
     }
     public static void tick(Level level, BlockPos pos, BlockState state, InvisiblePressurePlateBlockEntity blockEntity) {
-        --blockEntity.time;
-        if(!level.isClientSide()&&blockEntity.time<=0) {
-            level.setBlock(pos, ItemAndBlockRegister.hidden_invisible_pressure_plate.get().defaultBlockState(), 2);
+        if(state.getBlock() instanceof InvisiblePressurePlateBlock) {
+            --blockEntity.time;
+            if (!level.isClientSide() && blockEntity.time <= 0) {
+                level.setBlock(pos, ItemAndBlockRegister.hidden_invisible_pressure_plate.get().defaultBlockState(), 2);
+            }
         }
     }
 

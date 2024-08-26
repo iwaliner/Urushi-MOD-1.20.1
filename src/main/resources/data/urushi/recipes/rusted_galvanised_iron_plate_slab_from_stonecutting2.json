@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:rusted_galvanised_iron_plate_block"
+
+
+
+  },
+
+
+
+  "result": "urushi:rusted_galvanised_iron_plate_slab",
+
+
+
+  "count": 2
+
+
+
+}

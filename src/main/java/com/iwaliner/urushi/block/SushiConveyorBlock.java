@@ -134,33 +134,35 @@ public class SushiConveyorBlock extends HorizonalRotateBlock implements SimpleWa
         }
     }
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-        Direction direction=state.getValue(FACING);
-        boolean isCorner=false;
-        if(direction==Direction.NORTH||direction==Direction.SOUTH){
-            if(state.getValue(EAST)||state.getValue(WEST)){
-                isCorner=true;
+        if(!level.isClientSide()) {
+            Direction direction = state.getValue(FACING);
+
+            boolean isCorner = false;
+            if (direction == Direction.NORTH || direction == Direction.SOUTH) {
+                if (state.getValue(EAST) || state.getValue(WEST)) {
+                    isCorner = true;
+                }
+            } else {
+                if (state.getValue(NORTH) || state.getValue(SOUTH)) {
+                    isCorner = true;
+                }
             }
-        }else{
-            if(state.getValue(NORTH)||state.getValue(SOUTH)){
-                isCorner=true;
+            double speed = isCorner ? 0.0212d : 0.03d;
+            Vec3 vec3 = entity.getDeltaMovement();
+            if (entity.getX() > (double) pos.getX() + 0.125D && entity.getX() < (double) pos.getX() + 1D - 0.125D) {
+                if (direction == Direction.SOUTH) {
+                    entity.setDeltaMovement(new Vec3(vec3.x, 0D, speed));
+                } else if (direction == Direction.NORTH) {
+                    entity.setDeltaMovement(new Vec3(vec3.x, 0D, -speed));
+                }
             }
-        }
-        double speed = isCorner? 0.0212d:0.03d;
-        Vec3 vec3 = entity.getDeltaMovement();
-        if(entity.getX() > (double) pos.getX()+0.125D&&entity.getX() < (double) pos.getX()+1D-0.125D) {
-            if (direction == Direction.SOUTH) {
-                entity.setDeltaMovement(new Vec3(vec3.x, 0D, speed));
-            } else if (direction == Direction.NORTH){
-                entity.setDeltaMovement(new Vec3(vec3.x, 0D, -speed));
+            if (entity.getZ() > (double) pos.getZ() + 0.125D && entity.getZ() < (double) pos.getZ() + 1D - 0.125D) {
+                if (direction == Direction.EAST) {
+                    entity.setDeltaMovement(new Vec3(speed, 0D, vec3.z));
+                } else if (direction == Direction.WEST) {
+                    entity.setDeltaMovement(new Vec3(-speed, 0D, vec3.z));
+                }
             }
-        }
-        if(entity.getZ() > (double) pos.getZ()+0.125D&&entity.getZ() < (double) pos.getZ()+1D-0.125D) {
-            if (direction == Direction.EAST) {
-                entity.setDeltaMovement(new Vec3(speed, 0D, vec3.z));
-            } else if (direction == Direction.WEST){
-                entity.setDeltaMovement(new Vec3(-speed, 0D, vec3.z));
-            }
-        }
         /*if (direction == Direction.SOUTH) {
             entity.setDeltaMovement(new Vec3(vec3.x*1.5, 0D, speed));
         }else if (direction == Direction.EAST) {
@@ -170,7 +172,7 @@ public class SushiConveyorBlock extends HorizonalRotateBlock implements SimpleWa
         } else {
             entity.setDeltaMovement(new Vec3(vec3.x*1.5, 0D, -speed));
         }*/
-
+        }
         super.entityInside(state,level,pos,entity);
     }
 }

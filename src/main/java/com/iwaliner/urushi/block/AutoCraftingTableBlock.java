@@ -53,7 +53,7 @@ public class AutoCraftingTableBlock extends BaseEntityBlock {
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.DOWN));
        }
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(FACING, context.getClickedFace());
+        return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite());
     }
     public BlockState rotate(BlockState p_52716_, Rotation p_52717_) {
         return p_52716_.setValue(FACING, p_52717_.rotate(p_52716_.getValue(FACING)));

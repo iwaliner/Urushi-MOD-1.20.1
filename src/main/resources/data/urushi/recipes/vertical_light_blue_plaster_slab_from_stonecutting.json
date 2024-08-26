@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:light_blue_plaster"
+
+
+
+  },
+
+
+
+  "result": "urushi:vertical_light_blue_plaster_slab",
+
+
+
+  "count": 2
+
+
+
+}

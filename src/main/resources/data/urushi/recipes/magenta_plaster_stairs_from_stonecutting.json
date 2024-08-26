@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:magenta_plaster"
+
+
+
+  },
+
+
+
+  "result": "urushi:magenta_plaster_stairs",
+
+
+
+  "count": 1
+
+
+
+}

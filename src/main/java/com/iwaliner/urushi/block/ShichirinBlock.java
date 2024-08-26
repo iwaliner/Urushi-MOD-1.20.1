@@ -64,7 +64,13 @@ public class ShichirinBlock extends BaseEntityBlock  {
         super(p_i48440_1_);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(SHICHIRIN,0));
     }
+    public BlockState rotate(BlockState p_52716_, Rotation p_52717_) {
+        return p_52716_.setValue(FACING, p_52717_.rotate(p_52716_.getValue(FACING)));
+    }
 
+    public BlockState mirror(BlockState p_52713_, Mirror p_52714_) {
+        return p_52713_.rotate(p_52714_.getRotation(p_52713_.getValue(FACING)));
+    }
     @Override
     public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
         return SHAPE;
@@ -168,15 +174,7 @@ public class ShichirinBlock extends BaseEntityBlock  {
 
 
 
-    @Override
-    public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
-        return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
-    }
 
-    @Override
-    public BlockState mirror(BlockState state, Mirror mirror) {
-        return state.rotate(mirror.getRotation(state.getValue(FACING)));
-    }
 
     @org.jetbrains.annotations.Nullable
     @Override

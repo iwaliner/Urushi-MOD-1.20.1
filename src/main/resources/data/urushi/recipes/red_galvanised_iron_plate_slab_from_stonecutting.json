@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+     "tag": "forge:nuggets/iron"
+
+
+
+  },
+
+
+
+  "result": "urushi:red_galvanised_iron_plate_slab",
+
+
+
+  "count": 8
+
+
+
+}

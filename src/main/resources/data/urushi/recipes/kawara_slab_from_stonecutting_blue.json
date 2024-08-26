@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:blue_kawara_block"
+
+
+
+  },
+
+
+
+  "result": "urushi:blue_kawara_slab",
+
+
+
+  "count": 2
+
+
+
+}

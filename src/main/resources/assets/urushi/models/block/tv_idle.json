@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "urushi:block/tv_front",
+		"1": "urushi:block/tv_side",
+		"2": "urushi:block/tv_back",
+		"particle": "urushi:block/tv_front"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 4],
+			"to": [15, 13, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 4]},
+			"faces": {
+				"north": {"uv": [1, 3, 15, 16], "texture": "#0"},
+				"east": {"uv": [9, 3, 16, 16], "texture": "#1"},
+				"south": {"uv": [1, 3, 15, 16], "texture": "#2"},
+				"west": {"uv": [9, 3, 16, 16], "rotation": 180, "texture": "#1"},
+				"up": {"uv": [9, 2, 16, 16], "rotation": 270, "texture": "#1"},
+				"down": {"uv": [9, 2, 16, 16], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [2, 0, 11],
+			"to": [14, 11, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 6]},
+			"faces": {
+				"north": {"uv": [0, 0, 12, 11], "texture": "#missing"},
+				"east": {"uv": [3, 5, 8, 16], "texture": "#1"},
+				"south": {"uv": [2, 5, 14, 16], "texture": "#2"},
+				"west": {"uv": [3, 5, 8, 16], "rotation": 180, "texture": "#1"},
+				"up": {"uv": [3, 4, 8, 16], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [3, 4, 8, 16], "rotation": 90, "texture": "#1"}
+			}
+		}
+	]
+}

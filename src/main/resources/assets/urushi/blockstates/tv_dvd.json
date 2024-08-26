@@ -1,0 +1,37 @@
+{
+
+  "variants": {
+
+    "facing=west": {
+
+      "model": "urushi:block/tv_dvd",
+
+      "y": 270
+
+    },
+
+    "facing=south": {
+
+      "model": "urushi:block/tv_dvd",
+
+      "y": 180
+
+    },
+
+    "facing=north": {
+
+      "model": "urushi:block/tv_dvd"
+
+    },
+
+    "facing=east": {
+
+      "model": "urushi:block/tv_dvd",
+
+      "y": 90
+
+    }
+
+  }
+
+}

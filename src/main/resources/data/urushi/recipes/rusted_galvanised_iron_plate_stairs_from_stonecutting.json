@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+     "tag": "forge:nuggets/iron"
+
+
+
+  },
+
+
+
+  "result": "urushi:rusted_galvanised_iron_plate_stairs",
+
+
+
+  "count": 4
+
+
+
+}

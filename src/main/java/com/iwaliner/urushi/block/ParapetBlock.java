@@ -1,8 +1,12 @@
 package com.iwaliner.urushi.block;
 
 
+import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
@@ -18,6 +22,8 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.util.List;
+
 public class ParapetBlock extends HorizonalRotateBlock implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final BooleanProperty ON_SLAB=BooleanProperty.create("on_slab");
@@ -31,7 +37,10 @@ public class ParapetBlock extends HorizonalRotateBlock implements SimpleWaterlog
         super(p_i48377_1_);
         this.registerDefaultState(this.stateDefinition.any().setValue(ON_SLAB, Boolean.valueOf(false)).setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
-
+    @Override
+    public void appendHoverText(ItemStack stack, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
+        UrushiUtils.setInfo(list, "parapet");
+    }
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
         if(state.getValue(FACING)== Direction.NORTH||state.getValue(FACING)==Direction.SOUTH){

@@ -38,11 +38,6 @@ public class HotSpringWaterFluidType extends FluidType {
             }
 
             @Override
-            public @Nullable ResourceLocation getRenderOverlayTexture(Minecraft mc) {
-                return HotSpringOverrayTex;
-            }
-
-            @Override
             public int getTintColor() {
                 return 0xbf60c3c9;
             }

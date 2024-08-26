@@ -1,0 +1,45 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+     "item": "urushi:straw"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "farmersdelight:straw",
+
+
+
+      "count": 1
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "urushi:block/galvanised_iron_plate_brown",
+        "top": "urushi:block/galvanised_iron_plate_brown",
+        "side": "urushi:block/galvanised_iron_plate_brown"
+    }
+}

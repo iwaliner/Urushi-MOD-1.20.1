@@ -111,9 +111,6 @@ public class SanboBlock extends BaseEntityBlock {
                     return InteractionResult.SUCCESS;
                 }
             }
-            }else{
-                SanboBlockEntity  tileEntity= (SanboBlockEntity) world.getBlockEntity(pos);
-                     tileEntity.moveItemToExportSlot();
             }
 
         }

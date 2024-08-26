@@ -5,12 +5,14 @@ import com.iwaliner.urushi.blockentity.ShichirinBlockEntity;
 
 import com.iwaliner.urushi.network.FramedBlockTextureConnectionData;
 import com.iwaliner.urushi.network.FramedBlockTextureConnectionProvider;
+import com.iwaliner.urushi.recipe.SenbakokiRecipe;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.util.interfaces.ElementItem;
 import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.*;
 import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.core.dispenser.OptionalDispenseItemBehavior;
@@ -23,7 +25,9 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -181,54 +185,6 @@ public class ModCoreUrushi {
     @SubscribeEvent
     public void FuelEvent(FurnaceFuelBurnTimeEvent event) {
 
-        DefaultDispenseItemBehavior defaultDispenseItemBehavior = new DefaultDispenseItemBehavior();
-        DispenserBlock.registerBehavior(Items.BOWL, new OptionalDispenseItemBehavior() {
-            protected ItemStack execute(BlockSource source, ItemStack stack) {
-                Level level = source.getLevel();
-                Direction direction = source.getBlockState().getValue(DispenserBlock.FACING);
-                BlockPos blockpos = source.getPos().relative(direction);
-                BlockState blockstate = level.getBlockState(blockpos);
-                if (blockstate.getBlock() instanceof ChiseledLacquerLogBlock) {
-                    if (blockstate.getValue(ChiseledLacquerLogBlock.FILLED)) {
-                        this.setSuccess(true);
-                        stack.shrink(1);
-                        level.setBlockAndUpdate(blockpos, ItemAndBlockRegister.chiseled_lacquer_log.get().defaultBlockState().setValue(ChiseledLacquerLogBlock.FILLED, Boolean.valueOf(false)).setValue(ChiseledLacquerLogBlock.FACING, blockstate.getValue(ChiseledLacquerLogBlock.FACING)));
-                        level.gameEvent(null, GameEvent.BLOCK_PLACE, blockpos);
-                        if (stack.isEmpty()) {
-                            return new ItemStack(ItemAndBlockRegister.raw_urushi_ball.get());
-                        }
-                        if (source.<DispenserBlockEntity>getEntity().addItem(new ItemStack(ItemAndBlockRegister.raw_urushi_ball.get()).copy()) < 0) {
-                            defaultDispenseItemBehavior.dispense(source, new ItemStack(ItemAndBlockRegister.raw_urushi_ball.get()).copy());
-                        }
-                    }
-                    return stack;
-                }
-                return super.execute(source, stack);
-            }
-        });
-
-
-        DispenserBlock.registerBehavior(ItemAndBlockRegister.rice_crop.get(), new OptionalDispenseItemBehavior() {
-            protected ItemStack execute(BlockSource source, ItemStack stack) {
-                Level level = source.getLevel();
-                Direction direction = source.getBlockState().getValue(DispenserBlock.FACING);
-                BlockPos blockpos = source.getPos().relative(direction);
-                BlockState blockstate = level.getBlockState(blockpos);
-                if (blockstate.getBlock() instanceof SenbakokiBlock) {
-                    this.setSuccess(true);
-                       stack.shrink(1);
-                       level.gameEvent((Entity) null, GameEvent.BLOCK_PLACE, blockpos);
-                        if (stack.isEmpty()) {
-                            return new ItemStack(ItemAndBlockRegister.raw_rice.get(),2);
-						}
-						if (source.<DispenserBlockEntity>getEntity().addItem(new ItemStack(ItemAndBlockRegister.raw_rice.get(),2).copy()) < 0) {
-                            defaultDispenseItemBehavior.dispense(source, new ItemStack(ItemAndBlockRegister.raw_rice.get(),2).copy());
-                        }
-                    return stack;
-                }
-                return super.execute(source, stack);
-            }
-        });
 
 
         TagUrushi.fileMap.put( Blocks.STONE.defaultBlockState(),Blocks.SMOOTH_STONE.defaultBlockState());
@@ -361,6 +317,47 @@ public class ModCoreUrushi {
 
          */
 
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_timber_bamboo.get().asItem(),0.5F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.straw.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.rice_crop.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.azuki_crop.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.soy_crop.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.green_onion_crop.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.lycoris.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.lantern_plant.get().asItem(),0.5F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.shiitake_item.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.matured_japanese_apricot_fruit.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.eulalia.get().asItem(),0.5F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.lacquer_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_apricot_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.glowing_japanese_apricot_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.sakura_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.glowing_japanese_apricot_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.cypress_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_cedar_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.red_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.orange_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.yellow_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.lacquer_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_apricot_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.sakura_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.glowing_japanese_apricot_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.big_sakura_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.glowing_sakura_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.glowing_big_sakura_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.cypress_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_cedar_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.red_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.orange_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.yellow_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.raw_rice.get().asItem(),0.7F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.ajisai.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.yomotsuhegui_fruit.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.fallen_japanese_apricot_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.fallen_sakura_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.fallen_red_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.fallen_orange_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.fallen_yellow_leaves.get().asItem(),0.3F);
 
 
 
@@ -490,7 +487,6 @@ public class ModCoreUrushi {
     /**砂が海岸や海系のバイオーム内で水に接すると塩を含んだ砂になる*/
     @SubscribeEvent
     public void SaltEvent(BlockEvent.NeighborNotifyEvent event) {
-
         LevelAccessor level = event.getLevel();
         BlockPos pos = event.getPos();
         Holder<Biome> biome = level.getBiome(pos);
@@ -501,35 +497,10 @@ public class ModCoreUrushi {
         }
 
         if (blockState.getFluidState().is(Fluids.WATER)) {
-            Direction direction;
-            for (int i = 0; i < 6; i++) {
-                direction = UrushiUtils.getDirectionFromInt(i);
-                if (level.getBlockState(pos.relative(direction)).getBlock() == Blocks.SAND) {
-                    level.setBlock(pos.relative(direction), ItemAndBlockRegister.salt_and_sand.get().defaultBlockState(), 2);
-                    level.playSound((Player) null, pos.relative(direction), SoundEvents.SAND_BREAK, SoundSource.BLOCKS, 1.0F, 1F);
-                }
-            }
 
-        } else if (blockState.getBlock() == Blocks.SAND) {
-            UrushiUtils.BlockChangeNeighborFluidSurvey((Level) level, pos,Fluids.WATER,
-                    ItemAndBlockRegister.salt_and_sand.get().defaultBlockState(), SoundEvents.SAND_BREAK);
-        }
-
-
-        if(ModCoreUrushi.isDebug){
-            // LevelAccessor level=event.getLevel();
-            // BlockPos pos=event.getPos();
-            BlockState currentState=level.getBlockState(pos);
-
-            for (int i = 2; i < 6; i++) {
-                if (ElementUtils.isSoukokuBlock(level,pos.relative(UrushiUtils.getDirectionFromInt(i)),currentState)) {
-                    level.setBlock(pos.relative(UrushiUtils.getDirectionFromInt(i)),Blocks.AIR.defaultBlockState(), 2);
-                    level.setBlock(pos.relative(UrushiUtils.getDirectionFromInt(i)).above(200),
-                            ElementUtils.getRandomElementBlock(level), 2);
-
-                    event.getLevel().playSound(null, event.getPos().relative(UrushiUtils.getDirectionFromInt(i)),
-                            SoundEvents.SAND_BREAK, SoundSource.BLOCKS, 1.0F, 1F);
-                }
+            if(pos.getY()>62&&level.getBlockState(pos.below()).getBlock() == Blocks.SAND){
+                level.setBlock(pos.below(), ItemAndBlockRegister.salt_and_sand.get().defaultBlockState(), 2);
+                level.playSound((Player) null, pos.below(), SoundEvents.SAND_BREAK, SoundSource.BLOCKS, 1.0F, 1F);
             }
         }
     }

@@ -1083,14 +1083,15 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, MirrorBlockEntity blockEntity) {
-        blockEntity.recieveReiryoku(level,pos);
+      if(state.getBlock()instanceof MirrorBlock) {
+          blockEntity.recieveReiryoku(level, pos);
 
-        boolean canReach= blockEntity.getCanReach();
-        ComplexDirection mirrorDirection= getDirectionFromID(state.getValue(MirrorBlock.DIRECTION));
-        ComplexDirection incidentDirection=blockEntity.getIncidentDirection();
-        int storedReiryoku= blockEntity.getStoredReiryoku();
-           ComplexDirection reflectedDirection=blockEntity.reflectedDirection(mirrorDirection,incidentDirection);
-        BlockPos goalPos=blockEntity.findImportableBlock(level,pos,reflectedDirection);
+          boolean canReach = blockEntity.getCanReach();
+          ComplexDirection mirrorDirection = getDirectionFromID(state.getValue(MirrorBlock.DIRECTION));
+          ComplexDirection incidentDirection = blockEntity.getIncidentDirection();
+          int storedReiryoku = blockEntity.getStoredReiryoku();
+          ComplexDirection reflectedDirection = blockEntity.reflectedDirection(mirrorDirection, incidentDirection);
+          BlockPos goalPos = blockEntity.findImportableBlock(level, pos, reflectedDirection);
 
 
 
@@ -1113,28 +1114,27 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         }*/
 
 
+          if (reflectedDirection == null) {
+              blockEntity.setCanReach(true);
+          } else if (reflectedDirection == ComplexDirection.FAIL || goalPos == pos) {
+
+              blockEntity.setCanReach(false);
+          } else {
+
+              blockEntity.setCanReach(true);
+          }
+          if (storedReiryoku > 0) {
+              if (canReach) {
+
+                  if (goalPos != pos) {
+
+                      blockEntity.send(level, pos, goalPos, reflectedDirection);
+                  }
+              }
 
 
-        if(reflectedDirection==null){
-            blockEntity.setCanReach(true);
-        }else if(reflectedDirection==ComplexDirection.FAIL||goalPos==pos){
-
-            blockEntity.setCanReach(false);
-            }else {
-
-            blockEntity.setCanReach(true);
-            }
-        if(storedReiryoku>0){
-            if(canReach){
-
-                if(goalPos!=pos){
-
-                    blockEntity.send(level,pos,goalPos,reflectedDirection);
-                }
-            }
-
-
-        }
+          }
+      }
     }
     private BlockPos findImportableBlock(Level level,BlockPos mirrorPos,ComplexDirection incidentDirection){
         boolean b1=incidentDirection==ComplexDirection.N||incidentDirection==ComplexDirection.S||incidentDirection==ComplexDirection.E||incidentDirection==ComplexDirection.W;

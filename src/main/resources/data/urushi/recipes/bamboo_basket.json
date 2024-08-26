@@ -1,0 +1,65 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "X X",
+
+
+
+    " X "
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+
+
+
+
+    "X": {
+
+
+
+    "tag": "forge:bamboo"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:bamboo_basket",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

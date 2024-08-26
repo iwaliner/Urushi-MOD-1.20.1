@@ -1,0 +1,73 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "s",
+
+
+
+    "o"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "o": {
+
+
+
+    "tag": "forge:rods/wooden"
+
+
+
+    },
+
+
+
+    "s": {
+
+
+
+    "item": "urushi:bamboo_charcoal"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "minecraft:torch",
+
+
+
+    "count": 4
+
+
+
+  }
+
+
+
+}

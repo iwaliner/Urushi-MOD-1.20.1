@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "#",
+
+
+
+    "#"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+     "item": "urushi:sakura_bars"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:sakura_lattice_door",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

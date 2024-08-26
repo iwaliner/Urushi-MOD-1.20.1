@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "urushi:block/galvanised_iron_plate_red",
+        "top": "urushi:block/galvanised_iron_plate_red",
+        "side": "urushi:block/galvanised_iron_plate_red"
+    }
+}

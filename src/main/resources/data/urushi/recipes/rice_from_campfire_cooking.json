@@ -1,17 +1,33 @@
-{
-
-  "type": "minecraft:campfire_cooking",
-
-  "ingredient": {
-
-    "item": "urushi:raw_rice"
-
-  },
-
-  "result": "urushi:rice",
-
-  "experience": 0.35,
-
-  "cookingtime": 600
-
+{
+
+
+
+  "type": "minecraft:campfire_cooking",
+
+
+
+  "ingredient": {
+
+
+
+     "tag": "forge:crops/rice"
+
+
+
+  },
+
+
+
+  "result": "urushi:rice",
+
+
+
+  "experience": 0.35,
+
+
+
+  "cookingtime": 600
+
+
+
 }

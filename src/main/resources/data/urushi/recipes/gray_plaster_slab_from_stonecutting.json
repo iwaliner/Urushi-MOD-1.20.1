@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:gray_plaster"
+
+
+
+  },
+
+
+
+  "result": "urushi:gray_plaster_slab",
+
+
+
+  "count": 2
+
+
+
+}

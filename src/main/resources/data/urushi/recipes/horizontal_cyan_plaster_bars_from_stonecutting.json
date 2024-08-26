@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:cyan_plaster"
+
+
+
+  },
+
+
+
+  "result": "urushi:horizontal_cyan_plaster_bars",
+
+
+
+  "count": 4
+
+
+
+}

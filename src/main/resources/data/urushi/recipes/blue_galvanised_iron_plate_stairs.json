@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+   "#  ",
+
+
+
+    "## ",
+
+
+
+    "###"
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+ "item": "urushi:blue_galvanised_iron_plate_block"
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:blue_galvanised_iron_plate_stairs",
+
+
+
+    "count": 4
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,38 @@
+{
+
+  "variants": {
+
+    "facing=west": {
+
+      "model": "urushi:block/bamboo_basket",
+
+      "y": 270
+
+    },
+
+    "facing=south": {
+
+      "model": "urushi:block/bamboo_basket",
+
+      "y": 180
+
+    },
+
+    "facing=north": {
+
+      "model": "urushi:block/bamboo_basket"
+
+    },
+
+    "facing=east": {
+
+      "model": "urushi:block/bamboo_basket",
+
+      "y": 90
+
+    }
+
+  }
+
+}
+

@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_inventory",
+    "textures": {
+        "wall": "urushi:block/kawara_block_blue"
+    }
+}

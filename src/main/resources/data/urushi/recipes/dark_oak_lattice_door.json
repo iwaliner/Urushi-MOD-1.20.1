@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "#",
+
+
+
+    "#"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+     "item": "urushi:dark_oak_bars"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:dark_oak_lattice_door",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

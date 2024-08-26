@@ -3,6 +3,7 @@ package com.iwaliner.urushi.block;
 
 import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.TagUrushi;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.blockentity.RiceCauldronBlockEntity;
 import net.minecraft.core.BlockPos;
@@ -78,7 +79,7 @@ public class RiceCauldronBlock extends BaseEntityBlock {
                 world.playSound((Player) null,pos, SoundEvents.BARREL_CLOSE, SoundSource.BLOCKS,1F,1F);
                 return InteractionResult.SUCCESS;
             }else if(state.getValue(VARIANT)==1){
-                if(player.getItemInHand(hand).getItem()== ItemAndBlockRegister.raw_rice.get()){
+                if(player.getItemInHand(hand).is(TagUrushi.RICE)){
                     tileEntity.setItem(0, new ItemStack(ItemAndBlockRegister.rice.get(),player.getItemInHand(hand).getCount()));
                     player.setItemInHand(hand,ItemStack.EMPTY);
                     world.playSound((Player) null,pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS,1F,1F);
@@ -123,14 +124,12 @@ public class RiceCauldronBlock extends BaseEntityBlock {
         }
     }
 
-    @Override
-    public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
-        return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
+    public BlockState rotate(BlockState p_52716_, Rotation p_52717_) {
+        return p_52716_.setValue(FACING, p_52717_.rotate(p_52716_.getValue(FACING)));
     }
 
-    @Override
-    public BlockState mirror(BlockState state, Mirror mirror) {
-        return state.rotate(mirror.getRotation(state.getValue(FACING)));
+    public BlockState mirror(BlockState p_52713_, Mirror p_52714_) {
+        return p_52713_.rotate(p_52714_.getRotation(p_52713_.getValue(FACING)));
     }
 
     @org.jetbrains.annotations.Nullable

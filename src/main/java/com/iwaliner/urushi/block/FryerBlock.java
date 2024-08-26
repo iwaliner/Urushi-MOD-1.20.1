@@ -135,12 +135,12 @@ public class FryerBlock extends BaseEntityBlock {
     }
 
 
-    public BlockState rotate(BlockState p_48722_, Rotation p_48723_) {
-        return p_48722_.setValue(FACING, p_48723_.rotate(p_48722_.getValue(FACING)));
+    public BlockState rotate(BlockState p_52716_, Rotation p_52717_) {
+        return p_52716_.setValue(FACING, p_52717_.rotate(p_52716_.getValue(FACING)));
     }
 
-    public BlockState mirror(BlockState p_48719_, Mirror p_48720_) {
-        return p_48719_.rotate(p_48720_.getRotation(p_48719_.getValue(FACING)));
+    public BlockState mirror(BlockState p_52713_, Mirror p_52714_) {
+        return p_52713_.rotate(p_52714_.getRotation(p_52713_.getValue(FACING)));
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_48725_) {

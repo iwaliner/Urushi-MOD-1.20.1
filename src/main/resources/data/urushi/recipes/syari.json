@@ -2,15 +2,27 @@
 
 
 
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
 
 
 
-  "ingredients": [
+  "pattern": [
 
 
 
-    {
+    "##"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
 
 
 
@@ -22,7 +34,7 @@
 
 
 
-  ],
+  },
 
 
 
@@ -34,7 +46,7 @@
 
 
 
-      "count": 2
+    "count": 4
 
 
 

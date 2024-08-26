@@ -1,0 +1,77 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    " b ",
+
+
+
+    "b b",
+
+
+
+    " t "
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "b": {
+
+
+
+     "item": "minecraft:bowl"
+
+
+
+    },
+
+
+
+    "t": {
+
+
+
+  "item": "urushi:fermentation_barrel"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:rainwater_tank",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,58 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+   
+    "#",
+    "#",
+    "#"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+ "item": "urushi:red_galvanised_iron_plate_block"
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:vertical_red_galvanised_iron_plate_slab",
+
+
+
+    "count": 6
+
+
+
+  }
+
+
+
+}

@@ -85,69 +85,70 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
 
 
     public static void tick(Level level, BlockPos pos, BlockState state, ElementCraftingTableBlockEntity elementCraftingTable) {
-       elementCraftingTable.recieveReiryoku(level,pos);
-       if(elementCraftingTable.getCoolTime()>0){
-           elementCraftingTable.coolTime--;
-       }else if(elementCraftingTable.getCoolTime()<0){
-           elementCraftingTable.coolTime=0;
-       }
-       if(elementCraftingTable.getCoolTime()>0&&!state.getValue(ElementCraftingTableBlock.LIT)){
-           level.setBlock(pos,state.setValue(ElementCraftingTableBlock.LIT,true),2);
-       }else if(elementCraftingTable.getCoolTime()==0&&state.getValue(ElementCraftingTableBlock.LIT)){
-           level.setBlock(pos,state.setValue(ElementCraftingTableBlock.LIT,false),2);
-       }
+     if(state.getBlock()instanceof ElementCraftingTableBlock) {
+         elementCraftingTable.recieveReiryoku(level, pos);
+         if (elementCraftingTable.getCoolTime() > 0) {
+             elementCraftingTable.coolTime--;
+         } else if (elementCraftingTable.getCoolTime() < 0) {
+             elementCraftingTable.coolTime = 0;
+         }
+         if (elementCraftingTable.getCoolTime() > 0 && !state.getValue(ElementCraftingTableBlock.LIT)) {
+             level.setBlock(pos, state.setValue(ElementCraftingTableBlock.LIT, true), 2);
+         } else if (elementCraftingTable.getCoolTime() == 0 && state.getValue(ElementCraftingTableBlock.LIT)) {
+             level.setBlock(pos, state.setValue(ElementCraftingTableBlock.LIT, false), 2);
+         }
 
-       BlockState northState=level.getBlockState(pos.north());
-       BlockState eastState=level.getBlockState(pos.east());
-       BlockState southState=level.getBlockState(pos.south());
-       BlockState westState=level.getBlockState(pos.west());
-       boolean b1=northState.getBlock() instanceof SanboBlock&&eastState.getBlock() instanceof SanboBlock&&southState.getBlock() instanceof SanboBlock&&westState.getBlock() instanceof SanboBlock;
-       if(level.getBlockEntity(pos.north()) instanceof SanboBlockEntity&&level.getBlockEntity(pos.east()) instanceof SanboBlockEntity&&level.getBlockEntity(pos.south()) instanceof SanboBlockEntity&&level.getBlockEntity(pos.west()) instanceof SanboBlockEntity) {
-           SanboBlockEntity northSanbo = (SanboBlockEntity) level.getBlockEntity(pos.north());
-           SanboBlockEntity eastSanbo = (SanboBlockEntity) level.getBlockEntity(pos.east());
-           SanboBlockEntity southSanbo = (SanboBlockEntity) level.getBlockEntity(pos.south());
-           SanboBlockEntity westSanbo = (SanboBlockEntity) level.getBlockEntity(pos.west());
-           boolean b2 = northSanbo != null && eastSanbo != null && southSanbo != null && westSanbo != null;
-           if (b1 && b2) {
+         BlockState northState = level.getBlockState(pos.north());
+         BlockState eastState = level.getBlockState(pos.east());
+         BlockState southState = level.getBlockState(pos.south());
+         BlockState westState = level.getBlockState(pos.west());
+         boolean b1 = northState.getBlock() instanceof SanboBlock && eastState.getBlock() instanceof SanboBlock && southState.getBlock() instanceof SanboBlock && westState.getBlock() instanceof SanboBlock;
+         if (level.getBlockEntity(pos.north()) instanceof SanboBlockEntity && level.getBlockEntity(pos.east()) instanceof SanboBlockEntity && level.getBlockEntity(pos.south()) instanceof SanboBlockEntity && level.getBlockEntity(pos.west()) instanceof SanboBlockEntity) {
+             SanboBlockEntity northSanbo = (SanboBlockEntity) level.getBlockEntity(pos.north());
+             SanboBlockEntity eastSanbo = (SanboBlockEntity) level.getBlockEntity(pos.east());
+             SanboBlockEntity southSanbo = (SanboBlockEntity) level.getBlockEntity(pos.south());
+             SanboBlockEntity westSanbo = (SanboBlockEntity) level.getBlockEntity(pos.west());
+             boolean b2 = northSanbo != null && eastSanbo != null && southSanbo != null && westSanbo != null;
+             if (b1 && b2) {
 
-               ElementType craftingTableElementType = elementCraftingTable.getStoredElementType();
+                 ElementType craftingTableElementType = elementCraftingTable.getStoredElementType();
 
-               ItemStack northStack = northSanbo.getItem(0);
-               ItemStack eastStack = eastSanbo.getItem(0);
-               ItemStack southStack = southSanbo.getItem(0);
-               ItemStack westStack = westSanbo.getItem(0);
-
-
-               SimpleContainer container = new SimpleContainer(northStack, eastStack, southStack, westStack);
-               Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeType<AbstractElementCraftingRecipe>) elementCraftingTable.getRecipeType(), container, level).orElse(null);
-               if (recipe != null
-                       //&& northSanboTier == elementCraftingTableTier && eastSanboTier == elementCraftingTableTier && southSanboTier == elementCraftingTableTier && westSanboTier == elementCraftingTableTier
-              ) {
-                   IElementCraftingRecipe iElementCraftingRecipe=(IElementCraftingRecipe)recipe;
-                   int consumeReiryoku=iElementCraftingRecipe.getReiryoku();
-                   if(elementCraftingTable.canDecreaseReiryoku(consumeReiryoku)) {
-                       if (elementCraftingTable.getCoolTime() == 0) {
-                           elementCraftingTable.coolTime = elementCraftingTable.getMaxCooltime();
-                       } else if(elementCraftingTable.getCoolTime()==1) {
+                 ItemStack northStack = northSanbo.getItem(0);
+                 ItemStack eastStack = eastSanbo.getItem(0);
+                 ItemStack southStack = southSanbo.getItem(0);
+                 ItemStack westStack = westSanbo.getItem(0);
 
 
-                           ItemStack resultStack = recipe.getResultItem(level.registryAccess());
-                           ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, resultStack.copy());
-                           level.addFreshEntity(itemEntity);
-                           northSanbo.clearContent();
-                           eastSanbo.clearContent();
-                           southSanbo.clearContent();
-                           westSanbo.clearContent();
-                           elementCraftingTable.decreaseStoredReiryoku(consumeReiryoku);
-                           for(int i=0; i<20;i++) {
-                               level.addParticle(ParticleTypes.COMPOSTER, pos.getX() + 0.0625D * 4 + 0.0625D * level.getRandom().nextInt(8), pos.getY() + 1D + 0.0625D * level.getRandom().nextInt(8), pos.getZ() + 0.0625D * 4 + 0.0625D * level.getRandom().nextInt(8), 0.0D, 0.0D, 0.0D);
-                           }
-                       }
-                   }
-               }
-           }
-       }
+                 SimpleContainer container = new SimpleContainer(northStack, eastStack, southStack, westStack);
+                 Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeType<AbstractElementCraftingRecipe>) elementCraftingTable.getRecipeType(), container, level).orElse(null);
+                 if (recipe != null
+                     //&& northSanboTier == elementCraftingTableTier && eastSanboTier == elementCraftingTableTier && southSanboTier == elementCraftingTableTier && westSanboTier == elementCraftingTableTier
+                 ) {
+                     IElementCraftingRecipe iElementCraftingRecipe = (IElementCraftingRecipe) recipe;
+                     int consumeReiryoku = iElementCraftingRecipe.getReiryoku();
+                     if (elementCraftingTable.canDecreaseReiryoku(consumeReiryoku)) {
+                         if (elementCraftingTable.getCoolTime() == 0) {
+                             elementCraftingTable.coolTime = elementCraftingTable.getMaxCooltime();
+                         } else if (elementCraftingTable.getCoolTime() == 1) {
 
+
+                             ItemStack resultStack = recipe.getResultItem(level.registryAccess());
+                             ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, resultStack.copy());
+                             level.addFreshEntity(itemEntity);
+                             northSanbo.clearContent();
+                             eastSanbo.clearContent();
+                             southSanbo.clearContent();
+                             westSanbo.clearContent();
+                             elementCraftingTable.decreaseStoredReiryoku(consumeReiryoku);
+                             for (int i = 0; i < 20; i++) {
+                                 level.addParticle(ParticleTypes.COMPOSTER, pos.getX() + 0.0625D * 4 + 0.0625D * level.getRandom().nextInt(8), pos.getY() + 1D + 0.0625D * level.getRandom().nextInt(8), pos.getZ() + 0.0625D * 4 + 0.0625D * level.getRandom().nextInt(8), 0.0D, 0.0D, 0.0D);
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
     }
 
     @Override

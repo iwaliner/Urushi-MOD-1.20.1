@@ -16,7 +16,10 @@ import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -47,12 +50,36 @@ public class KakuriyoTeleporter implements ITeleporter {
     @Override
     public PortalInfo getPortalInfo(Entity entity, ServerLevel level, Function<ServerLevel, PortalInfo> defaultPortalInfo) {
         BlockPos pos=entity.blockPosition();
-        ModCoreUrushi.logger.warn("Error 12");
         BlockPos center=pos.offset(0,0,1);
 
-            entity.teleportTo(center.getX()+0.5D,center.getY()+0.5D,center.getZ()-2.5D);
+        entity.teleportTo(center.getX()+0.5D,center.getY()+0.5D,center.getZ()-2.5D);
         if(level==level.getServer().getLevel( DimensionRegister.KakuriyoKey )){
             createPortalInKakuriyo(level,center);
+            if(!level.getFluidState(center.offset(0,1,-3)).isEmpty()){
+                if(entity instanceof LivingEntity){
+                    LivingEntity livingEntity= (LivingEntity) entity;
+                    livingEntity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 20 * 20, 0), entity);
+                }
+            }
+
+        }else{
+            int toSurfaceEach=0;
+            boolean b=false;
+            BlockPos pos2=new BlockPos(center.getX(),318,center.getZ());
+            for(int s=0;s<400;s++) {
+                if (level.getBlockState(pos2.offset(0,-s,0)).entityCanStandOn(level,pos2.offset(0,-s,0),entity) ) {
+                    toSurfaceEach = s;
+                    break;
+                }else if (!level.getFluidState(pos2.offset(0,-s,0)).isEmpty() ) {
+                    toSurfaceEach = s;
+                    b=true;
+                    break;
+                }
+            }
+            if(b){
+                level.setBlockAndUpdate(pos2.offset(0,-toSurfaceEach,-3),ItemAndBlockRegister.rough_stone.get().defaultBlockState());
+            }
+            entity.teleportTo(pos2.getX()+0.5D,pos2.getY()-(double)toSurfaceEach+2.5D,pos2.getZ()-2.5D);
 
         }
 

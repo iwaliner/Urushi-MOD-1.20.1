@@ -199,14 +199,14 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
     }
 
 
-    public static void tick(Level level, BlockPos pos, BlockState bs, ShichirinBlockEntity blockEntity) {
-        if (!level.isClientSide) {
+    public static void tick(Level level, BlockPos pos, BlockState state, ShichirinBlockEntity blockEntity) {
+        if (!level.isClientSide&&state.getBlock() instanceof ShichirinBlock) {
             Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeType<CampfireCookingRecipe>) blockEntity.recipeType, blockEntity, level).orElse(null);
             AbstractCookingRecipe campfireCookingRecipe = (AbstractCookingRecipe) recipe;
             ItemStack slot0Stack = blockEntity.items.get(0);
             ItemStack slot1Stack = blockEntity.items.get(1);
             ItemStack fuelStack = blockEntity.items.get(2);
-            BlockState state = level.getBlockState(pos);
+
 
 
             if (fuelStack.isEmpty() && state.getValue(ShichirinBlock.SHICHIRIN) != 0) {

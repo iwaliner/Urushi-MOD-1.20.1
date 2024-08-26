@@ -1,9 +1,7 @@
 package com.iwaliner.urushi;
 
 
-import com.iwaliner.urushi.blockentity.renderer.HokoraRenderer;
-import com.iwaliner.urushi.blockentity.renderer.SanboRenderer;
-import com.iwaliner.urushi.blockentity.renderer.ShichirinRenderer;
+import com.iwaliner.urushi.blockentity.renderer.*;
 import com.iwaliner.urushi.blockentity.screen.AutoCraftingTableScreen;
 import com.iwaliner.urushi.blockentity.screen.DoubledWoodenCabinetryScreen;
 import com.iwaliner.urushi.blockentity.screen.FryerScreen;
@@ -59,6 +57,8 @@ public class ClientSetUp {
     public static final ModelLayerLocation SUSHI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "sushi_food"), "sushi_food");
     public static final ModelLayerLocation SALMON_ROE_SUSHI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "salmon_roe_sushi_food"), "salmon_roe_sushi_food");
     public static final ModelLayerLocation INARI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "inari_food"), "inari_food");
+    public static final ModelLayerLocation RAMEN = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "ramen_food"), "ramen_food");
+    public static final ModelLayerLocation MISO_SOUP = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "miso_soup_food"), "miso_soup_food");
 
 
     public static KeyMapping connectionKey = new ToggleKeyMappingPlus("key.urushi.connectionKey", KeyConflictContext.IN_GAME, InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_C, "key.urushi.category");
@@ -100,7 +100,19 @@ public class ClientSetUp {
             return new ThrownItemRenderer<>(p_174088_, 1.0F, true);
         });*/
         event.registerEntityRenderer(EntityRegister.JufuEffectDisplay.get(), FallingBlockRenderer::new);
-
+        event.registerEntityRenderer(EntityRegister.MisoSoupFoodEntity.get(), MisoSoupFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.CheeseGyudonFoodEntity.get(), CheeseGyudonFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.CheeseGyudonWithOnsenEggFoodEntity.get(), CheeseGyudonWithOnsenEggFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.GreenOnionAndRawEggGyudonFoodEntity.get(), GreenOnionAndRawEggGyudonFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.MustardLeafAndCodCaviarGyudonFoodEntity.get(), MustardLeafAndCodCaviarGyudonFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.SakuraMochiFoodEntity.get(), SakuraMochiFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.OhagiFoodEntity.get(), OhagiFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.KusaMochiFoodEntity.get(), KusaMochiFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.SoySourceRamenFoodEntity.get(), SoySourceRamenFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.SaltRamenFoodEntity.get(), SaltRamenFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.MisoRamenFoodEntity.get(), MisoRamenFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.TonkotsuRamenFoodEntity.get(), TonkotsuRamenFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.MincedTunaBowlFoodEntity.get(), MincedTunaBowlFoodRenderer::new);
     }
 
     /**エンティティのレイヤーを指定*/
@@ -117,6 +129,8 @@ public class ClientSetUp {
         event.registerLayerDefinition(SUSHI, SushiFoodModel::createBodyLayer);
         event.registerLayerDefinition(SALMON_ROE_SUSHI, SalmonRoeSushiFoodModel::createBodyLayer);
         event.registerLayerDefinition(INARI, InariFoodModel::createBodyLayer);
+        event.registerLayerDefinition(RAMEN, RamenFoodModel::createBodyLayer);
+        event.registerLayerDefinition(MISO_SOUP, MisoSoupFoodModel::createBodyLayer);
 
 
 
@@ -180,6 +194,8 @@ public class ClientSetUp {
         BlockEntityRenderers.register(BlockEntityRegister.Sanbo.get(), SanboRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegister.Shichirin.get(), ShichirinRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegister.Hokora.get(), HokoraRenderer::new);
+        BlockEntityRenderers.register(BlockEntityRegister.Plate.get(), PlateRenderer::new);
+        BlockEntityRenderers.register(BlockEntityRegister.BambooBasket.get(), BambooBasketRenderer::new);
 
 
 

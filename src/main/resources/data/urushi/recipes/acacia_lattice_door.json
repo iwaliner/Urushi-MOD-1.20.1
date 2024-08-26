@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "#",
+
+
+
+    "#"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+     "item": "urushi:acacia_bars"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:acacia_lattice_door",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

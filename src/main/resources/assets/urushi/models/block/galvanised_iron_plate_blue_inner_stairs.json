@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "urushi:block/galvanised_iron_plate_blue",
+        "top": "urushi:block/galvanised_iron_plate_blue",
+        "side": "urushi:block/galvanised_iron_plate_blue"
+    }
+}

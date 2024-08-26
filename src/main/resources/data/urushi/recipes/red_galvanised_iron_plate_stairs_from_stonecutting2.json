@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:red_galvanised_iron_plate_block"
+
+
+
+  },
+
+
+
+  "result": "urushi:red_galvanised_iron_plate_stairs",
+
+
+
+  "count": 1
+
+
+
+}

@@ -1,17 +1,33 @@
-{
-
-  "type": "minecraft:smoking",
-
-  "ingredient": {
-
-    "item": "urushi:raw_rice"
-
-  },
-
-  "result": "urushi:rice",
-
-  "experience": 0.35,
-
-  "cookingtime": 100
-
+{
+
+
+
+  "type": "minecraft:smoking",
+
+
+
+  "ingredient": {
+
+
+
+     "tag": "forge:crops/rice"
+
+
+
+  },
+
+
+
+  "result": "urushi:rice",
+
+
+
+  "experience": 0.35,
+
+
+
+  "cookingtime": 100
+
+
+
 }

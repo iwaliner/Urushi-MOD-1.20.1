@@ -18,6 +18,7 @@ public class InvisibleLeverBlockEntity extends BlockEntity {
     public InvisibleLeverBlockEntity(BlockPos p_155550_, BlockState p_155551_) {
         super(BlockEntityRegister.InvisibleLever.get(), p_155550_, p_155551_);
     }
+
     public void load(CompoundTag tag) {
         super.load(tag);
         this.time = tag.getInt("time");
@@ -27,12 +28,15 @@ public class InvisibleLeverBlockEntity extends BlockEntity {
         super.saveAdditional(tag);
         tag.putInt("time", this.time);
     }
+
     public static void tick(Level level, BlockPos pos, BlockState state, InvisibleLeverBlockEntity blockEntity) {
-        --blockEntity.time;
-        if(!level.isClientSide()&&blockEntity.time<=0) {
-            level.setBlock(pos, ItemAndBlockRegister.hidden_invisible_lever.get().defaultBlockState().setValue(HiddenInvisibleLeverBlock.POWERED,state.getValue(InvisibleLeverBlock.POWERED)).setValue(HiddenInvisibleLeverBlock.FACING,state.getValue(InvisibleLeverBlock.FACING)).setValue(HiddenInvisibleLeverBlock.FACE,state.getValue(InvisibleLeverBlock.FACE)), 2);
+        if (state.getBlock() instanceof InvisibleLeverBlock) {
+            --blockEntity.time;
+
+        if (!level.isClientSide() && blockEntity.time <= 0) {
+            level.setBlock(pos, ItemAndBlockRegister.hidden_invisible_lever.get().defaultBlockState().setValue(HiddenInvisibleLeverBlock.POWERED, state.getValue(InvisibleLeverBlock.POWERED)).setValue(HiddenInvisibleLeverBlock.FACING, state.getValue(InvisibleLeverBlock.FACING)).setValue(HiddenInvisibleLeverBlock.FACE, state.getValue(InvisibleLeverBlock.FACE)), 2);
         }
     }
-
+}
 
     }

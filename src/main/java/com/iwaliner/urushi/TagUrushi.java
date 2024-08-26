@@ -7,6 +7,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.MinecraftForge;
 
 import java.util.*;
 
@@ -38,5 +39,5 @@ public class TagUrushi {
     public static final TagKey<Item> WATER_ELEMENT_ITEM =TagKey.create(Registries.ITEM, new ResourceLocation(ModCoreUrushi.ModID,"water_element"));
     public static final TagKey<Item> SHICHIRIN_FUEL =TagKey.create(Registries.ITEM, new ResourceLocation(ModCoreUrushi.ModID,"shichirin_fuel"));
     public static final TagKey<Item> IGNITER =TagKey.create(Registries.ITEM, new ResourceLocation(ModCoreUrushi.ModID,"igniter"));
-
+    public static final TagKey<Item> RICE =TagKey.create(Registries.ITEM, new ResourceLocation("forge","crops/rice"));
 }

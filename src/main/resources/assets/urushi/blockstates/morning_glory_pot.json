@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "urushi:block/morning_glory_pot_lower"
+    },
+    "half=upper": {
+      "model": "urushi:block/morning_glory_pot_upper"
+    }
+  }
+}

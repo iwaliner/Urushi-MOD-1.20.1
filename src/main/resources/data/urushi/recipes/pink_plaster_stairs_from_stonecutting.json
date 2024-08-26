@@ -1,0 +1,29 @@
+{
+
+
+
+  "type": "minecraft:stonecutting",
+
+
+
+  "ingredient": {
+
+
+
+    "item": "urushi:pink_plaster"
+
+
+
+  },
+
+
+
+  "result": "urushi:pink_plaster_stairs",
+
+
+
+  "count": 1
+
+
+
+}

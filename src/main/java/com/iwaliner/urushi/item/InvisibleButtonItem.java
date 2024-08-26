@@ -3,25 +3,34 @@ package com.iwaliner.urushi.item;
 import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.block.HiddenInvisibleButtonBlock;
 import com.iwaliner.urushi.block.InvisibleButtonBlock;
+import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Random;
 
 public class InvisibleButtonItem extends BlockItem {
     public InvisibleButtonItem(Block p_40565_, Properties p_40566_) {
         super(p_40565_, p_40566_);
     }
-
+    @Override
+    public void appendHoverText(@NotNull ItemStack p_41421_, @Nullable Level p_41422_, @NotNull List<Component> list, @NotNull TooltipFlag p_41424_) {
+        UrushiUtils.setInfo(list,"invisible_redstone_inputs");
+    }
     @Override
     public void inventoryTick(ItemStack stack, Level world, Entity entity, int a, boolean b) {
         if(entity instanceof LivingEntity){

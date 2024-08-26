@@ -48,21 +48,23 @@ public class SacredRockBlockEntity extends AbstractReiryokuStorableBlockEntity i
 
 
     public static void tick(Level level, BlockPos pos, BlockState state, SacredRockBlockEntity blockEntity) {
-       BlockPos dedicatedPos=pos.relative(state.getValue(SacredRockBlock.FACING));
-        BlockState dedicatedState=level.getBlockState(dedicatedPos);
-        Tiered elementBlock= (Tiered) state.getBlock();
-      if(ElementUtils.isSpecificElement(blockEntity.getStoredElementType(),dedicatedState)){
-          if(blockEntity.coolTime<20*5) {
-              blockEntity.coolTime++;
-          }else if( blockEntity.canAddReiryoku(blockEntity.getAddAmount(elementBlock.getTier()))){
-              blockEntity.addStoredReiryoku(blockEntity.getAddAmount(elementBlock.getTier()));
-              level.setBlock(dedicatedPos, Blocks.AIR.defaultBlockState(),2);
-              blockEntity.coolTime=0;
-          }
-       }else{
-          if(blockEntity.coolTime!=0){
-              blockEntity.coolTime=0;
-          }
-      }
+       if(state.getBlock() instanceof SacredRockBlock) {
+           BlockPos dedicatedPos = pos.relative(state.getValue(SacredRockBlock.FACING));
+           BlockState dedicatedState = level.getBlockState(dedicatedPos);
+           Tiered elementBlock = (Tiered) state.getBlock();
+           if (ElementUtils.isSpecificElement(blockEntity.getStoredElementType(), dedicatedState)) {
+               if (blockEntity.coolTime < 20 * 5) {
+                   blockEntity.coolTime++;
+               } else if (blockEntity.canAddReiryoku(blockEntity.getAddAmount(elementBlock.getTier()))) {
+                   blockEntity.addStoredReiryoku(blockEntity.getAddAmount(elementBlock.getTier()));
+                   level.setBlock(dedicatedPos, Blocks.AIR.defaultBlockState(), 2);
+                   blockEntity.coolTime = 0;
+               }
+           } else {
+               if (blockEntity.coolTime != 0) {
+                   blockEntity.coolTime = 0;
+               }
+           }
+       }
     }
     }

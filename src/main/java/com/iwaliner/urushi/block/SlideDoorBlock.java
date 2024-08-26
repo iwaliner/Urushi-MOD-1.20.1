@@ -38,12 +38,11 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import net.minecraft.util.RandomSource;
 
-public class SlideDoorBlock extends Block {
+public class SlideDoorBlock extends AbstractHighBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final IntegerProperty OPEN = IntegerProperty.create("open",0,13);
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final BooleanProperty INVERTED = BlockStateProperties.INVERTED;
-    public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
     public static final BooleanProperty IS_OPENING = BooleanProperty.create("is_opening");
     protected static final VoxelShape SOUTH_CLOSE = Block.box(0.0D, 0.0D, 8D, 16.0D, 16.0D, 10D);
     protected static final VoxelShape NORTH_CLOSE = Block.box(0.0D, 0.0D, 6.0D, 16.0D, 16.0D, 8.0D);
@@ -147,27 +146,7 @@ public class SlideDoorBlock extends Block {
             return doubleblockhalf == DoubleBlockHalf.LOWER && direction == Direction.DOWN && !state.canSurvive(world, pos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, direction, state2, world, pos, pos2);
         } }
 
-    @Override
-    public void playerWillDestroy(Level world, BlockPos pos, BlockState state, Player entity) {
-        if (!world.isClientSide && entity.isCreative()) {
-            this.preventCreativeDropFromBottomPart(world, pos, state, entity);
-        }
 
-        super.playerWillDestroy(world, pos, state, entity); }
-
-
-    protected static void preventCreativeDropFromBottomPart(Level world, BlockPos pos, BlockState state, Player entity) {
-        DoubleBlockHalf doubleblockhalf = state.getValue(HALF);
-        if (doubleblockhalf == DoubleBlockHalf.UPPER) {
-            BlockPos blockpos = pos.below();
-            BlockState blockstate = world.getBlockState(blockpos);
-            if (blockstate.getBlock() == state.getBlock() && blockstate.getValue(HALF) == DoubleBlockHalf.LOWER) {
-                world.setBlock(blockpos, Blocks.AIR.defaultBlockState(), 35);
-                world.levelEvent(entity, 2001, blockpos, Block.getId(blockstate));
-            }
-        }
-
-    }
 
     @Override
     public boolean isPathfindable(BlockState state, BlockGetter p_60476_, BlockPos p_60477_, PathComputationType type) {
@@ -234,6 +213,7 @@ public class SlideDoorBlock extends Block {
            level.scheduleTick(new BlockPos(pos), this, 1);
         }
     }
+
 
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
@@ -316,12 +296,7 @@ public class SlideDoorBlock extends Block {
         }
     }
 
-    @Override
-    public boolean canSurvive(BlockState state, LevelReader reader, BlockPos pos2) {
-        BlockPos blockpos = pos2.below();
-        BlockState blockstate = reader.getBlockState(blockpos);
-        return state.getValue(HALF) == DoubleBlockHalf.LOWER ? blockstate.isFaceSturdy(reader, blockpos, Direction.UP) : blockstate.is(this);
-    }
+
 
     @Override
     public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
@@ -335,10 +310,7 @@ public class SlideDoorBlock extends Block {
 
 
 
-    @OnlyIn(Dist.CLIENT)
-    public long getSeed(BlockState state, BlockPos pos) {
-        return Mth.getSeed(pos.getX(), pos.below(state.getValue(HALF) == DoubleBlockHalf.LOWER ? 0 : 1).getY(), pos.getZ());
-    }
+
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
