@@ -185,138 +185,6 @@ public class ModCoreUrushi {
     @SubscribeEvent
     public void FuelEvent(FurnaceFuelBurnTimeEvent event) {
 
-
-
-        TagUrushi.fileMap.put( Blocks.STONE.defaultBlockState(),Blocks.SMOOTH_STONE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.COBBLESTONE.defaultBlockState(),Blocks.STONE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.ANDESITE.defaultBlockState(),Blocks.POLISHED_ANDESITE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DIORITE.defaultBlockState(),Blocks.POLISHED_DIORITE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.GRANITE.defaultBlockState(),Blocks.POLISHED_GRANITE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BASALT.defaultBlockState(),Blocks.SMOOTH_BASALT.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BLACKSTONE.defaultBlockState(),Blocks.POLISHED_BLACKSTONE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DEEPSLATE.defaultBlockState(),Blocks.POLISHED_DEEPSLATE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.COBBLED_DEEPSLATE.defaultBlockState(),Blocks.DEEPSLATE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.QUARTZ_BLOCK.defaultBlockState(),Blocks.SMOOTH_QUARTZ.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.RED_SANDSTONE.defaultBlockState(),Blocks.SMOOTH_RED_SANDSTONE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.SANDSTONE.defaultBlockState(),Blocks.SMOOTH_SANDSTONE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.OAK_PLANKS.defaultBlockState(),ItemAndBlockRegister.smooth_oak_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.SPRUCE_PLANKS.defaultBlockState(),ItemAndBlockRegister.smooth_spruce_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BIRCH_PLANKS.defaultBlockState(),ItemAndBlockRegister.smooth_birch_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.JUNGLE_PLANKS.defaultBlockState(),ItemAndBlockRegister.smooth_jungle_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.ACACIA_PLANKS.defaultBlockState(),ItemAndBlockRegister.smooth_acacia_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DARK_OAK_PLANKS.defaultBlockState(),ItemAndBlockRegister.smooth_dark_oak_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_apricot_planks.get().defaultBlockState(),ItemAndBlockRegister.smooth_japanese_apricot_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.sakura_planks.get().defaultBlockState(),ItemAndBlockRegister.smooth_sakura_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cypress_planks.get().defaultBlockState(),ItemAndBlockRegister.smooth_cypress_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_cedar_planks.get().defaultBlockState(),ItemAndBlockRegister.smooth_japanese_cedar_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.red_urushi_planks.get().defaultBlockState(),ItemAndBlockRegister.smooth_red_urushi_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.black_urushi_planks.get().defaultBlockState(),ItemAndBlockRegister.smooth_black_urushi_planks.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cobbled_yomi_stone.get().defaultBlockState(),ItemAndBlockRegister.yomi_stone.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.yomi_stone.get().defaultBlockState(),ItemAndBlockRegister.polished_yomi_stone.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.jadeite_block.get().defaultBlockState(),ItemAndBlockRegister.smooth_jadeite_block.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.ANDESITE_SLAB.defaultBlockState(),Blocks.POLISHED_ANDESITE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.ANDESITE_STAIRS.defaultBlockState(),Blocks.POLISHED_ANDESITE_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DIORITE_SLAB.defaultBlockState(),Blocks.POLISHED_DIORITE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DIORITE_STAIRS.defaultBlockState(),Blocks.POLISHED_DIORITE_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.GRANITE_SLAB.defaultBlockState(),Blocks.POLISHED_GRANITE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.GRANITE_STAIRS.defaultBlockState(),Blocks.POLISHED_GRANITE_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.COBBLESTONE_SLAB.defaultBlockState(),Blocks.STONE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.COBBLESTONE_STAIRS.defaultBlockState(),Blocks.STONE_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.STONE_SLAB.defaultBlockState(),Blocks.SMOOTH_STONE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BLACKSTONE_SLAB.defaultBlockState(),Blocks.POLISHED_BLACKSTONE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BLACKSTONE_STAIRS.defaultBlockState(),Blocks.POLISHED_BLACKSTONE_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.COBBLED_DEEPSLATE_SLAB.defaultBlockState(),Blocks.POLISHED_DEEPSLATE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.COBBLED_DEEPSLATE_STAIRS.defaultBlockState(),Blocks.POLISHED_DEEPSLATE_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.COBBLED_DEEPSLATE_WALL.defaultBlockState(),Blocks.POLISHED_DEEPSLATE_WALL.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.QUARTZ_SLAB.defaultBlockState(),Blocks.SMOOTH_QUARTZ_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.QUARTZ_STAIRS.defaultBlockState(),Blocks.SMOOTH_QUARTZ_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.RED_SANDSTONE_SLAB.defaultBlockState(),Blocks.SMOOTH_RED_SANDSTONE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.RED_SANDSTONE_STAIRS.defaultBlockState(),Blocks.SMOOTH_RED_SANDSTONE_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.SANDSTONE_SLAB.defaultBlockState(),Blocks.SMOOTH_SANDSTONE_SLAB.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.SANDSTONE_STAIRS.defaultBlockState(),Blocks.SMOOTH_SANDSTONE_STAIRS.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.OAK_SLAB.defaultBlockState(),ItemAndBlockRegister.smooth_oak_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.OAK_STAIRS.defaultBlockState(),ItemAndBlockRegister.smooth_oak_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.SPRUCE_SLAB.defaultBlockState(),ItemAndBlockRegister.smooth_spruce_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.SPRUCE_STAIRS.defaultBlockState(),ItemAndBlockRegister.smooth_spruce_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BIRCH_SLAB.defaultBlockState(),ItemAndBlockRegister.smooth_birch_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BIRCH_STAIRS.defaultBlockState(),ItemAndBlockRegister.smooth_birch_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.JUNGLE_SLAB.defaultBlockState(),ItemAndBlockRegister.smooth_jungle_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.JUNGLE_STAIRS.defaultBlockState(),ItemAndBlockRegister.smooth_jungle_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.ACACIA_SLAB.defaultBlockState(),ItemAndBlockRegister.smooth_acacia_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.ACACIA_STAIRS.defaultBlockState(),ItemAndBlockRegister.smooth_acacia_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DARK_OAK_SLAB.defaultBlockState(),ItemAndBlockRegister.smooth_dark_oak_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DARK_OAK_STAIRS.defaultBlockState(),ItemAndBlockRegister.smooth_dark_oak_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_apricot_slab.get().defaultBlockState(),ItemAndBlockRegister.smooth_japanese_apricot_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_apricot_stairs.get().defaultBlockState(),ItemAndBlockRegister.smooth_japanese_apricot_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.sakura_slab.get().defaultBlockState(),ItemAndBlockRegister.smooth_sakura_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.sakura_stairs.get().defaultBlockState(),ItemAndBlockRegister.smooth_sakura_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cypress_slab.get().defaultBlockState(),ItemAndBlockRegister.smooth_cypress_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cypress_stairs.get().defaultBlockState(),ItemAndBlockRegister.smooth_cypress_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_cedar_slab.get().defaultBlockState(),ItemAndBlockRegister.smooth_japanese_cedar_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_cedar_stairs.get().defaultBlockState(),ItemAndBlockRegister.smooth_japanese_cedar_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.red_urushi_slab.get().defaultBlockState(),ItemAndBlockRegister.smooth_red_urushi_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.red_urushi_stairs.get().defaultBlockState(),ItemAndBlockRegister.smooth_red_urushi_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.black_urushi_slab.get().defaultBlockState(),ItemAndBlockRegister.smooth_black_urushi_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.black_urushi_stairs.get().defaultBlockState(),ItemAndBlockRegister.smooth_black_urushi_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cobbled_yomi_stone_slab.get().defaultBlockState(),ItemAndBlockRegister.yomi_stone_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cobbled_yomi_stone_stairs.get().defaultBlockState(),ItemAndBlockRegister.yomi_stone_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.yomi_stone_slab.get().defaultBlockState(),ItemAndBlockRegister.polished_yomi_stone_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.yomi_stone_stairs.get().defaultBlockState(),ItemAndBlockRegister.polished_yomi_stone_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.jadeite_slab.get().defaultBlockState(),ItemAndBlockRegister.smooth_jadeite_slab.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.jadeite_stairs.get().defaultBlockState(),ItemAndBlockRegister.smooth_jadeite_stairs.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cobbled_yomi_stone_wall.get().defaultBlockState(),ItemAndBlockRegister.polished_yomi_stone_wall.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.OAK_LOG.defaultBlockState(),Blocks.STRIPPED_OAK_LOG.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BIRCH_LOG.defaultBlockState(),Blocks.STRIPPED_BIRCH_LOG.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.SPRUCE_LOG.defaultBlockState(),Blocks.STRIPPED_SPRUCE_LOG.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.JUNGLE_LOG.defaultBlockState(),Blocks.STRIPPED_JUNGLE_LOG.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.ACACIA_LOG.defaultBlockState(),Blocks.STRIPPED_ACACIA_LOG.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DARK_OAK_LOG.defaultBlockState(),Blocks.STRIPPED_DARK_OAK_LOG.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.MANGROVE_LOG.defaultBlockState(),Blocks.STRIPPED_MANGROVE_LOG.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.CRIMSON_STEM.defaultBlockState(),Blocks.STRIPPED_CRIMSON_STEM.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.WARPED_STEM.defaultBlockState(),Blocks.STRIPPED_WARPED_STEM.defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.sakura_log.get().defaultBlockState(),ItemAndBlockRegister.stripped_sakura_log.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_apricot_log.get().defaultBlockState(),ItemAndBlockRegister.stripped_japanese_apricot_log.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cypress_log.get().defaultBlockState(),ItemAndBlockRegister.stripped_cypress_log.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_cedar_log.get().defaultBlockState(),ItemAndBlockRegister.stripped_japanese_cedar_log.get().defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.OAK_WOOD.defaultBlockState(),Blocks.STRIPPED_OAK_WOOD.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.BIRCH_WOOD.defaultBlockState(),Blocks.STRIPPED_BIRCH_WOOD.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.SPRUCE_WOOD.defaultBlockState(),Blocks.STRIPPED_SPRUCE_WOOD.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.JUNGLE_WOOD.defaultBlockState(),Blocks.STRIPPED_JUNGLE_WOOD.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.ACACIA_WOOD.defaultBlockState(),Blocks.STRIPPED_ACACIA_WOOD.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.DARK_OAK_WOOD.defaultBlockState(),Blocks.STRIPPED_DARK_OAK_WOOD.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.MANGROVE_WOOD.defaultBlockState(),Blocks.STRIPPED_MANGROVE_WOOD.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.CRIMSON_HYPHAE.defaultBlockState(),Blocks.STRIPPED_CRIMSON_HYPHAE.defaultBlockState());
-        TagUrushi.fileMap.put( Blocks.WARPED_HYPHAE.defaultBlockState(),Blocks.STRIPPED_WARPED_HYPHAE.defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.sakura_wood.get().defaultBlockState(),ItemAndBlockRegister.stripped_sakura_wood.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_apricot_wood.get().defaultBlockState(),ItemAndBlockRegister.stripped_japanese_apricot_wood.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.cypress_wood.get().defaultBlockState(),ItemAndBlockRegister.stripped_cypress_wood.get().defaultBlockState());
-        TagUrushi.fileMap.put( ItemAndBlockRegister.japanese_cedar_wood.get().defaultBlockState(),ItemAndBlockRegister.stripped_japanese_cedar_wood.get().defaultBlockState());
-
-
-
-        /*
-        TagUrushi.earthMiningSpeedChangeItemMap.put( ItemAndBlockRegister.wood_element_magatama.get(),50);
-        TagUrushi.fireMiningSpeedChangeItemMap.put( ItemAndBlockRegister.wood_element_magatama.get(),-30);
-        TagUrushi.woodMiningSpeedChangeItemMap.put( ItemAndBlockRegister.wood_element_magatama.get(),-40);
-
-        TagUrushi.metalMiningSpeedChangeItemMap.put( ItemAndBlockRegister.fire_element_magatama.get(),50);
-        TagUrushi.earthMiningSpeedChangeItemMap.put( ItemAndBlockRegister.fire_element_magatama.get(),-30);
-        TagUrushi.fireMiningSpeedChangeItemMap.put( ItemAndBlockRegister.fire_element_magatama.get(),-40);
-
-        TagUrushi.waterMiningSpeedChangeItemMap.put( ItemAndBlockRegister.earth_element_magatama.get(),50);
-        TagUrushi.metalMiningSpeedChangeItemMap.put( ItemAndBlockRegister.earth_element_magatama.get(),-30);
-        TagUrushi.earthMiningSpeedChangeItemMap.put( ItemAndBlockRegister.earth_element_magatama.get(),-40);
-
-        TagUrushi.woodMiningSpeedChangeItemMap.put( ItemAndBlockRegister.metal_element_magatama.get(),50);
-        TagUrushi.waterMiningSpeedChangeItemMap.put( ItemAndBlockRegister.metal_element_magatama.get(),-30);
-        TagUrushi.metalMiningSpeedChangeItemMap.put( ItemAndBlockRegister.metal_element_magatama.get(),-40);
-
-        TagUrushi.fireMiningSpeedChangeItemMap.put( ItemAndBlockRegister.water_element_magatama.get(),50);
-        TagUrushi.woodMiningSpeedChangeItemMap.put( ItemAndBlockRegister.water_element_magatama.get(),-30);
-        TagUrushi.waterMiningSpeedChangeItemMap.put( ItemAndBlockRegister.water_element_magatama.get(),-40);
-
-         */
-
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_timber_bamboo.get().asItem(),0.5F);
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.straw.get().asItem(),0.65F);
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.rice_crop.get().asItem(),0.65F);
@@ -496,7 +364,7 @@ public class ModCoreUrushi {
             return;
         }
 
-        if (blockState.getFluidState().is(Fluids.WATER)) {
+        if (blockState.getFluidState().is(Fluids.WATER)||blockState.getFluidState().is(Fluids.FLOWING_WATER)) {
 
             if(pos.getY()>62&&level.getBlockState(pos.below()).getBlock() == Blocks.SAND){
                 level.setBlock(pos.below(), ItemAndBlockRegister.salt_and_sand.get().defaultBlockState(), 2);
@@ -735,5 +603,7 @@ public class ModCoreUrushi {
     public void RegisterCapabilities(RegisterCapabilitiesEvent event) {
         event.register(FramedBlockTextureConnectionData.class);
     }
+
+
 
 }

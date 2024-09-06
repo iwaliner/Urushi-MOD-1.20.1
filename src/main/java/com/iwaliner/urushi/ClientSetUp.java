@@ -22,6 +22,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.gui.screens.inventory.CraftingScreen;
 import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.FallingBlockRenderer;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
@@ -42,6 +43,7 @@ import org.lwjgl.glfw.GLFW;
 
 import javax.annotation.Nullable;
 import java.io.File;
+import java.util.Objects;
 
 @OnlyIn(Dist.CLIENT)
 @Mod.EventBusSubscriber(modid = ModCoreUrushi.ModID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -135,7 +137,36 @@ public class ClientSetUp {
 
 
     }
+    @SubscribeEvent
+    public static void registerItemColorEvent(RegisterColorHandlersEvent.Item event) {
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.grass_block_with_fallen_red_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.grass_block_with_fallen_orange_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.grass_block_with_fallen_yellow_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.grass_block_with_fallen_japanese_apricot_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.grass_block_with_fallen_sakura_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_red_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_orange_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_yellow_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_japanese_apricot_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_sakura_leaves.get());
+        event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block.get());
+        event.register((stack, i) -> {return 13886461;},ItemAndBlockRegister.onsen_egg.get());
+    }
+    @SubscribeEvent
+    public static void registerBlockColorEvent(RegisterColorHandlersEvent.Block event) {
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null? BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.grass_block_with_fallen_red_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.grass_block_with_fallen_orange_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.grass_block_with_fallen_yellow_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.grass_block_with_fallen_japanese_apricot_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.grass_block_with_fallen_sakura_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_red_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_orange_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_yellow_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_japanese_apricot_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_sakura_leaves.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block.get());
 
+    }
     /**パーティクルの見た目を指定*/
     @SubscribeEvent
     public static void registerParticlesEvent(RegisterParticleProvidersEvent event) {

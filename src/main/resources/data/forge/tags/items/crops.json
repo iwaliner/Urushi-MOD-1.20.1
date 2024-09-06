@@ -1,0 +1,23 @@
+{
+
+  "replace": false,
+
+  "values": [
+
+    "minecraft:wheat_seeds",
+
+    "minecraft:pumpkin_seeds",
+
+    "minecraft:melon_seeds",
+
+    "minecraft:beetroot_seeds",
+
+    "urushi:soy_crop",
+
+    "urushi:azuki_crop",
+
+    "urushi:rice_crop"
+
+  ]
+
+}

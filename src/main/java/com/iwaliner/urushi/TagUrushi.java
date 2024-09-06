@@ -12,7 +12,6 @@ import net.minecraftforge.common.MinecraftForge;
 import java.util.*;
 
 public class TagUrushi {
-    public static Map< BlockState, BlockState> fileMap = new HashMap<>();
 
 
     public static final TagKey<Block> YOMI_STONE =TagKey.create(Registries.BLOCK, new ResourceLocation(ModCoreUrushi.ModID,"yomi_stone"));
