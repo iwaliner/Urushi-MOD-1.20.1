@@ -33,7 +33,7 @@ public abstract class ItemEntityMixin {
 
     @Shadow public abstract void setItem(ItemStack p_32046_);
 
-    @Inject(method = "tick",at = @At("HEAD"), cancellable = true,remap = false)
+    @Inject(method = "tick",at = @At("HEAD"))
     private void tickInject(CallbackInfo ci){
         ItemStack stack=this.getItem();
         Level level=this.copy().level();

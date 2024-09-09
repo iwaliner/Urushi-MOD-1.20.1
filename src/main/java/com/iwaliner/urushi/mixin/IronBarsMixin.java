@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(IronBarsBlock.class)
 
 public abstract class IronBarsMixin {
-    @Inject(method = "attachsTo",at = @At("HEAD"), cancellable = true,remap = false)
+    @Inject(method = "attachsTo",at = @At("HEAD"), cancellable = true)
     private void attachsToInject(BlockState state, boolean p_54219_, CallbackInfoReturnable<Boolean> cir){
         if(state.getBlock() instanceof SlideDoorBlock){
            cir.setReturnValue(true);

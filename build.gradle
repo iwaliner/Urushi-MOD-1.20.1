@@ -3,7 +3,11 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
-    id 'org.spongepowered.mixin' version '0.7.+'
+    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'
+}
+mixin {
+    //MixinGradle Settings
+    add sourceSets.main, "${mod_id}.refmap.json"
 }
 
 version = mod_version
@@ -83,13 +87,25 @@ minecraft {
         }
 
         client {
-            // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', mod_id
+             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
+           // property 'forge.enabledGameTestNamespaces', mod_id
+
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property "mixin.env.remapRefMap", "true"
+            arg "-mixin.config=urushi.mixins.json"
         }
 
         server {
-            property 'forge.enabledGameTestNamespaces', mod_id
-            args '--nogui'
+            //property 'forge.enabledGameTestNamespaces', mod_id
+           // args '--nogui'
+
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property "mixin.env.remapRefMap", "true"
+            arg "-mixin.config=urushi.mixins.json"
         }
 
         // This run config launches GameTestServer and runs all registered gametests, then exits.
@@ -101,10 +117,16 @@ minecraft {
 
         data {
             // example of overriding the workingDirectory set in configureEach above
-            workingDirectory project.file('run-data')
+            workingDirectory project.file('run')
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                }
+            }
         }
     }
 }
@@ -115,9 +137,9 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     maven {
         url "https://cursemaven.com"
-        content {
+      /*  content {
             includeGroup "curse.maven"
-        }
+        }*/
     }
     maven { url 'https://maven.blamejared.com' } // requested by patchouli
 }
@@ -147,14 +169,7 @@ dependencies {
     compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84-FORGE:api")
     runtimeOnly fg.deobf('vazkii.patchouli:Patchouli:1.20.1-84-FORGE')
 }
-mixin {
-    //MixinGradle Settings
-    add sourceSets.main, "${mod_id}.refmap.json"
-    config "${mod_id}.mixins.json"
 
-    debug.verbose = true
-    debug.export = true
-}
 
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
@@ -176,7 +191,8 @@ tasks.named('processResources', ProcessResources).configure {
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
-tasks.named('jar', Jar).configure {
+//tasks.named('jar', Jar).configure {
+jar {
     manifest {
         attributes([
                 'Specification-Title'     : mod_id,
@@ -185,7 +201,8 @@ tasks.named('jar', Jar).configure {
                 'Implementation-Title'    : project.name,
                 'Implementation-Version'  : project.jar.archiveVersion,
                 'Implementation-Vendor'   : mod_authors,
-                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                "MixinConfigs"            : "urushi.mixins.json"
         ])
     }
 
@@ -201,7 +218,10 @@ tasks.named('jar', Jar).configure {
 // Example configuration to allow publishing using the maven-publish plugin
 publishing {
     publications {
-        register('mavenJava', MavenPublication) {
+       /* register('mavenJava', MavenPublication) {
+            artifact jar
+        }*/
+        mavenJava(MavenPublication) {
             artifact jar
         }
     }

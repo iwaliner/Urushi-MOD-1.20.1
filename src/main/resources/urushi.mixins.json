@@ -2,11 +2,14 @@
   "required": true,
   "package": "com.iwaliner.urushi.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "${mod_id}.refmap.json",
+  "refmap": "urushi.refmap.json",
   "mixins": [
     "IronBarsMixin",
     "ItemEntityMixin"
   ],
   "client": [],
-  "minVersion": "0.7"
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
 }
