@@ -53,7 +53,7 @@ public class SacredRockBlockEntity extends AbstractReiryokuStorableBlockEntity i
            BlockState dedicatedState = level.getBlockState(dedicatedPos);
            Tiered elementBlock = (Tiered) state.getBlock();
            if (ElementUtils.isSpecificElement(blockEntity.getStoredElementType(), dedicatedState)) {
-               if (blockEntity.coolTime < 20 * 5) {
+               if (blockEntity.coolTime < 20 * 2) {
                    blockEntity.coolTime++;
                } else if (blockEntity.canAddReiryoku(blockEntity.getAddAmount(elementBlock.getTier()))) {
                    blockEntity.addStoredReiryoku(blockEntity.getAddAmount(elementBlock.getTier()));

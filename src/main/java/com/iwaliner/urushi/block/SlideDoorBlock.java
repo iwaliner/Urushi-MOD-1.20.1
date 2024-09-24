@@ -253,19 +253,20 @@ public class SlideDoorBlock extends AbstractHighBlock {
         boolean flag = world.hasNeighborSignal(pos) || world.hasNeighborSignal(pos.relative(state.getValue(HALF) == DoubleBlockHalf.LOWER ? Direction.UP : Direction.DOWN));
         BlockPos anotherPos = state.getValue(HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         BlockState anotherState=world.getBlockState(anotherPos);
-        if (block != this/*&& flag != state.getValue(POWERED)*/) {
+
+        if (block != this&& flag != state.getValue(POWERED)) {
             if(ConfigUrushi.instantlySlidingDoor.get()){
                 if (state.getValue(OPEN) == 0 || state.getValue(OPEN) == 13) {
                     if (flag == isClose(state)) {
                         world.playSound((Player) null, pos, SoundEvents.BARREL_OPEN, SoundSource.BLOCKS, 1.0F, 1.0F);
 
                     }
-                    if(flag&&state.getValue(OPEN) == 0){
+                    if(/*flag&&*/state.getValue(OPEN) == 0){
                         world.setBlock(pos, state.setValue(POWERED, false).setValue(OPEN, 13).setValue(IS_OPENING, flag), 2);
                        // world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 13).setValue(IS_OPENING, flag), 2);
                         world.scheduleTick(new BlockPos(pos), this, 1);
                     //    world.scheduleTick(new BlockPos(anotherPos), this, 1);
-                    }else if(!flag&&state.getValue(OPEN) == 13) {
+                    }else if(/*!flag&&*/state.getValue(OPEN) == 13) {
                         world.setBlock(pos, state.setValue(POWERED, false).setValue(OPEN, 0).setValue(IS_OPENING, flag), 2);
                   //      world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 0).setValue(IS_OPENING, flag), 2);
                         world.scheduleTick(new BlockPos(pos), this, 1);
@@ -279,12 +280,12 @@ public class SlideDoorBlock extends AbstractHighBlock {
 
                     }
                     if(flag&&state.getValue(OPEN) == 0){
-                        world.setBlock(pos, state.setValue(POWERED, false).setValue(OPEN, 1).setValue(IS_OPENING, flag), 2);
+                        world.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, 1).setValue(IS_OPENING, flag), 2);
                        // world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 1).setValue(IS_OPENING, flag), 2);
                         world.scheduleTick(new BlockPos(pos), this, 1);
                       //  world.scheduleTick(new BlockPos(anotherPos), this, 1);
                     }else if(!flag&&state.getValue(OPEN) == 13) {
-                        world.setBlock(pos, state.setValue(POWERED, false).setValue(OPEN, 12).setValue(IS_OPENING, flag), 2);
+                        world.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, 12).setValue(IS_OPENING, flag), 2);
                        // world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 12).setValue(IS_OPENING, flag), 2);
                         world.scheduleTick(new BlockPos(pos), this, 1);
                       //  world.scheduleTick(new BlockPos(anotherPos), this, 1);
