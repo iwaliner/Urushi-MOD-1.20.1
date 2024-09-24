@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "urushi:block/tatami_brown",
+        "top": "urushi:block/tatami_brown",
+        "side": "urushi:block/tatami_top_brown"
+    }
+}

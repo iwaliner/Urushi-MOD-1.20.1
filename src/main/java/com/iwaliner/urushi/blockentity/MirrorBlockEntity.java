@@ -29,6 +29,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.List;
+import java.util.Objects;
 
 public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  implements Mirror {
     public boolean canReach;
@@ -115,7 +116,7 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
     }
 
     /**180度の方角を返す*/
-    public ComplexDirection getOppositeDirection(ComplexDirection direction){
+    public static ComplexDirection getOppositeDirection(ComplexDirection direction){
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<9){
@@ -1022,7 +1023,7 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         return new double[]{pos.getX()+0.5D,pos.getY()+0.5D, pos.getZ()+0.5D};
     }
 
-    private Direction[] getDirectionFromComplexDirection(ComplexDirection direction){
+    public static Direction[] getDirectionFromComplexDirection(ComplexDirection direction){
         if(direction==ComplexDirection.N){
             return new Direction[]{Direction.NORTH,null};
         }else if(direction==ComplexDirection.E){
@@ -1145,7 +1146,7 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
             if(getDirectionFromComplexDirection(incidentDirection)!=null) {
 
                 for (int i1 = 1; i1 < range; i1++) {
-                    BlockPos pos = getDirectionFromComplexDirection(incidentDirection)[1] == null ? mirrorPos.relative(getDirectionFromComplexDirection(incidentDirection)[0], i1) : mirrorPos.relative(getDirectionFromComplexDirection(incidentDirection)[0], i1).relative(getDirectionFromComplexDirection(incidentDirection)[1], i1);
+                    BlockPos pos = Objects.requireNonNull(getDirectionFromComplexDirection(incidentDirection))[1] == null ? mirrorPos.relative(Objects.requireNonNull(getDirectionFromComplexDirection(incidentDirection))[0], i1) : mirrorPos.relative(Objects.requireNonNull(getDirectionFromComplexDirection(incidentDirection))[0], i1).relative(Objects.requireNonNull(getDirectionFromComplexDirection(incidentDirection))[1], i1);
                     BlockEntity blockEntity = level.getBlockEntity(pos);
                     BlockState state = level.getBlockState(pos);
                     VoxelShape shape = state.getCollisionShape(level, pos).optimize();

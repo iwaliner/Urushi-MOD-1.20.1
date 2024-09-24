@@ -37,7 +37,7 @@ public class BlockEntityRegister {
     public static final RegistryObject<BlockEntityType<AutoCraftingTableBlockEntity>> AutoCraftingTable=Tiles.register("auto_crafting_table", () -> BlockEntityType.Builder.of(AutoCraftingTableBlockEntity::new, ItemAndBlockRegister.auto_crafting_table.get(),ItemAndBlockRegister.advanced_auto_crafting_table.get()).build(null));
     public static final RegistryObject<BlockEntityType<PlateBlockEntity>> Plate=Tiles.register("plate", () -> BlockEntityType.Builder.of(PlateBlockEntity::new, ItemAndBlockRegister.plate.get()).build(null));
     public static final RegistryObject<BlockEntityType<BambooBasketBlockEntity>> BambooBasket=Tiles.register("bamboo_basket", () -> BlockEntityType.Builder.of(BambooBasketBlockEntity::new, ItemAndBlockRegister.bamboo_basket.get()).build(null));
-    // public static final RegistryObject<BlockEntityType<RandomElementPuzzleBlockEntity>> RandomElementPuzzleBlock=Tiles.register("random_element_puzzle_block", () -> BlockEntityType.Builder.of(RandomElementPuzzleBlockEntity::new, ItemAndBlockRegister.random_element_puzzle_block.get()).build(null));
+     public static final RegistryObject<BlockEntityType<RandomElementPuzzleBlockEntity>> RandomElementPuzzleBlock=Tiles.register("random_element_puzzle_block", () -> BlockEntityType.Builder.of(RandomElementPuzzleBlockEntity::new, ItemAndBlockRegister.random_element_puzzle_block.get()).build(null));
 
 
 

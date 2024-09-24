@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "urushi:block/sand_wall",
+        "top": "urushi:block/sand_wall",
+        "side": "urushi:block/sand_wall"
+    }
+}

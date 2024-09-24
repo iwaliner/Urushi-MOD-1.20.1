@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:metal_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "urushi:spike_jufu_stamp"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "urushi:black_urushi_ball"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "minecraft:paper"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "tag": "forge:nuggets/gold"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:spike_jufu"
+
+
+
+  },
+
+
+
+  "reiryoku": 30
+
+
+
+}

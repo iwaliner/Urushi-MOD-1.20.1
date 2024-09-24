@@ -1,5 +1,6 @@
 {
 	"parent": "block/block",
+	"ambientocclusion": false,
 	"textures": {
 		"0": "urushi:block/jadeite_block_smooth",
 		"1": "urushi:block/jadeite_block_brick",

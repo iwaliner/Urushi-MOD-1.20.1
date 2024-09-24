@@ -75,9 +75,10 @@ public class KitsunebiItem extends Item implements ElementItem {
                  for(int k=-range; k<range+1;k++) {
                     if( world.getBlockState(pos.offset(i,j,k))== ItemAndBlockRegister.kitsunebiBlock.get().defaultBlockState()){
                        Random rand=new Random();
-                       double d0 = (double)pos.getX()+(double)i + 0.1D*rand.nextInt(11);
-                       double d1 = (double)pos.getY() +(double)j+ 0.1D*rand.nextInt(11);
-                       double d2 = (double)pos.getZ() +(double)k+ 0.1D*rand.nextInt(11);
+                       double d0 = (double)pos.getX()+(double)i + rand.nextDouble();
+                       double d1 = (double)pos.getY() +(double)j+ rand.nextDouble();
+                       double d2 = (double)pos.getZ() +(double)k+ rand.nextDouble();
+
                        if(rand.nextInt(8)==0) {
                           world.addParticle(ParticleTypes.FLAME, d0, d1, d2, 0.0D, 0.0D, 0.0D);
 
@@ -100,7 +101,7 @@ public class KitsunebiItem extends Item implements ElementItem {
       BlockPos blockpos = context.getClickedPos();
       blockpos = blockpos.relative(context.getClickedFace());
       ItemStack magatama= ElementUtils.getMagatamaInInventory(Objects.requireNonNull(context.getPlayer()), ElementType.FireElement);
-      if (FireBlock.canBePlacedAt(world, blockpos, context.getHorizontalDirection())&&magatama!=ItemStack.EMPTY&&ElementUtils.willBeInDomain(magatama,-10)) {
+      if (world.getBlockState(blockpos).canBeReplaced()&&magatama!=ItemStack.EMPTY&&ElementUtils.willBeInDomain(magatama,-10)) {
          world.playSound((Player) null, context.getPlayer().getX(), context.getPlayer().getY(), context.getPlayer().getZ(), SoundEvents.FIRECHARGE_USE, SoundSource.PLAYERS, 0.5F, 1F);
          world.setBlockAndUpdate(blockpos, ItemAndBlockRegister.kitsunebiBlock.get().defaultBlockState());
          ElementUtils.increaseStoredReiryokuAmount(magatama,-10);

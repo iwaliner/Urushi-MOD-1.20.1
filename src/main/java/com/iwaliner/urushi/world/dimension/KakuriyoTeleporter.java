@@ -52,8 +52,10 @@ public class KakuriyoTeleporter implements ITeleporter {
         BlockPos pos=entity.blockPosition();
         BlockPos center=pos.offset(0,0,1);
 
-        entity.teleportTo(center.getX()+0.5D,center.getY()+0.5D,center.getZ()-2.5D);
-        if(level==level.getServer().getLevel( DimensionRegister.KakuriyoKey )){
+
+    //    if(level==level.getServer().getLevel( DimensionRegister.KakuriyoKey )){
+            if(level.dimension()==DimensionRegister.KakuriyoKey){
+                entity.teleportTo(center.getX()+0.5D,center.getY()+0.5D,center.getZ()-2.5D);
             createPortalInKakuriyo(level,center);
             if(!level.getFluidState(center.offset(0,1,-3)).isEmpty()){
                 if(entity instanceof LivingEntity){
@@ -61,11 +63,12 @@ public class KakuriyoTeleporter implements ITeleporter {
                     livingEntity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 20 * 20, 0), entity);
                 }
             }
-
+ModCoreUrushi.logger.info("A1");
         }else{
+                entity.teleportTo(center.getX()+0.5D,center.getY()+0.5D,center.getZ()-4.5D);
             int toSurfaceEach=0;
             boolean b=false;
-            BlockPos pos2=new BlockPos(center.getX(),318,center.getZ());
+            BlockPos pos2=new BlockPos(entity.blockPosition().getX(),318,entity.blockPosition().getZ());
             for(int s=0;s<400;s++) {
                 if (level.getBlockState(pos2.offset(0,-s,0)).entityCanStandOn(level,pos2.offset(0,-s,0),entity) ) {
                     toSurfaceEach = s;
@@ -77,10 +80,10 @@ public class KakuriyoTeleporter implements ITeleporter {
                 }
             }
             if(b){
-                level.setBlockAndUpdate(pos2.offset(0,-toSurfaceEach,-3),ItemAndBlockRegister.rough_stone.get().defaultBlockState());
+                level.setBlockAndUpdate(pos2.offset(0,-toSurfaceEach,0),ItemAndBlockRegister.rough_stone.get().defaultBlockState());
             }
-            entity.teleportTo(pos2.getX()+0.5D,pos2.getY()-(double)toSurfaceEach+2.5D,pos2.getZ()-2.5D);
-
+            entity.teleportTo(entity.getX(),pos2.getY()-(double)toSurfaceEach+2.5D,entity.getZ());
+ModCoreUrushi.logger.info("A2");
         }
 
         return new PortalInfo(entity.position(), Vec3.ZERO, -180f, entity.getXRot());

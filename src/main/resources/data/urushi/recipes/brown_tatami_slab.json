@@ -1,0 +1,57 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "###"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+      "item": "urushi:brown_tatami"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:brown_tatami_slab",
+
+
+
+    "count": 6
+
+
+
+  }
+
+
+
+}

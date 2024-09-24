@@ -17,8 +17,9 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.List;
 
 public class TwoDirectionShapedBlock extends HorizonalRotateBlock{
-    private static  VoxelShape SHAPEA;
-    private static  VoxelShape SHAPEB;
+    private final   VoxelShape SHAPEA;
+    private final   VoxelShape SHAPEB;
+
     public TwoDirectionShapedBlock(double d1,double d2,double d3,double d4,double d5,double d6,Properties p_i48377_1_) {
         super(p_i48377_1_);
        SHAPEA= Block.box(d1, d2, d3, d4, d5, d6);

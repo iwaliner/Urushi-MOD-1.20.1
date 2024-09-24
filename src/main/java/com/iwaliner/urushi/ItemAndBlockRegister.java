@@ -374,6 +374,8 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> red_urushi_framed_wattle_and_daub =B("red_urushi_framed_wattle_and_daub","s",-1,() -> {return new FramedBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRASS).strength(0.5F, 2.0F));});
     public static final RegistryObject<Block> black_urushi_framed_wattle_and_daub =B("black_urushi_framed_wattle_and_daub","s",-1,() -> {return new FramedBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRASS).strength(0.5F, 2.0F));});
     public static final RegistryObject<Block> sand_coast =B("sand_coast","s",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(0.5F, 3.0F).sound(SoundType.SAND));});
+    public static final RegistryObject<Block> sand_coast_slab =B("sand_coast_slab","s",-1,() -> {return new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(0.5F, 3.0F).sound(SoundType.SAND));});
+    public static final RegistryObject<Block> sand_coast_stairs =B("sand_coast_stairs","s",-1,() -> {return new StairBlock(sand_coast.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(0.5F, 3.0F).sound(SoundType.SAND));});
     public static final RegistryObject<Block> oak_framed_sand_coast =B("oak_framed_sand_coast","s",-1,() -> {return new FramedBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SAND).strength(0.5F, 2.0F));});
     public static final RegistryObject<Block> spruce_framed_sand_coast =B("spruce_framed_sand_coast","s",-1,() -> {return new FramedBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SAND).strength(0.5F, 2.0F));});
     public static final RegistryObject<Block> birch_framed_sand_coast =B("birch_framed_sand_coast","s",-1,() -> {return new FramedBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SAND).strength(0.5F, 2.0F));});
@@ -397,8 +399,10 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> hiwadabuki_roof_45 =B("hiwadabuki_roof_45","h",-1,() -> {return new FlammableRoof45Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(0.2F, 3.0F).sound(SoundType.GRASS));});
     public static final RegistryObject<Block> hiwadabuki_roof_225 =B("hiwadabuki_roof_225","h",-1,() -> {return new FlammableRoof225Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(0.2F, 3.0F).sound(SoundType.GRASS));});
     public static final RegistryObject<Block> green_tatami =B("green_tatami","h",-1,() -> {return new FlammableRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
+    public static final RegistryObject<Block> green_tatami_slab =B("green_tatami_slab","h",-1,() -> {return new FlammableHorizonalRotateSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
     public static final RegistryObject<Block> green_tatami_carpet =B("green_tatami_carpet","h",-1,() -> {return new FlammableTwoDirectionShapedBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noCollission());});
     public static final RegistryObject<Block> brown_tatami =B("brown_tatami","h",-1,() -> {return new FlammableRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
+    public static final RegistryObject<Block> brown_tatami_slab =B("brown_tatami_slab","h",-1,() -> {return new FlammableHorizonalRotateSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
     public static final RegistryObject<Block> brown_tatami_carpet =B("brown_tatami_carpet","h",-1,() -> {return new FlammableTwoDirectionShapedBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noOcclusion());});
     public static final RegistryObject<Block> goldfish_bowl =B("goldfish_bowl","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(0.2F, 10.0F).sound(SoundType.GLASS).noOcclusion());});
     public static final RegistryObject<Block> stone_trapdoor =B("stone_trapdoor","p",-1,() -> {return new TrapDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1.0F, 10.0F).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).requiresCorrectToolForDrops(), BlockSetType.STONE);});
@@ -1176,24 +1180,37 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> water_element_hokora =BM("water_element_hokora","p",-1,() -> {return new HokoraBlock(ElementType.WaterElement,"water_hokora",BlockBehaviour.Properties.of().mapColor(MapColor.EMERALD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
 
     public static final RegistryObject<Item> amber_igniter =ITEMS.register("amber_igniter", () -> {return new AmberIgniterItem((new Item.Properties()).durability(512));});
-//    public static final RegistryObject<Item> freezing_jufu =ITEMS.register("freezing_jufu", () -> {return new JufuItem(ElementType.WaterElement,50,"freezing_jufu",(new Item.Properties()).tab(ModCoreUrushi.UrushiMagicTab));});
-//    public static final RegistryObject<Item> knockback_jufu =ITEMS.register("knockback_jufu", () -> {return new JufuItem(ElementType.WoodElement,50,"knockback_jufu",(new Item.Properties()).tab(ModCoreUrushi.UrushiMagicTab));});
-//    public static final RegistryObject<Item> jump_jufu =ITEMS.register("jump_jufu", () -> {return new JufuItem(ElementType.WoodElement,50,"jump_jufu",(new Item.Properties()).tab(ModCoreUrushi.UrushiMagicTab));});
-//    public static final RegistryObject<Item> liana_jufu =ITEMS.register("liana_jufu", () -> {return new JufuItem(ElementType.WoodElement,50,"liana_jufu",(new Item.Properties()).tab(ModCoreUrushi.UrushiMagicTab));});
-//    public static final RegistryObject<Item> growing_jufu =ITEMS.register("growing_jufu", () -> {return new JufuItem(ElementType.EarthElement,50,"growing_jufu",(new Item.Properties()).tab(ModCoreUrushi.UrushiMagicTab));});
-//    public static final RegistryObject<Item> mountain_creation_jufu =ITEMS.register("mountain_creation_jufu", () -> {return new JufuItem(ElementType.EarthElement,50,"mountain_creation_jufu",(new Item.Properties()).tab(ModCoreUrushi.UrushiMagicTab));});
-//    public static final RegistryObject<Item> fluid_erasion_jufu =ITEMS.register("fluid_erasion_jufu", () -> {return new JufuItem(ElementType.EarthElement,50,"fluid_erasion_jufu",(new Item.Properties()).tab(ModCoreUrushi.UrushiMagicTab));});
-//    public static final RegistryObject<Block> freezing_display =BLOCKS.register("freezing_display",() -> {return new Block(BlockBehaviour.Properties.of(Material.ICE).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).noLootTable());});
-//    public static final RegistryObject<Block> wood_element_puzzle_block =BN("wood_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-//    public static final RegistryObject<Block> fire_element_puzzle_block =BN("fire_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-//    public static final RegistryObject<Block> earth_element_puzzle_block =BN("earth_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-//    public static final RegistryObject<Block> metal_element_puzzle_block =BN("metal_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-//    public static final RegistryObject<Block> random_element_puzzle_block =BN("random_element_puzzle_block","p",-1,() -> {return new RandomElementPuzzleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-//    public static final RegistryObject<Block> water_element_puzzle_block =BN("water_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-//    public static final RegistryObject<Block> element_puzzle_controller_A =BN("element_puzzle_controller_a","p",-1,() -> {return new ElementPuzzleControllerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-//    public static final RegistryObject<Block> element_puzzle_controller_B =BN("element_puzzle_controller_b","p",-1,() -> {return new ElementPuzzleControllerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-//    public static final RegistryObject<Block> element_puzzle_controller_C =BN("element_puzzle_controller_c","p",-1,() -> {return new ElementPuzzleControllerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
-   public static final RegistryObject<Item> empty_bamboo_cup =ITEMS.register("bamboo_cup", () -> {return new EmptyBambooCup((new Item.Properties()));});
+    public static final RegistryObject<Item> knockback_jufu_stamp =IStamp("knockback_jufu_stamp");
+    public static final RegistryObject<Item> jump_jufu_stamp =IStamp("jump_jufu_stamp");
+    public static final RegistryObject<Item> liana_jufu_stamp =IStamp("liana_jufu_stamp");
+    public static final RegistryObject<Item> lava_generation_jufu_stamp =IStamp("lava_generation_jufu_stamp");
+    public static final RegistryObject<Item> growth_jufu_stamp =IStamp("growth_jufu_stamp");
+    public static final RegistryObject<Item> mountain_creation_jufu_stamp =IStamp("mountain_creation_jufu_stamp");
+    public static final RegistryObject<Item> fluid_erasion_jufu_stamp =IStamp("fluid_erasion_jufu_stamp");
+    public static final RegistryObject<Item> spike_jufu_stamp =IStamp("spike_jufu_stamp");
+    public static final RegistryObject<Item> freezing_jufu_stamp =IStamp("freezing_jufu_stamp");
+    public static final RegistryObject<Item> knockback_jufu =IJufu("knockback_jufu",ElementType.WoodElement,50,1);
+    public static final RegistryObject<Item> jump_jufu =IJufu("jump_jufu",ElementType.WoodElement,50,1);
+    public static final RegistryObject<Item> liana_jufu =IJufu("liana_jufu",ElementType.WoodElement,50,1);
+    public static final RegistryObject<Item> lava_generation_jufu =IJufu("lava_generation_jufu",ElementType.FireElement,50,1);
+    public static final RegistryObject<Item> growing_jufu =IJufu("growth_jufu",ElementType.EarthElement,50,1);
+    public static final RegistryObject<Item> mountain_creation_jufu =IJufu("mountain_creation_jufu",ElementType.EarthElement,50,2);
+    public static final RegistryObject<Item> fluid_erasion_jufu =IJufu("fluid_erasion_jufu",ElementType.EarthElement,50,1);
+    public static final RegistryObject<Item> spike_jufu =IJufu("spike_jufu",ElementType.MetalElement,50,2);
+    public static final RegistryObject<Item> freezing_jufu =IJufu("freezing_jufu",ElementType.WaterElement,50,1);
+    public static final RegistryObject<Block> freezing_display =BLOCKS.register("freezing_display",() -> {return new Block(BlockBehaviour.Properties.of().noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).noLootTable());});
+    public static final RegistryObject<Block> spike =BLOCKS.register("spike",() -> {return new SpikeBlock(BlockBehaviour.Properties.of().noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).noLootTable().noCollission());});
+    public static final RegistryObject<Block> wood_element_puzzle_block =BN("wood_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Block> fire_element_puzzle_block =BN("fire_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Block> earth_element_puzzle_block =BN("earth_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Block> metal_element_puzzle_block =BN("metal_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Block> random_element_puzzle_block =BN("random_element_puzzle_block","p",-1,() -> {return new RandomElementPuzzleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Block> water_element_puzzle_block =BN("water_element_puzzle_block","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Block> element_puzzle_controller_A =BN("element_puzzle_controller_a","p",-1,() -> {return new ElementPuzzleControllerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Block> element_puzzle_controller_B =BN("element_puzzle_controller_b","p",-1,() -> {return new ElementPuzzleControllerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Block> element_puzzle_controller_C =BN("element_puzzle_controller_c","p",-1,() -> {return new ElementPuzzleControllerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(1F, 10.0F).sound(SoundType.AMETHYST).noLootTable());});
+    public static final RegistryObject<Item> visualization_goggles =ITEMS.register("visualization_goggles", () -> {return new VisualizationGogglesItem("visualization_goggles",(new Item.Properties()).stacksTo(1));});
+    public static final RegistryObject<Item> empty_bamboo_cup =ITEMS.register("bamboo_cup", () -> {return new EmptyBambooCup((new Item.Properties()));});
     public static final RegistryObject<Item> water_bamboo_cup =ITEMS.register("water_bamboo_cup", () -> {return new FilledBambooCup((new Item.Properties()).craftRemainder(empty_bamboo_cup.get()));});
     public static final RegistryObject<Item> milk_bamboo_cup =ITEMS.register("milk_bamboo_cup", () -> {return new FilledBambooCup((new Item.Properties()).craftRemainder(empty_bamboo_cup.get()));});
     public static final RegistryObject<Item> soy_source_cup =ITEMS.register("soy_source_bamboo_cup", () -> {return new FilledBambooCup((new Item.Properties()).craftRemainder(empty_bamboo_cup.get()));});
@@ -1216,6 +1233,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(Item.byBlock(ItemAndBlockRegister.kasuga_lantern.get())))
             .title(Component.translatable("itemGroup.urushi"))
+            .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
             .displayItems((parameters, output) -> {
                 for(int i=0;i<ModCoreUrushi.urushiTabContents.size();i++) {
                     output.accept(ModCoreUrushi.urushiTabContents.get(i).get());
@@ -1226,7 +1244,7 @@ public class ItemAndBlockRegister {
                 output.accept(light_blue_cushion.get());
                 output.accept(yellow_cushion.get());
                 output.accept(lime_cushion.get());
-                output.accept(pink_cushion.get());
+              output.accept(pink_cushion.get());
                 output.accept(gray_cushion.get());
                 output.accept(light_gray_cushion.get());
                 output.accept(cyan_cushion.get());
@@ -1242,7 +1260,7 @@ public class ItemAndBlockRegister {
                 output.accept(hot_spring_bucket.get());
                 output.accept(invisible_button_item.get());
                 output.accept(invisible_lever_item.get());
-                output.accept(invisible_pressure_plate_item.get());
+                  output.accept(invisible_pressure_plate_item.get());
                 output.accept(shiitake_goggles.get());
                 output.accept(lantern_plant_torch_item.get());
                 output.accept(empty_bamboo_cup.get());
@@ -1351,6 +1369,7 @@ public class ItemAndBlockRegister {
             .title(Component.translatable("itemGroup.urushi_magic"))
             .icon(() -> new ItemStack(ItemAndBlockRegister.earth_element_magatama.get()))
             .displayItems((parameters, output) -> {
+                output.accept(visualization_goggles.get());
                 for(int i=0;i<ModCoreUrushi.urushiMagicTabContents.size();i++) {
                     output.accept(ModCoreUrushi.urushiMagicTabContents.get(i).get());
                 }
@@ -1395,6 +1414,7 @@ public class ItemAndBlockRegister {
                 output.accept(metal_amber.get());
                 output.accept(water_amber.get());
                 output.accept(amber_igniter.get());
+                output.accept(shide.get());
             })
             .build());
 
@@ -1467,6 +1487,20 @@ public class ItemAndBlockRegister {
     private static <T extends Item> RegistryObject<T> IM(String name) {
         RegistryObject<Item> object = ITEMS.register(name, ()-> {
             return new Item((new Item.Properties()));
+        });
+        ModCoreUrushi.urushiMagicTabContents.add(Objects.requireNonNull(object));
+        return (RegistryObject<T>) object;
+    }
+    private static <T extends Item> RegistryObject<T> IStamp(String name) {
+        RegistryObject<Item> object = ITEMS.register(name, ()-> {
+            return new StampItem((new Item.Properties()).stacksTo(1));
+        });
+        ModCoreUrushi.urushiMagicTabContents.add(Objects.requireNonNull(object));
+        return (RegistryObject<T>) object;
+    }
+    private static <T extends Item> RegistryObject<T> IJufu(String name,ElementType elementType,int cost,int textRow) {
+        RegistryObject<Item> object = ITEMS.register(name,()-> {
+            return new JufuItem(elementType,cost,textRow,name,(new Item.Properties()));
         });
         ModCoreUrushi.urushiMagicTabContents.add(Objects.requireNonNull(object));
         return (RegistryObject<T>) object;

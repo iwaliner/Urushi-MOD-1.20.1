@@ -2,6 +2,7 @@ package com.iwaliner.urushi.block;
 
 import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.blockentity.AbstractReiryokuStorableBlockEntity;
+import com.iwaliner.urushi.blockentity.SenryoubakoBlockEntity;
 import com.iwaliner.urushi.blockentity.TankBlockEntity;
 import com.iwaliner.urushi.item.AbstractMagatamaItem;
 import com.iwaliner.urushi.util.ElementType;
@@ -10,28 +11,43 @@ import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.util.interfaces.ElementBlock;
 import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
- 
+
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.world.Container;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.boss.wither.WitherBoss;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.item.PrimedTnt;
+import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.WitherSkull;
+import net.minecraft.world.entity.vehicle.MinecartTNT;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.entity.BeehiveBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -94,17 +110,20 @@ public class TankBlock extends BaseEntityBlock implements Tiered, ElementBlock {
     }
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
-        if (level.getBlockEntity(pos) instanceof TankBlockEntity&&!player.isSuppressingBounce()) {
+        if (level.getBlockEntity(pos) instanceof TankBlockEntity) {
             TankBlockEntity blockEntity = (TankBlockEntity) level.getBlockEntity(pos);
             ItemStack stack=player.getItemInHand(hand);
             if(stack.getItem() instanceof AbstractMagatamaItem){
+
                 int blockEntityStoredReiryoku=blockEntity.getStoredReiryoku();
+                int blockEntityCapacity=blockEntity.getReiryokuCapacity();
                 int magatamaStoredReiryoku=ElementUtils.getStoredReiryokuAmount(stack);
                 int magatamaCapacity=ElementUtils.getReiryokuCapacity(stack);
                 int i1=magatamaCapacity-magatamaStoredReiryoku;
                 ElementType magatamaElementType=((AbstractMagatamaItem) stack.getItem()).getElementType();
                 ElementType tankElementType=blockEntity.getStoredElementType();
                 if(magatamaElementType==tankElementType) {
+                    if(!player.isSuppressingBounce()) {
                     if (blockEntityStoredReiryoku >= i1) {
                         ElementUtils.increaseStoredReiryokuAmount(stack, i1);
                         blockEntity.decreaseStoredReiryoku(i1);
@@ -114,8 +133,16 @@ public class TankBlock extends BaseEntityBlock implements Tiered, ElementBlock {
                         blockEntity.decreaseStoredReiryoku(blockEntityStoredReiryoku);
                         return InteractionResult.SUCCESS;
                     }
+                }else if(magatamaStoredReiryoku>=100){
+                        if(blockEntity.canAddReiryoku(100)){
+                            blockEntity.addStoredReiryoku(100);
+                            ElementUtils.increaseStoredReiryokuAmount(stack,-100);
+                            return InteractionResult.SUCCESS;
+                        }
+
+                    }
                 }
-            }else {
+            }else if(!player.isSuppressingBounce()) {
 
                 if (!level.isClientSide()) {
                     player.displayClientMessage(ElementUtils.getStoredReiryokuDisplayMessage(blockEntity.getStoredReiryoku(), blockEntity.getReiryokuCapacity(), blockEntity.getStoredElementType()), true);
@@ -137,5 +164,26 @@ public class TankBlock extends BaseEntityBlock implements Tiered, ElementBlock {
         }
         return 0;
     }
+    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+        if (!level.isClientSide && player.isCreative()) {
+            BlockEntity blockentity = level.getBlockEntity(pos);
+            if (blockentity instanceof TankBlockEntity) {
+                ItemStack itemstack = new ItemStack(this);
+                BlockItem.setBlockEntityData(itemstack, BlockEntityRegister.Tank.get(), blockentity.saveWithoutMetadata());
+                ItemEntity itementity = new ItemEntity(level, (double) pos.getX(), (double) pos.getY(), (double) pos.getZ(), itemstack);
+                itementity.setDefaultPickUpDelay();
+                level.addFreshEntity(itementity);
+            }
+            super.playerWillDestroy(level, pos, state, player);
+        }
+    }
+    @Override
+    public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos, Player player) {
+        ItemStack stack= super.getCloneItemStack(state, target, level, pos, player);
+        level.getBlockEntity(pos, BlockEntityRegister.Tank.get()).ifPresent((blockEntity) -> {
+                  BlockItem.setBlockEntityData(stack, BlockEntityRegister.Tank.get(), blockEntity.saveWithoutMetadata());
+                });
+        return stack;
+}
 
 }

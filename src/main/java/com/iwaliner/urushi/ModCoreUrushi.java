@@ -9,6 +9,7 @@ import com.iwaliner.urushi.recipe.SenbakokiRecipe;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
+import com.iwaliner.urushi.util.interfaces.ElementBlock;
 import com.iwaliner.urushi.util.interfaces.ElementItem;
 import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.ChatFormatting;
@@ -409,7 +410,7 @@ public class ModCoreUrushi {
                 }
                 case MetalElement -> {
                     item_id = "info.urushi.metal_element_item";
-                    chatformat_id = ChatFormatting.GRAY;
+                    chatformat_id = ChatFormatting.AQUA;
                 }
                 case WaterElement -> {
                     item_id = "info.urushi.water_element_item";
@@ -419,12 +420,46 @@ public class ModCoreUrushi {
                     return;
                 }
             }
-
+            tooltipList.add((Component.translatable(item_id)).withStyle(chatformat_id));
         }
         if (block instanceof Tiered tiered) {
             int tier = tiered.getTier();
             String tier_id = "info.urushi.tier" + tier;
             tooltipList.add((Component.translatable(tier_id)).withStyle(ChatFormatting.GRAY));
+
+        }
+        if(block instanceof ElementBlock){
+            CompoundTag tag=BlockItem.getBlockEntityData(stack);
+            if(tag==null){
+                return;
+            }
+
+            if(tag.contains("storedReiryoku")){
+                ElementType elementType = ((ElementBlock) block).getElementType();
+                String item_id;
+                ChatFormatting chatformat_id;
+                switch (elementType){
+                    case WoodElement -> {
+                        chatformat_id = ChatFormatting.DARK_GREEN;
+                    }
+                    case FireElement -> {
+                        chatformat_id = ChatFormatting.DARK_RED;
+                    }
+                    case EarthElement -> {
+                        chatformat_id = ChatFormatting.GOLD;
+                    }
+                    case MetalElement -> {
+                        chatformat_id = ChatFormatting.AQUA;
+                    }
+                    case WaterElement -> {
+                        chatformat_id = ChatFormatting.DARK_PURPLE;
+                    }
+                    default -> {
+                        return;
+                    }
+                }
+                tooltipList.add((Component.translatable("info.urushi.stored_reiryoku_amount").append(" "+tag.getInt("storedReiryoku"))).withStyle(chatformat_id));
+            }
         }
         if(!ConfigUrushi.disableBlockElementDisplaying.get()){
             if (block != Blocks.AIR) {
@@ -443,7 +478,7 @@ public class ModCoreUrushi {
                 }
                 if (ElementUtils.isMetalElement(state)) {
                     tooltipList.add((Component.translatable("info.urushi.metal_element_block"))
-                            .withStyle(ChatFormatting.GRAY));
+                            .withStyle(ChatFormatting.AQUA));
                 }
                 if (ElementUtils.isWaterElement(state)) {
                     tooltipList.add((Component.translatable("info.urushi.water_element_block"))

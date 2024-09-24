@@ -14,32 +14,54 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class ElementParticle extends TextureSheetParticle {
+    private final double xStart;
+    private final double yStart;
+    private final double zStart;
     ElementParticle(ClientLevel level, double x, double y, double z, double xd, double yd, double zd, SpriteSet p_108353_) {
         super(level, x, y, z, xd, yd,zd);
         this.friction = 1F;
         this.xd = xd;
         this.yd = yd;
         this.zd = zd;
-        this.quadSize *= 0.8F;
-        this.lifetime = 80;
+        this.lifetime = 60;
+        this.xStart = this.x;
+        this.yStart = this.y;
+        this.zStart = this.z;
+        this.quadSize = 0.2F * (this.random.nextFloat() * 0.2F + 0.5F);
         this.setSpriteFromAge(p_108353_);
-
 
     }
 
-    @Override
+    public void move(double p_107560_, double p_107561_, double p_107562_) {
+        this.setBoundingBox(this.getBoundingBox().move(p_107560_, p_107561_, p_107562_));
+        this.setLocationFromBoundingbox();
+    }
+
+    public float getQuadSize(float p_107567_) {
+        float f = ((float)this.age + p_107567_) / (float)this.lifetime;
+        f = 1.0F - f;
+        f *= f;
+        f = 1.0F - f;
+        return this.quadSize * f;
+    }
+
+
+
     public void tick() {
-        super.tick();
-        BlockPos pos= BlockPos.containing(this.getPos());
-      BlockState state=level.getBlockState(pos);
-        VoxelShape shape= state.getCollisionShape(level,pos).optimize();
-        double corner=6D;
-        VoxelShape particleShape= Block.box(corner,corner,corner,16D-corner,16D-corner,16D-corner);
-        if(!this.removed &&Shapes.joinIsNotEmpty(shape,particleShape, BooleanOp.AND)){
+        this.xo = this.x;
+        this.yo = this.y;
+        this.zo = this.z;
+        if (this.age++ >= this.lifetime) {
             this.remove();
+        } else {
+            float f = ((float)this.age / (float)this.lifetime)*1.2f;
+            float f1 = -f + f * f * 2.0F;
+            float f2 = 1.0F - f1;
+            this.x = this.xStart + this.xd * (double)f2;
+            this.y = this.yStart + this.yd * (double)f2;
+            this.z = this.zStart + this.zd * (double)f2;
+            this.setPos(this.x, this.y, this.z);
         }
-
-
     }
 
 

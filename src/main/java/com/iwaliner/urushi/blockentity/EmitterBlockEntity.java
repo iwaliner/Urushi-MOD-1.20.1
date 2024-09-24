@@ -38,6 +38,7 @@ public class EmitterBlockEntity extends AbstractReiryokuStorableBlockEntity impl
         return 0;
     }
     public static   final double particleSpeed=0.2D;
+
     private double getParticleSpeed(){
         if(this.getTier()==1){
             return 0.2D;

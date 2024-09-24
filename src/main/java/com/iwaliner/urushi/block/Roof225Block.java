@@ -73,10 +73,7 @@ public class Roof225Block extends HorizonalRotateSlabBlock {
             }
         }
 
-        if (flag1 && blockstateClicked != null) {
-            return this.defaultBlockState().setValue(FACING, blockstateClicked.getValue(FACING)).setValue(TYPE, blockstateClicked.getValue(TYPE)).setValue(WATERLOGGED, Boolean.valueOf(false));
-
-        } else if (world.getBlockState(blockpos.below()).getBlock() instanceof SlabBlock && world.getBlockState(blockpos.below()).getValue(TYPE) != SlabType.DOUBLE) {
+         if (this.isSlab(world.getBlockState(blockpos.below())) && world.getBlockState(blockpos.below()).getValue(TYPE) != SlabType.DOUBLE) {
             if (world.getBlockState(blockpos.below()).getValue(TYPE) == SlabType.TOP) {
                 return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false));
             } else if (world.getBlockState(blockpos.below()).getValue(TYPE) == SlabType.BOTTOM) {
@@ -84,6 +81,11 @@ public class Roof225Block extends HorizonalRotateSlabBlock {
             } else {
                 return this.defaultBlockState();
             }
+        } else if(world.getBlockState(blockpos.below()).getCollisionShape(world,blockpos.below()).max(Direction.Axis.Y)==1D){
+             return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false));
+         }else if (flag1 && blockstateClicked != null) {
+            return this.defaultBlockState().setValue(FACING, blockstateClicked.getValue(FACING)).setValue(TYPE, blockstateClicked.getValue(TYPE)).setValue(WATERLOGGED, Boolean.valueOf(false));
+
         } else {
             BlockState blockstate1 = this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TYPE, SlabType.BOTTOM).setValue(WATERLOGGED, Boolean.valueOf(false));
             Direction direction2 = context.getClickedFace();
@@ -95,6 +97,12 @@ public class Roof225Block extends HorizonalRotateSlabBlock {
     @Override
     public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
         UrushiUtils.setInfo(list,"roof_225");
+    }
+    private boolean isSlab(BlockState state){
+        if(state.getBlock() instanceof SlabBlock||state.getBlock()instanceof HorizonalRotateSlabBlock){
+            return true;
+        }
+        return false;
     }
 
 }

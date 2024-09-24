@@ -98,9 +98,9 @@ public class ClientSetUp {
         });
         event.registerEntityRenderer(EntityRegister.Ghost.get(), GhostRenderer::new);
         event.registerEntityRenderer(EntityRegister.Cushion.get(), CushionRenderer::new);
-       /* event.registerEntityRenderer(EntityRegister.Jufu.get(),  (p_174088_) -> {
+        event.registerEntityRenderer(EntityRegister.Jufu.get(),  (p_174088_) -> {
             return new ThrownItemRenderer<>(p_174088_, 1.0F, true);
-        });*/
+        });
         event.registerEntityRenderer(EntityRegister.JufuEffectDisplay.get(), FallingBlockRenderer::new);
         event.registerEntityRenderer(EntityRegister.MisoSoupFoodEntity.get(), MisoSoupFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.CheeseGyudonFoodEntity.get(), CheeseGyudonFoodRenderer::new);

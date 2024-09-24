@@ -432,4 +432,45 @@ return false;
         }
         return Component.translatable(string).append(" " + current + " / " + max).withStyle(color);
     }
+    public static ParticleOptions getElementParticle(ElementType elementType){
+        switch (elementType){
+
+            case FireElement -> {
+                return ParticleRegister.FireElement.get();
+            }
+            case EarthElement -> {
+                return ParticleRegister.EarthElement.get();
+            }
+            case MetalElement -> {
+                return ParticleRegister.MetalElement.get();
+            }
+            case WaterElement -> {
+                return ParticleRegister.WaterElement.get();
+            }
+            default -> {
+               return ParticleRegister.WoodElement.get();
+            }
+        }
+    }
+
+    public static ParticleOptions getElementMediumParticle(ElementType elementType){
+        switch (elementType){
+
+            case FireElement -> {
+                return ParticleRegister.FireElementMedium.get();
+            }
+            case EarthElement -> {
+                return ParticleRegister.EarthElementMedium.get();
+            }
+            case MetalElement -> {
+                return ParticleRegister.MetalElementMedium.get();
+            }
+            case WaterElement -> {
+                return ParticleRegister.WaterElementMedium.get();
+            }
+            default -> {
+                return ParticleRegister.WoodElementMedium.get();
+            }
+        }
+    }
 }

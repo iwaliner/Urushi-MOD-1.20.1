@@ -198,29 +198,23 @@ public  class SanboBlockEntity extends BaseContainerBlockEntity implements World
 
 
     public boolean canTakeItemThroughFace(int i, ItemStack stack, Direction direction) {
-        if ( direction==Direction.UP) {
-            return false;
-        }
+        this.markUpdated();
         return true;
 
     }
 
     public int[] getSlotsForFace(Direction direction) {
-        if(direction==Direction.UP){
             return SLOTS_FOR_UP;
-        }else{
-            return SLOTS_FOR_UP_AND_SIDES;
-        }
+
     }
     net.minecraftforge.common.util.LazyOptional<? extends net.minecraftforge.items.IItemHandler>[] handlers =
-            net.minecraftforge.items.wrapper.SidedInvWrapper.create(this, Direction.UP, Direction.DOWN, Direction.NORTH);
+            net.minecraftforge.items.wrapper.SidedInvWrapper.create(this, Direction.UP, Direction.DOWN, Direction.NORTH,Direction.SOUTH,Direction.EAST,Direction.WEST);
     @Override
     public <T> net.minecraftforge.common.util.LazyOptional<T> getCapability(net.minecraftforge.common.capabilities.Capability<T> capability, @Nullable Direction facing) {
         if (!this.remove && facing != null && capability == net.minecraftforge.common.capabilities.ForgeCapabilities.ITEM_HANDLER) {
-            if (facing == Direction.UP)
-                return handlers[0].cast();
-            else
-                return handlers[1].cast();
+            this.markUpdated();
+            return handlers[0].cast();
+
         }
         return super.getCapability(capability, facing);
     }

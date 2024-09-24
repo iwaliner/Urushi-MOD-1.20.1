@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
+	"parent": "block/block",
+	"textures": {
+		"0": "urushi:block/spike",
+		"particle": "urushi:block/spike"
+	},
+	"elements": [
+		{
+			"from": [0, -10, 0],
+			"to": [0, 6, 16],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0, -10, 0], "rescale": true},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [16, -10, 0],
+			"to": [16, 6, 16],
+			"rotation": {"angle": -45, "axis": "y", "origin": [16, -10, 0], "rescale": true},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		}
+	]
+}

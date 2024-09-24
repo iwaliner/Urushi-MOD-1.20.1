@@ -177,7 +177,7 @@ public  class HokoraBlockEntity extends AbstractReiryokuStorableBlockEntity impl
     }
     private static Item getFuel(ElementType elementType){
         if(elementType==ElementType.WoodElement){
-            return ItemAndBlockRegister.matured_japanese_apricot_fruit.get();
+            return Items.SWEET_BERRIES;
         }else if(elementType==ElementType.FireElement){
             return Items.WHEAT;
         }else if(elementType==ElementType.EarthElement){

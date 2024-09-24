@@ -2,6 +2,7 @@ package com.iwaliner.urushi.block;
 import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.blockentity.SacredRockBlockEntity;
 import com.iwaliner.urushi.blockentity.ShichirinBlockEntity;
+import com.iwaliner.urushi.blockentity.TankBlockEntity;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
@@ -13,7 +14,9 @@ import net.minecraft.network.chat.Component;
  
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -29,6 +32,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
@@ -123,5 +127,26 @@ public class SacredRockBlock extends BaseEntityBlock implements Tiered, ElementB
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.FAIL;
+    }
+    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+        if (!level.isClientSide && player.isCreative()) {
+            BlockEntity blockentity = level.getBlockEntity(pos);
+            if (blockentity instanceof SacredRockBlockEntity) {
+                ItemStack itemstack = new ItemStack(this);
+                BlockItem.setBlockEntityData(itemstack, BlockEntityRegister.SacredRock.get(), blockentity.saveWithoutMetadata());
+                ItemEntity itementity = new ItemEntity(level, (double) pos.getX(), (double) pos.getY(), (double) pos.getZ(), itemstack);
+                itementity.setDefaultPickUpDelay();
+                level.addFreshEntity(itementity);
+            }
+            super.playerWillDestroy(level, pos, state, player);
+        }
+    }
+    @Override
+    public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos, Player player) {
+        ItemStack stack= super.getCloneItemStack(state, target, level, pos, player);
+        level.getBlockEntity(pos, BlockEntityRegister.SacredRock.get()).ifPresent((blockEntity) -> {
+            BlockItem.setBlockEntityData(stack, BlockEntityRegister.SacredRock.get(), blockEntity.saveWithoutMetadata());
+        });
+        return stack;
     }
 }
