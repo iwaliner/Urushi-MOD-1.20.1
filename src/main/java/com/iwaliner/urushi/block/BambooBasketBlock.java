@@ -82,7 +82,7 @@ public class BambooBasketBlock extends BaseEntityBlock {
                         tileEntity.setItem(i, insertStack);
                         tileEntity.markUpdated();
                         heldStack.shrink(1);
-                        world.playSound((Player) null, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 30F, 10F);
+                        world.playSound(player, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1F, 1F);
                         return InteractionResult.SUCCESS;
                     }
                 }
@@ -98,7 +98,7 @@ public class BambooBasketBlock extends BaseEntityBlock {
                             if (!player.getInventory().add(pickedStack)) {
                             tileEntity.markUpdated();
                             player.drop(pickedStack, false);
-                            world.playSound((Player) null, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 30F, 10F);
+                            world.playSound(player, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1F, 1F);
 
                         }
                     }

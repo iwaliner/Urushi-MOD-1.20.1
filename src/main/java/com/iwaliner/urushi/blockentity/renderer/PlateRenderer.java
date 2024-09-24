@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.EntityType;
@@ -21,10 +22,11 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.Objects;
 
-@OnlyIn(Dist.CLIENT)
-public class PlateRenderer implements BlockEntityRenderer<PlateBlockEntity> {
 
-    public PlateRenderer(BlockEntityRendererProvider.Context p_173602_) {
+public class PlateRenderer implements BlockEntityRenderer<PlateBlockEntity> {
+    private final ItemRenderer itemRenderer;
+    public PlateRenderer(BlockEntityRendererProvider.Context context) {
+        itemRenderer=context.getItemRenderer();
     }
 
     public void render(PlateBlockEntity blockEntity, float f1, PoseStack poseStack, MultiBufferSource bufferSource, int i1, int i2) {
@@ -40,7 +42,7 @@ public class PlateRenderer implements BlockEntityRenderer<PlateBlockEntity> {
             poseStack.mulPose(Axis.YP.rotationDegrees(f));
             poseStack.mulPose(Axis.XP.rotationDegrees(90.0F));
             poseStack.scale(0.25F, 0.25F, 0.25F);
-            Minecraft.getInstance().getItemRenderer().renderStatic(itemstack, ItemDisplayContext.FIXED, i1, OverlayTexture.NO_OVERLAY, poseStack, bufferSource,blockEntity.getLevel(), i);
+            this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, i1, OverlayTexture.NO_OVERLAY, poseStack, bufferSource,blockEntity.getLevel(), i);
             poseStack.popPose();
         }
     }

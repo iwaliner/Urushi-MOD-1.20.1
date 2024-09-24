@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -17,10 +18,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
-public class ShichirinRenderer implements BlockEntityRenderer<ShichirinBlockEntity> {
 
-    public ShichirinRenderer(BlockEntityRendererProvider.Context p_173602_) {
+public class ShichirinRenderer implements BlockEntityRenderer<ShichirinBlockEntity> {
+    private final ItemRenderer itemRenderer;
+    public ShichirinRenderer(BlockEntityRendererProvider.Context context) {
+        itemRenderer=context.getItemRenderer();
     }
 
     public void render(ShichirinBlockEntity blockEntity, float f1, PoseStack poseStack, MultiBufferSource bufferSource, int i1, int i2) {
@@ -38,7 +40,7 @@ public class ShichirinRenderer implements BlockEntityRenderer<ShichirinBlockEnti
                 poseStack.mulPose(Axis.YP.rotationDegrees(f));
                 poseStack.mulPose(Axis.XP.rotationDegrees(90.0F));
                 poseStack.scale(0.5F, 0.5F, 0.5F);
-                Minecraft.getInstance().getItemRenderer().renderStatic(itemstack, ItemDisplayContext.FIXED, i1, OverlayTexture.NO_OVERLAY, poseStack, bufferSource,blockEntity.getLevel(), i);
+                this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, i1, OverlayTexture.NO_OVERLAY, poseStack, bufferSource,blockEntity.getLevel(), i);
                 poseStack.popPose();
             }
 

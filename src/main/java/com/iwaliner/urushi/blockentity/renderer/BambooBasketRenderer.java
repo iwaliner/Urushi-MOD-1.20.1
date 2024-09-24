@@ -11,6 +11,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemDisplayContext;
@@ -18,10 +19,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
-public class BambooBasketRenderer implements BlockEntityRenderer<BambooBasketBlockEntity> {
 
-    public BambooBasketRenderer(BlockEntityRendererProvider.Context p_173602_) {
+public class BambooBasketRenderer implements BlockEntityRenderer<BambooBasketBlockEntity> {
+    private final ItemRenderer itemRenderer;
+    public BambooBasketRenderer(BlockEntityRendererProvider.Context context) {
+        itemRenderer=context.getItemRenderer();
     }
 
     public void render(BambooBasketBlockEntity blockEntity, float f1, PoseStack poseStack, MultiBufferSource bufferSource, int i1, int i2) {
@@ -45,7 +47,7 @@ public class BambooBasketRenderer implements BlockEntityRenderer<BambooBasketBlo
                 }else{
                     poseStack.scale(0.3499F, 0.3499F, 0.3499F);
                 }
-                Minecraft.getInstance().getItemRenderer().renderStatic(blockEntity.getItem(i), ItemDisplayContext.FIXED, i1, OverlayTexture.NO_OVERLAY, poseStack, bufferSource,blockEntity.getLevel(), i);
+                this.itemRenderer.renderStatic(blockEntity.getItem(i), ItemDisplayContext.FIXED, i1, OverlayTexture.NO_OVERLAY, poseStack, bufferSource,blockEntity.getLevel(), i);
                 poseStack.popPose();
             }
         }
