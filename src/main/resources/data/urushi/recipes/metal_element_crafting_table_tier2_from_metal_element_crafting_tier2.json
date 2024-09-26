@@ -1,0 +1,75 @@
+{
+
+
+
+  "type": "urushi:metal_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:crafting_table"
+
+
+
+    },
+
+
+
+    {
+
+
+
+    "item": "minecraft:quartz"
+
+
+
+    },
+    {
+
+
+
+   "item": "urushi:metal_enhanced_jadeite_brick"
+
+
+
+    },
+    {
+
+
+
+  "item": "minecraft:quartz"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:metal_element_crafting_table_tier2"
+
+
+
+  },
+
+
+
+  "reiryoku": 20
+
+
+
+}

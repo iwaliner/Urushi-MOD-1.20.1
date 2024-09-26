@@ -1372,7 +1372,7 @@
 
     "info.urushi.overcooked": "焼きすぎ レベル",
 
-    "info.urushi.shichirin1": "琥珀の火打金で着火し、燃料を入れ、うちわで風を仰ごう！",
+    "info.urushi.shichirin1": "燃料(木炭、石炭、竹炭)を入れ、琥珀の火打金で着火し、うちわで風を仰ごう！",
 
     "info.urushi.shichirin2": "最初の5秒間の火力は調理の結果に影響しません",
 
@@ -2525,7 +2525,18 @@
    "block.urushi.brown_tatami_slab": "茶色の畳のハーフブロック",
    "block.urushi.sand_coast_slab": "砂壁のハーフブロック",
    "block.urushi.sand_coast_stairs": "砂壁の階段",
-   "block.urushi.kakuriyo_portal": "幽世への門"
+   "block.urushi.kakuriyo_portal": "幽世への門",
+   "block.urushi.element_puzzle_controller_a": "元素パズルの操作盤 (左)",
+   "block.urushi.element_puzzle_controller_b": "元素パズルの操作盤 (中)",
+   "block.urushi.element_puzzle_controller_c": "元素パズルの操作盤 (右)",
+   "block.urushi.random_element_puzzle_block": "ランダムな元素パズルのブロック",
+   "block.urushi.wood_element_puzzle_block": "木気の元素パズルのブロック",
+   "block.urushi.fire_element_puzzle_block": "火気の元素パズルのブロック",
+   "block.urushi.earth_element_puzzle_block": "土気の元素パズルのブロック",
+   "block.urushi.metal_element_puzzle_block": "金気の元素パズルのブロック",
+   "block.urushi.water_element_puzzle_block": "水気の元素パズルのブロック",
+   "block.urushi.freezing_display": "凍結の呪符による氷",
+   "block.urushi.spike": "棘ブロック"
    
    
 }

@@ -268,25 +268,26 @@ public class ModCoreUrushi {
     /**草を壊して種が出るように*/
     @SubscribeEvent
     public void GrassDropEvent(BlockEvent.BreakEvent event) {
+        if(!ConfigUrushi.disableCropDropsFromGrass.get()) {
         if (!event.getPlayer().isCreative() && (event.getLevel().getBlockState(event.getPos()).getBlock()==Blocks.FERN || event.getLevel().getBlockState(event.getPos()).getBlock()==Blocks.TALL_GRASS || event.getLevel().getBlockState(event.getPos()).getBlock()==Blocks.GRASS) ) {
-            float rand =( event.getLevel()).getRandom().nextFloat();
-            if(rand >= 0.3F){
+            float rand = (event.getLevel()).getRandom().nextFloat();
+            if (rand >= 0.3F) {
                 return;
             }
             Block given_item = null;
-            if(rand < 0.075F){
+            if (rand < 0.075F) {
                 given_item = ItemAndBlockRegister.rice_crop.get();
-            } else if(rand < 0.15F){
+            } else if (rand < 0.15F) {
                 given_item = ItemAndBlockRegister.soy_crop.get();
-            } else if(rand < 0.225F){
+            } else if (rand < 0.225F) {
                 given_item = ItemAndBlockRegister.azuki_crop.get();
-            } else if(rand < 0.3F){
+            } else if (rand < 0.3F) {
                 given_item = ItemAndBlockRegister.green_onion_crop.get();
             }
 
             ItemEntity entity = new ItemEntity((Level) event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(given_item));
             event.getLevel().addFreshEntity(entity);
-
+        }
         }
     }
 
@@ -357,20 +358,22 @@ public class ModCoreUrushi {
     /**砂が海岸や海系のバイオーム内で水に接すると塩を含んだ砂になる*/
     @SubscribeEvent
     public void SaltEvent(BlockEvent.NeighborNotifyEvent event) {
-        LevelAccessor level = event.getLevel();
-        BlockPos pos = event.getPos();
-        Holder<Biome> biome = level.getBiome(pos);
-        BlockState blockState = event.getState();
+        if(!ConfigUrushi.disableSaltAndSandGeneration.get()) {
+            LevelAccessor level = event.getLevel();
+            BlockPos pos = event.getPos();
+            Holder<Biome> biome = level.getBiome(pos);
+            BlockState blockState = event.getState();
 
-        if(!( biome.is(BiomeTags.IS_BEACH) || biome.is(BiomeTags.IS_OCEAN) || biome.is(BiomeTags.IS_DEEP_OCEAN) )){
-            return;
-        }
+            if (!(biome.is(BiomeTags.IS_BEACH) || biome.is(BiomeTags.IS_OCEAN) || biome.is(BiomeTags.IS_DEEP_OCEAN))) {
+                return;
+            }
 
-        if (blockState.getFluidState().is(Fluids.WATER)||blockState.getFluidState().is(Fluids.FLOWING_WATER)) {
+            if (blockState.getFluidState().is(Fluids.WATER) || blockState.getFluidState().is(Fluids.FLOWING_WATER)) {
 
-            if(pos.getY()>62&&level.getBlockState(pos.below()).getBlock() == Blocks.SAND){
-                level.setBlock(pos.below(), ItemAndBlockRegister.salt_and_sand.get().defaultBlockState(), 2);
-                level.playSound((Player) null, pos.below(), SoundEvents.SAND_BREAK, SoundSource.BLOCKS, 1.0F, 1F);
+                if (pos.getY() > 62 && level.getBlockState(pos.below()).getBlock() == Blocks.SAND) {
+                    level.setBlock(pos.below(), ItemAndBlockRegister.salt_and_sand.get().defaultBlockState(), 2);
+                    level.playSound((Player) null, pos.below(), SoundEvents.SAND_BREAK, SoundSource.BLOCKS, 1.0F, 1F);
+                }
             }
         }
     }

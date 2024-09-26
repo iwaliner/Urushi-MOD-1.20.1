@@ -2523,6 +2523,17 @@
    "block.urushi.brown_tatami_slab": "Brown Tatami Slab",
    "block.urushi.sand_coast_slab": "Sand Coast Slab",
    "block.urushi.sand_coast_stairs": "Sand Coast Stairs",
-   "block.urushi.kakuriyo_portal": "Kakuriyo Portal"
+   "block.urushi.kakuriyo_portal": "Kakuriyo Portal",
+   "block.urushi.element_puzzle_controller_a": "Element Puzzle Controller (Left)",
+   "block.urushi.element_puzzle_controller_b": "Element PUzzle Controller (Center)",
+   "block.urushi.element_puzzle_controller_c": "Element Puzzle Controller (Right)",
+   "block.urushi.random_element_puzzle_block": "Random Element Puzzle Block",
+   "block.urushi.wood_element_puzzle_block": "Wood Element Puzzle Block",
+   "block.urushi.fire_element_puzzle_block": "Fire Element Puzzle Block",
+   "block.urushi.earth_element_puzzle_block": "Earth Element Puzzle Block",
+   "block.urushi.metal_element_puzzle_block": "Metal Element Puzzle Block",
+   "block.urushi.water_element_puzzle_block": "Water Element Puzzle Block",
+   "block.urushi.freezing_display": "Ice from Freezing Jufu",
+   "block.urushi.spike": "Spike Block"
 
 }
