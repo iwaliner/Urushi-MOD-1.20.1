@@ -66,7 +66,7 @@ public class KakuriyoPortalBlock extends HorizonalRotateBlock implements SimpleW
                 ResourceKey<Level> resourcekey = level.dimension() == Level.OVERWORLD ? DimensionRegister.KakuriyoKey : Level.OVERWORLD;
                 ServerLevel serverlevel = ((ServerLevel)level).getServer().getLevel(resourcekey);
                 if (serverlevel == null) {
-                    ModCoreUrushi.logger.warn("Error 5");
+
                     return;
 
                 }
@@ -77,26 +77,26 @@ public class KakuriyoPortalBlock extends HorizonalRotateBlock implements SimpleW
                         for(int k=-5;k<5;k++) {
                             if (level.getBlockState(pos.offset(i, j, k)).getBlock() == ItemAndBlockRegister.kakuriyo_portal_core.get()&&resourcekey!=DimensionRegister.KakuriyoKey) {
                                 center = pos.offset(i, j-4, k);
-                                ModCoreUrushi.logger.warn("Error 4A");
+
                                 break outer;
                             }else if(level.getBlockState(pos.offset(i, j, k)).getBlock() == ItemAndBlockRegister.ghost_kakuriyo_portal_core.get()&&resourcekey==DimensionRegister.KakuriyoKey){
                                 center = pos.offset(i, j-4, k);
-                                ModCoreUrushi.logger.warn("Error 4B");
+
                                 break outer;
                             }
                         }
                     }
                 }
                 if(center==null){
-                    ModCoreUrushi.logger.warn("Error 1");
+
                     return;
                 }else {
                     entity.setDeltaMovement(Vec3.ZERO);
                     if (state.getValue(FACING).getAxis() == Direction.Axis.Z) {
-                        ModCoreUrushi.logger.warn("Error 2");
+
                         entity.teleportTo(center.getX() + 0.5D, center.getY() + 0.5D, center.getZ() - 0.5D);
                     }else{
-                        ModCoreUrushi.logger.warn("Error 3");
+
                         entity.teleportTo(center.getX() - 0.5D, center.getY() + 0.5D, center.getZ() + 0.5D);
 
                     }
@@ -109,19 +109,19 @@ public class KakuriyoPortalBlock extends HorizonalRotateBlock implements SimpleW
                     for(int i=0;i<300;i++){
                         if(serverlevel.getBlockState(upArrayPos.below(i)).is(TagUrushi.YOMI_STONE)||serverlevel.getBlockState(upArrayPos.below(i)).is(BlockTags.DIRT)){
                             surfaceY=upArrayPos.below(i).getY();
-                            ModCoreUrushi.logger.warn("Error 6");
+
                             break;
                         }
                     }
                     entity.teleportTo(entity.getX(), surfaceY+5, entity.getZ());
-                    ModCoreUrushi.logger.warn("Error 9");
+
 
                 }else{
                     int portalY=4000;
                     for(int i=0;i<300;i++){
                         if(serverlevel.getBlockState(upArrayPos.below(i)).getBlock() instanceof KakuriyoPortalCoreBlock||serverlevel.getBlockState(upArrayPos.below(i)).getBlock() instanceof GhostKakuriyoPortalCoreBlock){
                             portalY=upArrayPos.below(i).getY()-5;
-                            ModCoreUrushi.logger.warn("Error 8");
+
                             break;
                         }
                     }
@@ -131,12 +131,12 @@ public class KakuriyoPortalBlock extends HorizonalRotateBlock implements SimpleW
                             BlockState state1=level.getBlockState(pos1);
                             if(state1.isCollisionShapeFullBlock(level,pos)){
                                 portalY=i-5;
-                                ModCoreUrushi.logger.warn("Error 10");
+
                                 break;
                             }
                         }
                     }
-                    ModCoreUrushi.logger.warn("Error 11");
+
                     entity.teleportTo(entity.getX(), portalY, entity.getZ());
 
                 }

@@ -231,7 +231,13 @@ public class ClientSetUp {
 
 
 
-       ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.senryoubako.get()));
+        ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.senryoubako.get()));
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.additional_heart.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.shrimp.get());
+
+        ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.additional_heart);
+
+
         /**jsonファイルを自動生成するために開発環境のパスを登録*/
         if(ModCoreUrushi.isDebug) {
         FMLPaths.GAMEDIR.get();

@@ -51,6 +51,7 @@ public class JufuItem extends Item implements ElementItem {
             entity.setItem(new ItemStack(stack.getItem()));
             entity.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
             level.addFreshEntity(entity);
+            player.getCooldowns().addCooldown(this, 15);
          }
 
          player.awardStat(Stats.ITEM_USED.get(this));

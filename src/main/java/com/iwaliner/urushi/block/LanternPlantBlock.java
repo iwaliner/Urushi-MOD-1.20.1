@@ -74,7 +74,7 @@ public class LanternPlantBlock extends BushBlock {
         p_49915_.add(AGE,LIT);
     }
     protected boolean mayPlaceOn(BlockState state, BlockGetter p_51043_, BlockPos p_51044_) {
-        return state.getBlock() ==Blocks.SNOW_BLOCK||state.getBlock() ==Blocks.SNOW||state.is(BlockTags.DIRT) || state.is(Blocks.FARMLAND)||state.is(Blocks.STONE)||state.is(TagUrushi.YOMI_STONE)||state.getBlock() instanceof LanternPlantBlock;
+        return state.getBlock() ==Blocks.SNOW_BLOCK||state.is(BlockTags.DIRT) ||state.is(Blocks.STONE)||state.is(TagUrushi.YOMI_STONE)||state.getBlock() instanceof LanternPlantBlock;
     }
     public boolean canSurvive(BlockState p_51028_, LevelReader p_51029_, BlockPos p_51030_) {
         BlockPos blockpos = p_51030_.below();

@@ -29,9 +29,11 @@ import java.util.List;
 public class GhostBlock extends Block implements IGhostBlock {
 
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-    public GhostBlock(Properties p_49795_) {
+    public final boolean canChange;
+    public GhostBlock(boolean b,Properties p_49795_) {
         super(p_49795_);
         this.registerDefaultState(this.defaultBlockState().setValue(POWERED, Boolean.valueOf(false)));
+        this.canChange=b;
     }
     @Override
     public VoxelShape getVisualShape(BlockState p_60479_, BlockGetter p_60480_, BlockPos p_60481_, CollisionContext p_60482_) {
@@ -55,10 +57,10 @@ public class GhostBlock extends Block implements IGhostBlock {
     }
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext p_55659_) {
-        return this.defaultBlockState().setValue(POWERED, Boolean.valueOf(p_55659_.getLevel().hasNeighborSignal(p_55659_.getClickedPos())));
+        return this.defaultBlockState().setValue(POWERED, Boolean.valueOf(canChange? p_55659_.getLevel().hasNeighborSignal(p_55659_.getClickedPos()) : false));
     }
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos pos2, boolean p_55671_) {
-        if (!level.isClientSide) {
+        if (!level.isClientSide&&canChange) {
             boolean flag = state.getValue(POWERED);
 
             if (flag != level.hasNeighborSignal(pos)) {
@@ -94,7 +96,10 @@ public class GhostBlock extends Block implements IGhostBlock {
 
     @Override
     public VoxelShape getCollisionShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext context) {
-        if(state.getValue(POWERED)){
+        if(!canChange){
+            return Shapes.empty();
+        }
+        if(!state.getValue(POWERED)){
             return Shapes.block();
         }else{
             return Shapes.empty();
@@ -102,8 +107,10 @@ public class GhostBlock extends Block implements IGhostBlock {
     }
     @Override
     public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
-        UrushiUtils.setInfo(list,"ghost_block");
-        UrushiUtils.setInfo(list,"ghost_block2");
+       if(canChange) {
+           UrushiUtils.setInfo(list, "ghost_block");
+           UrushiUtils.setInfo(list, "ghost_block2");
+       }
     }
 
     /**falseだとモブが足場として誤認*/

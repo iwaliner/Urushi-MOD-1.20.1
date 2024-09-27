@@ -1,6 +1,7 @@
 package com.iwaliner.urushi.block;
 
 
+import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.blockentity.DoubledWoodenCabinetryBlockEntity;
 import com.iwaliner.urushi.blockentity.WoodenCabinetryBlockEntity;
 import net.minecraft.core.BlockPos;
@@ -15,6 +16,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
@@ -42,12 +44,19 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
         return true;
     }
     @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand p_60507_, BlockHitResult p_60508_) {
+    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult p_60508_) {
+
         if (level.isClientSide) {
             return InteractionResult.SUCCESS;
         } else {
             BlockEntity blockentity = level.getBlockEntity(pos);
             if (blockentity instanceof DoubledWoodenCabinetryBlockEntity) {
+                if(player.getItemInHand(hand).getItem()== Items.BARRIER&&player.isCreative()){
+                    for(int i=0;i< ModCoreUrushi.underDevelopmentList.size();i++){
+                        ((DoubledWoodenCabinetryBlockEntity) blockentity).setItem(i,new ItemStack(ModCoreUrushi.underDevelopmentList.get(i)));
+                    }
+                    return InteractionResult.SUCCESS;
+                }
                 player.openMenu((DoubledWoodenCabinetryBlockEntity)blockentity);
                 player.awardStat(Stats.OPEN_BARREL);
             }

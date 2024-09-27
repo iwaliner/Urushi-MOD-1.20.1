@@ -53,20 +53,9 @@ public class GhostKakuriyoPortalCoreBlock extends KakuriyoPortalCoreBlock implem
     }
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(FACING,context.getHorizontalDirection()).setValue(POWERED, Boolean.valueOf(context.getLevel().hasNeighborSignal(context.getClickedPos())));
+        return this.defaultBlockState().setValue(FACING,context.getHorizontalDirection()).setValue(POWERED, Boolean.valueOf(false));
     }
-    public void neighborChanged(BlockState p_55666_, Level p_55667_, BlockPos p_55668_, Block p_55669_, BlockPos p_55670_, boolean p_55671_) {
-        if (!p_55667_.isClientSide) {
-            boolean flag = p_55666_.getValue(POWERED);
-            if (flag != p_55667_.hasNeighborSignal(p_55668_)) {
-                //   if (flag) {
-                //       p_55667_.scheduleTick(p_55668_, this, 4);
-                //   } else {
-                p_55667_.setBlock(p_55668_, p_55666_.cycle(POWERED), 2);
-                // }
-            }
-        }
-    }
+
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_55673_) {
         p_55673_.add(POWERED,FACING);
     }
@@ -79,11 +68,7 @@ public class GhostKakuriyoPortalCoreBlock extends KakuriyoPortalCoreBlock implem
             return Shapes.empty();
         }
     }
-    @Override
-    public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
-        UrushiUtils.setInfo(list,"ghost_block");
-        UrushiUtils.setInfo(list,"ghost_block2");
-    }
+
     /**falseだとモブが足場として誤認*/
     @Override
     public boolean isPathfindable(BlockState p_60475_, BlockGetter p_60476_, BlockPos p_60477_, PathComputationType p_60478_) {

@@ -33,10 +33,10 @@ import java.util.List;
 
 public class KakejikuBlock extends HorizonalRotateBlock{
     public static final BooleanProperty BOTTOM = BooleanProperty.create("bottom");
-    protected static final VoxelShape SHAPEA = Block.box(15D, 2.0D, 0D, 16D, 16.0D, 16.0D);
-    protected static final VoxelShape SHAPEB = Block.box(0D, 2.0D, 15D, 16D, 16.0D, 16D);
-    protected static final VoxelShape SHAPEC = Block.box(0D, 2.0D, 0D, 1D, 16.0D, 16.0D);
-    protected static final VoxelShape SHAPED = Block.box(0D, 2.0D, 0D, 16D, 16.0D, 1D);
+    protected static final VoxelShape SHAPEA = Block.box(15D, 2.0D, 2D, 16D, 16.0D, 14.0D);
+    protected static final VoxelShape SHAPEB = Block.box(2D, 2.0D, 15D, 14D, 16.0D, 16D);
+    protected static final VoxelShape SHAPEC = Block.box(0D, 2.0D, 2D, 1D, 16.0D, 14.0D);
+    protected static final VoxelShape SHAPED = Block.box(2D, 2.0D, 0D, 14D, 16.0D, 1D);
 
     private Block nextBlock;
     public KakejikuBlock(Block b, Properties p_i48377_1_) {

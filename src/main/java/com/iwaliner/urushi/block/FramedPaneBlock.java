@@ -218,7 +218,7 @@ public class FramedPaneBlock extends HorizonalRotateBlock{
                     .setValue(UP, Boolean.valueOf(this.connectsTo(thisState, aState)))
                     .setValue(DOWN, Boolean.valueOf(this.connectsTo(thisState, bState)))
                     .setValue(FACING, p_196258_1_.getHorizontalDirection().getOpposite())
-                    .setValue(VARIANT, p_196258_1_.getPlayer().isSuppressingBounce())
+                    .setValue(VARIANT, Boolean.FALSE)
                     ;
 
             return newState;

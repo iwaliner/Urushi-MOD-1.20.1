@@ -221,7 +221,7 @@ try {
             .setValue(EAST, Boolean.valueOf(this.connectsTo(thisState, eState)))
             .setValue(UP, Boolean.valueOf(this.connectsTo(thisState, aState)))
             .setValue(DOWN, Boolean.valueOf(this.connectsTo(thisState, bState)))
-            .setValue(VARIANT, context.getPlayer().isSuppressingBounce())
+            .setValue(VARIANT, Boolean.FALSE)
             ;
 
     return newState;

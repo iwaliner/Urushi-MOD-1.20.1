@@ -3,9 +3,9 @@ package com.iwaliner.urushi;
 import com.iwaliner.urushi.block.*;
 import com.iwaliner.urushi.blockentity.ShichirinBlockEntity;
 
+import com.iwaliner.urushi.network.AdditionalHeartProvider;
 import com.iwaliner.urushi.network.FramedBlockTextureConnectionData;
 import com.iwaliner.urushi.network.FramedBlockTextureConnectionProvider;
-import com.iwaliner.urushi.recipe.SenbakokiRecipe;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
@@ -13,12 +13,7 @@ import com.iwaliner.urushi.util.interfaces.ElementBlock;
 import com.iwaliner.urushi.util.interfaces.ElementItem;
 import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.*;
-import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
-import net.minecraft.core.dispenser.OptionalDispenseItemBehavior;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -26,29 +21,22 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BiomeTags;
-import net.minecraft.tags.FluidTags;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.SimpleContainer;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.Fox;
 import net.minecraft.world.entity.animal.Squid;
-import net.minecraft.world.entity.item.FallingBlockEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.GameRules;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.DispenserBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.gameevent.GameEvent;
 
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
@@ -56,17 +44,12 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.LootTableLoadEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityEvent;
-import net.minecraftforge.event.entity.EntityMountEvent;
 import net.minecraftforge.event.entity.living.*;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
@@ -584,6 +567,14 @@ public class ModCoreUrushi {
         if(entity instanceof Squid){
        event.getDrops().add(new ItemEntity(entity.level(),entity.getX(),entity.getY(),entity.getZ(),
                new ItemStack(ItemAndBlockRegister.squid_sashimi.get())));
+        }else if(entity instanceof Player){
+            event.getEntity().getCapability(AdditionalHeartProvider.ADDITIONAL_HEART).ifPresent(data -> {
+                int additionalHeart=data.getAdditionalHeartValue();
+                if(additionalHeart>0){
+                    event.getDrops().add(new ItemEntity(entity.level(),entity.getX(),entity.getY(),entity.getZ(),
+                            new ItemStack(ItemAndBlockRegister.additional_heart.get(),additionalHeart)));
+                }
+            });
         }
     }
 
@@ -642,7 +633,28 @@ public class ModCoreUrushi {
     public void RegisterCapabilities(RegisterCapabilitiesEvent event) {
         event.register(FramedBlockTextureConnectionData.class);
     }
+    @SubscribeEvent
+    public void LivingDeatheVENT(LivingDeathEvent event) {
+        if(event.getEntity() instanceof Player){
+            event.getEntity().getCapability(AdditionalHeartProvider.ADDITIONAL_HEART).ifPresent(data -> {
+                ModCoreUrushi.logger.info("ssssss"+data.getAdditionalHeartValue());
+            });
 
+        }
+    }
+
+    @SubscribeEvent
+    public void RegisterAttributeCapabilitiesEvent(AttachCapabilitiesEvent<Entity> event) {
+        if(event.getObject() instanceof Player){
+            if(!event.getObject().getCapability(AdditionalHeartProvider.ADDITIONAL_HEART).isPresent()){
+                event.addCapability(new ResourceLocation(ModID,"additional_heart"),new AdditionalHeartProvider());
+            }
+            if(!event.getObject().getCapability(FramedBlockTextureConnectionProvider.FRAMED_BLOCK_TEXTURE_CONNECTION).isPresent()){
+                event.addCapability(new ResourceLocation(ModID,"framed_blocks_texture_connection"),new FramedBlockTextureConnectionProvider());
+            }
+
+        }
+    }
 
 
 }

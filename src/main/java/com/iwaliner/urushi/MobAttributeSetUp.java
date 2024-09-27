@@ -1,7 +1,10 @@
 package com.iwaliner.urushi;
 
 import com.iwaliner.urushi.entiity.GhostEntity;
+import com.iwaliner.urushi.network.AdditionalHeartProvider;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,7 +24,6 @@ public class MobAttributeSetUp {
                         .add(Attributes.FLYING_SPEED, 1.0D)
                         .add(Attributes.MOVEMENT_SPEED, 0.2D)
                         .build());
-
 
     }
 }

@@ -4,7 +4,7 @@
       "model": "urushi:block/ghost_black_kakuriyo_portal_frame"
     },
     "powered=true": {
-      "model": "urushi:block/black_kakuriyo_portal_frame"
+      "model": "urushi:block/ghost_black_kakuriyo_portal_frame"
     }
   }
 }

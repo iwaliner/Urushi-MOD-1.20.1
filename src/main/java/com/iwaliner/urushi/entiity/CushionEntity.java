@@ -149,7 +149,7 @@ public class CushionEntity extends Entity {
         if(player.getItemInHand(hand).getItem() instanceof CushionItem){
             CushionItem cushionItem= (CushionItem) player.getItemInHand(hand).getItem();
             CushionEntity entity = new CushionEntity(level(), this.getX(), this.getY(),  this.getZ());
-            entity.moveTo(this.getX(), this.getY()+0.2D,  this.getZ(),player.getXRot(), 0.0F);
+            entity.moveTo(this.getX(), this.getY()+0.2D,  this.getZ(),player.getYRot(), 0.0F);
             entity.setType(cushionItem.getColor());
             level().addFreshEntity(entity);
             player.getItemInHand(hand).shrink(1);

@@ -1,9 +1,9 @@
 {
   "variants": {
-    "powered=false": {
+    "powered=true": {
       "model": "urushi:block/ghost_wattle_and_daub"
     },
-    "powered=true": {
+    "powered=false": {
       "model": "urushi:block/wattle_and_daub"
     }
   }

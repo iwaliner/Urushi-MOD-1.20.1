@@ -63,7 +63,7 @@ public class KakuriyoTeleporter implements ITeleporter {
                     livingEntity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 20 * 20, 0), entity);
                 }
             }
-ModCoreUrushi.logger.info("A1");
+
         }else{
                 entity.teleportTo(center.getX()+0.5D,center.getY()+0.5D,center.getZ()-4.5D);
             int toSurfaceEach=0;
@@ -83,7 +83,7 @@ ModCoreUrushi.logger.info("A1");
                 level.setBlockAndUpdate(pos2.offset(0,-toSurfaceEach,0),ItemAndBlockRegister.rough_stone.get().defaultBlockState());
             }
             entity.teleportTo(entity.getX(),pos2.getY()-(double)toSurfaceEach+2.5D,entity.getZ());
-ModCoreUrushi.logger.info("A2");
+
         }
 
         return new PortalInfo(entity.position(), Vec3.ZERO, -180f, entity.getXRot());

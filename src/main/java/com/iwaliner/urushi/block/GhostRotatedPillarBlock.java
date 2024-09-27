@@ -27,9 +27,11 @@ import java.util.List;
 
 public class GhostRotatedPillarBlock extends RotatedPillarBlock  implements IGhostBlock {
     public static final BooleanProperty POWERED = BooleanProperty.create("powered");
-    public GhostRotatedPillarBlock(Properties p_55926_) {
+    public final boolean canChange;
+    public GhostRotatedPillarBlock(boolean b,Properties p_55926_) {
         super(p_55926_);
         this.registerDefaultState(this.defaultBlockState().setValue(POWERED, Boolean.valueOf(false)));
+        this.canChange=b;
 
     }
     @Override
@@ -54,10 +56,10 @@ public class GhostRotatedPillarBlock extends RotatedPillarBlock  implements IGho
     }
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext p_55659_) {
-        return this.defaultBlockState().setValue(POWERED, Boolean.valueOf(p_55659_.getLevel().hasNeighborSignal(p_55659_.getClickedPos()))).setValue(AXIS, p_55659_.getClickedFace().getAxis());
+        return this.defaultBlockState().setValue(POWERED, Boolean.valueOf(canChange? p_55659_.getLevel().hasNeighborSignal(p_55659_.getClickedPos()) : false)).setValue(AXIS, p_55659_.getClickedFace().getAxis());
     }
     public void neighborChanged(BlockState p_55666_, Level p_55667_, BlockPos p_55668_, Block p_55669_, BlockPos p_55670_, boolean p_55671_) {
-        if (!p_55667_.isClientSide) {
+        if (!p_55667_.isClientSide&&canChange) {
             boolean flag = p_55666_.getValue(POWERED);
             if (flag != p_55667_.hasNeighborSignal(p_55668_)) {
                 //   if (flag) {
@@ -74,7 +76,10 @@ public class GhostRotatedPillarBlock extends RotatedPillarBlock  implements IGho
 
     @Override
     public VoxelShape getCollisionShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext context) {
-        if(state.getValue(POWERED)){
+        if(!canChange){
+            return Shapes.empty();
+        }
+        if(!state.getValue(POWERED)){
             return Shapes.block();
         }else{
             return Shapes.empty();
@@ -82,8 +87,10 @@ public class GhostRotatedPillarBlock extends RotatedPillarBlock  implements IGho
     }
     @Override
     public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
-        UrushiUtils.setInfo(list,"ghost_block");
-        UrushiUtils.setInfo(list,"ghost_block2");
+        if(canChange) {
+            UrushiUtils.setInfo(list, "ghost_block");
+            UrushiUtils.setInfo(list, "ghost_block2");
+        }
     }
     /**falseだとモブが足場として誤認*/
     @Override

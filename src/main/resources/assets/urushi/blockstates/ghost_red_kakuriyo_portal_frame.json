@@ -1,28 +1,55 @@
-{
-  "variants": {
-    "axis=x,powered=false": {
-      "model": "urushi:block/ghost_red_kakuriyo_portal_frame_horizontal",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y,powered=false": {
-      "model": "urushi:block/ghost_red_kakuriyo_portal_frame"
-    },
-    "axis=z,powered=false": {
-      "model": "urushi:block/ghost_red_kakuriyo_portal_frame_horizontal",
-      "x": 90
-    },
-    "axis=x,powered=true": {
-      "model": "urushi:block/red_kakuriyo_portal_frame_horizontal",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y,powered=true": {
-      "model": "urushi:block/red_kakuriyo_portal_frame"
-    },
-    "axis=z,powered=true": {
-      "model": "urushi:block/red_kakuriyo_portal_frame_horizontal",
-      "x": 90
-    }
-  }
+{
+
+  "variants": {
+
+    "axis=x,powered=false": {
+
+      "model": "urushi:block/ghost_red_kakuriyo_portal_frame_horizontal",
+
+      "x": 90,
+
+      "y": 90
+
+    },
+
+    "axis=y,powered=false": {
+
+      "model": "urushi:block/ghost_red_kakuriyo_portal_frame"
+
+    },
+
+    "axis=z,powered=false": {
+
+      "model": "urushi:block/ghost_red_kakuriyo_portal_frame_horizontal",
+
+      "x": 90
+
+    },
+
+    "axis=x,powered=true": {
+
+      "model": "urushi:block/ghost_red_kakuriyo_portal_frame_horizontal",
+
+      "x": 90,
+
+      "y": 90
+
+    },
+
+    "axis=y,powered=true": {
+
+      "model": "urushi:block/ghost_red_kakuriyo_portal_frame"
+
+    },
+
+    "axis=z,powered=true": {
+
+      "model": "urushi:block/ghost_red_kakuriyo_portal_frame_horizontal",
+
+      "x": 90
+
+    }
+
+  }
+
 }

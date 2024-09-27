@@ -5,7 +5,8 @@
   "refmap": "urushi.refmap.json",
   "mixins": [
     "IronBarsMixin",
-    "ItemEntityMixin"
+    "ItemEntityMixin",
+    "WeatherCommandMixin"
   ],
   "client": [],
   "injectors": {
