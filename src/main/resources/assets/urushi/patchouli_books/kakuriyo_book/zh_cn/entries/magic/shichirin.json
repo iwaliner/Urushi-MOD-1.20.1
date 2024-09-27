@@ -1,5 +1,5 @@
 {
-  "name": "block.urushi.shichirin",
+  "name": "七厘烤炉",
   "category": "urushi:magic",
   "icon": "urushi:shichirin",
   "priority": true,
@@ -14,7 +14,7 @@
         "item": "urushi:shichirin",
         "count": 1
       },
-      "text": "使用七轮可以代替营火烤制食物，并使食物带有额外药水效果。$(br2)将煤炭、木炭等右击烤炉或通过漏斗从侧面输入到烤炉中之后，再使用打火琥珀点火。那之后，使用团扇调节烤炉的火力。"
+      "text": "使用七厘烤炉可以代替营火烤制食物，并使食物带有额外的药水效果。$(br2)将煤炭、木炭等右击烤炉或通过漏斗从侧面输入到烤炉中之后，再使用打火琥珀点火。那之后，使用团扇调节烤炉的火力。"
     },
      {
       "type": "text",
