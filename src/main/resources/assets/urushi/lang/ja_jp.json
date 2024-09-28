@@ -2514,7 +2514,7 @@
    "info.urushi.jump_jufu1": "モブを打ち上げて落下ダメージを与える",
    "info.urushi.liana_jufu1": "即座に壁を展開する",
    "info.urushi.lava_generation_jufu1": "着弾地点に溶岩を生み出す",
-   "info.urushi.growth_jufu1": "11×11×11の範囲に骨粉効果をもたらす",
+   "info.urushi.growth_jufu1": "11×11×11の範囲に骨粉効果をもたらす (草ブロックを除く)",
    "info.urushi.mountain_creation_jufu1": "土の塊を上空に生み出して落下させる",
    "info.urushi.mountain_creation_jufu2": "山をつくったり地形を弄ったりするときに便利",
    "info.urushi.fluid_erasion_jufu1": "11×11の範囲にある液体を除去する",

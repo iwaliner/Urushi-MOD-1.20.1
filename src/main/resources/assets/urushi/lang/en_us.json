@@ -2520,7 +2520,7 @@
    "info.urushi.growth_jufu1": "Give bonemeal effect to blocks in an area of 11×11×11.",
    "info.urushi.mountain_creation_jufu1": "Produce a sphere of Dirt and let it fall.",
    "info.urushi.mountain_creation_jufu2": "It is useful for creating mountains and manipulating the shape of the land.",
-   "info.urushi.fluid_erasion_jufu1": "Erase fluids in an area of 11 ×11.",
+   "info.urushi.fluid_erasion_jufu1": "Erase fluids in an area of 11 ×11. (except for Grass Block)",
    "info.urushi.spike_jufu1": "Generate metal spikes and hurts mobs.",
    "info.urushi.spike_jufu2": "If a player is within about 25 blocks of a spike, damage from the spike is treated as an attack by the player, and the player can get rare drops and experience.",
    "info.urushi.freezing_jufu1": "Holds mobs for 5 seconds.",

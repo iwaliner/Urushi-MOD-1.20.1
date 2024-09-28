@@ -111,14 +111,14 @@ public class JufuEntity extends ThrowableItemProjectile  {
                             BonemealableBlock bonemealableblock = (BonemealableBlock)state.getBlock();
                             if (bonemealableblock.isValidBonemealTarget(level(), pos.offset(i,j,k), state, level().isClientSide)) {
                                 if (level() instanceof ServerLevel) {
-                                    for(int p=0;p<3;p++) {
+
                                         //  if (bonemealableblock.isBonemealSuccess(level, level.random, pos.offset(i, j, k), state)) {
                                         bonemealableblock.performBonemeal((ServerLevel) level(), level().random, pos.offset(i, j, k), state);
                                         if (!level().isClientSide) {
                                             level().levelEvent(1505, pos.offset(i, j, k), 0);
                                             //      }
                                         }
-                                    }
+
                                 }
                             }
                             }
