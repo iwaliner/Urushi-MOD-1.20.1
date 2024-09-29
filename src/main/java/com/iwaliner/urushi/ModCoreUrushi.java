@@ -691,7 +691,7 @@ public class ModCoreUrushi {
 
             @Override
             public ArtifactVersion getVersion() {
-                return new DefaultArtifactVersion("6.1.0");
+                return new DefaultArtifactVersion("5.1.0");
             }
 
             @Override
@@ -717,7 +717,7 @@ public class ModCoreUrushi {
             @Override
             public Optional<URL> getUpdateURL() {
                 try {
-                    return Optional.of(new URL("https://github.com/iwaliner/Urushi-MOD-1.20.1/updates.json"));
+                    return Optional.of(new URL("https://raw.githubusercontent.com/iwaliner/Urushi-MOD-1.20.1/main/updates.json"));
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
