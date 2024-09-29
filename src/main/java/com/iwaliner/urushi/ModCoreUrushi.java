@@ -50,6 +50,7 @@ import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.living.*;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
@@ -57,15 +58,24 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.VersionChecker;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.forgespi.language.IConfigurable;
+import net.minecraftforge.forgespi.language.IModFileInfo;
+import net.minecraftforge.forgespi.language.IModInfo;
+import net.minecraftforge.forgespi.locating.ForgeFeature;
 import net.minecraftforge.registries.RegistryObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.maven.artifact.versioning.ArtifactVersion;
+import org.apache.maven.artifact.versioning.DefaultArtifactVersion;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.*;
 
 @Mod("urushi")
@@ -656,5 +666,89 @@ public class ModCoreUrushi {
         }
     }
 
+    @SubscribeEvent
+    public void PlayerLoggedInEvent(PlayerEvent.PlayerLoggedInEvent event) {
+        VersionChecker.CheckResult checkResult=VersionChecker.getResult(new IModInfo() {
+            @Override
+            public IModFileInfo getOwningFile() {
+                return null;
+            }
 
+            @Override
+            public String getModId() {
+                return ModCoreUrushi.ModID;
+            }
+
+            @Override
+            public String getDisplayName() {
+                return "Urushi";
+            }
+
+            @Override
+            public String getDescription() {
+                return null;
+            }
+
+            @Override
+            public ArtifactVersion getVersion() {
+                return new DefaultArtifactVersion("1.20.1-6.2.0");
+            }
+
+            @Override
+            public List<? extends ModVersion> getDependencies() {
+                return null;
+            }
+
+            @Override
+            public List<? extends ForgeFeature.Bound> getForgeFeatures() {
+                return null;
+            }
+
+            @Override
+            public String getNamespace() {
+                return null;
+            }
+
+            @Override
+            public Map<String, Object> getModProperties() {
+                return null;
+            }
+
+            @Override
+            public Optional<URL> getUpdateURL() {
+                try {
+                    return Optional.of(new URL("https://github.com/iwaliner/Urushi-MOD-1.20.1/updates.json"));
+                } catch (MalformedURLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            @Override
+            public Optional<URL> getModURL() {
+                return Optional.empty();
+            }
+
+            @Override
+            public Optional<String> getLogoFile() {
+                return Optional.empty();
+            }
+
+            @Override
+            public boolean getLogoBlur() {
+                return false;
+            }
+
+            @Override
+            public IConfigurable getConfig() {
+                return null;
+            }
+        });
+        event.getEntity().sendSystemMessage(Component.translatable("test"));
+        if(checkResult.status()== VersionChecker.Status.OUTDATED){
+            ModCoreUrushi.logger.info("outdated");
+            event.getEntity().sendSystemMessage(Component.translatable("outdated"));
+        }
+
+
+    }
 }
