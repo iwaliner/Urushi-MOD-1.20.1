@@ -2536,7 +2536,9 @@
    "block.urushi.metal_element_puzzle_block": "金気の元素パズルのブロック",
    "block.urushi.water_element_puzzle_block": "水気の元素パズルのブロック",
    "block.urushi.freezing_display": "凍結の呪符による氷",
-   "block.urushi.spike": "棘ブロック"
+   "block.urushi.spike": "棘ブロック",
+   "info.urushi.newer_version_released": "漆MODの新しいバージョンが公開されています！",
+   "info.urushi.newer_version_released_hover": "クリックしてCurseForge上の漆MODのページを開く"
    
    
 }

@@ -15,7 +15,10 @@ import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.*;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.chat.HoverEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -57,6 +60,7 @@ import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.VersionChecker;
 import net.minecraftforge.fml.common.Mod;
@@ -668,88 +672,15 @@ public class ModCoreUrushi {
 
     @SubscribeEvent
     public void PlayerLoggedInEvent(PlayerEvent.PlayerLoggedInEvent event) {
-        VersionChecker.CheckResult checkResult=VersionChecker.getResult(new IModInfo() {
-            @Override
-            public IModFileInfo getOwningFile() {
-                return null;
+        if(ConfigUrushi.noticeNewerVersion.get()) {
+            VersionChecker.CheckResult checkResult = VersionChecker.getResult(ModList.get().getModFileById(ModCoreUrushi.ModID).getMods().get(0));
+            if (checkResult.status() == VersionChecker.Status.OUTDATED) {
+                ModCoreUrushi.logger.info("Newer version of Urushi is released!");
+                Component component = ComponentUtils.wrapInSquareBrackets(Component.translatable("info.urushi.newer_version_released")).withStyle((p_214489_) -> {
+                    return p_214489_.withColor(ChatFormatting.GREEN).withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://legacy.curseforge.com/minecraft/mc-mods/urushi-mod")).withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("info.urushi.newer_version_released_hover")));
+                });
+                event.getEntity().sendSystemMessage(component);
             }
-
-            @Override
-            public String getModId() {
-                return ModCoreUrushi.ModID;
-            }
-
-            @Override
-            public String getDisplayName() {
-                return "Urushi";
-            }
-
-            @Override
-            public String getDescription() {
-                return null;
-            }
-
-            @Override
-            public ArtifactVersion getVersion() {
-                return new DefaultArtifactVersion("5.1.0");
-            }
-
-            @Override
-            public List<? extends ModVersion> getDependencies() {
-                return null;
-            }
-
-            @Override
-            public List<? extends ForgeFeature.Bound> getForgeFeatures() {
-                return null;
-            }
-
-            @Override
-            public String getNamespace() {
-                return null;
-            }
-
-            @Override
-            public Map<String, Object> getModProperties() {
-                return null;
-            }
-
-            @Override
-            public Optional<URL> getUpdateURL() {
-                try {
-                    return Optional.of(new URL("https://raw.githubusercontent.com/iwaliner/Urushi-MOD-1.20.1/main/updates.json"));
-                } catch (MalformedURLException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-
-            @Override
-            public Optional<URL> getModURL() {
-                return Optional.empty();
-            }
-
-            @Override
-            public Optional<String> getLogoFile() {
-                return Optional.empty();
-            }
-
-            @Override
-            public boolean getLogoBlur() {
-                return false;
-            }
-
-            @Override
-            public IConfigurable getConfig() {
-                return null;
-            }
-        });
-        event.getEntity().sendSystemMessage(Component.translatable("test"));
-        if(checkResult.status()== VersionChecker.Status.OUTDATED){
-            ModCoreUrushi.logger.info("outdated");
-            event.getEntity().sendSystemMessage(Component.translatable("outdated"));
-        }else{
-            ModCoreUrushi.logger.info("else");
-            event.getEntity().sendSystemMessage(Component.translatable("else"));
         }
 
 

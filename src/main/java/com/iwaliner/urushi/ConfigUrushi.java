@@ -18,6 +18,7 @@ public final class ConfigUrushi {
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableBlockElementDisplaying;
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableSaltAndSandGeneration;
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableCropDropsFromGrass;
+    public static final ForgeConfigSpec.ConfigValue<Boolean> noticeNewerVersion;
 
 
     static {
@@ -45,6 +46,7 @@ public final class ConfigUrushi {
         builder.pop();
         builder.push("world settings");
         generateKakuriyoPortalProbability=builder.comment("probability of kakuriyo portal generation (large number : rare)").define("kakuriyo portal(1～2147483647)",65);
+        noticeNewerVersion=builder.comment("Send a message when you use old version").define("version message (true/false)",true);
         builder.pop();
         spec=builder.build();
     }
