@@ -691,7 +691,7 @@ public class ModCoreUrushi {
 
             @Override
             public ArtifactVersion getVersion() {
-                return new DefaultArtifactVersion("1.20.1-6.2.0");
+                return new DefaultArtifactVersion("6.1.0");
             }
 
             @Override
@@ -747,6 +747,9 @@ public class ModCoreUrushi {
         if(checkResult.status()== VersionChecker.Status.OUTDATED){
             ModCoreUrushi.logger.info("outdated");
             event.getEntity().sendSystemMessage(Component.translatable("outdated"));
+        }else{
+            ModCoreUrushi.logger.info("else");
+            event.getEntity().sendSystemMessage(Component.translatable("else"));
         }
 
 
