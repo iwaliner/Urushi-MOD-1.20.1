@@ -37,7 +37,7 @@ public class KakuriyoPortalFeature extends Feature<KakuriyoPortalFeature.Configu
          BlockState Core = ItemAndBlockRegister.ghost_kakuriyo_portal_core.get().defaultBlockState();
 
         RandomSource random = p_159438_.random();
-        if(random.nextInt(ConfigUrushi.generateKakuriyoPortalProbability.get())!=0){
+        if(random.nextInt(ConfigUrushi.generateKakuriyoPortalProbability.get()*2)!=0){
             return false;
         }
         try {

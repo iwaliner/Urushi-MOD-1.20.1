@@ -1,0 +1,49 @@
+{
+
+
+
+  "type": "urushi:silkworm",
+
+
+
+  "ingredients": [
+
+
+{
+
+
+
+   "item": "urushi:silkworm"
+
+
+
+    },
+  {
+
+
+
+   "tag": "minecraft:saplings"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:cocoon"
+
+
+
+  }
+
+
+
+}

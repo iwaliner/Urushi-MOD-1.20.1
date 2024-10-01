@@ -1,0 +1,144 @@
+{
+  "multipart": [
+    {
+    "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm"
+      }
+    },
+    {
+    "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm",
+      "y": 270
+      }
+    },
+    {
+    "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm",
+      "y": 180
+      }
+    },
+    {
+    "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm",
+      "y": 90
+      }
+    },
+    {
+      "when": {
+        "leaves": "true","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_leaves"
+      }
+    },
+    {
+      "when": {
+        "leaves": "true","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_leaves",
+      "y": 270
+      }
+    },
+    {
+      "when": {
+       "leaves": "true","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_leaves",
+      "y": 180
+      }
+    },
+    {
+      "when": {
+        "leaves": "true","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_leaves",
+      "y": 90
+      }
+    },
+    {
+      "when": {
+        "cocoon": "true","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_cocoon"
+      }
+    },
+    {
+      "when": {
+        "cocoon": "true","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_cocoon",
+      "y": 270
+      }
+    },
+    {
+      "when": {
+       "cocoon": "true","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_cocoon",
+      "y": 180
+      }
+    },
+    {
+      "when": {
+        "cocoon": "true","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_cocoon",
+      "y": 90
+      }
+    },
+    {
+      "when": {
+        "silkworm": "true","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_silkworm"
+      }
+    },
+    {
+      "when": {
+        "silkworm": "true","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_silkworm",
+      "y": 270
+      }
+    },
+    {
+      "when": {
+        "silkworm": "true","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_silkworm",
+      "y": 180
+      }
+    },
+    {
+      "when": {
+        "silkworm": "true","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/silkworm_farm_silkworm",
+      "y": 90
+      }
+    }
+  ]
+}

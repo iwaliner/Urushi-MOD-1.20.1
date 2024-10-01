@@ -58,6 +58,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.event.level.BlockEvent;
+import net.minecraftforge.event.level.SleepFinishedTimeEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
@@ -567,14 +568,23 @@ public class ModCoreUrushi {
             event.getTable().addPool(LootPool.lootPool()
                     .add(LootItem.lootTableItem(ItemAndBlockRegister.sweetfish.get()).setWeight(25))
                     .add(LootItem.lootTableItem(ItemAndBlockRegister.tsuna.get()).setWeight(25)).build());
-        }else if(event.getName().equals(BuiltInLootTables.SIMPLE_DUNGEON)||
-                event.getName().equals(BuiltInLootTables.SPAWN_BONUS_CHEST)||
-                event.getName().equals(BuiltInLootTables.VILLAGE_PLAINS_HOUSE)){
+        }else if(event.getName().equals(BuiltInLootTables.SPAWN_BONUS_CHEST)) {
             event.getTable().addPool(LootPool.lootPool()
-                    .add(LootItem.lootTableItem(ItemAndBlockRegister.lacquer_sapling.get()).setWeight(30)).build());
+                    .add(LootItem.lootTableItem(ItemAndBlockRegister.lacquer_sapling.get()).setWeight(50)).add(LootItem.lootTableItem(ItemAndBlockRegister.silkworm.get()).setWeight(50)).build());
+        }   else if(event.getName().equals(BuiltInLootTables.SIMPLE_DUNGEON)||
+                    event.getName().equals(BuiltInLootTables.VILLAGE_PLAINS_HOUSE)){
+                event.getTable().addPool(LootPool.lootPool()
+                        .add(LootItem.lootTableItem(ItemAndBlockRegister.lacquer_sapling.get()).setWeight(30)).add(LootItem.lootTableItem(ItemAndBlockRegister.silkworm.get()).setWeight(30)).build());
+        }else if(event.getName().equals(BuiltInLootTables.JUNGLE_TEMPLE)||
+                event.getName().equals(BuiltInLootTables.IGLOO_CHEST)||
+                event.getName().equals(BuiltInLootTables.VILLAGE_SAVANNA_HOUSE)||
+                event.getName().equals(BuiltInLootTables.VILLAGE_TAIGA_HOUSE)||
+                event.getName().equals(BuiltInLootTables.VILLAGE_SNOWY_HOUSE)){
+            event.getTable().addPool(LootPool.lootPool()
+                    .add(LootItem.lootTableItem(ItemAndBlockRegister.silkworm.get()).setWeight(40)).build());
         }
     }
-    /**バニラのルートテーブルに内容を追加*/
+
     @SubscribeEvent
     public void EntityDropItemEvent(LivingDropsEvent event) {
         Entity entity = event.getEntity();
@@ -628,11 +638,17 @@ public class ModCoreUrushi {
         }
     }
     @SubscribeEvent
-    public void MorningEvent(PlayerWakeUpEvent event) {
-        if(event.getEntity().level().getGameRules().getBoolean(GameRules.RULE_DAYLIGHT)) {
-            for (ServerLevel serverlevel : Objects.requireNonNull(event.getEntity().level().getServer()).getAllLevels()) {
-                serverlevel.setDayTime((long) 24000);
+    public void MorningEvent(SleepFinishedTimeEvent event) {
+        if(event.getLevel()instanceof ServerLevel) {
+            ServerLevel serverLevel= (ServerLevel) event.getLevel();
+            if(serverLevel.dimension()==DimensionRegister.KakuriyoKey){
+                ModCoreUrushi.logger.info("sleepInKakuriyo");
+                long j = event.getLevel().getServer().getLevel(Level.OVERWORLD).getDayTime() + 24000L;
+                event.getLevel().getServer().getLevel(Level.OVERWORLD).setDayTime((long) j - j % 24000L);
             }
+            /*for (ServerLevel serverlevel : Objects.requireNonNull(event.getEntity().level().getServer()).getAllLevels()) {
+                serverlevel.setDayTime((long) 24000);
+            }*/
         }
     }
     @SubscribeEvent
@@ -646,15 +662,6 @@ public class ModCoreUrushi {
     @SubscribeEvent
     public void RegisterCapabilities(RegisterCapabilitiesEvent event) {
         event.register(FramedBlockTextureConnectionData.class);
-    }
-    @SubscribeEvent
-    public void LivingDeatheVENT(LivingDeathEvent event) {
-        if(event.getEntity() instanceof Player){
-            event.getEntity().getCapability(AdditionalHeartProvider.ADDITIONAL_HEART).ifPresent(data -> {
-                ModCoreUrushi.logger.info("ssssss"+data.getAdditionalHeartValue());
-            });
-
-        }
     }
 
     @SubscribeEvent
@@ -672,6 +679,11 @@ public class ModCoreUrushi {
 
     @SubscribeEvent
     public void PlayerLoggedInEvent(PlayerEvent.PlayerLoggedInEvent event) {
+        if(BedBlock.canSetSpawn(event.getEntity().level())){
+            ModCoreUrushi.logger.info("canSetSpawn");
+        }else{
+            ModCoreUrushi.logger.info("cannotSetSpawn");
+        }
         if(ConfigUrushi.noticeNewerVersion.get()) {
             VersionChecker.CheckResult checkResult = VersionChecker.getResult(ModList.get().getModFileById(ModCoreUrushi.ModID).getMods().get(0));
             if (checkResult.status() == VersionChecker.Status.OUTDATED) {
