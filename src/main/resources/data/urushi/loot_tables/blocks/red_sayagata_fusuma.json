@@ -1,0 +1,55 @@
+{
+
+  "type": "minecraft:block",
+
+  "pools": [
+
+    {
+
+      "rolls": 1,
+
+      "entries": [
+
+        {
+
+          "type": "minecraft:item",
+
+          "conditions": [
+
+            {
+
+              "condition": "minecraft:block_state_property",
+
+              "block": "urushi:red_sayagata_fusuma",
+
+              "properties": {
+
+                "half": "lower"
+
+              }
+
+            }
+
+          ],
+
+          "name": "urushi:red_sayagata_fusuma"
+
+        }
+
+      ],
+
+      "conditions": [
+
+        {
+
+          "condition": "minecraft:survives_explosion"
+
+        }
+
+      ]
+
+    }
+
+  ]
+
+}
