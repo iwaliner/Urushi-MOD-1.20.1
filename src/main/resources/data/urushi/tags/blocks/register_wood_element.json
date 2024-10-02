@@ -1,19 +1,38 @@
 {
   "replace": false,
   "values": [
-  "#minecraft:crops",
-  "#minecraft:logs",
-  "#minecraft:planks",
-  "#minecraft:saplings",
-  "#minecraft:leaves",
-  "#minecraft:flowers",
-  "#minecraft:tall_flowers",
-  "#minecraft:wooden_slabs",
-  "#minecraft:wooden_stairs",
-  "urushi:japanese_timber_bamboo",
-  "minecraft:red_mushroom",
-  "minecraft:brown_mushroom",
-  "minecraft:bamboo",
-  "minecraft:sugar_cane"
+    "#minecraft:crops",
+    "#minecraft:logs",
+    "#minecraft:planks",
+    "#minecraft:saplings",
+    "#minecraft:leaves",
+    "#minecraft:flowers",
+    "#minecraft:tall_flowers",
+    "#minecraft:wooden_slabs",
+    "#minecraft:wooden_stairs",
+    "urushi:japanese_timber_bamboo",
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:bamboo",
+    "minecraft:sugar_cane",
+
+    "#minecraft:wooden_fences",
+    "#minecraft:fence_gates",
+    "#forge:fences/wooden",
+    "#forge:fence_gates/wooden",
+    "#forge:fences/wooden",
+
+    "#minecraft:wodden_doors",
+
+    "#minecraft:wooden_doors",
+    "#minecraft:wooden_trapdoors",
+    "#minecraft:wooden_pressure_plates",
+    "#minecraft:wooden_buttons",
+    "#minecraft:bamboo_blocks",
+    "minecraft:bamboo_mosaic",
+    "minecraft:bamboo_mosaic_stairs",
+    "minecraft:bamboo_mosaic_slab",
+
+
   ]
 }
