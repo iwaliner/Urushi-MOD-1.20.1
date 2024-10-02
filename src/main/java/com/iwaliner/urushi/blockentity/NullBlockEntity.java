@@ -38,6 +38,8 @@ public  class NullBlockEntity extends BlockEntity {
 
     public static void tick(Level level, BlockPos pos, BlockState bs, NullBlockEntity blockEntity) {
         level.setBlock(pos, Blocks.AIR.defaultBlockState(),3);
+        level.removeBlockEntity(pos);
+        blockEntity.setRemoved();
     }
 
 

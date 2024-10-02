@@ -159,7 +159,7 @@ dependencies {
     // runtimeOnly(  fg.deobf("curse.maven:mekanism-268560:4385637"))
 
     runtimeOnly(  fg.deobf("curse.maven:jei-238222:5101366"))
-
+    compileOnly(  fg.deobf("curse.maven:jade-324717:5672013"))
     compileOnly(  fg.deobf("curse.maven:jei-238222:5101366"))
     runtimeOnly(  fg.deobf("curse.maven:tofucraftreload-317469:5394775"))
     runtimeOnly(  fg.deobf("curse.maven:effortless-building-302113:4979089"))

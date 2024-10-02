@@ -12,7 +12,10 @@ import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
+@OnlyIn(Dist.CLIENT)
 public class CushionRenderer<T extends CushionEntity> extends EntityRenderer<T> {
     private static final ResourceLocation[] TEXTURE_LOCATIONS = new ResourceLocation[]{new ResourceLocation("urushi:textures/entity/cushion/cushion_white.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_orange.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_magenta.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_light_blue.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_yellow.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_lime.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_pink.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_gray.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_silver.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_cyan.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_purple.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_blue.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_brown.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_green.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_red.png"), new ResourceLocation("urushi:textures/entity/cushion/cushion_black.png")};
 

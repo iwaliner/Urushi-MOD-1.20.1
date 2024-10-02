@@ -21,7 +21,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.Objects;
-
+@OnlyIn(Dist.CLIENT)
 
 public class PlateRenderer implements BlockEntityRenderer<PlateBlockEntity> {
     private final ItemRenderer itemRenderer;

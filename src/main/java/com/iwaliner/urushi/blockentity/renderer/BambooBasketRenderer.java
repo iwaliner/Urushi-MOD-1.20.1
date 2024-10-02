@@ -19,7 +19,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-
+@OnlyIn(Dist.CLIENT)
 public class BambooBasketRenderer implements BlockEntityRenderer<BambooBasketBlockEntity> {
     private final ItemRenderer itemRenderer;
     public BambooBasketRenderer(BlockEntityRendererProvider.Context context) {

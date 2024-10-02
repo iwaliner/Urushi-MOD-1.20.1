@@ -25,19 +25,25 @@ public  class RandomElementPuzzleBlockEntity extends BlockEntity {
             switch (level.getRandom().nextInt(5)) {
                 case 0:
                     level.setBlock(pos, ItemAndBlockRegister.wood_element_puzzle_block.get().defaultBlockState(), 3);
+                    level.removeBlockEntity(pos);
+                    blockEntity.setRemoved();
                     break;
                 case 1:
                     level.setBlock(pos, ItemAndBlockRegister.fire_element_puzzle_block.get().defaultBlockState(), 3);
-                    break;
+                    level.removeBlockEntity(pos);
+                    blockEntity.setRemoved();break;
                 case 2:
                     level.setBlock(pos, ItemAndBlockRegister.earth_element_puzzle_block.get().defaultBlockState(), 3);
-                    break;
+                    level.removeBlockEntity(pos);
+                    blockEntity.setRemoved();break;
                 case 3:
                     level.setBlock(pos, ItemAndBlockRegister.metal_element_puzzle_block.get().defaultBlockState(), 3);
-                    break;
+                    level.removeBlockEntity(pos);
+                    blockEntity.setRemoved();break;
                 case 4:
                     level.setBlock(pos, ItemAndBlockRegister.water_element_puzzle_block.get().defaultBlockState(), 3);
-                    break;
+                    level.removeBlockEntity(pos);
+                    blockEntity.setRemoved();break;
             }
         }
 

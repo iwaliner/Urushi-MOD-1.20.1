@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.CampfireBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-
+@OnlyIn(Dist.CLIENT)
 public class HokoraRenderer implements BlockEntityRenderer<HokoraBlockEntity> {
     private final ItemRenderer itemRenderer;
     public HokoraRenderer(BlockEntityRendererProvider.Context context) {

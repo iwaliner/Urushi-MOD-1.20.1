@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-
+@OnlyIn(Dist.CLIENT)
 public class ShichirinRenderer implements BlockEntityRenderer<ShichirinBlockEntity> {
     private final ItemRenderer itemRenderer;
     public ShichirinRenderer(BlockEntityRendererProvider.Context context) {

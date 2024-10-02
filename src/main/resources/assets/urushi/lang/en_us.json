@@ -2553,6 +2553,7 @@
    "item.urushi.silk_thread": "Silk thread",
    "item.urushi.ghost_spawn_egg": "Ghost Spawn Egg",
    "block.urushi.red_seigaiha_fusuma": "Red Seigaiha Fusuma",
-   "block.urushi.red_sayagata_fusuma": "Red Sayagata Fusuma"
+   "block.urushi.red_sayagata_fusuma": "Red Sayagata Fusuma",
+   "config.jade.plugin_urushi.block_element": "Block Element"
    
 }

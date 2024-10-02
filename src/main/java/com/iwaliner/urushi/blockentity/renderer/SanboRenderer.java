@@ -22,7 +22,7 @@ import net.minecraft.world.level.block.CampfireBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-
+@OnlyIn(Dist.CLIENT)
 public class SanboRenderer implements BlockEntityRenderer<SanboBlockEntity> {
     private final ItemRenderer itemRenderer;
     public SanboRenderer(BlockEntityRendererProvider.Context context) {
