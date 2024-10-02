@@ -1,0 +1,57 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_cypress_slab"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_cypress_slab"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:smooth_cypress_planks",
+
+
+
+      "count": 1
+
+
+
+  }
+
+
+
+}

@@ -50,7 +50,8 @@ public class RecipeTypeRegister {
             = RECIPE_SERIALIZER.register("metal_element_tier2_crafting", com.iwaliner.urushi.recipe.MetalElementTier2CraftingRecipe.MetalElementTier2CraftingSerializer::new);
     public static final RegistryObject<WaterElementTier2CraftingRecipe.WaterElementTier2CraftingSerializer> WaterElementTier2CraftingSerializer
             = RECIPE_SERIALIZER.register("water_element_tier2_crafting", com.iwaliner.urushi.recipe.WaterElementTier2CraftingRecipe.WaterElementTier2CraftingSerializer::new);
-
+    public static final RegistryObject<SilkFarmRecipe.SilkFarmSerializer> SilkwormFarmSerializer
+            = RECIPE_SERIALIZER.register("silkworm", SilkFarmRecipe.SilkFarmSerializer::new);
 
 
     public static RecipeType<FryingRecipe> FryingRecipe = new FryingRecipe.FryingRecipeType();
@@ -73,7 +74,7 @@ public class RecipeTypeRegister {
     public static RecipeType<EarthElementTier2CraftingRecipe> EarthElementTier2CraftingRecipe = new EarthElementTier2CraftingRecipe.EarthElementTier2CraftingRecipeType();
     public static RecipeType<MetalElementTier2CraftingRecipe> MetalElementTier2CraftingRecipe = new MetalElementTier2CraftingRecipe.MetalElementTier2CraftingRecipeType();
     public static RecipeType<WaterElementTier2CraftingRecipe> WaterElementTier2CraftingRecipe = new WaterElementTier2CraftingRecipe.WaterElementTier2CraftingRecipeType();
-
+    public static RecipeType<SilkFarmRecipe> SilkwormFarmRecipe = new SilkFarmRecipe.SilkFarmRecipeType();
     public static void register(IEventBus eventBus) {
         RECIPE_SERIALIZER.register(eventBus);
     }

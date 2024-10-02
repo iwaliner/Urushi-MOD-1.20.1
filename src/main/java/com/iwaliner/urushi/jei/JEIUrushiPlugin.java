@@ -41,6 +41,7 @@ public class JEIUrushiPlugin implements IModPlugin {
     public static final RecipeType<MetalElementTier2CraftingRecipe> JEI_METAL_ELEMENT_TIER2_CRAFTING =RecipeType.create(ModCoreUrushi.ModID, "metal_element_tier2_crafting", MetalElementTier2CraftingRecipe.class);
     public static final RecipeType<WaterElementTier2CraftingRecipe> JEI_WATER_ELEMENT_TIER2_CRAFTING =RecipeType.create(ModCoreUrushi.ModID, "water_element_tier2_crafting", WaterElementTier2CraftingRecipe.class);
     public static final RecipeType<FoxEatingRecipe> JEI_FOX_EATING =RecipeType.create(ModCoreUrushi.ModID, "fox_eating", FoxEatingRecipe.class);
+    public static final RecipeType<SilkFarmRecipe> JEI_SILKWORM =RecipeType.create(ModCoreUrushi.ModID, "silkworm", SilkFarmRecipe.class);
 
 
 
@@ -72,6 +73,7 @@ public class JEIUrushiPlugin implements IModPlugin {
         registration.addRecipeCategories(new EarthElementTier2CraftingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new MetalElementTier2CraftingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new WaterElementTier2CraftingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+        registration.addRecipeCategories(new SilkwormFarmRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
@@ -118,6 +120,8 @@ public class JEIUrushiPlugin implements IModPlugin {
         registration.addRecipes(new RecipeType<>(MetalElementTier2CraftingRecipeCategory.location,MetalElementTier2CraftingRecipe.class),MetalElementTier2CraftingRecipes);
         List<WaterElementTier2CraftingRecipe> WaterElementTier2CraftingRecipes=recipeManager.getAllRecipesFor(RecipeTypeRegister.WaterElementTier2CraftingRecipe);
         registration.addRecipes(new RecipeType<>(WaterElementTier2CraftingRecipeCategory.location,WaterElementTier2CraftingRecipe.class),WaterElementTier2CraftingRecipes);
+        List<SilkFarmRecipe> SilkFarmRecipes=recipeManager.getAllRecipesFor(RecipeTypeRegister.SilkwormFarmRecipe);
+        registration.addRecipes(new RecipeType<>(SilkwormFarmRecipeCategory.location,SilkFarmRecipe.class),SilkFarmRecipes);
     }
 
     @Override
@@ -140,6 +144,6 @@ public class JEIUrushiPlugin implements IModPlugin {
         registration.addRecipeCatalyst(new ItemStack(ItemAndBlockRegister.earth_element_crafting_table_tier2.get()), JEI_EARTH_ELEMENT_TIER2_CRAFTING);
         registration.addRecipeCatalyst(new ItemStack(ItemAndBlockRegister.metal_element_crafting_table_tier2.get()), JEI_METAL_ELEMENT_TIER2_CRAFTING);
         registration.addRecipeCatalyst(new ItemStack(ItemAndBlockRegister.water_element_crafting_table_tier2.get()), JEI_WATER_ELEMENT_TIER2_CRAFTING);
-
+        registration.addRecipeCatalyst(new ItemStack(ItemAndBlockRegister.silkworm_farm.get()), JEI_SILKWORM);
     }
 }

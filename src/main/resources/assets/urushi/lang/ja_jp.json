@@ -2538,7 +2538,17 @@
    "block.urushi.freezing_display": "凍結の呪符による氷",
    "block.urushi.spike": "棘ブロック",
    "info.urushi.newer_version_released": "漆MODの新しいバージョンが公開されています！",
-   "info.urushi.newer_version_released_hover": "クリックしてCurseForge上の漆MODのページを開く"
+   "info.urushi.newer_version_released_hover": "クリックしてCurseForge上の漆MODのページを開く",
+   "info.urushi.silkworm_farm1": "蚕と葉や苗木を使って繭を生産できる",
+   "info.urushi.silkworm_farm2": "ホッパーでは上面から蚕を搬入、側面から葉や苗木を搬入、底面から繭を搬出",
+   "info.urushi.silkworm": "スポナー部屋や村、幽世ディメンション内などのチェストから入手できる",
+   "gui.jei.category.urushi.silkworm": "養蚕",
+   "container.silkworm_farm": "養蚕ブロック",
+   "block.urushi.silkworm": "蚕",
+   "block.urushi.silkworm_farm": "養蚕ブロック",
+   "item.urushi.cocoon": "繭",
+   "item.urushi.silk_thread": "絹糸",
+   "item.urushi.ghost_spawn_egg": "幽霊のスポーンエッグ"
    
    
 }

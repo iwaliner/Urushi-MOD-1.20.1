@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "urushi:block/silkworm",
+		"particle": "urushi:block/silkworm"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 7],
+			"to": [14, 2, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 7]},
+			"faces": {
+				"north": {"uv": [3, 11, 15, 13], "texture": "#0"},
+				"east": {"uv": [3, 2, 5, 4], "texture": "#0"},
+				"south": {"uv": [15, 11, 3, 13], "texture": "#0"},
+				"west": {"uv": [13, 2, 15, 4], "texture": "#0"},
+				"up": {"uv": [15, 8, 3, 10], "texture": "#0"},
+				"down": {"uv": [15, 5, 3, 7], "texture": "#0"}
+			}
+		}
+	]
+}

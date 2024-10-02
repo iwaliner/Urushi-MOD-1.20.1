@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -400,10 +401,10 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> hiwadabuki_roof_225 =B("hiwadabuki_roof_225","h",-1,() -> {return new FlammableRoof225Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(0.2F, 3.0F).sound(SoundType.GRASS));});
     public static final RegistryObject<Block> green_tatami =B("green_tatami","h",-1,() -> {return new FlammableRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
     public static final RegistryObject<Block> green_tatami_slab =B("green_tatami_slab","h",-1,() -> {return new FlammableHorizonalRotateSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
-    public static final RegistryObject<Block> green_tatami_carpet =B("green_tatami_carpet","h",-1,() -> {return new FlammableTwoDirectionShapedBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noCollission());});
+    public static final RegistryObject<Block> green_tatami_carpet =B("green_tatami_carpet","h",-1,() -> {return new FlammableTwoDirectionShapedBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noCollission());});
     public static final RegistryObject<Block> brown_tatami =B("brown_tatami","h",-1,() -> {return new FlammableRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
     public static final RegistryObject<Block> brown_tatami_slab =B("brown_tatami_slab","h",-1,() -> {return new FlammableHorizonalRotateSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
-    public static final RegistryObject<Block> brown_tatami_carpet =B("brown_tatami_carpet","h",-1,() -> {return new FlammableTwoDirectionShapedBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noOcclusion());});
+    public static final RegistryObject<Block> brown_tatami_carpet =B("brown_tatami_carpet","h",-1,() -> {return new FlammableTwoDirectionShapedBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noOcclusion());});
     public static final RegistryObject<Block> goldfish_bowl =B("goldfish_bowl","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(0.2F, 10.0F).sound(SoundType.GLASS).noOcclusion());});
     public static final RegistryObject<Block> stone_trapdoor =B("stone_trapdoor","p",-1,() -> {return new TrapDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1.0F, 10.0F).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).requiresCorrectToolForDrops(), BlockSetType.STONE);});
     public static final RegistryObject<Block> rough_stone =B("rough_stone","p",0,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(1.0F, 10.0F));});
@@ -880,6 +881,10 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> tv_weather_forecast =BN("tv_weather_forecast","p",-1,() -> {return new TVBlock(tv_DVD.get(),BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.METAL).strength(1F, 10.0F));});
     public static final RegistryObject<Block> tv_idle =B("tv","p",-1,() -> {return new TVBlock(tv_weather_forecast.get(),BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.METAL).strength(1F, 10.0F));});
     public static final RegistryObject<Block> rainwater_tank =B("rainwater_tank","a",-1,() -> {return new RainwaterTankBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).strength(0.2F, 1.0F).sound(SoundType.WOOD).randomTicks());});
+    public static final RegistryObject<Block> silkworm =B("silkworm","n",-1,() -> {return new TwoDirectionShapedBlock(7.0D, 0.0D, 2D, 9.0D, 2.0D, 14.0D,false,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.SLIME_BLOCK));});
+    public static final RegistryObject<Block> silkworm_farm =B("silkworm_farm","a",-1,() -> {return new SilkwormFarmBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.AZALEA).strength(0.5F, 3.0F));});
+    public static final RegistryObject<Item> cocoon =I("cocoon");
+    public static final RegistryObject<Item> silk_thread =I("silk_thread");
     public static final RegistryObject<Block> magma_slab =B("magma_slab","p",-1,() -> {return new MagmaSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(0.5F, 10.0F).lightLevel((p_235470_0_) -> {return 3;}).randomTicks().isValidSpawn((p_187421_, p_187422_, p_187423_, p_187424_) -> {return p_187424_.fireImmune();}).hasPostProcess(ItemAndBlockRegister::always).emissiveRendering(ItemAndBlockRegister::always));});
     public static final RegistryObject<Block> magma_stairs =B("magma_stairs","p",-1,() -> {return new MagmaStairBlock(Blocks.MAGMA_BLOCK.defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(0.5F, 10.0F).lightLevel((p_235470_0_) -> {return 3;}).randomTicks().isValidSpawn((p_187421_, p_187422_, p_187423_, p_187424_) -> {return p_187424_.fireImmune();}).hasPostProcess(ItemAndBlockRegister::always).emissiveRendering(ItemAndBlockRegister::always));});
     public static final RegistryObject<Block> japanese_timber_bamboo =B("japanese_timber_bamboo","a",-1,() -> {return new JapaneseTimberBambooBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.BAMBOO).strength(0.5F, 10.0F).randomTicks().noCollission().pushReaction(PushReaction.DESTROY));});
@@ -948,15 +953,15 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> so =ITEMS.register("so", () -> {return new Item((new Item.Properties()).food(FoodUrushi.So));});
     public static final RegistryObject<Item> onsen_egg =ITEMS.register("onsen_egg", () -> {return new ToolchipItem("onsen_egg",(new Item.Properties()));});
     public static final RegistryObject<Item> noodle_knife =ITEMS.register("noodle_knife", () -> {return new NoodleKnifeItem((new Item.Properties()).durability(1024));});
-    public static final RegistryObject<Block> dough =BF("dough","n",-1,() -> {return new TwoDirectionShapedBlock(3.0D, 0.0D, 0D, 13.0D, 2.0D, 16.0D,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
-    public static final RegistryObject<Block> udon =BF("udon","n",-1,() -> {return new TwoDirectionShapedBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
+    public static final RegistryObject<Block> dough =BF("dough","n",-1,() -> {return new TwoDirectionShapedBlock(3.0D, 0.0D, 0D, 13.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
+    public static final RegistryObject<Block> udon =BF("udon","n",-1,() -> {return new TwoDirectionShapedBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
     public static final RegistryObject<Item> kitsune_udon =ITEMS.register("kitsune_udon", () -> {return new PlaceableFoodItem(()->EntityRegister.KitsuneUdonFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.KitsuneUdon));});
     public static final RegistryObject<Block> salt_and_sand =BF("salt_and_sand","s",-1,() -> {return new SaltAndSandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(1F, 10F).sound(SoundType.SAND));});
     public static final RegistryObject<Item> salt =ITEMS.register("salt", () -> {return new ToolchipItem("salt",(new Item.Properties()));});
     public static final RegistryObject<Item> kanten_powder =IF("kanten_powder");
     public static final RegistryObject<Item> kansui_powder =IF("kansui_powder");
-    public static final RegistryObject<Block> alkaline_dough =BF("alkaline_dough","n",-1,() -> {return new TwoDirectionShapedBlock(3.0D, 0.0D, 0D, 13.0D, 2.0D, 16.0D,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).instabreak().sound(SoundType.WOOD));});
-    public static final RegistryObject<Block> alkaline_noodles =BF("alkaline_noodles","n",-1,() -> {return new TwoDirectionShapedBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).instabreak().sound(SoundType.WOOD));});
+    public static final RegistryObject<Block> alkaline_dough =BF("alkaline_dough","n",-1,() -> {return new TwoDirectionShapedBlock(3.0D, 0.0D, 0D, 13.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).instabreak().sound(SoundType.WOOD));});
+    public static final RegistryObject<Block> alkaline_noodles =BF("alkaline_noodles","n",-1,() -> {return new TwoDirectionShapedBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).instabreak().sound(SoundType.WOOD));});
     public static final RegistryObject<Item> soy_source_ramen =ITEMS.register("soy_source_ramen", () -> {return new PlaceableFoodItem(()->EntityRegister.SoySourceRamenFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Ramen));});
     public static final RegistryObject<Item> miso_ramen =ITEMS.register("miso_ramen", () -> {return new PlaceableFoodItem(()->EntityRegister.MisoRamenFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Ramen));});
     public static final RegistryObject<Item> tonkotsu_ramen =ITEMS.register("tonkotsu_ramen", () -> {return new PlaceableFoodItem(()->EntityRegister.TonkotsuRamenFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Ramen));});
@@ -1229,6 +1234,8 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> potted_lacquer_sapling =BN("potted_lacquer_sapling","p",-1,() -> {return new UrushiFlowerPotBlock(ItemAndBlockRegister.lacquer_sapling.get(),BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.STONE).noCollission().instabreak());});
     public static final RegistryObject<Item> additional_heart =ITEMS.register("additional_heart", () -> {return new AdditionalHeartItem((new Item.Properties()));});
     public static final RegistryObject<Item> shrimp =IF("shrimp");
+    public static final RegistryObject<Item> ghost_spawn_egg =ITEMS.register("ghost_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.Ghost, 14283506, 14014157,(new Item.Properties()));});
+    public static final RegistryObject<Item> giant_skeleton_spawn_egg =ITEMS.register("giant_skeleton_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.GianntSkeleton, 12698049, 4802889,(new Item.Properties()));});
 
 
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()

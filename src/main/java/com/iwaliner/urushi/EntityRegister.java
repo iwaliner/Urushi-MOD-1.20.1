@@ -52,7 +52,8 @@ public class EntityRegister {
     public static final RegistryObject<EntityType<TonkotsuRamenFoodEntity>> TonkotsuRamenFoodEntity=Entities.register("tonkotsu_ramen_food", () -> EntityType.Builder.<TonkotsuRamenFoodEntity>of(TonkotsuRamenFoodEntity::new, MobCategory.MISC).sized(0.6F, 0.4F).clientTrackingRange(8).build(new ResourceLocation(ModCoreUrushi.ModID,"tonkotsu_ramen_food").toString()));
     public static final RegistryObject<EntityType<MincedTunaBowlFoodEntity>> MincedTunaBowlFoodEntity=Entities.register("minced_tuna_bowl_food", () -> EntityType.Builder.<MincedTunaBowlFoodEntity>of(MincedTunaBowlFoodEntity::new, MobCategory.MISC).sized(0.5F, 0.4F).clientTrackingRange(8).build(new ResourceLocation(ModCoreUrushi.ModID,"minced_tuna_bowl_food").toString()));
 
-    public static void register(IEventBus eventBus) {
+    public static final RegistryObject<EntityType<GiantSkeletonEntity>> GianntSkeleton=Entities.register("giant_skeleton", () -> EntityType.Builder.<GiantSkeletonEntity>of(GiantSkeletonEntity::new, MobCategory.MONSTER).sized(3.6F, 7.95F).clientTrackingRange(8).build(new ResourceLocation(ModCoreUrushi.ModID,"giant_skeleton").toString()));
+     public static void register(IEventBus eventBus) {
         Entities.register(eventBus);
     }
 

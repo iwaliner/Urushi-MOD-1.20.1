@@ -2534,6 +2534,18 @@
    "block.urushi.metal_element_puzzle_block": "金气元素谜题方块",
    "block.urushi.water_element_puzzle_block": "水气元素谜题方块",
    "block.urushi.freezing_display": "冻结之符冰",
-   "block.urushi.spike": "铁棘刺"
+   "block.urushi.spike": "铁棘刺",
+   "info.urushi.newer_version_released": "A new version of Urushi is released!",
+   "info.urushi.newer_version_released_hover": "Click here to open CurseForge Urushi web page.",
+   "info.urushi.silkworm_farm1": "Generate Cocoons from Silkworms and Leaves or Saplings.",
+   "info.urushi.silkworm_farm2": "Import Silkworms from top surface, import Leaves or Saplings from the side, and export Cocoons from bottom surface by using Hppers.",
+   "info.urushi.silkworm": "Generates in loot chests in spawner dungeons, villages, and in Kakuriyo dimension.",
+   "gui.jei.category.urushi.silkworm": "Sericulture",
+   "container.silkworm_farm": "Sericultural Block",
+   "block.urushi.silkworm": "Silkworm",
+   "block.urushi.silkworm_farm": "Sericultural Block",
+   "item.urushi.cocoon": "Cocoon",
+   "item.urushi.silk_thread": "Silk thread",
+   "item.urushi.ghost_spawn_egg": "Ghost Spawn Egg"
 
 }

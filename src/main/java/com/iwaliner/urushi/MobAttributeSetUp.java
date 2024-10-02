@@ -25,5 +25,14 @@ public class MobAttributeSetUp {
                         .add(Attributes.MOVEMENT_SPEED, 0.2D)
                         .build());
 
+        entityRegisterEvent.put(EntityRegister.GianntSkeleton.get(),
+                GhostEntity.createAttributes()
+                        .add(Attributes.MAX_HEALTH, 20.0D)
+                        .add(Attributes.ATTACK_DAMAGE, 6.0D)
+                        .add(Attributes.ATTACK_SPEED, 0.5D)
+                        .add(Attributes.FLYING_SPEED, 1.0D)
+                        .add(Attributes.MOVEMENT_SPEED, 0.2D)
+                        .build());
+
     }
 }

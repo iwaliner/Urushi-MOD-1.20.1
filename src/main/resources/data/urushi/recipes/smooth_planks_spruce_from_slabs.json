@@ -1,0 +1,57 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_spruce_slab"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_spruce_slab"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:smooth_spruce_planks",
+
+
+
+      "count": 1
+
+
+
+  }
+
+
+
+}

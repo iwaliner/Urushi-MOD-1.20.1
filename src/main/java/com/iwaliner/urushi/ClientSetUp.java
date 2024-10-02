@@ -2,15 +2,13 @@ package com.iwaliner.urushi;
 
 
 import com.iwaliner.urushi.blockentity.renderer.*;
-import com.iwaliner.urushi.blockentity.screen.AutoCraftingTableScreen;
-import com.iwaliner.urushi.blockentity.screen.DoubledWoodenCabinetryScreen;
-import com.iwaliner.urushi.blockentity.screen.FryerScreen;
-import com.iwaliner.urushi.blockentity.screen.UrushiHopperScreen;
+import com.iwaliner.urushi.blockentity.screen.*;
 import com.iwaliner.urushi.entiity.food.model.*;
 import com.iwaliner.urushi.entiity.food.renderer.*;
 import com.iwaliner.urushi.entiity.model.CushionModel;
 import com.iwaliner.urushi.entiity.renderer.CushionRenderer;
 import com.iwaliner.urushi.entiity.renderer.GhostRenderer;
+import com.iwaliner.urushi.entiity.renderer.GiantSkeletonRenderer;
 import com.iwaliner.urushi.json.*;
 import com.iwaliner.urushi.particle.*;
 import com.iwaliner.urushi.util.ElementUtils;
@@ -20,7 +18,6 @@ import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.client.gui.screens.inventory.CraftingScreen;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -97,6 +94,7 @@ public class ClientSetUp {
             return new ThrownItemRenderer<>(p_174088_, 1.0F, true);
         });
         event.registerEntityRenderer(EntityRegister.Ghost.get(), GhostRenderer::new);
+        event.registerEntityRenderer(EntityRegister.GianntSkeleton.get(), GiantSkeletonRenderer::new);
         event.registerEntityRenderer(EntityRegister.Cushion.get(), CushionRenderer::new);
         event.registerEntityRenderer(EntityRegister.Jufu.get(),  (p_174088_) -> {
             return new ThrownItemRenderer<>(p_174088_, 1.0F, true);
@@ -219,6 +217,7 @@ public class ClientSetUp {
         MenuScreens.register(MenuRegister.DoubledWoodenCabinetryMenu.get(), DoubledWoodenCabinetryScreen::new);
         MenuScreens.register(MenuRegister.UrushiHopperMenu.get(), UrushiHopperScreen::new);
         MenuScreens.register(MenuRegister.AutoCraftingTableMenu.get(), AutoCraftingTableScreen::new);
+        MenuScreens.register(MenuRegister.SilkwormFarmMenu.get(), SilkwormFarmScreen::new);
 
 
        /**見た目が特殊なBlockEntityの見た目を登録*/
@@ -234,8 +233,12 @@ public class ClientSetUp {
         ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.senryoubako.get()));
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.additional_heart.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.shrimp.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.giant_skeleton_spawn_egg.get());
 
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.additional_heart);
+        ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.ghost_spawn_egg);
+        ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.giant_skeleton_spawn_egg);
+
 
 
         /**jsonファイルを自動生成するために開発環境のパスを登録*/
