@@ -2548,7 +2548,9 @@
    "block.urushi.silkworm_farm": "養蚕ブロック",
    "item.urushi.cocoon": "繭",
    "item.urushi.silk_thread": "絹糸",
-   "item.urushi.ghost_spawn_egg": "幽霊のスポーンエッグ"
+   "item.urushi.ghost_spawn_egg": "幽霊のスポーンエッグ",
+   "block.urushi.red_seigaiha_fusuma": "赤色の青海波の襖",
+   "block.urushi.red_sayagata_fusuma": "赤色の紗綾形の襖"
    
    
 }
