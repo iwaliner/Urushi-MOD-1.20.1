@@ -1,0 +1,501 @@
+{
+  "multipart": [
+  {
+    "when": {
+        "under": "0"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "0"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_plaster"
+      }
+    },
+     {
+    "when": {
+        "under": "1"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_orange_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "1"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_orange_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "2"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_magenta_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "2"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_magenta_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "3"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_light_blue_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "3"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_light_blue_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "4"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_yellow_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "4"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_yellow_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "5"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_lime_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "5"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_lime_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "6"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_pink_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "6"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_pink_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "7"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_gray_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "7"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_gray_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "8"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_magenta_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "8"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_light_gray_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "9"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cyan_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "9"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cyan_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "10"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_purple_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "10"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_purple_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "11"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_blue_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "11"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_blue_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "12"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_brown_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "12"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_brown_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "13"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_green_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "13"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_green_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "14"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_red_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "14"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_red_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "15"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_black_plaster"
+      }
+    },
+    {
+    "when": {
+        "upper": "15"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_black_plaster"
+      }
+    },
+    {
+    "when": {
+        "under": "16"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_green_tatami"
+      }
+    },
+    {
+    "when": {
+        "upper": "16"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_green_tatami"
+      }
+    },
+    {
+    "when": {
+        "under": "17"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_brown_tatami"
+      }
+    },
+    {
+    "when": {
+        "upper": "17"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_brown_tatami"
+      }
+    },
+    {
+    "when": {
+        "under": "18"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_concrete"
+      }
+    },
+    {
+    "when": {
+        "upper": "18"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_concrete"
+      }
+    },
+    {
+    "when": {
+        "under": "19"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_dirty_concrete"
+      }
+    },
+    {
+    "when": {
+        "upper": "19"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_dirty_concrete"
+      }
+    },
+    {
+    "when": {
+        "under": "20"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_thatched"
+      }
+    },
+    {
+    "when": {
+        "upper": "20"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_thatched"
+      }
+    },
+    {
+    "when": {
+        "under": "21"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_hiwadabuki"
+      }
+    },
+    {
+    "when": {
+        "upper": "21"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_hiwadabuki"
+      }
+    },
+    {
+    "when": {
+        "under": "22"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_rough_stone"
+      }
+    },
+    {
+    "when": {
+        "upper": "22"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_rough_stone"
+      }
+    },
+    {
+    "when": {
+        "under": "23"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_ishigaki"
+      }
+    },
+    {
+    "when": {
+        "upper": "23"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_ishigaki"
+      }
+    },
+    {
+    "when": {
+        "under": "24"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_bamboo"
+      }
+    },
+    {
+    "when": {
+        "upper": "24"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_bamboo"
+      }
+    },
+    {
+    "when": {
+        "under": "25"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_apricot"
+      }
+    },
+    {
+    "when": {
+        "upper": "25"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_apricot"
+      }
+    },
+    {
+    "when": {
+        "under": "26"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_sakura"
+      }
+    },
+    {
+    "when": {
+        "upper": "26"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_sakura"
+      }
+    },
+    {
+    "when": {
+        "under": "27"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cypress"
+      }
+    },
+    {
+    "when": {
+        "upper": "27"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cypress"
+      }
+    },
+    {
+    "when": {
+        "under": "28"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_cedar"
+      }
+    },
+    {
+    "when": {
+        "upper": "28"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_cedar"
+      }
+    },
+    {
+    "when": {
+        "under": "29"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_red_urushi_stained"
+      }
+    },
+    {
+    "when": {
+        "upper": "29"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_red_urushi_stained"
+      }
+    },
+    {
+    "when": {
+        "under": "30"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_black_urushi_stained"
+      }
+    },
+    {
+    "when": {
+        "upper": "30"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_black_urushi_stained"
+      }
+    }
+    
+  ]
+}
