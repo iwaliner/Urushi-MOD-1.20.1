@@ -6,7 +6,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class FlammableSlabBlock extends UrushiSlabBlock {
+public class FlammableSlabBlock extends SlabBlock {
     public FlammableSlabBlock(Properties p_56359_) {
         super(p_56359_);
     }

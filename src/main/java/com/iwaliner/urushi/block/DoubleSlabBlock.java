@@ -1,11 +1,16 @@
 package com.iwaliner.urushi.block;
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.ModCoreUrushi;
 import net.minecraft.core.Direction;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.storage.loot.LootParams;
+
+import java.util.List;
 
 public class DoubleSlabBlock extends HorizonalRotateBlock {
     public static final IntegerProperty UNDER = IntegerProperty.create("under", 0, 70);
@@ -21,6 +26,7 @@ public class DoubleSlabBlock extends HorizonalRotateBlock {
         p_49915_.add(FACING,UNDER,UPPER);
     }
     public static int getIDFromBlock(Block block){
+
         if (ItemAndBlockRegister.sikkui_slab.get().equals(block)) {
             return 0;
         }else if (ItemAndBlockRegister.orange_plaster_slab.get().equals(block)) {
@@ -82,8 +88,37 @@ public class DoubleSlabBlock extends HorizonalRotateBlock {
         }else if (ItemAndBlockRegister.red_urushi_slab.get().equals(block)) {
             return 29;
         }else if (ItemAndBlockRegister.black_urushi_slab.get().equals(block)) {
-            return 2330;
+            return 30;
+        }else if (ItemAndBlockRegister.smooth_oak_slab.get().equals(block)) {
+            return 31;
+        }else if (ItemAndBlockRegister.smooth_spruce_slab.get().equals(block)) {
+            return 32;
+        }else if (ItemAndBlockRegister.smooth_birch_slab.get().equals(block)) {
+            return 33;
+        }else if (ItemAndBlockRegister.smooth_jungle_slab.get().equals(block)) {
+            return 34;
+        }else if (ItemAndBlockRegister.smooth_acacia_slab.get().equals(block)) {
+            return 35;
+        }else if (ItemAndBlockRegister.smooth_dark_oak_slab.get().equals(block)) {
+            return 36;
+        }else if (ItemAndBlockRegister.smooth_japanese_apricot_slab.get().equals(block)) {
+            return 37;
+        }else if (ItemAndBlockRegister.smooth_sakura_slab.get().equals(block)) {
+            return 38;
+        }else if (ItemAndBlockRegister.smooth_cypress_slab.get().equals(block)) {
+            return 39;
+        }else if (ItemAndBlockRegister.smooth_japanese_cedar_slab.get().equals(block)) {
+            return 40;
+        }else if (ItemAndBlockRegister.smooth_red_urushi_slab.get().equals(block)) {
+            return 41;
+        }else if (ItemAndBlockRegister.smooth_black_urushi_slab.get().equals(block)) {
+            return 42;
         }
         return 0;
+    }
+
+    @Override
+    public List<ItemStack> getDrops(BlockState p_287732_, LootParams.Builder p_287596_) {
+        return super.getDrops(p_287732_, p_287596_);
     }
 }

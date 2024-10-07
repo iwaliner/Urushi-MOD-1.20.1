@@ -689,7 +689,7 @@ public class ModCoreUrushi {
             if (checkResult.status() == VersionChecker.Status.OUTDATED) {
                 ModCoreUrushi.logger.info("Newer version of Urushi is released!");
                 Component component = ComponentUtils.wrapInSquareBrackets(Component.translatable("info.urushi.newer_version_released")).withStyle((p_214489_) -> {
-                    return p_214489_.withColor(ChatFormatting.GREEN).withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://legacy.curseforge.com/minecraft/mc-mods/urushi-mod")).withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("info.urushi.newer_version_released_hover")));
+                    return p_214489_.withColor(ChatFormatting.GREEN).withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://www.curseforge.com/minecraft/mc-mods/urushi-mod")).withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("info.urushi.newer_version_released_hover")));
                 });
                 event.getEntity().sendSystemMessage(component);
             }

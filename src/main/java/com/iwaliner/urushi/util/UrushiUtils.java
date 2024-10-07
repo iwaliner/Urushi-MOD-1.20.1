@@ -133,4 +133,13 @@ public class UrushiUtils {
         }
         return rotateSimpleBoxShapeHorizontally(baseShape,angle);
     }
+    public static boolean isMinecraftObject(String id){
+        String[] strings=id.split("\\.");
+        return strings[1].equals("minecraft");
+    }
+
+    public static boolean isUrushiObject(String id){
+        String[] strings=id.split("\\.");
+        return strings[1].equals("urushi");
+    }
 }

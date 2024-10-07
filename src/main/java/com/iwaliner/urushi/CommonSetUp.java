@@ -127,19 +127,12 @@ public class CommonSetUp {
                     if (recipe.isPresent()) {
                         this.setSuccess(true);
                         stack.shrink(1);
-                        NonNullList<ItemStack> thresheds = NonNullList.create();
-                        thresheds.add(recipe.get().getResultItem());
-                        thresheds.addAll(recipe.get().getSubResultItems());
-                        Iterator<ItemStack> iterator = thresheds.iterator();
-                        for(int i=0;i<thresheds.size();i++) {
-                            ItemStack itemStack = iterator.next();
-                            defaultDispenseItemBehavior.dispense(source, thresheds.get(i).copy());
-
+                        defaultDispenseItemBehavior.dispense(source, recipe.get().getResultItem().copy());
+                        for(int i=0;i<recipe.get().getSubResultItems().size();i++) {
+                            defaultDispenseItemBehavior.dispense(source, recipe.get().getSubResultItems().get(i).copy());
                         }
                         return stack;
                     }
-
-
                 }
                 return super.execute(source, stack);
             }

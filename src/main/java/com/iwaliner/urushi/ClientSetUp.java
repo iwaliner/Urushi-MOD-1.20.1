@@ -55,6 +55,7 @@ public class ClientSetUp {
     public static final ModelLayerLocation CUSHION = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "cushion"), "cushion");
     public static final ModelLayerLocation SUSHI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "sushi_food"), "sushi_food");
     public static final ModelLayerLocation SALMON_ROE_SUSHI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "salmon_roe_sushi_food"), "salmon_roe_sushi_food");
+    public static final ModelLayerLocation SHRIMP_SUSHI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "shrimp_sushi_food"), "shrimp_sushi_food");
     public static final ModelLayerLocation INARI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "inari_food"), "inari_food");
     public static final ModelLayerLocation RAMEN = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "ramen_food"), "ramen_food");
     public static final ModelLayerLocation MISO_SOUP = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "miso_soup_food"), "miso_soup_food");
@@ -88,6 +89,7 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.SquidSushiFoodEntity.get(), SquidSushiFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.EggSushiFoodEntity.get(), EggSushiFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.SalmonRoeSushiFoodEntity.get(), SalmonRoeSushiFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.ShrimpSushiFoodEntity.get(), ShrimpSushiFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.GravelSushiFoodEntity.get(), GravelSushiFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.InariFoodEntity.get(), InariFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.KitsunebiEntity.get(),  (p_174088_) -> {
@@ -128,6 +130,7 @@ public class ClientSetUp {
         event.registerLayerDefinition(CUSHION, CushionModel::createBodyLayer);
         event.registerLayerDefinition(SUSHI, SushiFoodModel::createBodyLayer);
         event.registerLayerDefinition(SALMON_ROE_SUSHI, SalmonRoeSushiFoodModel::createBodyLayer);
+        event.registerLayerDefinition(SHRIMP_SUSHI, ShrimpSushiFoodModel::createBodyLayer);
         event.registerLayerDefinition(INARI, InariFoodModel::createBodyLayer);
         event.registerLayerDefinition(RAMEN, RamenFoodModel::createBodyLayer);
         event.registerLayerDefinition(MISO_SOUP, MisoSoupFoodModel::createBodyLayer);
@@ -227,12 +230,13 @@ public class ClientSetUp {
         BlockEntityRenderers.register(BlockEntityRegister.Plate.get(), PlateRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegister.BambooBasket.get(), BambooBasketRenderer::new);
 
-
+        ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
+        ModCoreUrushi.axeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
+        ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
 
 
         ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.senryoubako.get()));
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.additional_heart.get());
-        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.shrimp.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.giant_skeleton_spawn_egg.get());
 
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.additional_heart);

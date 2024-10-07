@@ -1,5 +1,6 @@
 package com.iwaliner.urushi.item;
 
+import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -66,4 +67,5 @@ public class BakedMochochoItem extends Item {
 
         return InteractionResult.SUCCESS;
     }*/
+
 }

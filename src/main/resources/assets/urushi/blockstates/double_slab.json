@@ -258,7 +258,15 @@
     },
     {
     "when": {
-        "under": "16"
+        "under": "16","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_green_tatami", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "16","facing": "south"
       },
       "apply": {
         "model": "urushi:block/half_slab_green_tatami"
@@ -266,7 +274,31 @@
     },
     {
     "when": {
-        "upper": "16"
+        "under": "16","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_green_tatami", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "16","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_green_tatami", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "16","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_green_tatami", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "16","facing": "south"
       },
       "apply": {
         "model": "urushi:block/upper_slab_green_tatami"
@@ -274,7 +306,31 @@
     },
     {
     "when": {
-        "under": "17"
+        "upper": "16","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_green_tatami", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "16","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_green_tatami", "y": 90
+      }
+    },
+    {
+    "when": {
+        "under": "17","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_brown_tatami", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "17","facing": "south"
       },
       "apply": {
         "model": "urushi:block/half_slab_brown_tatami"
@@ -282,10 +338,50 @@
     },
     {
     "when": {
-        "upper": "17"
+        "under": "17","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_brown_tatami", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "17","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_brown_tatami", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "17","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_brown_tatami", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "17","facing": "south"
       },
       "apply": {
         "model": "urushi:block/upper_slab_brown_tatami"
+      }
+    },
+    {
+    "when": {
+        "upper": "17","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_brown_tatami", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "17","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_brown_tatami", "y": 90
       }
     },
     {
@@ -494,6 +590,198 @@
       },
       "apply": {
         "model": "urushi:block/upper_slab_black_urushi_stained"
+      }
+    },
+    {
+    "when": {
+        "under": "31"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_oak"
+      }
+    },
+    {
+    "when": {
+        "upper": "31"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_oak"
+      }
+    },
+    {
+    "when": {
+        "under": "32"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_spruce"
+      }
+    },
+    {
+    "when": {
+        "upper": "32"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_spruce"
+      }
+    },
+    {
+    "when": {
+        "under": "33"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_birch"
+      }
+    },
+    {
+    "when": {
+        "upper": "33"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_birch"
+      }
+    },
+    {
+    "when": {
+        "under": "34"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_jungle"
+      }
+    },
+    {
+    "when": {
+        "upper": "34"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_jungle"
+      }
+    },
+    {
+    "when": {
+        "under": "35"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_acacia"
+      }
+    },
+    {
+    "when": {
+        "upper": "35"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_acacia"
+      }
+    },
+    {
+    "when": {
+        "under": "36"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_dark_oak"
+      }
+    },
+    {
+    "when": {
+        "upper": "36"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_dark_oak"
+      }
+    },
+    {
+    "when": {
+        "under": "37"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_japanese_apricot"
+      }
+    },
+    {
+    "when": {
+        "upper": "37"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_japanese_apricot"
+      }
+    },
+    {
+    "when": {
+        "under": "38"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_sakura"
+      }
+    },
+    {
+    "when": {
+        "upper": "38"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_sakura"
+      }
+    },
+    {
+    "when": {
+        "under": "39"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_cypress"
+      }
+    },
+    {
+    "when": {
+        "upper": "39"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_cypress"
+      }
+    },
+    {
+    "when": {
+        "under": "40"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_japanese_cedar"
+      }
+    },
+    {
+    "when": {
+        "upper": "40"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_japanese_cedar"
+      }
+    },
+    {
+    "when": {
+        "under": "41"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_red_urushi_stained"
+      }
+    },
+    {
+    "when": {
+        "upper": "41"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_red_urushi_stained"
+      }
+    },
+    {
+    "when": {
+        "under": "42"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_black_urushi_stained"
+      }
+    },
+    {
+    "when": {
+        "upper": "42"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_black_urushi_stained"
       }
     }
     
