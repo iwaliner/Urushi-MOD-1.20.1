@@ -783,7 +783,1308 @@
       "apply": {
         "model": "urushi:block/upper_slab_smooth_black_urushi_stained"
       }
+    },
+    {
+    "when": {
+        "under": "43","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_oak_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "43","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_oak_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "43","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_oak_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "43","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_oak_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "43","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_oak_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "43","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_oak_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "43","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_oak_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "43","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_oak_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "44","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_spruce_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "44","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_spruce_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "44","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_spruce_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "44","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_spruce_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "44","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_spruce_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "44","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_spruce_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "44","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_spruce_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "44","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_spruce_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "45","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_birch_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "45","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_birch_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "45","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_birch_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "45","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_birch_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "45","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_birch_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "45","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_birch_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "45","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_birch_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "45","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_birch_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "46","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_jungle_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "46","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_jungle_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "46","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_jungle_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "46","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_jungle_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "46","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_jungle_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "46","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_jungle_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "46","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_jungle_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "46","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_jungle_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "47","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_acacia_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "47","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_acacia_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "47","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_acacia_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "47","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_acacia_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "47","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_acacia_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "47","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_acacia_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "47","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_acacia_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "47","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_acacia_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "48","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_dark_oak_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "48","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_dark_oak_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "48","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_dark_oak_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "48","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_dark_oak_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "48","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_dark_oak_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "48","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_dark_oak_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "48","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_dark_oak_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "48","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_dark_oak_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "49","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_apricot_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "49","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_apricot_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "49","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_apricot_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "49","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_apricot_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "49","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_apricot_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "49","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_apricot_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "49","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_apricot_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "49","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_apricot_shitamiita", "y": 90
+      }
+    },
+  {
+    "when": {
+        "under": "50","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_sakura_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "50","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_sakura_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "50","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_sakura_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "50","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_sakura_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "50","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_sakura_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "50","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_sakura_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "50","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_sakura_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "50","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_sakura_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "51","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cypress_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "51","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cypress_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "51","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cypress_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "51","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cypress_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "51","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cypress_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "51","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cypress_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "51","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cypress_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "51","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cypress_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "52","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_cedar_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "52","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_cedar_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "52","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_cedar_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "52","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_japanese_cedar_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "52","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_cedar_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "52","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_cedar_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "52","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_cedar_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "52","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_japanese_cedar_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "under": "53","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_red_urushi_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "53","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_red_urushi_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "53","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_red_urushi_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "53","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_red_urushi_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "53","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_red_urushi_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "53","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_red_urushi_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "53","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_red_urushi_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "53","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_red_urushi_shitamiita", "y": 90
+      }
+    },
+   {
+    "when": {
+        "under": "54","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_black_urushi_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "54","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_black_urushi_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "under": "54","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_black_urushi_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "54","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_black_urushi_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "54","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_black_urushi_shitamiita", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "54","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_black_urushi_shitamiita"
+      }
+    },
+    {
+    "when": {
+        "upper": "54","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_black_urushi_shitamiita", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "54","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_black_urushi_shitamiita", "y": 90
+      }
+    },
+    {
+    "when": {
+        "under": "55"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_magma"
+      }
+    },
+    {
+    "when": {
+        "upper": "55"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_magma"
+      }
+    },
+  {
+    "when": {
+        "under": "56"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_gold_leaf"
+      }
+    },
+    {
+    "when": {
+        "upper": "56"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_gold_leaf"
+      }
+    },
+    {
+    "when": {
+        "under": "57"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_yomi_stone"
+      }
+    },
+    {
+    "when": {
+        "upper": "57"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_yomi_stone"
+      }
+    },
+   {
+    "when": {
+        "under": "58"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cobbled_yomi_stone"
+      }
+    },
+    {
+    "when": {
+        "upper": "58"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cobbled_yomi_stone"
+      }
+    },
+   {
+    "when": {
+        "under": "59"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_polished_yomi_stone"
+      }
+    },
+    {
+    "when": {
+        "upper": "59"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_polished_yomi_stone"
+      }
+    },
+   {
+    "when": {
+        "under": "60"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_large_yomi_stone_brick"
+      }
+    },
+    {
+    "when": {
+        "upper": "60"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_large_yomi_stone_brick"
+      }
+    },
+   {
+    "when": {
+        "under": "61"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_small_yomi_stone_brick"
+      }
+    },
+    {
+    "when": {
+        "upper": "61"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_small_yomi_stone_brick"
+      }
+    },
+   {
+    "when": {
+        "under": "62"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_jadeite"
+      }
+    },
+    {
+    "when": {
+        "upper": "62"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_jadeite"
+      }
+    },
+   {
+    "when": {
+        "under": "63"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_smooth_jadeite"
+      }
+    },
+    {
+    "when": {
+        "upper": "63"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_smooth_jadeite"
+      }
+    },
+   {
+    "when": {
+        "under": "64"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_jadeite_brick"
+      }
+    },
+    {
+    "when": {
+        "upper": "64"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_jadeite_brick"
+      }
+    },
+   {
+    "when": {
+        "under": "65"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_wattle_and_daub"
+      }
+    },
+    {
+    "when": {
+        "upper": "65"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_wattle_and_daub"
+      }
+    },
+   {
+    "when": {
+        "under": "66"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_sand_coast"
+      }
+    },
+    {
+    "when": {
+        "upper": "66"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_sand_coast"
+      }
+    },
+   {
+    "when": {
+        "under": "67"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_galvanised_iron_plate_red"
+      }
+    },
+    {
+    "when": {
+        "upper": "67"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_galvanised_iron_plate_red"
+      }
+    },
+   {
+    "when": {
+        "under": "68"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_galvanised_iron_plate_blue"
+      }
+    },
+    {
+    "when": {
+        "upper": "68"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_galvanised_iron_plate_blue"
+      }
+    },
+   {
+    "when": {
+        "under": "69"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_galvanised_iron_plate_rusted"
+      }
+    },
+    {
+    "when": {
+        "upper": "69"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_galvanised_iron_plate_rusted"
+      }
+    },
+     {
+    "when": {
+        "under": "70","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_ibushi_kawara_block", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "70","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_ibushi_kawara_block"
+      }
+    },
+    {
+    "when": {
+        "under": "70","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_ibushi_kawara_block", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "70","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_ibushi_kawara_block", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "70","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_ibushi_kawara_block", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "70","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_ibushi_kawara_block"
+      }
+    },
+    {
+    "when": {
+        "upper": "70","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_ibushi_kawara_block", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "70","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_ibushi_kawara_block", "y": 90
+      }
+    },
+    {
+    "when": {
+        "under": "71","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_blue_kawara_block", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "71","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_blue_kawara_block"
+      }
+    },
+    {
+    "when": {
+        "under": "71","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_blue_kawara_block", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "71","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_blue_kawara_block", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "71","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_blue_kawara_block", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "71","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_blue_kawara_block"
+      }
+    },
+    {
+    "when": {
+        "upper": "71","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_blue_kawara_block", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "71","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_blue_kawara_block", "y": 90
+      }
+    },
+    {
+    "when": {
+        "under": "72","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_copper_kawara_block", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "72","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_copper_kawara_block"
+      }
+    },
+    {
+    "when": {
+        "under": "72","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_copper_kawara_block", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "72","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_copper_kawara_block", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "72","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_copper_kawara_block", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "72","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_copper_kawara_block"
+      }
+    },
+    {
+    "when": {
+        "upper": "72","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_copper_kawara_block", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "72","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_copper_kawara_block", "y": 90
+      }
+    },
+    {
+    "when": {
+        "under": "73","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cupric_oxide_kawara", "y": 180
+      }
+    },
+    {
+    "when": {
+        "under": "73","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cupric_oxide_kawara"
+      }
+    },
+    {
+    "when": {
+        "under": "73","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cupric_oxide_kawara", "y": 270
+      }
+    },
+    {
+    "when": {
+        "under": "73","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/half_slab_cupric_oxide_kawara", "y": 90
+      }
+    },
+    {
+    "when": {
+        "upper": "73","facing": "north"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cupric_oxide_kawara", "y": 180
+      }
+    },
+    {
+    "when": {
+        "upper": "73","facing": "south"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cupric_oxide_kawara"
+      }
+    },
+    {
+    "when": {
+        "upper": "73","facing": "east"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cupric_oxide_kawara", "y": 270
+      }
+    },
+    {
+    "when": {
+        "upper": "73","facing": "west"
+      },
+      "apply": {
+        "model": "urushi:block/upper_slab_cupric_oxide_kawara", "y": 90
+      }
+    },
+    {
+    "when": {
+        "under": "74"
+      },
+      "apply": {
+        "model": "minecraft:block/cobblestone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "74"
+      },
+      "apply": {
+        "model": "minecraft:block/cobblestone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "75"
+      },
+      "apply": {
+        "model": "minecraft:block/stone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "75"
+      },
+      "apply": {
+        "model": "minecraft:block/stone_slab_top"
+      }
     }
+    
+   
+   
+   
+   
     
   ]
 }

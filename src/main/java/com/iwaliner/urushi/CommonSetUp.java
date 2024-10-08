@@ -1,6 +1,7 @@
 package com.iwaliner.urushi;
 
 import com.iwaliner.urushi.block.ChiseledLacquerLogBlock;
+import com.iwaliner.urushi.block.DoubleSlabBlock;
 import com.iwaliner.urushi.block.SenbakokiBlock;
 import com.iwaliner.urushi.network.NetworkAccess;
 import com.iwaliner.urushi.recipe.SenbakokiRecipe;
@@ -137,6 +138,83 @@ public class CommonSetUp {
                 return super.execute(source, stack);
             }
         });
+
+
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.sikkui_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.orange_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.magenta_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.light_blue_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.yellow_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.lime_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.pink_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.gray_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.light_gray_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.cyan_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.purple_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.blue_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.brown_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.green_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.red_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.black_plaster_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.green_tatami_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.brown_tatami_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.concrete_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.dirty_concrete_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.thatched_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.hiwadabuki_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.rough_stone_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.ishigaki_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.bamboo_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.japanese_apricot_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.sakura_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.cypress_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.japanese_cedar_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.red_urushi_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.black_urushi_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_oak_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_spruce_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_birch_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_jungle_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_acacia_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_dark_oak_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_japanese_apricot_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_sakura_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_cypress_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_japanese_cedar_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_red_urushi_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_black_urushi_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.oak_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.spruce_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.birch_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.jungle_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.acacia_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.dark_oak_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.japanese_apricot_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.sakura_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.cypress_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.japanese_cedar_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.red_urushi_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.black_urushi_shitamiita_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.magma_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.gold_leaf_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.yomi_stone_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.cobbled_yomi_stone_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.polished_yomi_stone_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.large_yomi_stone_brick_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.small_yomi_stone_brick_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.jadeite_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.smooth_jadeite_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.jadeite_brick_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.wattle_and_daub_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.sand_coast_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.red_galvanised_iron_plate_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.blue_galvanised_iron_plate_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.rusted_galvanised_iron_plate_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.ibushi_kawara_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.blue_kawara_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.copper_kawara_slab.get());
+        DoubleSlabBlock.slabList.add(ItemAndBlockRegister.cupric_oxide_kawara_slab.get());
+
 
 
     }

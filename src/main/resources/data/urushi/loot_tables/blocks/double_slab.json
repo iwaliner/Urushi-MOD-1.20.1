@@ -1,6 +1,688 @@
 {
   "type": "minecraft:block",
   "pools": [
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:cupric_oxide_kawara_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "73"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "73"}
+                    }]}]}]}]
+    },
+     { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:copper_kawara_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "72"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "72"}
+                    }]}]}]}]
+    },
+     { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:blue_kawara_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "71"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "71"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:ibushi_kawara_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "70"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "70"}
+                    }]}]}]}]
+    },
+     { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:rusted_galvanised_iron_plate_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "69"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "69"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:blue_galvanised_iron_plate_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "68"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "68"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:red_galvanised_iron_plate_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "67"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "67"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:sand_coast_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "66"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "66"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:wattle_and_daub_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "65"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "65"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:jadeite_brick_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "64"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "64"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:smooth_jadeite_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "63"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "63"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:jadeite_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "62"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "62"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:smal_yomi_stone_brick_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "61"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "61"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:large_yomi_stone_brick_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "60"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "60"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:polished_yomi_stone_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "59"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "59"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:cobbled_yomi_stone_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "58"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "58"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:yomi_stone_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "57"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "57"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:gold_leaf_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "56"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "56"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:magma_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "55"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "55"}
+                    }]}]}]}]
+    },
+    { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:black_urushi_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "54"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "54"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:red_urushi_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "53"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "53"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:japanese_cedar_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "52"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "52"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:cypress_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "51"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "51"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:sakura_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "50"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "50"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:japanese_apricot_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "49"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "49"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:dark_oak_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "48"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "48"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:acacia_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "47"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "47"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:jungle_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "46"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "46"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:birch_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "45"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "45"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:spruce_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "44"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "44"}
+                    }]}]}]}]
+    },
+   { "rolls": 1, "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "urushi:oak_shitamiita_slab",
+              "conditions": [
+                { "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": { "under": "43"}
+                    },
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "urushi:double_slab",
+                      "properties": {"upper": "43"}
+                    }]}]}]}]
+    },
     { "rolls": 1, "bonus_rolls": 0,
       "entries": [
         {
