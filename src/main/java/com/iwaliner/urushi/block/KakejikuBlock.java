@@ -12,6 +12,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -24,6 +25,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -60,7 +62,7 @@ public class KakejikuBlock extends HorizonalRotateBlock{
         }
     }
 
-    @Override
+   /* @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction direction = context.getHorizontalDirection().getOpposite();
         BlockPos blockpos = context.getClickedPos();
@@ -71,8 +73,17 @@ public class KakejikuBlock extends HorizonalRotateBlock{
         }else{
             return  null;
         }
+    }*/
+    @Nullable
+    public BlockState getStateForPlacement(BlockPlaceContext p_52863_) {
+        BlockPos blockpos = p_52863_.getClickedPos();
+        Level level = p_52863_.getLevel();
+        return blockpos.getY() < level.getMaxBuildHeight() - 1 && level.getBlockState(blockpos.below()).canBeReplaced(p_52863_) ? super.getStateForPlacement(p_52863_).setValue(FACING,p_52863_.getHorizontalDirection().getOpposite()) : null;
     }
-
+    public void setPlacedBy(Level p_52872_, BlockPos p_52873_, BlockState p_52874_, LivingEntity p_52875_, ItemStack p_52876_) {
+        BlockPos blockpos = p_52873_.below();
+        p_52872_.setBlock(blockpos, this.defaultBlockState().setValue(BOTTOM,true).setValue(FACING,p_52874_.getValue(FACING)), 3);
+    }
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState state2, LevelAccessor world, BlockPos pos, BlockPos pos2) {
         if(state.getBlock() instanceof KakejikuBlock) {

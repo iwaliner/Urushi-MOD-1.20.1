@@ -3,13 +3,19 @@ package com.iwaliner.urushi.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BedPart;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+
+import javax.annotation.Nullable;
 
 public class WideNorenBlock extends NorenBlock{
     public static final BooleanProperty VARIANT = BooleanProperty.create("variant");
@@ -24,7 +30,7 @@ public class WideNorenBlock extends NorenBlock{
         p_49915_.add(FACING,VARIANT);
     }
 
-    @Override
+   /* @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction direction = context.getHorizontalDirection().getOpposite();
         BlockPos blockpos = context.getClickedPos();
@@ -36,6 +42,24 @@ public class WideNorenBlock extends NorenBlock{
         }else{
             return  null;
         }
+    }*/
+    @Nullable
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        Direction direction = context.getHorizontalDirection().getOpposite();
+        BlockPos blockpos = context.getClickedPos();
+        BlockPos blockpos1 = blockpos.relative(direction.getCounterClockWise());
+        Level level = context.getLevel();
+        return level.getBlockState(blockpos1).canBeReplaced(context) && level.getWorldBorder().isWithinBounds(blockpos1) ? this.defaultBlockState().setValue(FACING, direction) : null;
+    }
+    public void setPlacedBy(Level level, BlockPos pos, BlockState state, @Nullable LivingEntity livingEntity, ItemStack stack) {
+        super.setPlacedBy(level, pos, state, livingEntity, stack);
+        if (!level.isClientSide) {
+            BlockPos blockpos = pos.relative(state.getValue(FACING).getCounterClockWise());
+            level.setBlock(blockpos, state.setValue(VARIANT, true), 3);
+            level.blockUpdated(pos, Blocks.AIR);
+            state.updateNeighbourShapes(level, pos, 3);
+        }
+
     }
 
     @Override

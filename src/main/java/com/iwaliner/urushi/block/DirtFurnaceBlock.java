@@ -36,7 +36,8 @@ public class DirtFurnaceBlock extends HorizonalRotateBlock {
     private static final VoxelShape Shape2 = Block.box(12D, 0.0D, 0D, 16D, 16D, 16D);
     private static final VoxelShape Shape3 = Block.box(0D, 0.0D, 0D, 16D, 16D, 4D);
     private static final VoxelShape Shape4 = Block.box(0D, 0.0D, 12D, 16D, 16D, 16D);
-    private static final VoxelShape AABB = Shapes.or(Shape1, Shape2, Shape3, Shape4);
+    private static final VoxelShape Shape5 = Block.box(0D, 14.0D, 0D, 16D, 16D, 16D);
+    private static final VoxelShape AABB = Shapes.or(Shape1, Shape2, Shape3, Shape4,Shape5);
 
     public DirtFurnaceBlock(Properties p_i48440_1_) {
         super(p_i48440_1_);
@@ -55,11 +56,6 @@ public class DirtFurnaceBlock extends HorizonalRotateBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
-        if(state.getValue(LIT)&&player.getItemInHand(hand).getItem()!= Item.byBlock(ItemAndBlockRegister.rice_cauldron.get())){
-            world.setBlockAndUpdate(pos,state.setValue(LIT,Boolean.valueOf(false)));
-            world.playSound((Player) null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1.0F, 1F);
-            return InteractionResult.SUCCESS;
-        }else{
             if(player.getItemInHand(hand).is(TagUrushi.IGNITER)){
                 world.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS, 1.0F, world.random.nextFloat() * 0.4F + 0.8F);
                 world.setBlockAndUpdate(pos,state.setValue(LIT,Boolean.valueOf(true)));
@@ -67,7 +63,7 @@ public class DirtFurnaceBlock extends HorizonalRotateBlock {
             }else{
                 return InteractionResult.FAIL;
             }
-        }
+
     }
 
     @Override

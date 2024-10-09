@@ -95,6 +95,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
             property "mixin.env.remapRefMap", "true"
             arg "-mixin.config=urushi.mixins.json"
+            jvmArgs "-Xms4G", "-Xmx6G"
         }
 
         server {
@@ -106,6 +107,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
             property "mixin.env.remapRefMap", "true"
             arg "-mixin.config=urushi.mixins.json"
+            jvmArgs "-Xms4G", "-Xmx6G"
         }
 
         // This run config launches GameTestServer and runs all registered gametests, then exits.
@@ -158,14 +160,14 @@ dependencies {
 //数値Cは、CurseForgeにて使いたいMODの「Files」タブを開き、使いたい特定のバージョンの下線付き文字部分をクリックしてそのバージョンが詳しく書かれているページに飛び、そこのページのURLの末尾に書かれている数値
     // runtimeOnly(  fg.deobf("curse.maven:mekanism-268560:4385637"))
 
-    runtimeOnly(  fg.deobf("curse.maven:jei-238222:5101366"))
+    //runtimeOnly(  fg.deobf("curse.maven:jei-238222:5101366"))
     compileOnly(  fg.deobf("curse.maven:jade-324717:5672013"))
     compileOnly(  fg.deobf("curse.maven:jei-238222:5101366"))
-    runtimeOnly(  fg.deobf("curse.maven:tofucraftreload-317469:5394775"))
-    runtimeOnly(  fg.deobf("curse.maven:effortless-building-302113:4979089"))
+    //runtimeOnly(  fg.deobf("curse.maven:tofucraftreload-317469:5394775"))
+    //runtimeOnly(  fg.deobf("curse.maven:effortless-building-302113:4979089"))
     runtimeOnly(  fg.deobf("curse.maven:mouse-tweaks-60089:5338457"))
-    runtimeOnly(  fg.deobf("curse.maven:jade-324717:5672013"))
-    runtimeOnly(  fg.deobf("curse.maven:crafttweaker-239197:5648765"))
+    //runtimeOnly(  fg.deobf("curse.maven:jade-324717:5672013"))
+    //runtimeOnly(  fg.deobf("curse.maven:crafttweaker-239197:5648765"))
 
 
     // https://mvnrepository.com/artifact/vazkii.patchouli/Patchouli
@@ -234,6 +236,9 @@ publishing {
         }
     }
 }
+
+
+
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation

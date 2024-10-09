@@ -34,11 +34,11 @@ public class DoubleSlabBlock extends HorizonalRotateBlock {
 
     @Override
     public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos, Player player) {
-        return target.getLocation().y- pos.getY() > 0.5D? new ItemStack( slabList.get(state.getValue(UNDER)) ): new ItemStack(slabList.get(state.getValue(UPPER)));
+        return target.getLocation().y- pos.getY() <= 0.5D? new ItemStack( slabList.get(state.getValue(UNDER)) ): new ItemStack(slabList.get(state.getValue(UPPER)));
     }
 
     public static int getIDFromBlock(Block block){
-        return slabList.indexOf(block);
+        return slabList.contains(block)? slabList.indexOf(block) : 0;
 
         /*if (ItemAndBlockRegister.sikkui_slab.get().equals(block)) {
             return 0;
