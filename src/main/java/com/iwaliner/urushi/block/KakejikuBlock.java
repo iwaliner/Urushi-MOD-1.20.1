@@ -61,19 +61,6 @@ public class KakejikuBlock extends HorizonalRotateBlock{
             return SHAPEA;
         }
     }
-
-   /* @Override
-    public BlockState getStateForPlacement(BlockPlaceContext context) {
-        Direction direction = context.getHorizontalDirection().getOpposite();
-        BlockPos blockpos = context.getClickedPos();
-        BlockPos blockpos1 = blockpos.below();
-        if(context.getLevel().getBlockState(blockpos1).canBeReplaced(context) ){
-            context.getLevel().setBlockAndUpdate(blockpos1,this.defaultBlockState().setValue(FACING,direction).setValue(BOTTOM,Boolean.valueOf(true)));
-            return this.defaultBlockState().setValue(FACING,direction).setValue(BOTTOM,Boolean.valueOf(false));
-        }else{
-            return  null;
-        }
-    }*/
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext p_52863_) {
         BlockPos blockpos = p_52863_.getClickedPos();

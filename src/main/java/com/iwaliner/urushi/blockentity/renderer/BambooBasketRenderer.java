@@ -47,7 +47,7 @@ public class BambooBasketRenderer implements BlockEntityRenderer<BambooBasketBlo
                 }else{
                     poseStack.scale(0.3499F, 0.3499F, 0.3499F);
                 }
-                this.itemRenderer.renderStatic(blockEntity.getItem(i), ItemDisplayContext.FIXED, i1, OverlayTexture.NO_OVERLAY, poseStack, bufferSource,blockEntity.getLevel(), i);
+                this.itemRenderer.renderStatic(blockEntity.getItem(i), ItemDisplayContext.FIXED, i1, i2, poseStack, bufferSource,blockEntity.getLevel(), (int) blockEntity.getBlockPos().asLong());
                 poseStack.popPose();
             }
         }

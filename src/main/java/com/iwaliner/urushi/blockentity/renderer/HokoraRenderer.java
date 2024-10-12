@@ -39,7 +39,7 @@ public class HokoraRenderer implements BlockEntityRenderer<HokoraBlockEntity> {
                 poseStack.mulPose(Axis.YP.rotationDegrees(f));
                 poseStack.mulPose(Axis.XP.rotationDegrees(90.0F));
                 poseStack.scale(0.4F, 0.4F, 0.4F);
-                this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, i1, OverlayTexture.NO_OVERLAY, poseStack, bufferSource,blockEntity.getLevel(), i);
+                this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, i1, i2, poseStack, bufferSource,blockEntity.getLevel(), (int) blockEntity.getBlockPos().asLong());
                 poseStack.popPose();
             }
 

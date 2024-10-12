@@ -29,20 +29,6 @@ public class WideNorenBlock extends NorenBlock{
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_49915_) {
         p_49915_.add(FACING,VARIANT);
     }
-
-   /* @Override
-    public BlockState getStateForPlacement(BlockPlaceContext context) {
-        Direction direction = context.getHorizontalDirection().getOpposite();
-        BlockPos blockpos = context.getClickedPos();
-        BlockPos blockpos1 = blockpos.relative(direction.getCounterClockWise());
-        if(context.getLevel().getBlockState(blockpos1).canBeReplaced(context) ){
-            context.getLevel().setBlockAndUpdate(blockpos1,this.defaultBlockState().setValue(FACING,direction).setValue(VARIANT,Boolean.valueOf(true)));
-            //context.getLevel().setBlockAndUpdate(blockpos,this.defaultBlockState().setValue(FACING,direction).setValue(VARIANT,Boolean.valueOf(false)));
-            return this.defaultBlockState().setValue(FACING,direction).setValue(VARIANT,Boolean.valueOf(false));
-        }else{
-            return  null;
-        }
-    }*/
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction direction = context.getHorizontalDirection().getOpposite();

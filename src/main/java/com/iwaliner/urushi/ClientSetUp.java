@@ -233,6 +233,7 @@ public class ClientSetUp {
         ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
         ModCoreUrushi.axeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
         ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
+        ModCoreUrushi.shovelList.add(ModCoreUrushi.ModID + ":" + "double_slab");
 
 
         ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.senryoubako.get()));

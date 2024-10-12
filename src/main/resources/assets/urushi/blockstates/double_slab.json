@@ -2079,6 +2079,870 @@
       "apply": {
         "model": "minecraft:block/stone_slab_top"
       }
+    },
+    {
+    "when": {
+        "under": "76"
+      },
+      "apply": {
+        "model": "minecraft:block/smooth_stone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "76"
+      },
+      "apply": {
+        "model": "minecraft:block/smooth_stone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "77"
+      },
+      "apply": {
+        "model": "minecraft:block/mossy_cobblestone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "77"
+      },
+      "apply": {
+        "model": "minecraft:block/mossy_cobblestone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "78"
+      },
+      "apply": {
+        "model": "minecraft:block/stone_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "78"
+      },
+      "apply": {
+        "model": "minecraft:block/stone_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "79"
+      },
+      "apply": {
+        "model": "minecraft:block/mossy_stone_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "79"
+      },
+      "apply": {
+        "model": "minecraft:block/mossy_stone_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "80"
+      },
+      "apply": {
+        "model": "minecraft:block/granite_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "80"
+      },
+      "apply": {
+        "model": "minecraft:block/granite_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "81"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_granite_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "81"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_granite_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "82"
+      },
+      "apply": {
+        "model": "minecraft:block/diorite_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "82"
+      },
+      "apply": {
+        "model": "minecraft:block/diorite_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "83"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_diorite_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "83"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_diorite_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "84"
+      },
+      "apply": {
+        "model": "minecraft:block/andesite_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "84"
+      },
+      "apply": {
+        "model": "minecraft:block/andesite_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "85"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_andesite_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "85"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_andesite_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "86"
+      },
+      "apply": {
+        "model": "minecraft:block/cobbled_deepslate_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "86"
+      },
+      "apply": {
+        "model": "minecraft:block/cobbled_deepslate_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "87"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_deepslate_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "87"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_deepslate_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "88"
+      },
+      "apply": {
+        "model": "minecraft:block/deepslate_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "88"
+      },
+      "apply": {
+        "model": "minecraft:block/deepslate_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "89"
+      },
+      "apply": {
+        "model": "minecraft:block/deepslate_tile_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "89"
+      },
+      "apply": {
+        "model": "minecraft:block/deepslate_tile_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "90"
+      },
+      "apply": {
+        "model": "minecraft:block/brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "90"
+      },
+      "apply": {
+        "model": "minecraft:block/brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "91"
+      },
+      "apply": {
+        "model": "minecraft:block/mud_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "91"
+      },
+      "apply": {
+        "model": "minecraft:block/mud_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "92"
+      },
+      "apply": {
+        "model": "minecraft:block/sandstone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "92"
+      },
+      "apply": {
+        "model": "minecraft:block/sandstone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "93"
+      },
+      "apply": {
+        "model": "minecraft:block/smooth_sandstone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "93"
+      },
+      "apply": {
+        "model": "minecraft:block/smooth_sandstone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "94"
+      },
+      "apply": {
+        "model": "minecraft:block/cut_sandstone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "94"
+      },
+      "apply": {
+        "model": "minecraft:block/cut_sandstone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "95"
+      },
+      "apply": {
+        "model": "minecraft:block/red_sandstone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "95"
+      },
+      "apply": {
+        "model": "minecraft:block/red_sandstone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "96"
+      },
+      "apply": {
+        "model": "minecraft:block/smooth_red_sandstone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "96"
+      },
+      "apply": {
+        "model": "minecraft:block/smooth_red_sandstone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "97"
+      },
+      "apply": {
+        "model": "minecraft:block/cut_red_sandstone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "97"
+      },
+      "apply": {
+        "model": "minecraft:block/cut_red_sandstone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "98"
+      },
+      "apply": {
+        "model": "minecraft:block/prismarine_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "98"
+      },
+      "apply": {
+        "model": "minecraft:block/prismarine_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "99"
+      },
+      "apply": {
+        "model": "minecraft:block/prismarine_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "99"
+      },
+      "apply": {
+        "model": "minecraft:block/prismarine_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "100"
+      },
+      "apply": {
+        "model": "minecraft:block/dark_prismarine_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "100"
+      },
+      "apply": {
+        "model": "minecraft:block/dark_prismarine_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "101"
+      },
+      "apply": {
+        "model": "minecraft:block/nether_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "101"
+      },
+      "apply": {
+        "model": "minecraft:block/nether_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "102"
+      },
+      "apply": {
+        "model": "minecraft:block/red_nether_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "102"
+      },
+      "apply": {
+        "model": "minecraft:block/red_nether_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "103"
+      },
+      "apply": {
+        "model": "minecraft:block/blackstone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "103"
+      },
+      "apply": {
+        "model": "minecraft:block/blackstone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "104"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_blackstone_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "104"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_blackstone_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "105"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_blackstone_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "105"
+      },
+      "apply": {
+        "model": "minecraft:block/polished_blackstone_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "106"
+      },
+      "apply": {
+        "model": "minecraft:block/end_stone_brick_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "106"
+      },
+      "apply": {
+        "model": "minecraft:block/end_stone_brick_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "107"
+      },
+      "apply": {
+        "model": "minecraft:block/purpur_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "107"
+      },
+      "apply": {
+        "model": "minecraft:block/purpur_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "108"
+      },
+      "apply": {
+        "model": "minecraft:block/quartz_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "108"
+      },
+      "apply": {
+        "model": "minecraft:block/quartz_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "109"
+      },
+      "apply": {
+        "model": "minecraft:block/smooth_quartz_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "109"
+      },
+      "apply": {
+        "model": "minecraft:block/smooth_quartz_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "110"
+      },
+      "apply": {
+        "model": "minecraft:block/cut_copper_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "110"
+      },
+      "apply": {
+        "model": "minecraft:block/cut_copper_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "111"
+      },
+      "apply": {
+        "model": "minecraft:block/exposed_cut_copper_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "111"
+      },
+      "apply": {
+        "model": "minecraft:block/exposed_cut_copper_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "112"
+      },
+      "apply": {
+        "model": "minecraft:block/weathered_cut_copper_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "112"
+      },
+      "apply": {
+        "model": "minecraft:block/weathered_cut_copper_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "113"
+      },
+      "apply": {
+        "model": "minecraft:block/oxidized_cut_copper_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "113"
+      },
+      "apply": {
+        "model": "minecraft:block/oxidized_cut_copper_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "114"
+      },
+      "apply": {
+        "model": "minecraft:block/cut_copper_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "114"
+      },
+      "apply": {
+        "model": "minecraft:block/cut_copper_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "115"
+      },
+      "apply": {
+        "model": "minecraft:block/exposed_cut_copper_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "115"
+      },
+      "apply": {
+        "model": "minecraft:block/exposed_cut_copper_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "116"
+      },
+      "apply": {
+        "model": "minecraft:block/weathered_cut_copper_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "116"
+      },
+      "apply": {
+        "model": "minecraft:block/weathered_cut_copper_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "117"
+      },
+      "apply": {
+        "model": "minecraft:block/oxidized_cut_copper_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "117"
+      },
+      "apply": {
+        "model": "minecraft:block/oxidized_cut_copper_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "118"
+      },
+      "apply": {
+        "model": "minecraft:block/oak_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "118"
+      },
+      "apply": {
+        "model": "minecraft:block/oak_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "119"
+      },
+      "apply": {
+        "model": "minecraft:block/spruce_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "119"
+      },
+      "apply": {
+        "model": "minecraft:block/spruce_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "120"
+      },
+      "apply": {
+        "model": "minecraft:block/birch_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "120"
+      },
+      "apply": {
+        "model": "minecraft:block/birch_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "121"
+      },
+      "apply": {
+        "model": "minecraft:block/jungle_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "121"
+      },
+      "apply": {
+        "model": "minecraft:block/jungle_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "122"
+      },
+      "apply": {
+        "model": "minecraft:block/acacia_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "122"
+      },
+      "apply": {
+        "model": "minecraft:block/acacia_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "123"
+      },
+      "apply": {
+        "model": "minecraft:block/dark_oak_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "123"
+      },
+      "apply": {
+        "model": "minecraft:block/dark_oak_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "124"
+      },
+      "apply": {
+        "model": "minecraft:block/mangrove_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "124"
+      },
+      "apply": {
+        "model": "minecraft:block/mangrove_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "125"
+      },
+      "apply": {
+        "model": "minecraft:block/cherry_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "125"
+      },
+      "apply": {
+        "model": "minecraft:block/cherry_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "126"
+      },
+      "apply": {
+        "model": "minecraft:block/bamboo_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "126"
+      },
+      "apply": {
+        "model": "minecraft:block/bamboo_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "127"
+      },
+      "apply": {
+        "model": "minecraft:block/bamboo_mosaic_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "127"
+      },
+      "apply": {
+        "model": "minecraft:block/bamboo_mosaic_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "128"
+      },
+      "apply": {
+        "model": "minecraft:block/crimson_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "128"
+      },
+      "apply": {
+        "model": "minecraft:block/crimson_slab_top"
+      }
+    },
+    {
+    "when": {
+        "under": "129"
+      },
+      "apply": {
+        "model": "minecraft:block/warped_slab"
+      }
+    },
+    {
+    "when": {
+        "upper": "129"
+      },
+      "apply": {
+        "model": "minecraft:block/warped_slab_top"
+      }
     }
     
    
