@@ -64,6 +64,7 @@ public  class HokoraBlockEntity extends AbstractReiryokuStorableBlockEntity impl
         this.putBaseTag(compoundtag);
         return compoundtag;
     }
+
     @Override
     public ElementType getExportElementType() {
         return this.getStoredElementType();

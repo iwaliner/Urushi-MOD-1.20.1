@@ -48,6 +48,9 @@ public  class PlateBlockEntity extends RandomizableContainerBlockEntity  {
         ContainerHelper.saveAllItems(compoundtag, this.items, true);
         return compoundtag;
     }
+    public ClientboundBlockEntityDataPacket getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
 
     @Override
     public int getMaxStackSize() {

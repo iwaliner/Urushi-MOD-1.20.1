@@ -2554,6 +2554,10 @@
    "item.urushi.ghost_spawn_egg": "Ghost Spawn Egg",
    "block.urushi.red_seigaiha_fusuma": "Red Seigaiha Fusuma",
    "block.urushi.red_sayagata_fusuma": "Red Sayagata Fusuma",
-   "config.jade.plugin_urushi.block_element": "Block Element"
-   
+   "config.jade.plugin_urushi.block_element": "Block Element",
+   "info.urushi.double_slab": "All slabs in Vanilla and Urushi can be stacked even if different types.",
+   "item.urushi.shrimp": "Shrimp",
+   "item.urushi.fried_shrimp": "Fried Shrimp",
+   "item.urushi.shrimp_sushi": "Shrimp Sushi",
+   "entity.urushi.shrimp_sushi_food": "Shrimp Sushi"
 }

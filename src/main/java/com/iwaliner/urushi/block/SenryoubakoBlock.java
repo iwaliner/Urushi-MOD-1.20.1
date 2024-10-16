@@ -114,7 +114,7 @@ public class SenryoubakoBlock extends BaseEntityBlock {
         return true;
     }
     @Override
-    public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
+    public BlockState rotate(BlockState state, Rotation direction) {
         return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
     }
 

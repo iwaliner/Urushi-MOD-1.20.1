@@ -2551,7 +2551,12 @@
    "item.urushi.ghost_spawn_egg": "幽霊のスポーンエッグ",
    "block.urushi.red_seigaiha_fusuma": "赤色の青海波の襖",
    "block.urushi.red_sayagata_fusuma": "赤色の紗綾形の襖",
-   "config.jade.plugin_urushi.block_element": "ブロックの元素"
+   "config.jade.plugin_urushi.block_element": "ブロックの元素",
+   "info.urushi.double_slab": "バニラや漆MODに存在するすべてのハーフブロックは異なる種類でも重ねられる",
+   "item.urushi.shrimp": "エビ",
+   "item.urushi.fried_shrimp": "エビフライ",
+   "item.urushi.shrimp_sushi": "エビの寿司",
+   "entity.urushi.shrimp_sushi_food": "エビの寿司"
    
    
 }

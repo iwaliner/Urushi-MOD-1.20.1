@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:shrimp"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:syari"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:shrimp_sushi",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

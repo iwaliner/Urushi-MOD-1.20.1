@@ -92,7 +92,7 @@ public class HokoraBlock extends BaseEntityBlock implements Tiered, ElementBlock
         p_49915_.add(FACING);
     }
     @Override
-    public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
+    public BlockState rotate(BlockState state, Rotation direction) {
         return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
     }
 

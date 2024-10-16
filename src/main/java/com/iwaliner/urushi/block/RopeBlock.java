@@ -118,5 +118,24 @@ public class RopeBlock extends FallingBlock implements SimpleWaterloggedBlock {
         p_53234_.scheduleTick(p_53235_, this, this.getDelayAfterPlace());
     }
 
+    public BlockState rotate(BlockState p_55930_, Rotation p_55931_) {
+        return rotatePillar(p_55930_, p_55931_);
+    }
 
+    public static BlockState rotatePillar(BlockState p_154377_, Rotation p_154378_) {
+        switch (p_154378_) {
+            case COUNTERCLOCKWISE_90:
+            case CLOCKWISE_90:
+                switch ((Direction.Axis)p_154377_.getValue(AXIS)) {
+                    case X:
+                        return p_154377_.setValue(AXIS, Direction.Axis.Z);
+                    case Z:
+                        return p_154377_.setValue(AXIS, Direction.Axis.X);
+                    default:
+                        return p_154377_;
+                }
+            default:
+                return p_154377_;
+        }
+    }
 }

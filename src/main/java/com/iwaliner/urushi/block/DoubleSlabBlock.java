@@ -18,8 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DoubleSlabBlock extends HorizonalRotateBlock {
-    public static final IntegerProperty UNDER = IntegerProperty.create("under", 0, 140);
-    public static final IntegerProperty UPPER = IntegerProperty.create("upper", 0, 140);
+    public static final IntegerProperty UNDER = IntegerProperty.create("under", 0, 130);
+    public static final IntegerProperty UPPER = IntegerProperty.create("upper", 0, 130);
     public static List<Block> slabList=new ArrayList<>();
 
     public DoubleSlabBlock(Properties p_49795_) {

@@ -1,6 +1,7 @@
 package com.iwaliner.urushi.util;
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.block.HorizonalRotateSlabBlock;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -16,6 +17,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
 import net.minecraft.world.level.material.Fluid;
@@ -141,5 +143,8 @@ public class UrushiUtils {
     public static boolean isUrushiObject(String id){
         String[] strings=id.split("\\.");
         return strings[1].equals("urushi");
+    }
+   public static boolean isSlab(Block block){
+        return block instanceof SlabBlock ||block instanceof HorizonalRotateSlabBlock;
     }
 }

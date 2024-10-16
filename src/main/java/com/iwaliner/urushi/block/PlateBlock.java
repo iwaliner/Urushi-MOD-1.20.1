@@ -77,7 +77,7 @@ public class PlateBlock extends BaseEntityBlock {
                 ItemStack heldStack=player.getItemInHand(hand);
                 ItemStack insertStack=heldStack.copy();
                 insertStack.setCount(1);
-                if(Objects.requireNonNull(tileEntity).canPlaceItem(0)){
+                if(tileEntity.canPlaceItem(0)){
                     tileEntity.setItem(0,insertStack);
                     tileEntity.markUpdated();
                     heldStack.shrink(1);
@@ -106,7 +106,7 @@ public class PlateBlock extends BaseEntityBlock {
 
 
     @Override
-    public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
+    public BlockState rotate(BlockState state, Rotation direction) {
         return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
     }
 

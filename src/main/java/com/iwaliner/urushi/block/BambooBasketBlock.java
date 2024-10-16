@@ -78,7 +78,7 @@ public class BambooBasketBlock extends BaseEntityBlock {
                 insertStack.setCount(1);
                 if(!heldStack.isEmpty()){
                 for (int i = 0; i < 5; i++) {
-                    if (Objects.requireNonNull(tileEntity).canPlaceItem(i)) {
+                    if (tileEntity.canPlaceItem(i)) {
                         tileEntity.setItem(i, insertStack);
                         tileEntity.markUpdated();
                         heldStack.shrink(1);
@@ -114,7 +114,7 @@ public class BambooBasketBlock extends BaseEntityBlock {
 
 
     @Override
-    public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
+    public BlockState rotate(BlockState state, Rotation direction) {
         return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
     }
 

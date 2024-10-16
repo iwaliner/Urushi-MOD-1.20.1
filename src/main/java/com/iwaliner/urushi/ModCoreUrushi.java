@@ -392,6 +392,9 @@ public class ModCoreUrushi {
         Item item = event.getItemStack().getItem();
         Block block = Block.byItem(item);
         List<Component> tooltipList = event.getToolTip();
+        if(ConfigUrushi.doubeSlabs.get()&&UrushiUtils.isSlab(block)&&(UrushiUtils.isMinecraftObject(block.getDescriptionId())||UrushiUtils.isUrushiObject(block.getDescriptionId()))){
+            tooltipList.add((Component.translatable("info.urushi.double_slab")).withStyle(ChatFormatting.GRAY));
+        }
         if (item instanceof ElementItem elementItem) {
             ElementType elementType = elementItem.getElementType();
             String item_id;
@@ -551,9 +554,9 @@ public class ModCoreUrushi {
         if(cookingtype.equals("undercooked")){
             livingEntity.addEffect(new MobEffectInstance(MobEffects.HUNGER,300+60*level,level+15));
         }else if(cookingtype.equals("wellcooked")){
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,40+level*10, 1));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,60*20+level*200, 2));
             if(ID==9){
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION,200,0));
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION,180*20,0));
             }
         }else{
             livingEntity.addEffect(new MobEffectInstance(MobEffects.POISON,10+10*level,1));
@@ -567,7 +570,8 @@ public class ModCoreUrushi {
         if(event.getName().equals(BuiltInLootTables.FISHING_FISH)){
             event.getTable().addPool(LootPool.lootPool()
                     .add(LootItem.lootTableItem(ItemAndBlockRegister.sweetfish.get()).setWeight(25))
-                    .add(LootItem.lootTableItem(ItemAndBlockRegister.tsuna.get()).setWeight(25)).build());
+                    .add(LootItem.lootTableItem(ItemAndBlockRegister.tsuna.get()).setWeight(25))
+                    .add(LootItem.lootTableItem(ItemAndBlockRegister.shrimp.get()).setWeight(25)).build());
         }else if(event.getName().equals(BuiltInLootTables.SPAWN_BONUS_CHEST)) {
             event.getTable().addPool(LootPool.lootPool()
                     .add(LootItem.lootTableItem(ItemAndBlockRegister.lacquer_sapling.get()).setWeight(50)).add(LootItem.lootTableItem(ItemAndBlockRegister.silkworm.get()).setWeight(50)).build());
