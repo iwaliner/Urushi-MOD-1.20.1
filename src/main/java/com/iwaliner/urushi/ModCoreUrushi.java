@@ -34,6 +34,7 @@ import net.minecraft.world.entity.animal.Squid;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
@@ -506,10 +507,22 @@ public class ModCoreUrushi {
                 }
                 if(ShichirinBlockEntity.getCookingType(i).equals("undercooked")){
                     tooltipList.add((Component.translatable("info.urushi.undercooked" ).append(" "+level)).withStyle(color));
+                    List<MobEffectInstance> list=new ArrayList<>();
+                    list.add(new MobEffectInstance(MobEffects.HUNGER,300+60*level,level+15));
+                    PotionUtils.addPotionTooltip(list,tooltipList,1.0F);
                 }else if(ShichirinBlockEntity.getCookingType(i).equals("wellcooked")){
                     tooltipList.add((Component.translatable("info.urushi.wellcooked" ).append(" "+level)).withStyle(color));
+                    List<MobEffectInstance> list=new ArrayList<>();
+                    list.add(new MobEffectInstance(MobEffects.REGENERATION,60*20+level*200, 1));
+                    if(level==5){
+                        list.add(new MobEffectInstance(MobEffects.HEALTH_BOOST,180*20,0));
+                    }
+                    PotionUtils.addPotionTooltip(list,tooltipList,1.0F);
                 }else{
                     tooltipList.add((Component.translatable("info.urushi.overcooked" ).append(" "+level)).withStyle(color));
+                    List<MobEffectInstance> list=new ArrayList<>();
+                    list.add(new MobEffectInstance(MobEffects.POISON,10+10*level,1));
+                    PotionUtils.addPotionTooltip(list,tooltipList,1.0F);
                 }
             }
         }
@@ -554,9 +567,9 @@ public class ModCoreUrushi {
         if(cookingtype.equals("undercooked")){
             livingEntity.addEffect(new MobEffectInstance(MobEffects.HUNGER,300+60*level,level+15));
         }else if(cookingtype.equals("wellcooked")){
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,60*20+level*200, 2));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,60*20+level*200, 1));
             if(ID==9){
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION,180*20,0));
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST,180*20,0));
             }
         }else{
             livingEntity.addEffect(new MobEffectInstance(MobEffects.POISON,10+10*level,1));

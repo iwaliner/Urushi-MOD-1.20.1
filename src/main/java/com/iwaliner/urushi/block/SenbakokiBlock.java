@@ -50,14 +50,15 @@ public class SenbakokiBlock extends HorizonalRotateBlock{
              stack.shrink(1);
 
 
-            if (stack.isEmpty()){
+          /*  if (stack.isEmpty()){
                 player.setItemInHand(hand, recipe.get().getResultItem().copy());
                 for(int i=0;i<recipe.get().getSubResultItems().size();i++) {
                     if (!player.getInventory().add(recipe.get().getSubResultItems().get(i).copy())) {
                         player.drop(recipe.get().getSubResultItems().get(i).copy(), false);
                     }
                 }
-            }else{
+            }else
+            {*/
                 if (!player.getInventory().add(recipe.get().getResultItem().copy())) {
                     player.drop(recipe.get().getResultItem().copy(), false);
                 }
@@ -66,7 +67,7 @@ public class SenbakokiBlock extends HorizonalRotateBlock{
                         player.drop(recipe.get().getSubResultItems().get(i).copy(), false);
                     }
                 }
-            }
+         //   }
 
             level.playSound((Player) null, (double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1.5F, 1F);
             return InteractionResult.SUCCESS;

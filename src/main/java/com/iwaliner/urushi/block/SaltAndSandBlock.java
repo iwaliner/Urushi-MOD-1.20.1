@@ -30,7 +30,7 @@ public class SaltAndSandBlock extends FallingBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
-        ItemEntity entity = new ItemEntity(world,pos.getX()+0.5D, pos.getY()+1.5D, pos.getZ()+0.5D, new ItemStack(ItemAndBlockRegister.salt.get()));
+        ItemEntity entity = new ItemEntity(world,pos.getX()+0.5D, pos.getY()+1.5D, pos.getZ()+0.5D, new ItemStack(ItemAndBlockRegister.salt.get(),8));
         world.addFreshEntity(entity);
         world.setBlock(pos, Blocks.SAND.defaultBlockState(),2);
         world.playSound((Player) null,pos, SoundEvents.SAND_BREAK, SoundSource.BLOCKS, 1.0F, 1F);

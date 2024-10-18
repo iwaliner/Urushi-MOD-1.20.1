@@ -2555,7 +2555,7 @@
    "block.urushi.red_seigaiha_fusuma": "Red Seigaiha Fusuma",
    "block.urushi.red_sayagata_fusuma": "Red Sayagata Fusuma",
    "config.jade.plugin_urushi.block_element": "Block Element",
-   "info.urushi.double_slab": "All slabs in Vanilla and Urushi can be stacked even if different types.",
+   "info.urushi.double_slab": "All slabs in Vanilla and Urushi can be stacked even if different types. Stacking does not cause loading.",
    "item.urushi.shrimp": "Shrimp",
    "item.urushi.fried_shrimp": "Fried Shrimp",
    "item.urushi.shrimp_sushi": "Shrimp Sushi",

@@ -149,9 +149,10 @@ public class ChiseledLacquerLogBlock extends HorizonalRotateBlock{
            ItemStack stack=player.getItemInHand(hand);
            if(stack.getItem()== Items.BOWL){
                stack.shrink(1);
-               if (stack.isEmpty()) {
+            /*   if (stack.isEmpty()) {
                    player.setItemInHand(hand, new ItemStack(ItemAndBlockRegister.raw_urushi_ball.get()));
-               } else if (!player.getInventory().add(new ItemStack(ItemAndBlockRegister.raw_urushi_ball.get()))) {
+               } else */
+                   if (!player.getInventory().add(new ItemStack(ItemAndBlockRegister.raw_urushi_ball.get()))) {
                    player.drop(new ItemStack(ItemAndBlockRegister.raw_urushi_ball.get()), false);
                }
                level.playSound((Player) null,(double) pos.getX()+0.5D,(double) pos.getY()+0.5D,(double) pos.getZ()+0.5D, SoundEvents.HONEY_BLOCK_BREAK, SoundSource.BLOCKS,1F,1F);
