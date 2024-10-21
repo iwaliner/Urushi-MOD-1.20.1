@@ -11,9 +11,9 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
 public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
-    private static final int SLOTS_PER_ROW = 13;
+    private static final int SLOTS_PER_ROW = 12;
     private final Container container;
-    private final int containerRows=8;
+    private final int containerRows=9;
     public DoubledWoodenCabinetryMenu( int p_39225_, Inventory p_39226_) {
         this(MenuRegister.DoubledWoodenCabinetryMenu.get(), p_39225_, p_39226_, new SimpleContainer(108));
     }
@@ -32,19 +32,15 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
                 this.addSlot(new Slot(container, k + j * SLOTS_PER_ROW, 8 + (k-0) * 18, 18 + j * 18));
             }
         }
-        this.addSlot(new Slot(container, 104, 8 + (12 * 18), 18 + 126+18));
-        this.addSlot(new Slot(container, 105, 8 + (12 * 18), 18 + 126+18*2));
-        this.addSlot(new Slot(container, 106, 8 + (12 * 18), 18 + 126+18*3));
-        this.addSlot(new Slot(container, 107, 8 + (12 * 18), 18 + 126+18*4));
 
         for(int l = 0; l < 3; ++l) {
             for(int j1 = 0; j1 < 9; ++j1) {
-                this.addSlot(new Slot(inventory, j1 + l * 9 + 9, 8 + j1 * 18+2*18, 103 + l * 18 + i+1));
+                this.addSlot(new Slot(inventory, j1 + l * 9 + 9, 8 + j1 * 18+2*18 - 9, 103 + l * 18 + i+1));
             }
         }
 
         for(int i1 = 0; i1 < 9; ++i1) {
-            this.addSlot(new Slot(inventory, i1, 8 + i1 * 18+2*18, 161 + i+1));
+            this.addSlot(new Slot(inventory, i1, 8 + i1 * 18+2*18 - 9, 161 + i+1));
         }
 
 
