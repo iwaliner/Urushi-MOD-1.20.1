@@ -708,7 +708,7 @@
 
   "block.urushi.kasuga_lantern": "春日灯笼",
 
-  "block.urushi.dough": "面条面团",
+  "block.urushi.dough": "乌冬面条面团",
 
   "block.urushi.udon": "乌冬面条",
 
@@ -733,6 +733,8 @@
   "info.urushi.noodleknife": "用来切面团",
 
   "info.urushi.saltandsand": "由沙滩或海洋群系的与水接触的沙子变化而成",
+  
+  "info.urushi.udon": "使用切面刀切割放在地上的乌冬面条面团以获得",
 
   "block.urushi.dirt_furnace": "土灶",
 
@@ -2401,7 +2403,7 @@
   "info.urushi.filled_bamboo_cup": "最多可堆叠64个",
   "info.urushi.water_bamboo_cup": "与水瓶类似，可以使对泥土变为泥巴",
   "info.urushi.milk_bamboo_cup": "与奶桶类似，饮用可以清除状态",
-  "info.urushi.udon": "使用切面刀切割放在地上的面条面团以获得",
+  "info.urushi.udon": "使用切面刀切割放在地上的乌冬面条面团以获得",
   "info.urushi.alkaline_noodles": "使用切面刀切割放在地上的碱水面条面团以获得",
   "info.urushi.bars": "仅在对方块侧面放置时与其他方块侧面相连",
   "biome.urushi.autumn_forest": "秋叶森林",
@@ -2550,10 +2552,11 @@
    "block.urushi.red_seigaiha_fusuma": "红色青海波纸拉门",
    "block.urushi.red_sayagata_fusuma": "红色丝绫纹纸拉门",
    "config.jade.plugin_urushi.block_element": "元素",
-   "info.urushi.double_slab": "All slabs in Vanilla and Urushi can be stacked even if different types. Stacking does not cause loading.",
-   "item.urushi.shrimp": "Shrimp",
-   "item.urushi.fried_shrimp": "Fried Shrimp",
-   "item.urushi.shrimp_sushi": "Shrimp Sushi",
-   "entity.urushi.shrimp_sushi_food": "Shrimp Sushi"
+   "info.urushi.double_slab": "所有的Minecraft原版与漆MOD的台阶可以不限种类互相堆叠放置。互相堆叠不会引起性能问题。",
+   "item.urushi.shrimp": "虾",
+   "item.urushi.fried_shrimp": "炸虾",
+   "item.urushi.shrimp_sushi": "鲜虾寿司",
+   "entity.urushi.shrimp_sushi_food": "鲜虾寿司"
+
 
 }
