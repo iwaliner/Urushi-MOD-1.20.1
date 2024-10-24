@@ -23,7 +23,7 @@ public class DoubledWoodenCabinetryScreen  extends AbstractContainerScreen<Doubl
 
     private boolean widthTooNarrow;
     private final ResourceLocation CONTAINER_BACKGROUND = new ResourceLocation("urushi:textures/gui/doubled_wooden_cabinetry.png");
-    private final int containerRows=8;
+    private final int containerRows=9;
 
     public DoubledWoodenCabinetryScreen(DoubledWoodenCabinetryMenu p_i51104_1_, Inventory p_i51104_3_, Component p_i51104_4_) {
         super(p_i51104_1_, p_i51104_3_, p_i51104_4_);
@@ -56,8 +56,7 @@ public class DoubledWoodenCabinetryScreen  extends AbstractContainerScreen<Doubl
         RenderSystem.setShaderTexture(0, this.CONTAINER_BACKGROUND);
         int i = (this.width - this.imageWidth) / 2;
         int j = (this.height - this.imageHeight) / 2;
-        p_230450_1_.blit(CONTAINER_BACKGROUND, i, j, 0, 0, this.imageWidth, this.containerRows * 18 + 17);
-        p_230450_1_.blit(CONTAINER_BACKGROUND, i, j + this.containerRows * 18 + 17-(2*18), 0, 126-1, this.imageWidth, 96+(2*18)-2);
+        p_230450_1_.blit(CONTAINER_BACKGROUND, i, j, 0, 0, this.imageWidth, this.imageHeight,256,512);
     }
 
 
