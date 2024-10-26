@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
-        "particle": "urushi:block/dirt_wall",
+        "base": "urushi:block/dirt_wall",
         "down": "urushi:block/planks_smooth_oak",
         "up": "urushi:block/planks_smooth_oak",
         "north": "urushi:block/dirt_wall",
-        "east": "urushi:block/connectable/framed_wattle_and_daub/wattle_and_daub_oak_5",
-        "south": "urushi:block/connectable/framed_wattle_and_daub/wattle_and_daub_oak_0",
-        "west": "urushi:block/connectable/framed_wattle_and_daub/wattle_and_daub_oak_4"
+        "east": "urushi:block/connectable/wood_frame/plaster_oak_5",
+        "south": "urushi:block/connectable/wood_frame/plaster_oak_0",
+        "west": "urushi:block/connectable/wood_frame/plaster_oak_4"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
-        "particle": "urushi:block/plaster_orange",
+        "base": "urushi:block/plaster_orange",
         "down": "urushi:block/planks_smooth_japanese_cedar",
         "up": "urushi:block/plaster_orange",
         "north": "urushi:block/plaster_orange",
-        "east": "urushi:block/connectable/framed_plaster_orange/plaster_cedar_12",
-        "south": "urushi:block/connectable/framed_plaster_orange/plaster_cedar_2",
-        "west": "urushi:block/connectable/framed_plaster_orange/plaster_cedar_11"
+        "east": "urushi:block/connectable/wood_frame/plaster_cedar_12",
+        "south": "urushi:block/connectable/wood_frame/plaster_cedar_2",
+        "west": "urushi:block/connectable/wood_frame/plaster_cedar_11"
     }
 }

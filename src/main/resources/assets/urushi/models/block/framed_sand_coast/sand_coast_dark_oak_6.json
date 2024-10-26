@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
-        "particle": "urushi:block/sand_wall",
+        "base": "urushi:block/sand_wall",
         "down": "urushi:block/planks_smooth_dark_oak",
         "up": "urushi:block/sand_wall",
         "north": "urushi:block/sand_wall",
-        "east": "urushi:block/connectable/framed_sand_coast/sand_coast_dark_oak_12",
-        "south": "urushi:block/connectable/framed_sand_coast/sand_coast_dark_oak_2",
-        "west": "urushi:block/connectable/framed_sand_coast/sand_coast_dark_oak_11"
+        "east": "urushi:block/connectable/wood_frame/plaster_dark_oak_12",
+        "south": "urushi:block/connectable/wood_frame/plaster_dark_oak_2",
+        "west": "urushi:block/connectable/wood_frame/plaster_dark_oak_11"
     }
 }

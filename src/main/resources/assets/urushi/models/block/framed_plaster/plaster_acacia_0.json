@@ -1,5 +1,5 @@
 {
-    "parent": "urushi:block/wood_frame_base/wood_frame_base_0",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
         "base": "urushi:block/plaster",
         "down": "urushi:block/planks_smooth_acacia",

@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
-        "particle": "urushi:block/sand_wall",
+        "base": "urushi:block/sand_wall",
         "down": "urushi:block/sand_wall",
         "up": "urushi:block/planks_smooth_cypress",
         "north": "urushi:block/sand_wall",
-        "east": "urushi:block/connectable/framed_sand_coast/sand_coast_cypress_13",
-        "south": "urushi:block/connectable/framed_sand_coast/sand_coast_cypress_14",
+        "east": "urushi:block/connectable/wood_frame/plaster_cypress_13",
+        "south": "urushi:block/connectable/wood_frame/plaster_cypress_14",
         "west": "urushi:block/sand_wall"
     }
 }

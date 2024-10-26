@@ -734,7 +734,6 @@
 
   "info.urushi.saltandsand": "由沙滩或海洋群系的与水接触的沙子变化而成",
   
-  "info.urushi.udon": "使用切面刀切割放在地上的乌冬面条面团以获得",
 
   "block.urushi.dirt_furnace": "土灶",
 
@@ -2556,7 +2555,8 @@
    "item.urushi.shrimp": "虾",
    "item.urushi.fried_shrimp": "炸虾",
    "item.urushi.shrimp_sushi": "鲜虾寿司",
-   "entity.urushi.shrimp_sushi_food": "鲜虾寿司"
+   "entity.urushi.shrimp_sushi_food": "鲜虾寿司",
+   "info.urushi.doubled_wooden_cabinetry_sort_button": "Sort"
 
 
 }

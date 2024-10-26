@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
-        "particle": "urushi:block/plaster_gray",
+        "base": "urushi:block/plaster_gray",
         "down": "urushi:block/plaster_gray",
         "up": "urushi:block/planks_smooth_spruce",
-        "north": "urushi:block/connectable/framed_plaster_gray/plaster_spruce_1",
-        "east": "urushi:block/connectable/framed_plaster_gray/plaster_spruce_1",
-        "south": "urushi:block/connectable/framed_plaster_gray/plaster_spruce_1",
-        "west": "urushi:block/connectable/framed_plaster_gray/plaster_spruce_1"
+        "north": "urushi:block/connectable/wood_frame/plaster_spruce_1",
+        "east": "urushi:block/connectable/wood_frame/plaster_spruce_1",
+        "south": "urushi:block/connectable/wood_frame/plaster_spruce_1",
+        "west": "urushi:block/connectable/wood_frame/plaster_spruce_1"
     }
 }

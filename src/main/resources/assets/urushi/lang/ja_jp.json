@@ -348,7 +348,7 @@
 
    "item.urushi.butadon": "豚丼",
 
-   "item.urushi.sakura_mochi": "こぼれ桜餅",
+   "item.urushi.sakura_mochi": "桜餅",
 
    "item.urushi.ohagi": "おはぎ",
 
@@ -716,7 +716,7 @@
 
    "item.urushi.yokan": "羊羹",
 
-   "item.urushi.sakura_yokan": "こぼれ桜羊羹",
+   "item.urushi.sakura_yokan": "桜羊羹",
 
    "item.urushi.sekihan": "赤飯",
 
@@ -734,7 +734,6 @@
 
    "info.urushi.saltandsand": "海や海岸系のバイオームで、水に接した砂はこれに変化",
 
-   "info.urushi.udon": "麵切り包丁をうどんの生地に使うことで入手",
 
    "block.urushi.dirt_furnace": "土かまど",
 
@@ -2556,7 +2555,8 @@
    "item.urushi.shrimp": "エビ",
    "item.urushi.fried_shrimp": "エビフライ",
    "item.urushi.shrimp_sushi": "エビの寿司",
-   "entity.urushi.shrimp_sushi_food": "エビの寿司"
+   "entity.urushi.shrimp_sushi_food": "エビの寿司",
+   "info.urushi.doubled_wooden_cabinetry_sort_button": "整頓"
    
    
 }
