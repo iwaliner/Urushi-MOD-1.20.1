@@ -28,18 +28,18 @@ public class DoubledWoodenCabinetryScreen  extends AbstractContainerScreen<Doubl
 
 {
 
-    private boolean buttonGrow;
+
     private final ResourceLocation CONTAINER_BACKGROUND = new ResourceLocation("urushi:textures/gui/doubled_wooden_cabinetry.png");
 
     public DoubledWoodenCabinetryScreen(DoubledWoodenCabinetryMenu p_i51104_1_, Inventory p_i51104_3_, Component p_i51104_4_) {
         super(p_i51104_1_, p_i51104_3_, p_i51104_4_);
-        //this.imageWidth=340;
         this.imageWidth=304;
         int i = 222;
         int j = 114;
-        //this.imageHeight = 224;
         this.imageHeight = 242;
-        this.inventoryLabelY = this.imageHeight - 94;
+        this.inventoryLabelY = 147;
+        this.inventoryLabelX += 62;
+
     }
 
     public void init() {
@@ -66,8 +66,7 @@ public class DoubledWoodenCabinetryScreen  extends AbstractContainerScreen<Doubl
         p_230450_1_.blit(CONTAINER_BACKGROUND, i, j, 0, 0, this.imageWidth, this.imageHeight,512,512);
         if(isMouseOver(p_230450_3_,p_230450_4_)){
             p_230450_1_.blit(CONTAINER_BACKGROUND, i+224, j+126, 0, 247, 70, 263,512,512);
-            //p_230450_1_.renderTooltip(this.font, new ItemStack(ItemAndBlockRegister.wood_amber.get()), p_230450_3_, p_230450_4_);
-        }
+         }
     }
     public boolean mouseClicked(double x, double y, int p_99320_) {
      int l=0;
@@ -82,27 +81,14 @@ public class DoubledWoodenCabinetryScreen  extends AbstractContainerScreen<Doubl
     }
 
 
-    protected void renderLabels(GuiGraphics p_283369_, int p_282699_, int p_281296_) {
-        p_283369_.drawCenteredString(this.font, Component.translatable("info.urushi.doubled_wooden_cabinetry_sort_button"), 259, 130, 14737632);
+    protected void renderLabels(GuiGraphics guiGraphics, int i, int j) {
+        guiGraphics.drawCenteredString(this.font, Component.translatable("info.urushi.doubled_wooden_cabinetry_sort_button"), 259, 130, 14737632);
+        super.renderLabels(guiGraphics,i,j);
     }
-    public boolean mouseDragged(double x, double y, int p_99324_, double p_99325_, double p_99326_) {
-        if (x < this.leftPos + 294 && x > this.leftPos + 224 && y > this.topPos + 126 && y < this.topPos + 142) {
-            this.buttonGrow = true;
-            return true;
-        } else {
-            this.buttonGrow = false;
-            return super.mouseDragged(x, y, p_99324_, p_99325_, p_99326_);
-        }
-    }
+
 
     @Override
     public boolean isMouseOver(double x, double y) {
-        if (x < this.leftPos + 294 && x > this.leftPos + 224 && y > this.topPos + 126 && y < this.topPos + 142) {
-            this.buttonGrow = true;
-            return true;
-        } else {
-            this.buttonGrow = false;
-            return false;
-        }
+        return x < this.leftPos + 294 && x > this.leftPos + 224 && y > this.topPos + 126 && y < this.topPos + 142;
     }
 }

@@ -29,6 +29,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -38,24 +39,25 @@ public class EmptyBambooCup extends Item {
         super(p_41383_);
     }
 
-    public InteractionResultHolder<ItemStack> use(Level p_40656_, Player p_40657_, InteractionHand p_40658_) {
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
 
-        ItemStack itemstack = p_40657_.getItemInHand(p_40658_);
+        ItemStack itemstack = player.getItemInHand(hand);
 
-        HitResult hitresult = getPlayerPOVHitResult(p_40656_, p_40657_, ClipContext.Fluid.SOURCE_ONLY);
+        HitResult hitresult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.SOURCE_ONLY);
         if (hitresult.getType() == HitResult.Type.MISS) {
             return InteractionResultHolder.pass(itemstack);
         } else {
             if (hitresult.getType() == HitResult.Type.BLOCK) {
                 BlockPos blockpos = ((BlockHitResult) hitresult).getBlockPos();
-                if (!p_40656_.mayInteract(p_40657_, blockpos)) {
+                if (!level.mayInteract(player, blockpos)) {
                     return InteractionResultHolder.pass(itemstack);
                 }
 
-                if (p_40656_.getFluidState(blockpos).is(FluidTags.WATER)) {
-                    p_40656_.playSound(p_40657_, p_40657_.getX(), p_40657_.getY(), p_40657_.getZ(), SoundEvents.BOTTLE_FILL, SoundSource.NEUTRAL, 1.0F, 1.0F);
-                    p_40656_.gameEvent(p_40657_, GameEvent.FLUID_PICKUP, blockpos);
-                    return InteractionResultHolder.sidedSuccess(this.turnBottleIntoItem(itemstack, p_40657_, new ItemStack(ItemAndBlockRegister.water_bamboo_cup.get())), p_40656_.isClientSide());
+                if (level.getFluidState(blockpos).is(FluidTags.WATER)) {
+                    level.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.BOTTLE_FILL, SoundSource.NEUTRAL, 1.0F, 1.0F);
+                    level.gameEvent(player, GameEvent.FLUID_PICKUP, blockpos);
+                    this.turnBottleIntoItem(itemstack,player,new ItemStack(ItemAndBlockRegister.water_bamboo_cup.get()));
+                    return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
                 }
             }
 
@@ -66,18 +68,25 @@ public class EmptyBambooCup extends Item {
     }
 
     @Override
-    public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity entity, InteractionHand hand) {
+    public @NotNull InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity entity, InteractionHand hand) {
         if (entity instanceof Cow||entity instanceof Goat) {
-            this.turnBottleIntoItem(stack, player, new ItemStack(ItemAndBlockRegister.milk_bamboo_cup.get()));
-            return InteractionResult.SUCCESS;
+            if(entity.isAlive()&&!entity.isBaby()) {
+                player.playSound(SoundEvents.COW_MILK, 1.0F, 1.0F);
+                this.turnBottleIntoItem(stack, player, new ItemStack(ItemAndBlockRegister.milk_bamboo_cup.get()));
+                return InteractionResult.sidedSuccess(player.level().isClientSide);
+            }
         }
         return InteractionResult.FAIL;
     }
 
 
-    protected ItemStack turnBottleIntoItem(ItemStack p_40652_, Player p_40653_, ItemStack p_40654_) {
-        p_40653_.awardStat(Stats.ITEM_USED.get(this));
-        return ItemUtils.createFilledResult(p_40652_, p_40653_, p_40654_);
+    protected void turnBottleIntoItem(ItemStack stack, Player player, ItemStack result) {
+        stack.shrink(1);
+        if (!player.getInventory().add(result)) {
+            player.drop(result, false);
+        }
+        player.playSound(SoundEvents.COW_MILK,1F,0.5F);
+
     }
     @Override
     public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> list, TooltipFlag p_41424_) {
