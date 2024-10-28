@@ -154,7 +154,6 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
                 ItemStack stack2=stack.copy();
                 stack2.setCount(stack2.getMaxStackSize());
                 list2.set(map.size()+n,stack2);
-                //list1.set(map.size()+n,ItemStack.EMPTY);
                 --i2;
             }
             int i3=count%stack.getMaxStackSize();
