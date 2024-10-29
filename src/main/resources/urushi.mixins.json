@@ -6,7 +6,6 @@
   "mixins": [
     "IronBarsMixin",
     "ItemEntityMixin",
-    "SlabBlockMixin",
     "WeatherCommandMixin"
   ],
   "client": [],

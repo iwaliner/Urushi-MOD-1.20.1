@@ -19,7 +19,7 @@ public final class ConfigUrushi {
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableSaltAndSandGeneration;
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableCropDropsFromGrass;
     public static final ForgeConfigSpec.ConfigValue<Boolean> noticeNewerVersion;
-    public static final ForgeConfigSpec.ConfigValue<Boolean> doubeSlabs;
+
 
 
     static {
@@ -29,7 +29,6 @@ public final class ConfigUrushi {
         WindBellSound=builder.comment("Play the sound of Wind Bell").define("play wind bell sound(true/false)",true);
         disableSaltAndSandGeneration=builder.comment("disable Salty Sand Generation").define("disable changing Sand to Salty Sand (true/false)",false);
         disableCropDropsFromGrass=builder.comment("disable crop drops from Grass").define("disable crop drops from Grass (true/false)",false);
-        doubeSlabs=builder.comment("slabs are stackable even if they are different types of slabs").define("double slabs (true/false)",true);
         builder.pop();
         builder.push("item settings");
         reiryokuCapacityOfMagatama=builder.comment("max Reiryoku amount of Magatama").define("magatama(1～2147483647)",5600);

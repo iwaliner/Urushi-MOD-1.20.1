@@ -1241,7 +1241,6 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> additional_heart =ITEMS.register("additional_heart", () -> {return new AdditionalHeartItem((new Item.Properties()));});
     public static final RegistryObject<Item> ghost_spawn_egg =ITEMS.register("ghost_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.Ghost, 14283506, 14014157,(new Item.Properties()));});
     public static final RegistryObject<Item> giant_skeleton_spawn_egg =ITEMS.register("giant_skeleton_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.GianntSkeleton, 12698049, 4802889,(new Item.Properties()));});
-    public static final RegistryObject<Block> double_slab =BN("double_slab","n",-1,() -> {return new DoubleSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.NONE).strength(1F, 10.0F).sound(SoundType.STONE));});
 
 
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()
