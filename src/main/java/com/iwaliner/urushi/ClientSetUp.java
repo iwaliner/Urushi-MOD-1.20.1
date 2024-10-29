@@ -15,11 +15,14 @@ import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.ToggleKeyMappingPlus;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.mojang.blaze3d.platform.InputConstants;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.renderer.LevelRenderer;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.FallingBlockRenderer;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
@@ -28,8 +31,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.RenderTypeHelper;
 import net.minecraftforge.client.event.*;
 import net.minecraftforge.client.settings.KeyConflictContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -66,8 +71,14 @@ public class ClientSetUp {
     public static void keyRegister(RegisterKeyMappingsEvent event) {
         event.register(ClientSetUp.connectionKey);
     }
+   /* @SubscribeEvent
+    public static void RenderBoxEvent(RenderHighlightEvent event) {
+        Vec3 position=event.getTarget().getLocation();
+        VertexConsumer vertexConsumer = event.getMultiBufferSource().getBuffer(RenderType.LINES);
+        LevelRenderer.renderLineBox(event.getPoseStack(),vertexConsumer,position.x+0.5D,position.y+0.5D,position.z+0.5D,0.5F, 0.5F, 1.0F, 1.0F, 0.5F, 0.5F, 1.0F);
+    }*/
 
-    /**エンティティの見た目を登録*/
+     /**エンティティの見た目を登録*/
     @SubscribeEvent
     public static void RegisterEntityRendererEvent(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(EntityRegister.RiceFoodEntity.get(), RiceFoodRenderer::new);

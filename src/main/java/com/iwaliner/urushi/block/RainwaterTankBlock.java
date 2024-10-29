@@ -96,8 +96,6 @@ public class RainwaterTankBlock extends AbstractHorizontalRotateHighBlock{
                         } else if (!player.getInventory().add(new ItemStack(Items.WATER_BUCKET))) {
                             player.drop(new ItemStack(Items.WATER_BUCKET), false);
                         }
-                        level.setBlockAndUpdate(pos, state.setValue(FILLED, Boolean.FALSE));
-                        level.setBlockAndUpdate(pos.above(), upperState.setValue(FILLED, Boolean.FALSE));
                         level.playSound((Player) null, (double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, SoundEvents.BUCKET_FILL, SoundSource.BLOCKS, 1F, 1F);
                         return InteractionResult.SUCCESS;
 

@@ -115,7 +115,7 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
 
 
     };
-    private final ItemStackHandler ingredientsSample = new ItemStackHandler(9) {
+    public final ItemStackHandler ingredientsSample = new ItemStackHandler(9) {
         @Override
         protected void onContentsChanged(int slot) {
             super.onContentsChanged(slot);
