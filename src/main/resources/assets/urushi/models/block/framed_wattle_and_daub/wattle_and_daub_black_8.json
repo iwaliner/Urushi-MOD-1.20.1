@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
-        "particle": "urushi:block/dirt_wall",
+        "base": "urushi:block/dirt_wall",
         "down": "urushi:block/dirt_wall",
         "up": "urushi:block/dirt_wall",
         "north": "urushi:block/dirt_wall",
-        "east": "urushi:block/connectable/framed_wattle_and_daub/wattle_and_daub_black_10",
-        "south": "urushi:block/connectable/framed_wattle_and_daub/wattle_and_daub_black_3",
-        "west": "urushi:block/connectable/framed_wattle_and_daub/wattle_and_daub_black_9"
+        "east": "urushi:block/connectable/wood_frame/plaster_black_10",
+        "south": "urushi:block/connectable/wood_frame/plaster_black_3",
+        "west": "urushi:block/connectable/wood_frame/plaster_black_9"
     }
 }

@@ -393,9 +393,7 @@ public class ModCoreUrushi {
         Item item = event.getItemStack().getItem();
         Block block = Block.byItem(item);
         List<Component> tooltipList = event.getToolTip();
-        if(ConfigUrushi.doubeSlabs.get()&&UrushiUtils.isSlab(block)&&(UrushiUtils.isMinecraftObject(block.getDescriptionId())||UrushiUtils.isUrushiObject(block.getDescriptionId()))){
-            tooltipList.add((Component.translatable("info.urushi.double_slab")).withStyle(ChatFormatting.GRAY));
-        }
+
         if (item instanceof ElementItem elementItem) {
             ElementType elementType = elementItem.getElementType();
             String item_id;

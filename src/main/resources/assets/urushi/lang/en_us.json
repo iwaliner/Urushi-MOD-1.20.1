@@ -348,7 +348,7 @@
 
    "item.urushi.butadon": "Butadon",
 
-   "item.urushi.sakura_mochi": "Kobore Sakura Mochi",
+   "item.urushi.sakura_mochi": "Sakura Mochi",
 
    "item.urushi.ohagi": "Ohagi",
 
@@ -716,7 +716,7 @@
 
    "item.urushi.yokan": "Yokan",
 
-   "item.urushi.sakura_yokan": "Kobore Sakura Yokan",
+   "item.urushi.sakura_yokan": "Sakura Yokan",
 
    "item.urushi.sekihan": "Sekihan",
 
@@ -734,7 +734,6 @@
 
     "info.urushi.saltandsand": "In Ocean or Beach biomes, Sand in contact with water transforms into this.",
 
-   "info.urushi.udon": "To obtain, use Noodle Knife to Noodle Dough.",
 
    "block.urushi.dirt_furnace": "Dirt Furnace",
 
@@ -2559,5 +2558,6 @@
    "item.urushi.shrimp": "Shrimp",
    "item.urushi.fried_shrimp": "Fried Shrimp",
    "item.urushi.shrimp_sushi": "Shrimp Sushi",
-   "entity.urushi.shrimp_sushi_food": "Shrimp Sushi"
+   "entity.urushi.shrimp_sushi_food": "Shrimp Sushi",
+   "info.urushi.doubled_wooden_cabinetry_sort_button": "Sort"
 }

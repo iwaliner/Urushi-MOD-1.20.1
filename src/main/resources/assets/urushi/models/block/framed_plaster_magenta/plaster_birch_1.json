@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
-        "particle": "urushi:block/plaster_magenta",
+        "base": "urushi:block/plaster_magenta",
         "down": "urushi:block/plaster_magenta",
         "up": "urushi:block/planks_smooth_birch",
-        "north": "urushi:block/connectable/framed_plaster_magenta/plaster_birch_1",
-        "east": "urushi:block/connectable/framed_plaster_magenta/plaster_birch_1",
-        "south": "urushi:block/connectable/framed_plaster_magenta/plaster_birch_1",
-        "west": "urushi:block/connectable/framed_plaster_magenta/plaster_birch_1"
+        "north": "urushi:block/connectable/wood_frame/plaster_birch_1",
+        "east": "urushi:block/connectable/wood_frame/plaster_birch_1",
+        "south": "urushi:block/connectable/wood_frame/plaster_birch_1",
+        "west": "urushi:block/connectable/wood_frame/plaster_birch_1"
     }
 }

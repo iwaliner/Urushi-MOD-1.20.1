@@ -42,7 +42,9 @@ public abstract class ItemEntityMixin {
             Optional<ThrowingInRecipe> recipe = Optional.of(level.getRecipeManager())
                     .flatMap(manager -> manager.getRecipeFor(RecipeTypeRegister.ThrowingInRecipe, new SimpleContainer(stack), level));
             if (recipe.isPresent()) {
-                this.setItem(recipe.get().getResultItem());
+                ItemStack result=recipe.get().getResultItem();
+                result.setCount(stack.getCount());
+                this.setItem(result);
                 level.playSound((Player) null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.NEUTRAL, 1F, 1F);
 
             }

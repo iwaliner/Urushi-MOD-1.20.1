@@ -1,12 +1,12 @@
 {
-    "parent": "block/cube",
+    "parent": "urushi:block/wood_frame_base",
     "textures": {
-        "particle": "urushi:block/plaster_black",
+        "base": "urushi:block/plaster_black",
         "down": "urushi:block/planks_smooth_sakura",
         "up": "urushi:block/plaster_black",
         "north": "urushi:block/plaster_black",
-        "east": "urushi:block/connectable/framed_plaster_black/plaster_sakura_7",
+        "east": "urushi:block/connectable/wood_frame/plaster_sakura_7",
         "south": "urushi:block/plaster_black",
-        "west": "urushi:block/connectable/framed_plaster_black/plaster_sakura_7"
+        "west": "urushi:block/connectable/wood_frame/plaster_sakura_7"
     }
 }

@@ -67,7 +67,6 @@ public class AutoCraftingTableScreen extends AbstractContainerScreen<AutoCraftin
         RenderSystem.setShaderTexture(0, CRAFTING_TABLE_LOCATION);
         int i = this.leftPos;
         int j = (this.height - this.imageHeight) / 2;
-
         // blit(poseStack,表示位置のx成分,表示位置のy成分,テクスチャ位置のx成分,テクスチャ位置のy成分,imageWidth,imageHight)
         poseStack.blit(CRAFTING_TABLE_LOCATION, i, j, 0, 0, this.imageWidth, 105);
         poseStack.blit(CRAFTING_TABLE_LOCATION, i, j +104, 0, 105, this.imageWidth, 100);
@@ -76,4 +75,8 @@ public class AutoCraftingTableScreen extends AbstractContainerScreen<AutoCraftin
 
     }
 
+    @Override
+    protected boolean checkHotbarKeyPressed(int i, int j) {
+        return false;
+    }
 }

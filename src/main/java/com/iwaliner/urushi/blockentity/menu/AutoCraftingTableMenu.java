@@ -142,9 +142,15 @@ public class AutoCraftingTableMenu extends RecipeBookMenu<Container> {
 
     @Override
     protected boolean moveItemStackTo(ItemStack stack, int slot1, int slot2, boolean b) {
-        return super.moveItemStackTo(stack, slot1, slot2, b);
+        return slot1 >= 10 && slot2 >= 10 && super.moveItemStackTo(stack, slot1, slot2, b);
+    }
+    public boolean canTakeItemForPickAll(ItemStack stack, Slot slot) {
+        return slot instanceof AutoCraftingTableIngredientsSlot|| slot instanceof AutoCraftingTableResultSlot;
     }
 
-
+    @Override
+    public boolean canDragTo(Slot slot) {
+        return slot instanceof AutoCraftingTableIngredientsSlot|| slot instanceof AutoCraftingTableResultSlot;
+    }
 }
 

@@ -4,6 +4,7 @@ import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.block.HiddenInvisibleButtonBlock;
 import com.iwaliner.urushi.block.InvisibleButtonBlock;
 import com.iwaliner.urushi.util.UrushiUtils;
+import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -34,6 +35,7 @@ public class InvisibleButtonItem extends BlockItem {
     @Override
     public void inventoryTick(ItemStack stack, Level world, Entity entity, int a, boolean b) {
         if(entity instanceof LivingEntity){
+
             int range=8;
             LivingEntity player= (LivingEntity) entity;
             BlockPos pos=new BlockPos(Mth.floor(entity.getX()),Mth.floor(entity.getY()),Mth.floor(entity.getZ()));
