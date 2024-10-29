@@ -242,10 +242,6 @@ public class ClientSetUp {
         BlockEntityRenderers.register(BlockEntityRegister.Plate.get(), PlateRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegister.BambooBasket.get(), BambooBasketRenderer::new);
 
-        ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
-        ModCoreUrushi.axeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
-        ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + "double_slab");
-        ModCoreUrushi.shovelList.add(ModCoreUrushi.ModID + ":" + "double_slab");
 
 
         ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.senryoubako.get()));
