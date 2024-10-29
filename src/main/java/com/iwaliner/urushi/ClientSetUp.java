@@ -177,6 +177,7 @@ public class ClientSetUp {
         event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_japanese_apricot_leaves.get());
         event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_sakura_leaves.get());
         event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageWaterColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.rainwater_tank.get());
 
     }
     /**パーティクルの見た目を指定*/

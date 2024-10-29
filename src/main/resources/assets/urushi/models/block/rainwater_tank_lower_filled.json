@@ -1,7 +1,6 @@
 {
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
-	"render_type": "minecraft:translucent",
 	 "ambientocclusion": false,
 	"textures": {
 		"0": "urushi:block/barrel_top",
