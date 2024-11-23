@@ -9,6 +9,7 @@ import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.block.AutoCraftingTableBlock;
 import com.iwaliner.urushi.block.FoxHopperBlock;
 import com.iwaliner.urushi.blockentity.menu.AutoCraftingTableMenu;
+import com.iwaliner.urushi.util.UrushiUtils;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -256,56 +257,50 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         return this.litTime > 0;
     }
     private void doCraft(Level level,ItemStack itemstack,AutoCraftingTableBlockEntity blockEntity){
+        Direction facing=level.getBlockState(blockEntity.getBlockPos()).getValue(AutoCraftingTableBlock.FACING);
+        BlockPos pos2=blockEntity.getBlockPos().relative(facing);
         for (int i = 11; i < 20; i++) {
             ItemStack slotStack=blockEntity.getItem(i);
             if(slotStack.hasCraftingRemainingItem()){
-               /* if(level.getBlockState(blockEntity.getBlockPos()).getBlock() instanceof AutoCraftingTableBlock){
-                    BlockState state=level.getBlockState(blockEntity.getBlockPos());
-                    Vec3 vec3= Vec3.atCenterOf(blockEntity.getBlockPos()).relative(state.getValue(AutoCraftingTableBlock.FACING),0.7D);
-                    ItemEntity itemEntity=new ItemEntity(level,vec3.x,vec3.y,vec3.z,slotStack.getCraftingRemainingItem());
-                    if(!level.isClientSide) {
+                if (level.getBlockState(blockEntity.getBlockPos()).getBlock() instanceof AutoCraftingTableBlock && level.getBlockEntity(pos2) instanceof BaseContainerBlockEntity) {
+                    BaseContainerBlockEntity baseContainerBlockEntity = (BaseContainerBlockEntity) level.getBlockEntity(blockEntity.getBlockPos().relative(level.getBlockState(blockEntity.getBlockPos()).getValue(AutoCraftingTableBlock.FACING)));
+                    if (isExportable(blockEntity, baseContainerBlockEntity, slotStack.getCraftingRemainingItem(), facing.getOpposite())) {
+                        addItem(blockEntity, baseContainerBlockEntity, slotStack.getCraftingRemainingItem(), facing.getOpposite());
+                        blockEntity.getItem(10).shrink(1);
+                    }else{
+                        ItemEntity itemEntity=new ItemEntity(level,(double) pos2.getX()+0.5D,(double) pos2.getY()+0.5D,pos2.getZ()+0.5D,slotStack.getCraftingRemainingItem());
+                        if(!level.isClientSide){
+                            level.addFreshEntity(itemEntity);
+                        }
+                    }
+                }else {
+                    ItemEntity itemEntity = new ItemEntity(level, (double) pos2.getX() + 0.5D, (double) pos2.getY() + 0.5D, pos2.getZ() + 0.5D, slotStack.getCraftingRemainingItem());
+                    if (!level.isClientSide) {
                         level.addFreshEntity(itemEntity);
                     }
-                }*/
-                blockEntity.setItem(i,slotStack.getCraftingRemainingItem());
-            }else {
-                slotStack.shrink(1);
+                }
             }
+                slotStack.shrink(1);
         }
+
         if (ItemStack.isSameItemSameTags(blockEntity.getItem(0), blockEntity.getItem(10))) {
             ItemStack newStack = itemstack.copy();
             newStack.setCount(itemstack.getCount() + blockEntity.getItem(10).getCount());
-            Direction facing=level.getBlockState(blockEntity.getBlockPos()).getValue(AutoCraftingTableBlock.FACING);
-            BlockPos pos2=blockEntity.getBlockPos().relative(facing);
-            // if(level.getBlockState(blockEntity.getBlockPos()).getBlock() instanceof AutoCraftingTableBlock&&level.getBlockEntity(pos2) instanceof BaseContainerBlockEntity){
-            if(level.getBlockState(blockEntity.getBlockPos()).getBlock() instanceof AutoCraftingTableBlock&&!level.isEmptyBlock(pos2)){
-              //  BaseContainerBlockEntity baseContainerBlockEntity= (BaseContainerBlockEntity) level.getBlockEntity(blockEntity.getBlockPos().relative(level.getBlockState(blockEntity.getBlockPos()).getValue(AutoCraftingTableBlock.FACING)));
-                //  if(!isExportable(blockEntity,baseContainerBlockEntity,newStack,facing.getOpposite())){
-                blockEntity.setItem(10, newStack);
-                //    }else {
-                //         addItem(blockEntity,baseContainerBlockEntity,newStack,facing.getOpposite());
-                //     }
+           if(level.getBlockState(blockEntity.getBlockPos()).getBlock() instanceof AutoCraftingTableBlock&&!level.isEmptyBlock(pos2)){
+               blockEntity.setItem(10, newStack);
             }else{
                 ItemEntity itemEntity=new ItemEntity(level,(double) pos2.getX()+0.5D,(double) pos2.getY()+0.5D,pos2.getZ()+0.5D,newStack);
                 if(!level.isClientSide){
                     level.addFreshEntity(itemEntity);
                 }
             }
-            //blockEntity.setItem(10, newStack);
             blockEntity.setChanged();
 
         }
         else if (blockEntity.getItem(10).isEmpty()) {
-            Direction facing=level.getBlockState(blockEntity.getBlockPos()).getValue(AutoCraftingTableBlock.FACING);
-            BlockPos pos2=blockEntity.getBlockPos().relative(facing);
-            // if(level.getBlockState(blockEntity.getBlockPos()).getBlock() instanceof AutoCraftingTableBlock&&level.getBlockEntity(pos2) instanceof BaseContainerBlockEntity){
+
             if(level.getBlockState(blockEntity.getBlockPos()).getBlock() instanceof AutoCraftingTableBlock&&!level.isEmptyBlock(pos2)){
-               // BaseContainerBlockEntity baseContainerBlockEntity= (BaseContainerBlockEntity) level.getBlockEntity(blockEntity.getBlockPos().relative(level.getBlockState(blockEntity.getBlockPos()).getValue(AutoCraftingTableBlock.FACING)));
-                //  if(!isExportable(blockEntity,baseContainerBlockEntity,itemstack,facing.getOpposite())){
                 blockEntity.setItem(10, itemstack);
-                //  }else {
-                //       addItem(blockEntity,baseContainerBlockEntity,itemstack,facing.getOpposite());
-                //  }
             }else{
                 ItemEntity itemEntity=new ItemEntity(level,(double) pos2.getX()+0.5D,(double) pos2.getY()+0.5D,pos2.getZ()+0.5D,itemstack);
                 if(!level.isClientSide){
@@ -314,7 +309,6 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
             }
 
 
-            //  blockEntity.setItem(10, itemstack);
             blockEntity.setChanged();
         }
     }
@@ -521,15 +515,14 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
                         if (flag && blockEntity.getItem(10).getCount() + itemstack.getCount() <= itemstack.getMaxStackSize()) {
 
                             if (state.getBlock() == ItemAndBlockRegister.auto_crafting_table.get()) {
-                                // if (blockEntity.litTime == 0) {
-                                //     blockEntity.litTime = 60;
-                                //    }
-                                //  else
+
                                 if (blockEntity.litTime == 0 && blockEntity.getItem(10).isEmpty()) {
+                                    net.minecraftforge.event.ForgeEventFactory.firePlayerCraftingEvent((Player) null, itemstack, craftingcontainer);
                                     blockEntity.doCraft(level, itemstack, blockEntity);
                                     blockEntity.litTime = 60;
                                 }
                             } else if (state.getBlock() == ItemAndBlockRegister.advanced_auto_crafting_table.get() && blockEntity.getItem(10).isEmpty()) {
+                                net.minecraftforge.event.ForgeEventFactory.firePlayerCraftingEvent((Player) null, itemstack, craftingcontainer);
                                 blockEntity.doCraft(level, itemstack, blockEntity);
                                 blockEntity.litTime = 0;
                             }

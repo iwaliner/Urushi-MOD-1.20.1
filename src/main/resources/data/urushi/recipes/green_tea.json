@@ -1,0 +1,49 @@
+{
+
+
+
+  "type": "urushi:kettle",
+
+
+
+  "ingredients": [
+
+{
+
+
+
+   "item": "urushi:tea_leaf"
+
+
+
+    },
+
+  {
+
+
+
+   "item": "urushi:water_bamboo_cup"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:green_tea"
+
+
+
+  }
+
+
+
+}

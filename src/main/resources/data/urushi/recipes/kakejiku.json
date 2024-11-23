@@ -1,45 +1,89 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "s",
-
-    "p",
-
-    "r"
-
-  ],
-
-  "key": {
-
-    "p": {
-
-    "item": "minecraft:paper"
-
-    },
-
-    "s": {
-
-   "tag": "forge:string"
-
-    },
-
-    "r": {
-
-"tag": "forge:bamboo"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:kakejiku_1",
-
-    "count": 4
-
-  }
-
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "s",
+
+
+
+    "p",
+
+
+
+    "r"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "p": {
+
+
+
+    "item": "minecraft:paper"
+
+
+
+    },
+
+
+
+    "s": {
+
+
+
+   "tag": "forge:string"
+
+
+
+    },
+
+
+
+    "r": {
+
+
+
+"tag": "forge:bamboo"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:kakejiku_15",
+
+
+
+    "count": 4
+
+
+
+  }
+
+
+
 }

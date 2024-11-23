@@ -883,8 +883,6 @@
 
    "block.urushi.senbakoki": "千歯こき",
 
-   "info.urushi.rawrice": "千歯こきに籾を使うことで玄米を2つ入手できる",
-
    "info.urushi.rawurushi": "切り込みが入った漆の原木に対してボウルを使うことで入手",
 
    "info.urushi.placeablefood": "シフト右クリックで設置できる",
@@ -2556,7 +2554,11 @@
    "item.urushi.fried_shrimp": "エビフライ",
    "item.urushi.shrimp_sushi": "エビの寿司",
    "entity.urushi.shrimp_sushi_food": "エビの寿司",
-   "info.urushi.doubled_wooden_cabinetry_sort_button": "整頓"
+   "info.urushi.doubled_wooden_cabinetry_sort_button": "整頓",
+   "info.urushi.senbakoki": "千歯こきに籾を使うことで玄米と藁を入手できる",
+   "info.urushi.custom_heads_creator": "カスタムヘッドの製作者：",
+   "info.urushi.rice_ball": "中央に具を配置して作成した場合、食べたときに具の種類に応じて何かが起こる。",
+   "info.urushi.rice_ball_with_filling": "具が入っている。食べると何かが起こる。"
    
    
 }

@@ -2,6 +2,8 @@ package com.iwaliner.urushi.item;
 
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.block.HiddenInvisibleButtonBlock;
+import com.iwaliner.urushi.block.InvisibleButtonBlock;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
@@ -73,7 +75,9 @@ public class KitsunebiItem extends Item implements ElementItem {
            for(int i=-range; i<range+1;i++) {
               for(int j=-range; j<range+1;j++) {
                  for(int k=-range; k<range+1;k++) {
-                    if( world.getBlockState(pos.offset(i,j,k))== ItemAndBlockRegister.kitsunebiBlock.get().defaultBlockState()){
+                    if( world.getBlockState(pos.offset(i,j,k))== ItemAndBlockRegister.kitsunebiBlock.get().defaultBlockState()) {
+                       world.setBlockAndUpdate(pos.offset(i, j, k), ItemAndBlockRegister.VisibleKitsunebiBlock.get().defaultBlockState());
+                    }else if(world.getBlockState(pos.offset(i,j,k))== ItemAndBlockRegister.VisibleKitsunebiBlock.get().defaultBlockState()){
                        Random rand=new Random();
                        double d0 = (double)pos.getX()+(double)i + rand.nextDouble();
                        double d1 = (double)pos.getY() +(double)j+ rand.nextDouble();

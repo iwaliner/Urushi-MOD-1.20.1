@@ -2,19 +2,21 @@ package com.iwaliner.urushi.blockentity;
 
 
 
-import com.iwaliner.urushi.BlockEntityRegister;
-import com.iwaliner.urushi.ConfigUrushi;
-import com.iwaliner.urushi.ParticleRegister;
-import com.iwaliner.urushi.TagUrushi;
+import com.iwaliner.urushi.*;
 import com.iwaliner.urushi.block.ShichirinBlock;
 import com.iwaliner.urushi.recipe.FryingRecipe;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.VertexFormat;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.client.renderer.RenderStateShard;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 
@@ -27,6 +29,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -45,6 +48,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.Nullable;
@@ -200,6 +205,7 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
 
 
     public static void tick(Level level, BlockPos pos, BlockState state, ShichirinBlockEntity blockEntity) {
+
         if (!level.isClientSide&&state.getBlock() instanceof ShichirinBlock) {
             Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeType<CampfireCookingRecipe>) blockEntity.recipeType, blockEntity, level).orElse(null);
             AbstractCookingRecipe campfireCookingRecipe = (AbstractCookingRecipe) recipe;
@@ -291,6 +297,17 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
                             int j5= j1>iconAmount-1? 0 : 1;
                             player.displayClientMessage(component.append(StringUtils.repeat(filled,j2)).append(StringUtils.repeat(empty,iconAmount - j2)).append(StringUtils.repeat(center_filled,j4)).append(StringUtils.repeat(center_empty,j5)).append(StringUtils.repeat(filled,j3)).append(StringUtils.repeat(empty,iconAmount-j3)).withStyle(ChatFormatting.YELLOW).withStyle(ChatFormatting.UNDERLINE), true);
 
+
+
+                           /* Entity entity2 = Minecraft.getInstance().getCameraEntity();
+                            double d0 = (double) Minecraft.getInstance().gameMode.getPickRange();
+                            double entityReach =  Minecraft.getInstance().player.getEntityReach();
+                            HitResult hitResult = player.pick(Math.max(d0, entityReach), 1f, false);
+                            Vec3 vec3=hitResult.getLocation();
+
+                            level.setBlock(new BlockPos((int) (vec3.x+0.5D),(int) (vec3.y+0.5D),(int) (vec3.z+0.5D)), ItemAndBlockRegister.ghost_red_kakuriyo_portal_frame.get().defaultBlockState(),3);
+
+*/
                         }
                     }
                 }

@@ -25,6 +25,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
 public class GhostEntity extends Zombie {
@@ -38,6 +39,8 @@ public class GhostEntity extends Zombie {
         super(EntityRegister.Ghost.get(), p_34272_);
         this.moveControl = new FlyingMoveControl(this, 0, false);
     }
+
+
     protected SoundEvent getAmbientSound() {
         return SoundEvents.PUFFER_FISH_AMBIENT;
     }
@@ -136,6 +139,11 @@ public class GhostEntity extends Zombie {
         super.aiStep();
         this.calculateFlapping();
     }*/
+
+    @Override
+    protected AABB makeBoundingBox() {
+        return super.makeBoundingBox();
+    }
 
     public void killed(ServerLevel p_34281_, LivingEntity p_34282_) {
        if ((p_34281_.getDifficulty() == Difficulty.NORMAL || p_34281_.getDifficulty() == Difficulty.HARD) && p_34282_ instanceof Villager && net.minecraftforge.event.ForgeEventFactory.canLivingConvert(p_34282_, EntityType.ZOMBIE_VILLAGER, (timer) -> {})) {

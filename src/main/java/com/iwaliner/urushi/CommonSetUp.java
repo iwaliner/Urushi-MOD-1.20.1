@@ -58,10 +58,12 @@ import java.util.Optional;
 
 @Mod.EventBusSubscriber(modid = ModCoreUrushi.ModID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CommonSetUp {
+
     @SubscribeEvent
-    public static void RegisterRendererEvent(FMLCommonSetupEvent event) {
+    public static void CommonSetUpEvent(FMLCommonSetupEvent event) {
         SpawnPlacements.register(EntityRegister.Ghost.get(),SpawnPlacements.Type.ON_GROUND, Heightmap.Types.WORLD_SURFACE, Monster::checkMonsterSpawnRules);
         NetworkAccess.register();
+
 
         DispenserBlock.registerBehavior(ItemAndBlockRegister.empty_bamboo_cup.get().asItem(), new OptionalDispenseItemBehavior() {
             private final DefaultDispenseItemBehavior defaultDispenseItemBehavior = new DefaultDispenseItemBehavior();

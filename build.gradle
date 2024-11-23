@@ -164,6 +164,7 @@ dependencies {
     compileOnly(  fg.deobf("curse.maven:jei-238222:5101366"))
     runtimeOnly(  fg.deobf("curse.maven:tofucraftreload-317469:5394775"))
     runtimeOnly(  fg.deobf("curse.maven:effortless-building-302113:4979089"))
+    compileOnly(  fg.deobf("curse.maven:effortless-building-302113:4979089"))
     runtimeOnly(  fg.deobf("curse.maven:mouse-tweaks-60089:5338457"))
     runtimeOnly(  fg.deobf("curse.maven:jade-324717:5672013"))
     runtimeOnly(  fg.deobf("curse.maven:crafttweaker-239197:5648765"))

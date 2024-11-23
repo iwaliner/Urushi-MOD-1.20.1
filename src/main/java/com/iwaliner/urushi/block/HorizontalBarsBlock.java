@@ -84,17 +84,29 @@ public class HorizontalBarsBlock extends HorizonalRotateBlock implements SimpleW
 
         return nextState.getBlock() instanceof HorizontalBarsBlock;
     }
+    private BooleanProperty getProperty(Direction direction){
+        switch (direction){
+            case NORTH : return NORTH;
+            case EAST : return EAST;
+            case SOUTH : return SOUTH;
+            case WEST : return WEST;
+            case UP : return UP;
+            case DOWN : return DOWN;
+        }
+        return null;
+    }
     @Override
     public BlockState updateShape(BlockState state1, Direction facing, BlockState state2, LevelAccessor world, BlockPos pos1, BlockPos pos2) {
 
+        return super.updateShape(state1, facing, state2, world, pos1, pos2).setValue(getProperty(facing), true);
 
-        return super.updateShape(state1, facing, state2, world, pos1, pos2).setValue(NORTH,(!world.getBlockState(pos1.north()).isAir() && !world.getFluidState(pos1.north()).is(Fluids.WATER) && state1.getValue(NORTH))|| this.connectsToByFacing(state1, Direction.NORTH, world, pos1))
+       /* return super.updateShape(state1, facing, state2, world, pos1, pos2).setValue(NORTH,(!world.getBlockState(pos1.north()).isAir() && !world.getFluidState(pos1.north()).is(Fluids.WATER) && state1.getValue(NORTH))|| this.connectsToByFacing(state1, Direction.NORTH, world, pos1))
                 .setValue(EAST,(!world.getBlockState(pos1.east()).isAir() && !world.getFluidState(pos1.east()).is(Fluids.WATER) && state1.getValue(EAST))|| this.connectsToByFacing(state1, Direction.EAST, world, pos1))
                 .setValue(SOUTH, (!world.getBlockState(pos1.south()).isAir() && !world.getFluidState(pos1.south()).is(Fluids.WATER)  && state1.getValue(SOUTH)) ||this.connectsToByFacing(state1, Direction.SOUTH, world, pos1))
                 .setValue(WEST, (!world.getBlockState(pos1.west()).isAir() && !world.getFluidState(pos1.west()).is(Fluids.WATER)  && state1.getValue(WEST)) ||this.connectsToByFacing(state1, Direction.WEST, world, pos1))
                 .setValue(UP, (!world.getBlockState(pos1.above()).isAir() && !world.getFluidState(pos1.above()).is(Fluids.WATER)  && state1.getValue(UP)) ||this.connectsToByFacing(state1, Direction.UP, world, pos1))
                 .setValue(DOWN, (!world.getBlockState(pos1.below()).isAir() && !world.getFluidState(pos1.below()).is(Fluids.WATER)  && state1.getValue(DOWN)) ||this.connectsToByFacing(state1, Direction.DOWN, world, pos1));
-
+*/
     }
 
     @Override

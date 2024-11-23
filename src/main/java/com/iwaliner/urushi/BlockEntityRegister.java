@@ -24,6 +24,7 @@ public class BlockEntityRegister {
     public static final RegistryObject<BlockEntityType<InvisibleButtonBlockEntity>> InvisibleButton=Tiles.register("invisible_button", () -> BlockEntityType.Builder.of(InvisibleButtonBlockEntity::new, ItemAndBlockRegister.invisible_button.get()).build(null));
     public static final RegistryObject<BlockEntityType<InvisibleLeverBlockEntity>> InvisibleLever=Tiles.register("invisible_lever", () -> BlockEntityType.Builder.of(InvisibleLeverBlockEntity::new, ItemAndBlockRegister.invisible_lever.get()).build(null));
     public static final RegistryObject<BlockEntityType<InvisiblePressurePlateBlockEntity>> InvisiblePressurePlate=Tiles.register("invisible_pressure_plate", () -> BlockEntityType.Builder.of(InvisiblePressurePlateBlockEntity::new, ItemAndBlockRegister.invisible_pressure_plate.get()).build(null));
+    public static final RegistryObject<BlockEntityType<KitsunebiBlockEntity>> Kitsunebi=Tiles.register("kitsunebi", () -> BlockEntityType.Builder.of(KitsunebiBlockEntity::new, ItemAndBlockRegister.VisibleKitsunebiBlock.get()).build(null));
     public static final RegistryObject<BlockEntityType<SanboBlockEntity>> Sanbo=Tiles.register("sanbo", () -> BlockEntityType.Builder.of(SanboBlockEntity::new, ItemAndBlockRegister.sanbo_tier1.get()).build(null));
     public static final RegistryObject<BlockEntityType<ShichirinBlockEntity>> Shichirin=Tiles.register("shichirin", () -> BlockEntityType.Builder.of(ShichirinBlockEntity::new, ItemAndBlockRegister.shichirin.get()).build(null));
     public static final RegistryObject<BlockEntityType<SacredRockBlockEntity>> SacredRock=Tiles.register("sacred_rock", () -> BlockEntityType.Builder.of(SacredRockBlockEntity::new, ItemAndBlockRegister.wood_element_sacred_rock.get(),ItemAndBlockRegister.fire_element_sacred_rock.get(),ItemAndBlockRegister.earth_element_sacred_rock.get(),ItemAndBlockRegister.metal_element_sacred_rock.get(),ItemAndBlockRegister.water_element_sacred_rock.get()).build(null));
@@ -39,6 +40,7 @@ public class BlockEntityRegister {
     public static final RegistryObject<BlockEntityType<BambooBasketBlockEntity>> BambooBasket=Tiles.register("bamboo_basket", () -> BlockEntityType.Builder.of(BambooBasketBlockEntity::new, ItemAndBlockRegister.bamboo_basket.get()).build(null));
      public static final RegistryObject<BlockEntityType<RandomElementPuzzleBlockEntity>> RandomElementPuzzleBlock=Tiles.register("random_element_puzzle_block", () -> BlockEntityType.Builder.of(RandomElementPuzzleBlockEntity::new, ItemAndBlockRegister.random_element_puzzle_block.get()).build(null));
     public static final RegistryObject<BlockEntityType<SilkwormFarmBlockEntity>> SilkwormFarm=Tiles.register("silkworm_farm", () -> BlockEntityType.Builder.of(SilkwormFarmBlockEntity::new, ItemAndBlockRegister.silkworm_farm.get()).build(null));
+    public static final RegistryObject<BlockEntityType<KettleBlockEntity>> Kettle=Tiles.register("kettle", () -> BlockEntityType.Builder.of(KettleBlockEntity::new, ItemAndBlockRegister.kettle.get()).build(null));
 
 
 

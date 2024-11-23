@@ -6,6 +6,7 @@ import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.blockentity.AbstractFryerBlockEntity;
 import com.iwaliner.urushi.blockentity.FryerBlockEntity;
 import com.iwaliner.urushi.blockentity.RiceCauldronBlockEntity;
+import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -57,7 +58,10 @@ public class FryerBlock extends BaseEntityBlock {
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(LIT, Boolean.valueOf(false)));
 
     }
-
+    @Override
+    public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
+        UrushiUtils.setInfo(list,"slot_fryer");
+    }
 
 
     @Override

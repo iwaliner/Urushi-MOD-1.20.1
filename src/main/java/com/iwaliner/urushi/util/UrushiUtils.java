@@ -1,19 +1,34 @@
 package com.iwaliner.urushi.util;
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.block.HorizonalRotateSlabBlock;
+import com.mojang.blaze3d.platform.Window;
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.commands.CommandFunction;
+import net.minecraft.commands.CommandSource;
+import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
- 
+
+import net.minecraft.network.protocol.game.ClientboundSetTitleTextPacket;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -21,8 +36,10 @@ import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
 import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.awt.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 import java.util.List;
@@ -56,6 +73,23 @@ public class UrushiUtils {
     }
     public static void setInfoWithColor(List<Component> list,String string,ChatFormatting chatFormatting){
         list.add((Component.translatable("info.urushi."+string )).withStyle(chatFormatting));
+    }
+    public static void setBlinkingInfoWithColor(List<Component> list,String string,Level level,ChatFormatting color1,ChatFormatting color2){
+        try {
+            if(level==null){
+                list.add((Component.translatable("info.urushi." + string)).withStyle(color1));
+            }else {
+                long gametime = level.getGameTime() % 20;
+                if (gametime < 10) {
+                    list.add((Component.translatable("info.urushi." + string)).withStyle(color1));
+                } else {
+                    list.add((Component.translatable("info.urushi." + string)).withStyle(color2));
+                }
+            }
+        }catch (Exception ignored){
+
+        }
+
     }
     public static void BlockChangeNeighborStateSurvey(Level level, BlockPos pos, BlockState detectBlock, BlockState placeBlock, SoundEvent soundEvent){
             if (BlockNeighborStateSurvey(level,pos,detectBlock)) {
@@ -147,4 +181,66 @@ public class UrushiUtils {
    public static boolean isSlab(Block block){
         return block instanceof SlabBlock ||block instanceof HorizonalRotateSlabBlock;
     }
+    public static void onCraftingRiceBall(Item filling,ItemStack riceBall){
+        if(riceBall.getTag()==null){
+            CompoundTag tag=new CompoundTag();
+            if(filling==ItemAndBlockRegister.ghost_core.get()){
+                tag.putString("effect","levitation");
+            }else if(filling==Items.BLAZE_POWDER){
+                tag.putString("effect","ignite");
+            }else if(filling==ItemAndBlockRegister.salmon_sashimi.get()){
+                tag.putString("effect","strength");
+            }else if(filling==Items.GLOWSTONE_DUST){
+                tag.putString("effect","glow");
+            }else if(filling==ItemAndBlockRegister.pickled_japanese_apricot.get()){
+                tag.putString("effect","slow_fall");
+            }else if(filling==Items.DRIED_KELP){
+                tag.putString("effect","water_breathing");
+            }else if(filling==Items.GUNPOWDER){
+                tag.putString("effect","explode");
+            }else if(filling==ItemAndBlockRegister.onsen_egg.get()){
+                tag.putString("effect","jump");
+            }else if(filling==ItemAndBlockRegister.rice_malt.get()){
+                tag.putString("effect","nausea");
+            }else if(filling==Items.COPPER_INGOT){
+                tag.putString("effect","slowness");
+            }else if(filling==Items.SPIDER_EYE){
+                tag.putString("effect","poison");
+            }else if(filling==Items.SNOWBALL){
+                tag.putString("effect","freeze");
+            }
+            riceBall.setTag(tag);
+        }
+    }
+    public static void runFunction(Level level,BlockPos pos,String commandUserName,String functionName){
+        MinecraftServer server = level.getServer();
+        if(server!=null) {
+            CommandFunction.CacheableFunction function = new CommandFunction.CacheableFunction(new ResourceLocation(ModCoreUrushi.ModID, functionName));
+            CommandSourceStack commandSourceStack=new CommandSourceStack(CommandSource.NULL, pos.getCenter(), new Vec2(0f,0f),  (ServerLevel)level , 4, commandUserName, Component.empty(), server, null);
+            function.get(server.getFunctions()).ifPresent((p_289236_) -> {
+                server.getFunctions().execute(p_289236_, commandSourceStack.withSuppressedOutput().withPermission(4));
+            });
+        }
+    }
+    public static void runFunction(Level level, Player player, float rotX, float rotY, Entity entity, String functionName){
+        MinecraftServer server = level.getServer();
+        if(server!=null) {
+            CommandFunction.CacheableFunction function = new CommandFunction.CacheableFunction(new ResourceLocation(ModCoreUrushi.ModID, functionName));
+            CommandSourceStack commandSourceStack=new CommandSourceStack(player, player.position(), new Vec2(rotX,rotY),  (ServerLevel)level , 4, player.getName().toString(), player.getName(), server, entity);
+            function.get(server.getFunctions()).ifPresent((p_289236_) -> {
+                server.getFunctions().execute(p_289236_, commandSourceStack.withSuppressedOutput().withPermission(4));
+            });
+        }
+    }
+    public static void setTitle(ServerPlayer player,Component component){
+        player.connection.send(new ClientboundSetTitleTextPacket(component));
+    }
+    public static void displayImage(GuiGraphics guiGraphics, String textureName, Window window){
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().translate(0.0F, 0.0F, -90.0F);
+        guiGraphics.pose().scale(0.45F,0.45F,0.45F);
+        guiGraphics.blit(new ResourceLocation(ModCoreUrushi.ModID,"textures/gui/"+textureName+".png"), window.getGuiScaledWidth()+250, window.getGuiScaledHeight()-100, 0, 0, 256, 256);
+        guiGraphics.pose().popPose();
+    }
+
 }

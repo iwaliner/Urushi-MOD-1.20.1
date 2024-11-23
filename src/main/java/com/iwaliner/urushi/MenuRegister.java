@@ -18,6 +18,7 @@ public class MenuRegister {
     public static final RegistryObject<MenuType<com.iwaliner.urushi.blockentity.menu.UrushiHopperMenu>> UrushiHopperMenu = MENUS.register("urushi_hopper", () -> IForgeMenuType.create((windowId, inv, data) -> {return new UrushiHopperMenu(windowId, inv);}));
     public static final RegistryObject<MenuType<AutoCraftingTableMenu>> AutoCraftingTableMenu = MENUS.register("auto_crafting_table", () -> IForgeMenuType.create((windowId, inv, data) -> {return new AutoCraftingTableMenu(windowId, inv);}));
     public static final RegistryObject<MenuType<SilkwormFarmMenu>> SilkwormFarmMenu = MENUS.register("silkworm_farm", () -> IForgeMenuType.create((windowId, inv, data) -> {return new SilkwormFarmMenu(windowId, inv);}));
+    public static final RegistryObject<MenuType<KettleMenu>> KettleMenu = MENUS.register("kettle", () -> IForgeMenuType.create((windowId, inv, data) -> {return new KettleMenu(windowId, inv);}));
 
 
 

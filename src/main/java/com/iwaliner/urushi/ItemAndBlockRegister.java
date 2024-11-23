@@ -753,7 +753,8 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> auto_crafting_table =B("auto_crafting_table","p",-1,() -> {return new AutoCraftingTableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(0.8F, 10.0F));});
     public static final RegistryObject<Block> advanced_auto_crafting_table =B("advanced_auto_crafting_table","p",-1,() -> {return new AutoCraftingTableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).sound(SoundType.STONE).strength(0.8F, 10.0F));});
     public static final RegistryObject<Block> urushi_hopper =B("urushi_hopper","a",-1,() -> {return new UrushiHopperBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(1.0F, 10.0F));});
-    public static final RegistryObject<Block> kitsunebiBlock =BLOCKS.register("kitsunebi",() -> {return new BarrierBlock(BlockBehaviour.Properties.of().sound(SoundType.SOUL_SAND).instabreak().noCollission().noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
+    public static final RegistryObject<Block> kitsunebiBlock =BLOCKS.register("kitsunebi",() -> {return new HiddenKitsunebiBlock(BlockBehaviour.Properties.of().sound(SoundType.SOUL_SAND).instabreak().noCollission().noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
+    public static final RegistryObject<Block> VisibleKitsunebiBlock =BLOCKS.register("visible_kitsunebi",() -> {return new KitsunebiBlock(BlockBehaviour.Properties.of().sound(SoundType.SOUL_SAND).instabreak().noCollission().noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
     public static final RegistryObject<Item> kitsunebiItem =ITEMS.register("kitsunebi", () -> {return new KitsunebiItem((new Item.Properties()));});
     public static final RegistryObject<Block> fox_hopper =B("fox_hopper","a",-1,() -> {return new FoxHopperBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOL).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> andon =B("andon","a",-1,() -> {return new AndonBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
@@ -832,19 +833,24 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> men_onsen_noren =B("men_onsen_noren","a",-1,() -> {return new WideNorenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).sound(SoundType.WOOD).strength(0.2F, 3.0F).noOcclusion());});
     public static final RegistryObject<Block> women_onsen_noren =B("women_onsen_noren","a",-1,() -> {return new WideNorenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOD).strength(0.2F, 3.0F).noOcclusion());});
     public static final RegistryObject<Block> sushi_noren =B("sushi_noren","a",-1,() -> {return new WideNorenBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).sound(SoundType.WOOD).strength(0.2F, 3.0F).noOcclusion());});
-    public static final RegistryObject<Block> kakejiku_14 =BN("kakejiku_14","a",-1,() -> {return new KakejikuBlock(null,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_13 =BN("kakejiku_13","a",-1,() -> {return new KakejikuBlock(kakejiku_14.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_12 =BN("kakejiku_12","a",-1,() -> {return new KakejikuBlock(kakejiku_13.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_11 =BN("kakejiku_11","a",-1,() -> {return new KakejikuBlock(kakejiku_12.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_10 =BN("kakejiku_10","a",-1,() -> {return new KakejikuBlock(kakejiku_11.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_9 =BN("kakejiku_9","a",-1,() -> {return new KakejikuBlock(kakejiku_10.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_8 =BN("kakejiku_8","a",-1,() -> {return new KakejikuBlock(kakejiku_9.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_7 =BN("kakejiku_7","a",-1,() -> {return new KakejikuBlock(kakejiku_8.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_6 =BN("kakejiku_6","a",-1,() -> {return new KakejikuBlock(kakejiku_7.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_5 =BN("kakejiku_5","a",-1,() -> {return new KakejikuBlock(kakejiku_6.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_4 =BN("kakejiku_4","a",-1,() -> {return new KakejikuBlock(kakejiku_5.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_3 =BN("kakejiku_3","a",-1,() -> {return new KakejikuBlock(kakejiku_4.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
-    public static final RegistryObject<Block> kakejiku_2 =BN("kakejiku_2","a",-1,() -> {return new KakejikuBlock(kakejiku_3.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_19 =B("kakejiku_19","a",-1,() -> {return new KakejikuBlock(null,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_18 =B("kakejiku_18","a",-1,() -> {return new KakejikuBlock(kakejiku_19.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_17 =B("kakejiku_17","a",-1,() -> {return new KakejikuBlock(kakejiku_18.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_16 =B("kakejiku_16","a",-1,() -> {return new KakejikuBlock(kakejiku_17.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_15 =B("kakejiku_15","a",-1,() -> {return new KakejikuBlock(kakejiku_16.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_14 =B("kakejiku_14","a",-1,() -> {return new KakejikuBlock(kakejiku_15.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_13 =B("kakejiku_13","a",-1,() -> {return new KakejikuBlock(kakejiku_14.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_12 =B("kakejiku_12","a",-1,() -> {return new KakejikuBlock(kakejiku_13.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_11 =B("kakejiku_11","a",-1,() -> {return new KakejikuBlock(kakejiku_12.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_10 =B("kakejiku_10","a",-1,() -> {return new KakejikuBlock(kakejiku_11.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_9 =B("kakejiku_9","a",-1,() -> {return new KakejikuBlock(kakejiku_10.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_8 =B("kakejiku_8","a",-1,() -> {return new KakejikuBlock(kakejiku_9.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_7 =B("kakejiku_7","a",-1,() -> {return new KakejikuBlock(kakejiku_8.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_6 =B("kakejiku_6","a",-1,() -> {return new KakejikuBlock(kakejiku_7.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_5 =B("kakejiku_5","a",-1,() -> {return new KakejikuBlock(kakejiku_6.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_4 =B("kakejiku_4","a",-1,() -> {return new KakejikuBlock(kakejiku_5.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_3 =B("kakejiku_3","a",-1,() -> {return new KakejikuBlock(kakejiku_4.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
+    public static final RegistryObject<Block> kakejiku_2 =B("kakejiku_2","a",-1,() -> {return new KakejikuBlock(kakejiku_3.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
     public static final RegistryObject<Block> kakejiku_1 =B("kakejiku_1","a",-1,() -> {return new KakejikuBlock(kakejiku_2.get(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).instabreak().noCollission());});
     public static final RegistryObject<Item> white_cushion =ITEMS.register("white_cushion", () -> {return new CushionItem(DyeColor.WHITE,(new Item.Properties()));});
     public static final RegistryObject<Item> orange_cushion =ITEMS.register("orange_cushion", () -> {return new CushionItem(DyeColor.ORANGE,(new Item.Properties()));});
@@ -887,16 +893,67 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> silkworm_farm =B("silkworm_farm","a",-1,() -> {return new SilkwormFarmBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.AZALEA).strength(0.5F, 3.0F));});
     public static final RegistryObject<Item> cocoon =I("cocoon");
     public static final RegistryObject<Item> silk_thread =I("silk_thread");
+    public static final RegistryObject<Item> silk =I("silk");
+    public static final RegistryObject<Item> white_silk =I("white_silk");
+    public static final RegistryObject<Item> orange_silk =I("orange_silk");
+    public static final RegistryObject<Item> magenta_silk =I("magenta_silk");
+    public static final RegistryObject<Item> light_blue_silk =I("light_blue_silk");
+    public static final RegistryObject<Item> yellow_silk =I("yellow_silk");
+    public static final RegistryObject<Item> lime_silk =I("lime_silk");
+    public static final RegistryObject<Item> pink_silk =I("pink_silk");
+    public static final RegistryObject<Item> gray_silk =I("gray_silk");
+    public static final RegistryObject<Item> light_graysilk =I("light_gray_silk");
+    public static final RegistryObject<Item> cyan_silk =I("cyan_silk");
+    public static final RegistryObject<Item> purple_silk =I("purple_silk");
+    public static final RegistryObject<Item> blue_silk =I("blue_silk");
+    public static final RegistryObject<Item> brown_silk =I("brown_silk");
+    public static final RegistryObject<Item> green_silk =I("green_silk");
+    public static final RegistryObject<Item> red_silk =I("red_silk");
+    public static final RegistryObject<Item> black_silk =I("black_silk");
+    public static final RegistryObject<Block> silk_block =B("silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> white_silk_block =B("white_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> orange_silk_block =B("orange_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> magenta_silk_block =B("magenta_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> light_blue_silk_block =B("light_blue_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> yellow_silk_block =B("yellow_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> lime_silk_block =B("lime_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> pink_silk_block =B("pink_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> gray_silk_block =B("gray_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> light_gray_silk_block =B("light_gray_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> cyan_silk_block =B("cyan_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_CYAN).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> purple_silk_block =B("purple_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> blue_silk_block =B("blue_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> brown_silk_block =B("brown_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> green_silk_block =B("green_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> red_silk_block =B("red_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
+    public static final RegistryObject<Block> black_silk_block =B("black_silk_block","h",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.WOOL).strength(0.2F, 5.0F));});
+
     public static final RegistryObject<Block> magma_slab =B("magma_slab","p",-1,() -> {return new MagmaSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(0.5F, 10.0F).lightLevel((p_235470_0_) -> {return 3;}).randomTicks().isValidSpawn((p_187421_, p_187422_, p_187423_, p_187424_) -> {return p_187424_.fireImmune();}).hasPostProcess(ItemAndBlockRegister::always).emissiveRendering(ItemAndBlockRegister::always));});
     public static final RegistryObject<Block> magma_stairs =B("magma_stairs","p",-1,() -> {return new MagmaStairBlock(Blocks.MAGMA_BLOCK.defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(0.5F, 10.0F).lightLevel((p_235470_0_) -> {return 3;}).randomTicks().isValidSpawn((p_187421_, p_187422_, p_187423_, p_187424_) -> {return p_187424_.fireImmune();}).hasPostProcess(ItemAndBlockRegister::always).emissiveRendering(ItemAndBlockRegister::always));});
-    public static final RegistryObject<Block> japanese_timber_bamboo =B("japanese_timber_bamboo","a",-1,() -> {return new JapaneseTimberBambooBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.BAMBOO).strength(0.5F, 10.0F).randomTicks().noCollission().pushReaction(PushReaction.DESTROY));});
-    public static final RegistryObject<Block> bamboo_block =B("bamboo_block","a",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
-    public static final RegistryObject<Block> bamboo_slab =B("bamboo_slab","a",-1,() -> {return new FlammableSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
-    public static final RegistryObject<Block> bamboo_stairs =B("bamboo_stairs","a",-1,() -> {return new FlammableStairBlock(bamboo_block.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
-    public static final RegistryObject<Block> bamboo_wall =B("bamboo_wall","a",-1,() -> {return new IronBarsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F).noOcclusion());});
-    public static final RegistryObject<Block> bamboo_basket =B("bamboo_basket","a",-1,() -> {return new BambooBasketBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
-    public static final RegistryObject<Item> bamboo_charcoal =I("bamboo_charcoal");
-    public static final RegistryObject<Block> bamboo_charcoal_block =B("bamboo_charcoal_block","a",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> japanese_timber_bamboo =BW("japanese_timber_bamboo","a",-1,() -> {return new JapaneseTimberBambooBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.BAMBOO).strength(0.5F, 10.0F).randomTicks().noCollission().pushReaction(PushReaction.DESTROY));});
+    public static final RegistryObject<Block> bamboo_block =BW("bamboo_block","a",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> bamboo_slab =BW("bamboo_slab","a",-1,() -> {return new FlammableSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> bamboo_stairs =BW("bamboo_stairs","a",-1,() -> {return new FlammableStairBlock(bamboo_block.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> bamboo_wall =BW("bamboo_wall","a",-1,() -> {return new IronBarsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F).noOcclusion());});
+    public static final RegistryObject<Block> bamboo_basket =BW("bamboo_basket","a",-1,() -> {return new BambooBasketBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Item> bamboo_charcoal =IW("bamboo_charcoal");
+    public static final RegistryObject<Block> bamboo_charcoal_block =BW("bamboo_charcoal_block","a",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.BAMBOO).strength(0.5F, 10.0F));});
     public static final RegistryObject<Block> tawara =BF("tawara","h",-1,() -> {return new TawaraBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).strength(0.2F, 3.0F).sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));});
     public static final RegistryObject<Block> paddy_field =BN("paddy_field","s",-1,() -> {return new FarmBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(0.6F, 3.0F).sound(SoundType.GRAVEL).isViewBlocking(ItemAndBlockRegister::always).isSuffocating(ItemAndBlockRegister::always));});
     public static final RegistryObject<Block> senbakoki =BF("senbakoki","a",-1,() -> {return new SenbakokiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(0.6F, 10.0F).sound(SoundType.WOOD));});
@@ -910,6 +967,11 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> fermentation_barrel_with_rice_malt =BF("fermentation_barrel_with_rice_malt","a",-1,() -> {return new FermentationBarrelBlock(()->Blocks.AIR,()->new ItemStack(ItemAndBlockRegister.rice_malt.get(),8),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
     public static final RegistryObject<Block> fermentation_barrel_with_shikomi_miso =BF("fermentation_barrel_with_shikomi_miso","a",-1,() -> {return new FermentationBarrelBlock(()->ItemAndBlockRegister.fermentation_barrel_with_miso.get(),()->new ItemStack(ItemAndBlockRegister.shikomi_miso.get(),8),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F).randomTicks());});
     public static final RegistryObject<Block> fermentation_barrel_with_miso =BF("fermentation_barrel_with_miso","a",-1,() -> {return new FermentationBarrelBlock(()->Blocks.AIR,()->new ItemStack(ItemAndBlockRegister.miso.get(),8),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> kettle =BF("kettle","p",-1,() -> {return new KettleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).strength(1F, 10.0F).requiresCorrectToolForDrops());});
+    public static final RegistryObject<Block> tea_bush =BF("tea_bush","h",-1,() -> {return new TeaBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.AZALEA).strength(0.3F, 1.0F).randomTicks());});
+    public static final RegistryObject<Item> tea_leaf =IF("tea_leaf");
+    public static final RegistryObject<Item> green_tea =ITEMS.register("green_tea", () -> {return new Item((new Item.Properties()).food(FoodUrushi.GreenTea));});
+
     public static final RegistryObject<Block> unfired_shichirin =B("unfired_shichirin","s",-1,() -> {return new UnfinishedShichirinBlock(BlockBehaviour.Properties.of().mapColor( MapColor.TERRACOTTA_RED).sound(SoundType.ROOTED_DIRT).strength(0.4F, 10.0F));});
     public static final RegistryObject<Block> unfinished_shichirin =B("unfinished_shichirin","p",-1,() -> {return new UnfinishedShichirinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F, 10.0F).requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> shichirin =BM("shichirin","p",-1,() -> {return new ShichirinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F, 10.0F).requiresCorrectToolForDrops().dynamicShape());});
@@ -919,8 +981,9 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> soy_crop =BF("soy_crop","h",-1,() -> {return new UrushiCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).randomTicks().noCollission().instabreak().pushReaction(PushReaction.DESTROY));});
     public static final RegistryObject<Block> green_onion_crop =BF("green_onion_crop","h",-1,() -> {return new UrushiCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).randomTicks().noCollission().instabreak().pushReaction(PushReaction.DESTROY));});
     public static final RegistryObject<Item> rice_malt =ITEMS.register("rice_malt", () -> {return new ToolchipItem("rice_malt",(new Item.Properties()));});
-    public static final RegistryObject<Item> straw =I("straw");
-    public static final RegistryObject<Item> raw_rice =IF("raw_rice");
+    public static final RegistryObject<Item> straw =ITEMS.register("straw", () -> {return new ToolchipItem("senbakoki",(new Item.Properties()));});
+    public static final RegistryObject<Item> raw_rice =ITEMS.register("raw_rice", () -> {return new ToolchipItem("senbakoki",(new Item.Properties()));});
+
     public static final RegistryObject<Item> rice =ITEMS.register("rice", () -> {return new PlaceableFoodItem(()->EntityRegister.RiceFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Rice));});
     public static final RegistryObject<Item> tkg =ITEMS.register("tkg", () -> {return new PlaceableFoodItem(()->EntityRegister.TKGFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.TKG));});
     public static final RegistryObject<Item> sekihan =ITEMS.register("sekihan", () -> {return new PlaceableFoodItem(()->EntityRegister.SekihanFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Sekihan));});
@@ -930,7 +993,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> cheese_gyudon_with_onsen_egg =ITEMS.register("cheese_gyudon_with_onsen_egg", () -> {return new PlaceableFoodItem(()->EntityRegister.CheeseGyudonWithOnsenEggFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.OtherGyudon));});
     public static final RegistryObject<Item> green_onion_and_raw_egg_gyudon =ITEMS.register("green_onion_and_raw_egg_gyudon", () -> {return new PlaceableFoodItem(()->EntityRegister.GreenOnionAndRawEggGyudonFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.OtherGyudon));});
     public static final RegistryObject<Item> mustard_leaf_and_cod_caviar_gyudon =ITEMS.register("mustard_leaf_and_cod_caviar_gyudon", () -> {return new PlaceableFoodItem(()->EntityRegister.MustardLeafAndCodCaviarGyudonFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.OtherGyudon));});
-     public static final RegistryObject<Item> rice_ball =ITEMS.register("rice_ball", () -> {return new Item((new Item.Properties()).food(FoodUrushi.RiceBall));});
+     public static final RegistryObject<Item> rice_ball =ITEMS.register("rice_ball", () -> {return new RiceBallWithFillingItem((new Item.Properties()).food(FoodUrushi.RiceBall));});
     public static final RegistryObject<Item> rice_cake =ITEMS.register("rice_cake", () -> {return new PlaceableFoodItem(()->EntityRegister.RiceCakeFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.RiceCake));});
     public static final RegistryObject<Item> roasted_rice_cake =ITEMS.register("roasted_rice_cake", () -> {return new PlaceableFoodItem(()->EntityRegister.RoastedRiceCakeFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.RoastedRiceCake));});
     public static final RegistryObject<Item> kusa_dango =ITEMS.register("kusa_dango", () -> {return new PlaceableFoodItem(()->EntityRegister.KusaDangoFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Dango));});
@@ -993,10 +1056,10 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> minced_tuna_bowl =ITEMS.register("minced_tuna_bowl", () -> {return new PlaceableFoodItem(()->EntityRegister.MincedTunaBowlFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.TKG));});
     public static final RegistryObject<Block> plate =BF("plate","p",-1,() -> {return new PlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.GLASS).strength(0.5F, 10.0F));});
     public static final RegistryObject<Item> wood_chip =I("wood_chip");
-    public static final RegistryObject<Item> gold_leaf =I("gold_leaf");
-    public static final RegistryObject<Block> gold_leaf_block =B("gold_leaf_block","a",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.WOOD).strength(1F, 10.0F));});
-    public static final RegistryObject<Block> gold_leaf_slab =B("gold_leaf_slab","a",-1,() -> {return new FlammableSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.WOOD).strength(1F, 10.0F));});
-    public static final RegistryObject<Block> gold_leaf_stairs =B("gold_leaf_stairs","a",-1,() -> {return new FlammableStairBlock(gold_leaf_block.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.WOOD).strength(1F, 10.0F));});
+    public static final RegistryObject<Item> gold_leaf =IW("gold_leaf");
+    public static final RegistryObject<Block> gold_leaf_block =BW("gold_leaf_block","a",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.WOOD).strength(1F, 10.0F));});
+    public static final RegistryObject<Block> gold_leaf_slab =BW("gold_leaf_slab","a",-1,() -> {return new FlammableSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.WOOD).strength(1F, 10.0F));});
+    public static final RegistryObject<Block> gold_leaf_stairs =BW("gold_leaf_stairs","a",-1,() -> {return new FlammableStairBlock(gold_leaf_block.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.WOOD).strength(1F, 10.0F));});
     public static final RegistryObject<Block> blue_galvanised_iron_plate_block =B("blue_galvanised_iron_plate_block","p",0,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).sound(SoundType.COPPER).requiresCorrectToolForDrops().strength(1.5F, 30.0F));});
     public static final RegistryObject<Block> blue_galvanised_iron_plate_slab =B("blue_galvanised_iron_plate_slab","p",0,() -> {return new FlammableSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).sound(SoundType.COPPER).requiresCorrectToolForDrops().strength(1.5F, 30.0F));});
     public static final RegistryObject<Block> blue_galvanised_iron_plate_stairs =B("blue_galvanised_iron_plate_stairs","p",0,() -> {return new FlammableStairBlock(blue_galvanised_iron_plate_block.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).requiresCorrectToolForDrops().sound(SoundType.COPPER).strength(1.5F, 30.0F));});
@@ -1241,8 +1304,8 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> additional_heart =ITEMS.register("additional_heart", () -> {return new AdditionalHeartItem((new Item.Properties()));});
     public static final RegistryObject<Item> ghost_spawn_egg =ITEMS.register("ghost_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.Ghost, 14283506, 14014157,(new Item.Properties()));});
     public static final RegistryObject<Item> giant_skeleton_spawn_egg =ITEMS.register("giant_skeleton_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.GianntSkeleton, 12698049, 4802889,(new Item.Properties()));});
-
-
+    public static final RegistryObject<Item> kakuriyo_villager_spawn_egg =ITEMS.register("kakuriyo_villager_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.KakuriyoVillager, 12698049, 4802889,(new Item.Properties()));});
+    public static final RegistryObject<Block> coin =B("coin","p",-1,() -> {return new CoinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(0.5F, 10.0F));});
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(Item.byBlock(ItemAndBlockRegister.kasuga_lantern.get())))
             .title(Component.translatable("itemGroup.urushi"))
@@ -1250,7 +1313,13 @@ public class ItemAndBlockRegister {
             .displayItems((parameters, output) -> {
                 for(int i=0;i<ModCoreUrushi.urushiTabContents.size();i++) {
                     if(!ModCoreUrushi.underDevelopmentList.contains(ModCoreUrushi.urushiTabContents.get(i).get())) {
-                           output.accept(ModCoreUrushi.urushiTabContents.get(i).get());
+                        if (ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_1.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_2.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_3.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_4.get().asItem()
+                                &&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_5.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_6.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_7.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_8.get().asItem()
+                                &&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_9.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_10.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_11.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_12.get().asItem()
+                                &&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_13.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_14.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_16.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_17.get().asItem()
+                                &&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_18.get().asItem()&&ModCoreUrushi.urushiTabContents.get(i).get() != kakejiku_19.get().asItem()) {
+                            output.accept(ModCoreUrushi.urushiTabContents.get(i).get());
+                        }
                     }
                 }
                 output.accept(white_cushion.get());
@@ -1386,6 +1455,7 @@ public class ItemAndBlockRegister {
                 output.accept(lantern_plant_fruit.get());
                 output.accept(milk_bamboo_cup.get());
                 output.accept(soy_source_cup.get());
+                output.accept(green_tea.get());
             })
             .build());
     public static final RegistryObject<CreativeModeTab> URUSHI_MAGIC_TAB = CREATIVE_TABS.register("urushi_magic", () -> CreativeModeTab.builder()
@@ -1533,8 +1603,9 @@ public class ItemAndBlockRegister {
     }
     private static <T extends Block> RegistryObject<T> B(String name,String tool,int l, Supplier<T > sup) {
         RegistryObject<T> object = BLOCKS.register(name, sup);
-        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new BlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
-        ModCoreUrushi.urushiTabContents.add(Objects.requireNonNull(object2));
+        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
+           ModCoreUrushi.urushiTabContents.add(Objects.requireNonNull(object2));
+
 if(ModCoreUrushi.isDebug) {
     ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
     if (tool == "p") {
@@ -1566,7 +1637,7 @@ if(ModCoreUrushi.isDebug) {
 
     private static <T extends Block> RegistryObject<T> BW(String name,String tool,int l, Supplier<T > sup) {
         RegistryObject<T> object = BLOCKS.register(name, sup);
-        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new BlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
+        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiWoodTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
             ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
@@ -1598,7 +1669,7 @@ if(ModCoreUrushi.isDebug) {
     }
     private static <T extends Block> RegistryObject<T> BP(String name,String tool,int l, Supplier<T > sup) {
         RegistryObject<T> object = BLOCKS.register(name, sup);
-        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new BlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
+        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiPlasterTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
             ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
@@ -1630,7 +1701,7 @@ if(ModCoreUrushi.isDebug) {
     }
     private static <T extends Block> RegistryObject<T> BF(String name,String tool,int l, Supplier<T > sup) {
         RegistryObject<T> object = BLOCKS.register(name, sup);
-        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new BlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
+        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiFoodTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
             ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
@@ -1662,7 +1733,7 @@ if(ModCoreUrushi.isDebug) {
     }
     private static <T extends Block> RegistryObject<T> BM(String name,String tool,int l, Supplier<T > sup) {
         RegistryObject<T> object = BLOCKS.register(name, sup);
-        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new BlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
+        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiMagicTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
             ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));

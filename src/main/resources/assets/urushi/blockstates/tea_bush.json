@@ -1,0 +1,19 @@
+{
+
+  "variants": {
+
+    "age=0": {
+
+      "model": "urushi:block/tea_leaves_immatured"
+
+    },
+
+    "age=1": {
+
+      "model": "urushi:block/tea_leaves_matured"
+
+    }
+
+  }
+
+}

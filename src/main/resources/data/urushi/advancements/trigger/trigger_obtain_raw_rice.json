@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:raw_rice"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "urushi:advancements/give_rice_cauldron_and_dirt_furnace"
+    ]
+  }
+}

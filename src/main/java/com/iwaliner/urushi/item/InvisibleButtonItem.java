@@ -4,7 +4,12 @@ import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.block.HiddenInvisibleButtonBlock;
 import com.iwaliner.urushi.block.InvisibleButtonBlock;
 import com.iwaliner.urushi.util.UrushiUtils;
+import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.OutlineBufferSource;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -46,7 +51,10 @@ public class InvisibleButtonItem extends BlockItem {
                             if( world.getBlockState(pos.offset(i,j,k)).getBlock()== ItemAndBlockRegister.hidden_invisible_button.get()){
                                 BlockState hiddenState=world.getBlockState(pos.offset(i,j,k));
                                 world.setBlockAndUpdate(pos.offset(i,j,k),ItemAndBlockRegister.invisible_button.get().defaultBlockState().setValue(InvisibleButtonBlock.POWERED,hiddenState.getValue(HiddenInvisibleButtonBlock.POWERED)).setValue(InvisibleButtonBlock.FACE,hiddenState.getValue(HiddenInvisibleButtonBlock.FACE)).setValue(InvisibleButtonBlock.FACING,hiddenState.getValue(HiddenInvisibleButtonBlock.FACING)));
+
                             }
+
+
                         }
                     }
                 }

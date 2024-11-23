@@ -27,6 +27,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -136,4 +137,6 @@ public class KakejikuBlock extends HorizonalRotateBlock{
     public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 60;
     }
+
+
 }

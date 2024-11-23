@@ -34,5 +34,14 @@ public class MobAttributeSetUp {
                         .add(Attributes.MOVEMENT_SPEED, 0.2D)
                         .build());
 
+        entityRegisterEvent.put(EntityRegister.KakuriyoVillager.get(),
+                GhostEntity.createAttributes()
+                        .add(Attributes.MAX_HEALTH, 20.0D)
+                        .add(Attributes.ATTACK_DAMAGE, 0.0D)
+                        .add(Attributes.ATTACK_SPEED, 0.0D)
+                        .add(Attributes.FLYING_SPEED, 0.0D)
+                        .add(Attributes.MOVEMENT_SPEED, 0.2D)
+                        .build());
+
     }
 }

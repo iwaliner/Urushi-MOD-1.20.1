@@ -7,6 +7,7 @@ import com.iwaliner.urushi.TagUrushi;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -33,8 +34,7 @@ public class FallenLeavesBlock extends CarpetBlock {
                     break;
                 }
             }
-            // same result with depth>4? false: !level.isEmptyBlock(pos.below());
-            return depth <= 4 && !level.isEmptyBlock(pos.below());
+           return depth <= 4 && !level.isEmptyBlock(pos.below());
 
         }else {
             return level.getBlockState(pos.below()).isSolidRender(level, pos);
@@ -51,6 +51,9 @@ public class FallenLeavesBlock extends CarpetBlock {
     public boolean canBeReplaced(BlockState state, BlockPlaceContext context) {
         Level level=  context.getLevel();
         BlockPos pos=context.getClickedPos();
+        if(context.getPlayer()!=null&&context.getPlayer().getItemInHand(InteractionHand.MAIN_HAND).getItem()==state.getBlock().asItem()){
+            return false;
+        }
         if (level.getBlockState(pos.below()).is(TagUrushi.GRASS_BLOCK_WITH_FALLEN_LEAVES_INGREDIENT)) {
             if (state.getBlock() == ItemAndBlockRegister.fallen_red_leaves.get()) {
                 level.setBlockAndUpdate(pos.below(), ItemAndBlockRegister.grass_block_with_fallen_red_leaves.get().defaultBlockState());

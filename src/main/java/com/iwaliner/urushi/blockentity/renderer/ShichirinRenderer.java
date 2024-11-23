@@ -5,7 +5,9 @@ import com.iwaliner.urushi.blockentity.ShichirinBlockEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
@@ -13,8 +15,12 @@ import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -43,7 +49,18 @@ public class ShichirinRenderer implements BlockEntityRenderer<ShichirinBlockEnti
                 this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, i1,i2, poseStack, bufferSource,blockEntity.getLevel(), (int) blockEntity.getBlockPos().asLong());
                 poseStack.popPose();
             }
+        /*BlockPos pos=blockEntity.getBlockPos();
+            BlockPos pos2=pos.offset(2,2,2);
+        float f =0.0F;
+        double d0 = (double)((float)(pos2.getX() - pos.getX()) + 0.45F - f);
+        double d1 = (double)((float)(pos2.getY() - pos.getY()) + 0.45F - f);
+        double d2 = (double)((float)(pos2.getZ() - pos.getZ()) + 0.45F - f);
+        double d3 = (double)((float)(pos2.getX() - pos.getX()) + 0.55F + f);
+        double d4 = (double)((float)(pos2.getY() - pos.getY()) + 0.55F + f);
+        double d5 = (double)((float)(pos2.getZ() - pos.getZ()) + 0.55F + f);
+        LevelRenderer.renderLineBox(poseStack, bufferSource.getBuffer(RenderType.lines()), d0, d1, d2, d3, d4, d5, 1.0F, 0.75F, 0.75F, 1.0F, 1.0F, 0.75F, 0.75F);
 
+*/
 
         /**特定のブロックの見た目をかぶせるテスト*/
        // poseStack.translate(0.5D, 3D, 0.5D);

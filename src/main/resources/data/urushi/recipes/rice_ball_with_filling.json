@@ -1,0 +1,77 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    " # ",
+
+
+
+    "#F#",
+
+
+
+    "###"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+      "item": "urushi:rice"
+
+
+
+    },
+
+
+
+    "F": {
+
+
+
+     "tag": "urushi:rice_ball_fillings"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:rice_ball",
+
+
+
+    "count": 4
+
+
+
+  }
+
+
+
+}

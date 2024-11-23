@@ -1,0 +1,67 @@
+{
+
+  "variants": {
+
+    "facing=west,bottom=false": {
+
+      "model": "urushi:block/kakejiku_upper_kanagawaokinamiura",
+
+      "y": 90
+
+    },
+
+    "facing=south,bottom=false": {
+
+      "model": "urushi:block/kakejiku_upper_kanagawaokinamiura"
+
+    },
+
+    "facing=north,bottom=false": {
+
+      "model": "urushi:block/kakejiku_upper_kanagawaokinamiura",
+
+      "y": 180
+
+    },
+
+    "facing=east,bottom=false": {
+
+      "model": "urushi:block/kakejiku_upper_kanagawaokinamiura",
+
+      "y": 270
+
+    },
+
+    "facing=west,bottom=true": {
+
+      "model": "urushi:block/kakejiku_under_kanagawaokinamiura",
+
+      "y": 90
+
+    },
+
+    "facing=south,bottom=true": {
+
+      "model": "urushi:block/kakejiku_under_kanagawaokinamiura"
+
+    },
+
+    "facing=north,bottom=true": {
+
+      "model": "urushi:block/kakejiku_under_kanagawaokinamiura",
+
+      "y": 180
+
+    },
+
+    "facing=east,bottom=true": {
+
+      "model": "urushi:block/kakejiku_under_kanagawaokinamiura",
+
+      "y": 270
+
+    }
+
+  }
+
+}

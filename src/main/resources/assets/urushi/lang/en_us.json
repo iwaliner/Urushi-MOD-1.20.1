@@ -883,8 +883,6 @@
 
    "block.urushi.senbakoki": "Senbakoki",
 
-    "info.urushi.rawrice": "Use Rice Ears on Senbakoki to obtain 2x Raw Rice.",
-
     "info.urushi.rawurushi": "Use Bowl on Chiseled Lacquer Log to obtain.",
 
     "info.urushi.placeablefood": "Right-click while sneaking to place food on ground.",
@@ -2559,5 +2557,6 @@
    "item.urushi.fried_shrimp": "Fried Shrimp",
    "item.urushi.shrimp_sushi": "Shrimp Sushi",
    "entity.urushi.shrimp_sushi_food": "Shrimp Sushi",
-   "info.urushi.doubled_wooden_cabinetry_sort_button": "Sort"
+   "info.urushi.doubled_wooden_cabinetry_sort_button": "Sort",
+   "info.urushi.senbakoki": "Use Rice Ears on Senbakoki to obtain Raw Rice and Straw."
 }

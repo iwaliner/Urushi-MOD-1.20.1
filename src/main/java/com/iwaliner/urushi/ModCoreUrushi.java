@@ -12,18 +12,32 @@ import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.util.interfaces.ElementBlock;
 import com.iwaliner.urushi.util.interfaces.ElementItem;
 import com.iwaliner.urushi.util.interfaces.Tiered;
+import com.mojang.blaze3d.platform.Window;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.ChatFormatting;
+import net.minecraft.advancements.FrameType;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.client.renderer.LevelRenderer;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.OutlineBufferSource;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.core.*;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.ClickEvent;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.ComponentUtils;
-import net.minecraft.network.chat.HoverEvent;
+import net.minecraft.network.chat.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.util.Mth;
+import net.minecraft.world.Container;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -35,28 +49,39 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.GameRules;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 
+import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.client.event.RenderGuiOverlayEvent;
+import net.minecraftforge.client.event.RenderHighlightEvent;
+import net.minecraftforge.client.event.RenderLevelStageEvent;
+import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.ToolAction;
+import net.minecraftforge.common.ToolActions;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.living.*;
-import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
+import net.minecraftforge.event.entity.player.*;
 import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.level.SleepFinishedTimeEvent;
@@ -113,10 +138,10 @@ public class ModCoreUrushi {
 
     public static boolean isDebug=FMLPaths.GAMEDIR.get().toString().contains("イワライナー")&&FMLPaths.GAMEDIR.get().toString().contains("run");
     public static Logger logger = LogManager.getLogger("urushi");
-
+    public static IEventBus modEventBus;
 
     public ModCoreUrushi() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         /**コンフィグを登録*/
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,ConfigUrushi.spec,"urushi.toml");
 
@@ -160,7 +185,8 @@ public class ModCoreUrushi {
         MinecraftForge.EVENT_BUS.register(this);
 
     }
-    private void CreativeTabEvent(BuildCreativeModeTabContentsEvent event)
+   /* @SubscribeEvent
+    public void CreativeTabEvent(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
                event.accept(ItemAndBlockRegister.auto_crafting_table.get());
@@ -181,7 +207,7 @@ public class ModCoreUrushi {
             event.accept(ItemAndBlockRegister.wooden_cabinetry.get());
             event.accept(ItemAndBlockRegister.doubled_wooden_cabinetry.get());
         }
-    }
+    }*/
     /**燃料を登録*/
     @SubscribeEvent
     public void FuelEvent(FurnaceFuelBurnTimeEvent event) {
@@ -342,6 +368,14 @@ public class ModCoreUrushi {
 
 
     }*/
+    @SubscribeEvent
+    public void CraftingEvent(PlayerEvent.ItemCraftedEvent event) {
+        ItemStack riceBallItem = event.getCrafting();
+        Container craftMatrix = event.getInventory();
+        if (riceBallItem.is((Item)ItemAndBlockRegister.rice_ball.get())) {
+            UrushiUtils.onCraftingRiceBall(craftMatrix.getItem(4).getItem(),riceBallItem);
+        }
+    }
 
     /**葉の上に落下したとき落下ダメージを受けないように*/
     @SubscribeEvent
@@ -423,13 +457,81 @@ public class ModCoreUrushi {
                     return;
                 }
             }
-            tooltipList.add((Component.translatable(item_id)).withStyle(chatformat_id));
+
+            Component component=Component.translatable(item_id).withStyle((style) -> {
+                return style.withColor(chatformat_id);
+            });
+            tooltipList.add(ElementUtils.getIconComponent(elementType).append(component));
         }
         if (block instanceof Tiered tiered) {
             int tier = tiered.getTier();
             String tier_id = "info.urushi.tier" + tier;
             tooltipList.add((Component.translatable(tier_id)).withStyle(ChatFormatting.GRAY));
 
+        }
+        if(block instanceof Roof225Block&&event.getEntity()!=null){
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"roof_225", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+        }else if(block instanceof Roof45Block&&event.getEntity()!=null){
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"roof_45", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+        }else if(block instanceof ParapetBlock&&event.getEntity()!=null){
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"parapet", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+        }else if(block instanceof BarsBlock&&event.getEntity()!=null){
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"bars", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+        }else if(block instanceof AbstractFramedBlock||block instanceof FramedPaneBlock&&event.getEntity()!=null){
+            try{
+                long gametime = Objects.requireNonNull(event.getEntity()).level().getGameTime() % 20;
+                if(gametime<10){
+                    tooltipList.add((Component.translatable("info.urushi.framed_block1" )).withStyle(ChatFormatting.GRAY));
+                    String keyString= ClientSetUp. connectionKey.getKey().getName();
+                    String begin=".";
+                    int beginIndex = keyString.indexOf(begin);
+                    String preExtractedKey = keyString.substring(beginIndex+1);
+                    int beginIndex2 = preExtractedKey.indexOf(begin);
+                    String extractedKey = preExtractedKey.substring(beginIndex2+1);
+                    tooltipList.add((Component.translatable("info.urushi.framed_block2")
+                            .append(" '"+extractedKey+"' ").append(Component.translatable("info.urushi.framed_block3")))
+                            .withStyle(ChatFormatting.GRAY));
+                }else{
+                    tooltipList.add((Component.translatable("info.urushi.framed_block1" )).withStyle(ChatFormatting.YELLOW));
+                    String keyString= ClientSetUp. connectionKey.getKey().getName();
+                    String begin=".";
+                    int beginIndex = keyString.indexOf(begin);
+                    String preExtractedKey = keyString.substring(beginIndex+1);
+                    int beginIndex2 = preExtractedKey.indexOf(begin);
+                    String extractedKey = preExtractedKey.substring(beginIndex2+1);
+                    tooltipList.add((Component.translatable("info.urushi.framed_block2")
+                            .append(" '"+extractedKey+"' ").append(Component.translatable("info.urushi.framed_block3")))
+                            .withStyle(ChatFormatting.YELLOW));
+                }
+            }catch (Exception e){
+                tooltipList.add((Component.translatable("info.urushi.framed_block1" )).withStyle(ChatFormatting.GRAY));
+                String keyString= ClientSetUp. connectionKey.getKey().getName();
+                String begin=".";
+                int beginIndex = keyString.indexOf(begin);
+                String preExtractedKey = keyString.substring(beginIndex+1);
+                int beginIndex2 = preExtractedKey.indexOf(begin);
+                String extractedKey = preExtractedKey.substring(beginIndex2+1);
+                tooltipList.add((Component.translatable("info.urushi.framed_block2")
+                        .append(" '"+extractedKey+"' ").append(Component.translatable("info.urushi.framed_block3")))
+                        .withStyle(ChatFormatting.GRAY));
+            }
+
+        }else if(block instanceof PlayerHeadBlock){
+            if(stack.getTag()!=null){
+                if(stack.getTag().getBoolean("MinecraftHeadsCredit")){
+                    tooltipList.add(Component.literal("by Minecraft Heads").withStyle(ChatFormatting.BLUE));
+                }
+                if(!stack.getTag().getString("HeadsCreator").equals("")){
+                    tooltipList.add(Component.translatable("info.urushi.custom_heads_creator").append(stack.getTag().getString("HeadsCreator")).withStyle(ChatFormatting.GRAY));
+                }
+            }
+        }
+
+        if(ModCoreUrushi.isDebug){
+            CompoundTag tag=event.getItemStack().getTag();
+            if(tag!=null&&!tag.isEmpty()){
+                event.getToolTip().add((Component.literal(tag.getAsString())).withStyle(ChatFormatting.AQUA));
+            }
         }
         if(block instanceof ElementBlock){
             CompoundTag tag=BlockItem.getBlockEntityData(stack);
@@ -461,31 +563,44 @@ public class ModCoreUrushi {
                         return;
                     }
                 }
-                tooltipList.add((Component.translatable("info.urushi.stored_reiryoku_amount").append(" "+tag.getInt("storedReiryoku"))).withStyle(chatformat_id));
+                MutableComponent component=Component.translatable("info.urushi.stored_reiryoku_amount").append(" "+tag.getInt("storedReiryoku")).withStyle((style) -> {
+                    return style.withColor(chatformat_id);
+                });
+                tooltipList.add(ElementUtils.getIconComponent(elementType).append(component));
             }
         }
         if(!ConfigUrushi.disableBlockElementDisplaying.get()){
             if (block != Blocks.AIR) {
                 BlockState state = block.defaultBlockState();
                 if (ElementUtils.isWoodElement(state)) {
-                    tooltipList.add((Component.translatable("info.urushi.wood_element_block"))
-                            .withStyle(ChatFormatting.DARK_GREEN));
+                    MutableComponent component=Component.translatable("info.urushi.wood_element_block").withStyle((style) -> {
+                        return style.withColor(ChatFormatting.GRAY);
+                    });
+                    tooltipList.add(component.append(ElementUtils.getIconComponent(ElementType.WoodElement)));
                 }
                 if (ElementUtils.isFireElement(state)) {
-                    tooltipList.add((Component.translatable("info.urushi.fire_element_block"))
-                            .withStyle(ChatFormatting.DARK_RED));
+                    MutableComponent component=Component.translatable("info.urushi.fire_element_block").withStyle((style) -> {
+                        return style.withColor(ChatFormatting.GRAY);
+                    });
+                    tooltipList.add(component.append(ElementUtils.getIconComponent(ElementType.FireElement)));
                 }
                 if (ElementUtils.isEarthElement(state)) {
-                    tooltipList.add((Component.translatable("info.urushi.earth_element_block"))
-                            .withStyle(ChatFormatting.GOLD));
+                    MutableComponent component=Component.translatable("info.urushi.earth_element_block").withStyle((style) -> {
+                        return style.withColor(ChatFormatting.GRAY);
+                    });
+                    tooltipList.add(component.append(ElementUtils.getIconComponent(ElementType.EarthElement)));
                 }
                 if (ElementUtils.isMetalElement(state)) {
-                    tooltipList.add((Component.translatable("info.urushi.metal_element_block"))
-                            .withStyle(ChatFormatting.AQUA));
+                    MutableComponent component=Component.translatable("info.urushi.metal_element_block").withStyle((style) -> {
+                        return style.withColor(ChatFormatting.GRAY);
+                    });
+                    tooltipList.add(component.append(ElementUtils.getIconComponent(ElementType.MetalElement)));
                 }
                 if (ElementUtils.isWaterElement(state)) {
-                    tooltipList.add((Component.translatable("info.urushi.water_element_block"))
-                            .withStyle(ChatFormatting.DARK_PURPLE));
+                    MutableComponent component=Component.translatable("info.urushi.water_element_block").withStyle((style) -> {
+                        return style.withColor(ChatFormatting.GRAY);
+                    });
+                    tooltipList.add(component.append(ElementUtils.getIconComponent(ElementType.WaterElement)));
                 }
             }
         }
@@ -533,21 +648,15 @@ public class ModCoreUrushi {
             UrushiUtils.setInfo(event.getToolTip(),"japanese_cedar_sapling");
         }else if(stack.getItem()==Item.byBlock(ItemAndBlockRegister.lacquer_sapling.get())){
             UrushiUtils.setInfo(event.getToolTip(),"lacquer_sapling");
-        }
-        if(block instanceof AbstractFramedBlock||block instanceof FramedPaneBlock){
-            tooltipList.add((Component.translatable("info.urushi.framed_block1" )).withStyle(ChatFormatting.GRAY));
-            String keyString= ClientSetUp. connectionKey.getKey().getName();
-            String begin=".";
-            int beginIndex = keyString.indexOf(begin);
-            String preExtractedKey = keyString.substring(beginIndex+1);
-            int beginIndex2 = preExtractedKey.indexOf(begin);
-            String extractedKey = preExtractedKey.substring(beginIndex2+1);
-            tooltipList.add((Component.translatable("info.urushi.framed_block2")
-                    .append(" '"+extractedKey+"' ").append(Component.translatable("info.urushi.framed_block3")))
-                    .withStyle(ChatFormatting.GRAY));
-
+        }else if(stack.getItem()==ItemAndBlockRegister.green_tea.get()){
+            List<MobEffectInstance> list=new ArrayList<>();
+            list.add(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,20*60*1,1));
+            list.add(new MobEffectInstance(MobEffects.NIGHT_VISION,20*60*2,0));
+            PotionUtils.addPotionTooltip(list,tooltipList,1.0F);
         }
     }
+
+
 
     /**食べた後の処理*/
     @SubscribeEvent
@@ -653,6 +762,62 @@ public class ModCoreUrushi {
         }
     }
     @SubscribeEvent
+    public void RenderLineEvent(RenderHighlightEvent.Block event) {
+        PoseStack poseStack = event.getPoseStack();
+        LevelRenderer levelRenderer = event.getLevelRenderer();
+        MultiBufferSource multiBufferSource = event.getMultiBufferSource();
+        Entity entity=event.getCamera().getEntity();
+        if(entity instanceof Player player) {
+            BlockPos pos = new BlockPos((int) event.getTarget().getLocation().x, (int) event.getTarget().getLocation().y, (int) event.getTarget().getLocation().z);
+            ItemStack heldStack = player.getItemInHand(InteractionHand.MAIN_HAND);
+            Level level = player.level();
+            BlockState state = level.getBlockState(pos);
+            HitResult hitResult = Minecraft.getInstance().hitResult;
+            BlockPos hitPos = ((BlockHitResult) Objects.requireNonNull(hitResult)).getBlockPos();
+            BlockState hitState=level.getBlockState(hitPos);
+
+            if (heldStack.canPerformAction(ToolActions.PICKAXE_DIG)||heldStack.canPerformAction(ToolActions.HOE_DIG)||heldStack.canPerformAction(ToolActions.SHOVEL_DIG)||heldStack.canPerformAction(ToolActions.AXE_DIG)||Block.byItem(heldStack.getItem()) instanceof Roof225Block||Block.byItem(heldStack.getItem()) instanceof Roof45Block) {
+
+                int range=1;
+                for(int i=-range;i<=range;i++){
+                    for(int j=-range;j<=range;j++){
+                        for(int k=-range;k<=range;k++){
+                            BlockPos offsetPos=hitPos.offset(i,j,k);
+                            BlockState offsetState=level.getBlockState(offsetPos);
+                            if(offsetState.getBlock() instanceof Roof225Block){
+                            this.renderHitOutline(poseStack, multiBufferSource.getBuffer(RenderType.lines()), event.getCamera().getEntity(), event.getCamera().getPosition().x, event.getCamera().getPosition().y, event.getCamera().getPosition().z, offsetPos, Blocks.STONE_SLAB.defaultBlockState());
+                            }else if(offsetState.getBlock() instanceof Roof45Block){
+                                this.renderHitOutline(poseStack, multiBufferSource.getBuffer(RenderType.lines()), event.getCamera().getEntity(), event.getCamera().getPosition().x, event.getCamera().getPosition().y, event.getCamera().getPosition().z, offsetPos, Blocks.STONE.defaultBlockState());
+                            }
+                        }
+                    }
+                }
+             }
+           /* if(hitState.getBlock() instanceof ParapetBlock){
+                this.renderHitOutline(poseStack, multiBufferSource.getBuffer(RenderType.lines()), event.getCamera().getEntity(), event.getCamera().getPosition().x, event.getCamera().getPosition().y, event.getCamera().getPosition().z, hitPos, Blocks.CAULDRON.defaultBlockState());
+            }*/
+        }
+    }
+    private static void renderShape(PoseStack p_109783_, VertexConsumer p_109784_, VoxelShape p_109785_, double p_109786_, double p_109787_, double p_109788_) {
+        PoseStack.Pose posestack$pose = p_109783_.last();
+        p_109785_.forAllEdges((p_234280_, p_234281_, p_234282_, p_234283_, p_234284_, p_234285_) -> {
+            float f = (float)(p_234283_ - p_234280_);
+            float f1 = (float)(p_234284_ - p_234281_);
+            float f2 = (float)(p_234285_ - p_234282_);
+            float f3 = Mth.sqrt(f * f + f1 * f1 + f2 * f2);
+            f /= f3;
+            f1 /= f3;
+            f2 /= f3;
+            p_109784_.vertex(posestack$pose.pose(), (float)(p_234280_ + p_109786_), (float)(p_234281_ + p_109787_), (float)(p_234282_ + p_109788_)).color(1f, 1f, 0f, 1f).normal(posestack$pose.normal(), f, f1, f2).endVertex();
+            p_109784_.vertex(posestack$pose.pose(), (float)(p_234283_ + p_109786_), (float)(p_234284_ + p_109787_), (float)(p_234285_ + p_109788_)).color(1f, 1f, 0f, 1f).normal(posestack$pose.normal(), f, f1, f2).endVertex();
+        });
+    }
+    private void renderHitOutline(PoseStack p_109638_, VertexConsumer p_109639_, Entity p_109640_, double p_109641_, double p_109642_, double p_109643_, BlockPos p_109644_, BlockState p_109645_) {
+        renderShape(p_109638_, p_109639_, p_109645_.getShape(p_109640_.level(), p_109644_, CollisionContext.of(p_109640_)), (double)p_109644_.getX() - p_109641_, (double)p_109644_.getY() - p_109642_, (double)p_109644_.getZ() - p_109643_);
+    }
+
+
+    @SubscribeEvent
     public void MorningEvent(SleepFinishedTimeEvent event) {
         if(event.getLevel()instanceof ServerLevel) {
             ServerLevel serverLevel= (ServerLevel) event.getLevel();
@@ -664,6 +829,12 @@ public class ModCoreUrushi {
             /*for (ServerLevel serverlevel : Objects.requireNonNull(event.getEntity().level().getServer()).getAllLevels()) {
                 serverlevel.setDayTime((long) 24000);
             }*/
+        }
+    }
+    @SubscribeEvent
+    public void AdvancementEvent(AdvancementEvent.AdvancementProgressEvent event) {
+        if(event.getAdvancement().getDisplay()!=null&&UrushiUtils.isUrushiObject(event.getAdvancement().getDisplay().getTitle().toString())){
+            Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundRegister.UrushiAdvancements.get(), 1.0F, 1.0F));
         }
     }
     @SubscribeEvent
@@ -710,6 +881,31 @@ public class ModCoreUrushi {
             }
         }
 
+
+    }
+     @SubscribeEvent
+    public  void RenderGUIEvent(RenderGuiOverlayEvent event) {
+        if(event.getOverlay()== VanillaGuiOverlay.HOTBAR.type()) {
+            LocalPlayer player = Minecraft.getInstance().player;
+            if (player != null&&!Minecraft.getInstance().options.hideGui) {
+                ItemStack mainHandStack = player.getMainHandItem();
+                Block heldBlock=Block.byItem(mainHandStack.getItem());
+                GuiGraphics guiGraphics=event.getGuiGraphics();
+                Gui gui=Minecraft.getInstance().gui;
+                int screenWidth = event.getWindow().getGuiScaledWidth();
+                int screenHeight = event.getWindow().getGuiScaledHeight();
+                int i = screenWidth / 2;
+                Window window=event.getWindow();
+                if(heldBlock instanceof Roof45Block){
+                    UrushiUtils.displayImage(guiGraphics,"roof_45",window);
+                }else if(heldBlock instanceof Roof225Block){
+                    UrushiUtils.displayImage(guiGraphics,"roof_225",window);
+                }else if(heldBlock instanceof AbstractFramedBlock||heldBlock instanceof FramedPaneBlock){
+                    UrushiUtils.displayImage(guiGraphics,"connectable_block",window);
+                }
+
+            }
+        }
 
     }
 }

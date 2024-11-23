@@ -10,9 +10,13 @@ import com.iwaliner.urushi.block.ParapetBlock;
 import com.iwaliner.urushi.block.SimpleShapedBlock;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Font;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
- 
+
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ComponentUtils;
+import net.minecraft.network.protocol.game.ClientboundSetTitleTextPacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
@@ -63,8 +67,11 @@ public class KakuriyoTeleporter implements ITeleporter {
                     livingEntity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 20 * 20, 0), entity);
                 }
             }
+                if(entity instanceof Player&&entity.level().dimension()!=DimensionRegister.KakuriyoKey){
 
+                }
         }else{
+
                 entity.teleportTo(center.getX()+0.5D,center.getY()+0.5D,center.getZ()-4.5D);
             int toSurfaceEach=0;
             boolean b=false;

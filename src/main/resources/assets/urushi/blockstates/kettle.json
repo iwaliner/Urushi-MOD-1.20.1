@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=west,hook=false": {
+      "model": "urushi:block/kettle",
+      "y": 270
+    },
+    "facing=south,hook=false": {
+      "model": "urushi:block/kettle",
+      "y": 180
+    },
+    "facing=north,hook=false": {
+      "model": "urushi:block/kettle"
+    },
+    "facing=east,hook=false": {
+      "model": "urushi:block/kettle",
+      "y": 90
+    },
+    "facing=west,hook=true": {
+      "model": "urushi:block/kettle_hook",
+      "y": 270
+    },
+    "facing=south,hook=true": {
+      "model": "urushi:block/kettle_hook",
+      "y": 180
+    },
+    "facing=north,hook=true": {
+      "model": "urushi:block/kettle_hook"
+    },
+    "facing=east,hook=true": {
+      "model": "urushi:block/kettle_hook",
+      "y": 90
+    }
+  }
+}

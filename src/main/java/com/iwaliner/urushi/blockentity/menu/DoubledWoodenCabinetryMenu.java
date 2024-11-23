@@ -93,9 +93,6 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
 
     public boolean clickMenuButton(Player player, int p) {
         NonNullList<ItemStack> list1=NonNullList.withSize(108,ItemStack.EMPTY);
-        NonNullList<ItemStack> list2=NonNullList.withSize(220,ItemStack.EMPTY);
-        NonNullList<ItemStack> list3=NonNullList.withSize(220,ItemStack.EMPTY);
-        NonNullList<ItemStack> list4=NonNullList.withSize(220,ItemStack.EMPTY);
 
         List<Integer> idList=new ArrayList<>();
         for(int i=0;i<108;i++){
@@ -131,6 +128,11 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
 
         List<int[]> mapIdList = new ArrayList<>(map.values());
         int n=0;
+
+        NonNullList<ItemStack> list2=NonNullList.withSize(108*108,ItemStack.EMPTY);
+        NonNullList<ItemStack> list3=NonNullList.withSize(108*108,ItemStack.EMPTY);
+        NonNullList<ItemStack> list4=NonNullList.withSize(108*108,ItemStack.EMPTY);
+
         for(int j=0;j<map.size();j++) {
             int[] sameItemSlots=mapIdList.get(j);
             int i0=sameItemSlots[0];

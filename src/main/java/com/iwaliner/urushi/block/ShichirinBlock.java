@@ -188,6 +188,7 @@ public class ShichirinBlock extends BaseEntityBlock  {
         UrushiUtils.setInfo(list,"shichirin1");
         UrushiUtils.setInfo(list,"shichirin2");
         UrushiUtils.setInfo(list,"shichirin3");
+        UrushiUtils.setInfo(list,"slot_shichirin");
    }
     @Nullable
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level p_152160_, BlockState p_152161_, BlockEntityType<T> p_152162_) {

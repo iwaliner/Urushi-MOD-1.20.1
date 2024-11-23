@@ -351,6 +351,7 @@
     "urushi:magma_stairs",
     "urushi:rice_cauldron",
     "urushi:fryer",
+    "urushi:kettle",
     "urushi:unfinished_shichirin",
     "urushi:shichirin",
     "urushi:plate",
@@ -481,6 +482,7 @@
     "urushi:potted_cypress_sapling",
     "urushi:potted_japanese_cedar_sapling",
     "urushi:potted_lycoris",
-    "urushi:potted_lacquer_sapling"
+    "urushi:potted_lacquer_sapling",
+    "urushi:coin"
   ]
 }

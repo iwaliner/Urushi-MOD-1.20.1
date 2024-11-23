@@ -1,42 +1,58 @@
 package com.iwaliner.urushi;
 
 
+import com.iwaliner.urushi.block.Roof45Block;
 import com.iwaliner.urushi.blockentity.renderer.*;
 import com.iwaliner.urushi.blockentity.screen.*;
 import com.iwaliner.urushi.entiity.food.model.*;
 import com.iwaliner.urushi.entiity.food.renderer.*;
 import com.iwaliner.urushi.entiity.model.CushionModel;
+import com.iwaliner.urushi.entiity.model.OniModel;
 import com.iwaliner.urushi.entiity.renderer.CushionRenderer;
 import com.iwaliner.urushi.entiity.renderer.GhostRenderer;
 import com.iwaliner.urushi.entiity.renderer.GiantSkeletonRenderer;
+import com.iwaliner.urushi.entiity.renderer.KakuriyoVillagerRenderer;
 import com.iwaliner.urushi.json.*;
 import com.iwaliner.urushi.particle.*;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.ToggleKeyMappingPlus;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.mojang.blaze3d.platform.InputConstants;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.minecraft.client.AttackIndicatorStatus;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.model.geom.ModelLayerLocation;
-import net.minecraft.client.renderer.BiomeColors;
-import net.minecraft.client.renderer.LevelRenderer;
-import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.client.renderer.*;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.FallingBlockRenderer;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.ForgeHooksClient;
 import net.minecraftforge.client.RenderTypeHelper;
 import net.minecraftforge.client.event.*;
+import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.client.settings.KeyConflictContext;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -64,6 +80,7 @@ public class ClientSetUp {
     public static final ModelLayerLocation INARI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "inari_food"), "inari_food");
     public static final ModelLayerLocation RAMEN = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "ramen_food"), "ramen_food");
     public static final ModelLayerLocation MISO_SOUP = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "miso_soup_food"), "miso_soup_food");
+    public static final ModelLayerLocation KAKURIYO_VILLAGER = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "kakuriyo_villager"), "kakuriyo_villager");
 
 
     public static KeyMapping connectionKey = new ToggleKeyMappingPlus("key.urushi.connectionKey", KeyConflictContext.IN_GAME, InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_C, "key.urushi.category");
@@ -71,12 +88,6 @@ public class ClientSetUp {
     public static void keyRegister(RegisterKeyMappingsEvent event) {
         event.register(ClientSetUp.connectionKey);
     }
-   /* @SubscribeEvent
-    public static void RenderBoxEvent(RenderHighlightEvent event) {
-        Vec3 position=event.getTarget().getLocation();
-        VertexConsumer vertexConsumer = event.getMultiBufferSource().getBuffer(RenderType.LINES);
-        LevelRenderer.renderLineBox(event.getPoseStack(),vertexConsumer,position.x+0.5D,position.y+0.5D,position.z+0.5D,0.5F, 0.5F, 1.0F, 1.0F, 0.5F, 0.5F, 1.0F);
-    }*/
 
      /**エンティティの見た目を登録*/
     @SubscribeEvent
@@ -126,6 +137,7 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.MisoRamenFoodEntity.get(), MisoRamenFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.TonkotsuRamenFoodEntity.get(), TonkotsuRamenFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.MincedTunaBowlFoodEntity.get(), MincedTunaBowlFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.KakuriyoVillager.get(), KakuriyoVillagerRenderer::new);
     }
 
     /**エンティティのレイヤーを指定*/
@@ -145,6 +157,7 @@ public class ClientSetUp {
         event.registerLayerDefinition(INARI, InariFoodModel::createBodyLayer);
         event.registerLayerDefinition(RAMEN, RamenFoodModel::createBodyLayer);
         event.registerLayerDefinition(MISO_SOUP, MisoSoupFoodModel::createBodyLayer);
+        event.registerLayerDefinition(KAKURIYO_VILLAGER, OniModel::createBodyLayer);
 
 
 
@@ -202,7 +215,6 @@ public class ClientSetUp {
 
 
 
-
     @Nullable
     @SubscribeEvent
     public static void RegisterRendererEvent(FMLClientSetupEvent event) {
@@ -233,6 +245,7 @@ public class ClientSetUp {
         MenuScreens.register(MenuRegister.UrushiHopperMenu.get(), UrushiHopperScreen::new);
         MenuScreens.register(MenuRegister.AutoCraftingTableMenu.get(), AutoCraftingTableScreen::new);
         MenuScreens.register(MenuRegister.SilkwormFarmMenu.get(), SilkwormFarmScreen::new);
+        MenuScreens.register(MenuRegister.KettleMenu.get(), KettleScreen::new);
 
 
        /**見た目が特殊なBlockEntityの見た目を登録*/
@@ -247,10 +260,12 @@ public class ClientSetUp {
         ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.senryoubako.get()));
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.additional_heart.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.giant_skeleton_spawn_egg.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.kakuriyo_villager_spawn_egg.get());
 
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.additional_heart);
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.ghost_spawn_egg);
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.giant_skeleton_spawn_egg);
+        ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.kakuriyo_villager_spawn_egg);
 
 
 

@@ -2,6 +2,7 @@ package com.iwaliner.urushi.jade;
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.ModCoreUrushi;
+import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -20,19 +21,19 @@ public enum BlockElementComponentProvider implements IBlockComponentProvider {
     @Override
     public void appendTooltip(ITooltip tooltip, BlockAccessor accessor, IPluginConfig config) {
         if(ElementUtils.isWoodElement(accessor.getBlockState())){
-            tooltip.add(Component.translatable("info.urushi.wood_element_block").withStyle(ChatFormatting.DARK_GREEN));
+            tooltip.append(ElementUtils.getIconComponent(ElementType.WoodElement));
         }
         if(ElementUtils.isFireElement(accessor.getBlockState())){
-            tooltip.add(Component.translatable("info.urushi.fire_element_block").withStyle(ChatFormatting.DARK_RED));
+            tooltip.append(ElementUtils.getIconComponent(ElementType.FireElement));
         }
         if(ElementUtils.isEarthElement(accessor.getBlockState())){
-            tooltip.add(Component.translatable("info.urushi.earth_element_block").withStyle(ChatFormatting.GOLD));
+            tooltip.append(ElementUtils.getIconComponent(ElementType.EarthElement));
         }
         if(ElementUtils.isMetalElement(accessor.getBlockState())){
-            tooltip.add(Component.translatable("info.urushi.metal_element_block").withStyle(ChatFormatting.AQUA));
+            tooltip.append(ElementUtils.getIconComponent(ElementType.MetalElement));
         }
         if(ElementUtils.isWaterElement(accessor.getBlockState())){
-            tooltip.add(Component.translatable("info.urushi.water_element_block").withStyle(ChatFormatting.DARK_PURPLE));
+            tooltip.append(ElementUtils.getIconComponent(ElementType.WaterElement));
         }
     }
 

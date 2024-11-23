@@ -12,6 +12,7 @@ import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.LivingEntity;
@@ -473,4 +474,35 @@ return false;
             }
         }
     }
+    public static MutableComponent getIconComponent(ElementType elementType){
+        switch (elementType){
+
+            case FireElement -> {
+                return Component.literal("\uE8A2").withStyle((style) -> {
+                    return style.withColor(ChatFormatting.WHITE);
+                });
+            }
+            case EarthElement -> {
+                return Component.literal("\uE8A3").withStyle((style) -> {
+                    return style.withColor(ChatFormatting.WHITE);
+                });
+            }
+            case MetalElement -> {
+                return Component.literal("\uE8A4").withStyle((style) -> {
+                    return style.withColor(ChatFormatting.WHITE);
+                });
+            }
+            case WaterElement -> {
+                return Component.literal("\uE8A5").withStyle((style) -> {
+                    return style.withColor(ChatFormatting.WHITE);
+                });
+            }
+            default -> {
+                return Component.literal("\uE8A1").withStyle((style) -> {
+                    return style.withColor(ChatFormatting.WHITE);
+                });
+            }
+        }
+    }
+
 }

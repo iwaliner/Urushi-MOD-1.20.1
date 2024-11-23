@@ -1,11 +1,30 @@
 package com.iwaliner.urushi.block;
 
+import com.google.common.collect.Maps;
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.util.UrushiUtils;
+import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.suggestion.SuggestionProvider;
+import com.mojang.brigadier.tree.CommandNode;
+import com.mojang.brigadier.tree.RootCommandNode;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementRewards;
+import net.minecraft.commands.CommandFunction;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.commands.SharedSuggestionProvider;
+import net.minecraft.commands.arguments.ResourceLocationArgument;
+import net.minecraft.commands.synchronization.SuggestionProviders;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ClientboundCommandsPacket;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.commands.AdvancementCommands;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
@@ -24,9 +43,12 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.FarmBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.BlockHitResult;
 
+import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 public class UrushiCropBlock extends CropBlock {
 
@@ -64,6 +86,9 @@ public class UrushiCropBlock extends CropBlock {
         }
         return InteractionResult.FAIL;
     }
+
+
+
     @Override
     public void appendHoverText(ItemStack stack, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
         UrushiUtils.setInfo(list, "crop");

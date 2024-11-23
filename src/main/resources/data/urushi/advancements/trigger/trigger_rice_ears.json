@@ -1,0 +1,40 @@
+{
+  "criteria": {
+    "on_paddy_field": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "urushi:rice_crop",
+        "state": {
+          "age": "7"
+        }
+      }
+    },
+    "stacked_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:rice_crop"
+            ],
+            "count": {
+              "min": 20,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "on_paddy_field",
+      "stacked_item"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "urushi:advancements/give_senbakoki"
+    ]
+  }
+}

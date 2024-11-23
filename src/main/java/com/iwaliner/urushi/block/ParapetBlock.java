@@ -37,10 +37,7 @@ public class ParapetBlock extends HorizonalRotateBlock implements SimpleWaterlog
         super(p_i48377_1_);
         this.registerDefaultState(this.stateDefinition.any().setValue(ON_SLAB, Boolean.valueOf(false)).setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
-    @Override
-    public void appendHoverText(ItemStack stack, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
-        UrushiUtils.setInfo(list, "parapet");
-    }
+
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
         if(state.getValue(FACING)== Direction.NORTH||state.getValue(FACING)==Direction.SOUTH){

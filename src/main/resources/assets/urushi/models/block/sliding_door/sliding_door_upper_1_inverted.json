@@ -1,12 +1,12 @@
 {
 	"parent": "block/block","ambientocclusion": false,
 	"textures": {
-		"particle": "#1"
+	"particle": "#1"
 	},
 	"elements": [
 		{
-			"from": [1, 0, 8],
-			"to": [17, 16, 10],
+			"from": [0, 0, 8],
+			"to": [16, 16, 10],
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
 				"east": {"uv": [0, 0, 2, 16], "texture": "#1"},

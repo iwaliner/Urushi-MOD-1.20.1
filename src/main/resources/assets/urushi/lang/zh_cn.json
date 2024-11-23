@@ -883,8 +883,6 @@
 
   "block.urushi.senbakoki": "千齿脱粒机",
 
-  "info.urushi.rawrice": "对千齿脱粒机使用稻穗以获得2个糙米",
-
   "info.urushi.rawurushi": "对割开的漆木原木使用碗以获得",
 
   "info.urushi.placeablefood": "潜行时可放置",
@@ -2556,7 +2554,8 @@
    "item.urushi.fried_shrimp": "炸虾",
    "item.urushi.shrimp_sushi": "鲜虾寿司",
    "entity.urushi.shrimp_sushi_food": "鲜虾寿司",
-   "info.urushi.doubled_wooden_cabinetry_sort_button": "整理"
+   "info.urushi.doubled_wooden_cabinetry_sort_button": "整理",
+   "info.urushi.senbakoki": "Use Rice Ears on Senbakoki to obtain Raw Rice and Straw."
 
 
 }

@@ -1,0 +1,49 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "urushi:particle/mark_wood.png",
+            "ascent": 8,
+            "height": 9,
+            "chars": [
+                "\uE8A1"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "urushi:particle/mark_fire.png",
+            "ascent": 8,
+            "height": 9,
+            "chars": [
+                "\uE8A2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "urushi:particle/mark_earth.png",
+            "ascent": 8,
+            "height": 9,
+            "chars": [
+                "\uE8A3"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "urushi:particle/mark_metal.png",
+            "ascent": 8,
+            "height": 9,
+            "chars": [
+                "\uE8A4"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "urushi:particle/mark_water.png",
+            "ascent": 8,
+            "height": 9,
+            "chars": [
+                "\uE8A5"
+            ]
+        }
+    ]
+}

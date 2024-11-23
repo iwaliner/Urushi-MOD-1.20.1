@@ -1,0 +1,32 @@
+{
+
+  "replace": false,
+
+  "values": [
+  	"urushi:ghost_core",
+
+    "minecraft:blaze_powder",
+
+    "urushi:salmon_sashimi",
+
+    "minecraft:glowstone_dust",
+
+    "urushi:pickled_japanese_apricot",
+
+    "minecraft:dried_kelp",
+
+    "minecraft:gunpowder",
+
+    "urushi:onsen_egg",
+    
+    "urushi:rice_malt",
+    
+    "minecraft:copper_ingot",
+    
+    "minecraft:spider_eye",
+    
+    "minecraft:snowball"
+
+  ]
+
+}

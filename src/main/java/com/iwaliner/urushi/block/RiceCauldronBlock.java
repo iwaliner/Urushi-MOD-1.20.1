@@ -142,6 +142,7 @@ public class RiceCauldronBlock extends BaseEntityBlock {
     @Override
     public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
         UrushiUtils.setInfo(list,"ricecauldron");
+        UrushiUtils.setInfo(list,"slot_rice_cauldron");
    }
     @Nullable
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level p_152160_, BlockState p_152161_, BlockEntityType<T> p_152162_) {

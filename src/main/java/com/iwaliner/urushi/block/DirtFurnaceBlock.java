@@ -63,7 +63,6 @@ public class DirtFurnaceBlock extends HorizonalRotateBlock {
             }else{
                 return InteractionResult.FAIL;
             }
-
     }
 
     @Override

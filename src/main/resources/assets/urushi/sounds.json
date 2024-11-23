@@ -1,8 +1,41 @@
-{
-  "wind_bell": {
-    "subtitle": "sounds.urushi.wind_bell",
-    "sounds": [
-      "urushi:wind_bell"
-    ]
-  }
+{
+
+  "wind_bell": {
+    "subtitle": "sounds.urushi.wind_bell",
+    "sounds": [
+      "urushi:wind_bell"
+    ]
+  },
+  "urushi_advancements": {
+    "subtitle": "sounds.urushi.urushi_advancements",
+    "sounds": [
+      "urushi:urushi_advancements"
+    ]
+  },
+  "kakuriyo_villager_ambient": {
+    "subtitle": "sounds.urushi.kakuriyo_villager_ambient",
+    "sounds": [
+      "urushi:kakuriyo_villager_ambient1",
+      "urushi:kakuriyo_villager_ambient2"
+    ]
+  },
+  "kakuriyo_villager_hurt": {
+    "subtitle": "sounds.urushi.kakuriyo_villager_hurt",
+    "sounds": [
+      "urushi:kakuriyo_villager_hurt"
+    ]
+  },
+  "kakuriyo_villager_death": {
+    "subtitle": "sounds.urushi.kakuriyo_villager_death",
+    "sounds": [
+      "urushi:kakuriyo_villager_death"
+    ]
+  },
+  "kakuriyo_villager_yes": {
+    "subtitle": "sounds.urushi.kakuriyo_villager_yes",
+    "sounds": [
+      "urushi:kakuriyo_villager_yes"
+    ]
+  }
+
 }
