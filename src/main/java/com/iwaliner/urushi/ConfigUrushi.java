@@ -1,6 +1,11 @@
 package com.iwaliner.urushi;
 
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.ForgeConfigSpec;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public final class ConfigUrushi {
     public static final ForgeConfigSpec.Builder builder=new ForgeConfigSpec.Builder();
@@ -19,8 +24,6 @@ public final class ConfigUrushi {
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableSaltAndSandGeneration;
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableCropDropsFromGrass;
     public static final ForgeConfigSpec.ConfigValue<Boolean> noticeNewerVersion;
-
-
 
     static {
         builder.push("block settings");
