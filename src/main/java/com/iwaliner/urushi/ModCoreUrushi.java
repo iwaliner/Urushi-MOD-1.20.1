@@ -902,6 +902,10 @@ public class ModCoreUrushi {
                     UrushiUtils.displayImage(guiGraphics,"roof_225",window);
                 }else if(heldBlock instanceof AbstractFramedBlock||heldBlock instanceof FramedPaneBlock){
                     UrushiUtils.displayImage(guiGraphics,"connectable_block",window);
+                }else if(heldBlock instanceof SenbakokiBlock){
+                    UrushiUtils.displayImage(guiGraphics,"senbakoki",window);
+                }else if(heldBlock instanceof RiceCauldronBlock||heldBlock instanceof DirtFurnaceBlock){
+                    UrushiUtils.displayImage(guiGraphics,"rice_cauldron_and_dirt_furnace",window);
                 }
 
             }
