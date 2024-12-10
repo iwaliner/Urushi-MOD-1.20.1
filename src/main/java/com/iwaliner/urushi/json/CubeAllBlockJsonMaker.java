@@ -24,11 +24,9 @@ public class CubeAllBlockJsonMaker {
     }
 
     private static void BuildBlockJsonModel(Block block, String fileName,String textureName) {
-        // デバッグ環境でなければ実行しない
         if (!ModCoreUrushi.isDebug)
             return;
 
-        // models/block/フォルダに生成する
         File dir = new File(ModCoreUrushi.assetsDirectory, "models/block/");
         if (dir != null && block != null) {
             Map<String, String> map = Maps.newLinkedHashMap();

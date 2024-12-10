@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -1148,6 +1149,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> wall_shiitake =BN("wall_shiitake","a",-1,() -> {return new WallShiitakeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).randomTicks().instabreak().noCollission().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));});
     public static final RegistryObject<StandingAndWallBlockItem> shiitake_item =ITEMS.register("shiitake",() -> {return new StandingAndWallBlockItem(shiitake.get(), wall_shiitake.get(), (new Item.Properties()),Direction.DOWN);});
     public static final RegistryObject<Item> shiitake_goggles =ITEMS.register("shiitake_goggles", () -> {return new WearableItem("shiitake_goggles",(new Item.Properties()).stacksTo(1));});
+    public static final RegistryObject<Block> shiitake_block =B("shiitake_block","a",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY).strength(0.5F,5F));});
     public static final RegistryObject<Block> eulalia =B("eulalia","h",-1,() -> {return new EulaliaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).replaceable().instabreak().noCollission().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));});
     public static final RegistryObject<Block> double_eulalia =BN("double_eulalia","h",-1,() -> {return new DoubleEulaliaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).replaceable().instabreak().noCollission().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));});
     public static final RegistryObject<Block> lycoris =B("lycoris","h",-1,() -> {return new SmallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instabreak().noCollission().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));});
@@ -1305,7 +1307,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> ghost_spawn_egg =ITEMS.register("ghost_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.Ghost, 14283506, 14014157,(new Item.Properties()));});
     public static final RegistryObject<Item> giant_skeleton_spawn_egg =ITEMS.register("giant_skeleton_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.GianntSkeleton, 12698049, 4802889,(new Item.Properties()));});
     public static final RegistryObject<Item> kakuriyo_villager_spawn_egg =ITEMS.register("kakuriyo_villager_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.KakuriyoVillager, 12698049, 4802889,(new Item.Properties()));});
-    public static final RegistryObject<Block> coin =B("coin","p",-1,() -> {return new CoinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> coin =B("coin","p",-1,() -> {return new CoinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(0.5F, 10.0F).noLootTable());});
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(Item.byBlock(ItemAndBlockRegister.kasuga_lantern.get())))
             .title(Component.translatable("itemGroup.urushi"))
@@ -1607,7 +1609,9 @@ public class ItemAndBlockRegister {
            ModCoreUrushi.urushiTabContents.add(Objects.requireNonNull(object2));
 
 if(ModCoreUrushi.isDebug) {
-    ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
+
+    ModCoreUrushi.blockSelfDropList.add(name);
+
     if (tool == "p") {
         ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + name);
     } else if (tool == "a") {
@@ -1640,7 +1644,7 @@ if(ModCoreUrushi.isDebug) {
         RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiWoodTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
-            ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
+            ModCoreUrushi.blockSelfDropList.add(name);
             if (tool == "p") {
                 ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + name);
             } else if (tool == "a") {
@@ -1672,7 +1676,7 @@ if(ModCoreUrushi.isDebug) {
         RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiPlasterTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
-            ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
+            ModCoreUrushi.blockSelfDropList.add(name);
             if (tool == "p") {
                 ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + name);
             } else if (tool == "a") {
@@ -1704,7 +1708,7 @@ if(ModCoreUrushi.isDebug) {
         RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiFoodTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
-            ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
+            ModCoreUrushi.blockSelfDropList.add(name);
             if (tool == "p") {
                 ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + name);
             } else if (tool == "a") {
@@ -1736,7 +1740,7 @@ if(ModCoreUrushi.isDebug) {
         RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiMagicTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
-            ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
+            ModCoreUrushi.blockSelfDropList.add(name);
             if (tool == "p") {
                 ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + name);
             } else if (tool == "a") {
@@ -1768,7 +1772,7 @@ if(ModCoreUrushi.isDebug) {
         RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new IronIngotItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiTabContents.add(Objects.requireNonNull(object2));
         if(ModCoreUrushi.isDebug) {
-            ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
+            ModCoreUrushi.blockSelfDropList.add(name);
             ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + name);
         }
         return object;
@@ -1776,7 +1780,7 @@ if(ModCoreUrushi.isDebug) {
     private static <T extends Block> RegistryObject<T> BN(String name,String tool,int l, Supplier<T > sup) {
         RegistryObject<T> object = BLOCKS.register(name, sup);
         if(ModCoreUrushi.isDebug) {
-            ModCoreUrushi.blockSelfDropList.add((RegistryObject<Block>) Objects.requireNonNull(object));
+            ModCoreUrushi.blockSelfDropList.add(name);
             if (tool == "p") {
                 ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + name);
             } else if (tool == "a") {

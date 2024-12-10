@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "urushi:bamboo_block"
+          "name": "urushi:shiitake_block"
         }
       ],
       "conditions": [
