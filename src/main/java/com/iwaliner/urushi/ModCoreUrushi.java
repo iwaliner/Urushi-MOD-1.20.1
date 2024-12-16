@@ -118,7 +118,7 @@ public class ModCoreUrushi {
     public static File assetsInBuildDirectory;
 
     public static List<String> pickaxeList=new ArrayList<>();
-    public static List<RegistryObject<Block>> blockSelfDropList=new ArrayList<>();
+    public static List<String> blockSelfDropList=new ArrayList<>();
     public static List<String> axeList=new ArrayList<>();
     public static List<String> shovelList=new ArrayList<>();
     public static List<String> hoeList=new ArrayList<>();
@@ -158,8 +158,6 @@ public class ModCoreUrushi {
         FluidRegister.register(modEventBus);
         FluidTypeRegister.register(modEventBus);
 
-        /**バイオームを登録*/
-       // BiomeRegister.register(modEventBus);
 
         /**レシピタイプを登録*/
         RecipeTypeRegister.register(modEventBus);
@@ -179,13 +177,11 @@ public class ModCoreUrushi {
 
         FeatureRegister.register(modEventBus);
 
-       // PlacedFeatureRegister.register(modEventBus);
-
-//        ConfiguredFeatureRegister.register(modEventBus);
+        modEventBus.addListener(this::CreativeTabEvent);
         MinecraftForge.EVENT_BUS.register(this);
 
     }
-   /* @SubscribeEvent
+    @SubscribeEvent
     public void CreativeTabEvent(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
@@ -207,7 +203,7 @@ public class ModCoreUrushi {
             event.accept(ItemAndBlockRegister.wooden_cabinetry.get());
             event.accept(ItemAndBlockRegister.doubled_wooden_cabinetry.get());
         }
-    }*/
+    }
     /**燃料を登録*/
     @SubscribeEvent
     public void FuelEvent(FurnaceFuelBurnTimeEvent event) {

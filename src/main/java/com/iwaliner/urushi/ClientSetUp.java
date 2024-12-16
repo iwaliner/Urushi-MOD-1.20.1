@@ -281,14 +281,22 @@ public class ClientSetUp {
 
 
 
-
-
-
-
-
-
-
-
+            ModCoreUrushi.blockSelfDropList.remove("black_kakuriyo_portal_frame");
+            ModCoreUrushi.blockSelfDropList.remove("earth_element_puzzle_block");
+            ModCoreUrushi.blockSelfDropList.remove("element_puzzle_controller_a");
+            ModCoreUrushi.blockSelfDropList.remove("element_puzzle_controller_b");
+            ModCoreUrushi.blockSelfDropList.remove("element_puzzle_controller_c");
+            ModCoreUrushi.blockSelfDropList.remove("fire_element_puzzle_block");
+            ModCoreUrushi.blockSelfDropList.remove("ghost_black_kakuriyo_portal_frame");
+            ModCoreUrushi.blockSelfDropList.remove("ghost_kakuriyo_portal_core");
+            ModCoreUrushi.blockSelfDropList.remove("ghost_red_kakuriyo_portal_frame");
+            ModCoreUrushi.blockSelfDropList.remove("kakuriyo_portal");
+            ModCoreUrushi.blockSelfDropList.remove("kakuriyo_portal_core");
+            ModCoreUrushi.blockSelfDropList.remove("metal_element_puzzle_block");
+            ModCoreUrushi.blockSelfDropList.remove("random_element_puzzle_block");
+            ModCoreUrushi.blockSelfDropList.remove("red_kakuriyo_portal_frame");
+            ModCoreUrushi.blockSelfDropList.remove("water_element_puzzle_block");
+            ModCoreUrushi.blockSelfDropList.remove("wood_element_puzzle_block");
 
             MineableTagGenerator.INSTANCE.registerPickaxeMineableTag(ModCoreUrushi.pickaxeList);
             MineableTagGenerator.INSTANCE.registerAxeMineableTag(ModCoreUrushi.axeList);
@@ -300,6 +308,10 @@ public class ClientSetUp {
             RequiredToolMaterialTagGenerator.INSTANCE.registerGoldenToolTag(ModCoreUrushi.goldenToolList);
             RequiredToolMaterialTagGenerator.INSTANCE.registerDiamondToolTag(ModCoreUrushi.diamondToolList);
             RequiredToolMaterialTagGenerator.INSTANCE.registerNetheriteToolTag(ModCoreUrushi.netheriteToolList);
+            for(String name:ModCoreUrushi.blockSelfDropList){
+                LootTableGenerator.INSTANCE.registerSimpleBlockLootTable(name);
+            }
+
 
 
 
