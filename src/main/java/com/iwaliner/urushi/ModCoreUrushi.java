@@ -253,6 +253,12 @@ public class ModCoreUrushi {
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.fallen_red_leaves.get().asItem(),0.3F);
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.fallen_orange_leaves.get().asItem(),0.3F);
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.fallen_yellow_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_apricot_bark.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.sakura_bark.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.cypress_bark.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_cedar_bark.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.wood_chip.get().asItem(),0.65F);
+
 
 
 
