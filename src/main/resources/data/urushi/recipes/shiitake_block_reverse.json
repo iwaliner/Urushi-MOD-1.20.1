@@ -1,0 +1,45 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+      "item": "urushi:shiitake_block"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:shiitake",
+
+
+
+      "count": 4
+
+
+
+  }
+
+
+
+}

@@ -1311,7 +1311,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(Item.byBlock(ItemAndBlockRegister.kasuga_lantern.get())))
             .title(Component.translatable("itemGroup.urushi"))
-            .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
+            .withTabsBefore(CreativeModeTabs.INGREDIENTS)
             .displayItems((parameters, output) -> {
                 for(int i=0;i<ModCoreUrushi.urushiTabContents.size();i++) {
                     if(!ModCoreUrushi.underDevelopmentList.contains(ModCoreUrushi.urushiTabContents.get(i).get())) {

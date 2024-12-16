@@ -903,7 +903,12 @@ public class ModCoreUrushi {
                 }else if(heldBlock instanceof Roof225Block){
                     UrushiUtils.displayImage(guiGraphics,"roof_225",window);
                 }else if(heldBlock instanceof AbstractFramedBlock||heldBlock instanceof FramedPaneBlock){
-                    UrushiUtils.displayImage(guiGraphics,"connectable_block",window);
+                    //UrushiUtils.displayImage(guiGraphics,"connectable_block",window);
+                    if(ClientSetUp.connectionKey.isDown()){
+                        UrushiUtils.displayImage(guiGraphics,"connectable_block_green",window);
+                    }else{
+                        UrushiUtils.displayImage(guiGraphics,"connectable_block_blue",window);
+                    }
                 }else if(heldBlock instanceof SenbakokiBlock){
                     UrushiUtils.displayImage(guiGraphics,"senbakoki",window);
                 }else if(heldBlock instanceof RiceCauldronBlock||heldBlock instanceof DirtFurnaceBlock){

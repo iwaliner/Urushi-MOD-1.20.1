@@ -175,7 +175,7 @@ public class AbstractFramedBlock extends Block {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_49915_) {
         p_49915_.add(NORTH, EAST, WEST, SOUTH,UP,DOWN,VARIANT);
     }
-    private boolean textureConnection(Player player){
+    public static boolean textureConnection(Player player){
         AtomicBoolean b = new AtomicBoolean(false);
         player.getCapability(FramedBlockTextureConnectionProvider.FRAMED_BLOCK_TEXTURE_CONNECTION).ifPresent(data -> {
             b.set(data.isPressed());

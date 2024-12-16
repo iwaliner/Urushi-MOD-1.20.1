@@ -80,7 +80,7 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
                         new Buy(Blocks.COBBLED_DEEPSLATE, 1, 16,  1),
                         new Buy(Blocks.BASALT, 1, 16,  1),
                         new Buy(Blocks.BLACKSTONE, 1, 16,  1),
-                        new Buy(ItemAndBlockRegister.cobbled_yomi_stone.get(), 1, 16,  1),
+                        new Buy(ItemAndBlockRegister.cobbled_yomi_stone.get(), 1, 16,  1),/*
 
                         new BuySkull(Blocks.PLAYER_HEAD, Blocks.GRASS_BLOCK.getName().getString(),"cake","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZiYjlmYjk3YmE4N2NiNzI3Y2QwZmY0NzdmNzY5MzcwYmVhMTljY2JmYWZiNTgxNjI5Y2Q1NjM5ZjJmZWMyYiJ9fX0="),
                 new BuySkull(Blocks.PLAYER_HEAD, Blocks.SHROOMLIGHT.getName().getString(),"PandaClod","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDgwNjhhM2U5ZWQwZTY4ODc2OGNmZTAxN2VhZGZmZmM5MjEwNjhmYjRhOGExMGJhYmFkY2U3NWNmNTcyYWFhMyJ9fX0="),
@@ -94,7 +94,7 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
                 new BuySkull(Blocks.PLAYER_HEAD, Blocks.EMERALD_BLOCK.getName().getString(),"TomReal","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTk2MGQ2ZmZhZjQ0ZThhZmNiZGY4YjI5YTc3ZDg0Y2UyMmM3MWQwMGM2NGJmZDk5YWYzNDBhNjk1MzViZmQ3In19fQ=="),
                 new BuySkull(Blocks.PLAYER_HEAD, Blocks.DIAMOND_BLOCK.getName().getString(),"TomReal", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJmZDJkZTUzZWIxYmZlOTJmNWNjMTc4MGEyNzI3MzBlYmU3NTk0NzNiYjI1YTUzNjQ3ZDM3MTJlZTVmNjA5NSJ9fX0="),
                 new BuySkull(Blocks.PLAYER_HEAD, Blocks.NETHERITE_BLOCK.getName().getString(), "TomReal","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY0NjJjMDU2ZjFjN2QzMWE5MzFjYTg2ZTlkNDgxNGU4NzcyYjE4YzJlOWM5NTA2ZGJiOWUyNzJiMmNiMTI1ZCJ9fX0=")
-        }
+      */  }
         )));
       p_35633_.put(KakuriyoVillagerProfessionType.RiceDealer, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
               new Sell(ItemAndBlockRegister.rice_crop.get(), 24,2),
@@ -134,7 +134,7 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
               new Buy(ItemAndBlockRegister.sakura_log.get(), 1,4,1),
               new Buy(ItemAndBlockRegister.cypress_log.get(), 1,4,1),
               new Buy(ItemAndBlockRegister.japanese_cedar_log.get(), 1,4,1),
-              new Buy(ItemAndBlockRegister.petrified_log.get(), 1,4,1),
+              new Buy(ItemAndBlockRegister.petrified_log.get(), 1,4,1)/*,
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.letter").getString(),"LordRazen","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRiNTMyYjVjY2VkNDZiNGI1MzVlY2UxNmVjZWQ3YmJjNWNhYzU1NTk0ZDYxZThiOGY4ZWFjNDI5OWM5ZmMifX19"),
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.letter").getString(),"","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY3ZDgxM2FlN2ZmZTViZTk1MWE0ZjQxZjJhYTYxOWE1ZTM4OTRlODVlYTVkNDk4NmY4NDk0OWM2M2Q3NjcyZSJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.letter").getString(),"","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTBjMWI1ODRmMTM5ODdiNDY2MTM5Mjg1YjJmM2YyOGRmNjc4NzEyM2QwYjMyMjgzZDg3OTRlMzM3NGUyMyJ9fX0="),
@@ -172,7 +172,7 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.letter").getString(),"","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTkxOTQ5NzNhM2YxN2JkYTk5NzhlZDYyNzMzODM5OTcyMjI3NzRiNDU0Mzg2YzgzMTljMDRmMWY0Zjc0YzJiNSJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.letter").getString(),"","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3Y2FmNzU5MWIzOGUxMjVhODAxN2Q1OGNmYzY0MzNiZmFmODRjZDQ5OWQ3OTRmNDFkMTBiZmYyZTViODQwIn19fQ=="),
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.letter").getString(),"","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGViZTdlNTIxNTE2OWE2OTlhY2M2Y2VmYTdiNzNmZGIxMDhkYjg3YmI2ZGFlMjg0OWZiZTI0NzE0YjI3In19fQ==")
-
+*/
 
 
       })));
@@ -183,7 +183,7 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
         new Buy(ItemAndBlockRegister.color_dango.get(), 1, 8,  1),
         new Buy(ItemAndBlockRegister.baked_mochocho.get(), 1, 8,  1),
         new Buy(ItemAndBlockRegister.gravel_sushi.get(), 1, 16,  1),
-        new Buy(ItemAndBlockRegister.soy_source_ramen.get(), 2, 1,  1),
+        new Buy(ItemAndBlockRegister.soy_source_ramen.get(), 2, 1,  1)/*,
         new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.burger").getString(),"TheUnderground11", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E5Yzg3NTM3ODBlYmMzOWMzNTFkYThlZmQ5MWJjZTkwYmQ4Y2NhN2I1MTFmOTNlNzhkZjc1ZjY2MTVjNzlhNiJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.CHICKEN).getHoverName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDEyYzE5YjliODRiNGY1OTQ1NjA1ODA4NmM3NTIzYThkYWQ0YWM5MDcxOWZhMjQyYjIwN2RiMzJiYmFlOGY1ZCJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.COOKED_CHICKEN).getHoverName().getString(), "PandaClod","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlMjBhMjZjYmI1NzQwYTE1OGRhOTkxZWY5NGRjZDMyZDQ0N2U5YWMwM2FhMGU4ZjgyOWE0OTgzMDYxOWExMCJ9fX0="),
@@ -202,11 +202,11 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
         new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.salt_cellar").getString(),"mothbee", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTk0Y2M3MjVlM2VjNDJkOTc0NjQwNDMxODBiNmEyYTZiNmYwZGU4OGNkZjY0NmM2NDk0NTIwODM2YTQ4YThiNyJ9fX0="),
        // new BuySkull(Blocks.PLAYER_HEAD, 1, 1,  1,Component.translatable("skull.urushi.").getString(), ""),
         new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.can").getString(),"Queen_Of_Bunnies","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY2ZDg5MGUwZGE3NTkxNWYzNTNjNWU3OTQ0NzU0OTBmNDNhMjZmZDdkMDIxYjk2N2I3MzlhNGViNjIxYmMyNyJ9fX0=")
-      })));
+      */})));
       p_35633_.put(KakuriyoVillagerProfessionType.KnickKnackDealer, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
               new Buy(ItemAndBlockRegister.doubled_red_urushi_wooden_cabinetry.get(), 2, 1,  1),
               new Buy(ItemAndBlockRegister.pendant_light.get(), 1, 4,  1),
-              new Buy(ItemAndBlockRegister.goldfish_bowl.get(), 1, 4,  1),
+              new Buy(ItemAndBlockRegister.goldfish_bowl.get(), 1, 4,  1)/*,
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.clock").getString(), "LordRazen","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ3N2RhZmM4YzllYTA3OTk2MzMzODE3OTM4NjZkMTQ2YzlhMzlmYWQ0YzY2ODRlNzExN2Q5N2U5YjZjMyJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.mailbox").getString(),"LordRazen", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiZDlkZDEyOGM5NGMxMGM5NDVlYWRhYTM0MmZjNmQ5NzY1ZjM3YjNkZjJlMzhmN2IwNTZkYzdjOTI3ZWQifX19"),
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.teddy_bear").getString(),"", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVmNWJmODUxMGZmY2QzYTVlOWQ3ODI1YjY0MzMzYTEyMWQ1NjFmZTJjZGQ3NjdjN2UxOGI4Y2M1MjFiNiJ9fX0="),
@@ -238,7 +238,7 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ5ZDFhNTAwZTg2NGI0NDdkMDUwMjM3YmNlNWY3MGU2MDVlYTUzNTYxOTMyZGIzODNhYWJlY2Q4ZGY1NjA3MSJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYxNTgyODE2MGFmNzI4YTU3ZmRkMWNkMGU3YTU1ODNkMDY0ZTIxYmU0MDVkYTY4ZDVhZDM2YjM5ZDJhMTg0NiJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY3YmU5MjU0MzIwM2VjM2MzZDlmMGM1YjI5OGNlNWY5ZGMwN2QwZDViY2I3NjdjMDc4YjEzNTA3MjM0Y2M0NyJ9fX0=")
-
+*/
 
 
 
@@ -249,9 +249,9 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
          });
 
 
-    public KakuriyoVillagerEntity(EntityType<? extends AbstractVillager> p_34271_, Level p_34272_) {
-        super(EntityRegister.KakuriyoVillager.get(), p_34272_);
-     //   this.setProfessionType(KakuriyoVillagerProfessionType.Cook);
+    public KakuriyoVillagerEntity(EntityType<? extends AbstractVillager> p_34271_, Level level) {
+        super(EntityRegister.KakuriyoVillager.get(), level);
+        this.setProfessionType(KakuriyoVillagerProfessionType.getType(level.getRandom().nextInt(7)));
     }
     public KakuriyoVillagerEntity(Level p_i1705_1_, double p_i1705_2_, double p_i1705_4_, double p_i1705_6_) {
         this(EntityRegister.KakuriyoVillager.get(), p_i1705_1_);
@@ -261,6 +261,7 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
         this.yo = p_i1705_4_;
         this.zo = p_i1705_6_;
     }
+
     @Override
     protected void defineSynchedData() {
         super.defineSynchedData();

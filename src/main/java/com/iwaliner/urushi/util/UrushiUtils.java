@@ -44,6 +44,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 public class UrushiUtils {
     public  static Direction getDirectionFromInt(int i){
@@ -211,6 +212,14 @@ public class UrushiUtils {
             }
             riceBall.setTag(tag);
         }
+    }
+    public static ItemStack getRandomRiceBall(int stackSize, Random random){
+        ItemStack stack=new ItemStack(ItemAndBlockRegister.rice_ball.get(),stackSize);
+        CompoundTag tag=new CompoundTag();
+        int i=random.nextInt(12);
+
+        stack.setTag(tag);
+        return stack;
     }
     public static void runFunction(Level level,BlockPos pos,String commandUserName,String functionName){
         MinecraftServer server = level.getServer();
