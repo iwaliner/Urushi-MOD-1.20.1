@@ -2566,7 +2566,10 @@
    "block.urushi.kakejiku_19": "掛け軸",
    "block.urushi.tea_bush": "茶",
    "item.urushi.tea_leaf": "茶葉",
-   "item.urushi.green_tea": "緑茶"
+   "item.urushi.green_tea": "緑茶",
+   "block.urushi.kettle": "茶釜",
+   "block.urushi.shiitake_block": "しいたけブロック",
+   "block.urushi.coin": "古銭"
    
    
 }

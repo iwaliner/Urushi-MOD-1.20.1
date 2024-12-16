@@ -30,7 +30,6 @@ public class ToggleKeyMappingPlus extends KeyMapping {
     public void setDown(boolean p_92534_) {
         if (p_92534_ && isConflictContextAndModifierActive()) {
             super.setDown(!this.isDown());
-            ModCoreUrushi.logger.info("ToggleKeyMapping");
         }
 
     }

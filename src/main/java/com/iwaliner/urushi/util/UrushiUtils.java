@@ -5,6 +5,7 @@ import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.block.HorizonalRotateSlabBlock;
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.commands.CommandFunction;
@@ -249,6 +250,19 @@ public class UrushiUtils {
         guiGraphics.pose().translate(0.0F, 0.0F, -90.0F);
         guiGraphics.pose().scale(0.45F,0.45F,0.45F);
         guiGraphics.blit(new ResourceLocation(ModCoreUrushi.ModID,"textures/gui/"+textureName+".png"), window.getGuiScaledWidth()+250, window.getGuiScaledHeight()-100, 0, 0, 256, 256);
+        guiGraphics.pose().popPose();
+    }
+    public static void displayToggleKeyImage(GuiGraphics guiGraphics, String textureName, int width,int height){
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().translate((float)(width/2 ), (float)(height / 2), 0.0F);
+       guiGraphics.pose().scale(0.05F,0.05F,1F);
+        guiGraphics.blit(new ResourceLocation(ModCoreUrushi.ModID,"textures/gui/"+textureName+".png"), (width/2)-80, (height/2)-230, 0, 0, 256, 256);
+        guiGraphics.pose().popPose();
+    }
+    public static void displayImage(GuiGraphics guiGraphics, String textureName, int width,int height){
+        guiGraphics.pose().pushPose();
+        guiGraphics.pose().scale(0.45F,0.45F,0.45F);
+        guiGraphics.blit(new ResourceLocation(ModCoreUrushi.ModID,"textures/gui/"+textureName+".png"), width, height, 0, 0, 256, 256);
         guiGraphics.pose().popPose();
     }
 

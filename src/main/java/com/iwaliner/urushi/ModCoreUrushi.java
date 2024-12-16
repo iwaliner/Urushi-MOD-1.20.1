@@ -68,9 +68,7 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.client.event.RenderGuiOverlayEvent;
-import net.minecraftforge.client.event.RenderHighlightEvent;
-import net.minecraftforge.client.event.RenderLevelStageEvent;
+import net.minecraftforge.client.event.*;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolAction;
@@ -518,7 +516,7 @@ public class ModCoreUrushi {
                         .withStyle(ChatFormatting.GRAY));
             }
 
-        }else if(block instanceof PlayerHeadBlock){
+        }/*else if(block instanceof PlayerHeadBlock){
             if(stack.getTag()!=null){
                 if(stack.getTag().getBoolean("MinecraftHeadsCredit")){
                     tooltipList.add(Component.literal("by Minecraft Heads").withStyle(ChatFormatting.BLUE));
@@ -527,7 +525,7 @@ public class ModCoreUrushi {
                     tooltipList.add(Component.translatable("info.urushi.custom_heads_creator").append(stack.getTag().getString("HeadsCreator")).withStyle(ChatFormatting.GRAY));
                 }
             }
-        }
+        }*/
 
         if(ModCoreUrushi.isDebug){
             CompoundTag tag=event.getItemStack().getTag();
@@ -893,22 +891,15 @@ public class ModCoreUrushi {
                 ItemStack mainHandStack = player.getMainHandItem();
                 Block heldBlock=Block.byItem(mainHandStack.getItem());
                 GuiGraphics guiGraphics=event.getGuiGraphics();
-                Gui gui=Minecraft.getInstance().gui;
                 int screenWidth = event.getWindow().getGuiScaledWidth();
-                int screenHeight = event.getWindow().getGuiScaledHeight();
-                int i = screenWidth / 2;
+                int i = guiGraphics.guiWidth() / 2;
                 Window window=event.getWindow();
-                if(heldBlock instanceof Roof45Block){
-                    UrushiUtils.displayImage(guiGraphics,"roof_45",window);
-                }else if(heldBlock instanceof Roof225Block){
-                    UrushiUtils.displayImage(guiGraphics,"roof_225",window);
-                }else if(heldBlock instanceof AbstractFramedBlock||heldBlock instanceof FramedPaneBlock){
-                    //UrushiUtils.displayImage(guiGraphics,"connectable_block",window);
-                    if(ClientSetUp.connectionKey.isDown()){
-                        UrushiUtils.displayImage(guiGraphics,"connectable_block_green",window);
-                    }else{
-                        UrushiUtils.displayImage(guiGraphics,"connectable_block_blue",window);
-                    }
+                if(heldBlock instanceof AbstractFramedBlock||heldBlock instanceof FramedPaneBlock){
+                        if (ClientSetUp.connectionKey.isDown()) {
+                            UrushiUtils.displayToggleKeyImage(guiGraphics, "connectable_block_purple", guiGraphics.guiWidth(),guiGraphics.guiHeight());
+                        } else {
+                            UrushiUtils.displayToggleKeyImage(guiGraphics, "connectable_block_blue", guiGraphics.guiWidth(),guiGraphics.guiHeight());
+                        }
                 }else if(heldBlock instanceof SenbakokiBlock){
                     UrushiUtils.displayImage(guiGraphics,"senbakoki",window);
                 }else if(heldBlock instanceof RiceCauldronBlock||heldBlock instanceof DirtFurnaceBlock){
@@ -916,6 +907,26 @@ public class ModCoreUrushi {
                 }
 
             }
+        }
+
+    }
+
+    @SubscribeEvent
+    public  void renderTooltipEvent(RenderTooltipEvent.Pre event) {
+        ItemStack stack = event.getItemStack();
+        Item heldItem=stack.getItem();
+        GuiGraphics guiGraphics = event.getGraphics();
+        Block heldBlock=Block.byItem(stack.getItem());
+        if (heldBlock instanceof AbstractFramedBlock||heldBlock instanceof FramedPaneBlock){
+            UrushiUtils.displayImage(guiGraphics,"connectable_block",20,55);
+        }else if(heldBlock instanceof RiceCauldronBlock||heldBlock instanceof DirtFurnaceBlock||heldItem==ItemAndBlockRegister.raw_rice.get()){
+            UrushiUtils.displayImage(guiGraphics,"rice_cauldron_and_dirt_furnace",20,55);
+        }else if(heldBlock instanceof Roof45Block){
+            UrushiUtils.displayImage(guiGraphics,"roof_45",20,55);
+        }else if(heldBlock instanceof Roof225Block){
+            UrushiUtils.displayImage(guiGraphics,"roof_225",20,55);
+        }else if(heldBlock instanceof SenbakokiBlock||heldBlock==ItemAndBlockRegister.rice_crop.get()){
+            UrushiUtils.displayImage(guiGraphics,"senbakoki",20,55);
         }
 
     }
