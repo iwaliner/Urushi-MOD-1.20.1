@@ -118,6 +118,7 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
       p_35633_.put(KakuriyoVillagerProfessionType.Lumberjack, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
               new Sell(Items.STICK, 32,2),
               new Sell(ItemAndBlockRegister.japanese_timber_bamboo.get(), 20,2),
+              new Sell(Items.IRON_AXE, 1,2),
               new Buy(ItemAndBlockRegister.raw_urushi_ball.get(), 1,4,1),
               new Buy(Blocks.OAK_LOG, 1,4,1),
               new Buy(Blocks.SPRUCE_LOG, 1,4,1),
@@ -203,55 +204,55 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
        // new BuySkull(Blocks.PLAYER_HEAD, 1, 1,  1,Component.translatable("skull.urushi.").getString(), ""),
         new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.can").getString(),"Queen_Of_Bunnies","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY2ZDg5MGUwZGE3NTkxNWYzNTNjNWU3OTQ0NzU0OTBmNDNhMjZmZDdkMDIxYjk2N2I3MzlhNGViNjIxYmMyNyJ9fX0=")
       */})));
-      p_35633_.put(KakuriyoVillagerProfessionType.KnickKnackDealer, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
-              new Buy(ItemAndBlockRegister.doubled_red_urushi_wooden_cabinetry.get(), 2, 1,  1),
-              new Buy(ItemAndBlockRegister.pendant_light.get(), 1, 4,  1),
-              new Buy(ItemAndBlockRegister.goldfish_bowl.get(), 1, 4,  1)/*,
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.clock").getString(), "LordRazen","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ3N2RhZmM4YzllYTA3OTk2MzMzODE3OTM4NjZkMTQ2YzlhMzlmYWQ0YzY2ODRlNzExN2Q5N2U5YjZjMyJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.mailbox").getString(),"LordRazen", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiZDlkZDEyOGM5NGMxMGM5NDVlYWRhYTM0MmZjNmQ5NzY1ZjM3YjNkZjJlMzhmN2IwNTZkYzdjOTI3ZWQifX19"),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.teddy_bear").getString(),"", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVmNWJmODUxMGZmY2QzYTVlOWQ3ODI1YjY0MzMzYTEyMWQ1NjFmZTJjZGQ3NjdjN2UxOGI4Y2M1MjFiNiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.bag").getString(),"Elsweyr", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNiM2FjZGMxMWNhNzQ3YmY3MTBlNTlmNGM4ZTliM2Q5NDlmZGQzNjRjNjg2OTgzMWNhODc4ZjA3NjNkMTc4NyJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.water_filled_cauldron").getString(),"LordRazen", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ4YTE5Y2RmNDJkNzQ4YjQxYjcyZmI0Mzc2YWUzZjYzYzExNjVkMmRjZTA2NTE3MzNkZjI2MzQ0NmM3N2JhNiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.crate").getString(),"nikolanoxy", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk5MmU0YThmNDNjNzdhYzJlMmQ3OTJkOTYwNGY2MWYzNDM4N2M4NzdhYmEzNzEyZTQwNDdiNzQwYzU3OCJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.bird_house").getString(),"Marjory_", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdmODJhY2ViOThmZTA2OWU4YzE2NmNlZDAwMjQyYTc2NjYwYmJlMDcwOTFjOTJjZGRlNTRjNmVkMTBkY2ZmOSJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.BUCKET).getHoverName().getString(),"Dzekin", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTE3ZDg2ZTNmODFjYzE4MzdjNzBmMTBiZTQ4ODk4MzRjMDRmNTdhN2U5OGUwZGQwYjRiMjIzYjUwYzdhOGY5MCJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.WATER_BUCKET).getHoverName().getString(),"Dzekin", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ0MjE3ODJmYTllMDQxY2E4Y2NlNmFhYzNhMGIzMzdlY2MxYjk3MWIxNjhlY2JlZWY2OGI4ODEzZWUzOTZkYiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.LAVA_BUCKET).getHoverName().getString(),"Dzekin",  "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkxMTgzZWZiOTQxYzU3YzZhMzdmNjFjOTRlMjViNDRiNjdhODA0NDUyZTAyYTBkMjk5NmRlZGE2ZDIwZDdjNiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Blocks.CRAFTING_TABLE.getName().getString(),"PandaClod",  "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNkYzBmZWI3MDAxZTJjMTBmZDUwNjZlNTAxYjg3ZTNkNjQ3OTMwOTJiODVhNTBjODU2ZDk2MmY4YmU5MmM3OCJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Blocks.FURNACE.getName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTNiZjBiODg1OWExZTU3ZjNhYmQ2MjljMGM3MzZlNjQ0ZTgxNjUxZDRkZTAzNGZlZWE0OWY4ODNmMDBlODJiMCJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Blocks.SMITHING_TABLE.getName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcyZDFiZTQ4OGQyNjdlY2JlY2Y3ZmJjMzE0MzkwNjM2ZTk0MmI2NDYwNjI4YjAyMTA0YTgzODE4NGI3ZTczNyJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Blocks.BARREL.getName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc1MDJjNmE2ODg1MmViZjEwODdhMmVkMmE2M2Y4ZDg1ODk4YTcwNDlkNTE0YjJjNjc1ZmEwOTE1YmY0NzI0NiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Blocks.BARREL.getName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM0OGY3M2U5ZDIyMjQ4ZDg5YjJlOWYyNjE1Zjk4MGNjNjA4MjdlZDNiNmQzOTVlNTNiNTdhODJkNGVhNWZlIn19fQ=="),
-              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.BOOK).getHoverName().getString(), "takatalvi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFhMGQ3YmNhNThlM2YyZGY0MjA2YjE5ZDg0NWVhYmY4MWIxMWZhZDIxYzAwN2U5ZWE3YzJjNjM5Yzc1MjAxZCJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.BOOK).getHoverName().getString(), "GoodBook1","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjMzNTk4NDM3ZTMxMzMyOWViMTQxYTEzZTkyZDliMDM0OWFhYmU1YzY0ODJhNWRkZTdiNzM3NTM2MzRhYmEifX19"),
-              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.ENCHANTED_BOOK).getHoverName().getString(), "CraftyGamer_","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYyNjUxODc5ZDg3MDQ5OWRhNTBlMzQwMzY4MDBkZGZmZDUyZjNlNGUxOTkzYzVmYzBmYzgyNWQwMzQ0NmQ4YiJ9fX0="),
-              // new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.").getString(), ""),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.present_box").getString(),"FELIXCAT_3", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFiYzlkNDJiMDA0MWU4Zjk1Y2I5YjI2NjI4ZmRhZjUwY2QwZTM2ZjdiYjlkNmIzYTRkMmFmMzk0OWRhOTdkNiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.present_box").getString(),"FELIXCAT_3","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmIxZWM3ZGM3NTMwNjFjYTE3NDQyNGVhNDVjZjk0OTBiMzljZDVkY2NhNDc3ZDEzOGE2MDNlNmJlNzU1ZWM3MiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGJkMjI5NGY1NGMwZDM4OTRiYWY2MDkyZDA1OTVkY2NlZGIxMjNjYmY1MGVkMzg3MGJkM2Q3ZDQ4MTkwYTRmNCJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZjYzA2ZGUxOTEzY2VkNTgzYTdjMDJkNTkzOGFkYmM3NTE2MDdjZDM3ODM2YzhiZTVkNmI0OTc0NzM4YTQ2NiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmU5NjdhNDhkNmIzZTc3NmMwNTI0MzhmMDMyNzk4NjVmMDZhYjc3NjFkMTMwZmI5YzZmMDYxYTE3MzQ1ZTY4In19fQ=="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJhYjAzYzZlYjgzOGY2N2VmM2IyNTk4YzEyZjg0NzM1MzRjMzY2ZTY3YjQxZTJmMWY4OTNhZWIwNDQwZTQ5NCJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFhYmFiYzMyMTljNjFkZWZhYWNiNjdiMGUxNWU2OWIyMzdmYmM4ZGI1Y2E0ZTE4ZjliMjM3ZmVkZWNlOWZiMCJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE0ZDM2ZGJiYjMzYjQyNjgwMjA2NTc1NDFiMTFmZWYzYjAwYzkwYzgwOTg1MGM2MjMzN2U5NzE4Y2FmNzU5NiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgxZjBlNDQ2YmJmOWJlM2U3YWQzMTY0NTdiZDJiM2I2ODliYmVmMjdmZTM2NjViYzhkNGQ0MzE5MDk2N2NkMyJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ5ZDFhNTAwZTg2NGI0NDdkMDUwMjM3YmNlNWY3MGU2MDVlYTUzNTYxOTMyZGIzODNhYWJlY2Q4ZGY1NjA3MSJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYxNTgyODE2MGFmNzI4YTU3ZmRkMWNkMGU3YTU1ODNkMDY0ZTIxYmU0MDVkYTY4ZDVhZDM2YjM5ZDJhMTg0NiJ9fX0="),
-              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY3YmU5MjU0MzIwM2VjM2MzZDlmMGM1YjI5OGNlNWY5ZGMwN2QwZDViY2I3NjdjMDc4YjEzNTA3MjM0Y2M0NyJ9fX0=")
-*/
-
-
-
-
-
-
-      })));
+//      p_35633_.put(KakuriyoVillagerProfessionType.KnickKnackDealer, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
+//              new Buy(ItemAndBlockRegister.doubled_red_urushi_wooden_cabinetry.get(), 2, 1,  1),
+//              new Buy(ItemAndBlockRegister.pendant_light.get(), 1, 4,  1),
+//              new Buy(ItemAndBlockRegister.goldfish_bowl.get(), 1, 4,  1)/*,
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.clock").getString(), "LordRazen","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ3N2RhZmM4YzllYTA3OTk2MzMzODE3OTM4NjZkMTQ2YzlhMzlmYWQ0YzY2ODRlNzExN2Q5N2U5YjZjMyJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.mailbox").getString(),"LordRazen", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiZDlkZDEyOGM5NGMxMGM5NDVlYWRhYTM0MmZjNmQ5NzY1ZjM3YjNkZjJlMzhmN2IwNTZkYzdjOTI3ZWQifX19"),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.teddy_bear").getString(),"", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVmNWJmODUxMGZmY2QzYTVlOWQ3ODI1YjY0MzMzYTEyMWQ1NjFmZTJjZGQ3NjdjN2UxOGI4Y2M1MjFiNiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.bag").getString(),"Elsweyr", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNiM2FjZGMxMWNhNzQ3YmY3MTBlNTlmNGM4ZTliM2Q5NDlmZGQzNjRjNjg2OTgzMWNhODc4ZjA3NjNkMTc4NyJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.water_filled_cauldron").getString(),"LordRazen", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ4YTE5Y2RmNDJkNzQ4YjQxYjcyZmI0Mzc2YWUzZjYzYzExNjVkMmRjZTA2NTE3MzNkZjI2MzQ0NmM3N2JhNiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.crate").getString(),"nikolanoxy", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk5MmU0YThmNDNjNzdhYzJlMmQ3OTJkOTYwNGY2MWYzNDM4N2M4NzdhYmEzNzEyZTQwNDdiNzQwYzU3OCJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.bird_house").getString(),"Marjory_", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdmODJhY2ViOThmZTA2OWU4YzE2NmNlZDAwMjQyYTc2NjYwYmJlMDcwOTFjOTJjZGRlNTRjNmVkMTBkY2ZmOSJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.BUCKET).getHoverName().getString(),"Dzekin", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTE3ZDg2ZTNmODFjYzE4MzdjNzBmMTBiZTQ4ODk4MzRjMDRmNTdhN2U5OGUwZGQwYjRiMjIzYjUwYzdhOGY5MCJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.WATER_BUCKET).getHoverName().getString(),"Dzekin", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ0MjE3ODJmYTllMDQxY2E4Y2NlNmFhYzNhMGIzMzdlY2MxYjk3MWIxNjhlY2JlZWY2OGI4ODEzZWUzOTZkYiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.LAVA_BUCKET).getHoverName().getString(),"Dzekin",  "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkxMTgzZWZiOTQxYzU3YzZhMzdmNjFjOTRlMjViNDRiNjdhODA0NDUyZTAyYTBkMjk5NmRlZGE2ZDIwZDdjNiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Blocks.CRAFTING_TABLE.getName().getString(),"PandaClod",  "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNkYzBmZWI3MDAxZTJjMTBmZDUwNjZlNTAxYjg3ZTNkNjQ3OTMwOTJiODVhNTBjODU2ZDk2MmY4YmU5MmM3OCJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Blocks.FURNACE.getName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTNiZjBiODg1OWExZTU3ZjNhYmQ2MjljMGM3MzZlNjQ0ZTgxNjUxZDRkZTAzNGZlZWE0OWY4ODNmMDBlODJiMCJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Blocks.SMITHING_TABLE.getName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcyZDFiZTQ4OGQyNjdlY2JlY2Y3ZmJjMzE0MzkwNjM2ZTk0MmI2NDYwNjI4YjAyMTA0YTgzODE4NGI3ZTczNyJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Blocks.BARREL.getName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzc1MDJjNmE2ODg1MmViZjEwODdhMmVkMmE2M2Y4ZDg1ODk4YTcwNDlkNTE0YjJjNjc1ZmEwOTE1YmY0NzI0NiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Blocks.BARREL.getName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM0OGY3M2U5ZDIyMjQ4ZDg5YjJlOWYyNjE1Zjk4MGNjNjA4MjdlZDNiNmQzOTVlNTNiNTdhODJkNGVhNWZlIn19fQ=="),
+//              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.BOOK).getHoverName().getString(), "takatalvi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFhMGQ3YmNhNThlM2YyZGY0MjA2YjE5ZDg0NWVhYmY4MWIxMWZhZDIxYzAwN2U5ZWE3YzJjNjM5Yzc1MjAxZCJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.BOOK).getHoverName().getString(), "GoodBook1","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjMzNTk4NDM3ZTMxMzMyOWViMTQxYTEzZTkyZDliMDM0OWFhYmU1YzY0ODJhNWRkZTdiNzM3NTM2MzRhYmEifX19"),
+//              new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.ENCHANTED_BOOK).getHoverName().getString(), "CraftyGamer_","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYyNjUxODc5ZDg3MDQ5OWRhNTBlMzQwMzY4MDBkZGZmZDUyZjNlNGUxOTkzYzVmYzBmYzgyNWQwMzQ0NmQ4YiJ9fX0="),
+//              // new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.").getString(), ""),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.present_box").getString(),"FELIXCAT_3", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFiYzlkNDJiMDA0MWU4Zjk1Y2I5YjI2NjI4ZmRhZjUwY2QwZTM2ZjdiYjlkNmIzYTRkMmFmMzk0OWRhOTdkNiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.present_box").getString(),"FELIXCAT_3","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmIxZWM3ZGM3NTMwNjFjYTE3NDQyNGVhNDVjZjk0OTBiMzljZDVkY2NhNDc3ZDEzOGE2MDNlNmJlNzU1ZWM3MiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGJkMjI5NGY1NGMwZDM4OTRiYWY2MDkyZDA1OTVkY2NlZGIxMjNjYmY1MGVkMzg3MGJkM2Q3ZDQ4MTkwYTRmNCJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZjYzA2ZGUxOTEzY2VkNTgzYTdjMDJkNTkzOGFkYmM3NTE2MDdjZDM3ODM2YzhiZTVkNmI0OTc0NzM4YTQ2NiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmU5NjdhNDhkNmIzZTc3NmMwNTI0MzhmMDMyNzk4NjVmMDZhYjc3NjFkMTMwZmI5YzZmMDYxYTE3MzQ1ZTY4In19fQ=="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJhYjAzYzZlYjgzOGY2N2VmM2IyNTk4YzEyZjg0NzM1MzRjMzY2ZTY3YjQxZTJmMWY4OTNhZWIwNDQwZTQ5NCJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFhYmFiYzMyMTljNjFkZWZhYWNiNjdiMGUxNWU2OWIyMzdmYmM4ZGI1Y2E0ZTE4ZjliMjM3ZmVkZWNlOWZiMCJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE0ZDM2ZGJiYjMzYjQyNjgwMjA2NTc1NDFiMTFmZWYzYjAwYzkwYzgwOTg1MGM2MjMzN2U5NzE4Y2FmNzU5NiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgxZjBlNDQ2YmJmOWJlM2U3YWQzMTY0NTdiZDJiM2I2ODliYmVmMjdmZTM2NjViYzhkNGQ0MzE5MDk2N2NkMyJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ5ZDFhNTAwZTg2NGI0NDdkMDUwMjM3YmNlNWY3MGU2MDVlYTUzNTYxOTMyZGIzODNhYWJlY2Q4ZGY1NjA3MSJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYxNTgyODE2MGFmNzI4YTU3ZmRkMWNkMGU3YTU1ODNkMDY0ZTIxYmU0MDVkYTY4ZDVhZDM2YjM5ZDJhMTg0NiJ9fX0="),
+//              new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.traffic_light").getString(),"kohonayoshi","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY3YmU5MjU0MzIwM2VjM2MzZDlmMGM1YjI5OGNlNWY5ZGMwN2QwZDViY2I3NjdjMDc4YjEzNTA3MjM0Y2M0NyJ9fX0=")
+//*/
+//
+//
+//
+//
+//
+//
+//      })));
          });
 
 
     public KakuriyoVillagerEntity(EntityType<? extends AbstractVillager> p_34271_, Level level) {
         super(EntityRegister.KakuriyoVillager.get(), level);
-        this.setProfessionType(KakuriyoVillagerProfessionType.getType(level.getRandom().nextInt(7)));
+        this.setProfessionType(KakuriyoVillagerProfessionType.getType(level.getRandom().nextInt(6)));
     }
     public KakuriyoVillagerEntity(Level p_i1705_1_, double p_i1705_2_, double p_i1705_4_, double p_i1705_6_) {
         this(EntityRegister.KakuriyoVillager.get(), p_i1705_1_);

@@ -1,0 +1,75 @@
+{
+
+
+
+  "type": "urushi:water_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "urushi:raw_urushi_ball"
+
+
+
+    },
+
+
+
+    {
+
+
+
+   "item": "urushi:raw_urushi_ball"
+
+
+
+    },
+    {
+
+
+
+  "item": "urushi:raw_urushi_ball"
+
+
+
+    },
+    {
+
+
+
+   "item": "urushi:raw_urushi_ball"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:water_amber"
+
+
+
+  },
+
+
+
+  "reiryoku": 200
+
+
+
+}

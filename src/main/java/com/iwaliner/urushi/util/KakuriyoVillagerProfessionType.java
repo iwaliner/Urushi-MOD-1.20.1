@@ -6,8 +6,7 @@ public  enum KakuriyoVillagerProfessionType {
     Fisherman(2),
     Lumberjack(3),
     Cook(4),
-    KnickKnackDealer(5),
-    Miner(6);
+    Miner(5);
 
         private int id;
 
@@ -20,8 +19,7 @@ public  enum KakuriyoVillagerProfessionType {
                 case 2 -> Fisherman;
                 case 3 -> Lumberjack;
                 case 4 -> Cook;
-                case 5 -> KnickKnackDealer;
-                case 6 -> Miner;
+                case 5 -> Miner;
                 default -> Jobless;
             };
 

@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.MenuRegister;
 import com.iwaliner.urushi.RecipeTypeRegister;
+import com.iwaliner.urushi.block.HibachiBlock;
 import com.iwaliner.urushi.blockentity.menu.KettleMenu;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
@@ -34,6 +35,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.AbstractFurnaceBlock;
+import net.minecraft.world.level.block.CampfireBlock;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
@@ -94,7 +97,7 @@ public class KettleBlockEntity extends BaseContainerBlockEntity implements World
         super(BlockEntityRegister.Kettle.get(), p_155052_,p_155053_);
     }
     protected Component getDefaultName() {
-        return Component.translatable("container.kettle");
+        return Component.translatable("container.urushi.kettle");
     }
 
 
@@ -138,13 +141,23 @@ public class KettleBlockEntity extends BaseContainerBlockEntity implements World
         });
         p_187452_.put("RecipesUsed", compoundtag);
     }
+    private boolean isOnHeatSource(BlockState underState){
+        if(underState.getBlock() instanceof CampfireBlock&&underState.getValue(CampfireBlock.LIT)){
+            return true;
+        }else if(underState.getBlock() instanceof AbstractFurnaceBlock&&underState.getValue(AbstractFurnaceBlock.LIT)){
+            return true;
+        }else if(underState.getBlock() instanceof HibachiBlock){
+            return true;
+        }
+        return false;
+    }
     public static void serverTick(Level level, BlockPos pos, BlockState state, KettleBlockEntity blockEntity) {
         boolean flag1 = false;
         if (blockEntity.isLit()) {
             --blockEntity.litTime;
         }
 
-        if (!level.isClientSide) {
+        if (!level.isClientSide&&blockEntity.isOnHeatSource(level.getBlockState(pos.below()))) {
             Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeTypeRegister.KettleRecipe), blockEntity, level).orElse(null);
             ItemStack creatureSlotItem = blockEntity.items.get(0);
             ItemStack feedSlotItem = blockEntity.items.get(1);

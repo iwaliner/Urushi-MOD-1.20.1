@@ -1,9 +1,6 @@
 package com.iwaliner.urushi.blockentity;
 
-import com.iwaliner.urushi.BlockEntityRegister;
-import com.iwaliner.urushi.ModCoreUrushi;
-import com.iwaliner.urushi.ParticleRegister;
-import com.iwaliner.urushi.RecipeTypeRegister;
+import com.iwaliner.urushi.*;
 import com.iwaliner.urushi.block.ElementCraftingTableBlock;
 import com.iwaliner.urushi.block.SanboBlock;
 import com.iwaliner.urushi.recipe.AbstractElementCraftingRecipe;
@@ -37,6 +34,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.RecipeHolder;
 import net.minecraft.world.inventory.StackedContentsCompatible;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CampfireCookingRecipe;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
@@ -167,6 +165,10 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
                                         level.addFreshEntity(itemEntity2);
                                         northSanbo.clearContent();
                                     }
+                             }else if(northStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
+                                     ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() - 1D + 0.5D, new ItemStack(Items.BOWL));
+                                     level.addFreshEntity(itemEntity2);
+                                     northSanbo.clearContent();
                              }else {
                                  northSanbo.clearContent();
                              }
@@ -176,6 +178,10 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
                                          level.addFreshEntity(itemEntity2);
                                          eastSanbo.clearContent();
                                      }
+                             }else if(eastStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
+                                 ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, new ItemStack(Items.BOWL));
+                                 level.addFreshEntity(itemEntity2);
+                                 eastSanbo.clearContent();
                              }else {
                                  eastSanbo.clearContent();
                              }
@@ -185,6 +191,10 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
                                         level.addFreshEntity(itemEntity2);
                                         southSanbo.clearContent();
                                     }
+                             }else if(southStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
+                                 ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 1D + 0.5D, new ItemStack(Items.BOWL));
+                                 level.addFreshEntity(itemEntity2);
+                                 southSanbo.clearContent();
                              }else {
                                  southSanbo.clearContent();
                              }
@@ -194,6 +204,10 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
                                  level.addFreshEntity(itemEntity2);
                                  westSanbo.clearContent();
                              }
+                             }else if(westStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
+                                 ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() - 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, new ItemStack(Items.BOWL));
+                                 level.addFreshEntity(itemEntity2);
+                                 westSanbo.clearContent();
                              }else {
                                  westSanbo.clearContent();
                              }
