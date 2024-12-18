@@ -8,8 +8,10 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Vec3i;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtUtils;
 import net.minecraft.network.chat.Component;
- 
+
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -62,11 +64,21 @@ public class DoubledWoodenCabinetryBlockEntity extends RandomizableContainerBloc
 
     }
 
-    public void load(CompoundTag p_155055_) {
-        super.load(p_155055_);
+    @Override
+    public void setItem(int i, ItemStack stack) {
+        setChanged();
+        super.setItem(i, stack);
+    }
+    public CompoundTag getUpdateTag() {
+        CompoundTag compoundtag = new CompoundTag();
+        ContainerHelper.saveAllItems(compoundtag, this.items, true);
+        return compoundtag;
+    }
+    public void load(CompoundTag tag) {
+        super.load(tag);
         this.items = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-        if (!this.tryLoadLootTable(p_155055_)) {
-            ContainerHelper.loadAllItems(p_155055_, this.items);
+        if (!this.tryLoadLootTable(tag)) {
+            ContainerHelper.loadAllItems(tag, this.items);
         }
 
     }
@@ -122,5 +134,12 @@ public class DoubledWoodenCabinetryBlockEntity extends RandomizableContainerBloc
         double d1 = (double)this.worldPosition.getY() + 0.5D + (double)vec3i.getY() / 2.0D;
         double d2 = (double)this.worldPosition.getZ() + 0.5D + (double)vec3i.getZ() / 2.0D;
         this.level.playSound((Player)null, d0, d1, d2, p_58602_, SoundSource.BLOCKS, 0.5F, this.level.random.nextFloat() * 0.1F + 0.9F);
+    }
+    public ItemStack getDisplayStack(){
+        this.setChanged();
+        return getItem(0);
+    }
+    public ClientboundBlockEntityDataPacket getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
     }
 }

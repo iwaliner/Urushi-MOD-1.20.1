@@ -56,13 +56,13 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
 
 
     }
-    public ItemStack quickMoveStack(Player p_82846_1_, int p_82846_2_) {
+    public ItemStack quickMoveStack(Player p_82846_1_, int slotNumber) {
         ItemStack itemstack = ItemStack.EMPTY;
-        Slot slot = this.slots.get(p_82846_2_);
+        Slot slot = this.slots.get(slotNumber);
         if (slot != null && slot.hasItem()) {
             ItemStack itemstack1 = slot.getItem();
             itemstack = itemstack1.copy();
-            if (p_82846_2_ < this.containerRows * SLOTS_PER_ROW+12) {
+            if (slotNumber < this.containerRows * SLOTS_PER_ROW+12) {
                 if (!this.moveItemStackTo(itemstack1, this.containerRows *SLOTS_PER_ROW+12, this.slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
@@ -92,14 +92,19 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
     }
 
     public boolean clickMenuButton(Player player, int p) {
+        int startNumber=1;
         NonNullList<ItemStack> list1=NonNullList.withSize(108,ItemStack.EMPTY);
 
         List<Integer> idList=new ArrayList<>();
         for(int i=0;i<108;i++){
             ItemStack stack=this.slots.get(i).getItem();
-            list1.set(i,stack.copy());
-            idList.add(Item.getId(stack.getItem()));
-
+            if(i<startNumber) {
+                list1.set(i, ItemStack.EMPTY);
+                idList.add(Item.getId(stack.getItem()));
+            }else {
+                list1.set(i, stack.copy());
+                idList.add(Item.getId(stack.getItem()));
+            }
         }
 
 
@@ -203,9 +208,9 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
         }
 
 
-        for(int i=0;i<108;i++){
+        for(int i=startNumber;i<108;i++){
             if(i<list4.size()){
-                this.slots.get(i).set(list4.get(i));
+                this.slots.get(i).set(list4.get(i-startNumber));
             }else{
                 this.slots.get(i).set(ItemStack.EMPTY);
             }

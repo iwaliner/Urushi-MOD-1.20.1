@@ -2608,6 +2608,7 @@
    "block.urushi.red_silk_block": "赤色の絹布ブロック",
    "block.urushi.black_silk_block": "黒色の絹布ブロック",
    "item.urushi.kakuriyo_villager_spawn_egg": "幽世<かくりよ>の村人のスポーンエッグ",
-   "entity.urushi.kakuriyo_villager": "幽世<かくりよ>の村人"
+   "entity.urushi.kakuriyo_villager": "幽世<かくりよ>の村人",
+   "info.urushi.hibachi": "上に茶釜を置いて緑茶を作ろう"
    
 }

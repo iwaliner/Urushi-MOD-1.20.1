@@ -254,6 +254,7 @@ public class ClientSetUp {
         BlockEntityRenderers.register(BlockEntityRegister.Hokora.get(), HokoraRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegister.Plate.get(), PlateRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegister.BambooBasket.get(), BambooBasketRenderer::new);
+        BlockEntityRenderers.register(BlockEntityRegister.DoubledWoodenCabinetryBlockEntity.get(), DoubledWoodenCabinetryRenderer::new);
 
 
 
