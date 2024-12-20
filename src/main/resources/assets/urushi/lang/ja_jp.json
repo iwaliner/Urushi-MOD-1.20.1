@@ -732,7 +732,7 @@
 
    "info.urushi.noodleknife": "麺を切ろう！",
 
-   "info.urushi.saltandsand": "海や海岸系のバイオームで、水に接した砂はこれに変化",
+   "info.urushi.saltandsand": "海や海岸系のバイオームの海面より高い位置にて、砂があるところに水を流すと砂がこれに変化する",
 
 
    "block.urushi.dirt_furnace": "土かまど",
@@ -1121,9 +1121,9 @@
 
     "itemGroup.urushi_food":"漆MOD-料理",
 
-    "info.urushi.ghost_block": "当たり判定のない半透明ブロック",
+    "info.urushi.ghost_block": "赤石信号入力時は当たり判定がなく半透明になる",
 
-    "info.urushi.ghost_block2": "赤石入力で通常ブロックに擬態する",
+    "info.urushi.ghost_block2": "赤石信号がないときは通常ブロックに擬態する",
 
     "block.urushi.japanese_cedar_fushiranma": "杉の竹節欄間",
 
@@ -2556,7 +2556,6 @@
    "entity.urushi.shrimp_sushi_food": "エビの寿司",
    "info.urushi.doubled_wooden_cabinetry_sort_button": "整頓",
    "info.urushi.senbakoki": "千歯こきに籾を使うことで玄米と藁を入手できる",
-   "info.urushi.custom_heads_creator": "カスタムヘッドの製作者：",
    "info.urushi.rice_ball": "中央に具を配置して作成した場合、食べたときに具の種類に応じて何かが起こる。",
    "info.urushi.rice_ball_with_filling": "具が入っている。食べると何かが起こる。",
    "block.urushi.kakejiku_15": "掛け軸",

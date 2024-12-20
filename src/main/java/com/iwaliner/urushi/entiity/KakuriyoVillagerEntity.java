@@ -300,7 +300,7 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
 
     public InteractionResult mobInteract(Player p_35856_, InteractionHand p_35857_) {
         ItemStack itemstack = p_35856_.getItemInHand(p_35857_);
-        if (!itemstack.is(Items.VILLAGER_SPAWN_EGG) && this.isAlive() && !this.isTrading() && !this.isBaby()&&this.getProfessionType()!=KakuriyoVillagerProfessionType.Jobless) {
+        if (!itemstack.is(ItemAndBlockRegister.kakuriyo_villager_spawn_egg.get()) && this.isAlive() && !this.isTrading() && !this.isBaby()&&this.getProfessionType()!=KakuriyoVillagerProfessionType.Jobless) {
             if (p_35857_ == InteractionHand.MAIN_HAND) {
                 p_35856_.awardStat(Stats.TALKED_TO_VILLAGER);
             }
@@ -362,23 +362,23 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
     }
 
     protected SoundEvent getAmbientSound() {
-        return SoundRegister.KakuriyoVillagerAmbient.get();
+        return null;
     }
 
     protected SoundEvent getHurtSound(DamageSource p_35870_) {
-        return SoundRegister.KakuriyoVillagerHurt.get();
+        return null;
     }
 
     protected SoundEvent getDeathSound() {
-        return SoundRegister.KakuriyoVillagerDeath.get();
+        return null;
     }
 
     protected SoundEvent getTradeUpdatedSound(boolean p_35890_) {
-        return SoundRegister.KakuriyoVillagerAmbient.get();
+        return null;
     }
 
     public SoundEvent getNotifyTradeSound() {
-        return SoundEvents.WANDERING_TRADER_YES;
+        return null;
     }
 
 

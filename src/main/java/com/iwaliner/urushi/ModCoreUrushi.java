@@ -477,6 +477,8 @@ public class ModCoreUrushi {
             UrushiUtils.setBlinkingInfoWithColor(tooltipList,"parapet", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
         }else if(block instanceof BarsBlock&&event.getEntity()!=null){
             UrushiUtils.setBlinkingInfoWithColor(tooltipList,"bars", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+        }else if(block instanceof KakejikuBlock&&event.getEntity()!=null){
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"kakejiku", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
         }else if(block instanceof AbstractFramedBlock||block instanceof FramedPaneBlock&&event.getEntity()!=null){
             try{
                 long gametime = Objects.requireNonNull(event.getEntity()).level().getGameTime() % 20;

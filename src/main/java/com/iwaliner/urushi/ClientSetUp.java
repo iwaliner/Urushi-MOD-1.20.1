@@ -262,6 +262,24 @@ public class ClientSetUp {
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.additional_heart.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.giant_skeleton_spawn_egg.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.kakuriyo_villager_spawn_egg.get());
+        ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.coin.get()));
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.white_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.orange_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.magenta_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.light_blue_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.yellow_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.lime_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.pink_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.gray_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.light_gray_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.cyan_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.purple_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.blue_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.brown_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.green_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.red_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.black_silk.get());
+
 
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.additional_heart);
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.ghost_spawn_egg);
