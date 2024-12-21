@@ -14,6 +14,9 @@ public class TeaItem extends Item {
     }
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity livingEntity) {
         ItemStack itemstack = super.finishUsingItem(stack, level, livingEntity);
-        return livingEntity instanceof Player && ((Player)livingEntity).getAbilities().instabuild ? itemstack : new ItemStack(ItemAndBlockRegister.empty_bamboo_cup.get());
+        if (livingEntity instanceof Player&&!((Player) livingEntity).getInventory().add(new ItemStack(ItemAndBlockRegister.empty_bamboo_cup.get()))) {
+            ((Player) livingEntity).drop(new ItemStack(ItemAndBlockRegister.empty_bamboo_cup.get()), false);
+        }
+        return  itemstack;
     }
 }

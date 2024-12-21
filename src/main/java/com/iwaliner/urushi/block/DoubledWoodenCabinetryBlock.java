@@ -18,6 +18,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
@@ -28,6 +29,9 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 import net.minecraft.util.RandomSource;
@@ -36,6 +40,7 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
 
+
     public DoubledWoodenCabinetryBlock(Properties p_i49996_1_) {
         super(p_i49996_1_);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.valueOf(false)));
@@ -43,6 +48,9 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
     public boolean useShapeForLightOcclusion(BlockState p_220074_1_) {
         return true;
     }
+
+
+
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult p_60508_) {
 
@@ -90,7 +98,6 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return   new DoubledWoodenCabinetryBlockEntity(pos,state);
     }
-
 
     public RenderShape getRenderShape(BlockState p_49090_) {
         return RenderShape.MODEL;

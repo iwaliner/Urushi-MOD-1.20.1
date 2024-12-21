@@ -20,6 +20,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
@@ -542,7 +543,10 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> japanese_apricot_trapdoor =BW("japanese_apricot_trapdoor","a",-1,() -> {return new ConnectableTrapdoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(1.0F, 10.0F).noOcclusion().isValidSpawn(ItemAndBlockRegister::never));});
     public static final RegistryObject<Block> japanese_apricot_pressure_plate =BW("japanese_apricot_pressure_plate","a",-1,() -> {return new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(0.5F, 10.0F).noCollission(),BlockSetType.OAK);});
     public static final RegistryObject<Block> japanese_apricot_button =BW("japanese_apricot_button","a",-1,() -> {return new ButtonBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(0.5F, 10.0F).noCollission().pushReaction(PushReaction.DESTROY),BlockSetType.OAK,30,true);});
-    public static final RegistryObject<Block> smooth_japanese_apricot_planks =BW("smooth_japanese_apricot_planks","a",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(1.0F, 10.0F));});
+   /* public static final BlockSetType BlockSetType_JAPANESE_APROCOT = BlockSetType.register(new BlockSetType("japanese_apricot"));
+    public static final WoodType WoodType_JAPANESE_APRICOT = WoodType.register(new WoodType("japanese_apricot", BlockSetType_JAPANESE_APROCOT));
+    public static final RegistryObject<Block> japanese_apricot_standing_sign =BW("japanese_apricot_standing_sign","a",-1,() -> {return new StandingSignBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(1.0F, 10.0F),WoodType_JAPANESE_APRICOT) });
+    */public static final RegistryObject<Block> smooth_japanese_apricot_planks =BW("smooth_japanese_apricot_planks","a",-1,() -> {return new FlammableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> smooth_japanese_apricot_slab =BW("smooth_japanese_apricot_slab","a",-1,() -> {return new FlammableSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> smooth_japanese_apricot_stairs =BW("smooth_japanese_apricot_stairs","a",-1,() -> {return new FlammableStairBlock(smooth_japanese_apricot_planks.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> vertical_smooth_japanese_apricot_slab =BW("vertical_smooth_japanese_apricot_slab","a",0,() -> {return new VerticalSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).sound(SoundType.WOOD).strength(1.0F, 10.0F));});
@@ -903,7 +907,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> lime_silk =I("lime_silk");
     public static final RegistryObject<Item> pink_silk =I("pink_silk");
     public static final RegistryObject<Item> gray_silk =I("gray_silk");
-    public static final RegistryObject<Item> light_graysilk =I("light_gray_silk");
+    public static final RegistryObject<Item> light_gray_silk =I("light_gray_silk");
     public static final RegistryObject<Item> cyan_silk =I("cyan_silk");
     public static final RegistryObject<Item> purple_silk =I("purple_silk");
     public static final RegistryObject<Item> blue_silk =I("blue_silk");

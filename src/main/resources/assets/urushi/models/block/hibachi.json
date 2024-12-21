@@ -1,12 +1,12 @@
 {
 	"parent": "block/block",
 	"textures": {
-		"0": "urushi:block/dirt_wall",
+		"0": "minecraft:block/gravel",
 		"1": "urushi:block/hibachi_bottom",
 		"2": "urushi:block/hibachi_front",
 		"3": "urushi:block/hibachi_side",
-		"4": "urushi:block/giboshi_iron",
-		"5": "urushi:block/white_charcoal",
+		"4": "urushi:block/galvanised_iron_plate_brown",
+		"5": "urushi:block/bamboo_charcoal_block",
 		"particle": "urushi:block/dirt_wall"
 	},
 	"elements": [

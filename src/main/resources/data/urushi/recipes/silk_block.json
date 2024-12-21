@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "WW",
+
+
+
+    "WW"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "W": {
+
+
+
+      "item": "urushi:silk"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:silk_block",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}
