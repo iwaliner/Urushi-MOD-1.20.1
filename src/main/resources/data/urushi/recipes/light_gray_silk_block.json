@@ -1,0 +1,77 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "BBB",
+
+
+
+    "BDB",
+
+
+
+    "BBB"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "D": {
+
+
+
+   "tag": "forge:dyes/light_gray"
+
+
+
+      },
+
+
+
+    "B": {
+
+
+
+    "tag": "urushi:silk_block"
+
+
+
+   }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:light_gray_silk_block",
+
+
+
+    "count": 8
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,77 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "BBB",
+
+
+
+    "BDB",
+
+
+
+    "BBB"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "D": {
+
+
+
+   "tag": "forge:dyes/purple"
+
+
+
+      },
+
+
+
+    "B": {
+
+
+
+    "tag": "urushi:silk_block"
+
+
+
+   }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:purple_silk_block",
+
+
+
+    "count": 8
+
+
+
+  }
+
+
+
+}
