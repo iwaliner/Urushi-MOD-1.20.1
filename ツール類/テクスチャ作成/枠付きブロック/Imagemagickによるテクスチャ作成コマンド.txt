@@ -1,0 +1,44 @@
+magick composite -gravity center -compose dst-in pr/pr_0.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_0.png -gravity center -compose over -composite output/plaster_warped_0.png
+
+magick composite -gravity center -compose dst-in pr/pr_1.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_1.png -gravity center -compose over -composite output/plaster_warped_1.png
+
+magick composite -gravity center -compose dst-in pr/pr_2.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_2.png -gravity center -compose over -composite output/plaster_warped_2.png
+
+magick composite -gravity center -compose dst-in pr/pr_3.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_3.png -gravity center -compose over -composite output/plaster_warped_3.png
+
+magick composite -gravity center -compose dst-in pr/pr_4.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_4.png -gravity center -compose over -composite output/plaster_warped_4.png
+
+magick composite -gravity center -compose dst-in pr/pr_5.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_5.png -gravity center -compose over -composite output/plaster_warped_5.png
+
+magick composite -gravity center -compose dst-in pr/pr_6.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_6.png -gravity center -compose over -composite output/plaster_warped_6.png
+
+magick composite -gravity center -compose dst-in pr/pr_7.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_7.png -gravity center -compose over -composite output/plaster_warped_7.png
+
+magick composite -gravity center -compose dst-in pr/pr_8.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_8.png -gravity center -compose over -composite output/plaster_warped_8.png
+
+magick composite -gravity center -compose dst-in pr/pr_9.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_9.png -gravity center -compose over -composite output/plaster_warped_9.png
+
+magick composite -gravity center -compose dst-in pr/pr_10.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_10.png -gravity center -compose over -composite output/plaster_warped_10.png
+
+magick composite -gravity center -compose dst-in pr/pr_11.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_11.png -gravity center -compose over -composite output/plaster_warped_11.png
+
+magick composite -gravity center -compose dst-in pr/pr_12.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_12.png -gravity center -compose over -composite output/plaster_warped_12.png
+
+magick composite -gravity center -compose dst-in pr/pr_13.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_13.png -gravity center -compose over -composite output/plaster_warped_13.png
+
+magick composite -gravity center -compose dst-in pr/pr_14.png base/planks_smooth_warped.png -matte processing.png
+magick convert processing.png line/line_14.png -gravity center -compose over -composite output/plaster_warped_14.png
