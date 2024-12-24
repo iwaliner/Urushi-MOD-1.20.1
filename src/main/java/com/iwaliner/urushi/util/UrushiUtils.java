@@ -138,6 +138,24 @@ public class UrushiUtils {
         int j = localdate.get(ChronoField.MONTH_OF_YEAR);
         return j == 1 && i <=7;
     }
+    public static boolean isSetsubun() {
+        LocalDate localdate = LocalDate.now();
+        int i = localdate.get(ChronoField.DAY_OF_MONTH);
+        int j = localdate.get(ChronoField.MONTH_OF_YEAR);
+        return j == 2 && i <=3;
+    }
+    public static boolean isHigan() {
+        LocalDate localdate = LocalDate.now();
+        int i = localdate.get(ChronoField.DAY_OF_MONTH);
+        int j = localdate.get(ChronoField.MONTH_OF_YEAR);
+        return (j == 3 && i>=17&& i <=24)||(j == 9 && i>=19&& i <=27);
+    }
+    public static boolean isTanabata() {
+        LocalDate localdate = LocalDate.now();
+        int i = localdate.get(ChronoField.DAY_OF_MONTH);
+        int j = localdate.get(ChronoField.MONTH_OF_YEAR);
+        return j == 7 && i>=5&& i <=7;
+    }
     public static boolean isAprilFoolsDay() {
         LocalDate localdate = LocalDate.now();
         int i = localdate.get(ChronoField.DAY_OF_MONTH);

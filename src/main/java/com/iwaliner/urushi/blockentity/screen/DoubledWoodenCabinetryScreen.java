@@ -3,6 +3,7 @@ package com.iwaliner.urushi.blockentity.screen;
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.blockentity.menu.DoubledWoodenCabinetryMenu;
+import com.iwaliner.urushi.util.UrushiUtils;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
@@ -67,6 +68,15 @@ public class DoubledWoodenCabinetryScreen  extends AbstractContainerScreen<Doubl
         if(isMouseOver(p_230450_3_,p_230450_4_)){
             p_230450_1_.blit(CONTAINER_BACKGROUND, i+224, j+126, 0, 247, 70, 263,512,512);
          }
+        if(UrushiUtils.isShogatsu()){
+            p_230450_1_.blit(CONTAINER_BACKGROUND, i+248, j+145, 310, 0, 32, 89,512,512);
+        }else if(UrushiUtils.isSetsubun()){
+            p_230450_1_.blit(CONTAINER_BACKGROUND, i+248, j+145, 343, 0, 32, 89,512,512);
+        }else if(UrushiUtils.isHigan()){
+            p_230450_1_.blit(CONTAINER_BACKGROUND, i+248, j+145, 376, 0, 32, 89,512,512);
+        }else if(UrushiUtils.isTanabata()){
+            p_230450_1_.blit(CONTAINER_BACKGROUND, i+248, j+145, 409, 0, 32, 89,512,512);
+        }
     }
     public boolean mouseClicked(double x, double y, int p_99320_) {
      int l=0;
