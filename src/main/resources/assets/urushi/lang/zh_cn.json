@@ -2612,11 +2612,11 @@
    "info.urushi.hibachi": "在上方放置茶壶以制作绿茶",
    "sound.urushi.urushi_advancements": "漆MOD：获得成就",
    "entity.urushi.green_tea_food": "绿茶",
-   "item.urushi.mandarin": "みかん",
-   "item.urushi.mandarin_slice": "剥いたみかん",
-   "block.urushi.mandarin_sapling": "みかんの苗木",
-   "block.urushi.mandarin_leaves": "みかんの葉",
-   "block.urushi.kotatsu": "こたつ"
+   "item.urushi.mandarin": "橘子",
+   "item.urushi.mandarin_slice": "橘子瓣",
+   "block.urushi.mandarin_sapling": "橘树树苗",
+   "block.urushi.mandarin_leaves": "橘树树叶",
+   "block.urushi.kotatsu": "被炉"
 
 
 }
