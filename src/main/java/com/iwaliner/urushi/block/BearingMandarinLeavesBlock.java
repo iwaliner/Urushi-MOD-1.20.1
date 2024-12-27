@@ -28,22 +28,27 @@ public class BearingMandarinLeavesBlock extends LeavesBlock {
         super(p_54422_);
         this.registerDefaultState(this.stateDefinition.any().setValue(AGE, Integer.valueOf(0)));
     }
-    public void randomTick(BlockState p_222563_, ServerLevel p_222564_, BlockPos p_222565_, RandomSource p_222566_) {
-        int i = p_222563_.getValue(AGE);
-        if (i < 1 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(p_222564_, p_222565_, p_222563_, p_222566_.nextInt(5) == 0)) {
-            BlockState blockstate = p_222563_.setValue(AGE, Integer.valueOf(i + 1));
-            p_222564_.setBlock(p_222565_, blockstate, 2);
-            p_222564_.gameEvent(GameEvent.BLOCK_CHANGE, p_222565_, GameEvent.Context.of(blockstate));
-            net.minecraftforge.common.ForgeHooks.onCropsGrowPost(p_222564_, p_222565_, p_222563_);
-        }
 
+
+    public boolean isRandomlyTicking(BlockState state) {
+        return state.getValue(DISTANCE) == 7 && !state.getValue(PERSISTENT)||state.getValue(AGE)==0;
+    }
+    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource randomSource) {
+        int i = state.getValue(AGE);
+        if (i < 1 && randomSource.nextInt(5)==0) {
+            BlockState blockstate = state.setValue(AGE, Integer.valueOf(i + 1));
+            level.setBlock(pos, blockstate, 2);
+            level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(blockstate));
+           // net.minecraftforge.common.ForgeHooks.onCropsGrowPost(level, p_222565_, state);
+        }
+        super.randomTick(state,level,pos,randomSource);
     }
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
         int i = state.getValue(AGE);
         boolean flag = i == 1;
        if (i ==1) {
             int j = 1 + level.random.nextInt(2);
-            popResource(level, pos.above(), new ItemStack(ItemAndBlockRegister.manderin.get(), j ));
+            popResource(level, pos.above(), new ItemStack(ItemAndBlockRegister.mandarin.get(), j ));
             level.playSound((Player)null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
             BlockState blockstate = state.setValue(AGE, Integer.valueOf(0));
             level.setBlock(pos, blockstate, 2);

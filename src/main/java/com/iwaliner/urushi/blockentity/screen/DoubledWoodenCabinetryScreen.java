@@ -64,18 +64,20 @@ public class DoubledWoodenCabinetryScreen  extends AbstractContainerScreen<Doubl
         RenderSystem.setShaderTexture(0, this.CONTAINER_BACKGROUND);
         int i = (this.width - this.imageWidth) / 2;
         int j = (this.height - this.imageHeight) / 2;
-        p_230450_1_.blit(CONTAINER_BACKGROUND, i, j, 0, 0, this.imageWidth, this.imageHeight,512,512);
-        if(isMouseOver(p_230450_3_,p_230450_4_)){
-            p_230450_1_.blit(CONTAINER_BACKGROUND, i+224, j+126, 0, 247, 70, 263,512,512);
-         }
-        if(UrushiUtils.isShogatsu()){
-            p_230450_1_.blit(CONTAINER_BACKGROUND, i+248, j+145, 310, 0, 32, 89,512,512);
-        }else if(UrushiUtils.isSetsubun()){
-            p_230450_1_.blit(CONTAINER_BACKGROUND, i+248, j+145, 343, 0, 32, 89,512,512);
-        }else if(UrushiUtils.isHigan()){
-            p_230450_1_.blit(CONTAINER_BACKGROUND, i+248, j+145, 376, 0, 32, 89,512,512);
-        }else if(UrushiUtils.isTanabata()){
-            p_230450_1_.blit(CONTAINER_BACKGROUND, i+248, j+145, 409, 0, 32, 89,512,512);
+        p_230450_1_.blit(CONTAINER_BACKGROUND, i, j, 0, 0, this.imageWidth, this.imageHeight, 512, 512);
+        if (isMouseOver(p_230450_3_, p_230450_4_)) {
+            p_230450_1_.blit(CONTAINER_BACKGROUND, i + 224, j + 126, 0, 247, 70, 263, 512, 512);
+        }
+        if (UrushiUtils.isJapanese()) {
+            if (UrushiUtils.isShogatsu()) {
+                p_230450_1_.blit(CONTAINER_BACKGROUND, i + 248, j + 145, 310, 0, 32, 89, 512, 512);
+            } else if (UrushiUtils.isSetsubun()) {
+                p_230450_1_.blit(CONTAINER_BACKGROUND, i + 248, j + 145, 343, 0, 32, 89, 512, 512);
+            } else if (UrushiUtils.isHigan()) {
+                p_230450_1_.blit(CONTAINER_BACKGROUND, i + 248, j + 145, 376, 0, 32, 89, 512, 512);
+            } else if (UrushiUtils.isTanabata()) {
+                p_230450_1_.blit(CONTAINER_BACKGROUND, i + 248, j + 145, 409, 0, 32, 89, 512, 512);
+            }
         }
     }
     public boolean mouseClicked(double x, double y, int p_99320_) {

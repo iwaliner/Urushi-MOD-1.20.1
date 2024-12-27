@@ -7,6 +7,7 @@ import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.commands.CommandFunction;
 import net.minecraft.commands.CommandSource;
@@ -282,6 +283,9 @@ public class UrushiUtils {
         guiGraphics.pose().scale(0.45F,0.45F,0.45F);
         guiGraphics.blit(new ResourceLocation(ModCoreUrushi.ModID,"textures/gui/"+textureName+".png"), width, height, 0, 0, 256, 256);
         guiGraphics.pose().popPose();
+    }
+    public static boolean isJapanese(){
+        return   Minecraft.getInstance().getLanguageManager().getSelected().equals("ja_jp");
     }
 
 }

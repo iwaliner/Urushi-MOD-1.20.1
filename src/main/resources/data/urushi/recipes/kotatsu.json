@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "WMW",
+    "W W"
+      ],
+  "key": {
+  
+   "W": {
+	"item": "minecraft:red_wool"
+    },
+    "M": {
+	"item": "urushi:magma_slab"
+    },
+    
+	 "P": {
+    "tag": "urushi:smooth_slabs"
+    }
+  },
+
+  "result": {
+    "item": "urushi:kotatsu",
+    "count": 1
+  }
+}

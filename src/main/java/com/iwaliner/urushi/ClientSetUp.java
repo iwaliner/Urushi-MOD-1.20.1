@@ -45,6 +45,7 @@ import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -92,6 +93,7 @@ public class ClientSetUp {
     public static final ModelLayerLocation RAMEN = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "ramen_food"), "ramen_food");
     public static final ModelLayerLocation MISO_SOUP = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "miso_soup_food"), "miso_soup_food");
     public static final ModelLayerLocation KAKURIYO_VILLAGER = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "kakuriyo_villager"), "kakuriyo_villager");
+    public static final ModelLayerLocation GREEN_TEA = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "green_tea_food"), "green_tea_food");
 
 
     public static KeyMapping connectionKey = new ToggleKeyMappingPlus("key.urushi.connectionKey", KeyConflictContext.IN_GAME, InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_C, "key.urushi.category");
@@ -149,6 +151,7 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.TonkotsuRamenFoodEntity.get(), TonkotsuRamenFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.MincedTunaBowlFoodEntity.get(), MincedTunaBowlFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.KakuriyoVillager.get(), KakuriyoVillagerRenderer::new);
+        event.registerEntityRenderer(EntityRegister.GreenTeaFoodEntity.get(), GreenTeaFoodRenderer::new);
     }
 
     /**エンティティのレイヤーを指定*/
@@ -169,6 +172,7 @@ public class ClientSetUp {
         event.registerLayerDefinition(RAMEN, RamenFoodModel::createBodyLayer);
         event.registerLayerDefinition(MISO_SOUP, MisoSoupFoodModel::createBodyLayer);
         event.registerLayerDefinition(KAKURIYO_VILLAGER, OniModel::createBodyLayer);
+        event.registerLayerDefinition(GREEN_TEA, GreenTeaFoodModel::createBodyLayer);
 
 
 
@@ -187,6 +191,8 @@ public class ClientSetUp {
         event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_sakura_leaves.get());
         event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block.get());
         event.register((stack, i) -> {return 13886461;},ItemAndBlockRegister.onsen_egg.get());
+        event.register((stack, i) -> {return event.getItemColors().getColor(new ItemStack(Items.OAK_LEAVES),0);},ItemAndBlockRegister.mandarin_leaves.get());
+
     }
     @SubscribeEvent
     public static void registerBlockColorEvent(RegisterColorHandlersEvent.Block event) {
@@ -202,6 +208,7 @@ public class ClientSetUp {
         event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block_with_fallen_sakura_leaves.get());
         event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageGrassColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.kakuriyo_grass_block.get());
         event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageWaterColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.rainwater_tank.get());
+        event.register((state, reader, pos, i) -> reader!=null&&pos!=null?BiomeColors.getAverageFoliageColor(Objects.requireNonNull(reader), Objects.requireNonNull(pos)):12300080,ItemAndBlockRegister.mandarin_leaves.get());
 
     }
     /**パーティクルの見た目を指定*/

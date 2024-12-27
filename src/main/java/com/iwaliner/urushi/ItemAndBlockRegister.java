@@ -775,6 +775,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> copper_giboshi =B("copper_giboshi","p",2,() -> {return new SimpleShapedBlock(Block.box(3.0D, 0.0D, 3.0D, 13.0D, 16.0D, 13.0D),BlockBehaviour.Properties.of().mapColor( MapColor.TERRACOTTA_CYAN).sound(SoundType.METAL).strength(0.5F, 30.0F).noOcclusion().requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> iron_giboshi =B("iron_giboshi","p",2,() -> {return new SimpleShapedBlock(Block.box(3.0D, 0.0D, 3.0D, 13.0D, 16.0D, 13.0D),BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.METAL).strength(0.5F, 30.0F).noOcclusion().requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> gold_giboshi =B("gold_giboshi","p",2,() -> {return new SimpleShapedBlock(Block.box(3.0D, 0.0D, 3.0D, 13.0D, 16.0D, 13.0D),BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.METAL).strength(0.5F, 30.0F).noOcclusion().requiresCorrectToolForDrops());});
+    public static final RegistryObject<Block> kotatsu =B("kotatsu","a",-1,() -> {return new KotatsuBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOL).strength(0.3F, 10.0F).noOcclusion());});
     public static final RegistryObject<Block> blank_fusuma =B("blank_fusuma","a",-1,() -> {return new SlideDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOD).strength(0.2F, 3.0F).noOcclusion());});
     public static final RegistryObject<Block> blue_seigaiha_fusuma =B("blue_seigaiha_fusuma","a",-1,() -> {return new SlideDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOD).strength(0.2F, 3.0F).noOcclusion());});
     public static final RegistryObject<Block> blue_sayagata_fusuma =B("blue_sayagata_fusuma","a",-1,() -> {return new SlideDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOD).strength(0.2F, 3.0F).noOcclusion());});
@@ -976,7 +977,8 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> hibachi =BF("hibachi","a",-1,() -> {return new HibachiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1F, 10.0F).sound(SoundType.WOOD).noOcclusion().lightLevel((p_235470_0_) -> {return 10;}));});
     public static final RegistryObject<Block> tea_bush =BF("tea_bush","h",-1,() -> {return new TeaBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.AZALEA).strength(0.3F, 1.0F).randomTicks());});
     public static final RegistryObject<Item> tea_leaf =IF("tea_leaf");
-    public static final RegistryObject<Item> green_tea =ITEMS.register("green_tea", () -> {return new TeaItem((new Item.Properties()).food(FoodUrushi.GreenTea));});
+
+    public static final RegistryObject<Item> green_tea =ITEMS.register("green_tea", () -> {return new TeaItem(()->EntityRegister.GreenTeaFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.GreenTea));});
 
     public static final RegistryObject<Block> unfired_shichirin =B("unfired_shichirin","s",-1,() -> {return new UnfinishedShichirinBlock(BlockBehaviour.Properties.of().mapColor( MapColor.TERRACOTTA_RED).sound(SoundType.ROOTED_DIRT).strength(0.4F, 10.0F));});
     public static final RegistryObject<Block> unfinished_shichirin =B("unfinished_shichirin","p",-1,() -> {return new UnfinishedShichirinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F, 10.0F).requiresCorrectToolForDrops());});
@@ -1060,6 +1062,10 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> inari =ITEMS.register("inari", () -> {return new PlaceableFoodItem(()->EntityRegister.InariFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Sushi));});
     public static final RegistryObject<Block> sushi_conveyor =BF("sushi_conveyor","a",-1,() -> {return new SushiConveyorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).strength(1.0F, 10.0F));});
     public static final RegistryObject<Item> minced_tuna_bowl =ITEMS.register("minced_tuna_bowl", () -> {return new PlaceableFoodItem(()->EntityRegister.MincedTunaBowlFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.TKG));});
+    public static final RegistryObject<Block> mandarin_sapling =BW("mandarin_sapling","a",-1,() -> {return new FlammableSaplingBlock(new MandarinTreeGrower(),BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.AZALEA_LEAVES).pushReaction(PushReaction.DESTROY).noCollission().instabreak().randomTicks());});
+    public static final RegistryObject<Block> mandarin_leaves =BW("mandarin_leaves","h",-1,() -> {return new BearingMandarinLeavesBlock(BlockBehaviour.Properties.of().strength(0.2F).randomTicks().sound(SoundType.AZALEA_LEAVES).mapColor(MapColor.COLOR_GREEN).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).ignitedByLava().pushReaction(PushReaction.DESTROY).isRedstoneConductor(ItemAndBlockRegister::never));});
+    public static final RegistryObject<Item> mandarin =IF("mandarin");
+    public static final RegistryObject<Item> mandarin_slice =ITEMS.register("mandarin_slice", () -> {return new Item((new Item.Properties()).food(FoodUrushi.MandarinSlice));});
     public static final RegistryObject<Block> plate =BF("plate","p",-1,() -> {return new PlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.GLASS).strength(0.5F, 10.0F));});
     public static final RegistryObject<Item> wood_chip =I("wood_chip");
     public static final RegistryObject<Item> gold_leaf =IW("gold_leaf");
@@ -1463,6 +1469,7 @@ public class ItemAndBlockRegister {
                 output.accept(milk_bamboo_cup.get());
                 output.accept(soy_source_cup.get());
                 output.accept(green_tea.get());
+                output.accept(mandarin_slice.get());
             })
             .build());
     public static final RegistryObject<CreativeModeTab> URUSHI_MAGIC_TAB = CREATIVE_TABS.register("urushi_magic", () -> CreativeModeTab.builder()

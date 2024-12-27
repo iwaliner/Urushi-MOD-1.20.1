@@ -2608,6 +2608,13 @@
    "block.urushi.black_silk_block": "黒色の絹布ブロック",
    "item.urushi.kakuriyo_villager_spawn_egg": "幽世<かくりよ>の村人のスポーンエッグ",
    "entity.urushi.kakuriyo_villager": "幽世<かくりよ>の村人",
-   "info.urushi.hibachi": "上に茶釜を置いて緑茶を作ろう"
+   "info.urushi.hibachi": "上に茶釜を置いて緑茶を作ろう",
+   "sound.urushi.urushi_advancements": "漆MODの進捗を達成する",
+   "entity.urushi.green_tea_food": "緑茶",
+   "item.urushi.mandarin": "みかん",
+   "item.urushi.mandarin_slice": "剥いたみかん",
+   "block.urushi.mandarin_sapling": "みかんの苗木",
+   "block.urushi.mandarin_leaves": "みかんの葉",
+   "block.urushi.kotatsu": "こたつ"
    
 }

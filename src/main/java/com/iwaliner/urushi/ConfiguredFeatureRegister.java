@@ -112,7 +112,7 @@ public class ConfiguredFeatureRegister {
     public static final ResourceKey<ConfiguredFeature<?, ?>> FALLEN_RED_LEAVES_KEY = registerKey("fallen_red_leaves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FALLEN_ORANGE_LEAVES_KEY = registerKey("fallen_orange_leaves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FALLEN_YELLOW_LEAVES_KEY = registerKey("fallen_yellow_leaves");
-
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MANDARIN_KEY = registerKey("mandarin");
 
 
 

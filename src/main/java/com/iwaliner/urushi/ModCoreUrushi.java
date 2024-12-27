@@ -252,6 +252,10 @@ public class ModCoreUrushi {
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.cypress_bark.get().asItem(),0.65F);
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.japanese_cedar_bark.get().asItem(),0.65F);
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.wood_chip.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.mandarin_leaves.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.mandarin_sapling.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.mandarin.get().asItem(),0.3F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.mandarin_slice.get().asItem(),0.1F);
 
 
 

@@ -24,6 +24,7 @@ public class FoodUrushi {
     public static final FoodProperties RiceBall = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.6F).alwaysEat().build();
     public static final FoodProperties RoastedRiceCake = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.8F).alwaysEat().build();
     public static final FoodProperties YomitsuheguiFruit = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.4F).alwaysEat().build();
+    public static final FoodProperties MandarinSlice = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.1F).alwaysEat().build();
     public static final FoodProperties LanternPlant = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.4F).alwaysEat().build();
     public static final FoodProperties SakuraMochi = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.8F).alwaysEat().build();
     public static final FoodProperties Ohagi = (new FoodProperties.Builder()).nutrition(7).saturationMod(0.8F).alwaysEat().build();

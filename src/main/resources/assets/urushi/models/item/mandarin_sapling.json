@@ -1,3 +1,7 @@
 {
-  "parent": "urushi:block/mandarin_sapling"
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "minecraft:block/oak_sapling",
+        "layer1": "urushi:block/mandarin_sapling"
+    }
 }
