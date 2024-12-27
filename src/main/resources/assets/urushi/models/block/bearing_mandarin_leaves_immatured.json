@@ -1,0 +1,32 @@
+{   "parent": "minecraft:block/leaves",
+"render_type": "minecraft:cutout",
+    "textures": {
+     "all": "minecraft:block/oak_leaves",
+     "fruit": "urushi:block/bearing_mandarin_leaves_immatured",
+        "particle": "#all"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "down" },
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "up" },
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "north" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "south" },
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "west" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "east" }
+            }
+        },
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#fruit",  "cullface": "down" },
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#fruit", "cullface": "up" },
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#fruit", "cullface": "north" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#fruit",  "cullface": "south" },
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#fruit",  "cullface": "west" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#fruit",  "cullface": "east" }
+            }
+        }
+    ]
+}

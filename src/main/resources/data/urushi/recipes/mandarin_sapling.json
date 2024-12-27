@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "minecraft:oak_sapling"
+
+
+
+    },
+
+
+
+    {
+
+
+
+       "item": "minecraft:glow_berries"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:mandarin_sapling",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}
