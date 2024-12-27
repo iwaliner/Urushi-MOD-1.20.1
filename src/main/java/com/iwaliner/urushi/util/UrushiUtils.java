@@ -196,7 +196,13 @@ public class UrushiUtils {
     }
 
     public static boolean isUrushiObject(String id){
+        if(id.isEmpty()){
+            return false;
+        }
         String[] strings=id.split("\\.");
+        if(strings.length<=1){
+            return false;
+        }
         return strings[1].equals("urushi");
     }
    public static boolean isSlab(Block block){

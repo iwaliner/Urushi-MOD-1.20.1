@@ -830,5 +830,10 @@ public class ModCoreUrushi {
 
 
     }
-
+    @SubscribeEvent
+    public void AdvancementEvent(AdvancementEvent.AdvancementProgressEvent event) {
+        if(event.getAdvancement().getDisplay()!=null&& UrushiUtils.isUrushiObject(event.getAdvancement().getDisplay().getTitle().toString())){
+              event.getEntity().playNotifySound(SoundRegister.UrushiAdvancements.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+        }
+    }
 }

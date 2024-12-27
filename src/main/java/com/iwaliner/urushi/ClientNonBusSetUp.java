@@ -15,6 +15,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
@@ -104,13 +105,7 @@ public class ClientNonBusSetUp {
     private static void renderHitOutline(PoseStack p_109638_, VertexConsumer p_109639_, Entity p_109640_, double p_109641_, double p_109642_, double p_109643_, BlockPos p_109644_, BlockState p_109645_) {
         renderShape(p_109638_, p_109639_, p_109645_.getShape(p_109640_.level(), p_109644_, CollisionContext.of(p_109640_)), (double)p_109644_.getX() - p_109641_, (double)p_109644_.getY() - p_109642_, (double)p_109644_.getZ() - p_109643_);
     }
-    @SubscribeEvent
-    public static void AdvancementEvent(AdvancementEvent.AdvancementProgressEvent event) {
-        if(event.getAdvancement().getDisplay()!=null&& UrushiUtils.isUrushiObject(event.getAdvancement().getDisplay().getTitle().toString())){
-            //   event.getEntity().playSound(SoundRegister.UrushiAdvancements.get(), 1.0F, 1.0F);
-            Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundRegister.UrushiAdvancements.get(), 1.0F, 1.0F));
-        }
-    }
+
     @SubscribeEvent
     public static void RenderGUIEvent(RenderGuiOverlayEvent event) {
         if(event.getOverlay()== VanillaGuiOverlay.HOTBAR.type()) {

@@ -2611,5 +2611,13 @@
    "block.urushi.black_silk_block": "Black Silk Cloth Block",
    "item.urushi.kakuriyo_villager_spawn_egg": "Kakuriyo Villager Spawn Egg",
    "entity.urushi.kakuriyo_villager": "Kakuriyo Villager",
-   "info.urushi.hibachi": "Put a Kettle above to make a green tea."
+   "info.urushi.hibachi": "Put a Kettle above to make a green tea.",
+   "sounds.urushi.urushi_advancements": "Achieved an advancement of Urushi",
+   "entity.urushi.green_tea_food": "Green Tea",
+   "item.urushi.mandarin": "Mandarin",
+   "entity.urushi.mandarin_food": "Mandarin",
+   "item.urushi.mandarin_slice": "Mandarin Slice",
+   "block.urushi.mandarin_sapling": "Mandarin Sapling",
+   "block.urushi.mandarin_leaves": "Mandarin Leaves",
+   "block.urushi.kotatsu": "Kotatsu"
 }

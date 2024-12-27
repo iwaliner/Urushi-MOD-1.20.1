@@ -1064,7 +1064,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> minced_tuna_bowl =ITEMS.register("minced_tuna_bowl", () -> {return new PlaceableFoodItem(()->EntityRegister.MincedTunaBowlFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.TKG));});
     public static final RegistryObject<Block> mandarin_sapling =BW("mandarin_sapling","a",-1,() -> {return new FlammableSaplingBlock(new MandarinTreeGrower(),BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.AZALEA_LEAVES).pushReaction(PushReaction.DESTROY).noCollission().instabreak().randomTicks());});
     public static final RegistryObject<Block> mandarin_leaves =BW("mandarin_leaves","h",-1,() -> {return new BearingMandarinLeavesBlock(BlockBehaviour.Properties.of().strength(0.2F).randomTicks().sound(SoundType.AZALEA_LEAVES).mapColor(MapColor.COLOR_GREEN).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).ignitedByLava().pushReaction(PushReaction.DESTROY).isRedstoneConductor(ItemAndBlockRegister::never));});
-    public static final RegistryObject<Item> mandarin =IF("mandarin");
+    public static final RegistryObject<Item> mandarin =ITEMS.register("mandarin", () -> {return new PlaceableFoodItem(()->EntityRegister.MandarinFoodEntity.get(),(new Item.Properties()));});
     public static final RegistryObject<Item> mandarin_slice =ITEMS.register("mandarin_slice", () -> {return new Item((new Item.Properties()).food(FoodUrushi.MandarinSlice));});
     public static final RegistryObject<Block> plate =BF("plate","p",-1,() -> {return new PlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.GLASS).strength(0.5F, 10.0F));});
     public static final RegistryObject<Item> wood_chip =I("wood_chip");
@@ -1469,6 +1469,7 @@ public class ItemAndBlockRegister {
                 output.accept(milk_bamboo_cup.get());
                 output.accept(soy_source_cup.get());
                 output.accept(green_tea.get());
+                output.accept(mandarin.get());
                 output.accept(mandarin_slice.get());
             })
             .build());
