@@ -431,7 +431,7 @@ public class ModCoreUrushi {
         Item item = event.getItemStack().getItem();
         Block block = Block.byItem(item);
         List<Component> tooltipList = event.getToolTip();
-
+        UrushiUtils.getFuriganaList(tooltipList,item,block);
         if (item instanceof ElementItem elementItem) {
             ElementType elementType = elementItem.getElementType();
             String item_id;

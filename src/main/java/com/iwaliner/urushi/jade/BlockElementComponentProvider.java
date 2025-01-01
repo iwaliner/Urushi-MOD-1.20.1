@@ -4,16 +4,22 @@ import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
+import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.Vec2;
 import snownee.jade.api.BlockAccessor;
 import snownee.jade.api.IBlockComponentProvider;
 import snownee.jade.api.ITooltip;
 import snownee.jade.api.config.IPluginConfig;
 import snownee.jade.api.ui.IElement;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public enum BlockElementComponentProvider implements IBlockComponentProvider {
     INSTANCE;
@@ -34,6 +40,13 @@ public enum BlockElementComponentProvider implements IBlockComponentProvider {
         }
         if(ElementUtils.isWaterElement(accessor.getBlockState())){
             tooltip.append(ElementUtils.getIconComponent(ElementType.WaterElement));
+        }
+        Item item= Item.byBlock(accessor.getBlock());
+        Block block=accessor.getBlock();
+        List<Component> list=new ArrayList<>();
+        UrushiUtils.getFuriganaList(list,item,block);
+        for(Component component : list){
+            tooltip.add(component);
         }
     }
 

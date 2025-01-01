@@ -119,9 +119,9 @@ public abstract class AbstractContainerMixin {
 
         graphics.pose().popPose();
     }
-    @Inject(method = "renderSlot",at = @At("HEAD"), cancellable = true)
+   /* @Inject(method = "renderSlot",at = @At("HEAD"), cancellable = true)
     private void renderSlotInject(GuiGraphics p_281607_, Slot p_282613_, CallbackInfo ci){
         ci.cancel();
     }
-
+*/
 }

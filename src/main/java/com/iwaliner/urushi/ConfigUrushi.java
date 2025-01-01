@@ -24,6 +24,7 @@ public final class ConfigUrushi {
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableSaltAndSandGeneration;
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableCropDropsFromGrass;
     public static final ForgeConfigSpec.ConfigValue<Boolean> noticeNewerVersion;
+    public static final ForgeConfigSpec.ConfigValue<Boolean> indicateFurigana;
 
     static {
         builder.push("block settings");
@@ -36,6 +37,7 @@ public final class ConfigUrushi {
         builder.push("item settings");
         reiryokuCapacityOfMagatama=builder.comment("max Reiryoku amount of Magatama").define("magatama(1～2147483647)",5600);
         disableBlockElementDisplaying=builder.comment("disable displaying block element on item toolchip").define("disable displaying block element(true/false)",false);
+        indicateFurigana=builder.comment("indicate furigana when the language setting is Japanese").define("indicate furigana(true/false)",true);
         builder.pop();
         builder.push("blockentity settings");
         shichirinIconAmount=builder.comment("half number of square icons of Shichirin").define("Shichirin icon(1～2147483647)",6);

@@ -1,5 +1,6 @@
 package com.iwaliner.urushi.util;
 
+import com.iwaliner.urushi.ConfigUrushi;
 import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.block.HorizonalRotateSlabBlock;
@@ -44,6 +45,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.awt.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -191,7 +193,13 @@ public class UrushiUtils {
         return rotateSimpleBoxShapeHorizontally(baseShape,angle);
     }
     public static boolean isMinecraftObject(String id){
+        if(id.isEmpty()){
+            return false;
+        }
         String[] strings=id.split("\\.");
+        if(strings.length<=1){
+            return false;
+        }
         return strings[1].equals("minecraft");
     }
 
@@ -293,5 +301,136 @@ public class UrushiUtils {
     public static boolean isJapanese(){
         return   Minecraft.getInstance().getLanguageManager().getSelected().equals("ja_jp");
     }
-
+    public static void getFuriganaList(List<Component> tooltipList,Item item,Block block){
+        if(UrushiUtils.isJapanese()&& ConfigUrushi.indicateFurigana.get()) {
+            if (item == ItemAndBlockRegister.cupric_oxide_kawara.get()||block == ItemAndBlockRegister.cupric_oxide_kawara_block.get()||block == ItemAndBlockRegister.cupric_oxide_kawara_slab.get()||block == ItemAndBlockRegister.cupric_oxide_kawara_stairs.get()||block == ItemAndBlockRegister.cupric_oxide_kawara_wall.get()||block == ItemAndBlockRegister.cupric_oxide_kawara_roof_45.get()||block == ItemAndBlockRegister.cupric_oxide_kawara_roof_225.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.ryokusyou");
+            }else if (item == ItemAndBlockRegister.blue_kawara.get()||block == ItemAndBlockRegister.blue_kawara_block.get()||block == ItemAndBlockRegister.blue_kawara_slab.get()||block == ItemAndBlockRegister.blue_kawara_stairs.get()||block == ItemAndBlockRegister.blue_kawara_wall.get()||block == ItemAndBlockRegister.blue_kawara_roof_45.get()||block == ItemAndBlockRegister.blue_kawara_roof_225.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.seiroku");
+            }else if (block == ItemAndBlockRegister.thatched_block.get()||block == ItemAndBlockRegister.thatched_slab.get()||block == ItemAndBlockRegister.thatched_stairs.get()||block == ItemAndBlockRegister.thatched_roof_45.get()||block == ItemAndBlockRegister.thatched_roof_225.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kaya");
+            }else if (block == ItemAndBlockRegister.hiwadabuki_block.get()||block == ItemAndBlockRegister.hiwadabuki_slab.get()||block == ItemAndBlockRegister.hiwadabuki_stairs.get()||block == ItemAndBlockRegister.hiwadabuki_roof_45.get()||block == ItemAndBlockRegister.hiwadabuki_roof_225.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.hiwada");
+            }else if (block == ItemAndBlockRegister.green_tatami_carpet.get()||block == ItemAndBlockRegister.brown_tatami_carpet.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.goza");
+            }else if (block == ItemAndBlockRegister.rough_stone.get()||block == ItemAndBlockRegister.rough_stone_slab.get()||block == ItemAndBlockRegister.rough_stone_stairs.get()||block == ItemAndBlockRegister.rough_stone_wall.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.nozura");
+            }else if (block == ItemAndBlockRegister.wooden_cabinetry_slab.get()||block == ItemAndBlockRegister.wooden_cabinetry.get()||block == ItemAndBlockRegister.doubled_wooden_cabinetry.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.tansu");
+            }else if (block == ItemAndBlockRegister.andon.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.andon");
+            }else if (block == ItemAndBlockRegister.ariake_andon.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.ariake_andon");
+            }else if (block == ItemAndBlockRegister.kasuga_lantern.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kasuga_tourou");
+            }else if (block == ItemAndBlockRegister.long_chochin.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.chochin");
+            }else if (block == ItemAndBlockRegister.copper_giboshi.get()||block == ItemAndBlockRegister.iron_giboshi.get()||block == ItemAndBlockRegister.gold_giboshi.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.giboshi");
+            }else if (block == ItemAndBlockRegister.blank_fusuma.get()||block == ItemAndBlockRegister.blank_antique_fusuma.get()||block == ItemAndBlockRegister.landscape_fusuma.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.fusuma");
+            }else if (block == ItemAndBlockRegister.blue_sayagata_fusuma.get()||block == ItemAndBlockRegister.red_sayagata_fusuma.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.fusuma");
+                UrushiUtils.setInfo(tooltipList, "furigana.sayagata");
+            }else if (block == ItemAndBlockRegister.blue_seigaiha_fusuma.get()||block == ItemAndBlockRegister.red_seigaiha_fusuma.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.fusuma");
+                UrushiUtils.setInfo(tooltipList, "furigana.seigaiha");
+            }else if (block == ItemAndBlockRegister.cyan_noren.get()||block == ItemAndBlockRegister.magenta_noren.get()||block == ItemAndBlockRegister.red_noren.get()||block == ItemAndBlockRegister.deep_blue_noren.get()||block == ItemAndBlockRegister.sushi_noren.get()||block == ItemAndBlockRegister.men_onsen_noren.get()||block == ItemAndBlockRegister.women_onsen_noren.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.noren");
+            }else if (block == ItemAndBlockRegister.rainwater_tank.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.tensuioke");
+            }else if (block == ItemAndBlockRegister.silkworm.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kaiko");
+            }else if (block == ItemAndBlockRegister.silkworm_farm.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.yousan");
+            }else if (item == ItemAndBlockRegister.cocoon.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.mayu");
+            }else if (item == ItemAndBlockRegister.silk_thread.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kinuito");
+            }else if (item == ItemAndBlockRegister.silk.get()||block == ItemAndBlockRegister.silk_block.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kempu");
+            }else if (block == ItemAndBlockRegister.kakuriyo_dirt.get()||block == ItemAndBlockRegister.kakuriyo_grass_block.get()||block == ItemAndBlockRegister.kakuriyo_portal.get()||block == ItemAndBlockRegister.kakuriyo_portal_core.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kakuriyo");
+            }else if (block == ItemAndBlockRegister.yomi_stone.get()||block == ItemAndBlockRegister.cobbled_yomi_stone.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.yomi");
+            }else if (block == ItemAndBlockRegister.jadeite_ore.get()||item == ItemAndBlockRegister.jadeite.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.hisui");
+            }else if (block == ItemAndBlockRegister.lycoris.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.manjusyage");
+            }else if (item == ItemAndBlockRegister.hammer.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kanazuchi");
+            }else if (block == ItemAndBlockRegister.sikkui.get()||block == ItemAndBlockRegister.sikkui_slab.get()||block == ItemAndBlockRegister.sikkui_stairs.get()||block == ItemAndBlockRegister.sikkui_bars.get()||block == ItemAndBlockRegister.vertical_sikkui_slab.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.shikkui");
+            }else if (block == ItemAndBlockRegister.namako.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.namako");
+            }else if (item == ItemAndBlockRegister.raw_urushi_ball.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kiurushi");
+            }else if (item == ItemAndBlockRegister.red_urushi_ball.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.syuurushi");
+            }else if (item == ItemAndBlockRegister.black_urushi_ball.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kurourushi");
+            }else if (block == ItemAndBlockRegister.oak_shitamiita.get()||block == ItemAndBlockRegister.spruce_shitamiita.get()||block == ItemAndBlockRegister.birch_shitamiita.get()||block == ItemAndBlockRegister.jungle_shitamiita.get()||block == ItemAndBlockRegister.acacia_shitamiita.get()||block == ItemAndBlockRegister.dark_oak_shitamiita.get()||block == ItemAndBlockRegister.japanese_apricot_shitamiita.get()||block == ItemAndBlockRegister.sakura_shitamiita.get()||block == ItemAndBlockRegister.cypress_shitamiita.get()||block == ItemAndBlockRegister.japanese_cedar_shitamiita.get()||block == ItemAndBlockRegister.red_urushi_shitamiita.get()||block == ItemAndBlockRegister.black_urushi_shitamiita.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.shitamiita");
+            }else if (block == ItemAndBlockRegister.oak_parapet.get()||block == ItemAndBlockRegister.spruce_parapet.get()||block == ItemAndBlockRegister.birch_parapet.get()||block == ItemAndBlockRegister.jungle_parapet.get()||block == ItemAndBlockRegister.acacia_parapet.get()||block == ItemAndBlockRegister.dark_oak_parapet.get()||block == ItemAndBlockRegister.japanese_apricot_parapet.get()||block == ItemAndBlockRegister.sakura_parapet.get()||block == ItemAndBlockRegister.cypress_parapet.get()||block == ItemAndBlockRegister.japanese_cedar_parapet.get()||block == ItemAndBlockRegister.red_urushi_parapet.get()||block == ItemAndBlockRegister.black_urushi_parapet.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.rankan");
+            }else if (block == ItemAndBlockRegister.oak_fushiranma.get()||block == ItemAndBlockRegister.spruce_fushiranma.get()||block == ItemAndBlockRegister.birch_fushiranma.get()||block == ItemAndBlockRegister.jungle_fushiranma.get()||block == ItemAndBlockRegister.acacia_fushiranma.get()||block == ItemAndBlockRegister.dark_oak_fushiranma.get()||block == ItemAndBlockRegister.japanese_apricot_fushiranma.get()||block == ItemAndBlockRegister.sakura_fushiranma.get()||block == ItemAndBlockRegister.cypress_fushiranma.get()||block == ItemAndBlockRegister.japanese_cedar_fushiranma.get()||block == ItemAndBlockRegister.red_urushi_fushiranma.get()||block == ItemAndBlockRegister.black_urushi_fushiranma.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.takebushiramma");
+            }else if (block == ItemAndBlockRegister.oak_board_window.get()||block == ItemAndBlockRegister.spruce_board_window.get()||block == ItemAndBlockRegister.birch_board_window.get()||block == ItemAndBlockRegister.jungle_board_window.get()||block == ItemAndBlockRegister.acacia_board_window.get()||block == ItemAndBlockRegister.dark_oak_board_window.get()||block == ItemAndBlockRegister.japanese_apricot_board_window.get()||block == ItemAndBlockRegister.sakura_board_window.get()||block == ItemAndBlockRegister.cypress_board_window.get()||block == ItemAndBlockRegister.japanese_cedar_board_window.get()||block == ItemAndBlockRegister.red_urushi_board_window.get()||block == ItemAndBlockRegister.black_urushi_board_window.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.musourenji");
+            }else if (block == ItemAndBlockRegister.cypress_log.get()||block == ItemAndBlockRegister.cypress_sapling.get()||block == ItemAndBlockRegister.cypress_leaves.get()||block == ItemAndBlockRegister.cypress_planks.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.hinoki");
+            }else if (block == ItemAndBlockRegister.lacquer_sapling.get()||block == ItemAndBlockRegister.lacquer_leaves.get()||block == ItemAndBlockRegister.lacquer_log.get()||block == ItemAndBlockRegister.chiseled_lacquer_log.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.urushi");
+            }else if (block == ItemAndBlockRegister.oak_shoji_pane.get()||block == ItemAndBlockRegister.spruce_shoji_pane.get()||block == ItemAndBlockRegister.birch_shoji_pane.get()||block == ItemAndBlockRegister.jungle_shoji_pane.get()||block == ItemAndBlockRegister.acacia_shoji_pane.get()||block == ItemAndBlockRegister.dark_oak_shoji_pane.get()||block == ItemAndBlockRegister.japanese_apricot_shoji_pane.get()||block == ItemAndBlockRegister.sakura_shoji_pane.get()||block == ItemAndBlockRegister.cypress_shoji_pane.get()||block == ItemAndBlockRegister.japanese_cedar_shoji_pane.get()||block == ItemAndBlockRegister.red_urushi_shoji_pane.get()||block == ItemAndBlockRegister.black_urushi_shoji_pane.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.ramma_shoji");
+            }else if (block == ItemAndBlockRegister.oak_shoji.get()||block == ItemAndBlockRegister.spruce_shoji.get()||block == ItemAndBlockRegister.birch_shoji.get()||block == ItemAndBlockRegister.jungle_shoji.get()||block == ItemAndBlockRegister.acacia_shoji.get()||block == ItemAndBlockRegister.dark_oak_shoji.get()||block == ItemAndBlockRegister.japanese_apricot_shoji.get()||block == ItemAndBlockRegister.sakura_shoji.get()||block == ItemAndBlockRegister.cypress_shoji.get()||block == ItemAndBlockRegister.japanese_cedar_shoji.get()||block == ItemAndBlockRegister.red_urushi_shoji.get()||block == ItemAndBlockRegister.black_urushi_shoji.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.shoji_do");
+            }else if (block == ItemAndBlockRegister.petrified_log.get()||block == ItemAndBlockRegister.petrified_planks.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.keikaboku");
+            }else if (block == ItemAndBlockRegister.petrified_log_with_wood_amber.get()||block == ItemAndBlockRegister.petrified_log_with_fire_amber.get()||block == ItemAndBlockRegister.petrified_log_with_earth_amber.get()||block == ItemAndBlockRegister.petrified_log_with_metal_amber.get()||block == ItemAndBlockRegister.petrified_log_with_water_amber.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kohaku");
+                UrushiUtils.setInfo(tooltipList, "furigana.keikaboku");
+            }else if (block == ItemAndBlockRegister.shichirin.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.shichirin");
+            }else if (block == ItemAndBlockRegister.sanbo_tier1.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.sanbo");
+            }else if (block == ItemAndBlockRegister.wood_element_tank_tier1.get()||block == ItemAndBlockRegister.fire_element_tank_tier1.get()||block == ItemAndBlockRegister.earth_element_tank_tier1.get()||block == ItemAndBlockRegister.metal_element_tank_tier1.get()||block == ItemAndBlockRegister.water_element_tank_tier1.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.onusa");
+            }else if (block == ItemAndBlockRegister.wood_element_hokora.get()||block == ItemAndBlockRegister.fire_element_hokora.get()||block == ItemAndBlockRegister.earth_element_hokora.get()||block == ItemAndBlockRegister.metal_element_hokora.get()||block == ItemAndBlockRegister.water_element_hokora.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.hokora");
+            }else if (item == ItemAndBlockRegister.liana_jufu_stamp.get()||item == ItemAndBlockRegister.liana_jufu.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.tsuta");
+            }else if (item == ItemAndBlockRegister.fluid_erasion_jufu_stamp.get()||item == ItemAndBlockRegister.fluid_erasion_jufu.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kambatsu");
+            }else if (item == ItemAndBlockRegister.spike_jufu_stamp.get()||item == ItemAndBlockRegister.spike_jufu.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.toge");
+            }else if (item == ItemAndBlockRegister.close_wagasa.get()||item == ItemAndBlockRegister.open_wagasa.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.janomegasa");
+            }else if (item == ItemAndBlockRegister.shide.get()||item == ItemAndBlockRegister.wood_element_paper.get()||item == ItemAndBlockRegister.fire_element_paper.get()||item == ItemAndBlockRegister.earth_element_paper.get()||item == ItemAndBlockRegister.metal_element_paper.get()||item == ItemAndBlockRegister.water_element_paper.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.shide");
+            }else if (item == ItemAndBlockRegister.wood_element_magatama.get()||item == ItemAndBlockRegister.fire_element_magatama.get()||item == ItemAndBlockRegister.earth_element_magatama.get()||item == ItemAndBlockRegister.metal_element_magatama.get()||item == ItemAndBlockRegister.water_element_magatama.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.magatama");
+            }else if (item == ItemAndBlockRegister.wood_amber.get()||item == ItemAndBlockRegister.fire_amber.get()||item == ItemAndBlockRegister.earth_amber.get()||item == ItemAndBlockRegister.metal_amber.get()||item == ItemAndBlockRegister.water_amber.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kohaku");
+            }else if (item == ItemAndBlockRegister.amber_igniter.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.hiuchigane");
+            }else if (block == ItemAndBlockRegister.oil_extractor.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.assakuki");
+            }else if (block == ItemAndBlockRegister.rice_crop.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.momi");
+            }else if (item == ItemAndBlockRegister.kanten_powder.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.kanten");
+            }else if (item == ItemAndBlockRegister.rice_malt.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.komekouji");
+            }else if (item == ItemAndBlockRegister.yokan.get()||item == ItemAndBlockRegister.sakura_yokan.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.yokan");
+            }else if (item == ItemAndBlockRegister.hiyayakko.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.hiyayakko");
+            }else if (item == ItemAndBlockRegister.so.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.so");
+            }else if (item == ItemAndBlockRegister.sweetfish.get()||item == ItemAndBlockRegister.sweetfish_with_salt.get()||item == ItemAndBlockRegister.cooked_sweetfish.get()||item == ItemAndBlockRegister.cooked_sweetfish_with_salt.get()) {
+                UrushiUtils.setInfo(tooltipList, "furigana.ayu");
+            }
+        }
+    }
 }
