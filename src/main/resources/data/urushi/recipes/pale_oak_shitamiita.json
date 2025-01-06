@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+     "tag": "minecraft:planks"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_pale_oak_slab"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:pale_oak_shitamiita",
+
+
+
+    "count": 2
+
+
+
+  }
+
+
+
+}

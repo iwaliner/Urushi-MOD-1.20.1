@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:black_plaster"
+    },
+    {
+      "item": "urushi:crimson_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:crimson_framed_black_plaster",
+    "count": 2
+  }
+}

@@ -1,0 +1,61 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "W W",
+
+
+
+    "W W"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "W": {
+
+
+
+      "item": "urushi:smooth_pale_oak_planks"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:pale_oak_bars",
+
+
+
+    "count": 16
+
+
+
+  }
+
+
+
+}

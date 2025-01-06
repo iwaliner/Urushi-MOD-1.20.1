@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "urushi:block/shitamiita_warped",
+        "top": "urushi:block/shitamiita_warped",
+        "side": "urushi:block/shitamiita_warped"
+    }
+}

@@ -1,0 +1,45 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_warped_planks"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "minecraft:warped_planks",
+
+
+
+      "count": 1
+
+
+
+  }
+
+
+
+}

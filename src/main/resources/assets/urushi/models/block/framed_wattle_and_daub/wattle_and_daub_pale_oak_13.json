@@ -1,0 +1,12 @@
+{
+    "parent": "urushi:block/wood_frame_base",
+    "textures": {
+        "base": "urushi:block/dirt_wall",
+        "down": "urushi:block/dirt_wall",
+        "up": "urushi:block/planks_smooth_pale_oak",
+        "north": "urushi:block/dirt_wall",
+        "east": "urushi:block/connectable/wood_frame/plaster_pale_oak_13",
+        "south": "urushi:block/connectable/wood_frame/plaster_pale_oak_14",
+        "west": "urushi:block/dirt_wall"
+    }
+}

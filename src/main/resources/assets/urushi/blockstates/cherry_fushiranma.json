@@ -1,0 +1,37 @@
+{
+
+  "variants": {
+
+    "facing=east": {
+
+      "model": "urushi:block/fushiranma_cherry",
+
+      "y": 270
+
+    },
+
+    "facing=north": {
+
+      "model": "urushi:block/fushiranma_cherry",
+
+      "y": 180
+
+    },
+
+    "facing=south": {
+
+      "model": "urushi:block/fushiranma_cherry"
+
+    },
+
+    "facing=west": {
+
+      "model": "urushi:block/fushiranma_cherry",
+
+      "y": 90
+
+    }
+
+  }
+
+}

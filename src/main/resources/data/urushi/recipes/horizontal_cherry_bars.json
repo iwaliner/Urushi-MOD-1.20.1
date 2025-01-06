@@ -1,0 +1,49 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:cherry_bars"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:horizontal_cherry_bars",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

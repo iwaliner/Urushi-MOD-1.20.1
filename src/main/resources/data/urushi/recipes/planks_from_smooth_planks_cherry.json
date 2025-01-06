@@ -1,0 +1,45 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_cherry_planks"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "minecraft:cherry_planks",
+
+
+
+      "count": 1
+
+
+
+  }
+
+
+
+}

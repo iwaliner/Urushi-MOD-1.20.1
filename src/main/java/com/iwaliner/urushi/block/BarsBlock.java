@@ -80,7 +80,6 @@ public class BarsBlock extends HorizonalRotateBlock implements SimpleWaterlogged
     public boolean connectsToByFacing(BlockState thisState, Direction direction, LevelAccessor world, BlockPos pos) {
 
         BlockState nextState=world.getBlockState(pos.relative(direction));
-
         return nextState.getBlock() instanceof BarsBlock;
     }
     private BooleanProperty getProperty(Direction direction){
@@ -95,13 +94,8 @@ public class BarsBlock extends HorizonalRotateBlock implements SimpleWaterlogged
     @Override
     public BlockState updateShape(BlockState state1, Direction facing, BlockState state2, LevelAccessor world, BlockPos pos1, BlockPos pos2) {
 
-
-        /*return super.updateShape(state1, facing, state2, world, pos1, pos2).setValue(NORTH,(!world.getBlockState(pos1.north()).isAir() && !world.getFluidState(pos1.north()).is(Fluids.WATER) && state1.getValue(NORTH))|| this.connectsToByFacing(state1, Direction.NORTH, world, pos1))
-                .setValue(EAST,(!world.getBlockState(pos1.east()).isAir() && !world.getFluidState(pos1.east()).is(Fluids.WATER) && state1.getValue(EAST))|| this.connectsToByFacing(state1, Direction.EAST, world, pos1))
-                .setValue(SOUTH, (!world.getBlockState(pos1.south()).isAir() && !world.getFluidState(pos1.south()).is(Fluids.WATER) && state1.getValue(SOUTH)) ||this.connectsToByFacing(state1, Direction.SOUTH, world, pos1))
-                .setValue(WEST, (!world.getBlockState(pos1.west()).isAir() && !world.getFluidState(pos1.west()).is(Fluids.WATER) && state1.getValue(WEST)) ||this.connectsToByFacing(state1, Direction.WEST, world, pos1));
-*/
-        if(facing.getAxis() != Direction.Axis.Y) {
+        VoxelShape shape = state2.getCollisionShape(world, pos2).optimize();
+        if(facing.getAxis() != Direction.Axis.Y&&!shape.isEmpty()) {
             return super.updateShape(state1, facing, state2, world, pos1, pos2).setValue(getProperty(facing), true);
         }
         return super.updateShape(state1, facing, state2, world, pos1, pos2);

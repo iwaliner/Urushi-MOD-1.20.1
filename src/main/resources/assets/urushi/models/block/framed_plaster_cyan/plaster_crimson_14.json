@@ -1,0 +1,12 @@
+{
+    "parent": "urushi:block/wood_frame_base",
+    "textures": {
+        "base": "urushi:block/plaster_cyan",
+        "down": "urushi:block/plaster_cyan",
+        "up": "urushi:block/planks_smooth_crimson",
+        "north": "urushi:block/plaster_cyan",
+        "east": "urushi:block/connectable/wood_frame/plaster_crimson_13",
+        "south": "urushi:block/connectable/wood_frame/plaster_crimson_14",
+        "west": "urushi:block/plaster_cyan"
+    }
+}

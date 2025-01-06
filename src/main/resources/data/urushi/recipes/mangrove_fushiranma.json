@@ -1,0 +1,73 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "W#W",
+
+
+
+    "W#W"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+      "tag": "forge:rods/wooden"
+
+
+
+    },
+
+
+
+    "W": {
+
+
+
+      "item": "urushi:smooth_mangrove_slab"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:mangrove_fushiranma",
+
+
+
+    "count": 3
+
+
+
+  }
+
+
+
+}

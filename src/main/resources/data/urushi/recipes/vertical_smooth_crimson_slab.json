@@ -1,0 +1,53 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+   "W",
+   "W",
+   "W"
+  ],
+
+
+
+  "key": {
+
+
+
+    "W": {
+
+
+
+      "item": "urushi:smooth_crimson_planks"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:vertical_smooth_crimson_slab",
+
+
+
+    "count": 6
+
+
+
+  }
+
+
+
+}

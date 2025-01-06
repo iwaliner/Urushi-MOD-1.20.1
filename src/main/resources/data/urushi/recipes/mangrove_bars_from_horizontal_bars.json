@@ -1,0 +1,49 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+   
+
+
+
+    {
+
+
+
+      "item": "urushi:horizontal_mangrove_bars"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:mangrove_bars",
+
+
+
+    "count": 1
+
+
+
+  }
+
+
+
+}

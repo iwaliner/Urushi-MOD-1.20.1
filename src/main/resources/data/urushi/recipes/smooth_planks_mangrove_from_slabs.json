@@ -1,0 +1,57 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_mangrove_slab"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_mangrove_slab"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:smooth_mangrove_planks",
+
+
+
+      "count": 1
+
+
+
+  }
+
+
+
+}

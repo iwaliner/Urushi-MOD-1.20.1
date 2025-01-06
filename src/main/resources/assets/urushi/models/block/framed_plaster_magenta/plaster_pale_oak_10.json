@@ -1,0 +1,12 @@
+{
+    "parent": "urushi:block/wood_frame_base",
+    "textures": {
+        "base": "urushi:block/plaster_magenta",
+        "down": "urushi:block/plaster_magenta",
+        "up": "urushi:block/planks_smooth_pale_oak",
+        "north": "urushi:block/plaster_magenta",
+        "east": "urushi:block/connectable/wood_frame/plaster_pale_oak_8",
+        "south": "urushi:block/plaster_magenta",
+        "west": "urushi:block/connectable/wood_frame/plaster_pale_oak_8"
+    }
+}

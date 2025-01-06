@@ -1,0 +1,41 @@
+{
+
+
+
+  "type": "urushi:polishing",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+     "item": "minecraft:crimson_stairs"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"urushi:smooth_crimson_stairs"
+
+
+
+  }
+
+
+
+}

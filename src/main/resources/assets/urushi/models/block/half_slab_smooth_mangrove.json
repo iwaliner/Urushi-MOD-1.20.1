@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "urushi:block/planks_smooth_mangrove",
+        "top": "urushi:block/planks_smooth_mangrove",
+        "side": "urushi:block/planks_smooth_mangrove"
+    }
+}

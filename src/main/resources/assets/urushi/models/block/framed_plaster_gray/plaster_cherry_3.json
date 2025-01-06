@@ -1,0 +1,12 @@
+{
+    "parent": "urushi:block/wood_frame_base",
+    "textures": {
+        "base": "urushi:block/plaster_gray",
+        "down": "urushi:block/plaster_gray",
+        "up": "urushi:block/plaster_gray",
+        "north": "urushi:block/connectable/wood_frame/plaster_cherry_3",
+        "east": "urushi:block/connectable/wood_frame/plaster_cherry_3",
+        "south": "urushi:block/connectable/wood_frame/plaster_cherry_3",
+        "west": "urushi:block/connectable/wood_frame/plaster_cherry_3"
+    }
+}

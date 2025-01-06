@@ -1,0 +1,73 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "pattern": [
+
+
+
+    "W#W",
+
+
+
+    "W#W"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+      "tag": "forge:rods/wooden"
+
+
+
+    },
+
+
+
+    "W": {
+
+
+
+      "item": "urushi:smooth_pale_oak_slab"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:pale_oak_fushiranma",
+
+
+
+    "count": 3
+
+
+
+  }
+
+
+
+}

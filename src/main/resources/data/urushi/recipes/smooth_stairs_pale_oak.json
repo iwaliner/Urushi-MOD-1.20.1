@@ -1,0 +1,69 @@
+{
+
+
+
+  "type": "minecraft:crafting_shaped",
+
+
+
+  "group": "wooden_stairs",
+
+
+
+  "pattern": [
+
+
+
+    "#  ",
+
+
+
+    "## ",
+
+
+
+    "###"
+
+
+
+  ],
+
+
+
+  "key": {
+
+
+
+    "#": {
+
+
+
+      "item": "urushi:smooth_pale_oak_planks"
+
+
+
+    }
+
+
+
+  },
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:smooth_pale_oak_stairs",
+
+
+
+    "count": 4
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "urushi:block/wood_frame_base",
+    "textures": {
+        "base": "urushi:block/plaster_purple",
+        "down": "urushi:block/plaster_purple",
+        "up": "urushi:block/planks_smooth_mangrove",
+        "north": "urushi:block/plaster_purple",
+        "east": "urushi:block/connectable/wood_frame/plaster_mangrove_8",
+        "south": "urushi:block/plaster_purple",
+        "west": "urushi:block/connectable/wood_frame/plaster_mangrove_8"
+    }
+}

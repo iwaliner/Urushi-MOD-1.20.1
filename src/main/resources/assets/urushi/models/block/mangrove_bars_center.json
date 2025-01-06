@@ -1,0 +1,7 @@
+{
+    "parent": "urushi:block/bars_center_base",
+    "textures": {
+       "0": "urushi:block/planks_smooth_mangrove",
+		"particle": "urushi:block/planks_smooth_mangrove"
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:yellow_plaster"
+    },
+    {
+      "item": "urushi:cherry_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:cherry_framed_yellow_plaster",
+    "count": 2
+  }
+}

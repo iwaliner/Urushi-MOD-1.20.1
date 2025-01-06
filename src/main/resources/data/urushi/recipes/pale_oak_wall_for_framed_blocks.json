@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+    "item": "urushi:smooth_pale_oak_slab"
+    }
+  ],
+  "result": {
+  "item": "urushi:pale_oak_wall_for_framed_blocks",
+"count": 4
+  }
+}

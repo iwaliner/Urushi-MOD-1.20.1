@@ -1,0 +1,57 @@
+{
+
+
+
+  "type": "minecraft:crafting_shapeless",
+
+
+
+  "ingredients": [
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_crimson_slab"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "item": "urushi:smooth_crimson_slab"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+    "item": "urushi:smooth_crimson_planks",
+
+
+
+      "count": 1
+
+
+
+  }
+
+
+
+}
