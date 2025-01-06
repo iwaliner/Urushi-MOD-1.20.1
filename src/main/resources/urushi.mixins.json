@@ -12,7 +12,6 @@
     "WeatherCommandMixin"
   ],
   "client": [
-    "AbstractContainerMixin",
     "LevelRendererMixin"
   ],
   "injectors": {

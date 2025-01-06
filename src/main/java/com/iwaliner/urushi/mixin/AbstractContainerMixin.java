@@ -1,5 +1,6 @@
 package com.iwaliner.urushi.mixin;
 
+import com.iwaliner.urushi.MenuRegister;
 import com.iwaliner.urushi.block.SlideDoorBlock;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.ChatFormatting;
@@ -9,6 +10,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ChestMenu;
+import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.IronBarsBlock;
@@ -24,10 +27,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import javax.annotation.Nullable;
 import java.util.Set;
 
-@Mixin(AbstractContainerScreen.class)
+/*@Mixin(AbstractContainerScreen.class)*/
 
 public abstract class AbstractContainerMixin {
-    @Shadow @Final protected AbstractContainerMenu menu;
+  /*  @Shadow @Final protected AbstractContainerMenu menu;
     @Shadow @Nullable private Slot clickedSlot;
 
     @Shadow private ItemStack draggingItem;
@@ -49,22 +52,24 @@ public abstract class AbstractContainerMixin {
 
     @Shadow protected int topPos;
 
+
     @Inject(method = "render",at = @At("TAIL"), cancellable = true)
     private void renderInject(GuiGraphics graphics, int ii0, int ii1, float f1, CallbackInfo ci){
-        int i = this.leftPos;
-        int j = this.topPos;
-        graphics.pose().pushPose();
-        graphics.pose().translate((float)i, (float)j, 0.0F);
-        for(int k = 0; k < menu.slots.size(); ++k) {
-            Slot slot = this.menu.slots.get(k);
+          int i = this.leftPos;
+            int j = this.topPos;
+            graphics.pose().pushPose();
+            graphics.pose().translate((float) i, (float) j, 0.0F);
+            for (int k = 0; k < menu.slots.size(); ++k) {
+                Slot slot = this.menu.slots.get(k);
 
-            if (slot.isActive()) {
-                renderSlotNew(graphics, slot);
+                if (slot.isActive()) {
+                    renderSlotNew(graphics, slot);
+                }
+
             }
-
+            graphics.pose().popPose();
         }
-        graphics.pose().popPose();
-    }
+
     private void renderSlotNew(GuiGraphics graphics, Slot slot) {
         int i = slot.x;
         int j = slot.y;
@@ -119,7 +124,7 @@ public abstract class AbstractContainerMixin {
 
         graphics.pose().popPose();
     }
-   /* @Inject(method = "renderSlot",at = @At("HEAD"), cancellable = true)
+   *//* @Inject(method = "renderSlot",at = @At("HEAD"), cancellable = true)
     private void renderSlotInject(GuiGraphics p_281607_, Slot p_282613_, CallbackInfo ci){
         ci.cancel();
     }

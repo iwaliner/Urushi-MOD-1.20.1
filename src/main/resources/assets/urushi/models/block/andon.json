@@ -1,10 +1,10 @@
 {
 	"parent": "block/block",
 	"textures": {
-		"0": "urushi:block/planks_smooth_dark_oak",
+		"0": "urushi:block/planks_smooth_japanese_cedar",
 		"3": "urushi:block/andon",
 		"4": "urushi:block/plaster",
-		"particle": "urushi:block/planks_smooth_dark_oak"
+		"particle": "urushi:block/planks_smooth_japanese_cedar"
 	},
 	"elements": [
 		{

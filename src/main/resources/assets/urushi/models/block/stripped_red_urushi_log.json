@@ -1,7 +1,7 @@
 {
     "parent": "block/cube_column",
     "textures": {
-        "end": "urushi:block/stripped_red_log_top",
+        "end": "urushi:block/stripped_red_urushi_log_top",
         "side": "urushi:block/stripped_red_urushi_log"
     }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column_horizontal",
   "textures": {
-        "end": "urushi:block/stripped_black_log_top",
+        "end": "urushi:block/stripped_black_urushi_log_top",
         "side": "urushi:block/stripped_black_urushi_log"
   }
 }
