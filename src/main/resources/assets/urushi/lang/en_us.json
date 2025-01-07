@@ -2755,5 +2755,18 @@
    "block.urushi.warped_framed_red_plaster": "Warped-Framed Red Plaster",
    "block.urushi.warped_framed_black_plaster": "Warped-Framed Black Plaster",
    "block.urushi.warped_wall_for_framed_blocks": "Warped Wall",
-   "block.urushi.vertical_smooth_warped_slab": "Vertical Smooth Warped Slab"
+   "block.urushi.vertical_smooth_warped_slab": "Vertical Smooth Warped Slab",
+   "info.urushi.same_as_composter": "You can put items not only by right-clicking but also by using a hopper like a Composter.",
+   "info.urushi.fermentation_barrel_1": "You can craft 8x Rice Malt from 8x Rice, and 8x Miso from 8x Shikomi Miso.",
+   "info.urushi.fermentation_barrel_2": "Put a Rice, a Rice Malt, and a Water Bamboo Cup, and use a Glass Bottle to the barrel to craft a Sake Bottle.",
+   "info.urushi.ochoko_1": "Give a Resistance effect and a Slowness effect.",
+   "info.urushi.ochoko_2": "Effects will be stronger and the duration will be longer if you drink many times.",
+   "info.urushi.sake": "Put a Rice, a Rice Malt, and a Water Bamboo Cup in a Fermentation Barrel and use a Glass Bottle to the barrel to obtain.",
+   "info.urushi.noodle": "Holding the Noodle Knife in the main hand and the dough in the off hand and holding down the right mouse button makes it easier to cut noodles.",
+   "item.urushi.sake": "Sake Bottle",
+   "item.urushi.tokkuri": "Tokkuri",
+   "item.urushi.ochoko": "Ochoko",
+   "entity.urushi.sake_food": "Sake Bottle",
+   "entity.urushi.tokkuri_food": "Tokkuri",
+   "entity.urushi.ochoko_food": "Ochoko"
 }
