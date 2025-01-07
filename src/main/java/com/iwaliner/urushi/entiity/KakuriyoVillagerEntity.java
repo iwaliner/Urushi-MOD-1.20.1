@@ -68,7 +68,7 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
   public static final Map<KakuriyoVillagerProfessionType, Int2ObjectMap<VillagerTrades.ItemListing[]>> TRADES = Util.make(Maps.newHashMap(), (p_35633_) -> {
         p_35633_.put(KakuriyoVillagerProfessionType.Miner, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
                         new Sell(Blocks.TORCH, 24, 2),
-                        new Sell(ItemAndBlockRegister.rice_ball.get(), 20, 2),
+                        new Sell(Items.IRON_PICKAXE, 1,2),
                         new Buy(Blocks.GRAVEL, 1, 20,  1),
                         new Buy(Blocks.SAND, 1, 20,  1),
                         new Buy(Blocks.RED_SAND, 1, 20,  1),
@@ -180,11 +180,13 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
 p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
         new Sell(ItemAndBlockRegister.matured_japanese_apricot_fruit.get(), 16,2),
         new Sell(ItemAndBlockRegister.green_onion_crop.get(), 20,2),
+        new Buy(ItemAndBlockRegister.salt.get(), 1, 12,  1),
+        new Buy(ItemAndBlockRegister.soy_source_cup.get(), 1, 4,  1),
         new Buy(ItemAndBlockRegister.sakura_mochi.get(), 1, 8,  1),
         new Buy(ItemAndBlockRegister.color_dango.get(), 1, 8,  1),
         new Buy(ItemAndBlockRegister.baked_mochocho.get(), 1, 8,  1),
-        new Buy(ItemAndBlockRegister.gravel_sushi.get(), 1, 16,  1),
-        new Buy(ItemAndBlockRegister.soy_source_ramen.get(), 2, 1,  1)/*,
+        new Buy(ItemAndBlockRegister.gravel_sushi.get(), 1, 16,  1)
+        /*,
         new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.burger").getString(),"TheUnderground11", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E5Yzg3NTM3ODBlYmMzOWMzNTFkYThlZmQ5MWJjZTkwYmQ4Y2NhN2I1MTFmOTNlNzhkZjc1ZjY2MTVjNzlhNiJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.CHICKEN).getHoverName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDEyYzE5YjliODRiNGY1OTQ1NjA1ODA4NmM3NTIzYThkYWQ0YWM5MDcxOWZhMjQyYjIwN2RiMzJiYmFlOGY1ZCJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.COOKED_CHICKEN).getHoverName().getString(), "PandaClod","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlMjBhMjZjYmI1NzQwYTE1OGRhOTkxZWY5NGRjZDMyZDQ0N2U5YWMwM2FhMGU4ZjgyOWE0OTgzMDYxOWExMCJ9fX0="),
