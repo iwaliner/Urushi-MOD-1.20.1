@@ -1028,6 +1028,7 @@ public class ItemAndBlockRegister {
 
     public static final RegistryObject<Item> green_tea =ITEMS.register("green_tea", () -> {return new TeaItem(()->EntityRegister.GreenTeaFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.GreenTea));});
 
+    public static final RegistryObject<Item> sake =ITEMS.register("sake", () -> {return new PlaceableFoodItem(()->EntityRegister.SakeFoodEntity.get(),(new Item.Properties()));});
     public static final RegistryObject<Block> unfired_shichirin =B("unfired_shichirin","s",-1,() -> {return new UnfinishedShichirinBlock(BlockBehaviour.Properties.of().mapColor( MapColor.TERRACOTTA_RED).sound(SoundType.ROOTED_DIRT).strength(0.4F, 10.0F));});
     public static final RegistryObject<Block> unfinished_shichirin =B("unfinished_shichirin","p",-1,() -> {return new UnfinishedShichirinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F, 10.0F).requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> shichirin =BM("shichirin","p",-1,() -> {return new ShichirinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F, 10.0F).requiresCorrectToolForDrops().dynamicShape());});
@@ -1075,14 +1076,14 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> onsen_egg =ITEMS.register("onsen_egg", () -> {return new ToolchipItem("onsen_egg",(new Item.Properties()));});
     public static final RegistryObject<Item> noodle_knife =ITEMS.register("noodle_knife", () -> {return new NoodleKnifeItem((new Item.Properties()).durability(1024));});
     public static final RegistryObject<Block> dough =BF("dough","n",-1,() -> {return new TwoDirectionShapedBlock(3.0D, 0.0D, 0D, 13.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
-    public static final RegistryObject<Block> udon =BF("udon","n",-1,() -> {return new TwoDirectionShapedBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
+    public static final RegistryObject<Block> udon =BF("udon","n",-1,() -> {return new NoodleBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
     public static final RegistryObject<Item> kitsune_udon =ITEMS.register("kitsune_udon", () -> {return new PlaceableFoodItem(()->EntityRegister.KitsuneUdonFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.KitsuneUdon));});
     public static final RegistryObject<Block> salt_and_sand =BF("salt_and_sand","s",-1,() -> {return new SaltAndSandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(1F, 10F).sound(SoundType.SAND));});
     public static final RegistryObject<Item> salt =ITEMS.register("salt", () -> {return new ToolchipItem("salt",(new Item.Properties()));});
     public static final RegistryObject<Item> kanten_powder =IF("kanten_powder");
     public static final RegistryObject<Item> kansui_powder =IF("kansui_powder");
     public static final RegistryObject<Block> alkaline_dough =BF("alkaline_dough","n",-1,() -> {return new TwoDirectionShapedBlock(3.0D, 0.0D, 0D, 13.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).instabreak().sound(SoundType.WOOD));});
-    public static final RegistryObject<Block> alkaline_noodles =BF("alkaline_noodles","n",-1,() -> {return new TwoDirectionShapedBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).instabreak().sound(SoundType.WOOD));});
+    public static final RegistryObject<Block> alkaline_noodles =BF("alkaline_noodles","n",-1,() -> {return new NoodleBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).instabreak().sound(SoundType.WOOD));});
     public static final RegistryObject<Item> soy_source_ramen =ITEMS.register("soy_source_ramen", () -> {return new PlaceableFoodItem(()->EntityRegister.SoySourceRamenFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Ramen));});
     public static final RegistryObject<Item> miso_ramen =ITEMS.register("miso_ramen", () -> {return new PlaceableFoodItem(()->EntityRegister.MisoRamenFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Ramen));});
     public static final RegistryObject<Item> tonkotsu_ramen =ITEMS.register("tonkotsu_ramen", () -> {return new PlaceableFoodItem(()->EntityRegister.TonkotsuRamenFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Ramen));});
@@ -1517,6 +1518,7 @@ public class ItemAndBlockRegister {
                 output.accept(milk_bamboo_cup.get());
                 output.accept(soy_source_cup.get());
                 output.accept(green_tea.get());
+                output.accept(sake.get());
                 output.accept(mandarin.get());
                 output.accept(mandarin_slice.get());
             })

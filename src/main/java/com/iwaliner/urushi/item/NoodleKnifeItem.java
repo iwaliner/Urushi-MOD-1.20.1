@@ -45,7 +45,7 @@ public class NoodleKnifeItem extends Item {
 
             return InteractionResult.SUCCESS;
         }
-        return InteractionResult.FAIL;
+        return InteractionResult.PASS;
     }
 
     @Override
