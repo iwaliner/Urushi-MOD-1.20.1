@@ -95,6 +95,8 @@ public class ClientSetUp {
     public static final ModelLayerLocation KAKURIYO_VILLAGER = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "kakuriyo_villager"), "kakuriyo_villager");
     public static final ModelLayerLocation GREEN_TEA = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "green_tea_food"), "green_tea_food");
     public static final ModelLayerLocation SAKE = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "sake_food"), "sake_food");
+    public static final ModelLayerLocation TOKKURI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "tokkuri_food"), "tokkuri_food");
+    public static final ModelLayerLocation OCHOKO = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "ochoko_food"), "ochoko_food");
     public static final ModelLayerLocation MANDARIN = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "mandarin_food"), "mandarin_food");
 
 
@@ -156,6 +158,8 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.GreenTeaFoodEntity.get(), GreenTeaFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.MandarinFoodEntity.get(), MandarinFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.SakeFoodEntity.get(), SakeFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.OchokoFoodEntity.get(), OchokoFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.TokkuriFoodEntity.get(), TokkuriFoodRenderer::new);
 
 
     }
@@ -181,6 +185,8 @@ public class ClientSetUp {
         event.registerLayerDefinition(GREEN_TEA, GreenTeaFoodModel::createBodyLayer);
         event.registerLayerDefinition(MANDARIN, MandarinFoodModel::createBodyLayer);
         event.registerLayerDefinition(SAKE, SakeFoodModel::createBodyLayer);
+        event.registerLayerDefinition(TOKKURI, TokkuriFoodModel::createBodyLayer);
+        event.registerLayerDefinition(OCHOKO, OchokoFoodModel::createBodyLayer);
 
 
 

@@ -1108,19 +1108,21 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> vegetable_oil =IF("vegetable_oil");
     public static final RegistryObject<Block> oil_extractor =BF("oil_extractor","a",-1,() -> {return new OilExtractorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.LADDER).strength(1F, 3.0F));});
     public static final RegistryObject<Block> fryer =BF("fryer","p",0,() -> {return new FryerBlock(BlockBehaviour.Properties.of().mapColor( MapColor.WOOL).sound(SoundType.METAL).strength(1F, 10.0F).requiresCorrectToolForDrops().dynamicShape());});
-    public static final RegistryObject<Block> fermentation_barrel =BF("fermentation_barrel","a",-1,() -> {return new FermentationBarrelBlock(()->Blocks.AIR,()->ItemStack.EMPTY,BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
-    public static final RegistryObject<Block> fermentation_barrel_with_rice =BF("fermentation_barrel_with_rice","a",-1,() -> {return new FermentationBarrelBlock(()->ItemAndBlockRegister.fermentation_barrel_with_rice_malt.get(),()->new ItemStack(ItemAndBlockRegister.rice.get(),8),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F).randomTicks());});
-    public static final RegistryObject<Block> fermentation_barrel_with_rice_malt =BF("fermentation_barrel_with_rice_malt","a",-1,() -> {return new FermentationBarrelBlock(()->Blocks.AIR,()->new ItemStack(ItemAndBlockRegister.rice_malt.get(),8),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
-    public static final RegistryObject<Block> fermentation_barrel_with_shikomi_miso =BF("fermentation_barrel_with_shikomi_miso","a",-1,() -> {return new FermentationBarrelBlock(()->ItemAndBlockRegister.fermentation_barrel_with_miso.get(),()->new ItemStack(ItemAndBlockRegister.shikomi_miso.get(),8),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F).randomTicks());});
-    public static final RegistryObject<Block> fermentation_barrel_with_miso =BF("fermentation_barrel_with_miso","a",-1,() -> {return new FermentationBarrelBlock(()->Blocks.AIR,()->new ItemStack(ItemAndBlockRegister.miso.get(),8),BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
-    public static final RegistryObject<Block> kettle =BF("kettle","p",-1,() -> {return new KettleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).strength(1F, 10.0F).requiresCorrectToolForDrops());});
+    public static final RegistryObject<Block> fermentation_barrel =BF("fermentation_barrel","a",-1,() -> {return new FermentationBarrelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> fermentation_barrel_with_rice =BN("fermentation_barrel_with_rice","a",-1,() -> {return new FermentationBarrelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> fermentation_barrel_with_rice_malt =BN("fermentation_barrel_with_rice_malt","a",-1,() -> {return new FermentationBarrelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> fermentation_barrel_with_shikomi_miso =BN("fermentation_barrel_with_shikomi_miso","a",-1,() -> {return new FermentationBarrelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
+    public static final RegistryObject<Block> fermentation_barrel_with_miso =BN("fermentation_barrel_with_miso","a",-1,() -> {return new FermentationBarrelBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(0.5F, 10.0F));});
+     public static final RegistryObject<Block> kettle =BF("kettle","p",-1,() -> {return new KettleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).strength(1F, 10.0F).requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> hibachi =BF("hibachi","a",-1,() -> {return new HibachiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1F, 10.0F).sound(SoundType.WOOD).noOcclusion().lightLevel((p_235470_0_) -> {return 10;}));});
     public static final RegistryObject<Block> tea_bush =BF("tea_bush","h",-1,() -> {return new TeaBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.AZALEA).strength(0.3F, 1.0F).randomTicks());});
     public static final RegistryObject<Item> tea_leaf =IF("tea_leaf");
 
-    public static final RegistryObject<Item> green_tea =ITEMS.register("green_tea", () -> {return new TeaItem(()->EntityRegister.GreenTeaFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.GreenTea));});
+    public static final RegistryObject<Item> green_tea =ITEMS.register("green_tea", () -> {return new TeaItem(()->EntityRegister.GreenTeaFoodEntity.get(),(new Item.Properties()));});
 
-    public static final RegistryObject<Item> sake =ITEMS.register("sake", () -> {return new PlaceableFoodItem(()->EntityRegister.SakeFoodEntity.get(),(new Item.Properties()));});
+    public static final RegistryObject<Item> sake =ITEMS.register("sake", () -> {return new PlaceableFoodItem(()->EntityRegister.SakeFoodEntity.get(),(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE)));});
+    public static final RegistryObject<Item> tokkuri =ITEMS.register("tokkuri", () -> {return new PlaceableFoodItem(()->EntityRegister.TokkuriFoodEntity.get(),(new Item.Properties()));});
+    public static final RegistryObject<Item> ochoko =ITEMS.register("ochoko", () -> {return new OchokoItem(()->EntityRegister.OchokoFoodEntity.get(),(new Item.Properties()));});
     public static final RegistryObject<Block> unfired_shichirin =B("unfired_shichirin","s",-1,() -> {return new UnfinishedShichirinBlock(BlockBehaviour.Properties.of().mapColor( MapColor.TERRACOTTA_RED).sound(SoundType.ROOTED_DIRT).strength(0.4F, 10.0F));});
     public static final RegistryObject<Block> unfinished_shichirin =B("unfinished_shichirin","p",-1,() -> {return new UnfinishedShichirinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F, 10.0F).requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> shichirin =BM("shichirin","p",-1,() -> {return new ShichirinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F, 10.0F).requiresCorrectToolForDrops().dynamicShape());});
@@ -1611,6 +1613,8 @@ public class ItemAndBlockRegister {
                 output.accept(soy_source_cup.get());
                 output.accept(green_tea.get());
                 output.accept(sake.get());
+                output.accept(tokkuri.get());
+                output.accept(ochoko.get());
                 output.accept(mandarin.get());
                 output.accept(mandarin_slice.get());
             })

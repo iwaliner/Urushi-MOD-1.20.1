@@ -294,5 +294,6 @@ public class OilExtractorBlock extends Block implements WorldlyContainerHolder {
     @Override
     public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
         UrushiUtils.setInfo(list,"slot_oil_extractor");
+        UrushiUtils.setInfo(list, "same_as_composter");
     }
 }

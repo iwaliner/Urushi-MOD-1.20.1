@@ -2654,7 +2654,7 @@
    "info.urushi.furigana.kurourushi": "黒漆(くろうるし)",
    "info.urushi.furigana.shitamiita": "下見板張り(したみいたばり)",
    "info.urushi.furigana.rankan": "欄干(らんかん)",
-   "info.urushi.furigana.takebushiramma": "竹節欄間(竹節欄間)",
+   "info.urushi.furigana.takebushiramma": "竹節欄間(たけぶしらんま)",
    "info.urushi.furigana.musourenji": "無双連子(むそうれんじ)",
    "info.urushi.furigana.hinoki": "檜(ひのき)",
    "info.urushi.furigana.urushi": "漆(うるし)",
@@ -2675,7 +2675,7 @@
    "info.urushi.furigana.hiuchigane": "火打金(ひうちがね)",
    "info.urushi.furigana.assakuki": "圧搾機(あっさくき)",
    "info.urushi.furigana.momi": "籾(もみ)",
-   "info.urushi.furigana.kanten": "寒天(寒天)",
+   "info.urushi.furigana.kanten": "寒天(かんてん)",
    "info.urushi.furigana.komekouji": "米麴(こめこうじ)",
    "info.urushi.furigana.yokan": "羊羹(ようかん)",
    "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
@@ -2822,5 +2822,20 @@
    "block.urushi.warped_framed_red_plaster": "歪んだの木枠付きの赤色の漆喰",
    "block.urushi.warped_framed_black_plaster": "歪んだの木枠付きの黒色の漆喰",
    "block.urushi.warped_wall_for_framed_blocks": "歪んだの壁",
-   "block.urushi.vertical_smooth_warped_slab": "滑らかな歪んだの縦ハーフブロック"
+   "block.urushi.vertical_smooth_warped_slab": "滑らかな歪んだの縦ハーフブロック",
+   "info.urushi.same_as_composter": "コンポスターと同様、右クリックのほかホッパーなどでもアイテムを投入できる。",
+   "info.urushi.fermentation_barrel_1": "ご飯8個から米麴8個、仕込み味噌8個から味噌8個を作成できる。",
+   "info.urushi.fermentation_barrel_2": "ご飯1個、米麴1個、水入り竹筒1個を入れて放置し、ガラス瓶で右クリックすることで日本酒を作成できる。",
+   "info.urushi.ochoko_1": "飲むと耐性と移動速度低下の効果が付与される。",
+   "info.urushi.ochoko_2": "何度も続けて飲むことで付与される効果のレベルや持続時間が強化される。",
+   "info.urushi.sake": "発酵用の樽にご飯1個、米麴1個、水入り竹筒1個を入れて放置し、ガラス瓶で発酵用の樽を右クリックすることで作成可能。",
+   "info.urushi.noodle": "メインハンドに麵切り包丁、オフハンドに生地を持って右クリックを押し続けると麺を作成しやすい。",
+   "item.urushi.sake": "日本酒",
+   "item.urushi.tokkuri": "とっくり",
+   "item.urushi.ochoko": "おちょこ",
+   "entity.urushi.sake_food": "日本酒",
+   "entity.urushi.tokkuri_food": "とっくり",
+   "entity.urushi.ochoko_food": "おちょこ"
+   
+   
 }

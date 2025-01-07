@@ -654,6 +654,10 @@ public class ModCoreUrushi {
             UrushiUtils.setInfo(event.getToolTip(),"japanese_cedar_sapling");
         }else if(stack.getItem()==Item.byBlock(ItemAndBlockRegister.lacquer_sapling.get())){
             UrushiUtils.setInfo(event.getToolTip(),"lacquer_sapling");
+        }else if(stack.getItem()==ItemAndBlockRegister.sake.get()){
+            UrushiUtils.setInfo(event.getToolTip(),"sake");
+        }else if(stack.getItem()==Item.byBlock(ItemAndBlockRegister.dough.get())||stack.getItem()==Item.byBlock(ItemAndBlockRegister.alkaline_dough.get())||stack.getItem()==Item.byBlock(ItemAndBlockRegister.udon.get())||stack.getItem()==Item.byBlock(ItemAndBlockRegister.alkaline_noodles.get())||stack.is(ItemAndBlockRegister.noodle_knife.get())){
+            UrushiUtils.setInfo(event.getToolTip(),"noodle");
         }else if(stack.getItem()==ItemAndBlockRegister.green_tea.get()){
             List<MobEffectInstance> list=new ArrayList<>();
             list.add(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,20*60*1,1));

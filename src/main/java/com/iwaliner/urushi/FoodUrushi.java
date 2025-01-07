@@ -39,7 +39,6 @@ public class FoodUrushi {
     public static final FoodProperties Shiitake = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.3F).alwaysEat().build();
     public static final FoodProperties So = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.1F).alwaysEat().build();
     public static final FoodProperties Ramen = (new FoodProperties.Builder()).nutrition(10).saturationMod(1.4F).alwaysEat().build();
-    public static final FoodProperties GreenTea = (new FoodProperties.Builder()).nutrition(0).saturationMod(0F).alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20*60*1, 1), 1.0F).effect(new MobEffectInstance(MobEffects.NIGHT_VISION, 20*60*2, 0), 1.0F).build();
 
 
 }

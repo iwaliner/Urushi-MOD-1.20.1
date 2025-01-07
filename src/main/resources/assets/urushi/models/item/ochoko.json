@@ -1,3 +1,6 @@
 {
-    "parent": "urushi:block/ochoko_inventory"
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "urushi:item/ochoko"
+    }
 }

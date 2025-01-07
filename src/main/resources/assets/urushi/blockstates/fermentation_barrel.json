@@ -1,7 +1,227 @@
 {
-  "variants": {
-    "": {
-      "model": "urushi:block/fermentation_barrel"
+  "multipart": [
+    {
+      "apply": {
+        "model": "urushi:block/fermentation_barrel"
+      }
+    },
+    {
+      "when": {
+        "level": "1", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_1"
+      }
+    },
+    {
+      "when": {
+        "level": "2", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_2"
+      }
+    },
+    {
+      "when": {
+        "level": "3", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_3"
+      }
+    },
+    {
+      "when": {
+        "level": "4", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_4"
+      }
+    },
+    {
+      "when": {
+        "level": "5", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_5"
+      }
+    },
+    {
+      "when": {
+        "level": "6", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_6"
+      }
+    },
+    {
+      "when": {
+        "level": "7", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_7"
+      }
+    },
+    {
+      "when": {
+        "level": "8", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_8"
+      }
+    },
+    {
+      "when": {
+        "level": "9|10|11|12|13|14|15|16", "type": "1"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_rice_9"
+      }
+    },
+    
+    {
+      "when": {
+        "level": "1", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_1"
+      }
+    },
+    {
+      "when": {
+        "level": "2", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_2"
+      }
+    },
+    {
+      "when": {
+        "level": "3", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_3"
+      }
+    },
+    {
+      "when": {
+        "level": "4", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_4"
+      }
+    },
+    {
+      "when": {
+        "level": "5", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_5"
+      }
+    },
+    {
+      "when": {
+        "level": "6", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_6"
+      }
+    },
+    {
+      "when": {
+        "level": "7", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_7"
+      }
+    },
+    {
+      "when": {
+        "level": "8", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_8"
+      }
+    },
+    {
+      "when": {
+        "level": "9|10|11|12|13|14|15|16", "type": "2"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_miso_9"
+      }
+    },
+    
+    {
+      "when": {
+        "level": "1", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_1"
+      }
+    },
+    {
+      "when": {
+        "level": "3", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_1"
+      }
+    },
+    {
+      "when": {
+        "level": "3", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_1"
+      }
+    },
+    {
+      "when": {
+        "level": "4", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_2"
+      }
+    },
+    {
+      "when": {
+        "level": "5", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_2"
+      }
+    },
+    {
+      "when": {
+        "level": "6", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_2"
+      }
+    },
+    {
+      "when": {
+        "level": "7", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_3"
+      }
+    },
+    {
+      "when": {
+        "level": "8", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_3"
+      }
+    },
+    {
+      "when": {
+        "level": "9|10|11|12|13|14|15|16", "type": "3"
+      },
+      "apply": {
+        "model": "urushi:block/fermentation_barrel_moromi_9"
+      }
     }
-  }
+  ]
 }
