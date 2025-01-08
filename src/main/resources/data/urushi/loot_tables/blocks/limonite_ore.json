@@ -2,8 +2,8 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -34,8 +34,8 @@
                   "function": "minecraft:set_count",
                   "count": {
                     "type": "minecraft:uniform",
-                    "min": 1.0,
-                    "max": 5.0
+                    "min": 1,
+                    "max": 5
                   },
                   "add": false
                 },
@@ -57,8 +57,8 @@
                   "function": "minecraft:set_count",
                   "count": {
                     "type": "minecraft:uniform",
-                    "min": 0.0,
-                    "max": 2.0
+                    "min": 0,
+                    "max": 2
                   },
                   "add": false
                 },
@@ -78,14 +78,23 @@
       ]
     },
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:constant",
+                    "value": 0
+                  }
+                }
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -110,8 +119,8 @@
                   "function": "minecraft:set_count",
                   "count": {
                     "type": "minecraft:uniform",
-                    "min": 0.0,
-                    "max": 1.0
+                    "min": 0,
+                    "max": 1
                   },
                   "add": false
                 },
