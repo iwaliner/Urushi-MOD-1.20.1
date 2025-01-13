@@ -796,6 +796,7 @@ public class ModCoreUrushi {
             }
         }
     }
+   
     @SubscribeEvent
     public void RegisterCapabilities(RegisterCapabilitiesEvent event) {
         event.register(FramedBlockTextureConnectionData.class);

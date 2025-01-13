@@ -83,9 +83,9 @@ public class ClientNonBusSetUp {
                     }
                 }
             }
-            if(hitState.getBlock() instanceof ParapetBlock){
+           /* if(hitState.getBlock() instanceof ParapetBlock){
                 renderHitOutline(poseStack, multiBufferSource.getBuffer(RenderType.lines()), event.getCamera().getEntity(), event.getCamera().getPosition().x, event.getCamera().getPosition().y, event.getCamera().getPosition().z, hitPos, Blocks.CAULDRON.defaultBlockState());
-            }
+            }*/
         }
     }
     private static void renderShape(PoseStack p_109783_, VertexConsumer p_109784_, VoxelShape p_109785_, double p_109786_, double p_109787_, double p_109788_) {

@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "urushi:sake"
+      "item": "urushi:tea_leaf"
     }
   ],
   "result": {
-    "item": "urushi:tokkuri",
-      "count": 2
+    "item": "minecraft:green_dye",
+      "count": 1
   }
 }
