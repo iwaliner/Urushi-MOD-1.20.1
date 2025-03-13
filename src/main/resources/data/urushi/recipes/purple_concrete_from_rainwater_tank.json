@@ -1,0 +1,11 @@
+{
+  "type": "urushi:rainwater_tank",
+  "ingredients": [
+  {
+    "item": "minecraft:purple_concrete_powder"
+    }
+  ],
+  "result": {
+  "item":"minecraft:purple_concrete"
+  }
+}

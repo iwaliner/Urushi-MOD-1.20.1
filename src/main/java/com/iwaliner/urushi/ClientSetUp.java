@@ -8,10 +8,7 @@ import com.iwaliner.urushi.entiity.food.model.*;
 import com.iwaliner.urushi.entiity.food.renderer.*;
 import com.iwaliner.urushi.entiity.model.CushionModel;
 import com.iwaliner.urushi.entiity.model.OniModel;
-import com.iwaliner.urushi.entiity.renderer.CushionRenderer;
-import com.iwaliner.urushi.entiity.renderer.GhostRenderer;
-import com.iwaliner.urushi.entiity.renderer.GiantSkeletonRenderer;
-import com.iwaliner.urushi.entiity.renderer.KakuriyoVillagerRenderer;
+import com.iwaliner.urushi.entiity.renderer.*;
 import com.iwaliner.urushi.json.*;
 import com.iwaliner.urushi.particle.*;
 import com.iwaliner.urushi.util.ElementUtils;
@@ -160,6 +157,7 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.SakeFoodEntity.get(), SakeFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.OchokoFoodEntity.get(), OchokoFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.TokkuriFoodEntity.get(), TokkuriFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.ExperienceDroppableFallingAnvil.get(), ExperienceDroppableAnvilRenderer::new);
 
 
     }
@@ -278,6 +276,7 @@ public class ClientSetUp {
         MenuScreens.register(MenuRegister.AutoCraftingTableMenu.get(), AutoCraftingTableScreen::new);
         MenuScreens.register(MenuRegister.SilkwormFarmMenu.get(), SilkwormFarmScreen::new);
         MenuScreens.register(MenuRegister.KettleMenu.get(), KettleScreen::new);
+        MenuScreens.register(MenuRegister.TranslatableBookMenu.get(), TranslatableBookScreen::new);
 
 
        /**見た目が特殊なBlockEntityの見た目を登録*/
@@ -293,8 +292,6 @@ public class ClientSetUp {
         ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.senryoubako.get()));
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.additional_heart.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.giant_skeleton_spawn_egg.get());
-        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.kakuriyo_villager_spawn_egg.get());
-        ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.coin.get()));
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.white_silk.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.orange_silk.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.magenta_silk.get());
@@ -311,6 +308,7 @@ public class ClientSetUp {
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.green_silk.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.red_silk.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.black_silk.get());
+        ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.kakuriyo_chronicles_1.get());
 
 
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.additional_heart);

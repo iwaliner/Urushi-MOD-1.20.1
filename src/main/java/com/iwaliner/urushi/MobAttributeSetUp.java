@@ -40,7 +40,7 @@ public class MobAttributeSetUp {
                         .add(Attributes.ATTACK_DAMAGE, 0.0D)
                         .add(Attributes.ATTACK_SPEED, 0.0D)
                         .add(Attributes.FLYING_SPEED, 0.0D)
-                        .add(Attributes.MOVEMENT_SPEED, 0.2D)
+                        .add(Attributes.MOVEMENT_SPEED, 0.5D)
                         .build());
 
     }

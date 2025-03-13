@@ -125,11 +125,11 @@ public class CushionEntity extends Entity {
             return false;
         } else {
             if (!this.isRemoved() && !this.level().isClientSide) {
-                this.discard();  //このエンティティを抹消
+                this.discard();
                 this.markHurt();
                 this.playSound(SoundEvents.WOOL_BREAK, 1.0F, 1.0F);
                 ItemStack itemStack=new ItemStack(getDropItem());
-                this.spawnAtLocation(itemStack);  //ItemEntityをスポーン
+                this.spawnAtLocation(itemStack);
             }
 
             return true;

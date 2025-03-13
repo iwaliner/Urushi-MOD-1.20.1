@@ -54,6 +54,8 @@ public class RecipeTypeRegister {
             = RECIPE_SERIALIZER.register("silkworm", SilkFarmRecipe.SilkFarmSerializer::new);
     public static final RegistryObject<KettleRecipe.KettleSerializer> KettleSerializer
             = RECIPE_SERIALIZER.register("kettle", com.iwaliner.urushi.recipe.KettleRecipe.KettleSerializer::new);
+    public static final RegistryObject<RainwaterTankRecipe.RainwaterTankSerializer> RainwaterTankSerializer
+            = RECIPE_SERIALIZER.register("rainwater_tank", com.iwaliner.urushi.recipe.RainwaterTankRecipe.RainwaterTankSerializer::new);
 
 
     public static RecipeType<FryingRecipe> FryingRecipe = new FryingRecipe.FryingRecipeType();
@@ -78,6 +80,7 @@ public class RecipeTypeRegister {
     public static RecipeType<WaterElementTier2CraftingRecipe> WaterElementTier2CraftingRecipe = new WaterElementTier2CraftingRecipe.WaterElementTier2CraftingRecipeType();
     public static RecipeType<SilkFarmRecipe> SilkwormFarmRecipe = new SilkFarmRecipe.SilkFarmRecipeType();
     public static RecipeType<KettleRecipe> KettleRecipe = new KettleRecipe.KettleRecipeType();
+    public static RecipeType<RainwaterTankRecipe> RainwaterTankRecipe = new RainwaterTankRecipe.RainwaterTankRecipeType();
     public static void register(IEventBus eventBus) {
         RECIPE_SERIALIZER.register(eventBus);
     }

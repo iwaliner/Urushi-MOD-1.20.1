@@ -1,0 +1,11 @@
+{
+  "type": "urushi:rainwater_tank",
+  "ingredients": [
+  {
+    "tag": "minecraft:beds"
+    }
+  ],
+  "result": {
+  "item":"minecraft:white_bed"
+  }
+}

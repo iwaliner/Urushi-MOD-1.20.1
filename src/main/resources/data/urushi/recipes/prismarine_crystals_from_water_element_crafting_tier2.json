@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:water_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:quartz"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "minecraft:quartz"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "minecraft:quartz"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "minecraft:quartz"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"minecraft:prismarine_crystals"
+
+
+
+  },
+
+
+
+  "reiryoku": 30
+
+
+
+}

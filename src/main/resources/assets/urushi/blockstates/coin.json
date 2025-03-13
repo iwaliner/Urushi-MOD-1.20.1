@@ -1,37 +1,218 @@
 {
-
-  "variants": {
-
-    "facing=east": {
-
-      "model": "urushi:block/coin",
-
-      "y": 270
-
+  "multipart": [
+    {
+      "when": {
+        "facing": "north","coins": "1"
+      },
+      "apply": {
+        "model": "urushi:block/coin_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "north","coins": "2"
+      },
+      "apply": {
+        "model": "urushi:block/coin_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "north","coins": "3"
+      },
+      "apply": {
+        "model": "urushi:block/coin_3",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "north","coins": "4"
+      },
+      "apply": {
+        "model": "urushi:block/coin_4",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "north","coins": "5"
+      },
+      "apply": {
+        "model": "urushi:block/coin_5",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "north","coins": "6"
+      },
+      "apply": {
+        "model": "urushi:block/coin_6",
+        "y": 180
+      }
+    },
+    
+    {
+      "when": {
+        "facing": "east","coins": "1"
+      },
+      "apply": {
+        "model": "urushi:block/coin_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east","coins": "2"
+      },
+      "apply": {
+        "model": "urushi:block/coin_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east","coins": "3"
+      },
+      "apply": {
+        "model": "urushi:block/coin_3",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east","coins": "4"
+      },
+      "apply": {
+        "model": "urushi:block/coin_4",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east","coins": "5"
+      },
+      "apply": {
+        "model": "urushi:block/coin_5",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east","coins": "6"
+      },
+      "apply": {
+        "model": "urushi:block/coin_6",
+        "y": 270
+      }
     },
 
-    "facing=north": {
-
-      "model": "urushi:block/coin",
-
-      "y": 180
-
+	{
+      "when": {
+        "facing": "west","coins": "1"
+      },
+      "apply": {
+        "model": "urushi:block/coin_1",
+        "y": 90
+      }
     },
-
-    "facing=south": {
-
-      "model": "urushi:block/coin"
-
+    {
+      "when": {
+        "facing": "west","coins": "2"
+      },
+      "apply": {
+        "model": "urushi:block/coin_2",
+        "y": 90
+      }
     },
-
-    "facing=west": {
-
-      "model": "urushi:block/coin",
-
-      "y": 90
-
+    {
+      "when": {
+        "facing": "west","coins": "3"
+      },
+      "apply": {
+        "model": "urushi:block/coin_3",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west","coins": "4"
+      },
+      "apply": {
+        "model": "urushi:block/coin_4",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west","coins": "5"
+      },
+      "apply": {
+        "model": "urushi:block/coin_5",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west","coins": "6"
+      },
+      "apply": {
+        "model": "urushi:block/coin_6",
+        "y": 90
+      }
+    },
+    
+    {
+      "when": {
+        "facing": "south","coins": "1"
+      },
+      "apply": {
+        "model": "urushi:block/coin_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "south","coins": "2"
+      },
+      "apply": {
+        "model": "urushi:block/coin_2"
+      }
+    },
+    {
+      "when": {
+        "facing": "south","coins": "3"
+      },
+      "apply": {
+        "model": "urushi:block/coin_3"
+      }
+    },
+    {
+      "when": {
+        "facing": "south","coins": "4"
+      },
+      "apply": {
+        "model": "urushi:block/coin_4"
+      }
+    },
+    {
+      "when": {
+        "facing": "south","coins": "5"
+      },
+      "apply": {
+        "model": "urushi:block/coin_5"
+      }
+    },
+    {
+      "when": {
+        "facing": "south","coins": "6"
+      },
+      "apply": {
+        "model": "urushi:block/coin_6"
+      }
     }
-
-  }
+  ]
 
 }

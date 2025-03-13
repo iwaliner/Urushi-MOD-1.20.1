@@ -7,9 +7,11 @@ import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.SoundRegister;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.KakuriyoVillagerProfessionType;
+import com.iwaliner.urushi.util.UrushiUtils;
 import com.mojang.authlib.GameProfile;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
+import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
@@ -62,6 +64,7 @@ import org.jetbrains.annotations.NotNull;
 import javax.annotation.Nullable;
 import java.util.EnumSet;
 import java.util.Map;
+import java.util.Random;
 import java.util.UUID;
 public class KakuriyoVillagerEntity extends AbstractVillager {
     private static final EntityDataAccessor<Integer> PROFESSION = SynchedEntityData.defineId(KakuriyoVillagerEntity.class, EntityDataSerializers.INT);
@@ -72,16 +75,23 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
                         new Buy(Blocks.GRAVEL, 1, 20,  1),
                         new Buy(Blocks.SAND, 1, 20,  1),
                         new Buy(Blocks.RED_SAND, 1, 20,  1),
+                new Buy(Items.CLAY_BALL, 1, 16,  1),
                         new Buy(Blocks.COBBLESTONE, 1, 24,  1),
                         new Buy(Blocks.STONE, 1, 16,  1),
                         new Buy(Blocks.GRANITE, 1, 16,  1),
                         new Buy(Blocks.DIORITE, 1, 16,  1),
                         new Buy(Blocks.ANDESITE, 1, 16,  1),
                         new Buy(Blocks.COBBLED_DEEPSLATE, 1, 16,  1),
+                new Buy(Blocks.TUFF, 1, 16,  1),
+                new Buy(Blocks.CALCITE, 1, 16,  1),
                         new Buy(Blocks.BASALT, 1, 16,  1),
                         new Buy(Blocks.BLACKSTONE, 1, 16,  1),
-                        new Buy(ItemAndBlockRegister.cobbled_yomi_stone.get(), 1, 16,  1),/*
+                        new Buy(ItemAndBlockRegister.cobbled_yomi_stone.get(), 1, 16,  1),
+                new Buy(Items.REDSTONE, 1, 6,  1),
+                new Buy(Items.LAPIS_LAZULI, 1, 6,  1),
+                new Buy(Items.QUARTZ, 1, 12,  1),
 
+                /*
                         new BuySkull(Blocks.PLAYER_HEAD, Blocks.GRASS_BLOCK.getName().getString(),"cake","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZiYjlmYjk3YmE4N2NiNzI3Y2QwZmY0NzdmNzY5MzcwYmVhMTljY2JmYWZiNTgxNjI5Y2Q1NjM5ZjJmZWMyYiJ9fX0="),
                 new BuySkull(Blocks.PLAYER_HEAD, Blocks.SHROOMLIGHT.getName().getString(),"PandaClod","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDgwNjhhM2U5ZWQwZTY4ODc2OGNmZTAxN2VhZGZmZmM5MjEwNjhmYjRhOGExMGJhYmFkY2U3NWNmNTcyYWFhMyJ9fX0="),
                 new BuySkull(Blocks.PLAYER_HEAD, Blocks.SEA_LANTERN.getName().getString(),"Kiaria","eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODI0YzZmZjE3MTRlYjJjM2I4NDRkNDZkMmU1ZWEyZjI2ZDI3M2EzM2VhYWE3NDRhYmY2NDViMDYwYjQ3ZDcifX19"),
@@ -98,18 +108,21 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
         )));
       p_35633_.put(KakuriyoVillagerProfessionType.RiceDealer, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
               new Sell(ItemAndBlockRegister.rice_crop.get(), 24,2),
-              new Buy(ItemAndBlockRegister.dirt_furnace.get(), 1,1,1),
+              new Buy(ItemAndBlockRegister.raw_rice.get(), 1,6,1),
+              new Buy(ItemAndBlockRegister.dirt_furnace.get(), 2,1,1),
               new Buy(ItemAndBlockRegister.rice_cauldron.get(), 3,1,1),
               new Buy(ItemAndBlockRegister.rice_malt.get(), 1,6,1),
-              new Buy(ItemAndBlockRegister.roasted_rice_cake.get(), 1,6,1)
+              new Buy(ItemAndBlockRegister.roasted_rice_cake.get(), 1,6,1),
+              //new Buy(getRandomRiceBall(6), 1,6,1)
+              new BuyRiceBall( 1,6,1,0.05F)
       })));
       p_35633_.put(KakuriyoVillagerProfessionType.Fisherman, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
               new Sell(Items.STRING, 20,2),
-              new Sell(ItemAndBlockRegister.silkworm.get(), 22,2),
+              new Sell(ItemAndBlockRegister.silkworm.get(), 12,2),
               new Buy(Items.COD, 1,8,1),
               new Buy(Items.SALMON, 1,8,1),
-              new Buy(ItemAndBlockRegister.tsuna.get(), 1,8,1),
-              new Buy(ItemAndBlockRegister.shrimp.get(), 1,8,1),
+              new Buy(ItemAndBlockRegister.tsuna.get(), 1,2,1),
+              new Buy(ItemAndBlockRegister.shrimp.get(), 1,12,1),
               new Buy(ItemAndBlockRegister.sweetfish.get(), 1,8,1),
               new Buy(Items.SEAGRASS, 1,16,1),
               new Buy(Items.LILY_PAD, 1,12,1),
@@ -180,12 +193,15 @@ public class KakuriyoVillagerEntity extends AbstractVillager {
 p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{
         new Sell(ItemAndBlockRegister.matured_japanese_apricot_fruit.get(), 16,2),
         new Sell(ItemAndBlockRegister.green_onion_crop.get(), 20,2),
+        new Buy(ItemAndBlockRegister.tea_bush.get(), 1, 1,  1),
         new Buy(ItemAndBlockRegister.salt.get(), 1, 12,  1),
+        new Buy(ItemAndBlockRegister.milk_bamboo_cup.get(), 1, 4,  1),
         new Buy(ItemAndBlockRegister.soy_source_cup.get(), 1, 4,  1),
         new Buy(ItemAndBlockRegister.sakura_mochi.get(), 1, 8,  1),
         new Buy(ItemAndBlockRegister.color_dango.get(), 1, 8,  1),
         new Buy(ItemAndBlockRegister.baked_mochocho.get(), 1, 8,  1),
-        new Buy(ItemAndBlockRegister.gravel_sushi.get(), 1, 16,  1)
+        new Buy(ItemAndBlockRegister.gravel_sushi.get(), 1, 16,  1),
+        new Buy(ItemAndBlockRegister.fried_shrimp.get(), 1, 8,  1)
         /*,
         new BuySkull(Blocks.PLAYER_HEAD, Component.translatable("skull.urushi.burger").getString(),"TheUnderground11", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E5Yzg3NTM3ODBlYmMzOWMzNTFkYThlZmQ5MWJjZTkwYmQ4Y2NhN2I1MTFmOTNlNzhkZjc1ZjY2MTVjNzlhNiJ9fX0="),
               new BuySkull(Blocks.PLAYER_HEAD, new ItemStack(Items.CHICKEN).getHoverName().getString(),"PandaClod", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDEyYzE5YjliODRiNGY1OTQ1NjA1ODA4NmM3NTIzYThkYWQ0YWM5MDcxOWZhMjQyYjIwN2RiMzJiYmFlOGY1ZCJ9fX0="),
@@ -300,26 +316,41 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
     }
 
 
-    public InteractionResult mobInteract(Player p_35856_, InteractionHand p_35857_) {
-        ItemStack itemstack = p_35856_.getItemInHand(p_35857_);
+    public InteractionResult mobInteract(Player player, InteractionHand p_35857_) {
+        ItemStack itemstack = player.getItemInHand(p_35857_);
         if (!itemstack.is(ItemAndBlockRegister.kakuriyo_villager_spawn_egg.get()) && this.isAlive() && !this.isTrading() && !this.isBaby()&&this.getProfessionType()!=KakuriyoVillagerProfessionType.Jobless) {
             if (p_35857_ == InteractionHand.MAIN_HAND) {
-                p_35856_.awardStat(Stats.TALKED_TO_VILLAGER);
+                player.awardStat(Stats.TALKED_TO_VILLAGER);
             }
 
             if (this.getOffers().isEmpty()) {
                 return InteractionResult.sidedSuccess(this.level().isClientSide);
             } else {
                 if (!this.level().isClientSide) {
-                    this.setTradingPlayer(p_35856_);
-                    this.openTradingScreen(p_35856_, this.getDisplayName(), 1);
+                    this.setTradingPlayer(player);
+                    this.openTradingScreen(player,getProfessionComponent(), 1);
                 }
 
                 return InteractionResult.sidedSuccess(this.level().isClientSide);
             }
         } else {
-            return super.mobInteract(p_35856_, p_35857_);
+            if(this.getProfessionType()==KakuriyoVillagerProfessionType.Jobless){
+                player.displayClientMessage(Component.translatable("info.urushi.kakuriyo_villager_jobless").withStyle(ChatFormatting.YELLOW), true);
+
+            }
+            return super.mobInteract(player, p_35857_);
         }
+    }
+    private Component getProfessionComponent(){
+        KakuriyoVillagerProfessionType professionType=getProfessionType();
+        switch (professionType){
+            case Cook : return Component.translatable("container.urushi.kakuriyo_villager_cook");
+            case Miner: return Component.translatable("container.urushi.kakuriyo_villager_miner");
+            case Fisherman: return Component.translatable("container.urushi.kakuriyo_villager_fisherman");
+            case Lumberjack: return Component.translatable("container.urushi.kakuriyo_villager_lumberjack");
+            case RiceDealer: return Component.translatable("container.urushi.kakuriyo_villager_rice_dealer");
+         }
+        return Component.translatable("container.urushi.kakuriyo_villager_jobless");
     }
 
     protected void updateTrades() {
@@ -363,6 +394,16 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
 
     }
 
+    @Override
+    public double getMyRidingOffset() {
+        return super.getMyRidingOffset()-0.45D;
+    }
+
+    @Override
+    public double getPassengersRidingOffset() {
+        return super.getPassengersRidingOffset();
+    }
+
     protected SoundEvent getAmbientSound() {
         return null;
     }
@@ -376,11 +417,11 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
     }
 
     protected SoundEvent getTradeUpdatedSound(boolean p_35890_) {
-        return null;
+        return SoundEvents.UI_STONECUTTER_SELECT_RECIPE;
     }
 
     public SoundEvent getNotifyTradeSound() {
-        return null;
+        return SoundEvents.UI_STONECUTTER_SELECT_RECIPE;
     }
 
 
@@ -399,6 +440,19 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
 
         net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(new net.minecraftforge.event.entity.player.TradeWithVillagerEvent(getTradingPlayer(), offer, this));
     }
+
+    @Override
+    public ItemStack getMainHandItem() {
+        switch (getProfessionType()){
+            case Cook : return new ItemStack(ItemAndBlockRegister.color_dango.get());
+            case Miner: return new ItemStack(Items.IRON_PICKAXE);
+            case Fisherman: return new ItemStack(Items.FISHING_ROD);
+            case Lumberjack: return new ItemStack(Items.IRON_AXE);
+            case RiceDealer: return new ItemStack(ItemAndBlockRegister.raw_rice.get());
+        }
+        return ItemStack.EMPTY;
+    }
+
     static class Buy implements VillagerTrades.ItemListing {
         private final ItemStack itemStack;
         private final int emeraldCost;
@@ -504,5 +558,40 @@ p_35633_.put(KakuriyoVillagerProfessionType.Cook, toIntMap(ImmutableMap.of(1, ne
             stack.setTag(tag);
             return new MerchantOffer(new ItemStack(ItemAndBlockRegister.coin.get(), this.emeraldCost), stack, 3000, this.villagerXp, this.priceMultiplier);
         }
+    }
+    static class BuyRiceBall implements VillagerTrades.ItemListing {
+         private final int emeraldCost;
+        private final int numberOfItems;
+        private final int villagerXp;
+        private final float priceMultiplier;
+
+        public BuyRiceBall(int cost, int numberOfItems, int xp, float priceMultiplier) {
+            this.emeraldCost = cost;
+            this.numberOfItems = numberOfItems;
+            this.villagerXp = xp;
+            this.priceMultiplier = priceMultiplier;
+        }
+
+        public MerchantOffer getOffer(Entity entity, RandomSource p_219700_) {
+          //  ItemStack stack=UrushiUtils.getRandomRiceBall(this.numberOfItems,randomSource);
+            ItemStack stack=new ItemStack(ItemAndBlockRegister.rice_ball.get(), this.numberOfItems);
+            if(stack.getTag()==null){
+                stack.setTag(new CompoundTag());
+            }
+            CompoundTag tag=stack.getTag();
+            tag.putString("effect","random");
+            stack.setTag(tag);
+            return new MerchantOffer(new ItemStack(ItemAndBlockRegister.coin.get(), this.emeraldCost), stack, 3000, this.villagerXp, this.priceMultiplier);
+        }
+    }
+    private static ItemStack getRandomRiceBall( int count){
+        ItemStack stack=new ItemStack(ItemAndBlockRegister.rice_ball.get(),count);
+        if(stack.getTag()==null){
+            stack.setTag(new CompoundTag());
+        }
+        CompoundTag tag=stack.getTag();
+        tag.putString("effect","random");
+        stack.setTag(tag);
+        return stack;
     }
  }

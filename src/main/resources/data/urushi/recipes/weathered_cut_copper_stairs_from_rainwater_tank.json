@@ -1,0 +1,11 @@
+{
+  "type": "urushi:rainwater_tank",
+  "ingredients": [
+  {
+    "item": "minecraft:exposed_cut_copper_stairs"
+    }
+  ],
+  "result": {
+  "item":"minecraft:weathered_cut_copper_stairs"
+  }
+}

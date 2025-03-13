@@ -136,51 +136,51 @@
 
    "item.urushi.japanese_apricot_bark": "梅の樹皮",
 
-   "block.urushi.sakura_sapling": "桜の苗木",
+   "block.urushi.sakura_sapling": "こぼれ桜の苗木",
 
-   "block.urushi.big_sakura_sapling": "大きな桜の苗木",
+   "block.urushi.big_sakura_sapling": "大きなこぼれ桜の苗木",
 
-   "block.urushi.sakura_leaves": "桜の葉",
+   "block.urushi.sakura_leaves": "こぼれ桜の葉",
 
-   "block.urushi.glowing_sakura_sapling": "輝く桜の苗木",
+   "block.urushi.glowing_sakura_sapling": "輝くこぼれ桜の苗木",
 
-   "block.urushi.glowing_big_sakura_sapling": "輝く大きな桜の苗木",
+   "block.urushi.glowing_big_sakura_sapling": "輝く大きなこぼれ桜の苗木",
 
-   "block.urushi.glowing_sakura_leaves": "輝く桜の葉",
+   "block.urushi.glowing_sakura_leaves": "輝くこぼれ桜の葉",
 
-   "block.urushi.sakura_log": "桜の原木",
+   "block.urushi.sakura_log": "こぼれ桜の原木",
 
-   "block.urushi.stripped_sakura_log": "樹皮を剝いだ桜の原木",
+   "block.urushi.stripped_sakura_log": "樹皮を剝いだこぼれ桜の原木",
 
-   "block.urushi.sakura_wood": "桜の木",
+   "block.urushi.sakura_wood": "こぼれ桜の木",
 
-   "block.urushi.stripped_sakura_wood": "樹皮を剝いだ桜の木",
+   "block.urushi.stripped_sakura_wood": "樹皮を剝いだこぼれ桜の木",
 
-   "block.urushi.sakura_planks": "桜の板材",
+   "block.urushi.sakura_planks": "こぼれ桜の板材",
 
-   "block.urushi.sakura_slab": "桜のハーフブロック",
+   "block.urushi.sakura_slab": "こぼれ桜のハーフブロック",
 
-   "block.urushi.sakura_stairs": "桜の階段",
+   "block.urushi.sakura_stairs": "こぼれ桜の階段",
 
-   "block.urushi.sakura_fence": "桜のフェンス",
+   "block.urushi.sakura_fence": "こぼれ桜のフェンス",
 
-   "block.urushi.sakura_fence_gate": "桜のフェンスゲート",
+   "block.urushi.sakura_fence_gate": "こぼれ桜のフェンスゲート",
 
-   "block.urushi.sakura_door": "桜のドア",
+   "block.urushi.sakura_door": "こぼれ桜のドア",
 
-   "block.urushi.sakura_pressure_plate": "桜の感圧板",
+   "block.urushi.sakura_pressure_plate": "こぼれ桜の感圧板",
 
-   "block.urushi.sakura_button": "桜のボタン",
+   "block.urushi.sakura_button": "こぼれ桜のボタン",
 
-   "block.urushi.sakura_trapdoor": "桜のトラップドア",
+   "block.urushi.sakura_trapdoor": "こぼれ桜のトラップドア",
 
-   "block.urushi.smooth_sakura_planks": "滑らかな桜の板材",
+   "block.urushi.smooth_sakura_planks": "滑らかなこぼれ桜の板材",
 
-   "block.urushi.smooth_sakura_slab": "滑らかな桜のハーフブロック",
+   "block.urushi.smooth_sakura_slab": "滑らかなこぼれ桜のハーフブロック",
 
-   "block.urushi.smooth_sakura_stairs": "滑らかな桜の階段",
+   "block.urushi.smooth_sakura_stairs": "滑らかなこぼれ桜の階段",
 
-   "item.urushi.sakura_bark": "桜の樹皮",
+   "item.urushi.sakura_bark": "こぼれ桜の樹皮",
 
    "block.urushi.cypress_sapling": "檜の苗木",
 
@@ -322,7 +322,7 @@
 
    "block.urushi.japanese_apricot_parapet": "梅の欄干",
 
-   "block.urushi.sakura_parapet": "桜の欄干",
+   "block.urushi.sakura_parapet": "こぼれ桜の欄干",
 
    "block.urushi.cypress_parapet": "檜の欄干",
 
@@ -386,7 +386,7 @@
 
    "block.urushi.japanese_apricot_shoji_pane": "梅の欄間障子",
 
-   "block.urushi.sakura_shoji_pane": "桜の欄間障子",
+   "block.urushi.sakura_shoji_pane": "こぼれ桜の欄間障子",
 
    "block.urushi.cypress_shoji_pane": "檜の欄間障子",
 
@@ -408,7 +408,7 @@
 
    "block.urushi.japanese_apricot_shoji": "梅の障子戸",
 
-   "block.urushi.sakura_shoji": "桜の障子戸",
+   "block.urushi.sakura_shoji": "こぼれ桜の障子戸",
 
    "block.urushi.cypress_shoji": "檜の障子戸",
 
@@ -506,7 +506,7 @@
 
    "block.urushi.japanese_apricot_framed_plaster": "梅の木枠付き漆喰",
 
-   "block.urushi.sakura_framed_plaster": "桜の木枠付き漆喰",
+   "block.urushi.sakura_framed_plaster": "こぼれ桜の木枠付き漆喰",
 
    "block.urushi.cypress_framed_plaster": "檜の木枠付き漆喰",
 
@@ -928,7 +928,7 @@
 
    "block.urushi.japanese_apricot_fushiranma": "梅の竹節欄間",
 
-   "block.urushi.sakura_fushiranma": "桜の竹節欄間",
+   "block.urushi.sakura_fushiranma": "こぼれ桜の竹節欄間",
 
    "block.urushi.cypress_fushiranma": "檜の竹節欄間",
 
@@ -1104,7 +1104,7 @@
 
     "block.urushi.fallen_japanese_apricot_leaves": "梅の落ち葉",
 
-    "block.urushi.fallen_sakura_leaves": "桜の落ち葉",
+    "block.urushi.fallen_sakura_leaves": "こぼれ桜の落ち葉",
 
     "block.urushi.grass_block_with_fallen_red_leaves": "赤く色付いた落ち葉付きの草ブロック",
 
@@ -1114,7 +1114,7 @@
 
     "block.urushi.grass_block_with_fallen_japanese_apricot_leaves": "梅の落ち葉付きの草ブロック",
 
-    "block.urushi.grass_block_with_fallen_sakura_leaves": "桜の落ち葉付きの草ブロック",
+    "block.urushi.grass_block_with_fallen_sakura_leaves": "こぼれ桜の落ち葉付きの草ブロック",
 
     "item.urushi.yomotsuhegui_fruit": "ヨモツヘグイの果実",
 
@@ -1180,7 +1180,7 @@
 
     "block.urushi.japanese_apricot_framed_wattle_and_daub": "梅の木枠付き土壁",
 
-    "block.urushi.sakura_framed_wattle_and_daub": "桜の木枠付き土壁",
+    "block.urushi.sakura_framed_wattle_and_daub": "こぼれ桜の木枠付き土壁",
 
     "block.urushi.cypress_framed_wattle_and_daub": "檜の木枠付き土壁",
 
@@ -1262,7 +1262,7 @@
 
     "block.urushi.japanese_apricot_framed_sand_coast": "梅の木枠付き砂壁",
 
-    "block.urushi.sakura_framed_sand_coast": "桜の木枠付き砂壁",
+    "block.urushi.sakura_framed_sand_coast": "こぼれ桜の木枠付き砂壁",
 
     "block.urushi.cypress_framed_sand_coast": "檜の木枠付き砂壁",
 
@@ -1294,7 +1294,7 @@
 
     "block.urushi.kakuriyo_grass_block_with_fallen_japanese_apricot_leaves": "梅の落ち葉付きの繁茂した幽世土",
 
-    "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "桜の落ち葉付きの繁茂した幽世土",
+    "block.urushi.kakuriyo_grass_block_with_fallen_sakura_leaves": "こぼれ桜の落ち葉付きの繁茂した幽世土",
 
     "gui.jei.category.urushi.chiseled_lacquer_log": "抽出",
 
@@ -1326,7 +1326,7 @@
 
    "block.urushi.japanese_apricot_shitamiita": "下見板張りの梅の板材",
 
-   "block.urushi.sakura_shitamiita": "下見板張りの桜の板材",
+   "block.urushi.sakura_shitamiita": "下見板張りのこぼれ桜の板材",
 
    "block.urushi.cypress_shitamiita": "下見板張りの檜の板材",
 
@@ -1350,7 +1350,7 @@
 
    "block.urushi.japanese_apricot_shitamiita_slab": "下見板張りの梅の板材のハーフブロック",
 
-   "block.urushi.sakura_shitamiita_slab": "下見板張りの桜の板材のハーフブロック",
+   "block.urushi.sakura_shitamiita_slab": "下見板張りのこぼれ桜の板材のハーフブロック",
 
    "block.urushi.cypress_shitamiita_slab": "下見板張りの檜の板材のハーフブロック",
 
@@ -1884,7 +1884,7 @@
 
     "block.urushi.japanese_apricot_board_window": "梅の無双連子窓",
 
-    "block.urushi.sakura_board_window": "桜の無双連子窓",
+    "block.urushi.sakura_board_window": "こぼれ桜の無双連子窓",
 
     "block.urushi.cypress_board_window": "檜の無双連子窓",
 
@@ -1978,7 +1978,7 @@
 
     "block.urushi.japanese_apricot_yukimi_shoji": "梅の雪見障子",
 
-    "block.urushi.sakura_yukimi_shoji": "桜の雪見障子",
+    "block.urushi.sakura_yukimi_shoji": "こぼれ桜の雪見障子",
 
     "block.urushi.cypress_yukimi_shoji": "檜の雪見障子",
 
@@ -2121,21 +2121,21 @@
     "block.urushi.japanese_apricot_framed_green_plaster": "梅の木枠付きの緑色の漆喰",
     "block.urushi.japanese_apricot_framed_red_plaster": "梅の木枠付きの赤色の漆喰",
     "block.urushi.japanese_apricot_framed_black_plaster": "梅の木枠付きの黒色の漆喰",
-    "block.urushi.sakura_framed_orange_plaster": "桜の木枠付きの橙色の漆喰",
-    "block.urushi.sakura_framed_magenta_plaster": "桜の木枠付きの赤紫色の漆喰",
-    "block.urushi.sakura_framed_light_blue_plaster": "桜の木枠付きの空色の漆喰",
-    "block.urushi.sakura_framed_yellow_plaster": "桜の木枠付きの黄色の漆喰",
-    "block.urushi.sakura_framed_lime_plaster": "桜の木枠付きの黄緑色の漆喰",
-    "block.urushi.sakura_framed_pink_plaster": "桜の木枠付きの桃色の漆喰",
-    "block.urushi.sakura_framed_gray_plaster": "桜の木枠付きの灰色の漆喰",
-    "block.urushi.sakura_framed_light_gray_plaster": "桜の木枠付きの薄灰色の漆喰",
-    "block.urushi.sakura_framed_cyan_plaster": "桜の木枠付きの青緑色の漆喰",
-    "block.urushi.sakura_framed_purple_plaster": "桜の木枠付きの紫色の漆喰",
-    "block.urushi.sakura_framed_blue_plaster": "桜の木枠付きの青色の漆喰",
-    "block.urushi.sakura_framed_brown_plaster": "桜の木枠付きの茶色の漆喰",
-    "block.urushi.sakura_framed_green_plaster": "桜の木枠付きの緑色の漆喰",
-    "block.urushi.sakura_framed_red_plaster": "桜の木枠付きの赤色の漆喰",
-    "block.urushi.sakura_framed_black_plaster": "桜の木枠付きの黒色の漆喰",
+    "block.urushi.sakura_framed_orange_plaster": "こぼれ桜の木枠付きの橙色の漆喰",
+    "block.urushi.sakura_framed_magenta_plaster": "こぼれ桜の木枠付きの赤紫色の漆喰",
+    "block.urushi.sakura_framed_light_blue_plaster": "こぼれ桜の木枠付きの空色の漆喰",
+    "block.urushi.sakura_framed_yellow_plaster": "こぼれ桜の木枠付きの黄色の漆喰",
+    "block.urushi.sakura_framed_lime_plaster": "こぼれ桜の木枠付きの黄緑色の漆喰",
+    "block.urushi.sakura_framed_pink_plaster": "こぼれ桜の木枠付きの桃色の漆喰",
+    "block.urushi.sakura_framed_gray_plaster": "こぼれ桜の木枠付きの灰色の漆喰",
+    "block.urushi.sakura_framed_light_gray_plaster": "こぼれ桜の木枠付きの薄灰色の漆喰",
+    "block.urushi.sakura_framed_cyan_plaster": "こぼれ桜の木枠付きの青緑色の漆喰",
+    "block.urushi.sakura_framed_purple_plaster": "こぼれ桜の木枠付きの紫色の漆喰",
+    "block.urushi.sakura_framed_blue_plaster": "こぼれ桜の木枠付きの青色の漆喰",
+    "block.urushi.sakura_framed_brown_plaster": "こぼれ桜の木枠付きの茶色の漆喰",
+    "block.urushi.sakura_framed_green_plaster": "こぼれ桜の木枠付きの緑色の漆喰",
+    "block.urushi.sakura_framed_red_plaster": "こぼれ桜の木枠付きの赤色の漆喰",
+    "block.urushi.sakura_framed_black_plaster": "こぼれ桜の木枠付きの黒色の漆喰",
     "block.urushi.cypress_framed_orange_plaster": "檜の木枠付きの橙色の漆喰",
     "block.urushi.cypress_framed_magenta_plaster": "檜の木枠付きの赤紫色の漆喰",
     "block.urushi.cypress_framed_light_blue_plaster": "檜の木枠付きの空色の漆喰",
@@ -2258,7 +2258,7 @@
     "gui.jei.category.urushi.earth_element_tier2_crafting": "儀式",
     "gui.jei.category.urushi.metal_element_tier2_crafting": "儀式",
     "gui.jei.category.urushi.water_element_tier2_crafting": "儀式",
-    "info.urushi.hokora": "下記のアイテムを右クリックまたはホッパーなどで搬入することで霊力5ずつ生産できる",
+    "info.urushi.hokora": "下記のアイテムを右クリックまたはホッパーなどで搬入することで霊力5ずつ生産できる。",
     "info.urushi.wood_hokora": "必要なアイテム：スイートベリー",
     "info.urushi.fire_hokora": "必要なアイテム：小麦",
     "info.urushi.earth_hokora": "必要なアイテム：籾",
@@ -2288,11 +2288,11 @@
    "block.urushi.gold_leaf_block": "金箔ブロック",
    "block.urushi.gold_leaf_slab": "金箔のハーフブロック",
    "block.urushi.gold_leaf_stairs": "金箔の階段",
-   "info.urushi.crop": "農地に植えられる作物",
-   "info.urushi.fermentation_barrel": "放置すると発酵させることができる",
-   "info.urushi.fermentation_barrel2": "発酵させるアイテム8個で発酵用の樽を右クリックしても作成できる",
-   "info.urushi.rice_malt": "発酵用の樽にご飯8個を入れて放置で入手",
-   "info.urushi.miso": "発酵用の樽に仕込み味噌8個を入れて放置で入手",
+   "info.urushi.crop": "農地に植えられる作物。",
+   "info.urushi.fermentation_barrel": "放置すると発酵させることができる。",
+   "info.urushi.fermentation_barrel2": "発酵させるアイテム8個で発酵用の樽を右クリックしても作成できる。",
+   "info.urushi.rice_malt": "発酵用の樽にご飯8個を入れて放置で入手。",
+   "info.urushi.miso": "発酵用の樽に仕込み味噌8個を入れて放置で入手。",
    "block.urushi.oak_wall_for_framed_blocks": "オークの壁",
    "block.urushi.spruce_wall_for_framed_blocks": "トウヒの壁",
    "block.urushi.birch_wall_for_framed_blocks": "シラカバの壁",
@@ -2300,7 +2300,7 @@
    "block.urushi.acacia_wall_for_framed_blocks": "アカシアの壁",
    "block.urushi.dark_oak_wall_for_framed_blocks": "ダークオークの壁",
    "block.urushi.japanese_apricot_wall_for_framed_blocks": "梅の壁",
-   "block.urushi.sakura_wall_for_framed_blocks": "桜の壁",
+   "block.urushi.sakura_wall_for_framed_blocks": "こぼれ桜の壁",
    "block.urushi.cypress_wall_for_framed_blocks": "檜の壁",
    "block.urushi.japanese_cedar_wall_for_framed_blocks": "杉の壁",
    "block.urushi.red_urushi_wall_for_framed_blocks": "朱漆の壁",
@@ -2361,13 +2361,13 @@
    "block.urushi.vertical_smooth_acacia_slab": "滑らかなアカシアの縦ハーフブロック",
    "block.urushi.vertical_smooth_dark_oak_slab": "滑らかなダークオークの縦ハーフブロック",
    "block.urushi.vertical_smooth_japanese_apricot_slab": "滑らかな梅の縦ハーフブロック",
-   "block.urushi.vertical_smooth_sakura_slab": "滑らかな桜の縦ハーフブロック",
+   "block.urushi.vertical_smooth_sakura_slab": "滑らかなこぼれ桜の縦ハーフブロック",
    "block.urushi.vertical_smooth_cypress_slab": "滑らかな檜の縦ハーフブロック",
    "block.urushi.vertical_smooth_japanese_cedar_slab": "滑らかな杉の縦ハーフブロック",
    "block.urushi.vertical_smooth_red_urushi_slab": "滑らかな朱漆の縦ハーフブロック",
    "block.urushi.vertical_smooth_black_urushi_slab": "滑らかな黒漆の縦ハーフブロック",
    "block.urushi.japanese_apricot_bars": "梅の五本柱",
-   "block.urushi.sakura_bars": "桜の五本柱",
+   "block.urushi.sakura_bars": "こぼれ桜の五本柱",
    "block.urushi.cypress_bars": "檜の五本柱",
    "block.urushi.japanese_cedar_bars": "杉の五本柱",
    "block.urushi.red_urushi_bars": "朱漆の五本柱",
@@ -2379,7 +2379,7 @@
    "block.urushi.horizontal_acacia_bars": "アカシアの横向き五本柱",
    "block.urushi.horizontal_dark_oak_bars": "ダークオークの横向き五本柱",
    "block.urushi.horizontal_japanese_apricot_bars": "梅の横向き五本柱",
-   "block.urushi.horizontal_sakura_bars": "桜の横向き五本柱",
+   "block.urushi.horizontal_sakura_bars": "こぼれ桜の横向き五本柱",
    "block.urushi.horizontal_cypress_bars": "檜の横向き五本柱",
    "block.urushi.horizontal_japanese_cedar_bars": "杉の横向き五本柱",
    "block.urushi.horizontal_red_urushi_bars": "朱漆の横向き五本柱",
@@ -2411,7 +2411,7 @@
    "biome.urushi.autumn_forest": "秋の森",
    "biome.urushi.cedar_forest": "杉の森",
    "biome.urushi.eulalia_plains": "すすき平原",
-   "biome.urushi.sakura_forest": "桜の森",
+   "biome.urushi.sakura_forest": "こぼれ桜の森",
    "block.urushi.mirror_tier2": "翡翠の反射鏡",
    "block.urushi.wood_element_emitter_tier2": "翡翠の木気の伝達口",
    "block.urushi.fire_element_emitter_tier2": "翡翠の火気の伝達口",
@@ -2436,7 +2436,7 @@
     "block.urushi.acacia_lattice_door": "アカシアの格子戸",
     "block.urushi.dark_oak_lattice_door": "ダークオークの格子戸",
     "block.urushi.japanese_apricot_lattice_door": "梅の格子戸",
-    "block.urushi.sakura_lattice_door": "桜の格子戸",
+    "block.urushi.sakura_lattice_door": "こぼれ桜の格子戸",
     "block.urushi.cypress_lattice_door": "檜の格子戸",
     "block.urushi.japanese_cedar_lattice_door": "杉の格子戸",
     "block.urushi.red_urushi_lattice_door": "朱漆の格子戸",
@@ -2506,21 +2506,21 @@
    "item.urushi.spike_jufu": "棘の符",
    "item.urushi.freezing_jufu": "凍結の符",
    "item.urushi.visualization_goggles": "可視化の眼鏡",
-   "info.urushi.visualization_goggles": "装備すると霊力輸送の通り道を目視できるようになる",
-   "info.urushi.jufu_stamp1": "環状木柱列の構造物でパズルを解くと、パズルを揃えた色に対応した元素のハンコのうち、いずれかひとつのハンコを入手できる",
-   "info.urushi.jufu_stamp2": "なお儀式台で呪符を作成するとき、このハンコは消費されずに残る",
+   "info.urushi.visualization_goggles": "装備すると霊力輸送の通り道を目視できるようになる。",
+   "info.urushi.jufu_stamp1": "環状木柱列の構造物でパズルを解くと、パズルを揃えた色に対応した元素のハンコのうち、いずれかひとつのハンコを入手できる。",
+   "info.urushi.jufu_stamp2": "なお儀式台で呪符を作成するとき、このハンコは消費されずに残る。",
    "info.urushi.reiryoku_cost": "必要な霊力量 :",
-   "info.urushi.knockback_jufu1": "モブを遠くに吹き飛ばす",
-   "info.urushi.jump_jufu1": "モブを打ち上げて落下ダメージを与える",
-   "info.urushi.liana_jufu1": "即座に壁を展開する",
-   "info.urushi.lava_generation_jufu1": "着弾地点に溶岩を生み出す",
-   "info.urushi.growth_jufu1": "11×11×11の範囲に骨粉効果をもたらす (草ブロックを除く)",
-   "info.urushi.mountain_creation_jufu1": "土の塊を上空に生み出して落下させる",
-   "info.urushi.mountain_creation_jufu2": "山をつくったり地形を弄ったりするときに便利",
-   "info.urushi.fluid_erasion_jufu1": "11×11の範囲にある液体を除去する",
-   "info.urushi.spike_jufu1": "地面から金属のトゲを生やしてダメージを与える",
-   "info.urushi.spike_jufu2": "プレイヤーがトゲから約25ブロック以内にいる場合、トゲによるダメージはプレイヤーによる攻撃扱いとなりレアドロップや経験値が手に入る",
-   "info.urushi.freezing_jufu1": "モブを5秒間拘束する",
+   "info.urushi.knockback_jufu1": "モブを遠くに吹き飛ばす。",
+   "info.urushi.jump_jufu1": "モブを打ち上げて落下ダメージを与える。",
+   "info.urushi.liana_jufu1": "即座に壁を展開する。",
+   "info.urushi.lava_generation_jufu1": "着弾地点に溶岩を生み出す。",
+   "info.urushi.growth_jufu1": "11×11×11の範囲に骨粉効果をもたらす (草ブロックを除く)。",
+   "info.urushi.mountain_creation_jufu1": "土の塊を上空に生み出して落下させる。",
+   "info.urushi.mountain_creation_jufu2": "山をつくったり地形を弄ったりするときに便利。",
+   "info.urushi.fluid_erasion_jufu1": "11×11の範囲にある液体を除去する。",
+   "info.urushi.spike_jufu1": "地面から金属のトゲを生やしてダメージを与える。",
+   "info.urushi.spike_jufu2": "トゲによるダメージはプレイヤーによる攻撃扱いとなりレアドロップや経験値が手に入る。",
+   "info.urushi.freezing_jufu1": "モブを5秒間拘束する。",
    "block.urushi.green_tatami_slab": "緑色の畳のハーフブロック",
    "block.urushi.brown_tatami_slab": "茶色の畳のハーフブロック",
    "block.urushi.sand_coast_slab": "砂壁のハーフブロック",
@@ -2552,7 +2552,6 @@
    "block.urushi.red_seigaiha_fusuma": "赤色の青海波の襖",
    "block.urushi.red_sayagata_fusuma": "赤色の紗綾形の襖",
    "config.jade.plugin_urushi.block_element": "ブロックの元素",
-   "info.urushi.double_slab": "バニラや漆MODに存在するすべてのハーフブロックは異なる種類でも重ねられる。重ねても負荷の原因にならない。",
    "item.urushi.shrimp": "エビ",
    "item.urushi.fried_shrimp": "エビフライ",
    "item.urushi.shrimp_sushi": "エビの寿司",
@@ -2609,8 +2608,8 @@
    "block.urushi.green_silk_block": "緑色の絹布ブロック",
    "block.urushi.red_silk_block": "赤色の絹布ブロック",
    "block.urushi.black_silk_block": "黒色の絹布ブロック",
-   "item.urushi.kakuriyo_villager_spawn_egg": "幽世の村人のスポーンエッグ",
-   "entity.urushi.kakuriyo_villager": "幽世の村人",
+   "item.urushi.kakuriyo_villager_spawn_egg": "幽世の住人のスポーンエッグ",
+   "entity.urushi.kakuriyo_villager": "幽世の住人",
    "info.urushi.hibachi": "上に茶釜を置いて緑茶を作ろう",
    "sounds.urushi.urushi_advancements": "漆MODの進捗を達成する",
    "entity.urushi.green_tea_food": "緑茶",
@@ -2835,7 +2834,34 @@
    "item.urushi.ochoko": "おちょこ",
    "entity.urushi.sake_food": "日本酒",
    "entity.urushi.tokkuri_food": "とっくり",
-   "entity.urushi.ochoko_food": "おちょこ"
+   "entity.urushi.ochoko_food": "おちょこ",
+   "container.urushi.kakuriyo_villager_jobless": "幽世の住人 (職無し)",
+   "container.urushi.kakuriyo_villager_cook": "幽世の住人 (料理屋)",
+   "container.urushi.kakuriyo_villager_miner": "幽世の住人 (石屋)",
+   "container.urushi.kakuriyo_villager_fisherman": "幽世の住人 (釣り人)",
+   "container.urushi.kakuriyo_villager_lumberjack": "幽世の住人 (材木屋)",
+   "container.urushi.kakuriyo_villager_rice_dealer": "幽世の住人 (米問屋)",
+   "info.urushi.rice_ball_with_filling_random": "取引する度に効果が変わります",
+   "info.urushi.kakuriyo_villager_jobless": "この幽世の住人は職無しです",
+   "entity.urushi.kakuriyo_villager": "幽世の住人",
+   "item.urushi.crush_jufu": "打ち潰しの符",
+   "item.urushi.explosion_jufu": "爆発の符",
+   "item.urushi.crush_jufu_stamp": "打ち潰しの符のハンコ",
+   "item.urushi.explosion_jufu_stamp": "爆発の符のハンコ",
+   "info.urushi.crush_jufu1": "モブの頭上に金床を召喚してダメージを与える。",
+   "info.urushi.crush_jufu2": "金床によるダメージはプレイヤーによる攻撃扱いとなりレアドロップや経験値が手に入る。",
+   "info.urushi.explosion_jufu1": "着弾地点を爆破する。",
+   "info.urushi.explosion_jufu2": "爆発によるダメージはプレイヤーによる攻撃扱いとなりレアドロップや経験値が手に入る。",
+   "book.urushi.chronicles1": "幽世神記は製作途中の要素なため、この部分の翻訳はまだしないでください。",
+   "info.urushi.crop2": "クワで草ブロックを耕して入手しよう。",
+   "info.urushi.tea_bush": "幽世の街で料理屋と取引して入手しよう",
+   "info.urushi.tea_leaf": "茶葉の茂みを栽培して手に入れよう",
+   "gui.jei.category.urushi.kettle": "お茶淹れ",
+   "gui.jei.category.urushi.rainwater_tank": "加水",
+   "gui.jei.category.urushi.rainwater_tank.text": "右クリック",
+   "info.urushi.coin": "最大6個まで重ねて設置できる。",
+   "info.urushi.rainwater_tank1": "水を入れるとバケツなどで無限に水を取り出せる。",
+   "info.urushi.rainwater_tank2": "土を泥にしたり、コンクリートパウダーをコンクリートに固めたり、銅ブロックを錆びさせたりできる。"
    
    
 }

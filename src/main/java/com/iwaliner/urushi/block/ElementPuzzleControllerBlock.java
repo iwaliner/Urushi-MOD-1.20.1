@@ -113,6 +113,7 @@ public class ElementPuzzleControllerBlock extends HorizonalRotateBlock {
             }else if(block1==ItemAndBlockRegister.fire_element_puzzle_block.get()){
                 List<Item> jufuList=new ArrayList<>();
                 jufuList.add(ItemAndBlockRegister.lava_generation_jufu_stamp.get());
+                jufuList.add(ItemAndBlockRegister.explosion_jufu_stamp.get());
 
                 ItemEntity itemEntity=new ItemEntity(level,(double) pos.getX()+1.5D,(double) pos.getY()+4.5D,(double) pos.getZ()+0.5D,new ItemStack(jufuList.get(level.getRandom().nextInt(jufuList.size()))));
                 level.addFreshEntity(itemEntity);
@@ -127,6 +128,7 @@ public class ElementPuzzleControllerBlock extends HorizonalRotateBlock {
             }if(block1==ItemAndBlockRegister.metal_element_puzzle_block.get()){
                 List<Item> jufuList=new ArrayList<>();
                 jufuList.add(ItemAndBlockRegister.spike_jufu_stamp.get());
+                jufuList.add(ItemAndBlockRegister.crush_jufu_stamp.get());
 
                 ItemEntity itemEntity=new ItemEntity(level,(double) pos.getX()+1.5D,(double) pos.getY()+4.5D,(double) pos.getZ()+0.5D,new ItemStack(jufuList.get(level.getRandom().nextInt(jufuList.size()))));
                 level.addFreshEntity(itemEntity);

@@ -1,5 +1,7 @@
 package com.iwaliner.urushi.block;
 
+import com.iwaliner.urushi.blockentity.PlateBlockEntity;
+import com.iwaliner.urushi.blockentity.SpikeBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -13,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -25,13 +28,19 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SpikeBlock extends Block {
+public class SpikeBlock extends BaseEntityBlock {
     public static final IntegerProperty LEVEL = BlockStateProperties.LEVEL;
     public static final BooleanProperty INVERTED = BlockStateProperties.INVERTED;
     public SpikeBlock(Properties p_49795_) {
         super(p_49795_);
         this.registerDefaultState(this.stateDefinition.any().setValue(LEVEL, 0).setValue(INVERTED,false));
     }
+    @org.jetbrains.annotations.Nullable
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return   new SpikeBlockEntity(pos,state);
+    }
+
 
     @Override
     public boolean isPathfindable(BlockState p_60475_, BlockGetter p_60476_, BlockPos p_60477_, PathComputationType p_60478_) {
@@ -81,12 +90,17 @@ public class SpikeBlock extends Block {
     public void onPlace(BlockState state, Level level, BlockPos pos, BlockState state2, boolean b) {
         level.scheduleTick(pos, this, 1);
     }
+    public RenderShape getRenderShape(BlockState p_49090_) {
+        return RenderShape.MODEL;
+    }
 
     @Override
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
 
-        if(entity instanceof LivingEntity){
-            AABB axisalignedbb =entity.getBoundingBox() .inflate(25.0D, 25.0D, 25.0D);
+        if(entity instanceof LivingEntity livingEntity&&level.getBlockEntity(pos) instanceof SpikeBlockEntity spikeBlockEntity){
+
+            livingEntity.hurt(livingEntity.damageSources().playerAttack(spikeBlockEntity.getPlayer()), 3F);
+            /*AABB axisalignedbb =entity.getBoundingBox() .inflate(25.0D, 25.0D, 25.0D);
             List<Player> list = level.getEntitiesOfClass(Player.class, axisalignedbb);
             Player player=null;
             if(!list.isEmpty()) {
@@ -101,7 +115,7 @@ public class SpikeBlock extends Block {
             }else{
                 living.hurt(living.damageSources().generic(), 3F);
             }
-
+*/
         }
     }
 

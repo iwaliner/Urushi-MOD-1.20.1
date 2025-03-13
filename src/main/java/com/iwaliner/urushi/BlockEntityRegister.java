@@ -41,6 +41,7 @@ public class BlockEntityRegister {
      public static final RegistryObject<BlockEntityType<RandomElementPuzzleBlockEntity>> RandomElementPuzzleBlock=Tiles.register("random_element_puzzle_block", () -> BlockEntityType.Builder.of(RandomElementPuzzleBlockEntity::new, ItemAndBlockRegister.random_element_puzzle_block.get()).build(null));
     public static final RegistryObject<BlockEntityType<SilkwormFarmBlockEntity>> SilkwormFarm=Tiles.register("silkworm_farm", () -> BlockEntityType.Builder.of(SilkwormFarmBlockEntity::new, ItemAndBlockRegister.silkworm_farm.get()).build(null));
     public static final RegistryObject<BlockEntityType<KettleBlockEntity>> Kettle=Tiles.register("kettle", () -> BlockEntityType.Builder.of(KettleBlockEntity::new, ItemAndBlockRegister.kettle.get()).build(null));
+    public static final RegistryObject<BlockEntityType<SpikeBlockEntity>> Spike=Tiles.register("spike", () -> BlockEntityType.Builder.of(SpikeBlockEntity::new, ItemAndBlockRegister.spike.get()).build(null));
 
 
 

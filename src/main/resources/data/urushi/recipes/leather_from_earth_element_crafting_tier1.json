@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:earth_element_tier1_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:rotten_flesh"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "minecraft:rotten_flesh"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "minecraft:rotten_flesh"
+
+
+
+    },
+
+
+
+    {
+
+
+
+ "item": "minecraft:rotten_flesh"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"minecraft:leather"
+
+
+
+  },
+
+
+
+  "reiryoku": 10
+
+
+
+}

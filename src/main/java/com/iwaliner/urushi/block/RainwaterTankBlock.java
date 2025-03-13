@@ -1,19 +1,26 @@
 package com.iwaliner.urushi.block;
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.RecipeTypeRegister;
+import com.iwaliner.urushi.recipe.RainwaterTankRecipe;
+import com.iwaliner.urushi.recipe.SenbakokiRecipe;
+import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.cauldron.CauldronInteraction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -33,6 +40,8 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Optional;
 
 public class RainwaterTankBlock extends AbstractHorizontalRotateHighBlock{
     public static final BooleanProperty FILLED = BooleanProperty.create("filled");
@@ -84,11 +93,22 @@ public class RainwaterTankBlock extends AbstractHorizontalRotateHighBlock{
        }
     }
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
-        if(state.getValue(HALF)==DoubleBlockHalf.LOWER){
-            BlockState upperState=level.getBlockState(pos.above());
-            ItemStack stack=player.getItemInHand(hand);
-            if(upperState.getBlock() instanceof RainwaterTankBlock) {
-                if (state.getValue(FILLED)) {
+           ItemStack stack=player.getItemInHand(hand);
+            boolean isLower=state.getValue(HALF)==DoubleBlockHalf.LOWER;
+            BlockPos anotherPos=isLower? pos.above() : pos.below();
+            BlockState anotherState=level.getBlockState(anotherPos);
+            BlockState lowerState= isLower? state : anotherState;
+            if(anotherState.getBlock() instanceof RainwaterTankBlock) {
+                Optional<RainwaterTankRecipe> recipe = Optional.of(level.getRecipeManager())
+                        .flatMap(manager -> manager.getRecipeFor(RecipeTypeRegister.RainwaterTankRecipe, new SimpleContainer(stack), level));
+                if (lowerState.getValue(FILLED)) {
+                    if (recipe.isPresent()) {
+                        ItemStack resultStack=recipe.get().getResultItem().copy();
+                        resultStack.setCount(stack.getCount());
+                        player.setItemInHand(hand,resultStack);
+                        level.playSound((Player) null, (double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, SoundEvents.BUCKET_FILL, SoundSource.BLOCKS, 1F, 1F);
+                        return InteractionResult.SUCCESS;
+                    }
                     if (stack.getItem() == Items.BUCKET) {
                         stack.shrink(1);
                         if (stack.isEmpty()) {
@@ -118,13 +138,17 @@ public class RainwaterTankBlock extends AbstractHorizontalRotateHighBlock{
                             player.drop(new ItemStack(Items.BUCKET), false);
                         }
                         level.setBlockAndUpdate(pos, state.setValue(FILLED, Boolean.TRUE));
-                        level.setBlockAndUpdate(pos.above(), upperState.setValue(FILLED, Boolean.TRUE));
+                        level.setBlockAndUpdate(anotherPos, anotherState.setValue(FILLED, Boolean.TRUE));
                         level.playSound((Player) null, (double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, SoundEvents.BUCKET_EMPTY, SoundSource.BLOCKS, 1F, 1F);
                         return InteractionResult.SUCCESS;
                     }
                 }
             }
-        }
         return InteractionResult.FAIL;
+    }
+    @Override
+    public void appendHoverText(ItemStack p_49816_, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
+        UrushiUtils.setInfo(list,"rainwater_tank1");
+        UrushiUtils.setInfo(list,"rainwater_tank2");
     }
 }

@@ -1,7 +1,9 @@
 package com.iwaliner.urushi.block;
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -11,6 +13,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -26,6 +29,8 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import java.util.List;
 
 public class TeaBushBlock extends BushBlock implements BonemealableBlock {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_1;
@@ -80,5 +85,9 @@ public class TeaBushBlock extends BushBlock implements BonemealableBlock {
             net.minecraftforge.common.ForgeHooks.onCropsGrowPost(p_222564_, p_222565_, p_222563_);
         }
 
+    }
+    @Override
+    public void appendHoverText(ItemStack stack, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
+        UrushiUtils.setInfo(list, "tea_bush");
     }
 }

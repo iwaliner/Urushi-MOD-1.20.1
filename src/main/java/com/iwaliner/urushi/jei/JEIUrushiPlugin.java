@@ -43,6 +43,7 @@ public class JEIUrushiPlugin implements IModPlugin {
     public static final RecipeType<FoxEatingRecipe> JEI_FOX_EATING =RecipeType.create(ModCoreUrushi.ModID, "fox_eating", FoxEatingRecipe.class);
     public static final RecipeType<SilkFarmRecipe> JEI_SILKWORM =RecipeType.create(ModCoreUrushi.ModID, "silkworm", SilkFarmRecipe.class);
     public static final RecipeType<KettleRecipe> JEI_KETTLE =RecipeType.create(ModCoreUrushi.ModID, "kettle", KettleRecipe.class);
+    public static final RecipeType<RainwaterTankRecipe> JEI_RAINWATER_TANK = RecipeType.create(ModCoreUrushi.ModID, "rainwater_tank", RainwaterTankRecipe.class);
 
 
 
@@ -76,6 +77,7 @@ public class JEIUrushiPlugin implements IModPlugin {
         registration.addRecipeCategories(new WaterElementTier2CraftingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new SilkwormFarmRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new KettleRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+        registration.addRecipeCategories(new RainwaterTankRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
@@ -126,6 +128,8 @@ public class JEIUrushiPlugin implements IModPlugin {
         registration.addRecipes(new RecipeType<>(SilkwormFarmRecipeCategory.location,SilkFarmRecipe.class),SilkFarmRecipes);
         List<KettleRecipe> KettleRecipes=recipeManager.getAllRecipesFor(RecipeTypeRegister.KettleRecipe);
         registration.addRecipes(new RecipeType<>(KettleRecipeCategory.location,KettleRecipe.class),KettleRecipes);
+        List<RainwaterTankRecipe> RainwaterTankRecipes=recipeManager.getAllRecipesFor(RecipeTypeRegister.RainwaterTankRecipe);
+        registration.addRecipes(new RecipeType<>(RainwaterTankRecipeCategory.location,RainwaterTankRecipe.class),RainwaterTankRecipes);
     }
 
     @Override
@@ -150,5 +154,6 @@ public class JEIUrushiPlugin implements IModPlugin {
         registration.addRecipeCatalyst(new ItemStack(ItemAndBlockRegister.water_element_crafting_table_tier2.get()), JEI_WATER_ELEMENT_TIER2_CRAFTING);
         registration.addRecipeCatalyst(new ItemStack(ItemAndBlockRegister.silkworm_farm.get()), JEI_SILKWORM);
         registration.addRecipeCatalyst(new ItemStack(ItemAndBlockRegister.kettle.get()), JEI_KETTLE);
+        registration.addRecipeCatalyst(new ItemStack(ItemAndBlockRegister.rainwater_tank.get()), JEI_RAINWATER_TANK);
     }
 }

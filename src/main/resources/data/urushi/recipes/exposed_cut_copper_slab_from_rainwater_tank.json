@@ -1,0 +1,11 @@
+{
+  "type": "urushi:rainwater_tank",
+  "ingredients": [
+  {
+    "item": "minecraft:cut_copper_slab"
+    }
+  ],
+  "result": {
+  "item":"minecraft:exposed_cut_copper_slab"
+  }
+}

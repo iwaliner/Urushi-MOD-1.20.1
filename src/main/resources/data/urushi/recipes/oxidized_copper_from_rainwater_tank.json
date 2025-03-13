@@ -1,0 +1,11 @@
+{
+  "type": "urushi:rainwater_tank",
+  "ingredients": [
+  {
+    "item": "minecraft:weathered_copper"
+    }
+  ],
+  "result": {
+  "item":"minecraft:oxidized_copper"
+  }
+}

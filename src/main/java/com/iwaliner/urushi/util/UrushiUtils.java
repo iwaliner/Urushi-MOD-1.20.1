@@ -26,6 +26,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
@@ -247,11 +248,27 @@ public class UrushiUtils {
             riceBall.setTag(tag);
         }
     }
-    public static ItemStack getRandomRiceBall(int stackSize, Random random){
+    public static ItemStack getRandomRiceBall(int stackSize, RandomSource random){
         ItemStack stack=new ItemStack(ItemAndBlockRegister.rice_ball.get(),stackSize);
-        CompoundTag tag=new CompoundTag();
+        if(stack.getTag()==null){
+            stack.setTag(new CompoundTag());
+        }
+        CompoundTag tag=stack.getTag();
         int i=random.nextInt(12);
-
+        switch (i){
+            case 0 -> tag.putString("effect","levitation");
+            case 1 -> tag.putString("effect","ignite");
+            case 2 -> tag.putString("effect","strength");
+            case 3 -> tag.putString("effect","glow");
+            case 4 -> tag.putString("effect","slow_fall");
+            case 5 -> tag.putString("effect","water_breathing");
+            case 6 -> tag.putString("effect","explode");
+            case 7 -> tag.putString("effect","jump");
+            case 8 -> tag.putString("effect","nausea");
+            case 9 -> tag.putString("effect","slowness");
+            case 10 -> tag.putString("effect","poison");
+            case 11 -> tag.putString("effect","freeze");
+        }
         stack.setTag(tag);
         return stack;
     }

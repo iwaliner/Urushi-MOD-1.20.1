@@ -92,6 +92,7 @@ public class UrushiCropBlock extends CropBlock {
     @Override
     public void appendHoverText(ItemStack stack, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
         UrushiUtils.setInfo(list, "crop");
+        UrushiUtils.setInfo(list, "crop2");
     }
     @Override
     public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {

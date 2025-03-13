@@ -1,0 +1,80 @@
+{
+
+
+
+  "type": "urushi:water_element_tier2_crafting",
+
+
+
+  "ingredients": [
+
+
+
+  {
+
+
+
+    "item": "minecraft:lapis_lazuli"
+
+
+
+    },
+
+
+
+    {
+
+
+"item": "minecraft:lapis_lazuli"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "minecraft:lapis_lazuli"
+
+
+
+    },
+
+
+
+    {
+
+
+
+"item": "minecraft:lapis_lazuli"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "result": {
+
+
+
+  "item":"minecraft:prismarine_shard"
+
+
+
+  },
+
+
+
+  "reiryoku": 30
+
+
+
+}

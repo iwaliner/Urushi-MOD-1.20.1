@@ -1,0 +1,11 @@
+{
+  "type": "urushi:rainwater_tank",
+  "ingredients": [
+  {
+    "tag": "minecraft:banners"
+    }
+  ],
+  "result": {
+  "item":"minecraft:white_banner"
+  }
+}

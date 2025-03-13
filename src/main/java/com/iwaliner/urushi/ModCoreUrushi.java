@@ -37,6 +37,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.Container;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -293,8 +294,8 @@ public class ModCoreUrushi {
 
     }
 
-
-    /**草を壊して種が出るように*/
+/*
+    *//**草を壊して種が出るように*//*
     @SubscribeEvent
     public void GrassDropEvent(BlockEvent.BreakEvent event) {
         if(!ConfigUrushi.disableCropDropsFromGrass.get()) {
@@ -318,7 +319,7 @@ public class ModCoreUrushi {
             event.getLevel().addFreshEntity(entity);
         }
         }
-    }
+    }*/
 
     /**玉鋼作るときに右クリックおしっぱだとブロックがドロップして壊れる*/
     @SubscribeEvent
@@ -692,8 +693,34 @@ public class ModCoreUrushi {
             livingEntity.addEffect(new MobEffectInstance(MobEffects.POISON,10+10*level,1));
         }
 
-    }
 
+    }
+    @SubscribeEvent
+    public void HoeEvent(BlockEvent.BlockToolModificationEvent  event) {
+        ItemStack stack=event.getHeldItemStack();
+        Level level= (Level) event.getLevel();
+        BlockPos pos=event.getPos();
+        RandomSource randomSource=level.getRandom();
+        BlockState state=event.getFinalState();
+        if(!level.isClientSide()) {
+            if (randomSource.nextInt(6) == 0) {
+                ItemStack crop=new ItemStack(ItemAndBlockRegister.rice_crop.get());
+                int i=randomSource.nextInt(4);
+                if(i==1){
+                    crop=new ItemStack(ItemAndBlockRegister.soy_crop.get());
+                }else if(i==2){
+                    crop=new ItemStack(ItemAndBlockRegister.azuki_crop.get());
+                }else if(i==3){
+                    crop=new ItemStack(ItemAndBlockRegister.green_onion_crop.get());
+                }
+                if (event.getToolAction() == ToolActions.HOE_TILL &&(state.getBlock() instanceof GrassBlock)) {
+                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D,crop);
+                        level.addFreshEntity(itemEntity);
+                }
+            }
+        }
+
+    }
     /**バニラのルートテーブルに内容を追加*/
     @SubscribeEvent
     public void LoottableEvent(LootTableLoadEvent event) {
@@ -841,4 +868,5 @@ public class ModCoreUrushi {
               event.getEntity().playNotifySound(SoundRegister.UrushiAdvancements.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
         }
     }
+
 }

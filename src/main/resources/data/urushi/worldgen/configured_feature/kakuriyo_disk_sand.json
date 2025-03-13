@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "half_height": 4,
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 8,
+        "min_inclusive": 5
+      }
+    },
+    "state_provider": {
+      "fallback": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:sand"
+        }
+      },
+      "rules": []
+    },
+    "target": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:dirt",
+        "minecraft:sand",
+        "urushi:kakuriyo_dirt",
+        "urushi:kakuriyo_grass_block"
+      ]
+    }
+  }
+}

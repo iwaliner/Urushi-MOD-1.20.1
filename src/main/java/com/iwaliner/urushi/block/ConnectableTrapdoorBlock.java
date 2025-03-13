@@ -8,6 +8,8 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -105,5 +107,28 @@ public class ConnectableTrapdoorBlock extends TrapDoorBlock {
                 .setValue(EAST, Boolean.valueOf(this.connectsTo(thisState, fState)))
                 ;
     }
+    public BlockState rotate(BlockState state, Rotation direction) {
+        switch(direction) {
+            case CLOCKWISE_180:
+                return state.setValue(FACING, direction.rotate(state.getValue(FACING))).setValue(NORTH, state.getValue(SOUTH)).setValue(EAST, state.getValue(WEST)).setValue(SOUTH, state.getValue(NORTH)).setValue(WEST, state.getValue(EAST));
+            case COUNTERCLOCKWISE_90:
+                return state.setValue(FACING, direction.rotate(state.getValue(FACING))).setValue(NORTH, state.getValue(EAST)).setValue(EAST, state.getValue(SOUTH)).setValue(SOUTH, state.getValue(WEST)).setValue(WEST, state.getValue(NORTH));
+            case CLOCKWISE_90:
+                return state.setValue(FACING, direction.rotate(state.getValue(FACING))).setValue(NORTH, state.getValue(WEST)).setValue(EAST, state.getValue(NORTH)).setValue(SOUTH, state.getValue(EAST)).setValue(WEST, state.getValue(SOUTH));
+            default:
+                return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
+        }
+    }
 
+    @Override
+    public BlockState mirror(BlockState p_185471_1_, Mirror p_60529_) {
+        switch(p_60529_) {
+            case LEFT_RIGHT:
+                return p_185471_1_.rotate(p_60529_.getRotation(p_185471_1_.getValue(FACING))).setValue(NORTH, p_185471_1_.getValue(SOUTH)).setValue(SOUTH, p_185471_1_.getValue(NORTH));
+            case FRONT_BACK:
+                return p_185471_1_.rotate(p_60529_.getRotation(p_185471_1_.getValue(FACING))).setValue(EAST, p_185471_1_.getValue(WEST)).setValue(WEST, p_185471_1_.getValue(EAST));
+            default:
+                return super.mirror(p_185471_1_, p_60529_);
+        }
+    }
 }

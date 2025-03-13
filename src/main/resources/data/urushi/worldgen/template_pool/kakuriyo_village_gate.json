@@ -1,0 +1,17 @@
+{
+ "name": "urushi:kakuriyo_village_gate",
+
+ "fallback": "minecraft:empty",
+
+   "elements": [
+    {
+      "weight": 1,
+      "element": {
+      "location": "urushi:village_gate",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

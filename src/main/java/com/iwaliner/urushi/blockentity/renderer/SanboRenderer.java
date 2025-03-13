@@ -13,12 +13,17 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.CampfireBlock;
+import net.minecraft.world.level.block.entity.EnchantmentTableBlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -64,6 +69,8 @@ public class SanboRenderer implements BlockEntityRenderer<SanboBlockEntity> {
         ResourceLocation texture=new ResourceLocation(ModCoreUrushi.ModID,"textures/block/plaster_namako.png");
         renderBeam(poseStack,bufferSource,texture,f1,aspectRatio,blockEntity.getLevel().getGameTime(),i3,hight,color, innerCoreLayerSize, outerTranslucentLayerSize);
     */
+    
+
     }
 
     /**以下、バニラのビーコンビームを使った実験の跡。*/

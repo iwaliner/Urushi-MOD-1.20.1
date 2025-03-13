@@ -22,7 +22,7 @@ public final class ConfigUrushi {
     public static final ForgeConfigSpec.ConfigValue<Integer> generateKakuriyoPortalProbability;
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableBlockElementDisplaying;
     public static final ForgeConfigSpec.ConfigValue<Boolean> disableSaltAndSandGeneration;
-    public static final ForgeConfigSpec.ConfigValue<Boolean> disableCropDropsFromGrass;
+    //public static final ForgeConfigSpec.ConfigValue<Boolean> disableCropDropsFromGrass;
     public static final ForgeConfigSpec.ConfigValue<Boolean> noticeNewerVersion;
     public static final ForgeConfigSpec.ConfigValue<Boolean> indicateFurigana;
 
@@ -32,7 +32,7 @@ public final class ConfigUrushi {
         instantlySlidingDoor=builder.comment("open and close Shojis, Fusumas, and Glass Sliding Door instantly").define("instantry open and close sliding doors(true/false)",false);
         WindBellSound=builder.comment("Play the sound of Wind Bell").define("play wind bell sound(true/false)",true);
         disableSaltAndSandGeneration=builder.comment("disable Salty Sand Generation").define("disable changing Sand to Salty Sand (true/false)",false);
-        disableCropDropsFromGrass=builder.comment("disable crop drops from Grass").define("disable crop drops from Grass (true/false)",false);
+       // disableCropDropsFromGrass=builder.comment("disable crop drops from Grass").define("disable crop drops from Grass (true/false)",false);
         builder.pop();
         builder.push("item settings");
         reiryokuCapacityOfMagatama=builder.comment("max Reiryoku amount of Magatama").define("magatama(1～2147483647)",5600);

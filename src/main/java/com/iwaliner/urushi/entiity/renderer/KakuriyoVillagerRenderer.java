@@ -3,19 +3,20 @@ package com.iwaliner.urushi.entiity.renderer;
 import com.iwaliner.urushi.ClientSetUp;
 import com.iwaliner.urushi.entiity.KakuriyoVillagerEntity;
 import com.iwaliner.urushi.entiity.model.OniModel;
+import com.iwaliner.urushi.util.KakuriyoVillagerProfessionType;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.layers.ItemInHandLayer;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class KakuriyoVillagerRenderer extends MobRenderer<KakuriyoVillagerEntity, HumanoidModel<KakuriyoVillagerEntity>> {
-    private static final ResourceLocation LOCATION = new ResourceLocation("urushi:textures/entity/oni_girl.png");
 
 
     public KakuriyoVillagerRenderer(EntityRendererProvider.Context p_174131_) {
@@ -24,7 +25,15 @@ public class KakuriyoVillagerRenderer extends MobRenderer<KakuriyoVillagerEntity
     }
 
 
-    public ResourceLocation getTextureLocation(KakuriyoVillagerEntity p_114773_) {
-        return LOCATION;
+    public ResourceLocation getTextureLocation(KakuriyoVillagerEntity entity) {
+        KakuriyoVillagerProfessionType professionType=entity.getProfessionType();
+        switch (professionType){
+            case Cook : return  new ResourceLocation("urushi:textures/entity/kakuriyo_villager/cook.png");
+            case Miner: return  new ResourceLocation("urushi:textures/entity/kakuriyo_villager/miner.png");
+            case Fisherman: return  new ResourceLocation("urushi:textures/entity/kakuriyo_villager/fisherman.png");
+            case Lumberjack: return new ResourceLocation("urushi:textures/entity/kakuriyo_villager/lumberjack.png");
+            case RiceDealer: return new ResourceLocation("urushi:textures/entity/kakuriyo_villager/rice_dealer.png");
+        }
+        return  new ResourceLocation("urushi:textures/entity/kakuriyo_villager/jobless.png");
     }
 }

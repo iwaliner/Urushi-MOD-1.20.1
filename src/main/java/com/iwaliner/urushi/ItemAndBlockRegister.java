@@ -13,17 +13,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -1116,8 +1113,8 @@ public class ItemAndBlockRegister {
      public static final RegistryObject<Block> kettle =BF("kettle","p",-1,() -> {return new KettleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).strength(1F, 10.0F).requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> hibachi =BF("hibachi","a",-1,() -> {return new HibachiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1F, 10.0F).sound(SoundType.WOOD).noOcclusion().lightLevel((p_235470_0_) -> {return 10;}));});
     public static final RegistryObject<Block> tea_bush =BF("tea_bush","h",-1,() -> {return new TeaBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.AZALEA).strength(0.3F, 1.0F).randomTicks());});
-    public static final RegistryObject<Item> tea_leaf =IF("tea_leaf");
 
+    public static final RegistryObject<Item> tea_leaf =ITEMS.register("tea_leaf", () -> {return new ToolchipItem("tea_leaf",(new Item.Properties()));});
     public static final RegistryObject<Item> green_tea =ITEMS.register("green_tea", () -> {return new TeaItem(()->EntityRegister.GreenTeaFoodEntity.get(),(new Item.Properties()));});
 
     public static final RegistryObject<Item> sake =ITEMS.register("sake", () -> {return new PlaceableFoodItem(()->EntityRegister.SakeFoodEntity.get(),(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE)));});
@@ -1414,19 +1411,23 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> jump_jufu_stamp =IStamp("jump_jufu_stamp");
     public static final RegistryObject<Item> liana_jufu_stamp =IStamp("liana_jufu_stamp");
     public static final RegistryObject<Item> lava_generation_jufu_stamp =IStamp("lava_generation_jufu_stamp");
+    public static final RegistryObject<Item> explosion_jufu_stamp =IStamp("explosion_jufu_stamp");
     public static final RegistryObject<Item> growth_jufu_stamp =IStamp("growth_jufu_stamp");
     public static final RegistryObject<Item> mountain_creation_jufu_stamp =IStamp("mountain_creation_jufu_stamp");
     public static final RegistryObject<Item> fluid_erasion_jufu_stamp =IStamp("fluid_erasion_jufu_stamp");
     public static final RegistryObject<Item> spike_jufu_stamp =IStamp("spike_jufu_stamp");
+    public static final RegistryObject<Item> crush_jufu_stamp =IStamp("crush_jufu_stamp");
     public static final RegistryObject<Item> freezing_jufu_stamp =IStamp("freezing_jufu_stamp");
     public static final RegistryObject<Item> knockback_jufu =IJufu("knockback_jufu",ElementType.WoodElement,50,1);
     public static final RegistryObject<Item> jump_jufu =IJufu("jump_jufu",ElementType.WoodElement,50,1);
     public static final RegistryObject<Item> liana_jufu =IJufu("liana_jufu",ElementType.WoodElement,50,1);
     public static final RegistryObject<Item> lava_generation_jufu =IJufu("lava_generation_jufu",ElementType.FireElement,50,1);
+    public static final RegistryObject<Item> explosion_jufu =IJufu("explosion_jufu",ElementType.FireElement,50,2);
     public static final RegistryObject<Item> growing_jufu =IJufu("growth_jufu",ElementType.EarthElement,50,1);
     public static final RegistryObject<Item> mountain_creation_jufu =IJufu("mountain_creation_jufu",ElementType.EarthElement,50,2);
     public static final RegistryObject<Item> fluid_erasion_jufu =IJufu("fluid_erasion_jufu",ElementType.EarthElement,50,1);
     public static final RegistryObject<Item> spike_jufu =IJufu("spike_jufu",ElementType.MetalElement,50,2);
+    public static final RegistryObject<Item> crush_jufu =IJufu("crush_jufu",ElementType.MetalElement,50,2);
     public static final RegistryObject<Item> freezing_jufu =IJufu("freezing_jufu",ElementType.WaterElement,50,1);
     public static final RegistryObject<Block> freezing_display =BLOCKS.register("freezing_display",() -> {return new Block(BlockBehaviour.Properties.of().noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).noLootTable());});
     public static final RegistryObject<Block> spike =BLOCKS.register("spike",() -> {return new SpikeBlock(BlockBehaviour.Properties.of().noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).noLootTable().noCollission());});
@@ -1460,8 +1461,11 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> additional_heart =ITEMS.register("additional_heart", () -> {return new AdditionalHeartItem((new Item.Properties()));});
     public static final RegistryObject<Item> ghost_spawn_egg =ITEMS.register("ghost_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.Ghost, 14283506, 14014157,(new Item.Properties()));});
     public static final RegistryObject<Item> giant_skeleton_spawn_egg =ITEMS.register("giant_skeleton_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.GianntSkeleton, 12698049, 4802889,(new Item.Properties()));});
-    public static final RegistryObject<Item> kakuriyo_villager_spawn_egg =ITEMS.register("kakuriyo_villager_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.KakuriyoVillager, 12698049, 4802889,(new Item.Properties()));});
-    public static final RegistryObject<Block> coin =B("coin","p",-1,() -> {return new CoinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(0.5F, 10.0F).noLootTable());});
+    public static final RegistryObject<Item> kakuriyo_villager_spawn_egg =ITEMS.register("kakuriyo_villager_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.KakuriyoVillager, 16638153, 16734589,(new Item.Properties()));});
+    public static final RegistryObject<Block> coin =B("coin","p",-1,() -> {return new CoinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(0.5F, 10.0F).noOcclusion());});
+    public static final RegistryObject<Item> kakuriyo_chronicles_1 =ITEMS.register("kakuriyo_chronicles_1", () -> {return new TranslatableBookItem((new Item.Properties()));});
+
+
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()
             .icon(() -> new ItemStack(Item.byBlock(ItemAndBlockRegister.kasuga_lantern.get())))
             .title(Component.translatable("itemGroup.urushi"))
@@ -1484,7 +1488,7 @@ public class ItemAndBlockRegister {
                 output.accept(light_blue_cushion.get());
                 output.accept(yellow_cushion.get());
                 output.accept(lime_cushion.get());
-              output.accept(pink_cushion.get());
+                output.accept(pink_cushion.get());
                 output.accept(gray_cushion.get());
                 output.accept(light_gray_cushion.get());
                 output.accept(cyan_cushion.get());
@@ -1500,11 +1504,12 @@ public class ItemAndBlockRegister {
                 output.accept(hot_spring_bucket.get());
                 output.accept(invisible_button_item.get());
                 output.accept(invisible_lever_item.get());
-                  output.accept(invisible_pressure_plate_item.get());
+                output.accept(invisible_pressure_plate_item.get());
                 output.accept(shiitake_goggles.get());
                 output.accept(lantern_plant_torch_item.get());
                 output.accept(empty_bamboo_cup.get());
                 output.accept(water_bamboo_cup.get());
+                //output.accept(kakuriyo_chronicles_1.get());
             })
             .build());
     public static final RegistryObject<CreativeModeTab> URUSHI_PLASTER_TAB = CREATIVE_TABS.register("urushi_plaster", () -> CreativeModeTab.builder()
@@ -1544,6 +1549,7 @@ public class ItemAndBlockRegister {
                         output.accept(ModCoreUrushi.urushiFoodTabContents.get(i).get());
                     }
                 }
+                output.accept(tea_leaf.get());
                 output.accept(pickled_japanese_apricot.get());
                 output.accept(shiitake.get());
                 output.accept(roasted_shiitake.get());

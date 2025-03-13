@@ -1,0 +1,11 @@
+{
+  "type": "urushi:rainwater_tank",
+  "ingredients": [
+  {
+    "item": "urushi:bamboo_cup"
+    }
+  ],
+  "result": {
+  "item":"urushi:water_bamboo_cup"
+  }
+}
