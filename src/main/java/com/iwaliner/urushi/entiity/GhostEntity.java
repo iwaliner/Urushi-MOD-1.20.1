@@ -46,6 +46,14 @@ public class GhostEntity extends Zombie {
         super(EntityRegister.Ghost.get(), p_34272_);
         this.moveControl = new FlyingMoveControl(this, 0, false);
     }
+    public GhostEntity(Level p_i1705_1_, double p_i1705_2_, double p_i1705_4_, double p_i1705_6_) {
+        this(EntityRegister.Ghost.get(), p_i1705_1_);
+        this.setPos(p_i1705_2_, p_i1705_4_, p_i1705_6_);
+        this.setDeltaMovement(Vec3.ZERO);
+        this.xo = p_i1705_2_;
+        this.yo = p_i1705_4_;
+        this.zo = p_i1705_6_;
+    }
     protected void registerGoals() {
         this.goalSelector.addGoal(8, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
