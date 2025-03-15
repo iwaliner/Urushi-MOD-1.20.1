@@ -1,5 +1,4 @@
 {
-
   "itemGroup.urushi": "漆MOD",
 
   "block.urushi.japanese_timber_bamboo": "桂竹",
@@ -734,7 +733,6 @@
 
   "info.urushi.saltandsand": "由沙滩或海洋群系的与水接触的沙子变化而成",
   
-
   "block.urushi.dirt_furnace": "土灶",
 
   "block.urushi.rice_cauldron": "釜",
@@ -882,6 +880,8 @@
   "item.urushi.tiny_black_dye": "小份黑色染料",
 
   "block.urushi.senbakoki": "千齿脱粒机",
+
+  "info.urushi.rawrice": "对千齿脱粒机使用稻穗可以获得2个糙米",
 
   "info.urushi.rawurushi": "对割开的漆木原木使用碗以获得",
 
@@ -2520,7 +2520,7 @@
    "info.urushi.mountain_creation_jufu2": "可以用来建造山峰或填埋地形。",
    "info.urushi.fluid_erasion_jufu1": "清除11×11区域范围内的流体。",
    "info.urushi.spike_jufu1": "从地下生成铁棘刺并对其上的生物造成伤害",
-   "info.urushi.spike_jufu2": "若有玩家位于铁棘刺附近25格范围内，则铁棘刺造成的伤害将视为玩家造成的，且生物死亡时会掉落经验及稀有掉落物等",
+   "info.urushi.spike_jufu2": "铁棘刺造成的伤害视作玩家造成的伤害，且生物死亡时会掉落经验及稀有掉落物等",
    "info.urushi.freezing_jufu1": "令生物在5秒内无法移动",
    "block.urushi.green_tatami_slab": "绿色榻榻米台阶",
    "block.urushi.brown_tatami_slab": "棕色榻榻米台阶",
@@ -2553,14 +2553,12 @@
    "block.urushi.red_seigaiha_fusuma": "红色青海波纸拉门",
    "block.urushi.red_sayagata_fusuma": "红色丝绫纹纸拉门",
    "config.jade.plugin_urushi.block_element": "元素",
-   "info.urushi.double_slab": "所有的Minecraft原版与漆MOD的台阶可以不限种类互相堆叠放置。互相堆叠不会引起性能问题。",
    "item.urushi.shrimp": "虾",
    "item.urushi.fried_shrimp": "炸虾",
    "item.urushi.shrimp_sushi": "鲜虾寿司",
    "entity.urushi.shrimp_sushi_food": "鲜虾寿司",
    "info.urushi.doubled_wooden_cabinetry_sort_button": "整理",
    "info.urushi.senbakoki": "对千齿脱粒机使用稻穗，可以获得糙米和稻杆",
-   "info.urushi.custom_heads_creator": "头颅制作者：",
    "info.urushi.rice_ball": "合成时填入不同的馅料，吃下去就会发生什么事情……？",
    "info.urushi.rice_ball_with_filling": "填入了馅料。吃下去时会发生什么呢？",
    "block.urushi.kakejiku_15": "挂轴",
@@ -2612,7 +2610,6 @@
    "block.urushi.red_silk_block": "红色绢布块",
    "block.urushi.black_silk_block": "黑色绢布块",
    "item.urushi.kakuriyo_villager_spawn_egg": "幽世村民刷怪蛋",
-   "entity.urushi.kakuriyo_villager": "幽世村民",
    "info.urushi.hibachi": "在上方放置茶壶以制作绿茶",
    "sounds.urushi.urushi_advancements": "漆MOD：获得成就",
    "entity.urushi.green_tea_food": "绿茶",
@@ -2685,9 +2682,6 @@
   "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
   "info.urushi.furigana.so": "蘇(そ)",
   "info.urushi.furigana.ayu": "鮎(あゆ)",
-  "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
-  "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
-  "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
   "#comment-furigana-end": "↑No need to translate furiganas / 无需翻译假名注音",
 
   "block.urushi.concrete_block_wall": "混凝土墙",
@@ -2841,8 +2835,34 @@
   "item.urushi.ochoko": "清酒杯",
   "entity.urushi.sake_food": "清酒",
   "entity.urushi.tokkuri_food": "清酒壶",
-  "entity.urushi.ochoko_food": "清酒杯"
-
+  "entity.urushi.ochoko_food": "清酒杯",
+  "container.urushi.kakuriyo_villager_jobless": "无业 - 幽世村民",
+  "container.urushi.kakuriyo_villager_cook": "幽世の住人 (料理屋)",
+  "container.urushi.kakuriyo_villager_miner": "幽世の住人 (石屋)",
+  "container.urushi.kakuriyo_villager_fisherman": "幽世の住人 (釣り人)",
+  "container.urushi.kakuriyo_villager_lumberjack": "幽世の住人 (材木屋)",
+  "container.urushi.kakuriyo_villager_rice_dealer": "幽世の住人 (米問屋)",
+  "info.urushi.rice_ball_with_filling_random": "取引する度に効果が変わります",
+  "info.urushi.kakuriyo_villager_jobless": "この幽世の住人は職無しです",
+  "entity.urushi.kakuriyo_villager": "幽世の住人",
+  "item.urushi.crush_jufu": "打ち潰しの符",
+  "item.urushi.explosion_jufu": "爆発の符",
+  "item.urushi.crush_jufu_stamp": "打ち潰しの符のハンコ",
+  "item.urushi.explosion_jufu_stamp": "爆発の符のハンコ",
+  "info.urushi.crush_jufu1": "モブの頭上に金床を召喚してダメージを与える。",
+  "info.urushi.crush_jufu2": "金床によるダメージはプレイヤーによる攻撃扱いとなりレアドロップや経験値が手に入る。",
+  "info.urushi.explosion_jufu1": "着弾地点を爆破する。",
+  "info.urushi.explosion_jufu2": "爆発によるダメージはプレイヤーによる攻撃扱いとなりレアドロップや経験値が手に入る。",
+  "book.urushi.chronicles1": "幽世神記は製作途中の要素なため、この部分の翻訳はまだしないでください。",
+  "info.urushi.crop2": "クワで草ブロックを耕して入手しよう。",
+  "info.urushi.tea_bush": "幽世の街で料理屋と取引して入手しよう",
+  "info.urushi.tea_leaf": "茶葉の茂みを栽培して手に入れよう",
+  "gui.jei.category.urushi.kettle": "お茶淹れ",
+  "gui.jei.category.urushi.rainwater_tank": "加水",
+  "gui.jei.category.urushi.rainwater_tank.text": "右クリック",
+  "info.urushi.coin": "最大6個まで重ねて設置できる。",
+  "info.urushi.rainwater_tank1": "水を入れるとバケツなどで無限に水を取り出せる。",
+  "info.urushi.rainwater_tank2": "土を泥にしたり、コンクリートパウダーをコンクリートに固めたり、銅ブロックを錆びさせたりできる。"
 
 
 }
