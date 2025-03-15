@@ -1,5 +1,4 @@
 {
-
   "itemGroup.urushi": "漆MOD",
 
   "block.urushi.japanese_timber_bamboo": "桂竹",
@@ -734,7 +733,6 @@
 
   "info.urushi.saltandsand": "由沙滩或海洋群系的与水接触的沙子变化而成",
   
-
   "block.urushi.dirt_furnace": "土灶",
 
   "block.urushi.rice_cauldron": "釜",
@@ -882,6 +880,8 @@
   "item.urushi.tiny_black_dye": "小份黑色染料",
 
   "block.urushi.senbakoki": "千齿脱粒机",
+
+  "info.urushi.rawrice": "对千齿脱粒机使用稻穗可以获得2个糙米",
 
   "info.urushi.rawurushi": "对割开的漆木原木使用碗以获得",
 
@@ -2520,7 +2520,7 @@
    "info.urushi.mountain_creation_jufu2": "可以用来建造山峰或填埋地形。",
    "info.urushi.fluid_erasion_jufu1": "清除11×11区域范围内的流体。",
    "info.urushi.spike_jufu1": "从地下生成铁棘刺并对其上的生物造成伤害",
-   "info.urushi.spike_jufu2": "若有玩家位于铁棘刺附近25格范围内，则铁棘刺造成的伤害将视为玩家造成的，且生物死亡时会掉落经验及稀有掉落物等",
+   "info.urushi.spike_jufu2": "铁棘刺造成的伤害视作玩家造成的伤害，且生物死亡时会掉落经验及稀有掉落物等",
    "info.urushi.freezing_jufu1": "令生物在5秒内无法移动",
    "block.urushi.green_tatami_slab": "绿色榻榻米台阶",
    "block.urushi.brown_tatami_slab": "棕色榻榻米台阶",
@@ -2553,14 +2553,12 @@
    "block.urushi.red_seigaiha_fusuma": "红色青海波纸拉门",
    "block.urushi.red_sayagata_fusuma": "红色丝绫纹纸拉门",
    "config.jade.plugin_urushi.block_element": "元素",
-   "info.urushi.double_slab": "所有的Minecraft原版与漆MOD的台阶可以不限种类互相堆叠放置。互相堆叠不会引起性能问题。",
    "item.urushi.shrimp": "虾",
    "item.urushi.fried_shrimp": "炸虾",
    "item.urushi.shrimp_sushi": "鲜虾寿司",
    "entity.urushi.shrimp_sushi_food": "鲜虾寿司",
    "info.urushi.doubled_wooden_cabinetry_sort_button": "整理",
    "info.urushi.senbakoki": "对千齿脱粒机使用稻穗，可以获得糙米和稻杆",
-   "info.urushi.custom_heads_creator": "头颅制作者：",
    "info.urushi.rice_ball": "合成时填入不同的馅料，吃下去就会发生什么事情……？",
    "info.urushi.rice_ball_with_filling": "填入了馅料。吃下去时会发生什么呢？",
    "block.urushi.kakejiku_15": "挂轴",
@@ -2612,9 +2610,8 @@
    "block.urushi.red_silk_block": "红色绢布块",
    "block.urushi.black_silk_block": "黑色绢布块",
    "item.urushi.kakuriyo_villager_spawn_egg": "幽世村民刷怪蛋",
-   "entity.urushi.kakuriyo_villager": "幽世村民",
    "info.urushi.hibachi": "在上方放置茶壶以制作绿茶",
-   "sounds.urushi.urushi_advancements": "漆MOD：获得成就",
+   "sounds.urushi.urushi_advancements": "漆MOD：完成进度",
    "entity.urushi.green_tea_food": "绿茶",
    "item.urushi.mandarin": "橘子",
    "entity.urushi.mandarin_food": "橘子",
@@ -2685,9 +2682,6 @@
   "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
   "info.urushi.furigana.so": "蘇(そ)",
   "info.urushi.furigana.ayu": "鮎(あゆ)",
-  "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
-  "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
-  "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
   "#comment-furigana-end": "↑No need to translate furiganas / 无需翻译假名注音",
 
   "block.urushi.concrete_block_wall": "混凝土墙",
@@ -2835,14 +2829,41 @@
   "info.urushi.ochoko_1": "饮用后会获得抗性提升与缓慢效果。",
   "info.urushi.ochoko_2": "多次连续饮用会提升效果的等级与持续时间，但是……",
   "info.urushi.sake": "在发酵桶内放入1个米饭、1个酒曲、1个水竹筒并放置后，对发酵桶使用玻璃瓶即可获得。",
-  "info.urushi.noodle": "主手持切面刀、副手持面条面团、按住右键可以快速切面。",
+  "info.urushi.noodle": "主手持切面刀、副手持面条面团、按住使用键可以快速切面。",
   "item.urushi.sake": "清酒",
   "item.urushi.tokkuri": "清酒壶",
   "item.urushi.ochoko": "清酒杯",
   "entity.urushi.sake_food": "清酒",
   "entity.urushi.tokkuri_food": "清酒壶",
-  "entity.urushi.ochoko_food": "清酒杯"
-
+  "entity.urushi.ochoko_food": "清酒杯",
+  "container.urushi.kakuriyo_villager_jobless": "无业 - 幽世村民",
+  "container.urushi.kakuriyo_villager_cook": "厨师 - 幽世村民",
+  "container.urushi.kakuriyo_villager_miner": "矿工 - 幽世村民",
+  "container.urushi.kakuriyo_villager_fisherman": "渔夫 - 幽世村民",
+  "container.urushi.kakuriyo_villager_lumberjack": "伐木工 - 幽世村民",
+  "container.urushi.kakuriyo_villager_rice_dealer": "米商 - 幽世村民",
+  "info.urushi.rice_ball_with_filling_random": "每次交易时饭团的效果都会随机变化",
+  "info.urushi.kakuriyo_villager_jobless": "这个幽世村民没有职业",
+  "entity.urushi.kakuriyo_villager": "幽世村民",
+  "item.urushi.crush_jufu": "打溃之符",
+  "item.urushi.explosion_jufu": "爆发之符",
+  "item.urushi.crush_jufu_stamp": "打溃之符刻印",
+  "item.urushi.explosion_jufu_stamp": "爆炸之符刻印",
+  "info.urushi.crush_jufu1": "在生物的头上召唤铁砧并造成伤害。",
+  "info.urushi.crush_jufu2": "铁砧造成的伤害视作玩家造成的伤害，且生物死亡时会掉落经验及稀有掉落物等。",
+  "info.urushi.explosion_jufu1": "在击中的位置产生爆炸。",
+  "info.urushi.explosion_jufu2": "造成的爆炸伤害视作玩家造成的伤害，且生物死亡时会掉落经验及稀有掉落物等。",
+  "book.urushi.chronicles1": "“幽世神记”（暂译）尚在制作中，还请暂时不要翻译这部分的内容。",
+  "info.urushi.crop2": "对草方块使用锄进行耕地以获取",
+  "info.urushi.tea_bush": "在幽世村镇里与厨师职业的幽世村民交易以获取",
+  "info.urushi.tea_leaf": "培育茶叶树丛以获取",
+  "gui.jei.category.urushi.kettle": "泡茶",
+  "gui.jei.category.urushi.rainwater_tank": "浸水",
+  "gui.jei.category.urushi.rainwater_tank.text": "右击",
+  "info.urushi.coin": "可在地面上使用以放置，同一格内最多可放置6个。",
+  "info.urushi.rainwater_tank1": "里面存有水时，可以使用桶从中无限取出水。",
+  "info.urushi.rainwater_tank2": "可以将泥土变为泥巴、将混凝土粉末固化成混凝土、以及腐蚀铜块。",
+  "entity.urushi.experience_droppable_falling_anvil": "铁砧"
 
 
 }

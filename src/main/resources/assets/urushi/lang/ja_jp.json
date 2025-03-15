@@ -1,4 +1,5 @@
-{"itemGroup.urushi":"漆MOD",
+{
+   "itemGroup.urushi":"漆MOD",
 
    "block.urushi.japanese_timber_bamboo": "マダケ",
 
@@ -2609,7 +2610,6 @@
    "block.urushi.red_silk_block": "赤色の絹布ブロック",
    "block.urushi.black_silk_block": "黒色の絹布ブロック",
    "item.urushi.kakuriyo_villager_spawn_egg": "幽世の住人のスポーンエッグ",
-   "entity.urushi.kakuriyo_villager": "幽世の住人",
    "info.urushi.hibachi": "上に茶釜を置いて緑茶を作ろう",
    "sounds.urushi.urushi_advancements": "漆MODの進捗を達成する",
    "entity.urushi.green_tea_food": "緑茶",
@@ -2619,6 +2619,8 @@
    "block.urushi.mandarin_sapling": "みかんの苗木",
    "block.urushi.mandarin_leaves": "みかんの葉",
    "block.urushi.kotatsu": "こたつ",
+
+
    "info.urushi.furigana.ryokusyou": "緑青(りょくしょう)",
    "info.urushi.furigana.seiroku": "青緑(せいろく)",
    "info.urushi.furigana.kaya": "茅(かや)",
@@ -2680,9 +2682,8 @@
    "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
    "info.urushi.furigana.so": "蘇(そ)",
    "info.urushi.furigana.ayu": "鮎(あゆ)",
-   "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
-   "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
-   "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
+
+   
    "block.urushi.concrete_block_wall": "コンクリート塀",
    "block.urushi.limonite_ore": "褐鉄鉱",
    "block.urushi.chalcopyrite_ore": "黄銅鉱",

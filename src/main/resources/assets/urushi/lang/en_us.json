@@ -1,5 +1,4 @@
 {
-
     "itemGroup.urushi": "Urushi",
 
    "block.urushi.japanese_timber_bamboo": "Japanese Timber Bamboo",
@@ -734,7 +733,6 @@
 
     "info.urushi.saltandsand": "In Ocean or Beach biomes, Sand locate above sea leavel transform into this when Water attached.",
 
-
    "block.urushi.dirt_furnace": "Dirt Furnace",
 
    "block.urushi.rice_cauldron": "Rice Cauldron",
@@ -875,13 +873,15 @@
 
    "item.urushi.close_wagasa": "Paper Umbrella (close)",
 
-    "info.urushi.wagasa": "Eliminates falling damage.",
+    "info.urushi.wagasa": "Eliminates falling damage and decreases falling speed while holding.",
 
    "item.urushi.tiny_red_dye": "Tiny Red Dye",
 
    "item.urushi.tiny_black_dye": "Tiny Black Dye",
 
    "block.urushi.senbakoki": "Senbakoki",
+
+   "info.urushi.rawrice": "Use Rice Ears on Senbakoki to obtain 2 Raw Rice items.",
 
     "info.urushi.rawurushi": "Use Bowl on Chiseled Lacquer Log to obtain.",
 
@@ -1061,6 +1061,10 @@
 
     "block.urushi.jadeite_ore": "Jadeite Ore",
 
+    "block.urushi.yomi_copper_ore": "Yomi Copper Ore",
+
+    "block.urushi.yomi_iron_ore": "Yomi Iron Ore",
+
     "block.urushi.yomi_gold_ore": "Yomi Gold Ore",
 
     "block.urushi.quartz_cluster": "Quartz Cluster",
@@ -1158,6 +1162,8 @@
     "info.urushi.water_element_of_block": "WATER Element Block",
 
     "info.urushi.blank": "     ",
+
+    "info.urushi.miningSpeedChanger1": "While in inventory, digging speed change ",
 
     "info.urushi.sandpaper_block": "File neighbor blocks when moved by Piston.",
 
@@ -1915,7 +1921,7 @@
 
     "block.urushi.pendant_light": "Pendant Light",
 
-    "block.urushi.concrete_block_wall": "Concrete Block Wall",
+    "block.urushi.concrete_wall": "Concrete Block Wall",
 
     "block.urushi.hot_ironsand": "Hot Ironsand",
 
@@ -2262,15 +2268,12 @@
     "info.urushi.cypress_sapling": "Generates on hills",
     "info.urushi.japanese_cedar_sapling": "Generates on hills and in the Kakuriyo Dimension",
     "info.urushi.lacquer_sapling": "Generates in Forests, spawner chests and chests in villages on Plains.",
-
    "patchouli.urushi.kakuriyo_book.name": "Trip to the Underroot",
    "patchouli.urushi.kakuriyo_book.subtitle": "Utsushiyo Banare",
    "patchouli.urushi.kakuriyo_book.landing_text": "The guide that helps you travel through the worlds of Urushi. Ready for your $(#cc3345)afterlife$(#000)?",
    "patchouli.urushi.urushi_book.name": "About Urushi",
    "patchouli.urushi.urushi_book.subtitle": "Japanese Blocks!",
    "patchouli.urushi.urushi_book.landing_text": "Urushi adds many Japanese blocks. Also, urushi has magic contents.",
-   "item.urushi.yakitori": "Yakitori",
-    "item.urushi.hiyayakko": "Hiyayakko",
    "fluid_type.urushi.hot_spring_fluid": "Hot Spring Water",
    "block.urushi.fermentation_barrel": "Fermentation Barrel",
    "block.urushi.fermentation_barrel_with_rice": "Fermentation Barrel with Rice",
@@ -2417,8 +2420,6 @@
    "block.urushi.metal_element_emitter_tier2": "Jedeite Metal Element Emitter",
    "block.urushi.water_element_emitter_tier2": "Jedeite Water Element Emitter",
    "container.urushi_auto_crafting_table": "Auto Crafting Table",
-   "block.urushi.limonite_ore": "Limonite Ore",
-   "block.urushi.chalcopyrite_ore": "Chalcopyrite Ore",
    "key.urushi.category": "Urushi",
    "key.urushi.connectionKey": "Switch Texture Connections for Framed Blocks",
    "block.urushi.landscape_fusuma": "Landscape Fusuma",
@@ -2552,7 +2553,6 @@
    "block.urushi.red_seigaiha_fusuma": "Red Seigaiha Fusuma",
    "block.urushi.red_sayagata_fusuma": "Red Sayagata Fusuma",
    "config.jade.plugin_urushi.block_element": "Block Element",
-   "info.urushi.double_slab": "All slabs in Vanilla and Urushi can be stacked even if different types. Stacking does not cause loading.",
    "item.urushi.shrimp": "Shrimp",
    "item.urushi.fried_shrimp": "Fried Shrimp",
    "item.urushi.shrimp_sushi": "Shrimp Sushi",
@@ -2610,7 +2610,6 @@
    "block.urushi.red_silk_block": "Red Silk Cloth Block",
    "block.urushi.black_silk_block": "Black Silk Cloth Block",
    "item.urushi.kakuriyo_villager_spawn_egg": "Kakuriyo Villager Spawn Egg",
-   "entity.urushi.kakuriyo_villager": "Kakuriyo Villager",
    "info.urushi.hibachi": "Put a Kettle above to make a green tea.",
    "sounds.urushi.urushi_advancements": "Achieved an advancement of Urushi",
    "entity.urushi.green_tea_food": "Green Tea",
@@ -2620,6 +2619,74 @@
    "block.urushi.mandarin_sapling": "Mandarin Sapling",
    "block.urushi.mandarin_leaves": "Mandarin Leaves",
    "block.urushi.kotatsu": "Kotatsu",
+
+   "#comment-furigana-start": "↓No need to translate furiganas. Keep these lines for diff experience with ja_jp",
+   "info.urushi.furigana.ryokusyou": "緑青(りょくしょう)",
+   "info.urushi.furigana.seiroku": "青緑(せいろく)",
+   "info.urushi.furigana.kaya": "茅(かや)",
+   "info.urushi.furigana.hiwada": "檜皮(ひわだ)",
+   "info.urushi.furigana.goza": "茣蓙(ござ)",
+   "info.urushi.furigana.nozura": "野面(のづら)",
+   "info.urushi.furigana.tansu": "箪笥(たんす)",
+   "info.urushi.furigana.andon": "行燈(あんどん)",
+   "info.urushi.furigana.ariake_andon": "有明行燈(ありあけあんどん)",
+   "info.urushi.furigana.kasuga_tourou": "春日灯篭(かすがとうろう)",
+   "info.urushi.furigana.chochin": "提灯(ちょうちん)",
+   "info.urushi.furigana.giboshi": "擬宝珠(ぎぼし)",
+   "info.urushi.furigana.fusuma": "襖(ふすま)",
+   "info.urushi.furigana.sayagata": "紗綾形(さやがた)",
+   "info.urushi.furigana.seigaiha": "青海波(せいがいは)",
+   "info.urushi.furigana.noren": "暖簾(のれん)",
+   "info.urushi.furigana.tensuioke": "天水桶(てんすいおけ)",
+   "info.urushi.furigana.kaiko": "蚕(かいこ)",
+   "info.urushi.furigana.yousan": "養蚕(ようさん)",
+   "info.urushi.furigana.mayu": "繭(まゆ)",
+   "info.urushi.furigana.kinuito": "絹糸(きぬいと)",
+   "info.urushi.furigana.kempu": "絹布(けんぷ)",
+   "info.urushi.furigana.kakuriyo": "幽世(かくりよ)",
+   "info.urushi.furigana.yomi": "黄泉(よみ)",
+   "info.urushi.furigana.hisui": "翡翠(ひすい)",
+   "info.urushi.furigana.manjusyage": "曼珠沙華(まんじゅしゃげ)",
+   "info.urushi.furigana.kanazuchi": "金槌(かなづち)",
+   "info.urushi.furigana.shikkui": "漆喰(しっくい)",
+   "info.urushi.furigana.namako": "生子(なまこ)",
+   "info.urushi.furigana.kiurushi": "生漆(きうるし)",
+   "info.urushi.furigana.syuurushi": "朱漆(しゅうるし)",
+   "info.urushi.furigana.kurourushi": "黒漆(くろうるし)",
+   "info.urushi.furigana.shitamiita": "下見板張り(したみいたばり)",
+   "info.urushi.furigana.rankan": "欄干(らんかん)",
+   "info.urushi.furigana.takebushiramma": "竹節欄間(たけぶしらんま)",
+   "info.urushi.furigana.musourenji": "無双連子(むそうれんじ)",
+   "info.urushi.furigana.hinoki": "檜(ひのき)",
+   "info.urushi.furigana.urushi": "漆(うるし)",
+   "info.urushi.furigana.ramma_shoji": "欄間障子(らんましょうじ)",
+   "info.urushi.furigana.shoji_do": "障子戸(しょうじど)",
+   "info.urushi.furigana.keikaboku": "珪化木(けいかぼく)",
+   "info.urushi.furigana.kohaku": "琥珀(こはく)",
+   "info.urushi.furigana.shichirin": "七輪(しちりん)",
+   "info.urushi.furigana.sanbo": "三方(さんぼう)",
+   "info.urushi.furigana.onusa": "大幣(おおぬさ)",
+   "info.urushi.furigana.hokora": "祠(ほこら)",
+   "info.urushi.furigana.tsuta": "蔦(つた)",
+   "info.urushi.furigana.kambatsu": "旱魃(かんばつ)",
+   "info.urushi.furigana.toge": "棘(とげ)",
+   "info.urushi.furigana.janomegasa": "蛇の目傘(じゃのめがさ)",
+   "info.urushi.furigana.shide": "紙垂(しで)",
+   "info.urushi.furigana.magatama": "勾玉(まがたま)",
+   "info.urushi.furigana.hiuchigane": "火打金(ひうちがね)",
+   "info.urushi.furigana.assakuki": "圧搾機(あっさくき)",
+   "info.urushi.furigana.momi": "籾(もみ)",
+   "info.urushi.furigana.kanten": "寒天(かんてん)",
+   "info.urushi.furigana.komekouji": "米麴(こめこうじ)",
+   "info.urushi.furigana.yokan": "羊羹(ようかん)",
+   "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
+   "info.urushi.furigana.so": "蘇(そ)",
+   "info.urushi.furigana.ayu": "鮎(あゆ)",
+   "#comment-furigana-end": "↑No need to translate furiganas. Keep these lines for diff experience with ja_jp",
+
+   "block.urushi.concrete_block_wall": "Concrete Block Wall",
+   "block.urushi.limonite_ore": "Limonite Ore",
+   "block.urushi.chalcopyrite_ore": "Chalcopyrite Ore",
    "block.urushi.smooth_mangrove_planks": "Smooth Mangrove Planks",
    "block.urushi.smooth_mangrove_slab": "Smooth Mangrove Slab",
    "block.urushi.smooth_mangrove_stairs": "Smooth Mangrove Stairs",
