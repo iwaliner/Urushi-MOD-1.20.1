@@ -50,6 +50,7 @@ public class OchokoItem extends PlaceableFoodItem {
     }
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag flag) {
+        UrushiUtils.setInfo(list,"placeablefood");
         UrushiUtils.setInfo(list,"ochoko_1");
         UrushiUtils.setInfo(list,"ochoko_2");
     }

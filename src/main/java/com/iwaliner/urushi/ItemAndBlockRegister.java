@@ -1713,7 +1713,7 @@ public class ItemAndBlockRegister {
         }).strength(2.0F).sound(SoundType.WOOD));
     }
     private static LeavesBlock leaves(MapColor color,SoundType p_152615_) {
-        return new FlammableLeavesBlock(BlockBehaviour.Properties.of().mapColor(color).strength(0.2F).randomTicks().sound(p_152615_).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).ignitedByLava().pushReaction(PushReaction.DESTROY).isRedstoneConductor(ItemAndBlockRegister::never));
+        return new CutoutLeavesBlock(BlockBehaviour.Properties.of().mapColor(color).strength(0.2F).randomTicks().sound(p_152615_).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).ignitedByLava().pushReaction(PushReaction.DESTROY).isRedstoneConductor(ItemAndBlockRegister::never));
     }
     private static CutoutLeavesBlock cutouteaves(MapColor color,SoundType p_152615_) {
         return new CutoutLeavesBlock(BlockBehaviour.Properties.of().mapColor(color).strength(0.2F).randomTicks().sound(p_152615_).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).ignitedByLava().pushReaction(PushReaction.DESTROY).isRedstoneConductor(ItemAndBlockRegister::never));

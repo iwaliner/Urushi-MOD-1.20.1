@@ -26,6 +26,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -41,7 +42,9 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.joml.Vector3f;
 
 import java.awt.*;
 import java.time.LocalDate;
@@ -450,4 +453,5 @@ public class UrushiUtils {
             }
         }
     }
+
 }

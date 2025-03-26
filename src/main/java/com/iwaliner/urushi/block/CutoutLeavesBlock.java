@@ -3,8 +3,11 @@ package com.iwaliner.urushi.block;
 import com.iwaliner.urushi.ConfigUrushi;
 import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.ParticleRegister;
+import com.iwaliner.urushi.util.UrushiUtils;
+import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.tags.BlockTags;
@@ -18,44 +21,20 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 import java.util.OptionalInt;
+import java.util.Random;
 
 public class CutoutLeavesBlock extends LeavesBlock {
 
     public CutoutLeavesBlock(BlockBehaviour.Properties p_54422_) {
         super(p_54422_);
-        this.registerDefaultState((BlockState)((BlockState)((BlockState)((BlockState)this.stateDefinition.any()).setValue(DISTANCE, 7)).setValue(PERSISTENT, false)).setValue(WATERLOGGED, false));
-    }
+   }
 
-    private static BlockState updateDistance(BlockState p_54436_, LevelAccessor p_54437_, BlockPos p_54438_) {
-        int i = 7;
-        BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
 
-        for(Direction direction : Direction.values()) {
-            blockpos$mutableblockpos.setWithOffset(p_54438_, direction);
-            i = Math.min(i, getDistanceAt(p_54437_.getBlockState(blockpos$mutableblockpos)) + 1);
-            if (i == 1) {
-                break;
-            }
-        }
-
-        return p_54436_.setValue(DISTANCE, Integer.valueOf(i));
-    }
-
-    private static int getDistanceAt(BlockState p_54464_) {
-        return getOptionalDistanceAt(p_54464_).orElse(7);
-    }
-
-    public static @NotNull OptionalInt getOptionalDistanceAt(BlockState p_277868_) {
-        if (p_277868_.is(BlockTags.LOGS)) {
-            return OptionalInt.of(0);
-        } else {
-            return p_277868_.hasProperty(DISTANCE) ? OptionalInt.of((Integer)p_277868_.getValue(DISTANCE)) : OptionalInt.empty();
-        }
-    }
 
     public void animateTick(@NotNull BlockState state, Level level, BlockPos pos, @NotNull RandomSource random) {
         if (level.isRainingAt(pos.above())) {
@@ -68,6 +47,19 @@ public class CutoutLeavesBlock extends LeavesBlock {
             }
         }
         Block block = state.getBlock();
+        if(UrushiUtils.isAprilFoolsDay()) {
+            if (block == ItemAndBlockRegister.japanese_cedar_leaves.get() || block == ItemAndBlockRegister.cypress_leaves.get()) {
+                Vec3 color = new Vec3(0.85D, 0.655D, 0D);
+                for (int i = 0; i < 3; i++) {
+                    RandomSource rand = level.getRandom();
+                    double d0 = (double) pos.getX() + rand.nextDouble();
+                    double d1 = (double) pos.getY() + rand.nextDouble();
+                    double d2 = (double) pos.getZ() + rand.nextDouble();
+                    level.addParticle(new DustParticleOptions(color.toVector3f(), 1.0F), d0, d1, d2, 0F, -0.1F, 0F);
+
+                }
+            }
+        }
         if(level.getBlockState(pos.below()).isAir()) {
             boolean isLeaf=(block!=ItemAndBlockRegister.sakura_leaves.get()&&block!=ItemAndBlockRegister.glowing_sakura_leaves.get());
             int amount=101-(isLeaf? ConfigUrushi.fallingLeafParticleAmount.get() : ConfigUrushi.fallingSakuraParticleAmount.get());
@@ -89,7 +81,12 @@ public class CutoutLeavesBlock extends LeavesBlock {
             }
         }
     }
-
+    public static void spawnParticleGravityBelow(Level p_273159_, BlockPos p_273452_, RandomSource p_273538_, ParticleOptions p_273419_) {
+        double d0 = (double)p_273452_.getX() + p_273538_.nextDouble();
+        double d1 = (double)p_273452_.getY() - 0.05D;
+        double d2 = (double)p_273452_.getZ() + p_273538_.nextDouble();
+        p_273159_.addParticle(p_273419_, d0, d1, d2, 0.0D, -0.1D, 0.0D);
+    }
     @Override
     public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return true;
