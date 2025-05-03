@@ -49,10 +49,8 @@ import org.joml.Vector3f;
 import java.awt.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
-import java.util.Random;
 
 public class UrushiUtils {
     public  static Direction getDirectionFromInt(int i){
@@ -220,36 +218,67 @@ public class UrushiUtils {
    public static boolean isSlab(Block block){
         return block instanceof SlabBlock ||block instanceof HorizonalRotateSlabBlock;
     }
+    public static Map<Item,String> getRiceBallFillingItem(){
+        Map<Item,String> map=new HashMap<>();
+        map.put(ItemAndBlockRegister.ghost_core.get(),"levitation");
+        map.put(Items.BLAZE_POWDER,"ignite");
+        map.put(ItemAndBlockRegister.salmon_sashimi.get(),"strength");
+        map.put(Items.GLOWSTONE_DUST,"glow");
+        map.put(ItemAndBlockRegister.pickled_japanese_apricot.get(),"slow_fall");
+        map.put(Items.DRIED_KELP,"water_breathing");
+        map.put(Items.GUNPOWDER,"explode");
+        map.put(ItemAndBlockRegister.onsen_egg.get(),"jump");
+        map.put(ItemAndBlockRegister.rice_malt.get(),"nausea");
+        map.put(Items.COPPER_INGOT,"slowness");
+        map.put(Items.SPIDER_EYE,"poison");
+        map.put(Items.SNOWBALL,"freeze");
+        return map;
+    }
     public static void onCraftingRiceBall(Item filling,ItemStack riceBall){
-        if(riceBall.getTag()==null){
+        //if(riceBall.getTag()!=null){
             CompoundTag tag=new CompoundTag();
+            boolean flag=false;
             if(filling==ItemAndBlockRegister.ghost_core.get()){
                 tag.putString("effect","levitation");
+                flag=true;
             }else if(filling==Items.BLAZE_POWDER){
                 tag.putString("effect","ignite");
+                flag=true;
             }else if(filling==ItemAndBlockRegister.salmon_sashimi.get()){
                 tag.putString("effect","strength");
+                flag=true;
             }else if(filling==Items.GLOWSTONE_DUST){
                 tag.putString("effect","glow");
+                flag=true;
             }else if(filling==ItemAndBlockRegister.pickled_japanese_apricot.get()){
                 tag.putString("effect","slow_fall");
+                flag=true;
             }else if(filling==Items.DRIED_KELP){
                 tag.putString("effect","water_breathing");
+                flag=true;
             }else if(filling==Items.GUNPOWDER){
                 tag.putString("effect","explode");
+                flag=true;
             }else if(filling==ItemAndBlockRegister.onsen_egg.get()){
                 tag.putString("effect","jump");
+                flag=true;
             }else if(filling==ItemAndBlockRegister.rice_malt.get()){
                 tag.putString("effect","nausea");
+                flag=true;
             }else if(filling==Items.COPPER_INGOT){
                 tag.putString("effect","slowness");
+                flag=true;
             }else if(filling==Items.SPIDER_EYE){
                 tag.putString("effect","poison");
+                flag=true;
             }else if(filling==Items.SNOWBALL){
                 tag.putString("effect","freeze");
+                flag=true;
             }
-            riceBall.setTag(tag);
-        }
+            if(flag) {
+                riceBall.setTag(tag);
+            }
+      //  }
     }
     public static ItemStack getRandomRiceBall(int stackSize, RandomSource random){
         ItemStack stack=new ItemStack(ItemAndBlockRegister.rice_ball.get(),stackSize);

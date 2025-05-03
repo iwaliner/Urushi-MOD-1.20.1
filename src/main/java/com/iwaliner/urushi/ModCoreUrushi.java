@@ -378,7 +378,7 @@ public class ModCoreUrushi {
         ItemStack riceBallItem = event.getCrafting();
         Container craftMatrix = event.getInventory();
         if (riceBallItem.is((Item)ItemAndBlockRegister.rice_ball.get())) {
-            UrushiUtils.onCraftingRiceBall(craftMatrix.getItem(4).getItem(),riceBallItem);
+        //    UrushiUtils.onCraftingRiceBall(craftMatrix.getItem(4).getItem(),riceBallItem);
         }
     }
 

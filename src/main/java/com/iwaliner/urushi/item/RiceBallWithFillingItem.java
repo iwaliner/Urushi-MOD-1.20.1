@@ -103,4 +103,12 @@ public class RiceBallWithFillingItem extends Item {
             }
         }
     }
+
+    @Override
+    public void onCraftedBy(ItemStack stack, Level level, Player player) {
+        //UrushiUtils.onCraftingRiceBall(ItemAndBlockRegister.pickled_japanese_apricot.get(),stack);
+        CompoundTag tag=new CompoundTag();
+        tag.putBoolean("containsFilling",true);
+        //stack.setTag(tag);
+    }
 }

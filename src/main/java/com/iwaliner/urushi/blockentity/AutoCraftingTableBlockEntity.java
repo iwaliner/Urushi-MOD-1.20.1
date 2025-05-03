@@ -10,7 +10,9 @@ import com.iwaliner.urushi.block.AutoCraftingTableBlock;
 import com.iwaliner.urushi.block.FoxHopperBlock;
 import com.iwaliner.urushi.blockentity.menu.AutoCraftingTableMenu;
 import com.iwaliner.urushi.util.UrushiUtils;
+import com.mojang.authlib.GameProfile;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
@@ -19,10 +21,13 @@ import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.players.PlayerList;
 import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.WorldlyContainer;
+import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -39,6 +44,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.common.util.FakePlayer;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -513,16 +519,16 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
 
                         }
                         if (flag && blockEntity.getItem(10).getCount() + itemstack.getCount() <= itemstack.getMaxStackSize()) {
-
+                            Player player=new FakePlayer((ServerLevel) level, new GameProfile(null,"urushiautocrafting"));
                             if (state.getBlock() == ItemAndBlockRegister.auto_crafting_table.get()) {
 
                                 if (blockEntity.litTime == 0 && blockEntity.getItem(10).isEmpty()) {
-                                    net.minecraftforge.event.ForgeEventFactory.firePlayerCraftingEvent((Player) null, itemstack, craftingcontainer);
+                                    net.minecraftforge.event.ForgeEventFactory.firePlayerCraftingEvent(player, itemstack, craftingcontainer);
                                     blockEntity.doCraft(level, itemstack, blockEntity);
                                     blockEntity.litTime = 60;
                                 }
                             } else if (state.getBlock() == ItemAndBlockRegister.advanced_auto_crafting_table.get() && blockEntity.getItem(10).isEmpty()) {
-                                net.minecraftforge.event.ForgeEventFactory.firePlayerCraftingEvent((Player) null, itemstack, craftingcontainer);
+                                net.minecraftforge.event.ForgeEventFactory.firePlayerCraftingEvent(player, itemstack, craftingcontainer);
                                 blockEntity.doCraft(level, itemstack, blockEntity);
                                 blockEntity.litTime = 0;
                             }
