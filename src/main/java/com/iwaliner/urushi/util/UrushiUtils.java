@@ -235,7 +235,6 @@ public class UrushiUtils {
         return map;
     }
     public static void onCraftingRiceBall(Item filling,ItemStack riceBall){
-        //if(riceBall.getTag()!=null){
             CompoundTag tag=new CompoundTag();
             boolean flag=false;
             if(filling==ItemAndBlockRegister.ghost_core.get()){
@@ -278,7 +277,6 @@ public class UrushiUtils {
             if(flag) {
                 riceBall.setTag(tag);
             }
-      //  }
     }
     public static ItemStack getRandomRiceBall(int stackSize, RandomSource random){
         ItemStack stack=new ItemStack(ItemAndBlockRegister.rice_ball.get(),stackSize);

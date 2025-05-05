@@ -2559,7 +2559,7 @@
    "entity.urushi.shrimp_sushi_food": "エビの寿司",
    "info.urushi.doubled_wooden_cabinetry_sort_button": "整頓",
    "info.urushi.senbakoki": "千歯こきに籾を使うことで玄米と藁を入手できる",
-   "info.urushi.rice_ball": "中央に具を配置して作成した場合、食べたときに具の種類に応じて何かが起こる。",
+   "info.urushi.rice_ball": "上記のアイテムはインベントリ内でおにぎりに重ねることで具としておにぎりに入れることができる。具が入っていると、食べたときに具の種類に応じて何かが起こる。",
    "info.urushi.rice_ball_with_filling": "具が入っている。食べると何かが起こる。",
    "block.urushi.kakejiku_15": "掛け軸",
    "block.urushi.kakejiku_16": "掛け軸",

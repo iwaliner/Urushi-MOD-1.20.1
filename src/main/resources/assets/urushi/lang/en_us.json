@@ -2559,7 +2559,7 @@
    "entity.urushi.shrimp_sushi_food": "Shrimp Sushi",
    "info.urushi.doubled_wooden_cabinetry_sort_button": "Sort",
    "info.urushi.senbakoki": "Use Rice Ears on Senbakoki to obtain Raw Rice and Straw.",
-   "info.urushi.rice_ball": "Something will happen when you eat depends on what a filling you put when crafting.",
+   "info.urushi.rice_ball": "The above items can be placed as ingredients by stacking them on top of the Rice Ball in the inventory. When an ingredient is included, something happens when you eat it, depending on the type of ingredient.",
    "info.urushi.rice_ball_with_filling": "This has a filling. Something will happen when you eat.",
    "block.urushi.kakejiku_15": "Kakejiku",
    "block.urushi.kakejiku_16": "Kakejiku",
