@@ -1,0 +1,25 @@
+{
+  "name": "幽世の街",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:coin",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 30,
+
+"pages": [
+    {
+      "type": "patchouli:text",
+      "text": "幽世ディメンションには幽世の街があります。$(br2)古銭を用いて幽世の住人と交易をすることができます。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "これが幽世の街！",
+      "images": [
+        "urushi:textures/gui/patchouli/kakuriyo_village.png"
+      ]
+    }
+    
+  ]
+}
