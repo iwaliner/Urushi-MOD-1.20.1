@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_ghost_core",
+  "display": {
+    "icon": {
+      "item": "urushi:silkworm"
+    },
+    "title": {
+      "translate": "advancements.urushi.silkworm.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.silkworm.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "silkworm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:silkworm"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "silkworm"
+    ]
+  ]
+}

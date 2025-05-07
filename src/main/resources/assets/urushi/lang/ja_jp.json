@@ -1665,7 +1665,7 @@
 
     "advancements.urushi.root.title": "漆MOD",
 
-    "advancements.urushi.root.description": "日本的な建築・魔術mod",
+    "advancements.urushi.root.description": "日本的な建築&魔術mod",
 
     "advancements.urushi.lacquer_sapling.title": "伝統的",
 
@@ -1701,7 +1701,7 @@
 
     "advancements.urushi.kakuriyo_dirt.title": "神隠し",
 
-    "advancements.urushi.kakuriyo_dirt.description": "幽世ディメンションに入り幽世土を入手する",
+    "advancements.urushi.kakuriyo_dirt.description": "幽世ディメンションに入る",
 
     "advancements.urushi.cobbled_yomi_stone.title": "黄泉平坂を抜けて",
 
@@ -2862,7 +2862,13 @@
    "gui.jei.category.urushi.rainwater_tank.text": "右クリック",
    "info.urushi.coin": "最大6個まで重ねて設置できる。",
    "info.urushi.rainwater_tank1": "水を入れるとバケツなどで無限に水を取り出せる。",
-   "info.urushi.rainwater_tank2": "土を泥にしたり、コンクリートパウダーをコンクリートに固めたり、銅ブロックを錆びさせたりできる。"
+   "info.urushi.rainwater_tank2": "土を泥にしたり、コンクリートパウダーをコンクリートに固めたり、銅ブロックを錆びさせたりできる。",
+   "advancements.urushi.visualization_goggles.title": "追憶のレンズ",
+   "advancements.urushi.visualization_goggles.description": "可視化の眼鏡を入手する",
+   "advancements.urushi.silkworm.title": "糸の生産",
+   "advancements.urushi.silkworm.description": "蚕を入手する",
+   "advancements.urushi.silk_thread.title": "殖産興業",
+   "advancements.urushi.silk_thread.description": "絹糸を入手する"
    
    
 }
