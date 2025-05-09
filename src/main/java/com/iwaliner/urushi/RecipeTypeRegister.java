@@ -13,8 +13,6 @@ import net.minecraftforge.registries.RegistryObject;
 public class RecipeTypeRegister {
     public static final DeferredRegister<RecipeSerializer<?>> RECIPE_SERIALIZER =
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, ModCoreUrushi.ModID);
-    public static final RegistryObject<SimpleCraftingRecipeSerializer> RiceBallFillingSerializer
-            = RECIPE_SERIALIZER.register("rice_ball", () -> new SimpleCraftingRecipeSerializer(RiceBallFillingRecipe::new));
     public static final RegistryObject<FryingRecipe.FryingSerializer> FryingSerializer
             = RECIPE_SERIALIZER.register("frying", com.iwaliner.urushi.recipe.FryingRecipe.FryingSerializer::new);
     public static final RegistryObject<HammeringRecipe.HammeringSerializer> HammeringSerializer
@@ -60,8 +58,7 @@ public class RecipeTypeRegister {
     public static final RegistryObject<RainwaterTankRecipe.RainwaterTankSerializer> RainwaterTankSerializer
             = RECIPE_SERIALIZER.register("rainwater_tank", com.iwaliner.urushi.recipe.RainwaterTankRecipe.RainwaterTankSerializer::new);
 
-    public static RecipeType<RiceBallFillingRecipe> RiceBallFillingRecipe = new RiceBallFillingRecipe.RiceBallFillingRecipeType();
-    public static RecipeType<FryingRecipe> FryingRecipe = new FryingRecipe.FryingRecipeType();
+     public static RecipeType<FryingRecipe> FryingRecipe = new FryingRecipe.FryingRecipeType();
     public static RecipeType<HammeringRecipe> HammeringRecipe = new HammeringRecipe.HammeringRecipeType();
     public static RecipeType<OilExtractingRecipe> OilExtractingRecipe = new OilExtractingRecipe.OilExtractingRecipeType();
     public static RecipeType<ThrowingInRecipe> ThrowingInRecipe = new ThrowingInRecipe.ThrowingInRecipeType();

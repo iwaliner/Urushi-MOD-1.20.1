@@ -2863,6 +2863,7 @@
    "info.urushi.coin": "最大6個まで重ねて設置できる。",
    "info.urushi.rainwater_tank1": "水を入れるとバケツなどで無限に水を取り出せる。",
    "info.urushi.rainwater_tank2": "土を泥にしたり、コンクリートパウダーをコンクリートに固めたり、銅ブロックを錆びさせたりできる。",
+   "entity.urushi.experience_droppable_falling_anvil": "経験値をドロップさせることができる落下中の金床",
    "advancements.urushi.visualization_goggles.title": "追憶のレンズ",
    "advancements.urushi.visualization_goggles.description": "可視化の眼鏡を入手する",
    "advancements.urushi.silkworm.title": "糸の生産",

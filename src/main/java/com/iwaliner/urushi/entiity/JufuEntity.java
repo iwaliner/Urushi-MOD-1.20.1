@@ -80,11 +80,6 @@ public class JufuEntity extends ThrowableItemProjectile  {
                     break;
                 }
             }
-            /*FallingBlockEntity fallingblockentity = FallingBlockEntity.fall(level(), ceilingPos,ItemAndBlockRegister.falling_anvil_block.get().defaultBlockState());
-            int ii = Math.max(1 + ceilingPos.getY() - entityPos.getY(), 6);
-            float f = 1.0F * (float)ii;
-            fallingblockentity.setHurtsEntities(f, 40);
-            fallingblockentity.dropItem=false;*/
             ExperienceDroppableFallingAnvilEntity experienceDroppableFallingAnvilEntity=new ExperienceDroppableFallingAnvilEntity(level(),entity.position().x,ceilingPos.getY()+0.5D,entity.position().z,player);
             if(!level().isClientSide()){
                 level().addFreshEntity(experienceDroppableFallingAnvilEntity);
@@ -130,7 +125,7 @@ public class JufuEntity extends ThrowableItemProjectile  {
                 }
             }
         }else  if(this.getItemRaw().getItem()==ItemAndBlockRegister.explosion_jufu.get()) {
-            level().explode(player,pos.getX()+0.5D,pos.getY()+1D,pos.getZ()+0.5D,2.3f,false, Level.ExplosionInteraction.TNT);
+            level().explode(player,pos.getX()+0.5D,pos.getY()+1D,pos.getZ()+0.5D,3f,false, Level.ExplosionInteraction.TNT);
         }else if(this.getItemRaw().getItem()==ItemAndBlockRegister.growing_jufu.get()){
 
             for(int i=-5;i<=5;i++){

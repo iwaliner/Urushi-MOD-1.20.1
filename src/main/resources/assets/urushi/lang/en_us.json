@@ -2863,6 +2863,7 @@
    "info.urushi.coin": "Placeable at the same position up to 6.",
    "info.urushi.rainwater_tank1": "When water is added, water can be taken out infinitely with buckets, etc.",
    "info.urushi.rainwater_tank2": "You can craft Mud from Dirt and any Concrete from Concrete Powder, and oxidize Copper Block and Cut Copper by using this.",
+   "entity.urushi.experience_droppable_falling_anvil": "Experience Droppable Falling Anvil",
    "advancements.urushi.visualization_goggles.title": "Memento Lens",
    "advancements.urushi.visualization_goggles.description": "Obtain Visualization Goggles",
    "advancements.urushi.silkworm.title": "Generate String",

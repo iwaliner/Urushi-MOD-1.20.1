@@ -293,32 +293,6 @@ public class ModCoreUrushi {
         }
 
     }
-    /**玉鋼作るときに右クリックおしっぱだとブロックがドロップして壊れる*/
-    @SubscribeEvent
-    public void HammerCancelEvent(PlayerInteractEvent.RightClickBlock event) {
-        if (event.getLevel().getBlockState(event.getPos()).getBlock() instanceof IronIngotBlock){
-            {
-                if(event.getEntity() instanceof Player) {
-                    if( event.getEntity().getCooldowns().isOnCooldown(ItemAndBlockRegister.hammer.get())) {
-                        event.getLevel().destroyBlock(event.getPos(),true);
-                        event.setCanceled(true);
-                    }
-                }
-            }
-        }
-
-        if(isDebug){
-            LevelAccessor level=event.getLevel();
-            BlockPos pos=event.getPos();
-            BlockState currentState=event.getLevel().getBlockState(pos);
-            BlockState sojoState=ElementUtils.getSojoBlock(ElementUtils.getSojoBlock(event.getLevel().getBlockState(event.getPos())));
-            if(sojoState!=null){
-                event.getLevel().setBlockAndUpdate(event.getPos(),sojoState);
-            }
-
-        }
-    }
-
     /**孫の手で手の届く範囲を広げる*/
   /*  @SubscribeEvent
     public void MagonoteEvent(PlayerInteractEvent event) {

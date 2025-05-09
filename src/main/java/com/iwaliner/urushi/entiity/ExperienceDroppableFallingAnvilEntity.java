@@ -71,10 +71,8 @@ public class ExperienceDroppableFallingAnvilEntity extends Entity {
     @Override
     public void tick() {
         super.tick();
-        //if (!this.isNoGravity()) {
         this.setDeltaMovement(this.getDeltaMovement().add(0.0D, -0.04D, 0.0D));
         this.move(MoverType.SELF, this.getDeltaMovement());
-       // }
         if(onGround()){
             level().playSound((Player) null,blockPosition(), SoundEvents.ANVIL_LAND, SoundSource.BLOCKS,0.2F,1F);
             discard();
@@ -90,7 +88,7 @@ public class ExperienceDroppableFallingAnvilEntity extends Entity {
                 Predicate<Entity> predicate = EntitySelector.NO_CREATIVE_OR_SPECTATOR.and(EntitySelector.LIVING_ENTITY_STILL_ALIVE);
                 this.level().getEntities(this, this.getBoundingBox(), predicate).forEach((p_149649_) -> {
                     if(getPlayer()!=null) {
-                        p_149649_.hurt(p_149649_.damageSources().playerAttack(getPlayer()), 10F);
+                        p_149649_.hurt(p_149649_.damageSources().playerAttack(getPlayer()), 18F);
                     }
                 });
 
