@@ -57,7 +57,7 @@
       "type": "patchouli:crafting",
       "title": "",
       "recipe": "urushi:wood_element_sacred_rock",
-      "text": "Sugar Cane, Bamboo, and Japanese Timber Bamboo are useful for generating Wood Element Reiryoku. Fire and Lantern Plant are useful for generating Fire Element Reiryoku. Dirt and Soul Sand are useful forgenerating Earth Element Reiryoku. Cactus, Kelp, and Snow are useful for generating Water Element Reiryoku."
+      "text": "获取灵力的优质方块：$(br)木气 - 甘蔗、竹子、桂竹$(br)火气：火、鬼灯球$(br)土气：泥土、灵魂沙$(br)金气：圆石$(br)水气：仙人掌、海带、雪"
     },
     {
       "type": "patchouli:spotlight",
@@ -92,7 +92,7 @@
     },
      {
       "type": "patchouli:text",
-      "text": "Craft a Visualization Goggles.$(br2)Even when Reiryoku is not being transported, you can see the path by which the Reiryoku is being transported if this is equipped on your head. $(br2)Without these glasses, it will be difficult to use magic equipments."
+      "text": "来合成灵力观测镜吧。$(br2)装备在头上后，透过灵力观测镜可以观测灵力输送的路径（哪怕没有正在输送灵力）。$(br2)如果没有这副眼镜的话，后续的法术相关内容会比较难以推进。"
     },
      {
       "type": "patchouli:crafting",
