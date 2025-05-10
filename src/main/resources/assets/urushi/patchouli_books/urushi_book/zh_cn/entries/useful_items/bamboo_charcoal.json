@@ -1,5 +1,5 @@
 {
-  "name": "Bamboo Charcoal",
+  "name": "竹炭",
   "category": "urushi:useful_items",
   "icon": "urushi:bamboo_charcoal",
   "priority": true,
@@ -11,13 +11,13 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "You can obtain Bamboo Charcoals from Japanese Timber Bamboo by smelting. Burning duration of Bamboo Charcoal is same as Coal and Charcoal. (8 items by Furnace)$(br2)It is more useful than Coal or Charcoal because you can easily gather Japanese Timber Bamboo."
+      "text": "烧炼桂竹即可获得竹炭。竹炭的烧炼时间与原版的煤炭、木炭一致（熔炉内烧炼8个物品）。$(br2)因为桂竹生长速度很快，所以可以作为比木炭或煤炭更经济的燃料。"
     },
      {
       "type": "patchouli:smelting",
       "title": "",
       "recipe": "urushi:bamboo_charcoal",
-      "text": "A Bamboo Charcoal Block is from 9 pieces of Bamboo Charcoal, but like a Coal Block, it has the burning power of 10 pieces of Bamboo Charcoal, so it is more economical to burn it as a block."
+      "text": "9个竹炭即可合成竹炭块。和煤炭块类似，它的烧炼时间是竹炭的10倍，所以合成成块后燃烧会更实惠一些。"
     }
     
   ]

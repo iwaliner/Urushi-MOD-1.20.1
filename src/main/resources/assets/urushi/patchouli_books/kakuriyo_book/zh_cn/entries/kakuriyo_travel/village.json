@@ -1,5 +1,5 @@
 {
-  "name": "Kakuriyo Village",
+  "name": "幽世村庄",
   "category": "urushi:kakuriyo_travel",
   "icon": "urushi:coin",
   "priority": true,
@@ -11,11 +11,11 @@
 "pages": [
     {
       "type": "patchouli:text",
-      "text": "There are Kakuriyo Villages in the Kakuriyo Dimension.$(br2)You can trade with Kakuriyo Villagers using Coins."
+      "text": "幽世维度中会生成幽世村庄。$(br2)在这里可以与幽世村民们使用古钱进行交易。"
     },
     {
       "type": "patchouli:image",
-      "text": "This is a Kakuriyo Village!",
+      "text": "这就是幽世村庄",
       "images": [
         "urushi:textures/gui/patchouli/kakuriyo_village.png"
       ]
