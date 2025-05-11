@@ -173,8 +173,8 @@ dependencies {
 
 
     // https://mvnrepository.com/artifact/vazkii.patchouli/Patchouli
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84-FORGE:api")
-    runtimeOnly fg.deobf('vazkii.patchouli:Patchouli:1.20.1-84-FORGE')
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84.1-FORGE:api")
+    runtimeOnly fg.deobf('vazkii.patchouli:Patchouli:1.20.1-84.1-FORGE')
 }
 
 
