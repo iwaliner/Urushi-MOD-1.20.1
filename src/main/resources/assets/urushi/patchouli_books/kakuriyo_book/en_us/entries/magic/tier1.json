@@ -65,7 +65,7 @@
         "item": "urushi:petrified_log_with_wood_amber",
         "count": 1
       },
-      "text": "Place a Yomi Stone or a Cobbled Yomi Stone on top of a Chiseled Lacquer Log and wait when a required animal is nearby.$(br2)The animal will disappear and the Chiseled Lacquer Log turns into a Petrified Log with specific element Amber.$(br2)The required animals are Chicken for Wood, Sheep for Fire, Cow for Earth, Horse for Metal, and Pig for Water."
+      "text": "Place a Yomi Stone or a Cobbled Yomi Stone on top of a Chiseled Lacquer Log and wait when a required animal is nearby. The animal will disappear and the Chiseled Lacquer Log turns into a Petrified Log with specific element Amber.$(br2)The required animals are Chicken for Wood, Sheep for Fire, Cow for Earth, Horse for Metal, and Pig for Water."
     },
     {
       "type": "patchouli:image",
@@ -89,6 +89,16 @@
         "count": 1
       },
       "text": "If a Yomi Stone or a Cobbled Yomi Stone is placed on a Chiseled Lacquer Log without any animals nearby, it will finally become a Petrified Log.$(br2)You can craft Petrified Planks from Petrified Log, and neither the planks nor the log will be burnt by fire.$(br2)The appropriate tool is Pickaxe. "
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Craft a Visualization Goggles.$(br2)Even when Reiryoku is not being transported, you can see the path by which the Reiryoku is being transported if this is equipped on your head. $(br2)Without these glasses, it will be difficult to use magic equipments."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:visualization_goggles",
+      "text": ""
     },
     {
       "type": "patchouli:text",
@@ -153,7 +163,7 @@
     },
     {
       "type": "patchouli:image",
-      "text": "Since the Sanbos block the sides of the Altar, Reiyoku must be sent diagonally, from above or below.",
+      "text": "",
       "images": [
         "urushi:textures/gui/patchouli/element_crafting.png"
       ]

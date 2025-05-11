@@ -1,0 +1,25 @@
+{
+  "name": "House",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:thatched_block",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 40,
+
+"pages": [
+    {
+      "type": "patchouli:text",
+      "text": "There are houses in the Kakuriyo Dimension. Two treasure chests are located in a house.$(br2)Could this be a rare opportunity to obtain Hydrangea?"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "This is a house!",
+      "images": [
+        "urushi:textures/gui/patchouli/kakuriyo_house.png"
+      ]
+    }
+    
+  ]
+}

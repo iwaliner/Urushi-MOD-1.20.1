@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_silkworm",
+  "display": {
+    "icon": {
+      "item": "urushi:silk_thread"
+    },
+    "title": {
+      "translate": "advancements.urushi.silk_thread.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.silk_thread.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "silk_thread": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:silk_thread"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "silk_thread"
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "竹炭",
+  "category": "urushi:useful_items",
+  "icon": "urushi:bamboo_charcoal",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "マダケを精錬すると竹炭になります。木炭や石炭と同じ燃焼力(バニラのかまどではアイテム8個を精錬)の燃料として使用できます。$(br2)マダケを育てるだけで簡単に入手できるため、木炭や石炭よりも使いやすい燃料となっています。"
+    },
+     {
+      "type": "patchouli:smelting",
+      "title": "",
+      "recipe": "urushi:bamboo_charcoal",
+      "text": "竹炭9個から竹炭ブロックを作ることができますが、石炭ブロックと同じように竹炭10個分の燃焼力を有しているため、ブロックにして燃やしたほうがお得です。"
+    }
+    
+  ]
+}

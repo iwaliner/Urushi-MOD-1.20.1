@@ -1,0 +1,24 @@
+{
+  "name": "Bamboo Charcoal",
+  "category": "urushi:useful_items",
+  "icon": "urushi:bamboo_charcoal",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 15,
+
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "You can obtain Bamboo Charcoals from Japanese Timber Bamboo by smelting. Burning duration of Bamboo Charcoal is same as Coal and Charcoal. (8 items by Furnace)$(br2)It is more useful than Coal or Charcoal because you can easily gather Japanese Timber Bamboo."
+    },
+     {
+      "type": "patchouli:smelting",
+      "title": "",
+      "recipe": "urushi:bamboo_charcoal",
+      "text": "A Bamboo Charcoal Block is from 9 pieces of Bamboo Charcoal, but like a Coal Block, it has the burning power of 10 pieces of Bamboo Charcoal, so it is more economical to burn it as a block."
+    }
+    
+  ]
+}

@@ -19,7 +19,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Some blocks have connected textures by default.$(br2)In singleplayer, toggle with 'C' key to place blocks unconnected to ones in default.$(br2)In multiplayer, sneaking while placing prevents default connections."
+      "text": "Some blocks have connected textures by default.$(br2)Toggle with 'C' key to place blocks unconnected to ones in default."
     },
       {
       "type": "patchouli:image",

@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:obtain_sacred_rock",
+  "display": {
+    "icon": {
+      "item": "urushi:visualization_goggles"
+    },
+    "title": {
+      "translate": "advancements.urushi.visualization_goggles.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.visualization_goggles.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visualization_goggles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:visualization_goggles"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "visualization_goggles"
+    ]
+  ]
+}

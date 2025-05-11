@@ -1,0 +1,25 @@
+{
+  "name": "Shrine",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:red_urushi_door",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 50,
+
+"pages": [
+    {
+      "type": "patchouli:text",
+      "text": "There are shrines in the Kakuriyo Dimension. There are three treasure chests located in a shrine.$(br2)Inside the shrine, there is a portal for the overworld.$(br2)If you forget the location of the portal that you have passed through, you can return home by finding this shrine."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "This is a Shrine!",
+      "images": [
+        "urushi:textures/gui/patchouli/shrine.png"
+      ]
+    }
+    
+  ]
+}

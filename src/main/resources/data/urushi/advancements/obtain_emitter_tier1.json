@@ -1,5 +1,5 @@
 {
-  "parent": "urushi:obtain_sacred_rock",
+  "parent": "urushi:obtain_visualization_goggles",
   "display": {
     "icon": {
       "item": "urushi:wood_element_emitter_tier1"

@@ -1701,7 +1701,7 @@
 
     "advancements.urushi.kakuriyo_dirt.title": "Kamikakushi",
 
-    "advancements.urushi.kakuriyo_dirt.description": "Grab some Kakuriyo Dirt in Kakuriyo Dimension",
+    "advancements.urushi.kakuriyo_dirt.description": "Enter the Kakuriyo Dimension",
 
     "advancements.urushi.cobbled_yomi_stone.title": "Death 'n' Roll",
 
@@ -2389,14 +2389,14 @@
    "item.urushi.bamboo_cup": "Bamboo Cup",
    "item.urushi.water_bamboo_cup": "Water Bamboo Cup",
    "item.urushi.milk_bamboo_cup": "Milk Bamboo Cup",
-   "item.urushi.soy_source_bamboo_cup": "Soy Source Bamboo Cup",
+   "item.urushi.soy_source_bamboo_cup": "Soy Sauce Bamboo Cup",
    "item.urushi.gravel_sushi": "Gravel Sushi!?",
    "entity.urushi.gravel_sushi_food": "Gravel Sushi!?",
    "item.urushi.minced_tuna_bowl": "Minced Tuna Bowl",
    "item.urushi.kansui_powder": "Kansui Powder",
    "block.urushi.alkaline_dough": "Alkaline Noodle Dough",
    "block.urushi.alkaline_noodles": "Alkaline Noodles",
-   "item.urushi.soy_source_ramen": "Soy Source Ramen",
+   "item.urushi.soy_source_ramen": "Soy Sauce Ramen",
    "item.urushi.miso_ramen": "Miso Ramen",
    "item.urushi.tonkotsu_ramen": "Tonkotsu Ramen",
    "item.urushi.salt_ramen": "Salt Ramen",
@@ -2483,7 +2483,7 @@
    "entity.urushi.sakura_mochi_food": "Sakura Mochi",
    "entity.urushi.ohagi_food": "Ohagi",
    "entity.urushi.kusa_mochi_food": "Kusa Mochi",
-   "entity.urushi.soy_source_ramen_food": "Soy Source Ramen",
+   "entity.urushi.soy_source_ramen_food": "Soy Sauce Ramen",
    "entity.urushi.salt_ramen_food": "Salt Ramen",
    "entity.urushi.miso_ramen_food": "Miso Ramen",
    "entity.urushi.tonkotsu_ramen_food": "Tonkotsu Ramen",
@@ -2559,7 +2559,7 @@
    "entity.urushi.shrimp_sushi_food": "Shrimp Sushi",
    "info.urushi.doubled_wooden_cabinetry_sort_button": "Sort",
    "info.urushi.senbakoki": "Use Rice Ears on Senbakoki to obtain Raw Rice and Straw.",
-   "info.urushi.rice_ball": "Something will happen when you eat depends on what a filling you put when crafting.",
+   "info.urushi.rice_ball": "The above items can be placed as ingredients by stacking them on top of the Rice Ball in the inventory. When an ingredient is included, something happens when you eat it, depending on the type of ingredient.",
    "info.urushi.rice_ball_with_filling": "This has a filling. Something will happen when you eat.",
    "block.urushi.kakejiku_15": "Kakejiku",
    "block.urushi.kakejiku_16": "Kakejiku",
@@ -2862,6 +2862,13 @@
    "gui.jei.category.urushi.rainwater_tank.text": "Right-click",
    "info.urushi.coin": "Placeable at the same position up to 6.",
    "info.urushi.rainwater_tank1": "When water is added, water can be taken out infinitely with buckets, etc.",
-   "info.urushi.rainwater_tank2": "You can craft Mud from Dirt and any Concrete from Concrete Powder, and oxidize Copper Block and Cut Copper by using this."
+   "info.urushi.rainwater_tank2": "You can craft Mud from Dirt and any Concrete from Concrete Powder, and oxidize Copper Block and Cut Copper by using this.",
+   "entity.urushi.experience_droppable_falling_anvil": "Experience Droppable Falling Anvil",
+   "advancements.urushi.visualization_goggles.title": "Memento Lens",
+   "advancements.urushi.visualization_goggles.description": "Obtain Visualization Goggles",
+   "advancements.urushi.silkworm.title": "Generate String",
+   "advancements.urushi.silkworm.description": "Obtain Silkworm",
+   "advancements.urushi.silk_thread.title": "Encouragement of New Industry",
+   "advancements.urushi.silk_thread.description": "Obtain Silk Thread"
   
 }

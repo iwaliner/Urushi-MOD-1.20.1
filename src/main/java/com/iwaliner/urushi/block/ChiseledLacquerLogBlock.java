@@ -127,22 +127,9 @@ public class ChiseledLacquerLogBlock extends HorizonalRotateBlock{
            }
        }
     }
-/*
-    private static void absorbMob(Level level,BlockPos logPos,LivingEntity entity){
-       // entity.setNoGravity(true);
-       // entity.noPhysics=true;
-        Vec3 mobPos=entity.position();
-        double p=mobPos.x-(double) logPos.getX();
-        double q=mobPos.y-(double) logPos.getY();
-        double r=mobPos.z-(double) logPos.getZ();
-        entity.setDeltaMovement(-p/3,-q/3,-r/3);
-        //level.scheduleTick(logPos, level.getBlockState(logPos).getBlock(), 5, TickPriority.VERY_HIGH);
-    }*/
     private static boolean isPressured(Level level, BlockPos pos){
         return level.getBlockState(pos.above()).getBlock()==ItemAndBlockRegister.yomi_stone.get()||level.getBlockState(pos.above()).getBlock()==ItemAndBlockRegister.cobbled_yomi_stone.get();
     }
-
-
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
        if(state.getBlock() instanceof ChiseledLacquerLogBlock&& state.getValue(FILLED)){

@@ -1,8 +1,10 @@
 package com.iwaliner.urushi.item;
 
 import com.iwaliner.urushi.ItemAndBlockRegister;
+import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.network.chat.Component;
@@ -14,8 +16,13 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.SlotAccess;
 import net.minecraft.world.entity.animal.Fox;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.ClickAction;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.inventory.tooltip.BundleTooltip;
+import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -27,6 +34,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Optional;
 
 public class RiceBallWithFillingItem extends Item {
 
@@ -103,12 +111,40 @@ public class RiceBallWithFillingItem extends Item {
             }
         }
     }
+    public boolean overrideOtherStackedOnMe(ItemStack riceBallStack, ItemStack fillingStack, Slot slot, ClickAction action, Player player, SlotAccess slotAccess) {
+        if (action == ClickAction.SECONDARY && slot.allowModification(player)) {
+        if (UrushiUtils.getRiceBallFillingItem().containsKey(fillingStack.getItem())) {
+            ItemStack filledRiceBallStack = new ItemStack(ItemAndBlockRegister.rice_ball.get());
+            riceBallStack.shrink(1);
+            UrushiUtils.onCraftingRiceBall(fillingStack.getItem(), filledRiceBallStack);
+            if (!player.getInventory().add(filledRiceBallStack)) {
+                player.drop(filledRiceBallStack, false);
+            }
+            fillingStack.shrink(1);
+            player.playSound(SoundEvents.DYE_USE, 1F, 1F);
 
-    @Override
-    public void onCraftedBy(ItemStack stack, Level level, Player player) {
-        //UrushiUtils.onCraftingRiceBall(ItemAndBlockRegister.pickled_japanese_apricot.get(),stack);
-        CompoundTag tag=new CompoundTag();
-        tag.putBoolean("containsFilling",true);
-        //stack.setTag(tag);
+            return true;
+        }
+    }
+        return false;
+    }
+    public Optional<TooltipComponent> getTooltipImage(ItemStack stack) {
+        if (!stack.hasTag()) {
+            NonNullList<ItemStack> nonnulllist = NonNullList.create();
+            nonnulllist.add(new ItemStack(Items.BLAZE_POWDER));
+            nonnulllist.add(new ItemStack(ItemAndBlockRegister.ghost_core.get()));
+            nonnulllist.add(new ItemStack(ItemAndBlockRegister.salmon_sashimi.get()));
+            nonnulllist.add(new ItemStack(Items.GLOWSTONE_DUST));
+            nonnulllist.add(new ItemStack(ItemAndBlockRegister.pickled_japanese_apricot.get()));
+            nonnulllist.add(new ItemStack(Items.DRIED_KELP));
+            nonnulllist.add(new ItemStack(Items.GUNPOWDER));
+            nonnulllist.add(new ItemStack(ItemAndBlockRegister.onsen_egg.get()));
+            nonnulllist.add(new ItemStack(ItemAndBlockRegister.rice_malt.get()));
+            nonnulllist.add(new ItemStack(Items.COPPER_INGOT));
+            nonnulllist.add(new ItemStack(Items.SPIDER_EYE));
+            nonnulllist.add(new ItemStack(Items.SNOWBALL));
+            return Optional.of(new BundleTooltip(nonnulllist, nonnulllist.size()));
+        }
+        return Optional.empty();
     }
 }

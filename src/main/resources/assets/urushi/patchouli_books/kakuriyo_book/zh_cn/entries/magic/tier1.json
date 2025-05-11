@@ -90,6 +90,16 @@
       },
       "text": "当割开的漆木原木上方放置黄泉石或黄泉石，且附近没有动物存在的情况下，割开的漆木原木将会变成硅化原木。$(br2)硅化木及其制品需要使用镐来挖掘，并且这些方块不会因为被火点燃而燃烧至烬。"
     },
+     {
+      "type": "patchouli:text",
+      "text": "Craft a Visualization Goggles.$(br2)Even when Reiryoku is not being transported, you can see the path by which the Reiryoku is being transported if this is equipped on your head. $(br2)Without these glasses, it will be difficult to use magic equipments."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:visualization_goggles",
+      "text": ""
+    },
     {
       "type": "patchouli:text",
       "text": "再合成几个白桦木木气喷口吧。$(br2)右击能够输出灵力的方块的侧面以设置灵力喷口，并在传输途径另一端存在接收方块的时候，将会自动开始传输灵力；每1个粒子会传输1点灵力。$(br2)使用红石充能可以暂停喷口的灵力传输。$(br2)右击可以确认喷口内目前的灵力储量。"
@@ -153,7 +163,7 @@
     },
     {
       "type": "patchouli:image",
-      "text": "由于三宝供盘会挡住仪式台的正面与侧面，因此需要从斜向或者上下向仪式台传输灵力。",
+      "text": "",
       "images": [
         "urushi:textures/gui/patchouli/element_crafting.png"
       ]

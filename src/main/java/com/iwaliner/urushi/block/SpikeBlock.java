@@ -63,7 +63,7 @@ public class SpikeBlock extends BaseEntityBlock {
         int spikeProcess=state.getValue(LEVEL);
         if(!state.getValue(INVERTED)) {
             if (spikeProcess < 15) {
-                level.scheduleTick(pos, this, spikeProcess == 14 ? 20 : 1);
+                level.scheduleTick(pos, this, spikeProcess == 14 ? 40 : 1);
                 level.setBlockAndUpdate(pos, state.setValue(LEVEL, 1 + spikeProcess));
             } else {
                 level.scheduleTick(pos, this,  1);
@@ -97,25 +97,9 @@ public class SpikeBlock extends BaseEntityBlock {
     @Override
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
 
-        if(entity instanceof LivingEntity livingEntity&&level.getBlockEntity(pos) instanceof SpikeBlockEntity spikeBlockEntity){
+        if(!(entity instanceof Player)&&entity instanceof LivingEntity livingEntity&&level.getBlockEntity(pos) instanceof SpikeBlockEntity spikeBlockEntity){
 
             livingEntity.hurt(livingEntity.damageSources().playerAttack(spikeBlockEntity.getPlayer()), 3F);
-            /*AABB axisalignedbb =entity.getBoundingBox() .inflate(25.0D, 25.0D, 25.0D);
-            List<Player> list = level.getEntitiesOfClass(Player.class, axisalignedbb);
-            Player player=null;
-            if(!list.isEmpty()) {
-                for (Player p : list) {
-                    player=p;
-                    break;
-                }
-            }
-            LivingEntity living= (LivingEntity) entity;
-            if(player!=null) {
-                living.hurt(living.damageSources().playerAttack(player), 3F);
-            }else{
-                living.hurt(living.damageSources().generic(), 3F);
-            }
-*/
         }
     }
 

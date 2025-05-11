@@ -293,60 +293,6 @@ public class ModCoreUrushi {
         }
 
     }
-
-/*
-    *//**草を壊して種が出るように*//*
-    @SubscribeEvent
-    public void GrassDropEvent(BlockEvent.BreakEvent event) {
-        if(!ConfigUrushi.disableCropDropsFromGrass.get()) {
-        if (!event.getPlayer().isCreative() && (event.getLevel().getBlockState(event.getPos()).getBlock()==Blocks.FERN || event.getLevel().getBlockState(event.getPos()).getBlock()==Blocks.TALL_GRASS || event.getLevel().getBlockState(event.getPos()).getBlock()==Blocks.GRASS) ) {
-            float rand = (event.getLevel()).getRandom().nextFloat();
-            if (rand >= 0.3F) {
-                return;
-            }
-            Block given_item = null;
-            if (rand < 0.075F) {
-                given_item = ItemAndBlockRegister.rice_crop.get();
-            } else if (rand < 0.15F) {
-                given_item = ItemAndBlockRegister.soy_crop.get();
-            } else if (rand < 0.225F) {
-                given_item = ItemAndBlockRegister.azuki_crop.get();
-            } else if (rand < 0.3F) {
-                given_item = ItemAndBlockRegister.green_onion_crop.get();
-            }
-
-            ItemEntity entity = new ItemEntity((Level) event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(given_item));
-            event.getLevel().addFreshEntity(entity);
-        }
-        }
-    }*/
-
-    /**玉鋼作るときに右クリックおしっぱだとブロックがドロップして壊れる*/
-    @SubscribeEvent
-    public void HammerCancelEvent(PlayerInteractEvent.RightClickBlock event) {
-        if (event.getLevel().getBlockState(event.getPos()).getBlock() instanceof IronIngotBlock){
-            {
-                if(event.getEntity() instanceof Player) {
-                    if( event.getEntity().getCooldowns().isOnCooldown(ItemAndBlockRegister.hammer.get())) {
-                        event.getLevel().destroyBlock(event.getPos(),true);
-                        event.setCanceled(true);
-                    }
-                }
-            }
-        }
-
-        if(isDebug){
-            LevelAccessor level=event.getLevel();
-            BlockPos pos=event.getPos();
-            BlockState currentState=event.getLevel().getBlockState(pos);
-            BlockState sojoState=ElementUtils.getSojoBlock(ElementUtils.getSojoBlock(event.getLevel().getBlockState(event.getPos())));
-            if(sojoState!=null){
-                event.getLevel().setBlockAndUpdate(event.getPos(),sojoState);
-            }
-
-        }
-    }
-
     /**孫の手で手の届く範囲を広げる*/
   /*  @SubscribeEvent
     public void MagonoteEvent(PlayerInteractEvent event) {
@@ -373,15 +319,6 @@ public class ModCoreUrushi {
 
 
     }*/
-    @SubscribeEvent
-    public void CraftingEvent(PlayerEvent.ItemCraftedEvent event) {
-        ItemStack riceBallItem = event.getCrafting();
-        Container craftMatrix = event.getInventory();
-        if (riceBallItem.is((Item)ItemAndBlockRegister.rice_ball.get())) {
-        //    UrushiUtils.onCraftingRiceBall(craftMatrix.getItem(4).getItem(),riceBallItem);
-        }
-    }
-
     /**葉の上に落下したとき落下ダメージを受けないように*/
     @SubscribeEvent
     public void LeavesDamageEvent(LivingHurtEvent event) {
@@ -523,17 +460,7 @@ public class ModCoreUrushi {
                         .withStyle(ChatFormatting.GRAY));
             }
 
-        }/*else if(block instanceof PlayerHeadBlock){
-            if(stack.getTag()!=null){
-                if(stack.getTag().getBoolean("MinecraftHeadsCredit")){
-                    tooltipList.add(Component.literal("by Minecraft Heads").withStyle(ChatFormatting.BLUE));
-                }
-                if(!stack.getTag().getString("HeadsCreator").equals("")){
-                    tooltipList.add(Component.translatable("info.urushi.custom_heads_creator").append(stack.getTag().getString("HeadsCreator")).withStyle(ChatFormatting.GRAY));
-                }
-            }
-        }*/
-
+        }
         if(ModCoreUrushi.isDebug){
             CompoundTag tag=event.getItemStack().getTag();
             if(tag!=null&&!tag.isEmpty()){

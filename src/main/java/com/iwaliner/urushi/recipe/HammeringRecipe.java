@@ -90,8 +90,6 @@ public class HammeringRecipe implements Recipe<Container> {
     }
 
     public static class HammeringSerializer<T extends HammeringRecipe>implements RecipeSerializer<HammeringRecipe> {
-
-
         @Override
         public HammeringRecipe fromJson(ResourceLocation location, JsonObject json) {
             ItemStack output= ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json,"result"));

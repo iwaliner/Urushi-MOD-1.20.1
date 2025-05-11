@@ -1,0 +1,25 @@
+{
+  "name": "神社",
+  "category": "urushi:kakuriyo_travel",
+  "icon": "urushi:red_urushi_door",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  
+  "sortnum": 50,
+
+"pages": [
+    {
+      "type": "patchouli:text",
+      "text": "幽世ディメンションには神社があります。$(br2)民家の中にはお宝チェストが3つ配置されています。$(br2)建物の中にはオーバーワールドへと続くポータルがあります。$(br2)幽世へとやってきた鳥居の場所を忘れてしまっても、この神社を見つければ帰ることができます。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "これが神社！",
+      "images": [
+        "urushi:textures/gui/patchouli/shrine.png"
+      ]
+    }
+    
+  ]
+}
