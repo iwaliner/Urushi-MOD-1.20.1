@@ -45,11 +45,11 @@ public enum ComplexDirection {
     B_BW(42),
     B1(43),
     B2(44),
-    FAIL(0);   // change if in need
+    FAIL(0);
 
     private int id;
 
-    private ComplexDirection(int id) {
+    ComplexDirection(int id) {
         this.id = id;
     }
 

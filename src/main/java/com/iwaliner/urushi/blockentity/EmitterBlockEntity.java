@@ -188,9 +188,6 @@ public class EmitterBlockEntity extends AbstractReiryokuStorableBlockEntity impl
             ReiryokuStorable goalBlockEntity = (ReiryokuStorable) level.getBlockEntity(goalPos);
             int arriveTick = Mth.floor((distance - 1) / getParticleSpeed()) <= 0 ? 1 : Mth.floor((distance - 1) / getParticleSpeed());
             if (emitterBlockEnitity != null && goalBlockEntity != null && emitterBlockEnitity.canDecreaseReiryoku(emitterBlockEnitity.getSendAmount()) && goalBlockEntity.canAddReiryoku(emitterBlockEnitity.getSendAmount())) {
-//                int receiveWaitingTime = goalBlockEntity.getReceiveWaitingTime();
-//                int receiveAmount = goalBlockEntity.getReceiveAmount();
-//                ElementType receiveElementType = goalBlockEntity.getReceiveElementType();
                 if (goalBlockEntity.isIdle()) {
                     goalBlockEntity.setReceiveWaitingTime(arriveTick);
                     goalBlockEntity.setReceiveAmount(emitterBlockEnitity.getSendAmount());

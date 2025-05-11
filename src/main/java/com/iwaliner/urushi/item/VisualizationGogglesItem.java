@@ -108,6 +108,10 @@ public class VisualizationGogglesItem extends Item implements Equipable, IForgeI
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int i0, boolean b2) {
+        if(!level.isClientSide()){
+            super.inventoryTick(stack, level, entity, i0, b2);
+            return;
+        }
         if (!(entity instanceof Player player)) {
             return;
         }
@@ -116,11 +120,12 @@ public class VisualizationGogglesItem extends Item implements Equipable, IForgeI
             return;
         }
 
-        int tickrange = 25;
+        int scanRange = 15; // it was 25 but too laggy
         double corner = 6D;
-        for (int xx = -tickrange; xx <= tickrange; xx++) {
-            for (int yy = -tickrange; yy <= tickrange; yy++) {
-                for (int zz = -tickrange; zz <= tickrange; zz++) {
+
+        for (int xx = -scanRange; xx <= scanRange; xx++) {
+            for (int yy = -scanRange; yy <= scanRange; yy++) {
+                for (int zz = -scanRange; zz <= scanRange; zz++) {
                     BlockPos pos = entity.blockPosition().offset(xx, yy, zz);
 
                     BlockState state = level.getBlockState(pos);
