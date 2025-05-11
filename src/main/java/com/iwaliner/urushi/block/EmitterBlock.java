@@ -165,6 +165,8 @@ public class EmitterBlock extends BaseEntityBlock implements Tiered, ElementBloc
                 ItemEntity itementity = new ItemEntity(level, (double) pos.getX(), (double) pos.getY(), (double) pos.getZ(), itemstack);
                 itementity.setDefaultPickUpDelay();
                 level.addFreshEntity(itementity);
+
+                ((EmitterBlockEntity) blockentity).onBlockRemove();
             }
             super.playerWillDestroy(level, pos, state, player);
         }

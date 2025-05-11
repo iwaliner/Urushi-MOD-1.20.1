@@ -58,6 +58,9 @@ public enum ComplexDirection {
     }
 
     public static boolean isNEWS(ComplexDirection direction) {
+        if(direction == null){
+            return false;
+        }
         int id = direction.getID();
         if (id > 16) {
             return false;

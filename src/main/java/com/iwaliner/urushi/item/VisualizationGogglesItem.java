@@ -164,7 +164,7 @@ public class VisualizationGogglesItem extends Item implements Equipable, IForgeI
 
                         for (int j = 1; j < range; j++) {
 
-                            BlockPos offsetPos = complexDirection.length == 2 ?
+                            BlockPos offsetPos = complexDirection[1] == null ?
                                 pos.relative(complexDirection[0], j) :
                                 pos.relative(complexDirection[0], j)
                                     .relative(complexDirection[1], j);
