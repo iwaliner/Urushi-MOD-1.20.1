@@ -1,5 +1,5 @@
 {
-  "name": "Shrine",
+  "name": "神社",
   "category": "urushi:kakuriyo_travel",
   "icon": "urushi:red_urushi_door",
   "priority": true,
@@ -11,11 +11,11 @@
 "pages": [
     {
       "type": "patchouli:text",
-      "text": "There are shrines in the Kakuriyo Dimension. There are three treasure chests located in a shrine.$(br2)Inside the shrine, there is a portal for the overworld.$(br2)If you forget the location of the portal that you have passed through, you can return home by finding this shrine."
+      "text": "幽世维度中会生成神社，每个神社内含有3个宝箱。$(br2)在神社里还有着连接主世界的传送门。$(br2)如果你不幸遗忘了来幽世时的传送门，那么可以借助神社回去。"
     },
     {
       "type": "patchouli:image",
-      "text": "This is a Shrine!",
+      "text": "这就是神社了！",
       "images": [
         "urushi:textures/gui/patchouli/shrine.png"
       ]

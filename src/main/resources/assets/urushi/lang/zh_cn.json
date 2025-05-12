@@ -1701,7 +1701,7 @@
 
     "advancements.urushi.kakuriyo_dirt.title": "神隐",
 
-    "advancements.urushi.kakuriyo_dirt.description": "进入幽世，获得幽世土",
+    "advancements.urushi.kakuriyo_dirt.description": "进入幽世",
 
     "advancements.urushi.cobbled_yomi_stone.title": "摧枯拉朽",
 
@@ -2559,7 +2559,7 @@
    "entity.urushi.shrimp_sushi_food": "鲜虾寿司",
    "info.urushi.doubled_wooden_cabinetry_sort_button": "整理",
    "info.urushi.senbakoki": "对千齿脱粒机使用稻穗，可以获得糙米和稻杆",
-   "info.urushi.rice_ball": "合成时填入不同的馅料，吃下去就会发生什么事情……？",
+   "info.urushi.rice_ball": "在物品栏中将上述物品拖至饭团并按使用键以填入为馅料。填入馅料后，吃下去就会发生什么事情……？",
    "info.urushi.rice_ball_with_filling": "填入了馅料。吃下去时会发生什么呢？",
    "block.urushi.kakejiku_15": "挂轴",
    "block.urushi.kakejiku_16": "挂轴",
@@ -2863,7 +2863,13 @@
   "info.urushi.coin": "可在地面上使用以放置，同一格内最多可放置6个。",
   "info.urushi.rainwater_tank1": "里面存有水时，可以使用桶从中无限取出水。",
   "info.urushi.rainwater_tank2": "可以将泥土变为泥巴、将混凝土粉末固化成混凝土、以及腐蚀铜块。",
-  "entity.urushi.experience_droppable_falling_anvil": "铁砧"
+  "entity.urushi.experience_droppable_falling_anvil": "可产生经验的铁砧",
+  "advancements.urushi.visualization_goggles.title": "「留念镜」",
+  "advancements.urushi.visualization_goggles.description": "获得灵力观测镜",
+  "advancements.urushi.silkworm.title": "抽丝剥茧",
+  "advancements.urushi.silkworm.description": "获得一些蚕",
+  "advancements.urushi.silk_thread.title": "殖产兴业",
+  "advancements.urushi.silk_thread.description": "获得绢丝"
 
 
 }
