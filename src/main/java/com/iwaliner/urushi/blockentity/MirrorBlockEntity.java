@@ -27,6 +27,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.checkerframework.checker.units.qual.C;
 
 import java.util.List;
 import java.util.Objects;
@@ -148,9 +149,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<13){
-            return this.getDirectionFromID(direction.getID()+4);
+            return getDirectionFromID(direction.getID()+4);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-12);
+            return getDirectionFromID(direction.getID()-12);
         }
         return ComplexDirection.FAIL;
     }
@@ -160,9 +161,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<5){
-            return this.getDirectionFromID(direction.getID()+12);
+            return getDirectionFromID(direction.getID()+12);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-4);
+            return getDirectionFromID(direction.getID()-4);
         }
         return ComplexDirection.FAIL;
     }
@@ -172,9 +173,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<16){
-            return this.getDirectionFromID(direction.getID()+1);
+            return getDirectionFromID(direction.getID()+1);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-15);
+            return getDirectionFromID(direction.getID()-15);
         }
         return ComplexDirection.FAIL;
     }
@@ -184,9 +185,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<15){
-            return this.getDirectionFromID(direction.getID()+2);
+            return getDirectionFromID(direction.getID()+2);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-14);
+            return getDirectionFromID(direction.getID()-14);
         }
         return ComplexDirection.FAIL;
     }
@@ -195,9 +196,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<14){
-            return this.getDirectionFromID(direction.getID()+3);
+            return getDirectionFromID(direction.getID()+3);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-13);
+            return getDirectionFromID(direction.getID()-13);
         }
         return ComplexDirection.FAIL;
     }
@@ -206,9 +207,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<11){
-            return this.getDirectionFromID(direction.getID()+6);
+            return getDirectionFromID(direction.getID()+6);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-10);
+            return getDirectionFromID(direction.getID()-10);
         }
         return ComplexDirection.FAIL;
     }
@@ -218,9 +219,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<2){
-            return this.getDirectionFromID(direction.getID()+15);
+            return getDirectionFromID(direction.getID()+15);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-1);
+            return getDirectionFromID(direction.getID()-1);
         }
         return ComplexDirection.FAIL;
     }
@@ -230,9 +231,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<3){
-            return this.getDirectionFromID(direction.getID()+14);
+            return getDirectionFromID(direction.getID()+14);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-2);
+            return getDirectionFromID(direction.getID()-2);
         }
         return ComplexDirection.FAIL;
     }
@@ -244,7 +245,7 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         }else if(direction.getID()<4){
             return getDirectionFromID(direction.getID()+13);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-3);
+            return getDirectionFromID(direction.getID()-3);
         }
         return ComplexDirection.FAIL;
     }
@@ -254,9 +255,9 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         if(direction==ComplexDirection.FAIL){
             return ComplexDirection.FAIL;
         }else if(direction.getID()<7){
-            return this.getDirectionFromID(direction.getID()+10);
+            return getDirectionFromID(direction.getID()+10);
         }else if(direction.getID()<17){
-            return this.getDirectionFromID(direction.getID()-6);
+            return getDirectionFromID(direction.getID()-6);
         }
         return ComplexDirection.FAIL;
     }
@@ -1186,7 +1187,6 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
             return mirrorPos;
     }
     private void send(Level level,BlockPos mirrorPos, BlockPos goalPos,ComplexDirection incidentDirection){
-        boolean b1=incidentDirection==ComplexDirection.N||incidentDirection==ComplexDirection.S||incidentDirection==ComplexDirection.E||incidentDirection==ComplexDirection.W;
         MirrorBlockEntity mirrorBlockEntity= (MirrorBlockEntity) level.getBlockEntity(mirrorPos);
         ReiryokuStorable goalBlockEntity= (ReiryokuStorable) level.getBlockEntity(goalPos);
         int distance=Mth.floor( Math.sqrt( (Math.abs(mirrorPos.getX()-goalPos.getX()))^2+(Math.abs(mirrorPos.getY()-goalPos.getY()))^2+(Math.abs(mirrorPos.getZ()-goalPos.getZ()))^2));

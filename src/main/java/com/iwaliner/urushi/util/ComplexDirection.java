@@ -1,6 +1,6 @@
 package com.iwaliner.urushi.util;
 
-public  enum ComplexDirection {
+public enum ComplexDirection {
     N(1),
     N_NE(2),
     NE(3),
@@ -49,11 +49,22 @@ public  enum ComplexDirection {
 
     private int id;
 
-    private ComplexDirection(int id) {
+    ComplexDirection(int id) {
         this.id = id;
     }
-    public int getID()
-    {
+
+    public int getID() {
         return this.id;
+    }
+
+    public static boolean isNEWS(ComplexDirection direction) {
+        if(direction == null){
+            return false;
+        }
+        int id = direction.getID();
+        if (id > 16) {
+            return false;
+        }
+        return id % 4 == 1;
     }
 }
