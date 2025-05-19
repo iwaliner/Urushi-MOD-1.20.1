@@ -1,81 +1,21 @@
 {
-
-
-
   "type": "urushi:metal_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:metal_amber"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "urushi:metal_element_paper"
-
-
-
     },
-
-
-
     {
-
-
-
     "tag": "forge:ingots/copper"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "urushi:smooth_birch_planks"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:metal_element_tank_tier1"
-
-
-
   },
-
-
-
   "reiryoku": 20
-
-
-
 }

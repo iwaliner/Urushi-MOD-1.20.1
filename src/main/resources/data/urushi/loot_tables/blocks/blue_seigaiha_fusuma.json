@@ -1,28 +1,28 @@
-{
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:block_state_property",
-              "block": "urushi:blue_seigaiha_fusuma",
-              "properties": {
-                "half": "lower"
-              }
-            }
-          ],
-          "name": "urushi:blue_seigaiha_fusuma"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
-    }
-  ]
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "urushi:blue_seigaiha_fusuma",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "urushi:blue_seigaiha_fusuma"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
 }

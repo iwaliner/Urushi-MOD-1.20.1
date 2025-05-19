@@ -1,41 +1,11 @@
 {
-
-
-
   "type": "urushi:polishing",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
      "item": "urushi:cypress_log"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:stripped_cypress_log"
-
-
-
   }
-
-
-
 }

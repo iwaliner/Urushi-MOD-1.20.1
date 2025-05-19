@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "minecraft:light_blue_wool"
-
-    },
-
-    {
-
-      "tag": "forge:string"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:light_blue_cushion",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "minecraft:light_blue_wool"
+    },
+    {
+      "tag": "forge:string"
+    }
+  ],
+  "result": {
+    "item": "urushi:light_blue_cushion",
+    "count": 4
+  }
 }

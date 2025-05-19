@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "urushi:red_urushi_shoji"
-
-    },
-
-    {
-
-      "tag": "forge:glass_panes"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:red_urushi_yukimi_shoji",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:red_urushi_shoji"
+    },
+    {
+      "tag": "forge:glass_panes"
+    }
+  ],
+  "result": {
+    "item": "urushi:red_urushi_yukimi_shoji",
+    "count": 1
+  }
 }

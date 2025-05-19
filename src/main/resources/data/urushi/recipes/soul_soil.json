@@ -1,77 +1,20 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "BBB",
-
-
-
     "BDB",
-
-
-
     "BBB"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "D": {
-
-
-
      "item": "urushi:ghost_core"
-
-
-
     },
-
-
-
     "B": {
-
-
-
      "item": "minecraft:dirt"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "minecraft:soul_soil",
-
-
-
     "count": 8
-
-
-
   }
-
-
-
 }

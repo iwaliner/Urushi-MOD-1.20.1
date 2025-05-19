@@ -1,41 +1,11 @@
 {
-
-
-
   "type": "urushi:polishing",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
      "item": "minecraft:mangrove_stairs"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:smooth_mangrove_stairs"
-
-
-
   }
-
-
-
 }

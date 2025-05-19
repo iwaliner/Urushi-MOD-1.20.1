@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "BBB",
-
-    "BDB",
-
-    "BBB"
-
-  ],
-
-  "key": {
-
-    "D": {
-
-     "item": "urushi:red_urushi_ball"
-
-    },
-
-    "B": {
-
-    "item": "urushi:wooden_cabinetry_slab"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:red_urushi_wooden_cabinetry_slab",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BDB",
+    "BBB"
+  ],
+  "key": {
+    "D": {
+     "item": "urushi:red_urushi_ball"
+    },
+    "B": {
+    "item": "urushi:wooden_cabinetry_slab"
+    }
+  },
+  "result": {
+    "item": "urushi:red_urushi_wooden_cabinetry_slab",
+    "count": 8
+  }
 }

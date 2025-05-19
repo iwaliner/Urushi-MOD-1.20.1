@@ -1,14 +1,14 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "urushi:doubled_wooden_cabinetry"
-    },
-    {
-    "tag": "forge:dyes/yellow"
-    }
-  ],
-  "result": {
-    "item": "urushi:doubled_yellow_stained_wooden_cabinetry"
-  }
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:doubled_wooden_cabinetry"
+    },
+    {
+    "tag": "forge:dyes/yellow"
+    }
+  ],
+  "result": {
+    "item": "urushi:doubled_yellow_stained_wooden_cabinetry"
+  }
 }

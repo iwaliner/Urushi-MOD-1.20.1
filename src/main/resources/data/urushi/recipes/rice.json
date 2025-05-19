@@ -1,33 +1,9 @@
 {
-
-
-
   "type": "minecraft:smelting",
-
-
-
   "ingredient": {
-
-
-
      "tag": "forge:crops/rice"
-
-
-
   },
-
-
-
   "result": "urushi:rice",
-
-
-
   "experience": 0.1,
-
-
-
   "cookingtime": 200
-
-
-
 }

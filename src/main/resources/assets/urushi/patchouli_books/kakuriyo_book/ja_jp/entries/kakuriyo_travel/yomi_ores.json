@@ -6,7 +6,6 @@
   "advancement": "urushi:obtain_urushi_book",
   "turnin": "urushi:obtain_urushi_book",
   "sortnum": 10,
-
   "pages": [
     {
       "type": "text",

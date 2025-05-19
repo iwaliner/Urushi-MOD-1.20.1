@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/giboshi_copper"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/giboshi_copper"
+    }
+  }
 }

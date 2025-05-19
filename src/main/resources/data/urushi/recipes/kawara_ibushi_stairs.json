@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "#  ",
-
-    "## ",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:ibushi_kawara_block"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:ibushi_kawara_stairs",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:ibushi_kawara_block"
+    }
+  },
+  "result": {
+    "item": "urushi:ibushi_kawara_stairs",
+    "count": 4
+  }
 }

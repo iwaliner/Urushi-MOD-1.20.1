@@ -1,38 +1,19 @@
 {
-
   "variants": {
-
     "facing=west": {
-
       "model": "urushi:block/plate",
-
       "y": 270
-
     },
-
     "facing=south": {
-
       "model": "urushi:block/plate",
-
       "y": 180
-
     },
-
     "facing=north": {
-
       "model": "urushi:block/plate"
-
     },
-
     "facing=east": {
-
       "model": "urushi:block/plate",
-
       "y": 90
-
     }
-
   }
-
 }
-

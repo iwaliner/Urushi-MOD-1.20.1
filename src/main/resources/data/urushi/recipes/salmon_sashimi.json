@@ -1,45 +1,12 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
     {
-
-
-
       "item": "minecraft:salmon"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:salmon_sashimi",
-
-
-
       "count": 2
-
-
-
   }
-
-
-
 }

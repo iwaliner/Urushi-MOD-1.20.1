@@ -1,73 +1,19 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "l",
-
-
-
     "s"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "l": {
-
-
-
      "tag": "minecraft:leaves"
-
-
-
     },
-
-
-
     "s": {
-
-
-
      "tag": "minecraft:wooden_slabs"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:silkworm_farm",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

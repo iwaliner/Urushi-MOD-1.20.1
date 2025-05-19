@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "###",
-
-    "###",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:bamboo_charcoal"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:bamboo_charcoal_block",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:bamboo_charcoal"
+    }
+  },
+  "result": {
+    "item": "urushi:bamboo_charcoal_block",
+    "count": 1
+  }
 }

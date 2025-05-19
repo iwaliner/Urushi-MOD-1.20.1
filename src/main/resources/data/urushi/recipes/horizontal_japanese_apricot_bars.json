@@ -1,49 +1,13 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:japanese_apricot_bars"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:horizontal_japanese_apricot_bars",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

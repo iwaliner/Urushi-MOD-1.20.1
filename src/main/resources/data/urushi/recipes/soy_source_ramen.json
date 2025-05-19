@@ -1,85 +1,25 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
-
-
     {
-
-
-
       "item": "minecraft:cooked_porkchop"
-
-
-
     },
     
     {
-
-
-
       "item": "minecraft:egg"
-
-
-
     },
-
     {
-
-
-
  		 "tag": "forge:soysauce/soysauce"
-
-
-
     },
     {
-
-
-
        "item": "urushi:alkaline_noodles"
-
-
-
     },
      {
-
-
-
        "item": "urushi:water_bamboo_cup"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:soy_source_ramen",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

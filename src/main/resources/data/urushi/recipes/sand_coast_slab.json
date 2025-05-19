@@ -1,57 +1,15 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "###"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "#": {
-
-
-
       "item": "urushi:sand_coast"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:sand_coast_slab",
-
-
-
     "count": 6
-
-
-
   }
-
-
-
 }

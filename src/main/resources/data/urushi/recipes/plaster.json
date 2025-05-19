@@ -1,141 +1,36 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
     {
-
-
-
      "tag": "forge:slimeballs"
-
-
-
     },
-
-
-
     {
-
-
-
       "tag": "minecraft:sand"
-
-
-
     },
-
-
-
     {
-
-
-
        "tag": "minecraft:sand"
-
-
-
     },
-
-
-
     {
-
-
-
        "tag": "minecraft:sand"
-
-
-
     },
-
-
-
     {
-
-
-
       "tag": "minecraft:sand"
-
-
-
     },
-
-
-
     {
-
-
-
      "tag": "forge:gravel"
-
-
-
     },
-
-
-
     {
-
-
-
      "tag": "forge:gravel"
-
-
-
     },
-
-
-
     {
-
-
-
    "tag": "forge:gravel"
-
-
-
     },
-
-
-
     {
-
-
-
     "tag": "forge:gravel"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:plaster",
-
-
-
     "count": 32
-
-
-
   }
-
-
-
 }

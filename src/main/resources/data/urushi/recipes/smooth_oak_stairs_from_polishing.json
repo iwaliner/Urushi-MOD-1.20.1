@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:oak_stairs"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_oak_stairs"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:oak_stairs"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_oak_stairs"
+  }
 }

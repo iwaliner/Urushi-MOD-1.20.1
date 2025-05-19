@@ -899,6 +899,8 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> VisibleKitsunebiBlock =BLOCKS.register("visible_kitsunebi",() -> {return new KitsunebiBlock(BlockBehaviour.Properties.of().sound(SoundType.SOUL_SAND).instabreak().noCollission().noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
     public static final RegistryObject<Item> kitsunebiItem =ITEMS.register("kitsunebi", () -> {return new KitsunebiItem((new Item.Properties()));});
     public static final RegistryObject<Block> fox_hopper =B("fox_hopper","a",-1,() -> {return new FoxHopperBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOL).strength(1.0F, 10.0F));});
+    public static final RegistryObject<Block> marker =BM("marker","p",-1,() -> {return new MarkerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.METAL).strength(1.0F, 10.0F));});
+    public static final RegistryObject<Block> filler =BM("filler","p",-1,() -> {return new FillerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.METAL).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> andon =B("andon","a",-1,() -> {return new AndonBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
     public static final RegistryObject<Block> ariake_andon =B("ariake_andon","a",-1,() -> {return new AriakeAndonBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 13;}));});
     public static final RegistryObject<Block> kasuga_lantern =B("kasuga_lantern","a",-1,() -> {return new KasugaLanternBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
@@ -1243,7 +1245,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> hot_iron_blade_1 =B("hot_iron_blade_1","p",1,() -> {return new BladeBlock(BlockBehaviour.Properties.of().mapColor( MapColor.COLOR_YELLOW).instabreak().sound(SoundType.ANVIL));});
     public static final RegistryObject<Block> hot_iron_blade_2 =B("hot_iron_blade_2","p",1,() -> {return new BladeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).instabreak().sound(SoundType.ANVIL));});
     public static final RegistryObject<Block> quenched_iron_blade =B("quenched_iron_blade","p",1,() -> {return new BladeBlock(BlockBehaviour.Properties.of().mapColor( MapColor.METAL).instabreak().sound(SoundType.ANVIL));});
-    public static final RegistryObject<Item> iron_katana =ITEMS.register("iron_katana", () -> {return new NormalKatanaItem(Tiers.IRON,4,-2.9F,(new Item.Properties()));});
+    public static final RegistryObject<Item> iron_katana =ITEMS.register("iron_katana", () -> {return new NormalKatanaItem(Tiers.IRON,4,-2.9F,(new Item.Properties()).durability(1024));});
     public static final RegistryObject<Block> rope =B("rope","a",-1,() -> {return new RopeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.LADDER).strength(0.1F, 10.0F));});
     public static final RegistryObject<Item> climbing_rope =ITEMS.register("climbing_rope", () -> {return new ClimbingRopesItem((new Item.Properties()));});
     public static final RegistryObject<Item> open_wagasa =ITEMS.register("open_wagasa", () -> {return new WagasaItem(true,(new Item.Properties()).stacksTo(1));});

@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "W W",
-
-
-
     "W W"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "W": {
-
-
-
       "item": "urushi:smooth_mangrove_planks"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:mangrove_bars",
-
-
-
     "count": 16
-
-
-
   }
-
-
-
 }

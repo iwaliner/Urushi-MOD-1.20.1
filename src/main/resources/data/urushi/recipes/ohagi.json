@@ -1,73 +1,19 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:rice_cake"
-
-
-
     },
-
-
-
     {
-
-
-
       "tag": "forge:crops/adzuki"
-
-
-
     },
-
-
-
     {
-
-
-
       "tag": "forge:crops/adzuki"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:ohagi",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

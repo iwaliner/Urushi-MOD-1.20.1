@@ -1,49 +1,49 @@
-{
-  "variants": {
-    "facing=south,type=bottom": {
-      "model": "urushi:block/half_slab_red_urushi_shitamiita"
-    },
-    "facing=south,type=double": {
-      "model": "urushi:block/red_urushi_shitamiita"
-    },
-    "facing=south,type=top": {
-      "model": "urushi:block/upper_slab_red_urushi_shitamiita"
-    },
-    "facing=north,type=bottom": {
-      "model": "urushi:block/half_slab_red_urushi_shitamiita",
-      "y": 180
-    },
-    "facing=north,type=double": {
-      "model": "urushi:block/red_urushi_shitamiita",
-      "y": 180
-    },
-    "facing=north,type=top": {
-      "model": "urushi:block/upper_slab_red_urushi_shitamiita",
-      "y": 180
-    },
-    "facing=east,type=bottom": {
-      "model": "urushi:block/half_slab_red_urushi_shitamiita",
-      "y": 270
-    },
-    "facing=east,type=double": {
-      "model": "urushi:block/red_urushi_shitamiita",
-      "y": 270
-    },
-    "facing=east,type=top": {
-      "model": "urushi:block/upper_slab_red_urushi_shitamiita",
-      "y": 270
-    },
-    "facing=west,type=bottom": {
-      "model": "urushi:block/half_slab_red_urushi_shitamiita",
-      "y": 90
-    },
-    "facing=west,type=double": {
-      "model": "urushi:block/red_urushi_shitamiita",
-      "y": 90
-    },
-    "facing=west,type=top": {
-      "model": "urushi:block/upper_slab_red_urushi_shitamiita",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=south,type=bottom": {
+      "model": "urushi:block/half_slab_red_urushi_shitamiita"
+    },
+    "facing=south,type=double": {
+      "model": "urushi:block/red_urushi_shitamiita"
+    },
+    "facing=south,type=top": {
+      "model": "urushi:block/upper_slab_red_urushi_shitamiita"
+    },
+    "facing=north,type=bottom": {
+      "model": "urushi:block/half_slab_red_urushi_shitamiita",
+      "y": 180
+    },
+    "facing=north,type=double": {
+      "model": "urushi:block/red_urushi_shitamiita",
+      "y": 180
+    },
+    "facing=north,type=top": {
+      "model": "urushi:block/upper_slab_red_urushi_shitamiita",
+      "y": 180
+    },
+    "facing=east,type=bottom": {
+      "model": "urushi:block/half_slab_red_urushi_shitamiita",
+      "y": 270
+    },
+    "facing=east,type=double": {
+      "model": "urushi:block/red_urushi_shitamiita",
+      "y": 270
+    },
+    "facing=east,type=top": {
+      "model": "urushi:block/upper_slab_red_urushi_shitamiita",
+      "y": 270
+    },
+    "facing=west,type=bottom": {
+      "model": "urushi:block/half_slab_red_urushi_shitamiita",
+      "y": 90
+    },
+    "facing=west,type=double": {
+      "model": "urushi:block/red_urushi_shitamiita",
+      "y": 90
+    },
+    "facing=west,type=top": {
+      "model": "urushi:block/upper_slab_red_urushi_shitamiita",
+      "y": 90
+    }
+  }
 }

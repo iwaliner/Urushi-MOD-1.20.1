@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "urushi:japanese_cedar_planks"
-
-    },
-
-    {
-
-      "item": "urushi:smooth_japanese_cedar_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:japanese_cedar_shitamiita",
-
-    "count": 2
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:japanese_cedar_planks"
+    },
+    {
+      "item": "urushi:smooth_japanese_cedar_slab"
+    }
+  ],
+  "result": {
+    "item": "urushi:japanese_cedar_shitamiita",
+    "count": 2
+  }
 }

@@ -1,37 +1,19 @@
 {
-
   "variants": {
-
     "facing=west": {
-
       "model": "urushi:block/alkaline_dough",
-
       "y": 270
-
     },
-
     "facing=south": {
-
       "model": "urushi:block/alkaline_dough",
-
       "y": 180
-
     },
-
     "facing=north": {
-
       "model": "urushi:block/alkaline_dough"
-
     },
-
     "facing=east": {
-
       "model": "urushi:block/alkaline_dough",
-
       "y": 90
-
     }
-
   }
-
 }

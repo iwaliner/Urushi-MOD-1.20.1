@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:stone"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:smooth_stone"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+  "item":"minecraft:smooth_stone"
+  }
 }

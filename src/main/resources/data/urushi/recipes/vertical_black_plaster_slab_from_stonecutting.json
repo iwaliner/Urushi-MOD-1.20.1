@@ -1,29 +1,8 @@
 {
-
-
-
   "type": "minecraft:stonecutting",
-
-
-
   "ingredient": {
-
-
-
     "item": "urushi:black_plaster"
-
-
-
   },
-
-
-
   "result": "urushi:vertical_black_plaster_slab",
-
-
-
   "count": 2
-
-
-
 }

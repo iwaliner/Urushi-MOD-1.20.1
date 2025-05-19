@@ -1,77 +1,20 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "BBB",
-
-
-
     "BDB",
-
-
-
     "BBB"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "D": {
-
-
-
    "tag": "forge:dyes/blue"
-
-
-
       },
-
-
-
     "B": {
-
-
-
     "tag": "urushi:silk_block"
-
-
-
    }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:blue_silk_block",
-
-
-
     "count": 8
-
-
-
   }
-
-
-
 }

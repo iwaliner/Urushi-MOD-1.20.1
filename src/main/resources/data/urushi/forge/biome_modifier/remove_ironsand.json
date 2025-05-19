@@ -1,6 +1,6 @@
-{
-  "type": "forge:remove_features",
-  "biomes": "#forge:is_desert",
-  "features": "urushi:overworld_ore_ironsand",
-  "step": "top_layer_modification"
+{
+  "type": "forge:remove_features",
+  "biomes": "#forge:is_desert",
+  "features": "urushi:overworld_ore_ironsand",
+  "step": "top_layer_modification"
 }

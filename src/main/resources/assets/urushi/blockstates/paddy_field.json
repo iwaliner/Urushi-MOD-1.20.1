@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/paddy_field_moist"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/paddy_field_moist"
+    }
+  }
 }

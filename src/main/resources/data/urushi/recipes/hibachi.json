@@ -1,86 +1,23 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "wcw",
-
-
-
     "wgw",
-
-
-
     "www"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
   "c": {
-
-
-
      "item": "urushi:bamboo_charcoal"
-
-
-
     },
-
-
-
     "g": {
-
-
-
     "tag": "forge:gravel"
-
-
-
     },
     "w": {
-
-
-
       "tag": "minecraft:planks"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:hibachi",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

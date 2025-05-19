@@ -1,98 +1,26 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
   "bbb",
-
-
-
     "qcq",
-
-
-
     "bab"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
   "q": {
-
-
-
      "item": "minecraft:quartz"
-
-
-
     },
 "b": {
-
-
-
      "item": "urushi:smooth_birch_planks"
-
-
-
     },
-
-
-
    "a": {
-
-
-
      "item": "urushi:water_amber"
-
-
-
     },
-
-
-
     "c": {
-
-
-
      "item": "minecraft:crafting_table"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:water_element_crafting_table_tier1",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

@@ -1,15 +1,8 @@
-{
-
-  "type": "minecraft:stonecutting",
-
-  "ingredient": {
-
-    "item": "urushi:plaster"
-
-  },
-
-  "result": "urushi:plaster_stairs",
-
-  "count": 1
-
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "urushi:plaster"
+  },
+  "result": "urushi:plaster_stairs",
+  "count": 1
 }

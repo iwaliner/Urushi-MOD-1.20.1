@@ -1,9 +1,9 @@
-{
-  "type": "minecraft:smoking",
-  "ingredient": {
-    "item": "urushi:sweetfish"
-  },
-  "result": "urushi:cooked_sweetfish",
-  "experience": 0.35,
-  "cookingtime": 100
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "urushi:sweetfish"
+  },
+  "result": "urushi:cooked_sweetfish",
+  "experience": 0.35,
+  "cookingtime": 100
 }

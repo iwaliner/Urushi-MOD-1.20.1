@@ -1,15 +1,8 @@
-{
-
-  "type": "minecraft:stonecutting",
-
-  "ingredient": {
-
-    "item": "minecraft:cobblestone"
-
-  },
-
-  "result": "urushi:rough_stone_wall",
-
-  "count": 1
-
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "result": "urushi:rough_stone_wall",
+  "count": 1
 }

@@ -1,81 +1,21 @@
 {
-
-
-
   "type": "urushi:fire_element_tier1_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:fire_amber"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "minecraft:amethyst_shard"
-
-
-
     },
-
-
-
     {
-
-
-
     "tag": "forge:nuggets/gold"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "urushi:sandpaper_block"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:fire_element_magatama"
-
-
-
   },
-
-
-
   "reiryoku": 50
-
-
-
 }

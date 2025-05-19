@@ -1,41 +1,11 @@
 {
-
-
-
   "type": "urushi:polishing",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
      "item": "minecraft:warped_planks"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:smooth_warped_planks"
-
-
-
   }
-
-
-
 }

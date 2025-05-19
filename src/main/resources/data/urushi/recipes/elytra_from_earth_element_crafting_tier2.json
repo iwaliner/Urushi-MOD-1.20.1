@@ -1,80 +1,21 @@
 {
-
-
-
   "type": "urushi:earth_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "minecraft:netherite_ingot"
-
-
-
     },
-
-
-
     {
-
-
 "item": "minecraft:phantom_membrane"
-
-
-
     },
-
-
-
     {
-
-
-
 "item": "minecraft:feather"
-
-
-
     },
-
-
-
     {
-
-
-
  "item": "minecraft:phantom_membrane"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"minecraft:elytra"
-
-
-
   },
-
-
-
   "reiryoku": 300
-
-
-
 }

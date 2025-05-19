@@ -1,44 +1,16 @@
 {
-
-
-
   "type": "urushi:senbakoki",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
      "item": "urushi:rice_crop"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": [
-
 {
-
   "item":"urushi:raw_rice"
-
 },
 {
   "item":"urushi:straw"
   }
-
   ]
-
-
-
 }

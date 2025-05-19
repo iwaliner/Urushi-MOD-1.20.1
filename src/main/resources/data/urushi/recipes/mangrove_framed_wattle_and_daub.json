@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:wattle_and_daub"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "urushi:mangrove_wall_for_framed_blocks"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:mangrove_framed_wattle_and_daub",
-
-
-
     "count": 2
-
-
-
   }
-
-
-
 }

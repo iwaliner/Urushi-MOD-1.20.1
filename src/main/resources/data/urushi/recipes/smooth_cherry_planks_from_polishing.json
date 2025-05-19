@@ -1,41 +1,11 @@
 {
-
-
-
   "type": "urushi:polishing",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
      "item": "minecraft:cherry_planks"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:smooth_cherry_planks"
-
-
-
   }
-
-
-
 }

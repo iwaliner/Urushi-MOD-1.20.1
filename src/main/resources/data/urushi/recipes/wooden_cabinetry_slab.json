@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "sss",
-
-    "s s",
-
-    "sss"
-
-  ],
-
-  "key": {
-
-    "s": {
-
-    "tag": "minecraft:wooden_slabs"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:wooden_cabinetry_slab",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "s s",
+    "sss"
+  ],
+  "key": {
+    "s": {
+    "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "result": {
+    "item": "urushi:wooden_cabinetry_slab",
+    "count": 1
+  }
 }

@@ -1,49 +1,13 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:horizontal_black_urushi_bars"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:black_urushi_bars",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

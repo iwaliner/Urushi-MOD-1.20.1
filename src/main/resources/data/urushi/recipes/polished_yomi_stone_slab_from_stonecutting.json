@@ -1,15 +1,8 @@
-{
-
-  "type": "minecraft:stonecutting",
-
-  "ingredient": {
-
-    "item": "urushi:cobbled_yomi_stone"
-
-  },
-
-  "result": "urushi:polished_yomi_stone_slab",
-
-  "count": 2
-
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "urushi:cobbled_yomi_stone"
+  },
+  "result": "urushi:polished_yomi_stone_slab",
+  "count": 2
 }

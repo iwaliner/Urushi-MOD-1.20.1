@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "WWW",
-
-    "# #",
-
-    "WWW"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "tag": "forge:rods/wooden"
-
-    },
-
-    "W": {
-
-      "item": "urushi:smooth_acacia_slab"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:acacia_board_window",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "# #",
+    "WWW"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "W": {
+      "item": "urushi:smooth_acacia_slab"
+    }
+  },
+  "result": {
+    "item": "urushi:acacia_board_window",
+    "count": 8
+  }
 }

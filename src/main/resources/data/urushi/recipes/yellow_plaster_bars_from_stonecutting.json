@@ -1,29 +1,8 @@
 {
-
-
-
   "type": "minecraft:stonecutting",
-
-
-
   "ingredient": {
-
-
-
     "item": "urushi:yellow_plaster"
-
-
-
   },
-
-
-
   "result": "urushi:yellow_plaster_bars",
-
-
-
   "count": 4
-
-
-
 }

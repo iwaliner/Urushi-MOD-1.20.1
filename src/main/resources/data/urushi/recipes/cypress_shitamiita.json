@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "urushi:cypress_planks"
-
-    },
-
-    {
-
-      "item": "urushi:smooth_cypress_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:cypress_shitamiita",
-
-    "count": 2
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:cypress_planks"
+    },
+    {
+      "item": "urushi:smooth_cypress_slab"
+    }
+  ],
+  "result": {
+    "item": "urushi:cypress_shitamiita",
+    "count": 2
+  }
 }

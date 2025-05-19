@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/giboshi_iron"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/giboshi_iron"
+    }
+  }
 }

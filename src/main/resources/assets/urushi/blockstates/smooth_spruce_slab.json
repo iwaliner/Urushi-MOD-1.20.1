@@ -1,13 +1,13 @@
-{
-  "variants": {
-    "type=bottom": {
-      "model": "urushi:block/half_slab_smooth_spruce"
-    },
-    "type=double": {
-      "model": "urushi:block/spruce_smooth_planks"
-    },
-    "type=top": {
-      "model": "urushi:block/upper_slab_smooth_spruce"
-    }
-  }
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_smooth_spruce"
+    },
+    "type=double": {
+      "model": "urushi:block/spruce_smooth_planks"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_smooth_spruce"
+    }
+  }
 }

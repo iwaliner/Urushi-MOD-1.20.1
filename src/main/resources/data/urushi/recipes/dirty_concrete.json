@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "urushi:concrete"
-
-    },
-
-    {
-
-      "item": "minecraft:dirt"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:dirty_concrete",
-
-    "count": 2
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:concrete"
+    },
+    {
+      "item": "minecraft:dirt"
+    }
+  ],
+  "result": {
+    "item": "urushi:dirty_concrete",
+    "count": 2
+  }
 }

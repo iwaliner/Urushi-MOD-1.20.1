@@ -1,17 +1,9 @@
-{
-
-  "type": "minecraft:smoking",
-
-  "ingredient": {
-
-    "item": "urushi:rice_cake"
-
-  },
-
-  "result": "urushi:roasted_rice_cake",
-
-  "experience": 0.35,
-
-  "cookingtime": 100
-
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "urushi:rice_cake"
+  },
+  "result": "urushi:roasted_rice_cake",
+  "experience": 0.35,
+  "cookingtime": 100
 }

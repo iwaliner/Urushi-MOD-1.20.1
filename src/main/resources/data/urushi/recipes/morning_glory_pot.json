@@ -1,77 +1,20 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "s s",
-
-
-
     "sss",
-
-
-
     "sds"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "d": {
-
-
-
      "item": "minecraft:dirt"
-
-
-
     },
-
-
-
     "s": {
-
-
-
     "tag": "forge:rods/wooden"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:morning_glory_pot",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

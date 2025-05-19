@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "##",
-
-
-
     "##"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "#": {
-
-
-
       "item": "urushi:blue_kawara"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:blue_kawara_block",
-
-
-
     "count": 8
-
-
-
   }
-
-
-
 }

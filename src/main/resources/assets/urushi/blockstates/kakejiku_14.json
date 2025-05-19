@@ -1,34 +1,34 @@
-{
-  "variants": {
-    "facing=west,bottom=false": {
-      "model": "urushi:block/kakejiku_upper_yakinikuteisyoku",
-      "y": 90
-    },
-    "facing=south,bottom=false": {
-      "model": "urushi:block/kakejiku_upper_yakinikuteisyoku"
-    },
-    "facing=north,bottom=false": {
-      "model": "urushi:block/kakejiku_upper_yakinikuteisyoku",
-      "y": 180
-    },
-    "facing=east,bottom=false": {
-      "model": "urushi:block/kakejiku_upper_yakinikuteisyoku",
-      "y": 270
-    },
-    "facing=west,bottom=true": {
-      "model": "urushi:block/kakejiku_under_yakinikuteisyoku",
-      "y": 90
-    },
-    "facing=south,bottom=true": {
-      "model": "urushi:block/kakejiku_under_yakinikuteisyoku"
-    },
-    "facing=north,bottom=true": {
-      "model": "urushi:block/kakejiku_under_yakinikuteisyoku",
-      "y": 180
-    },
-    "facing=east,bottom=true": {
-      "model": "urushi:block/kakejiku_under_yakinikuteisyoku",
-      "y": 270
-    }
-  }
+{
+  "variants": {
+    "facing=west,bottom=false": {
+      "model": "urushi:block/kakejiku_upper_yakinikuteisyoku",
+      "y": 90
+    },
+    "facing=south,bottom=false": {
+      "model": "urushi:block/kakejiku_upper_yakinikuteisyoku"
+    },
+    "facing=north,bottom=false": {
+      "model": "urushi:block/kakejiku_upper_yakinikuteisyoku",
+      "y": 180
+    },
+    "facing=east,bottom=false": {
+      "model": "urushi:block/kakejiku_upper_yakinikuteisyoku",
+      "y": 270
+    },
+    "facing=west,bottom=true": {
+      "model": "urushi:block/kakejiku_under_yakinikuteisyoku",
+      "y": 90
+    },
+    "facing=south,bottom=true": {
+      "model": "urushi:block/kakejiku_under_yakinikuteisyoku"
+    },
+    "facing=north,bottom=true": {
+      "model": "urushi:block/kakejiku_under_yakinikuteisyoku",
+      "y": 180
+    },
+    "facing=east,bottom=true": {
+      "model": "urushi:block/kakejiku_under_yakinikuteisyoku",
+      "y": 270
+    }
+  }
 }

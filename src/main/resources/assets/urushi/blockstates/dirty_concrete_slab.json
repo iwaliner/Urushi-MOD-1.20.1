@@ -1,13 +1,13 @@
-{
-  "variants": {
-    "type=bottom": {
-      "model": "urushi:block/half_slab_dirty_concrete"
-    },
-    "type=double": {
-      "model": "urushi:block/dirty_concrete"
-    },
-    "type=top": {
-      "model": "urushi:block/upper_slab_dirty_concrete"
-    }
-  }
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_dirty_concrete"
+    },
+    "type=double": {
+      "model": "urushi:block/dirty_concrete"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_dirty_concrete"
+    }
+  }
 }

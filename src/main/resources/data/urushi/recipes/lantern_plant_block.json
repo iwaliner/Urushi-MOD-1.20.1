@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "WW",
-
-    "WW"
-
-  ],
-
-  "key": {
-
-    "W": {
-
-      "item": "urushi:lantern_plant_fruit"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:lantern_plant_block",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WW",
+    "WW"
+  ],
+  "key": {
+    "W": {
+      "item": "urushi:lantern_plant_fruit"
+    }
+  },
+  "result": {
+    "item": "urushi:lantern_plant_block",
+    "count": 1
+  }
 }

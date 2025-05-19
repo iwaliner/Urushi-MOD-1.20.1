@@ -1,15 +1,8 @@
-{
-
-  "type": "minecraft:stonecutting",
-
-  "ingredient": {
-
-    "item": "urushi:yomi_stone"
-
-  },
-
-  "result": "urushi:small_yomi_stone_brick_slab",
-
-  "count": 2
-
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "urushi:yomi_stone"
+  },
+  "result": "urushi:small_yomi_stone_brick_slab",
+  "count": 2
 }

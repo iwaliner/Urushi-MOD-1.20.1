@@ -1,23 +1,12 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-    {
-
-      "item": "urushi:copper_kawara_roof_225"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:cupric_oxide_kawara_roof_225",
-
-      "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:copper_kawara_roof_225"
+    }
+  ],
+  "result": {
+    "item": "urushi:cupric_oxide_kawara_roof_225",
+      "count": 1
+  }
 }

@@ -1,23 +1,12 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-    {
-
-      "item": "urushi:smooth_jungle_planks"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "minecraft:jungle_planks",
-
-      "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:smooth_jungle_planks"
+    }
+  ],
+  "result": {
+    "item": "minecraft:jungle_planks",
+      "count": 1
+  }
 }

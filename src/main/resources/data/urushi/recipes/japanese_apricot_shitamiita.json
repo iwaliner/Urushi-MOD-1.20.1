@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "urushi:japanese_apricot_planks"
-
-    },
-
-    {
-
-      "item": "urushi:smooth_japanese_apricot_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:japanese_apricot_shitamiita",
-
-    "count": 2
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:japanese_apricot_planks"
+    },
+    {
+      "item": "urushi:smooth_japanese_apricot_slab"
+    }
+  ],
+  "result": {
+    "item": "urushi:japanese_apricot_shitamiita",
+    "count": 2
+  }
 }

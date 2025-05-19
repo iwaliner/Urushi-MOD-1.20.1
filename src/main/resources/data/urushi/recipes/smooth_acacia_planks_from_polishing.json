@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:acacia_planks"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_acacia_planks"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:acacia_planks"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_acacia_planks"
+  }
 }

@@ -1,73 +1,19 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "W#W",
-
-
-
     "W#W"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "#": {
-
-
-
       "tag": "forge:rods/wooden"
-
-
-
     },
-
-
-
     "W": {
-
-
-
       "item": "urushi:smooth_cherry_slab"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:cherry_fushiranma",
-
-
-
     "count": 3
-
-
-
   }
-
-
-
 }

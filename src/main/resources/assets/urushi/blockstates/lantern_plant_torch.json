@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/lantern_plant_torch"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/lantern_plant_torch"
+    }
+  }
 }

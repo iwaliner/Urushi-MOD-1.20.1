@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:quartz_block"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:smooth_quartz"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:quartz_block"
+    }
+  ],
+  "result": {
+  "item":"minecraft:smooth_quartz"
+  }
 }

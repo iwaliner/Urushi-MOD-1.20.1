@@ -1,75 +1,21 @@
 {
-
-
-
   "type": "urushi:earth_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:auto_crafting_table"
-
-
-
     },
-
-
-
     {
-
-
-
    "item": "urushi:yomotsuhegui_fruit"
-
-
-
     },
     {
-
-
-
   "item": "urushi:yomotsuhegui_fruit"
-
-
-
     },
     {
-
-
-
   "item": "urushi:yomotsuhegui_fruit"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:advanced_auto_crafting_table"
-
-
-
   },
-
-
-
   "reiryoku": 100
-
-
-
 }

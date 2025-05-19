@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "X#X",
-
-    "#X#",
-
-    "X#X"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-     "item": "minecraft:dirt"
-
-    },
-
-    "X": {
-
-    "tag": "forge:bamboo"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:wattle_and_daub",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#X",
+    "#X#",
+    "X#X"
+  ],
+  "key": {
+    "#": {
+     "item": "minecraft:dirt"
+    },
+    "X": {
+    "tag": "forge:bamboo"
+    }
+  },
+  "result": {
+    "item": "urushi:wattle_and_daub",
+    "count": 8
+  }
 }

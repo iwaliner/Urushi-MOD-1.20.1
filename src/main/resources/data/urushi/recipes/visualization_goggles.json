@@ -1,85 +1,22 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     " i ",
-
-
-
     "gyg"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "y": {
-
-
-
     "item": "urushi:yomotsuhegui_fruit"
-
-
-
     },
-
-
-
     "i": {
-
-
-
    "tag": "forge:ingots/gold"
-
-
-
     },
-
-
-
     "g": {
-
-
-
 "tag": "forge:glass"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:visualization_goggles",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

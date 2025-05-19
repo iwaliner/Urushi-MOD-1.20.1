@@ -1,25 +1,13 @@
 {
-
   "variants": {
-
     "type=bottom": {
-
       "model": "urushi:block/half_slab_smooth_pale_oak"
-
     },
-
     "type=double": {
-
       "model": "urushi:block/pale_oak_smooth_planks"
-
     },
-
     "type=top": {
-
       "model": "urushi:block/upper_slab_smooth_pale_oak"
-
     }
-
   }
-
 }

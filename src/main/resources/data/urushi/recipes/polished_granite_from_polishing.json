@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:granite"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:polished_granite"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:granite"
+    }
+  ],
+  "result": {
+  "item":"minecraft:polished_granite"
+  }
 }

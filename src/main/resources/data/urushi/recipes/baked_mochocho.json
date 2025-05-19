@@ -1,85 +1,22 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:milk_bamboo_cup"
-
-
-
     },
-
-
-
     {
-
-
-
      "item": "minecraft:wheat"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "minecraft:egg"
-
-
-
     },
-
-
-
     {
-
-
-
       "tag": "forge:crops/redbean"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:baked_mochocho",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

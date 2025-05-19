@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/kakuriyo_portal_core"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/kakuriyo_portal_core"
+    }
+  }
 }

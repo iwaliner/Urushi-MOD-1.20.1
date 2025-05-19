@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "tag": "forge:crops/adzuki"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "urushi:rice"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:sekihan",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

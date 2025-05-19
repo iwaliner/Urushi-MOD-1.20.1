@@ -1,29 +1,8 @@
 {
-
-
-
   "type": "minecraft:stonecutting",
-
-
-
   "ingredient": {
-
-
-
     "item": "urushi:brown_plaster"
-
-
-
   },
-
-
-
   "result": "urushi:horizontal_brown_plaster_bars",
-
-
-
   "count": 4
-
-
-
 }

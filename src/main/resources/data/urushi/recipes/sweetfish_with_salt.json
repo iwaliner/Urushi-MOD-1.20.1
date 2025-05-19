@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "urushi:sweetfish"
-
-    },
-
-    {
-
-      "tag": "forge:salt"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:sweetfish_with_salt",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:sweetfish"
+    },
+    {
+      "tag": "forge:salt"
+    }
+  ],
+  "result": {
+    "item": "urushi:sweetfish_with_salt",
+    "count": 1
+  }
 }

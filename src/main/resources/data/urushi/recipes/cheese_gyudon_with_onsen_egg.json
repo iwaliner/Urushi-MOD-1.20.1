@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "urushi:onsen_egg"
-
-    },
-
-    {
-
-      "item": "urushi:cheese_gyudon"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:cheese_gyudon_with_onsen_egg",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:onsen_egg"
+    },
+    {
+      "item": "urushi:cheese_gyudon"
+    }
+  ],
+  "result": {
+    "item": "urushi:cheese_gyudon_with_onsen_egg",
+    "count": 1
+  }
 }

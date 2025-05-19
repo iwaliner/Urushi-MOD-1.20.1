@@ -1,5 +1,4 @@
 {
-
   "wind_bell": {
     "subtitle": "sounds.urushi.wind_bell",
     "sounds": [
@@ -37,5 +36,4 @@
       "urushi:kakuriyo_villager_yes"
     ]
   }
-
 }

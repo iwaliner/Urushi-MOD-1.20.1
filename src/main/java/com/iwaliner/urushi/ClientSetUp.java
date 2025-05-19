@@ -2,6 +2,7 @@ package com.iwaliner.urushi;
 
 
 import com.iwaliner.urushi.block.*;
+import com.iwaliner.urushi.blockentity.menu.FillerMenu;
 import com.iwaliner.urushi.blockentity.renderer.*;
 import com.iwaliner.urushi.blockentity.screen.*;
 import com.iwaliner.urushi.entiity.food.model.*;
@@ -277,6 +278,7 @@ public class ClientSetUp {
         MenuScreens.register(MenuRegister.SilkwormFarmMenu.get(), SilkwormFarmScreen::new);
         MenuScreens.register(MenuRegister.KettleMenu.get(), KettleScreen::new);
         MenuScreens.register(MenuRegister.TranslatableBookMenu.get(), TranslatableBookScreen::new);
+        MenuScreens.register(MenuRegister.FillerMenu.get(), FillerScreen::new);
 
 
        /**見た目が特殊なBlockEntityの見た目を登録*/
@@ -286,6 +288,8 @@ public class ClientSetUp {
         BlockEntityRenderers.register(BlockEntityRegister.Plate.get(), PlateRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegister.BambooBasket.get(), BambooBasketRenderer::new);
         BlockEntityRenderers.register(BlockEntityRegister.DoubledWoodenCabinetryBlockEntity.get(), DoubledWoodenCabinetryRenderer::new);
+        BlockEntityRenderers.register(BlockEntityRegister.Marker.get(), MarkerRenderer::new);
+        BlockEntityRenderers.register(BlockEntityRegister.Filler.get(), FillerRenderer::new);
 
 
 
@@ -309,6 +313,8 @@ public class ClientSetUp {
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.red_silk.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.black_silk.get());
         ModCoreUrushi.underDevelopmentList.add(ItemAndBlockRegister.kakuriyo_chronicles_1.get());
+        ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.marker.get()));
+        ModCoreUrushi.underDevelopmentList.add(Item.byBlock(ItemAndBlockRegister.filler.get()));
 
 
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.additional_heart);

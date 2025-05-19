@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=west": {
-      "model": "urushi:block/izakaya_long_chochin",
-      "y": 270
-    },
-    "facing=south": {
-      "model": "urushi:block/izakaya_long_chochin",
-      "y": 180
-    },
-    "facing=north": {
-      "model": "urushi:block/izakaya_long_chochin"
-    },
-    "facing=east": {
-      "model": "urushi:block/izakaya_long_chochin",
-      "y": 90
-    }
-  }
-}
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/izakaya_long_chochin",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/izakaya_long_chochin",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/izakaya_long_chochin"
+    },
+    "facing=east": {
+      "model": "urushi:block/izakaya_long_chochin",
+      "y": 90
+    }
+  }
+}

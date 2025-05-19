@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:hammering",
-
-  "ingredients": [
-
-  {
-
-    "item": "urushi:hot_ironsand"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:hot_iron_plate"
-
-  }
-
+{
+  "type": "urushi:hammering",
+  "ingredients": [
+  {
+    "item": "urushi:hot_ironsand"
+    }
+  ],
+  "result": {
+  "item":"urushi:hot_iron_plate"
+  }
 }

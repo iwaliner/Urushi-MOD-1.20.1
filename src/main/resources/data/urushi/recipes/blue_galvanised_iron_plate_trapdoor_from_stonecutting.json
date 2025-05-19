@@ -1,29 +1,8 @@
 {
-
-
-
   "type": "minecraft:stonecutting",
-
-
-
   "ingredient": {
-
-
-
      "tag": "forge:nuggets/iron"
-
-
-
   },
-
-
-
   "result": "urushi:blue_galvanised_iron_plate_trapdoor",
-
-
-
   "count": 16
-
-
-
 }

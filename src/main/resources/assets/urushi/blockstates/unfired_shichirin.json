@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/shichirin_unfired"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/shichirin_unfired"
+    }
+  }
 }

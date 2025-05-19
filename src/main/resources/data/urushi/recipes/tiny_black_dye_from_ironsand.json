@@ -1,25 +1,13 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "urushi:ironsand"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:tiny_black_dye",
-
-    "count": 16
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:ironsand"
+    }
+  ],
+  "result": {
+    "item": "urushi:tiny_black_dye",
+    "count": 16
+  }
 }

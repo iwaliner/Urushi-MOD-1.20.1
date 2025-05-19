@@ -1,158 +1,158 @@
-{
-  "variants": {
-    "facing=east,in_wall=false,open=false,powered=false": {
-      "uvlock": true,
-      "y": 270,
-      "model": "urushi:block/japanese_cedar_fence_gate_closed"
-    },
-    "facing=east,in_wall=false,open=true,powered=false": {
-      "uvlock": true,
-      "y": 270,
-      "model": "urushi:block/japanese_cedar_fence_gate_open"
-    },
-    "facing=east,in_wall=true,open=false,powered=false": {
-      "uvlock": true,
-      "y": 270,
-      "model": "urushi:block/japanese_cedar_wall_gate_closed"
-    },
-    "facing=east,in_wall=true,open=true,powered=false": {
-      "uvlock": true,
-      "y": 270,
-      "model": "urushi:block/japanese_cedar_wall_gate_open"
-    },
-    "facing=north,in_wall=false,open=false,powered=false": {
-      "uvlock": true,
-      "y": 180,
-      "model": "urushi:block/japanese_cedar_fence_gate_closed"
-    },
-    "facing=north,in_wall=false,open=true,powered=false": {
-      "uvlock": true,
-      "y": 180,
-      "model": "urushi:block/japanese_cedar_fence_gate_open"
-    },
-    "facing=north,in_wall=true,open=false,powered=false": {
-      "uvlock": true,
-      "y": 180,
-      "model": "urushi:block/japanese_cedar_wall_gate_closed"
-    },
-    "facing=north,in_wall=true,open=true,powered=false": {
-      "uvlock": true,
-      "y": 180,
-      "model": "urushi:block/japanese_cedar_wall_gate_open"
-    },
-    "facing=south,in_wall=false,open=false,powered=false": {
-      "uvlock": true,
-      "model": "urushi:block/japanese_cedar_fence_gate_closed"
-    },
-    "facing=south,in_wall=false,open=true,powered=false": {
-      "uvlock": true,
-      "model": "urushi:block/japanese_cedar_fence_gate_open"
-    },
-    "facing=south,in_wall=true,open=false,powered=false": {
-      "uvlock": true,
-      "model": "urushi:block/japanese_cedar_wall_gate_closed"
-    },
-    "facing=south,in_wall=true,open=true,powered=false": {
-      "uvlock": true,
-      "model": "urushi:block/japanese_cedar_wall_gate_open"
-    },
-    "facing=west,in_wall=false,open=false,powered=false": {
-      "uvlock": true,
-      "y": 90,
-      "model": "urushi:block/japanese_cedar_fence_gate_closed"
-    },
-    "facing=west,in_wall=false,open=true,powered=false": {
-      "uvlock": true,
-      "y": 90,
-      "model": "urushi:block/japanese_cedar_fence_gate_open"
-    },
-    "facing=west,in_wall=true,open=false,powered=false": {
-      "uvlock": true,
-      "y": 90,
-      "model": "urushi:block/japanese_cedar_wall_gate_closed"
-    },
-    "facing=west,in_wall=true,open=true,powered=false": {
-      "uvlock": true,
-      "y": 90,
-      "model": "urushi:block/japanese_cedar_wall_gate_open"
-    },
-    
-    
-    "facing=east,in_wall=false,open=false,powered=true": {
-      "uvlock": true,
-      "y": 270,
-      "model": "urushi:block/japanese_cedar_fence_gate_closed"
-    },
-    "facing=east,in_wall=false,open=true,powered=true": {
-      "uvlock": true,
-      "y": 270,
-      "model": "urushi:block/japanese_cedar_fence_gate_open"
-    },
-    "facing=east,in_wall=true,open=false,powered=true": {
-      "uvlock": true,
-      "y": 270,
-      "model": "urushi:block/japanese_cedar_wall_gate_closed"
-    },
-    "facing=east,in_wall=true,open=true,powered=true": {
-      "uvlock": true,
-      "y": 270,
-      "model": "urushi:block/japanese_cedar_wall_gate_open"
-    },
-    "facing=north,in_wall=false,open=false,powered=true": {
-      "uvlock": true,
-      "y": 180,
-      "model": "urushi:block/japanese_cedar_fence_gate_closed"
-    },
-    "facing=north,in_wall=false,open=true,powered=true": {
-      "uvlock": true,
-      "y": 180,
-      "model": "urushi:block/japanese_cedar_fence_gate_open"
-    },
-    "facing=north,in_wall=true,open=false,powered=true": {
-      "uvlock": true,
-      "y": 180,
-      "model": "urushi:block/japanese_cedar_wall_gate_closed"
-    },
-    "facing=north,in_wall=true,open=true,powered=true": {
-      "uvlock": true,
-      "y": 180,
-      "model": "urushi:block/japanese_cedar_wall_gate_open"
-    },
-    "facing=south,in_wall=false,open=false,powered=true": {
-      "uvlock": true,
-      "model": "urushi:block/japanese_cedar_fence_gate_closed"
-    },
-    "facing=south,in_wall=false,open=true,powered=true": {
-      "uvlock": true,
-      "model": "urushi:block/japanese_cedar_fence_gate_open"
-    },
-    "facing=south,in_wall=true,open=false,powered=true": {
-      "uvlock": true,
-      "model": "urushi:block/japanese_cedar_wall_gate_closed"
-    },
-    "facing=south,in_wall=true,open=true,powered=true": {
-      "uvlock": true,
-      "model": "urushi:block/japanese_cedar_wall_gate_open"
-    },
-    "facing=west,in_wall=false,open=false,powered=true": {
-      "uvlock": true,
-      "y": 90,
-      "model": "urushi:block/japanese_cedar_fence_gate_closed"
-    },
-    "facing=west,in_wall=false,open=true,powered=true": {
-      "uvlock": true,
-      "y": 90,
-      "model": "urushi:block/japanese_cedar_fence_gate_open"
-    },
-    "facing=west,in_wall=true,open=false,powered=true": {
-      "uvlock": true,
-      "y": 90,
-      "model": "urushi:block/japanese_cedar_wall_gate_closed"
-    },
-    "facing=west,in_wall=true,open=true,powered=true": {
-      "uvlock": true,
-      "y": 90,
-      "model": "urushi:block/japanese_cedar_wall_gate_open"
-    }
-  }
+{
+  "variants": {
+    "facing=east,in_wall=false,open=false,powered=false": {
+      "uvlock": true,
+      "y": 270,
+      "model": "urushi:block/japanese_cedar_fence_gate_closed"
+    },
+    "facing=east,in_wall=false,open=true,powered=false": {
+      "uvlock": true,
+      "y": 270,
+      "model": "urushi:block/japanese_cedar_fence_gate_open"
+    },
+    "facing=east,in_wall=true,open=false,powered=false": {
+      "uvlock": true,
+      "y": 270,
+      "model": "urushi:block/japanese_cedar_wall_gate_closed"
+    },
+    "facing=east,in_wall=true,open=true,powered=false": {
+      "uvlock": true,
+      "y": 270,
+      "model": "urushi:block/japanese_cedar_wall_gate_open"
+    },
+    "facing=north,in_wall=false,open=false,powered=false": {
+      "uvlock": true,
+      "y": 180,
+      "model": "urushi:block/japanese_cedar_fence_gate_closed"
+    },
+    "facing=north,in_wall=false,open=true,powered=false": {
+      "uvlock": true,
+      "y": 180,
+      "model": "urushi:block/japanese_cedar_fence_gate_open"
+    },
+    "facing=north,in_wall=true,open=false,powered=false": {
+      "uvlock": true,
+      "y": 180,
+      "model": "urushi:block/japanese_cedar_wall_gate_closed"
+    },
+    "facing=north,in_wall=true,open=true,powered=false": {
+      "uvlock": true,
+      "y": 180,
+      "model": "urushi:block/japanese_cedar_wall_gate_open"
+    },
+    "facing=south,in_wall=false,open=false,powered=false": {
+      "uvlock": true,
+      "model": "urushi:block/japanese_cedar_fence_gate_closed"
+    },
+    "facing=south,in_wall=false,open=true,powered=false": {
+      "uvlock": true,
+      "model": "urushi:block/japanese_cedar_fence_gate_open"
+    },
+    "facing=south,in_wall=true,open=false,powered=false": {
+      "uvlock": true,
+      "model": "urushi:block/japanese_cedar_wall_gate_closed"
+    },
+    "facing=south,in_wall=true,open=true,powered=false": {
+      "uvlock": true,
+      "model": "urushi:block/japanese_cedar_wall_gate_open"
+    },
+    "facing=west,in_wall=false,open=false,powered=false": {
+      "uvlock": true,
+      "y": 90,
+      "model": "urushi:block/japanese_cedar_fence_gate_closed"
+    },
+    "facing=west,in_wall=false,open=true,powered=false": {
+      "uvlock": true,
+      "y": 90,
+      "model": "urushi:block/japanese_cedar_fence_gate_open"
+    },
+    "facing=west,in_wall=true,open=false,powered=false": {
+      "uvlock": true,
+      "y": 90,
+      "model": "urushi:block/japanese_cedar_wall_gate_closed"
+    },
+    "facing=west,in_wall=true,open=true,powered=false": {
+      "uvlock": true,
+      "y": 90,
+      "model": "urushi:block/japanese_cedar_wall_gate_open"
+    },
+    
+    
+    "facing=east,in_wall=false,open=false,powered=true": {
+      "uvlock": true,
+      "y": 270,
+      "model": "urushi:block/japanese_cedar_fence_gate_closed"
+    },
+    "facing=east,in_wall=false,open=true,powered=true": {
+      "uvlock": true,
+      "y": 270,
+      "model": "urushi:block/japanese_cedar_fence_gate_open"
+    },
+    "facing=east,in_wall=true,open=false,powered=true": {
+      "uvlock": true,
+      "y": 270,
+      "model": "urushi:block/japanese_cedar_wall_gate_closed"
+    },
+    "facing=east,in_wall=true,open=true,powered=true": {
+      "uvlock": true,
+      "y": 270,
+      "model": "urushi:block/japanese_cedar_wall_gate_open"
+    },
+    "facing=north,in_wall=false,open=false,powered=true": {
+      "uvlock": true,
+      "y": 180,
+      "model": "urushi:block/japanese_cedar_fence_gate_closed"
+    },
+    "facing=north,in_wall=false,open=true,powered=true": {
+      "uvlock": true,
+      "y": 180,
+      "model": "urushi:block/japanese_cedar_fence_gate_open"
+    },
+    "facing=north,in_wall=true,open=false,powered=true": {
+      "uvlock": true,
+      "y": 180,
+      "model": "urushi:block/japanese_cedar_wall_gate_closed"
+    },
+    "facing=north,in_wall=true,open=true,powered=true": {
+      "uvlock": true,
+      "y": 180,
+      "model": "urushi:block/japanese_cedar_wall_gate_open"
+    },
+    "facing=south,in_wall=false,open=false,powered=true": {
+      "uvlock": true,
+      "model": "urushi:block/japanese_cedar_fence_gate_closed"
+    },
+    "facing=south,in_wall=false,open=true,powered=true": {
+      "uvlock": true,
+      "model": "urushi:block/japanese_cedar_fence_gate_open"
+    },
+    "facing=south,in_wall=true,open=false,powered=true": {
+      "uvlock": true,
+      "model": "urushi:block/japanese_cedar_wall_gate_closed"
+    },
+    "facing=south,in_wall=true,open=true,powered=true": {
+      "uvlock": true,
+      "model": "urushi:block/japanese_cedar_wall_gate_open"
+    },
+    "facing=west,in_wall=false,open=false,powered=true": {
+      "uvlock": true,
+      "y": 90,
+      "model": "urushi:block/japanese_cedar_fence_gate_closed"
+    },
+    "facing=west,in_wall=false,open=true,powered=true": {
+      "uvlock": true,
+      "y": 90,
+      "model": "urushi:block/japanese_cedar_fence_gate_open"
+    },
+    "facing=west,in_wall=true,open=false,powered=true": {
+      "uvlock": true,
+      "y": 90,
+      "model": "urushi:block/japanese_cedar_wall_gate_closed"
+    },
+    "facing=west,in_wall=true,open=true,powered=true": {
+      "uvlock": true,
+      "y": 90,
+      "model": "urushi:block/japanese_cedar_wall_gate_open"
+    }
+  }
 }

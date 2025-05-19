@@ -1,23 +1,12 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-    {
-
-      "item": "minecraft:seagrass"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:kanten_powder",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:seagrass"
+    }
+  ],
+  "result": {
+    "item": "urushi:kanten_powder",
+    "count": 4
+  }
 }

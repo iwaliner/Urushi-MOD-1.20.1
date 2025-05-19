@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "W W",
-
-
-
     "W W"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "W": {
-
-
-
       "item": "urushi:smooth_red_urushi_planks"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:red_urushi_bars",
-
-
-
     "count": 16
-
-
-
   }
-
-
-
 }

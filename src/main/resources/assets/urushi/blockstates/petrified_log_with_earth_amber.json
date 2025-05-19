@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=west": {
-      "model": "urushi:block/petrified_log_with_earth_amber",
-      "y": 270
-    },
-    "facing=south": {
-      "model": "urushi:block/petrified_log_with_earth_amber",
-      "y": 180
-    },
-    "facing=north": {
-      "model": "urushi:block/petrified_log_with_earth_amber"
-    },
-    "facing=east": {
-      "model": "urushi:block/petrified_log_with_earth_amber",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/petrified_log_with_earth_amber",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/petrified_log_with_earth_amber",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/petrified_log_with_earth_amber"
+    },
+    "facing=east": {
+      "model": "urushi:block/petrified_log_with_earth_amber",
+      "y": 90
+    }
+  }
 }

@@ -1,80 +1,21 @@
 {
-
-
-
   "type": "urushi:fire_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:explosion_jufu_stamp"
-
-
-
     },
-
-
-
     {
-
-
 "item": "urushi:black_urushi_ball"
-
-
-
     },
-
-
-
     {
-
-
-
 "item": "minecraft:paper"
-
-
-
     },
-
-
-
     {
-
-
-
    "tag": "forge:nuggets/gold"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:explosion_jufu"
-
-
-
   },
-
-
-
   "reiryoku": 30
-
-
-
 }

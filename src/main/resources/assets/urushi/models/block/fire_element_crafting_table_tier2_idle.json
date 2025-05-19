@@ -1,24 +1,12 @@
 {
-
     "parent": "block/cube",
-
     "textures": {
-
         "particle": "urushi:block/crafting_table_idle_fire_tier2",
-
         "down": "urushi:block/crafting_table_idle_bottom_fire_tier2",
-
         "up": "urushi:block/crafting_table_idle_fire_tier2",
-
         "north": "urushi:block/crafting_table_idle_side_fire_tier2",
-
         "east": "urushi:block/crafting_table_idle_side_fire_tier2",
-
         "south": "urushi:block/crafting_table_idle_side_fire_tier2",
-
         "west": "urushi:block/crafting_table_idle_side_fire_tier2"
-
     }
-
 }
-

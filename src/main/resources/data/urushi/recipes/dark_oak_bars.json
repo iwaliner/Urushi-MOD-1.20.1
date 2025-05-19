@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "W W",
-
-    "W W"
-
-  ],
-
-  "key": {
-
-    "W": {
-
-      "item": "urushi:smooth_dark_oak_planks"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:dark_oak_bars",
-
-    "count": 16
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W W",
+    "W W"
+  ],
+  "key": {
+    "W": {
+      "item": "urushi:smooth_dark_oak_planks"
+    }
+  },
+  "result": {
+    "item": "urushi:dark_oak_bars",
+    "count": 16
+  }
 }

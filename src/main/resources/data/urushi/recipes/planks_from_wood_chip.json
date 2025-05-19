@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "###",
-
-    "###",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:wood_chip"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "minecraft:oak_planks",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:wood_chip"
+    }
+  },
+  "result": {
+    "item": "minecraft:oak_planks",
+    "count": 1
+  }
 }

@@ -1,95 +1,48 @@
 {
-
   "multipart": [
-
     {
-
       "apply": {
-
         "model": "urushi:block/black_plaster_bars_center"
-
       }
-
     },
-
     {
-
       "when": {
-
         "north": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/black_plaster_bars_edge",
-
         "uvlock": true
-
       }
-
     },
-
     {
-
       "when": {
-
         "east": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/black_plaster_bars_edge",
-
         "y": 90,
-
         "uvlock": true
-
       }
-
     },
-
     {
-
       "when": {
-
         "south": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/black_plaster_bars_edge",
-
         "y": 180,
-
         "uvlock": true
-
       }
-
     },
-
     {
-
       "when": {
-
         "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/black_plaster_bars_edge",
-
         "y": 270,
-
         "uvlock": true
-
       }
-
     }
-
   ]
-
 }

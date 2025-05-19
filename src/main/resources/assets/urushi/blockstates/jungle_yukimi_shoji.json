@@ -1,1814 +1,1814 @@
-{
-  "variants": {
-    "facing=north,half=lower,is_opening=false,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_backlight"
-    },
-    "facing=north,half=lower,is_opening=false,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_backlight"
-    },
-    
-    "facing=north,half=upper,is_opening=false,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_backlight"
-    },
-    "facing=north,half=upper,is_opening=false,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_backlight"
-    },
-    
-     "facing=north,half=lower,is_opening=false,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=false,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted_backlight",
-        "y": 180
-    },
-    
-    
-     "facing=north,half=upper,is_opening=false,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=false,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted_backlight",
-        "y": 180
-    },
-    
-    
-    
-    
-    "facing=west,half=lower,is_opening=false,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=false,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_backlight",
-      "y": 270
-    },
-    
-    "facing=west,half=upper,is_opening=false,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=false,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_backlight",
-      "y": 270
-    },
-    
-     "facing=west,half=lower,is_opening=false,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=false,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted_backlight",
-        "y": 90
-    },
-    
-    
-    
-     "facing=west,half=upper,is_opening=false,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=false,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted_backlight",
-        "y": 90
-    },
-    
-    
-    
-    
-    
-    "facing=east,half=lower,is_opening=false,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=false,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13",
-      "y": 90
-    },
-    
-    "facing=east,half=upper,is_opening=false,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=false,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13",
-      "y": 90
-    },
-    
-     "facing=east,half=lower,is_opening=false,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=false,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted",
-        "y": 270
-    },
-    
-    
-    
-     "facing=east,half=upper,is_opening=false,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=false,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted",
-        "y": 270
-    },
-    
-    
-    
-    
-    
-    
-    "facing=south,half=lower,is_opening=false,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=false,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13",
-      "y": 180
-    },
-    
-    "facing=south,half=upper,is_opening=false,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=false,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13",
-      "y": 180
-    },
-    
-     "facing=south,half=lower,is_opening=false,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=false,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted"
-        
-    },
-    
-    
-     "facing=south,half=upper,is_opening=false,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=false,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted"
-        
-    },
-    
-    
-    
-    
-    
-    
-    
-    
-    "facing=north,half=lower,is_opening=true,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_backlight"
-    },
-    "facing=north,half=lower,is_opening=true,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_backlight"
-    },
-    
-    "facing=north,half=upper,is_opening=true,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_backlight"
-    },
-    "facing=north,half=upper,is_opening=true,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_backlight"
-    },
-    
-     "facing=north,half=lower,is_opening=true,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=lower,is_opening=true,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted_backlight",
-        "y": 180
-    },
-    
-    
-     "facing=north,half=upper,is_opening=true,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted_backlight",
-        "y": 180
-    },
-    "facing=north,half=upper,is_opening=true,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted_backlight",
-        "y": 180
-    },
-    
-    
-    
-    
-    "facing=west,half=lower,is_opening=true,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_backlight",
-      "y": 270
-    },
-    "facing=west,half=lower,is_opening=true,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_backlight",
-      "y": 270
-    },
-    
-    "facing=west,half=upper,is_opening=true,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_backlight",
-      "y": 270
-    },
-    "facing=west,half=upper,is_opening=true,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_backlight",
-      "y": 270
-    },
-    
-     "facing=west,half=lower,is_opening=true,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=lower,is_opening=true,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted_backlight",
-        "y": 90
-    },
-    
-    
-    
-     "facing=west,half=upper,is_opening=true,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted_backlight",
-        "y": 90
-    },
-    "facing=west,half=upper,is_opening=true,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted_backlight",
-        "y": 90
-    },
-    
-    
-    
-    
-    
-    "facing=east,half=lower,is_opening=true,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12",
-      "y": 90
-    },
-    "facing=east,half=lower,is_opening=true,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13",
-      "y": 90
-    },
-    
-    "facing=east,half=upper,is_opening=true,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12",
-      "y": 90
-    },
-    "facing=east,half=upper,is_opening=true,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13",
-      "y": 90
-    },
-    
-     "facing=east,half=lower,is_opening=true,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted",
-        "y": 270
-    },
-    "facing=east,half=lower,is_opening=true,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted",
-        "y": 270
-    },
-    
-    
-    
-     "facing=east,half=upper,is_opening=true,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted",
-        "y": 270
-    },
-    "facing=east,half=upper,is_opening=true,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted",
-        "y": 270
-    },
-    
-    
-    
-    
-    
-    
-    "facing=south,half=lower,is_opening=true,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12",
-      "y": 180
-    },
-    "facing=south,half=lower,is_opening=true,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13",
-      "y": 180
-    },
-    
-    "facing=south,half=upper,is_opening=true,inverted=false,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12",
-      "y": 180
-    },
-    "facing=south,half=upper,is_opening=true,inverted=false,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13",
-      "y": 180
-    },
-    
-     "facing=south,half=lower,is_opening=true,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted"
-        
-    },
-    "facing=south,half=lower,is_opening=true,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted"
-        
-    },
-    
-    
-     "facing=south,half=upper,is_opening=true,inverted=true,open=0": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=1": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=2": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=3": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=4": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=5": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=6": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=7": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=8": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=9": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=10": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=11": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=12": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted"
-        
-    },
-    "facing=south,half=upper,is_opening=true,inverted=true,open=13": {
-      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted"
-        
-    }
-  }
+{
+  "variants": {
+    "facing=north,half=lower,is_opening=false,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_backlight"
+    },
+    "facing=north,half=lower,is_opening=false,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_backlight"
+    },
+    
+    "facing=north,half=upper,is_opening=false,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_backlight"
+    },
+    "facing=north,half=upper,is_opening=false,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_backlight"
+    },
+    
+     "facing=north,half=lower,is_opening=false,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=false,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted_backlight",
+        "y": 180
+    },
+    
+    
+     "facing=north,half=upper,is_opening=false,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=false,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted_backlight",
+        "y": 180
+    },
+    
+    
+    
+    
+    "facing=west,half=lower,is_opening=false,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=false,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_backlight",
+      "y": 270
+    },
+    
+    "facing=west,half=upper,is_opening=false,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=false,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_backlight",
+      "y": 270
+    },
+    
+     "facing=west,half=lower,is_opening=false,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=false,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted_backlight",
+        "y": 90
+    },
+    
+    
+    
+     "facing=west,half=upper,is_opening=false,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=false,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted_backlight",
+        "y": 90
+    },
+    
+    
+    
+    
+    
+    "facing=east,half=lower,is_opening=false,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=false,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13",
+      "y": 90
+    },
+    
+    "facing=east,half=upper,is_opening=false,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=false,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13",
+      "y": 90
+    },
+    
+     "facing=east,half=lower,is_opening=false,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=false,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted",
+        "y": 270
+    },
+    
+    
+    
+     "facing=east,half=upper,is_opening=false,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=false,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted",
+        "y": 270
+    },
+    
+    
+    
+    
+    
+    
+    "facing=south,half=lower,is_opening=false,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=false,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13",
+      "y": 180
+    },
+    
+    "facing=south,half=upper,is_opening=false,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=false,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13",
+      "y": 180
+    },
+    
+     "facing=south,half=lower,is_opening=false,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=false,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted"
+        
+    },
+    
+    
+     "facing=south,half=upper,is_opening=false,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=false,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted"
+        
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    "facing=north,half=lower,is_opening=true,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_backlight"
+    },
+    "facing=north,half=lower,is_opening=true,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_backlight"
+    },
+    
+    "facing=north,half=upper,is_opening=true,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_backlight"
+    },
+    "facing=north,half=upper,is_opening=true,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_backlight"
+    },
+    
+     "facing=north,half=lower,is_opening=true,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=lower,is_opening=true,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted_backlight",
+        "y": 180
+    },
+    
+    
+     "facing=north,half=upper,is_opening=true,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted_backlight",
+        "y": 180
+    },
+    "facing=north,half=upper,is_opening=true,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted_backlight",
+        "y": 180
+    },
+    
+    
+    
+    
+    "facing=west,half=lower,is_opening=true,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_backlight",
+      "y": 270
+    },
+    "facing=west,half=lower,is_opening=true,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_backlight",
+      "y": 270
+    },
+    
+    "facing=west,half=upper,is_opening=true,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_backlight",
+      "y": 270
+    },
+    "facing=west,half=upper,is_opening=true,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_backlight",
+      "y": 270
+    },
+    
+     "facing=west,half=lower,is_opening=true,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=lower,is_opening=true,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted_backlight",
+        "y": 90
+    },
+    
+    
+    
+     "facing=west,half=upper,is_opening=true,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted_backlight",
+        "y": 90
+    },
+    "facing=west,half=upper,is_opening=true,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted_backlight",
+        "y": 90
+    },
+    
+    
+    
+    
+    
+    "facing=east,half=lower,is_opening=true,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12",
+      "y": 90
+    },
+    "facing=east,half=lower,is_opening=true,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13",
+      "y": 90
+    },
+    
+    "facing=east,half=upper,is_opening=true,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12",
+      "y": 90
+    },
+    "facing=east,half=upper,is_opening=true,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13",
+      "y": 90
+    },
+    
+     "facing=east,half=lower,is_opening=true,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted",
+        "y": 270
+    },
+    "facing=east,half=lower,is_opening=true,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted",
+        "y": 270
+    },
+    
+    
+    
+     "facing=east,half=upper,is_opening=true,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted",
+        "y": 270
+    },
+    "facing=east,half=upper,is_opening=true,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted",
+        "y": 270
+    },
+    
+    
+    
+    
+    
+    
+    "facing=south,half=lower,is_opening=true,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12",
+      "y": 180
+    },
+    "facing=south,half=lower,is_opening=true,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13",
+      "y": 180
+    },
+    
+    "facing=south,half=upper,is_opening=true,inverted=false,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12",
+      "y": 180
+    },
+    "facing=south,half=upper,is_opening=true,inverted=false,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13",
+      "y": 180
+    },
+    
+     "facing=south,half=lower,is_opening=true,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_0_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_1_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_2_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_3_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_4_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_5_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_6_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_7_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_8_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_9_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_10_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_11_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_12_inverted"
+        
+    },
+    "facing=south,half=lower,is_opening=true,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/under_13_inverted"
+        
+    },
+    
+    
+     "facing=south,half=upper,is_opening=true,inverted=true,open=0": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_0_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=1": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_1_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=2": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_2_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=3": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_3_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=4": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_4_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=5": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_5_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=6": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_6_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=7": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_7_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=8": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_8_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=9": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_9_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=10": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_10_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=11": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_11_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=12": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_12_inverted"
+        
+    },
+    "facing=south,half=upper,is_opening=true,inverted=true,open=13": {
+      "model": "urushi:block/sliding_door/yukimi_shoji_jungle/upper_13_inverted"
+        
+    }
+  }
 }

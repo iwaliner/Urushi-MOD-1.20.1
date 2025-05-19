@@ -1,45 +1,12 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
     {
-
-
-
      "item": "urushi:rice"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "farmersdelight:cooked_rice",
-
-
-
       "count": 1
-
-
-
   }
-
-
-
 }

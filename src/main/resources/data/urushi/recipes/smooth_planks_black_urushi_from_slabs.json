@@ -1,57 +1,15 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
     {
-
-
-
       "item": "urushi:smooth_black_urushi_slab"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "urushi:smooth_black_urushi_slab"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:smooth_black_urushi_planks",
-
-
-
       "count": 1
-
-
-
   }
-
-
-
 }

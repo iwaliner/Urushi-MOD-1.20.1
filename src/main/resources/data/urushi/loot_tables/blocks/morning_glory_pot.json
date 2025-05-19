@@ -1,55 +1,28 @@
 {
-
   "type": "minecraft:block",
-
   "pools": [
-
     {
-
       "rolls": 1,
-
       "entries": [
-
         {
-
           "type": "minecraft:item",
-
           "conditions": [
-
             {
-
               "condition": "minecraft:block_state_property",
-
               "block": "urushi:morning_glory_pot",
-
               "properties": {
-
                 "half": "lower"
-
               }
-
             }
-
           ],
-
           "name": "urushi:morning_glory_pot"
-
         }
-
       ],
-
       "conditions": [
-
         {
-
           "condition": "minecraft:survives_explosion"
-
         }
-
       ]
-
     }
-
   ]
-
 }

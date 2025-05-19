@@ -1,43 +1,22 @@
 {
-
   "variants": {
-
     "facing=down": {
-
       "model": "urushi:block/urushi_hopper"
-
     },
-
     "facing=east": {
-
       "model": "urushi:block/urushi_hopper_side",
-
       "y": 90
-
     },
-
     "facing=north": {
-
       "model": "urushi:block/urushi_hopper_side"
-
     },
-
     "facing=south": {
-
       "model": "urushi:block/urushi_hopper_side",
-
       "y": 180
-
     },
-
     "facing=west": {
-
       "model": "urushi:block/urushi_hopper_side",
-
       "y": 270
-
     }
-
   }
-
 }

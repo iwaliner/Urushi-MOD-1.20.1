@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=east": {
-      "model": "urushi:block/hot_iron_ingot_4",
-      "y": 270
-    },
-    "facing=north": {
-      "model": "urushi:block/hot_iron_ingot_4",
-      "y": 180
-    },
-    "facing=south": {
-      "model": "urushi:block/hot_iron_ingot_4"
-    },
-    "facing=west": {
-      "model": "urushi:block/hot_iron_ingot_4",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=east": {
+      "model": "urushi:block/hot_iron_ingot_4",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "urushi:block/hot_iron_ingot_4",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "urushi:block/hot_iron_ingot_4"
+    },
+    "facing=west": {
+      "model": "urushi:block/hot_iron_ingot_4",
+      "y": 90
+    }
+  }
 }

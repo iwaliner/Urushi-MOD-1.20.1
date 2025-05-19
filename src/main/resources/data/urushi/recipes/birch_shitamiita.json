@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "minecraft:birch_planks"
-
-    },
-
-    {
-
-      "item": "urushi:smooth_birch_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:birch_shitamiita",
-
-    "count": 2
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "minecraft:birch_planks"
+    },
+    {
+      "item": "urushi:smooth_birch_slab"
+    }
+  ],
+  "result": {
+    "item": "urushi:birch_shitamiita",
+    "count": 2
+  }
 }

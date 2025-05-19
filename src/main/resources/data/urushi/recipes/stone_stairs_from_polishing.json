@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:cobblestone_stairs"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:stone_stairs"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:cobblestone_stairs"
+    }
+  ],
+  "result": {
+  "item":"minecraft:stone_stairs"
+  }
 }

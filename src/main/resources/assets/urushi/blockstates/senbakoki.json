@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=east": {
-      "model": "urushi:block/senbakoki",
-      "y": 90
-    },
-    "facing=north": {
-      "model": "urushi:block/senbakoki"
-    },
-    "facing=south": {
-      "model": "urushi:block/senbakoki",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "urushi:block/senbakoki",
-      "y": 270
-    }
-  }
+{
+  "variants": {
+    "facing=east": {
+      "model": "urushi:block/senbakoki",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "urushi:block/senbakoki"
+    },
+    "facing=south": {
+      "model": "urushi:block/senbakoki",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "urushi:block/senbakoki",
+      "y": 270
+    }
+  }
 }

@@ -1,81 +1,21 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
     {
-
-
-
    "tag": "minecraft:straw"
-
-
-
     },
-
-
-
     {
-
-
-
     "tag": "minecraft:straw"
-
-
-
     },
-
-
-
     {
-
-
-
   "tag": "minecraft:straw"
-
-
-
     },
-
-
-
     {
-
-
-
      "tag": "forge:string"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:green_tatami",
-
-
-
     "count": 4
-
-
-
   }
-
-
-
 }

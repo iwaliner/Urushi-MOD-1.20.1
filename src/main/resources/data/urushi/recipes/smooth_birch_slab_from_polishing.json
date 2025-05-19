@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:birch_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_birch_slab"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:birch_slab"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_birch_slab"
+  }
 }

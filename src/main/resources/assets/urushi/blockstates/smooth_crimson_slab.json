@@ -1,25 +1,13 @@
 {
-
   "variants": {
-
     "type=bottom": {
-
       "model": "urushi:block/half_slab_smooth_crimson"
-
     },
-
     "type=double": {
-
       "model": "urushi:block/crimson_smooth_planks"
-
     },
-
     "type=top": {
-
       "model": "urushi:block/upper_slab_smooth_crimson"
-
     }
-
   }
-
 }

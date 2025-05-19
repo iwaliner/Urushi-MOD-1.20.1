@@ -1,41 +1,11 @@
 {
-
-
-
   "type": "urushi:polishing",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
      "item": "minecraft:mangrove_wood"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"minecraft:stripped_mangrove_wood"
-
-
-
   }
-
-
-
 }

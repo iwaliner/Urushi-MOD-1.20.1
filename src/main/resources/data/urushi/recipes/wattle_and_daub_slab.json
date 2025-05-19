@@ -1,29 +1,15 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:wattle_and_daub"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:wattle_and_daub_slab",
-
-    "count": 6
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:wattle_and_daub"
+    }
+  },
+  "result": {
+    "item": "urushi:wattle_and_daub_slab",
+    "count": 6
+  }
 }

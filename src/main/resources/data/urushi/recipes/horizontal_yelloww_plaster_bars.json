@@ -1,49 +1,13 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:yellow_plaster_bars"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:horizontal_yellow_plaster_bars",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

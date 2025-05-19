@@ -1,19 +1,10 @@
 {
-
   "variants": {
-
     "age=0": {
-
       "model": "urushi:block/bearing_mandarin_leaves_immatured"
-
     },
-
     "age=1": {
-
       "model": "urushi:block/bearing_mandarin_leaves_matured"
-
     }
-
   }
-
 }

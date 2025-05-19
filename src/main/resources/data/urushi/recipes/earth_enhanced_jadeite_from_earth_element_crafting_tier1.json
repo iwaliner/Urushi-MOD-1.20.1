@@ -1,81 +1,21 @@
 {
-
-
-
   "type": "urushi:earth_element_tier1_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:jadeite"
-
-
-
     },
-
-
-
     {
-
-
-
    "item": "urushi:jadeite"
-
-
-
     },
-
-
-
     {
-
-
-
   "item": "urushi:jadeite"
-
-
-
     },
-
-
-
     {
-
-
-
    "item": "urushi:earth_amber"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:earth_enhanced_jadeite"
-
-
-
   },
-
-
-
   "reiryoku": 20
-
-
-
 }

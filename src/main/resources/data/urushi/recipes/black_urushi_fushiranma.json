@@ -1,37 +1,19 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "W#W",
-
-    "W#W"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "tag": "forge:rods/wooden"
-
-    },
-
-    "W": {
-
-      "item": "urushi:smooth_black_urushi_slab"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:black_urushi_fushiranma",
-
-    "count": 3
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "W": {
+      "item": "urushi:smooth_black_urushi_slab"
+    }
+  },
+  "result": {
+    "item": "urushi:black_urushi_fushiranma",
+    "count": 3
+  }
 }

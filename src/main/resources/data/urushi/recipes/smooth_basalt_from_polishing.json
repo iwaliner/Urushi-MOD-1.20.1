@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:basalt"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:smooth_basalt"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:basalt"
+    }
+  ],
+  "result": {
+  "item":"minecraft:smooth_basalt"
+  }
 }

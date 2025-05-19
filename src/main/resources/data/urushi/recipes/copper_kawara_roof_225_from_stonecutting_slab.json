@@ -1,15 +1,8 @@
-{
-
-  "type": "minecraft:stonecutting",
-
-  "ingredient": {
-
-    "item": "urushi:copper_kawara_slab"
-
-  },
-
-  "result": "urushi:copper_kawara_roof_225",
-
-  "count": 1
-
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "urushi:copper_kawara_slab"
+  },
+  "result": "urushi:copper_kawara_roof_225",
+  "count": 1
 }

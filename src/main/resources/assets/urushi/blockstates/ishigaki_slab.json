@@ -1,13 +1,13 @@
-{
-  "variants": {
-    "type\u003dbottom": {
-      "model": "urushi:block/half_slab_ishigaki"
-    },
-    "type\u003ddouble": {
-      "model": "urushi:block/ishigaki_block"
-    },
-    "type\u003dtop": {
-      "model": "urushi:block/upper_slab_ishigaki"
-    }
-  }
+{
+  "variants": {
+    "type\u003dbottom": {
+      "model": "urushi:block/half_slab_ishigaki"
+    },
+    "type\u003ddouble": {
+      "model": "urushi:block/ishigaki_block"
+    },
+    "type\u003dtop": {
+      "model": "urushi:block/upper_slab_ishigaki"
+    }
+  }
 }

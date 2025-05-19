@@ -1,82 +1,22 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "minecraft:dried_kelp"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "urushi:udon"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "urushi:abura_age"
-
-
-
     },
      {
-
-
-
        "item": "urushi:water_bamboo_cup"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:kitsune_udon",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

@@ -1,75 +1,21 @@
 {
-
-
-
   "type": "urushi:water_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "minecraft:crafting_table"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "minecraft:quartz"
-
-
-
     },
     {
-
-
-
    "item": "urushi:water_enhanced_jadeite_brick"
-
-
-
     },
     {
-
-
-
   "item": "minecraft:quartz"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:water_element_crafting_table_tier2"
-
-
-
   },
-
-
-
   "reiryoku": 20
-
-
-
 }

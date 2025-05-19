@@ -1,100 +1,100 @@
-{
-  "multipart": [
-    {
-     "when": {
-     "OR":[
-       { "north": "false","east": "false","south": "false","west": "false"
-      },
-      { "north": "true","east": "true","south": "false","west": "false"
-      },
-      { "north": "true","east": "false","south": "false","west": "true"
-      },
-      { "north": "false","east": "true","south": "true","west": "false"
-      },
-      { "north": "false","east": "false","south": "true","west": "true"
-      },
-      { "north": "true","east": "true","south": "true","west": "true"
-      },
-      { "north": "true","east": "true","south": "true","west": "false"
-      },
-      { "north": "true","east": "true","south": "false","west": "true"
-      },
-      { "north": "true","east": "false","south": "true","west": "true"
-      },
-      { "north": "false","east": "true","south": "true","west": "true"
-      }
-      ]},
-      "apply": {
-        "model": "urushi:block/groove_junction_center"
-      }
-    },
-    {
-     "when": {
-     "OR":[
-       { "north": "true","east": "false","south": "false","west": "false"
-      },
-      { "north": "false","east": "false","south": "true","west": "false"
-      },
-      { "north": "true","east": "false","south": "true","west": "false"
-      }
-      ]},
-      "apply": {
-        "model": "urushi:block/groove_center"
-      }
-    },
-    {
-     "when": {
-     "OR":[
-       { "east": "true","north": "false","west": "false","south": "false"
-      },
-      { "east": "false","north": "false","west": "true","south": "false"
-      },
-      { "east": "true","north": "false","west": "true","south": "false"
-      }
-      ]},
-      "apply": {
-        "model": "urushi:block/groove_center",
-         "y": 90
-      }
-    },
-    {
-      "when": {
-        "north": "false"
-      },
-      "apply": {
-        "model": "urushi:block/groove_junction_side",
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "east": "false"
-      },
-      "apply": {
-        "model": "urushi:block/groove_junction_side",
-        "y": 90,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "south": "false"
-      },
-      "apply": {
-        "model": "urushi:block/groove_junction_side",
-        "y": 180,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "west": "false"
-      },
-      "apply": {
-        "model": "urushi:block/groove_junction_side",
-        "y": 270,
-        "uvlock": true
-      }
-    }
-  ]
+{
+  "multipart": [
+    {
+     "when": {
+     "OR":[
+       { "north": "false","east": "false","south": "false","west": "false"
+      },
+      { "north": "true","east": "true","south": "false","west": "false"
+      },
+      { "north": "true","east": "false","south": "false","west": "true"
+      },
+      { "north": "false","east": "true","south": "true","west": "false"
+      },
+      { "north": "false","east": "false","south": "true","west": "true"
+      },
+      { "north": "true","east": "true","south": "true","west": "true"
+      },
+      { "north": "true","east": "true","south": "true","west": "false"
+      },
+      { "north": "true","east": "true","south": "false","west": "true"
+      },
+      { "north": "true","east": "false","south": "true","west": "true"
+      },
+      { "north": "false","east": "true","south": "true","west": "true"
+      }
+      ]},
+      "apply": {
+        "model": "urushi:block/groove_junction_center"
+      }
+    },
+    {
+     "when": {
+     "OR":[
+       { "north": "true","east": "false","south": "false","west": "false"
+      },
+      { "north": "false","east": "false","south": "true","west": "false"
+      },
+      { "north": "true","east": "false","south": "true","west": "false"
+      }
+      ]},
+      "apply": {
+        "model": "urushi:block/groove_center"
+      }
+    },
+    {
+     "when": {
+     "OR":[
+       { "east": "true","north": "false","west": "false","south": "false"
+      },
+      { "east": "false","north": "false","west": "true","south": "false"
+      },
+      { "east": "true","north": "false","west": "true","south": "false"
+      }
+      ]},
+      "apply": {
+        "model": "urushi:block/groove_center",
+         "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "false"
+      },
+      "apply": {
+        "model": "urushi:block/groove_junction_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "false"
+      },
+      "apply": {
+        "model": "urushi:block/groove_junction_side",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/groove_junction_side",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/groove_junction_side",
+        "y": 270,
+        "uvlock": true
+      }
+    }
+  ]
 }

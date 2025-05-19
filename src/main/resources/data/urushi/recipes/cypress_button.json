@@ -1,23 +1,12 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-    {
-
-      "item": "urushi:cypress_planks"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:cypress_button",
-
-      "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:cypress_planks"
+    }
+  ],
+  "result": {
+    "item": "urushi:cypress_button",
+      "count": 1
+  }
 }

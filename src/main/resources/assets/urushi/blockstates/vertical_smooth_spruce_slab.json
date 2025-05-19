@@ -1,37 +1,19 @@
 {
-
   "variants": {
-
     "facing=west": {
-
       "model": "urushi:block/vertical_slab_smooth_spruce",
-
       "y": 270
-
     },
-
     "facing=south": {
-
       "model": "urushi:block/vertical_slab_smooth_spruce",
-
       "y": 180
-
     },
-
     "facing=north": {
-
       "model": "urushi:block/vertical_slab_smooth_spruce"
-
     },
-
     "facing=east": {
-
       "model": "urushi:block/vertical_slab_smooth_spruce",
-
       "y": 90
-
     }
-
   }
-
 }

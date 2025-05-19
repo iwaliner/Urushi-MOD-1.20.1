@@ -1,41 +1,11 @@
 {
-
-
-
   "type": "urushi:frying",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:shrimp"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:fried_shrimp"
-
-
-
   }
-
-
-
 }

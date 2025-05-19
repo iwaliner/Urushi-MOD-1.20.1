@@ -1,25 +1,13 @@
 {
-
   "variants": {
-
     "type=bottom": {
-
       "model": "urushi:block/half_slab_gold_leaf"
-
     },
-
     "type=double": {
-
       "model": "urushi:block/gold_leaf_block"
-
     },
-
     "type=top": {
-
       "model": "urushi:block/upper_slab_gold_leaf"
-
     }
-
   }
-
 }

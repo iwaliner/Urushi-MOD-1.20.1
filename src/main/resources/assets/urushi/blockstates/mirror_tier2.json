@@ -1,236 +1,119 @@
 {
-
   "variants": {
-
     "complex_facing=0": {
-
       "model": "urushi:block/mirror_tier2_n"
-
     },
     "complex_facing=1": {
-
       "model": "urushi:block/mirror_tier2_n"
-
     },
-
     "complex_facing=2": {
-
       "model": "urushi:block/mirror_tier2_nne"
-
     },
-
     "complex_facing=3": {
-
       "model": "urushi:block/mirror_tier2_ne"
-
     },
-
     "complex_facing=4": {
-
       "model": "urushi:block/mirror_tier2_ene"
-
     },
-
     "complex_facing=5": {
-
       "model": "urushi:block/mirror_tier2_n",
-
       "y": 90
-
     },
-
     "complex_facing=6": {
-
       "model": "urushi:block/mirror_tier2_nne",
-
       "y": 90
-
     },
-
     "complex_facing=7": {
-
       "model": "urushi:block/mirror_tier2_ne",
-
       "y": 90
-
     },
-
     "complex_facing=8": {
-
       "model": "urushi:block/mirror_tier2_ene",
-
       "y": 90
-
     },
-
     "complex_facing=9": {
-
       "model": "urushi:block/mirror_tier2_n",
-
       "y": 180
-
     },
-
     "complex_facing=10": {
-
       "model": "urushi:block/mirror_tier2_nne",
-
       "y": 180
-
     },
-
     "complex_facing=11": {
-
       "model": "urushi:block/mirror_tier2_ne",
-
       "y": 180
-
     },
-
     "complex_facing=12": {
-
       "model": "urushi:block/mirror_tier2_ene",
-
       "y": 180
-
     },
-
     "complex_facing=13": {
-
       "model": "urushi:block/mirror_tier2_n",
-
       "y": 270
-
     },
-
     "complex_facing=14": {
-
       "model": "urushi:block/mirror_tier2_nne",
-
       "y": 270
-
     },
-
     "complex_facing=15": {
-
       "model": "urushi:block/mirror_tier2_ne",
-
       "y": 270
-
     },
-
     "complex_facing=16": {
-
       "model": "urushi:block/mirror_tier2_ene",
-
       "y": 270
-
     },
-
     "complex_facing=17": {
-
       "model": "urushi:block/mirror_tier2_nan"
-
     },
-
     "complex_facing=18": {
-
       "model": "urushi:block/mirror_tier2_an"
-
     },
-
     "complex_facing=19": {
-
       "model": "urushi:block/mirror_tier2_aan"
-
     },
-
      "complex_facing=20": {
-
       "model": "urushi:block/mirror_tier2_nan",
-
       "y": 90
-
     },
-
     "complex_facing=21": {
-
       "model": "urushi:block/mirror_tier2_an",
-
       "y": 90
-
     },
-
     "complex_facing=22": {
-
       "model": "urushi:block/mirror_tier2_aan",
-
       "y": 90
-
     },
-
       "complex_facing=23": {
-
       "model": "urushi:block/mirror_tier2_nan",
-
       "y":180
-
     },
-
     "complex_facing=24": {
-
       "model": "urushi:block/mirror_tier2_an",
-
       "y": 180
-
     },
-
     "complex_facing=25": {
-
       "model": "urushi:block/mirror_tier2_aan",
-
       "y": 180
-
     },
-
       "complex_facing=26": {
-
       "model": "urushi:block/mirror_tier2_nan",
-
       "y": 270
-
     },
-
     "complex_facing=27": {
-
       "model": "urushi:block/mirror_tier2_an",
-
       "y": 270
-
     },
-
     "complex_facing=28": {
-
       "model": "urushi:block/mirror_tier2_aan",
-
       "y": 270
-
     },
-
     "complex_facing=29": {
-
       "model": "urushi:block/mirror_tier2_a"
-
     },
-
     "complex_facing=30": {
-
       "model": "urushi:block/mirror_tier2_a",
-
       "y": 90
-
     }
-
   }
-
 }

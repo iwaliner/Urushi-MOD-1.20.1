@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "ci ",
-
-    "   ",
-
-    "   "
-
-  ],
-
-  "key": {
-
-    "c": {
-
-     "item": "urushi:long_chochin"
-
-    },
-
-    "i": {
-
-     "item": "minecraft:ink_sac"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:izakaya_long_chochin",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ci ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "c": {
+     "item": "urushi:long_chochin"
+    },
+    "i": {
+     "item": "minecraft:ink_sac"
+    }
+  },
+  "result": {
+    "item": "urushi:izakaya_long_chochin",
+    "count": 1
+  }
 }

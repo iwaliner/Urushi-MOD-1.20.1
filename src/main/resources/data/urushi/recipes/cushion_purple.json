@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "minecraft:purple_wool"
-
-    },
-
-    {
-
-      "tag": "forge:string"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:purple_cushion",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "minecraft:purple_wool"
+    },
+    {
+      "tag": "forge:string"
+    }
+  ],
+  "result": {
+    "item": "urushi:purple_cushion",
+    "count": 4
+  }
 }

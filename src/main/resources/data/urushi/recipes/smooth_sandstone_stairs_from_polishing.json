@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:sandstone_stairs"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:smooth_sandstone_stairs"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:sandstone_stairs"
+    }
+  ],
+  "result": {
+  "item":"minecraft:smooth_sandstone_stairs"
+  }
 }

@@ -1,41 +1,11 @@
 {
-
-
-
   "type": "urushi:polishing",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
      "item": "minecraft:oak_log"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"minecraft:stripped_oak_log"
-
-
-
   }
-
-
-
 }

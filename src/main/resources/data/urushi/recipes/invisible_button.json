@@ -1,20 +1,20 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "#X#",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "urushi:ghost_core"
-    },
-    "X": {
-      "item": "minecraft:stone_button"
-    }
-  },
-  "result": {
-    "item": "urushi:invisible_button",
-    "count": 1
-  }
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:ghost_core"
+    },
+    "X": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "item": "urushi:invisible_button",
+    "count": 1
+  }
 }

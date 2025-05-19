@@ -1,29 +1,15 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:green_plaster"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:green_plaster_slab",
-
-    "count": 6
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:green_plaster"
+    }
+  },
+  "result": {
+    "item": "urushi:green_plaster_slab",
+    "count": 6
+  }
 }

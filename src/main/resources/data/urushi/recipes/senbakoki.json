@@ -1,37 +1,19 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "BP ",
-
-    "P P"
-
-  ],
-
-  "key": {
-
-    "B": {
-
-     "tag": "urushi:wooden_bars"
-
-    },
-
-    "P": {
-
-    "tag": "minecraft:planks"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:senbakoki",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BP ",
+    "P P"
+  ],
+  "key": {
+    "B": {
+     "tag": "urushi:wooden_bars"
+    },
+    "P": {
+    "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "urushi:senbakoki",
+    "count": 1
+  }
 }

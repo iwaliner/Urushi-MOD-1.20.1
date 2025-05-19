@@ -1,100 +1,100 @@
-{
-  "multipart": [
-    {
-      "apply": {
-        "model": "urushi:block/bamboo_wall_post_ends"
-      }
-    },
-    {
-      "when": {
-        "west": "false",
-        "east": "false",
-        "south": "false",
-        "north": "false"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_post"
-      }
-    },
-    {
-      "when": {
-        "west": "false",
-        "east": "false",
-        "south": "false",
-        "north": "true"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_cap"
-      }
-    },
-    {
-      "when": {
-        "west": "false",
-        "east": "true",
-        "south": "false",
-        "north": "false"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_cap",
-        "y": 90
-      }
-    },
-    {
-      "when": {
-        "west": "false",
-        "east": "false",
-        "south": "true",
-        "north": "false"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_cap_alt"
-      }
-    },
-    {
-      "when": {
-        "west": "true",
-        "east": "false",
-        "south": "false",
-        "north": "false"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_cap_alt",
-        "y": 90
-      }
-    },
-    {
-      "when": {
-        "north": "true"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_side"
-      }
-    },
-    {
-      "when": {
-        "east": "true"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_side",
-        "y": 90
-      }
-    },
-    {
-      "when": {
-        "south": "true"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_side_alt"
-      }
-    },
-    {
-      "when": {
-        "west": "true"
-      },
-      "apply": {
-        "model": "urushi:block/bamboo_wall_side_alt",
-        "y": 90
-      }
-    }
-  ]
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "urushi:block/bamboo_wall_post_ends"
+      }
+    },
+    {
+      "when": {
+        "west": "false",
+        "east": "false",
+        "south": "false",
+        "north": "false"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_post"
+      }
+    },
+    {
+      "when": {
+        "west": "false",
+        "east": "false",
+        "south": "false",
+        "north": "true"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_cap"
+      }
+    },
+    {
+      "when": {
+        "west": "false",
+        "east": "true",
+        "south": "false",
+        "north": "false"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_cap",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": "false",
+        "east": "false",
+        "south": "true",
+        "north": "false"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_cap_alt"
+      }
+    },
+    {
+      "when": {
+        "west": "true",
+        "east": "false",
+        "south": "false",
+        "north": "false"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_cap_alt",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_side"
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_side",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_side_alt"
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "urushi:block/bamboo_wall_side_alt",
+        "y": 90
+      }
+    }
+  ]
 }

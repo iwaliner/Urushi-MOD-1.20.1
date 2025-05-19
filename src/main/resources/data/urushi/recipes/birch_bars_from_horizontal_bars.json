@@ -1,49 +1,13 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:horizontal_birch_bars"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:birch_bars",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

@@ -1,339 +1,170 @@
 {
-
   "multipart": [
-
     {
-
      "when": {
-
         "north": "true", "south": "true", "east": "true", "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
      {
-
      "when": {
-
         "north": "false", "south": "true", "east": "true", "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
      {
-
      "when": {
-
         "north": "true", "south": "false", "east": "true", "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
      {
-
      "when": {
-
         "north": "true", "south": "true", "east": "false", "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
      {
-
      "when": {
-
         "north": "true", "south": "true", "east": "true", "west": "false"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
      {
-
      "when": {
-
         "north": "false", "south": "false", "east": "false", "west": "false"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {"when": {
-
         "north": "true", "south": "false", "east": "false", "west": "false"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "false", "south": "true", "east": "false", "west": "false"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "false", "south": "false", "east": "true", "west": "false"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "false", "south": "false", "east": "false", "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "true", "south": "true", "east": "false", "west": "false"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post_chiseled"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "false", "south": "false", "east": "true", "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post_chiseled"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "true", "south": "false", "east": "true", "west": "false"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "true", "south": "false", "east": "false", "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "false", "south": "true", "east": "true", "west": "false"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {
-
      "when": {
-
         "north": "false", "south": "true", "east": "false", "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_post"
-
       }
-
     },
-
     {
-
       "when": {
-
         "north": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_side",
-
         "uvlock": true
-
       }
-
     },
-
     {
-
       "when": {
-
         "east": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_side",
-
         "y": 90,
-
         "uvlock": true
-
       }
-
     },
-
     {
-
       "when": {
-
         "south": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_side",
-
         "y": 180,
-
         "uvlock": true
-
       }
-
     },
-
     {
-
       "when": {
-
         "west": "true"
-
       },
-
       "apply": {
-
         "model": "urushi:block/concrete_block_wall_side",
-
         "y": 270,
-
         "uvlock": true
-
       }
-
     }
-
   ]
-
 }

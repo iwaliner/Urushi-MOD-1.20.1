@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:jungle_planks"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_jungle_planks"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:jungle_planks"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_jungle_planks"
+  }
 }

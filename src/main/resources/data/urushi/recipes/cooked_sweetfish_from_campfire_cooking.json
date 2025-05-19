@@ -1,9 +1,9 @@
-{
-  "type": "minecraft:campfire_cooking",
-  "ingredient": {
-    "item": "urushi:sweetfish"
-  },
-  "result": "urushi:cooked_sweetfish",
-  "experience": 0.35,
-  "cookingtime": 600
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "urushi:sweetfish"
+  },
+  "result": "urushi:cooked_sweetfish",
+  "experience": 0.35,
+  "cookingtime": 600
 }

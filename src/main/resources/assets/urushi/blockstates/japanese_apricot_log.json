@@ -1,16 +1,16 @@
-{
-  "variants": {
-    "axis=x": {
-      "model": "urushi:block/japanese_apricot_log_horizontal",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y": {
-      "model": "urushi:block/japanese_apricot_log"
-    },
-    "axis=z": {
-      "model": "urushi:block/japanese_apricot_log_horizontal",
-      "x": 90
-    }
-  }
+{
+  "variants": {
+    "axis=x": {
+      "model": "urushi:block/japanese_apricot_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "urushi:block/japanese_apricot_log"
+    },
+    "axis=z": {
+      "model": "urushi:block/japanese_apricot_log_horizontal",
+      "x": 90
+    }
+  }
 }

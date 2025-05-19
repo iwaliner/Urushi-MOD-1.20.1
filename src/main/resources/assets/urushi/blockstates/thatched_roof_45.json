@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=west": {
-      "model": "urushi:block/thatched_roof_45",
-      "y": 270
-    },
-    "facing=south": {
-      "model": "urushi:block/thatched_roof_45",
-      "y": 180
-    },
-    "facing=north": {
-      "model": "urushi:block/thatched_roof_45"
-    },
-    "facing=east": {
-      "model": "urushi:block/thatched_roof_45",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/thatched_roof_45",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/thatched_roof_45",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/thatched_roof_45"
+    },
+    "facing=east": {
+      "model": "urushi:block/thatched_roof_45",
+      "y": 90
+    }
+  }
 }

@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "minecraft:mangrove_planks"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "urushi:smooth_mangrove_slab"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:mangrove_shitamiita",
-
-
-
     "count": 2
-
-
-
   }
-
-
-
 }

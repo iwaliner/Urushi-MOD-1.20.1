@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "ppp",
-
-    "i i",
-
-    "iii"
-
-  ],
-
-  "key": {
-
-    "i": {
-
-     "tag": "forge:ingots/iron"
-
-    },
-
-    "p": {
-
-     "tag": "minecraft:planks"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:rice_cauldron",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+    "i i",
+    "iii"
+  ],
+  "key": {
+    "i": {
+     "tag": "forge:ingots/iron"
+    },
+    "p": {
+     "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "urushi:rice_cauldron",
+    "count": 1
+  }
 }

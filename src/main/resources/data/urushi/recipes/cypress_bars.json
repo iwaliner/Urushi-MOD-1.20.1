@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "W W",
-
-
-
     "W W"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "W": {
-
-
-
       "item": "urushi:smooth_cypress_planks"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:cypress_bars",
-
-
-
     "count": 16
-
-
-
   }
-
-
-
 }

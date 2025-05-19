@@ -1,66 +1,34 @@
 {
-
   "variants": {
-
     "facing=east,triggered=false": {
-
       "model": "urushi:block/tawara",
-
       "y": 270
-
     },
-
     "facing=north,triggered=false": {
-
       "model": "urushi:block/tawara",
-
       "y": 180
-
     },
-
     "facing=south,triggered=false": {
-
       "model": "urushi:block/tawara"
-
     },
-
     "facing=west,triggered=false": {
-
       "model": "urushi:block/tawara",
-
       "y": 90
-
     },
     "facing=east,triggered=true": {
-
       "model": "urushi:block/tawara_triggered",
-
       "y": 270
-
     },
-
     "facing=north,triggered=true": {
-
       "model": "urushi:block/tawara_triggered",
-
       "y": 180
-
     },
-
     "facing=south,triggered=true": {
-
       "model": "urushi:block/tawara_triggered"
-
     },
-
     "facing=west,triggered=true": {
-
       "model": "urushi:block/tawara_triggered",
-
       "y": 90
-
     }
-
   }
-
 }

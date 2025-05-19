@@ -1,35 +1,35 @@
-{
-  "variants": {
-    "facing=west,open=false": {
-      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled",
-      "y": 270
-    },
-    "facing=south,open=false": {
-      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled",
-      "y": 180
-    },
-    "facing=north,open=false": {
-      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled"
-    },
-    "facing=east,open=false": {
-      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled",
-      "y": 90
-    },
-    
-    "facing=west,open=true": {
-      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled_open",
-      "y": 270
-    },
-    "facing=south,open=true": {
-      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled_open",
-      "y": 180
-    },
-    "facing=north,open=true": {
-      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled_open"
-    },
-    "facing=east,open=true": {
-      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled_open",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=west,open=false": {
+      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled",
+      "y": 270
+    },
+    "facing=south,open=false": {
+      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled",
+      "y": 180
+    },
+    "facing=north,open=false": {
+      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled"
+    },
+    "facing=east,open=false": {
+      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled",
+      "y": 90
+    },
+    
+    "facing=west,open=true": {
+      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled_open",
+      "y": 270
+    },
+    "facing=south,open=true": {
+      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled_open",
+      "y": 180
+    },
+    "facing=north,open=true": {
+      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled_open"
+    },
+    "facing=east,open=true": {
+      "model": "urushi:block/light_gray_stained_wooden_cabinetry_doubled_open",
+      "y": 90
+    }
+  }
 }

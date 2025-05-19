@@ -1,17 +1,9 @@
-{
-
-  "type": "minecraft:smelting",
-
-  "ingredient": {
-
-    "item": "urushi:unfired_shichirin"
-
-  },
-
-  "result": "urushi:unfinished_shichirin",
-
-  "experience": 0.1,
-
-  "cookingtime": 200
-
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "urushi:unfired_shichirin"
+  },
+  "result": "urushi:unfinished_shichirin",
+  "experience": 0.1,
+  "cookingtime": 200
 }

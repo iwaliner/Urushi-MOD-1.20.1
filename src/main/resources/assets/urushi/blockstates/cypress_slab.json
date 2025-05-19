@@ -1,13 +1,13 @@
-{
-  "variants": {
-    "type=bottom": {
-      "model": "urushi:block/half_slab_cypress"
-    },
-    "type=double": {
-      "model": "urushi:block/cypress_planks"
-    },
-    "type=top": {
-      "model": "urushi:block/upper_slab_cypress"
-    }
-  }
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_cypress"
+    },
+    "type=double": {
+      "model": "urushi:block/cypress_planks"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_cypress"
+    }
+  }
 }

@@ -1,57 +1,15 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
     {
-
-
-
     "item": "urushi:cocoon"
-
-
-
     },
-
-
-
     {
-
-
-
      "item": "urushi:cocoon"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:silkworm",
-
-
-
     "count": 8
-
-
-
   }
-
-
-
 }

@@ -1,35 +1,35 @@
-{
-  "variants": {
-    "facing=west,open=false": {
-      "model": "urushi:block/red_stained_wooden_cabinetry",
-      "y": 270
-    },
-    "facing=south,open=false": {
-      "model": "urushi:block/red_stained_wooden_cabinetry",
-      "y": 180
-    },
-    "facing=north,open=false": {
-      "model": "urushi:block/red_stained_wooden_cabinetry"
-    },
-    "facing=east,open=false": {
-      "model": "urushi:block/red_stained_wooden_cabinetry",
-      "y": 90
-    },
-    
-    "facing=west,open=true": {
-      "model": "urushi:block/red_stained_wooden_cabinetry_open",
-      "y": 270
-    },
-    "facing=south,open=true": {
-      "model": "urushi:block/red_stained_wooden_cabinetry_open",
-      "y": 180
-    },
-    "facing=north,open=true": {
-      "model": "urushi:block/red_stained_wooden_cabinetry_open"
-    },
-    "facing=east,open=true": {
-      "model": "urushi:block/red_stained_wooden_cabinetry_open",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=west,open=false": {
+      "model": "urushi:block/red_stained_wooden_cabinetry",
+      "y": 270
+    },
+    "facing=south,open=false": {
+      "model": "urushi:block/red_stained_wooden_cabinetry",
+      "y": 180
+    },
+    "facing=north,open=false": {
+      "model": "urushi:block/red_stained_wooden_cabinetry"
+    },
+    "facing=east,open=false": {
+      "model": "urushi:block/red_stained_wooden_cabinetry",
+      "y": 90
+    },
+    
+    "facing=west,open=true": {
+      "model": "urushi:block/red_stained_wooden_cabinetry_open",
+      "y": 270
+    },
+    "facing=south,open=true": {
+      "model": "urushi:block/red_stained_wooden_cabinetry_open",
+      "y": 180
+    },
+    "facing=north,open=true": {
+      "model": "urushi:block/red_stained_wooden_cabinetry_open"
+    },
+    "facing=east,open=true": {
+      "model": "urushi:block/red_stained_wooden_cabinetry_open",
+      "y": 90
+    }
+  }
 }

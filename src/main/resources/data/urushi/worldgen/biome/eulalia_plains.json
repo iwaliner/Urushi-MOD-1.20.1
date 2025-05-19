@@ -1,149 +1,76 @@
 {
-
   "depth": 0.1,
-
   "scale": 0.1,
   "has_precipitation": true,
-
   "temperature": 0.3,
-
   "downfall": 0.4,
-
   "category": "plains",
-
   "effects": {
-
     "sky_color": 8333594,
-
     "fog_color": 12747591,
-
     "water_color": 4159204,
-
     "water_fog_color": 329011,
-
     "grass_color": 12300080,
-
     "music": {
-
       "sound": "minecraft:music.cat",
-
       "min_delay": 12000,
-
       "max_delay": 24000,
-
       "replace_current_music": false
-
     }
-
   },
-
   "carvers": {
-
     "air": [
-
-
     ]
-
   },
-
   "features": [
-
     [
-
       "minecraft:lake_lava_underground",
-
       "minecraft:lake_lava_surface"
-
     ],
-
     [
-
     "minecraft:seagrass_river",
-
     "minecraft:patch_grass_forest",
-
     "urushi:eulalia_plains_eulalia",
-
     "urushi:eulalia_plains_tall_eulalia",
-
     "urushi:kakuriyo_ore_jadeite",
-
     "urushi:kakuriyo_ore_limonite",
-
     "urushi:kakuriyo_ore_yomi_gold",
-
     "urushi:kakuriyo_ore_chalcopyrite",
-
     "urushi:kakuriyo_quartz_cluster",
-
     "urushi:kakuriyo_yomi_vines",
-
     "urushi:kakuriyo_lantern_plant",
-
     "urushi:kakuriyo_lycoris",
-
     "urushi:kakuriyo_hot_spring",
     "urushi:kakuriyo_disk_mud",
     "urushi:kakuriyo_disk_sand"
-
   ]
-
   ],
-
   "spawners": {
-
     "creature": [
-
       {
-
         "type": "minecraft:rabbit",
-
         "weight": 100,
-
         "minCount": 2,
-
         "maxCount": 4
-
       },
-
       {
-
         "type": "minecraft:fox",
-
         "weight": 100,
-
         "minCount": 2,
-
         "maxCount": 4
-
       }
-
     ],
-
  
-
     "ambient": [
-
     ],
-
     "water_creature": [
-
     ],
-
     "water_ambient": [
-
     ],
-
     "misc": [
-
     ]
-
   },
-
   "player_spawn_friendly": true,
-
   "spawn_costs": {
-
   }
-
 }

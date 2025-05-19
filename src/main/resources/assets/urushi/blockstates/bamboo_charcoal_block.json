@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/bamboo_charcoal_block"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/bamboo_charcoal_block"
+    }
+  }
 }

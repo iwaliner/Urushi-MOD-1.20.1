@@ -1,80 +1,21 @@
 {
-
-
-
   "type": "urushi:metal_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:metal_enhanced_jadeite_brick"
-
-
-
     },
-
-
-
     {
-
-
 "item": "urushi:jadeite_block"
-
-
-
     },
-
-
-
     {
-
-
-
 "item": "urushi:jadeite_brick"
-
-
-
     },
-
-
-
     {
-
-
-
    "item": "urushi:jadeite_block"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:metal_element_hokora"
-
-
-
   },
-
-
-
   "reiryoku": 20
-
-
-
 }

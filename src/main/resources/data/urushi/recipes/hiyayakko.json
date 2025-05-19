@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "tag": "forge:tofu"
-
-
-
     },
-
-
-
     {
-
-
-
      "tag": "forge:crops/greenonion"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:hiyayakko",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

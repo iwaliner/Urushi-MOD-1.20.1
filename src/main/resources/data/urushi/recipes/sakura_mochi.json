@@ -1,73 +1,19 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:rice_cake"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "urushi:sakura_leaves"
-
-
-
     },
-
-
-
     {
-
-
-
       "tag": "forge:crops/adzuki"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:sakura_mochi",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

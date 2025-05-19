@@ -1,123 +1,65 @@
 {
   "variants": {
    "facing=west,filled=false,half=lower": {
-
       "model": "urushi:block/rainwater_tank_lower",
-
       "y": 270
-
     },
-
     "facing=south,filled=false,half=lower": {
-
       "model": "urushi:block/rainwater_tank_lower",
-
       "y": 180
-
     },
-
     "facing=north,filled=false,half=lower": {
-
       "model": "urushi:block/rainwater_tank_lower"
-
     },
-
     "facing=east,filled=false,half=lower": {
-
       "model": "urushi:block/rainwater_tank_lower",
-
       "y": 90
-
     },
-
     "facing=west,filled=true,half=lower": {
-
       "model": "urushi:block/rainwater_tank_lower_filled",
-
       "y": 270
-
     },
-
     "facing=south,filled=true,half=lower": {
-
       "model": "urushi:block/rainwater_tank_lower_filled",
-
       "y": 180
-
     },
-
     "facing=north,filled=true,half=lower": {
-
       "model": "urushi:block/rainwater_tank_lower_filled"
-
     },
-
     "facing=east,filled=true,half=lower": {
-
       "model": "urushi:block/rainwater_tank_lower_filled",
-
       "y": 90
-
     },
     
     "facing=west,filled=false,half=upper": {
-
       "model": "urushi:block/rainwater_tank_upper",
-
       "y": 270
-
     },
-
     "facing=south,filled=false,half=upper": {
-
       "model": "urushi:block/rainwater_tank_upper",
-
       "y": 180
-
     },
-
     "facing=north,filled=false,half=upper": {
-
       "model": "urushi:block/rainwater_tank_upper"
-
     },
-
     "facing=east,filled=false,half=upper": {
-
       "model": "urushi:block/rainwater_tank_upper",
-
       "y": 90
-
     },
-
     "facing=west,filled=true,half=upper": {
-
       "model": "urushi:block/rainwater_tank_upper",
-
       "y": 270
-
     },
-
     "facing=south,filled=true,half=upper": {
-
       "model": "urushi:block/rainwater_tank_upper",
-
       "y": 180
-
     },
-
     "facing=north,filled=true,half=upper": {
-
       "model": "urushi:block/rainwater_tank_upper"
-
     },
-
     "facing=east,filled=true,half=upper": {
-
       "model": "urushi:block/rainwater_tank_upper",
-
       "y": 90
-
     }
   }
 }

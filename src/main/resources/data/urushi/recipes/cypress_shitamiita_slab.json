@@ -1,29 +1,15 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:cypress_shitamiita"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:cypress_shitamiita_slab",
-
-    "count": 6
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:cypress_shitamiita"
+    }
+  },
+  "result": {
+    "item": "urushi:cypress_shitamiita_slab",
+    "count": 6
+  }
 }

@@ -16,7 +16,6 @@
     "#forge:sandstone",
     "#forge:stone",
     "minecraft:bedrock",
-
     "minecraft:cobblestone_stairs",
     "minecraft:sandstone_stairs",
     "minecraft:red_sandstone_stairs",
@@ -32,7 +31,6 @@
     "minecraft:cobbled_deepslate_stairs",
     "minecraft:deepslate_brick_stairs",
     "minecraft:polished_deepslate_stairs",
-
     "minecraft:cobblestone_slab",
     "minecraft:sandstone_slab",
     "minecraft:red_sandstone_slab",
@@ -51,7 +49,6 @@
     "minecraft:smooth_stone_slab",
     "minecraft:cut_sandstone_slab",
     "minecraft:cut_red_sandstone_slab",
-
     "minecraft:cobblestone_wall",
     "minecraft:mossy_cobblestone_wall",
     "minecraft:red_sandstone_wall",
@@ -65,10 +62,8 @@
     "minecraft:polished_deepslate_wall",
     "minecraft:deepslate_tile_wall",
     "minecraft:deepslate_brick_wall",
-
     "minecraft:stone_pressure_plate",
     "minecraft:stone_button",
-
     "minecraft:smooth_stone",
     "minecraft:stone_bricks",
     "minecraft:cracked_stone_bricks",

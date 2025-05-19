@@ -1,10 +1,10 @@
-{
-  "variants": {
-    "half=lower": {
-      "model": "urushi:block/ajisai_bottom"
-    },
-    "half=upper": {
-      "model": "urushi:block/ajisai_top"
-    }
-  }
+{
+  "variants": {
+    "half=lower": {
+      "model": "urushi:block/ajisai_bottom"
+    },
+    "half=upper": {
+      "model": "urushi:block/ajisai_top"
+    }
+  }
 }

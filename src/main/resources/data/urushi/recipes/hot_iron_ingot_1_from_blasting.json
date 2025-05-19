@@ -1,17 +1,9 @@
-{
-
-  "type": "minecraft:blasting",
-
-  "ingredient": {
-
-    "item": "urushi:stacked_iron"
-
-  },
-
-  "result": "urushi:hot_iron_ingot_1",
-
-  "experience": 0.2,
-
-  "cookingtime": 100
-
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "urushi:stacked_iron"
+  },
+  "result": "urushi:hot_iron_ingot_1",
+  "experience": 0.2,
+  "cookingtime": 100
 }

@@ -1,41 +1,21 @@
-{
-
-  "type": "urushi:wood_element_tier1_crafting",
-
-  "ingredients": [
-
-  {
-
-    "item": "urushi:wood_amber"
-
-    },
-
-    {
-
-    "item": "urushi:japanese_timber_bamboo"
-
-    },
-
-    {
-
-   "item": "minecraft:paper"
-
-    },
-
-    {
-
-      "item": "minecraft:paper"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:open_wagasa"
-
-  },
-
-  "reiryoku": 100
-
+{
+  "type": "urushi:wood_element_tier1_crafting",
+  "ingredients": [
+  {
+    "item": "urushi:wood_amber"
+    },
+    {
+    "item": "urushi:japanese_timber_bamboo"
+    },
+    {
+   "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+  "item":"urushi:open_wagasa"
+  },
+  "reiryoku": 100
 }

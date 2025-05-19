@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "###",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:japanese_cedar_planks"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:japanese_cedar_trapdoor",
-
-    "count": 2
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:japanese_cedar_planks"
+    }
+  },
+  "result": {
+    "item": "urushi:japanese_cedar_trapdoor",
+    "count": 2
+  }
 }

@@ -1,21 +1,11 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-    {
-
-      "item": "urushi:lycoris"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "minecraft:red_dye"
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:lycoris"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_dye"
+  }
 }

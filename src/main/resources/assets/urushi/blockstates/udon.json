@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=west": {
-      "model": "urushi:block/udon",
-      "y": 270
-    },
-    "facing=south": {
-      "model": "urushi:block/udon",
-      "y": 180
-    },
-    "facing=north": {
-      "model": "urushi:block/udon"
-    },
-    "facing=east": {
-      "model": "urushi:block/udon",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/udon",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/udon",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/udon"
+    },
+    "facing=east": {
+      "model": "urushi:block/udon",
+      "y": 90
+    }
+  }
 }

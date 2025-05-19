@@ -1,25 +1,13 @@
 {
-
   "variants": {
-
     "type=bottom": {
-
       "model": "urushi:block/half_slab_galvanised_iron_plate_rusted"
-
     },
-
     "type=double": {
-
       "model": "urushi:block/galvanised_iron_plate_rusted"
-
     },
-
     "type=top": {
-
       "model": "urushi:block/upper_slab_galvanised_iron_plate_rusted"
-
     }
-
   }
-
 }

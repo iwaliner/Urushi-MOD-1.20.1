@@ -1,71 +1,36 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-    {
-
-     "tag": "forge:stone"
-
-    },
-
-    {
-
-      "item": "minecraft:sand"
-
-    },
-
-    {
-
-      "item": "minecraft:sand"
-
-    },
-
-    {
-
-      "item": "minecraft:sand"
-
-    },
-
-    {
-
-     "item": "minecraft:sand"
-
-    },
-
-    {
-
-     "item": "minecraft:gravel"
-
-    },
-
-    {
-
-     "item": "minecraft:gravel"
-
-    },
-
-    {
-
-     "item": "minecraft:gravel"
-
-    },
-
-    {
-
-     "item": "minecraft:gravel"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:concrete",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+     "tag": "forge:stone"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+     "item": "minecraft:sand"
+    },
+    {
+     "item": "minecraft:gravel"
+    },
+    {
+     "item": "minecraft:gravel"
+    },
+    {
+     "item": "minecraft:gravel"
+    },
+    {
+     "item": "minecraft:gravel"
+    }
+  ],
+  "result": {
+    "item": "urushi:concrete",
+    "count": 8
+  }
 }

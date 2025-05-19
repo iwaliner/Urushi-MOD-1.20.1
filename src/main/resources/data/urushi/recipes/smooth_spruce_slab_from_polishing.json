@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:spruce_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_spruce_slab"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:spruce_slab"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_spruce_slab"
+  }
 }

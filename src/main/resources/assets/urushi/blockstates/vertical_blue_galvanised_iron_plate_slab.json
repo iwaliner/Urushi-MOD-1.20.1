@@ -1,37 +1,19 @@
 {
-
   "variants": {
-
     "facing=west": {
-
       "model": "urushi:block/vertical_slab_galvanised_iron_plate_blue",
-
       "y": 270
-
     },
-
     "facing=south": {
-
       "model": "urushi:block/vertical_slab_galvanised_iron_plate_blue",
-
       "y": 180
-
     },
-
     "facing=north": {
-
       "model": "urushi:block/vertical_slab_galvanised_iron_plate_blue"
-
     },
-
     "facing=east": {
-
       "model": "urushi:block/vertical_slab_galvanised_iron_plate_blue",
-
       "y": 90
-
     }
-
   }
-
 }

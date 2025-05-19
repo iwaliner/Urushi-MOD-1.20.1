@@ -1,55 +1,28 @@
 {
-
   "type": "minecraft:block",
-
   "pools": [
-
     {
-
       "rolls": 1,
-
       "entries": [
-
         {
-
           "type": "minecraft:item",
-
           "conditions": [
-
             {
-
               "condition": "minecraft:block_state_property",
-
               "block": "urushi:rainwater_tank",
-
               "properties": {
-
                 "half": "lower"
-
               }
-
             }
-
           ],
-
           "name": "urushi:rainwater_tank"
-
         }
-
       ],
-
       "conditions": [
-
         {
-
           "condition": "minecraft:survives_explosion"
-
         }
-
       ]
-
     }
-
   ]
-
 }

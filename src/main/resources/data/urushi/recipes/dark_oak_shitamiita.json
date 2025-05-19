@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "minecraft:dark_oak_planks"
-
-    },
-
-    {
-
-      "item": "urushi:smooth_dark_oak_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:dark_oak_shitamiita",
-
-    "count": 2
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "minecraft:dark_oak_planks"
+    },
+    {
+      "item": "urushi:smooth_dark_oak_slab"
+    }
+  ],
+  "result": {
+    "item": "urushi:dark_oak_shitamiita",
+    "count": 2
+  }
 }

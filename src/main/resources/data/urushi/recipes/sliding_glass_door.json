@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "#",
-
-    "#"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-     "tag": "forge:glass_panes"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:sliding_glass_door",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+     "tag": "forge:glass_panes"
+    }
+  },
+  "result": {
+    "item": "urushi:sliding_glass_door",
+    "count": 1
+  }
 }

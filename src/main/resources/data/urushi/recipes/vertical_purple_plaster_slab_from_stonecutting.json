@@ -1,29 +1,8 @@
 {
-
-
-
   "type": "minecraft:stonecutting",
-
-
-
   "ingredient": {
-
-
-
     "item": "urushi:purple_plaster"
-
-
-
   },
-
-
-
   "result": "urushi:vertical_purple_plaster_slab",
-
-
-
   "count": 2
-
-
-
 }

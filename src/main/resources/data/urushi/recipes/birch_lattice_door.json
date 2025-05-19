@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "#",
-
-
-
     "#"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "#": {
-
-
-
      "item": "urushi:birch_bars"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:birch_lattice_door",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

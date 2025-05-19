@@ -1,13 +1,13 @@
-{
-  "variants": {
-    "type=bottom": {
-      "model": "urushi:block/half_slab_plaster"
-    },
-    "type=double": {
-      "model": "urushi:block/plaster"
-    },
-    "type=top": {
-      "model": "urushi:block/upper_slab_plaster"
-    }
-  }
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_plaster"
+    },
+    "type=double": {
+      "model": "urushi:block/plaster"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_plaster"
+    }
+  }
 }

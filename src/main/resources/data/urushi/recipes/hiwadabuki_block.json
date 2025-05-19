@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "##",
-
-    "##"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:cypress_bark"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:hiwadabuki_block",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:cypress_bark"
+    }
+  },
+  "result": {
+    "item": "urushi:hiwadabuki_block",
+    "count": 8
+  }
 }

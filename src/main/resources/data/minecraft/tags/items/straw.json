@@ -1,12 +1,7 @@
 {
-
   "replace": false,
-
   "values": [
-
     "urushi:straw",
     "minecraft:wheat"
-
   ]
-
 }

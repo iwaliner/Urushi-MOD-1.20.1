@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "X#X",
-
-    "###",
-
-    "X#X"
-
-  ],
-
-  "key": {
-
-    "X": {
-
-     "item": "minecraft:paper"
-
-    },
-
-    "#": {
-
-    "item": "urushi:smooth_spruce_planks"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:spruce_shoji_pane",
-
-    "count": 32
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#X",
+    "###",
+    "X#X"
+  ],
+  "key": {
+    "X": {
+     "item": "minecraft:paper"
+    },
+    "#": {
+    "item": "urushi:smooth_spruce_planks"
+    }
+  },
+  "result": {
+    "item": "urushi:spruce_shoji_pane",
+    "count": 32
+  }
 }

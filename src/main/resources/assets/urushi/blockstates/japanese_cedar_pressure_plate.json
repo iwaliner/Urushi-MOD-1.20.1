@@ -1,10 +1,10 @@
-{
-  "variants": {
-    "powered=false": {
-      "model": "urushi:block/japanese_cedar_pressure_plate"
-    },
-    "powered=true": {
-      "model": "urushi:block/japanese_cedar_pressure_plate_down"
-    }
-  }
+{
+  "variants": {
+    "powered=false": {
+      "model": "urushi:block/japanese_cedar_pressure_plate"
+    },
+    "powered=true": {
+      "model": "urushi:block/japanese_cedar_pressure_plate_down"
+    }
+  }
 }

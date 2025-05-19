@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "##",
-
-    "##"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:jadeite"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:jadeite_block",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:jadeite"
+    }
+  },
+  "result": {
+    "item": "urushi:jadeite_block",
+    "count": 1
+  }
 }

@@ -1,11 +1,7 @@
 {
-
   "replace": false,
-
   "values": [
   "#forge:seeds",
   "#forge:crops"
-
   ]
-
 }

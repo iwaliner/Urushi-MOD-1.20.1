@@ -1,23 +1,12 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-    {
-
-      "item": "urushi:petrified_log"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:petrified_planks",
-
-      "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:petrified_log"
+    }
+  ],
+  "result": {
+    "item": "urushi:petrified_planks",
+      "count": 4
+  }
 }

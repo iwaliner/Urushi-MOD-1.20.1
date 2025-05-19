@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:blackstone_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:polished_blackstone_slab"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:blackstone_slab"
+    }
+  ],
+  "result": {
+  "item":"minecraft:polished_blackstone_slab"
+  }
 }

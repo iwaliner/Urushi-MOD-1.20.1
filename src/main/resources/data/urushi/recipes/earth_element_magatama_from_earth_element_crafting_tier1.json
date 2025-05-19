@@ -1,81 +1,21 @@
 {
-
-
-
   "type": "urushi:earth_element_tier1_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:earth_amber"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "minecraft:amethyst_shard"
-
-
-
     },
-
-
-
     {
-
-
-
     "tag": "forge:nuggets/gold"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "urushi:sandpaper_block"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:earth_element_magatama"
-
-
-
   },
-
-
-
   "reiryoku": 50
-
-
-
 }

@@ -1,61 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "#",
-
-
-
     "#"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "#": {
-
-
-
      "item": "urushi:spruce_bars"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:spruce_lattice_door",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

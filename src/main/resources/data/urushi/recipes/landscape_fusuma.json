@@ -1,73 +1,19 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:blank_fusuma"
-
-
-
     },
-
-
-
     {
-
-
-
       "item": "minecraft:dirt"
-
-
-
     },
-
-
-
     {
-
-
-
       "tag": "minecraft:logs"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:landscape_fusuma",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

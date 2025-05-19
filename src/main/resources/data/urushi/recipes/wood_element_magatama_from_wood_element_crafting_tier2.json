@@ -1,81 +1,21 @@
 {
-
-
-
   "type": "urushi:wood_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:wood_amber"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "minecraft:amethyst_shard"
-
-
-
     },
-
-
-
     {
-
-
-
     "tag": "forge:nuggets/gold"
-
-
-
     },
-
-
-
     {
-
-
-
     "item": "urushi:sandpaper_block"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:wood_element_magatama"
-
-
-
   },
-
-
-
   "reiryoku": 50
-
-
-
 }

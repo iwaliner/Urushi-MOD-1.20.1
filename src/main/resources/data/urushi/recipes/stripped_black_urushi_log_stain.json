@@ -1,77 +1,20 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "BBB",
-
-
-
     "BDB",
-
-
-
     "BBB"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "D": {
-
-
-
      "item": "urushi:black_urushi_ball"
-
-
-
     },
-
-
-
     "B": {
-
-
-
     "tag": "minecraft:logs"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:stripped_black_urushi_log",
-
-
-
     "count": 8
-
-
-
   }
-
-
-
 }

@@ -1,43 +1,23 @@
 {
-
   "replace": false,
-
   "values": [
-
     "urushi:silk_block",
     
     "urushi:white_silk_block",
-
     "urushi:orange_silk_block",
-
     "urushi:magenta_silk_block",
-
     "urushi:light_blue_silk_block",
-
     "urushi:yellow_silk_block",
-
     "urushi:lime_silk_block",
-
     "urushi:pink_silk_block",
-
     "urushi:light_gray_silk_block",
-
     "urushi:gray_silk_block",
-
     "urushi:cyan_silk_block",
-
     "urushi:purple_silk_block",
-
     "urushi:blue_silk_block",
-
     "urushi:green_silk_block",
-
     "urushi:red_silk_block",
-
     "urushi:brown_silk_block",
-
     "urushi:black_silk_block"
-
   ]
-
 }

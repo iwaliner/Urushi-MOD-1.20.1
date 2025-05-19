@@ -1,77 +1,20 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "qqi",
-
-
-
     "qqi",
-
-
-
     "iii"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "i": {
-
-
-
      "tag": "forge:ingots/iron"
-
-
-
     },
-
-
-
     "q": {
-
-
-
       "item": "minecraft:quartz"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:tv",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

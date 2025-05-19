@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "#  ",
-
-    "## ",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:cyan_plaster"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:cyan_plaster_stairs",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:cyan_plaster"
+    }
+  },
+  "result": {
+    "item": "urushi:cyan_plaster_stairs",
+    "count": 4
+  }
 }

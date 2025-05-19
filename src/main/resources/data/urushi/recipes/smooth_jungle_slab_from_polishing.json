@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:jungle_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_jungle_slab"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:jungle_slab"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_jungle_slab"
+  }
 }

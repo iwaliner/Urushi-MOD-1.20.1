@@ -1,10 +1,10 @@
-{
-  "variants": {
-    "lit=false": {
-      "model": "urushi:block/metal_element_crafting_table_tier1_idle"
-        },
-    "lit=true": {
-      "model": "urushi:block/metal_element_crafting_table_tier1_lit"
-    }
-  }
+{
+  "variants": {
+    "lit=false": {
+      "model": "urushi:block/metal_element_crafting_table_tier1_idle"
+        },
+    "lit=true": {
+      "model": "urushi:block/metal_element_crafting_table_tier1_lit"
+    }
+  }
 }

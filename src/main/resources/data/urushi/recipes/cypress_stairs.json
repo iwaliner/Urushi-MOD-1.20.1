@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "#  ",
-
-    "## ",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:cypress_planks"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:cypress_stairs",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:cypress_planks"
+    }
+  },
+  "result": {
+    "item": "urushi:cypress_stairs",
+    "count": 4
+  }
 }

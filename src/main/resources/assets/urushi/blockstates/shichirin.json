@@ -1,77 +1,77 @@
-{
-  "variants": {
-    "facing=west,shichirin=0": {
-      "model": "urushi:block/shichirin_empty",
-      "y": 270
-    },
-    "facing=south,shichirin=0": {
-      "model": "urushi:block/shichirin_empty",
-      "y": 180
-    },
-    "facing=north,shichirin=0": {
-      "model": "urushi:block/shichirin_empty"
-    },
-    "facing=east,shichirin=0": {
-      "model": "urushi:block/shichirin_empty",
-      "y": 90
-    },
-    "facing=west,shichirin=1": {
-      "model": "urushi:block/shichirin_filled",
-      "y": 270
-    },
-    "facing=south,shichirin=1": {
-      "model": "urushi:block/shichirin_filled",
-      "y": 180
-    },
-    "facing=north,shichirin=1": {
-      "model": "urushi:block/shichirin_filled"
-    },
-    "facing=east,shichirin=1": {
-      "model": "urushi:block/shichirin_filled",
-      "y": 90
-    },
-    "facing=west,shichirin=2": {
-      "model": "urushi:block/shichirin_lit_under",
-      "y": 270
-    },
-    "facing=south,shichirin=2": {
-      "model": "urushi:block/shichirin_lit_under",
-      "y": 180
-    },
-    "facing=north,shichirin=2": {
-      "model": "urushi:block/shichirin_lit_under"
-    },
-    "facing=east,shichirin=2": {
-      "model": "urushi:block/shichirin_lit_under",
-      "y": 90
-    },"facing=west,shichirin=3": {
-      "model": "urushi:block/shichirin_lit_well",
-      "y": 270
-    },
-    "facing=south,shichirin=3": {
-      "model": "urushi:block/shichirin_lit_well",
-      "y": 180
-    },
-    "facing=north,shichirin=3": {
-      "model": "urushi:block/shichirin_lit_well"
-    },
-    "facing=east,shichirin=3": {
-      "model": "urushi:block/shichirin_lit_well",
-      "y": 90
-    },"facing=west,shichirin=4": {
-      "model": "urushi:block/shichirin_lit_over",
-      "y": 270
-    },
-    "facing=south,shichirin=4": {
-      "model": "urushi:block/shichirin_lit_over",
-      "y": 180
-    },
-    "facing=north,shichirin=4": {
-      "model": "urushi:block/shichirin_lit_over"
-    },
-    "facing=east,shichirin=4": {
-      "model": "urushi:block/shichirin_lit_over",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=west,shichirin=0": {
+      "model": "urushi:block/shichirin_empty",
+      "y": 270
+    },
+    "facing=south,shichirin=0": {
+      "model": "urushi:block/shichirin_empty",
+      "y": 180
+    },
+    "facing=north,shichirin=0": {
+      "model": "urushi:block/shichirin_empty"
+    },
+    "facing=east,shichirin=0": {
+      "model": "urushi:block/shichirin_empty",
+      "y": 90
+    },
+    "facing=west,shichirin=1": {
+      "model": "urushi:block/shichirin_filled",
+      "y": 270
+    },
+    "facing=south,shichirin=1": {
+      "model": "urushi:block/shichirin_filled",
+      "y": 180
+    },
+    "facing=north,shichirin=1": {
+      "model": "urushi:block/shichirin_filled"
+    },
+    "facing=east,shichirin=1": {
+      "model": "urushi:block/shichirin_filled",
+      "y": 90
+    },
+    "facing=west,shichirin=2": {
+      "model": "urushi:block/shichirin_lit_under",
+      "y": 270
+    },
+    "facing=south,shichirin=2": {
+      "model": "urushi:block/shichirin_lit_under",
+      "y": 180
+    },
+    "facing=north,shichirin=2": {
+      "model": "urushi:block/shichirin_lit_under"
+    },
+    "facing=east,shichirin=2": {
+      "model": "urushi:block/shichirin_lit_under",
+      "y": 90
+    },"facing=west,shichirin=3": {
+      "model": "urushi:block/shichirin_lit_well",
+      "y": 270
+    },
+    "facing=south,shichirin=3": {
+      "model": "urushi:block/shichirin_lit_well",
+      "y": 180
+    },
+    "facing=north,shichirin=3": {
+      "model": "urushi:block/shichirin_lit_well"
+    },
+    "facing=east,shichirin=3": {
+      "model": "urushi:block/shichirin_lit_well",
+      "y": 90
+    },"facing=west,shichirin=4": {
+      "model": "urushi:block/shichirin_lit_over",
+      "y": 270
+    },
+    "facing=south,shichirin=4": {
+      "model": "urushi:block/shichirin_lit_over",
+      "y": 180
+    },
+    "facing=north,shichirin=4": {
+      "model": "urushi:block/shichirin_lit_over"
+    },
+    "facing=east,shichirin=4": {
+      "model": "urushi:block/shichirin_lit_over",
+      "y": 90
+    }
+  }
 }

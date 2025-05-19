@@ -1,73 +1,19 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
    
-
-
-
     {
-
-
-
       "item": "urushi:rice_cake"
-
-
-
     },
-
-
-
     {
-
-
-
      "tag": "forge:weed"
-
-
-
     },
-
-
-
     {
-
-
-
      "tag": "forge:crops/adzuki"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "urushi:kusa_mochi",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "###",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:small_yomi_stone_bricks"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:small_yomi_stone_brick_wall",
-
-    "count": 6
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:small_yomi_stone_bricks"
+    }
+  },
+  "result": {
+    "item": "urushi:small_yomi_stone_brick_wall",
+    "count": 6
+  }
 }

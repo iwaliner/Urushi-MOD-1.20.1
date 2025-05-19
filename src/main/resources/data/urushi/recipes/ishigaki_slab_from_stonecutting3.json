@@ -1,15 +1,8 @@
-{
-
-  "type": "minecraft:stonecutting",
-
-  "ingredient": {
-
-    "item": "urushi:ishigaki_block"
-
-  },
-
-  "result": "urushi:ishigaki_slab",
-
-  "count": 2
-
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "urushi:ishigaki_block"
+  },
+  "result": "urushi:ishigaki_slab",
+  "count": 2
 }

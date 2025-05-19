@@ -1,75 +1,21 @@
 {
-
-
-
   "type": "urushi:metal_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:raw_urushi_ball"
-
-
-
     },
-
-
-
     {
-
-
-
    "item": "urushi:raw_urushi_ball"
-
-
-
     },
     {
-
-
-
   "item": "urushi:raw_urushi_ball"
-
-
-
     },
     {
-
-
-
    "item": "urushi:raw_urushi_ball"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:metal_amber"
-
-
-
   },
-
-
-
   "reiryoku": 200
-
-
-
 }

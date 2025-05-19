@@ -1,7 +1,7 @@
-{
-  "replace": false,
-  "values": [
-    "urushi:connectable_glass_pane",
-    "urushi:metal_framed_glass_pane"
-  ]
+{
+  "replace": false,
+  "values": [
+    "urushi:connectable_glass_pane",
+    "urushi:metal_framed_glass_pane"
+  ]
 }

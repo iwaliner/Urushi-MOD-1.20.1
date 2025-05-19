@@ -1,45 +1,12 @@
 {
-
-
-
   "type": "minecraft:crafting_shapeless",
-
-
-
   "ingredients": [
-
-
-
     {
-
-
-
       "item": "urushi:silk_thread"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
     "item": "minecraft:string",
-
-
-
       "count": 1
-
-
-
   }
-
-
-
 }

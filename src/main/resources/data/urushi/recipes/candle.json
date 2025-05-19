@@ -1,37 +1,19 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "s",
-
-    "o"
-
-  ],
-
-  "key": {
-
-    "o": {
-
-    "item": "urushi:vegetable_oil"
-
-    },
-
-    "s": {
-
-   "tag": "forge:string"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "minecraft:candle",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "s",
+    "o"
+  ],
+  "key": {
+    "o": {
+    "item": "urushi:vegetable_oil"
+    },
+    "s": {
+   "tag": "forge:string"
+    }
+  },
+  "result": {
+    "item": "minecraft:candle",
+    "count": 4
+  }
 }

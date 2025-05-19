@@ -1,57 +1,15 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
    "W","W","W"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "W": {
-
-
-
       "item": "urushi:plaster"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:vertical_plaster_slab",
-
-
-
     "count": 6
-
-
-
   }
-
-
-
 }

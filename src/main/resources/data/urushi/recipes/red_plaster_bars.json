@@ -1,58 +1,16 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
    "W W",
  "W W"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "W": {
-
-
-
       "item": "urushi:red_plaster"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:red_plaster_bars",
-
-
-
     "count": 16
-
-
-
   }
-
-
-
 }

@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:diorite_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:polished_diorite_slab"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:diorite_slab"
+    }
+  ],
+  "result": {
+  "item":"minecraft:polished_diorite_slab"
+  }
 }

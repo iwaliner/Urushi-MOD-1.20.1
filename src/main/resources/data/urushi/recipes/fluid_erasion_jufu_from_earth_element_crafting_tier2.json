@@ -1,80 +1,21 @@
 {
-
-
-
   "type": "urushi:earth_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:fluid_erasion_jufu_stamp"
-
-
-
     },
-
-
-
     {
-
-
 "item": "urushi:black_urushi_ball"
-
-
-
     },
-
-
-
     {
-
-
-
 "item": "minecraft:paper"
-
-
-
     },
-
-
-
     {
-
-
-
    "tag": "forge:nuggets/gold"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:fluid_erasion_jufu"
-
-
-
   },
-
-
-
   "reiryoku": 30
-
-
-
 }

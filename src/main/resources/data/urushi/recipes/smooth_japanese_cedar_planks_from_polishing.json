@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "urushi:japanese_cedar_planks"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_japanese_cedar_planks"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "urushi:japanese_cedar_planks"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_japanese_cedar_planks"
+  }
 }

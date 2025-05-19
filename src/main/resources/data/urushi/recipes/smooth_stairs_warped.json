@@ -1,69 +1,18 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "group": "wooden_stairs",
-
-
-
   "pattern": [
-
-
-
     "#  ",
-
-
-
     "## ",
-
-
-
     "###"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "#": {
-
-
-
       "item": "urushi:smooth_warped_planks"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:smooth_warped_stairs",
-
-
-
     "count": 4
-
-
-
   }
-
-
-
 }

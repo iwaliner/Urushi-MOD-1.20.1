@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "#  ",
-
-    "## ",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "minecraft:magma_block"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:magma_stairs",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result": {
+    "item": "urushi:magma_stairs",
+    "count": 4
+  }
 }

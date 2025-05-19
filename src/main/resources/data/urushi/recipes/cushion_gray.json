@@ -1,31 +1,16 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-    {
-
-      "item": "minecraft:gray_wool"
-
-    },
-
-    {
-
-      "tag": "forge:string"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:gray_cushion",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "minecraft:gray_wool"
+    },
+    {
+      "tag": "forge:string"
+    }
+  ],
+  "result": {
+    "item": "urushi:gray_cushion",
+    "count": 4
+  }
 }

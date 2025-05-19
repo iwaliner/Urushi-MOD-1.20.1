@@ -1,37 +1,19 @@
 {
-
   "variants": {
-
     "facing=east": {
-
       "model": "urushi:block/pale_oak_shitamiita",
-
       "y": 270
-
     },
-
     "facing=north": {
-
       "model": "urushi:block/pale_oak_shitamiita",
-
       "y": 180
-
     },
-
     "facing=south": {
-
       "model": "urushi:block/pale_oak_shitamiita"
-
     },
-
     "facing=west": {
-
       "model": "urushi:block/pale_oak_shitamiita",
-
       "y": 90
-
     }
-
   }
-
 }

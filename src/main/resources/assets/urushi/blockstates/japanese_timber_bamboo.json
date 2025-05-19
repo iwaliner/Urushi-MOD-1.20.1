@@ -1,16 +1,16 @@
-{
-  "variants": {
-    "age=3": {
-      "model": "urushi:block/bamboo_shoot"
-    },
-    "age=0": {
-      "model": "urushi:block/bamboo"
-    },
-    "age=1": {
-      "model": "urushi:block/bamboo_upper"
-    },
-    "age=2": {
-      "model": "urushi:block/bamboo_top"
-    }
-  }
+{
+  "variants": {
+    "age=3": {
+      "model": "urushi:block/bamboo_shoot"
+    },
+    "age=0": {
+      "model": "urushi:block/bamboo"
+    },
+    "age=1": {
+      "model": "urushi:block/bamboo_upper"
+    },
+    "age=2": {
+      "model": "urushi:block/bamboo_top"
+    }
+  }
 }

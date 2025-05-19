@@ -1,17 +1,9 @@
-{
-
-  "type": "minecraft:campfire_cooking",
-
-  "ingredient": {
-
-    "item": "urushi:rice_cake"
-
-  },
-
-  "result": "urushi:roasted_rice_cake",
-
-  "experience": 0.35,
-
-  "cookingtime": 600
-
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "urushi:rice_cake"
+  },
+  "result": "urushi:roasted_rice_cake",
+  "experience": 0.35,
+  "cookingtime": 600
 }

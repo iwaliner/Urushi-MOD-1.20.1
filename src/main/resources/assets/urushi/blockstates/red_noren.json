@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=west": {
-      "model": "urushi:block/noren_red",
-      "y": 270
-    },
-    "facing=south": {
-      "model": "urushi:block/noren_red",
-      "y": 180
-    },
-    "facing=north": {
-      "model": "urushi:block/noren_red"
-    },
-    "facing=east": {
-      "model": "urushi:block/noren_red",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/noren_red",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/noren_red",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/noren_red"
+    },
+    "facing=east": {
+      "model": "urushi:block/noren_red",
+      "y": 90
+    }
+  }
 }

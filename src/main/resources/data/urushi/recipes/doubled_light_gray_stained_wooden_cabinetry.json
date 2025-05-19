@@ -1,14 +1,14 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "urushi:doubled_wooden_cabinetry"
-    },
-    {
-    "tag": "forge:dyes/light_gray"
-    }
-  ],
-  "result": {
-    "item": "urushi:doubled_light_gray_stained_wooden_cabinetry"
-  }
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:doubled_wooden_cabinetry"
+    },
+    {
+    "tag": "forge:dyes/light_gray"
+    }
+  ],
+  "result": {
+    "item": "urushi:doubled_light_gray_stained_wooden_cabinetry"
+  }
 }

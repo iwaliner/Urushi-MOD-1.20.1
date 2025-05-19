@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "#  ",
-
-    "## ",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:sakura_planks"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:sakura_stairs",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:sakura_planks"
+    }
+  },
+  "result": {
+    "item": "urushi:sakura_stairs",
+    "count": 4
+  }
 }

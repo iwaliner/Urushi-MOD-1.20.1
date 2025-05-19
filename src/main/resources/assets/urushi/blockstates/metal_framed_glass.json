@@ -1,181 +1,181 @@
-{
-    "multipart": [
-        {   "when": { "north": "true","south": "true","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_55",  "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "true","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_55",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_0", "uvlock": true }
-        },
-        {   "when": {"north": "false","south": "false","east": "false","west": "false","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_1", "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_2", "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_3", "uvlock": true }
-        },
-       {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_4", "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_50", "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_51", "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_52", "uvlock": true }
-        },
-         {   "when": { "east": "true","west": "true","north": "true","south": "true","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_16", "uvlock": true }
-        },
-        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_17", "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_18", "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_19", "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_20", "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_21", "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_22", "y": 180, "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_23", "y": 90, "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_24", "y": 270, "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_25", "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_26", "y": 180, "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_27", "y": 90, "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_28", "y": 270, "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_8",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_8", "y": 180, "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_8", "y": 90, "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_8", "y":270, "uvlock": true }
-        },
-        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_29", "uvlock": true}
-        },
-        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_33", "uvlock": true}
-        },
-        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_34", "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_35", "uvlock": true}
-        },
-        {   "when": { "east": "false","west": "false","north": "true","south": "true","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_30",  "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "true","north": "false","south": "false","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_39" , "uvlock": true}
-        },
-        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_31", "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_36", "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_37", "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_38" , "uvlock": true}
-        },
-        {   "when": { "east": "false","west": "false","north": "true","south": "true","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_32", "uvlock": true }
-        },
-        {   "when": { "east": "true","west": "true","north": "false","south": "false","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_40", "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_12",  "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_41",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_42",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_43",  "uvlock": true }
-        },
-        
-        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_13",  "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_44",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_45",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_46",  "uvlock": true }
-        },
-        
-        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_14",  "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_47",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_48",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_49",  "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "true","east": "true","west": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_55",  "uvlock": true }
-        },
-        
-        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_15",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_15", "y": 180,  "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_15", "y": 90,  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "true"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_15", "y": 270,  "uvlock": true }
-        },
-        {   "when": { "north": "true","south": "true","east": "false","west": "false","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_53",  "uvlock": true }
-        },
-        {   "when": { "north": "false","south": "false","east": "true","west": "true","up": "false","down": "false"},
-            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_54",  "uvlock": true }
-        }
-    ]
+{
+    "multipart": [
+        {   "when": { "north": "true","south": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_55",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_55",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_0", "uvlock": true }
+        },
+        {   "when": {"north": "false","south": "false","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_1", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_2", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_3", "uvlock": true }
+        },
+       {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_4", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_50", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_51", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_52", "uvlock": true }
+        },
+         {   "when": { "east": "true","west": "true","north": "true","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_16", "uvlock": true }
+        },
+        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_17", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_18", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_19", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_20", "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_21", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_22", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_23", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_24", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_25", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_26", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_27", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_28", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_8",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_8", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_8", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_8", "y":270, "uvlock": true }
+        },
+        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_29", "uvlock": true}
+        },
+        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_33", "uvlock": true}
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_34", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_35", "uvlock": true}
+        },
+        {   "when": { "east": "false","west": "false","north": "true","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_30",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_39" , "uvlock": true}
+        },
+        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_31", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_36", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_37", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_38" , "uvlock": true}
+        },
+        {   "when": { "east": "false","west": "false","north": "true","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_32", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_40", "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_12",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_41",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_42",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_43",  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_13",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_44",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_45",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_46",  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_14",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_47",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_48",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_49",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","east": "true","west": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_55",  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_15",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_15", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_15", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_15", "y": 270,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_53",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/metal_framed_glass/framed_glass_54",  "uvlock": true }
+        }
+    ]
 }

@@ -1,63 +1,32 @@
 {
-
   "type": "minecraft:block",
-
   "pools": [
-
     {
-
       "rolls": 1,
-
       "entries": [
-
         {
-
           "type": "minecraft:item",
-
           "functions": [
-
             {
-
               "function": "minecraft:set_count",
-
               "conditions": [
-
                 {
-
                   "condition": "minecraft:block_state_property",
-
                   "block": "urushi:acacia_shitamiita_slab",
-
                   "properties": {
-
                     "type": "double"
-
                   }
-
                 }
-
               ],
-
               "count": 2
-
             },
-
             {
-
               "function": "minecraft:explosion_decay"
-
             }
-
           ],
-
           "name": "urushi:acacia_shitamiita_slab"
-
         }
-
       ]
-
     }
-
   ]
-
 }

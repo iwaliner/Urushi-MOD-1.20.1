@@ -42,6 +42,8 @@ public class BlockEntityRegister {
     public static final RegistryObject<BlockEntityType<SilkwormFarmBlockEntity>> SilkwormFarm=Tiles.register("silkworm_farm", () -> BlockEntityType.Builder.of(SilkwormFarmBlockEntity::new, ItemAndBlockRegister.silkworm_farm.get()).build(null));
     public static final RegistryObject<BlockEntityType<KettleBlockEntity>> Kettle=Tiles.register("kettle", () -> BlockEntityType.Builder.of(KettleBlockEntity::new, ItemAndBlockRegister.kettle.get()).build(null));
     public static final RegistryObject<BlockEntityType<SpikeBlockEntity>> Spike=Tiles.register("spike", () -> BlockEntityType.Builder.of(SpikeBlockEntity::new, ItemAndBlockRegister.spike.get()).build(null));
+    public static final RegistryObject<BlockEntityType<MarkerBlockEntity>> Marker=Tiles.register("marker", () -> BlockEntityType.Builder.of(MarkerBlockEntity::new, ItemAndBlockRegister.marker.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FillerBlockEntity>> Filler=Tiles.register("filler", () -> BlockEntityType.Builder.of(FillerBlockEntity::new, ItemAndBlockRegister.filler.get()).build(null));
 
 
 

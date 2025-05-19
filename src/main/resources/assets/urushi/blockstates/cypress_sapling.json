@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/cypress_sapling"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/cypress_sapling"
+    }
+  }
 }

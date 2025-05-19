@@ -1,34 +1,34 @@
-{
-  "variants": {
-    "facing=west,open=false": {
-      "model": "urushi:block/ariake_andon",
-      "y": 270
-    },
-    "facing=south,open=false": {
-      "model": "urushi:block/ariake_andon",
-      "y": 180
-    },
-    "facing=north,open=false": {
-      "model": "urushi:block/ariake_andon"
-    },
-    "facing=east,open=false": {
-      "model": "urushi:block/ariake_andon",
-      "y": 90
-    },
-    "facing=west,open=true": {
-      "model": "urushi:block/ariake_andon_noon",
-      "y": 270
-    },
-    "facing=south,open=true": {
-      "model": "urushi:block/ariake_andon_noon",
-      "y": 180
-    },
-    "facing=north,open=true": {
-      "model": "urushi:block/ariake_andon_noon"
-    },
-    "facing=east,open=true": {
-      "model": "urushi:block/ariake_andon_noon",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=west,open=false": {
+      "model": "urushi:block/ariake_andon",
+      "y": 270
+    },
+    "facing=south,open=false": {
+      "model": "urushi:block/ariake_andon",
+      "y": 180
+    },
+    "facing=north,open=false": {
+      "model": "urushi:block/ariake_andon"
+    },
+    "facing=east,open=false": {
+      "model": "urushi:block/ariake_andon",
+      "y": 90
+    },
+    "facing=west,open=true": {
+      "model": "urushi:block/ariake_andon_noon",
+      "y": 270
+    },
+    "facing=south,open=true": {
+      "model": "urushi:block/ariake_andon_noon",
+      "y": 180
+    },
+    "facing=north,open=true": {
+      "model": "urushi:block/ariake_andon_noon"
+    },
+    "facing=east,open=true": {
+      "model": "urushi:block/ariake_andon_noon",
+      "y": 90
+    }
+  }
 }

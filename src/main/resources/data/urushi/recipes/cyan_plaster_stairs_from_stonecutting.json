@@ -1,29 +1,8 @@
 {
-
-
-
   "type": "minecraft:stonecutting",
-
-
-
   "ingredient": {
-
-
-
     "item": "urushi:cyan_plaster"
-
-
-
   },
-
-
-
   "result": "urushi:cyan_plaster_stairs",
-
-
-
   "count": 1
-
-
-
 }

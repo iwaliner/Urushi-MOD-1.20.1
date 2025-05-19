@@ -1,75 +1,21 @@
 {
-
-
-
   "type": "urushi:water_element_tier1_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "urushi:jadeite"
-
-
-
     },
-
-
-
     {
-
-
-
    "item": "urushi:jadeite"
-
-
-
     },
     {
-
-
-
    "item": "urushi:jadeite"
-
-
-
     },
     {
-
-
-
    "item": "urushi:water_amber"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:water_enhanced_jadeite"
-
-
-
   },
-
-
-
   "reiryoku": 20
-
-
-
 }

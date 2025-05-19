@@ -1,74 +1,20 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "# #",
-
-
-
     "#C#",
-
-
-
     " # "
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "#": {
-
-
-
       "item": "urushi:red_urushi_planks"
-
-
-
     },
     "C": {
-
-
-
       "item": "urushi:wooden_cabinetry_slab"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:urushi_hopper",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

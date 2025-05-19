@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "urushi:black_urushi_stairs"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_black_urushi_stairs"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "urushi:black_urushi_stairs"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_black_urushi_stairs"
+  }
 }

@@ -1,13 +1,13 @@
-{
-  "variants": {
-    "type=bottom": {
-      "model": "urushi:block/half_slab_smooth_acacia"
-    },
-    "type=double": {
-      "model": "urushi:block/acacia_smooth_planks"
-    },
-    "type=top": {
-      "model": "urushi:block/upper_slab_smooth_acacia"
-    }
-  }
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_smooth_acacia"
+    },
+    "type=double": {
+      "model": "urushi:block/acacia_smooth_planks"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_smooth_acacia"
+    }
+  }
 }

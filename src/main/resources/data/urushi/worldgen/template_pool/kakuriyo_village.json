@@ -1,8 +1,6 @@
 {
  "name": "urushi:kakuriyo_village",
-
  "fallback": "minecraft:empty",
-
    "elements": [
     {
       "weight": 1,

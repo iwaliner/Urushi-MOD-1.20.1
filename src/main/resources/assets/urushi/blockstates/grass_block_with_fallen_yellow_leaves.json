@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/grass_block_with_fallen_yellow_leaves"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/grass_block_with_fallen_yellow_leaves"
+    }
+  }
 }

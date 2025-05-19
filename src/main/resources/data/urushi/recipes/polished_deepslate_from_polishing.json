@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:deepslate"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:polished_deepslate"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:deepslate"
+    }
+  ],
+  "result": {
+  "item":"minecraft:polished_deepslate"
+  }
 }

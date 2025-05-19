@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=east": {
-      "model": "urushi:block/green_tatami_carpet",
-      "y": 270
-    },
-    "facing=north": {
-      "model": "urushi:block/green_tatami_carpet",
-      "y": 180
-    },
-    "facing=south": {
-      "model": "urushi:block/green_tatami_carpet"
-    },
-    "facing=west": {
-      "model": "urushi:block/green_tatami_carpet",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=east": {
+      "model": "urushi:block/green_tatami_carpet",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "urushi:block/green_tatami_carpet",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "urushi:block/green_tatami_carpet"
+    },
+    "facing=west": {
+      "model": "urushi:block/green_tatami_carpet",
+      "y": 90
+    }
+  }
 }

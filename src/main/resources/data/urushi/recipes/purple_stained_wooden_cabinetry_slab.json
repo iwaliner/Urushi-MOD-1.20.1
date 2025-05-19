@@ -1,14 +1,14 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "urushi:wooden_cabinetry_slab"
-    },
-    {
-    "tag": "forge:dyes/purple"
-    }
-  ],
-  "result": {
-    "item": "urushi:purple_stained_wooden_cabinetry_slab"
-  }
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:wooden_cabinetry_slab"
+    },
+    {
+    "tag": "forge:dyes/purple"
+    }
+  ],
+  "result": {
+    "item": "urushi:purple_stained_wooden_cabinetry_slab"
+  }
 }

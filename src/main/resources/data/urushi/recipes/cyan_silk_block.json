@@ -1,77 +1,20 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "BBB",
-
-
-
     "BDB",
-
-
-
     "BBB"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "D": {
-
-
-
    "tag": "forge:dyes/cyan"
-
-
-
       },
-
-
-
     "B": {
-
-
-
     "tag": "urushi:silk_block"
-
-
-
    }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:cyan_silk_block",
-
-
-
     "count": 8
-
-
-
   }
-
-
-
 }

@@ -15,15 +15,12 @@
     "minecraft:brown_mushroom",
     "minecraft:bamboo",
     "minecraft:sugar_cane",
-
     "#minecraft:wooden_fences",
     "#minecraft:fence_gates",
     "#forge:fences/wooden",
     "#forge:fence_gates/wooden",
     "#forge:fences/wooden",
-
     "#minecraft:wodden_doors",
-
     "#minecraft:wooden_doors",
     "#minecraft:wooden_trapdoors",
     "#minecraft:wooden_pressure_plates",
@@ -32,7 +29,5 @@
     "minecraft:bamboo_mosaic",
     "minecraft:bamboo_mosaic_stairs",
     "minecraft:bamboo_mosaic_slab"
-
-
   ]
 }

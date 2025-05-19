@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "BBB",
-
-    "BDB",
-
-    "BBB"
-
-  ],
-
-  "key": {
-
-    "D": {
-
-   "tag": "forge:dyes/white"
-
-      },
-
-    "B": {
-
-    "tag": "urushi:plaster"
-
-   }
-
-  },
-
-  "result": {
-
-    "item": "urushi:plaster",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BDB",
+    "BBB"
+  ],
+  "key": {
+    "D": {
+   "tag": "forge:dyes/white"
+      },
+    "B": {
+    "tag": "urushi:plaster"
+   }
+  },
+  "result": {
+    "item": "urushi:plaster",
+    "count": 8
+  }
 }

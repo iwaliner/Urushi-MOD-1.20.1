@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:hammering",
-
-  "ingredients": [
-
-  {
-
-    "item": "urushi:hot_iron_ingot_1"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:hot_iron_ingot_2"
-
-  }
-
+{
+  "type": "urushi:hammering",
+  "ingredients": [
+  {
+    "item": "urushi:hot_iron_ingot_1"
+    }
+  ],
+  "result": {
+  "item":"urushi:hot_iron_ingot_2"
+  }
 }

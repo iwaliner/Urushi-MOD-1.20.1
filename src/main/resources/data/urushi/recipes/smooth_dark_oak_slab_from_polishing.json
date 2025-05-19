@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:dark_oak_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:smooth_dark_oak_slab"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:dark_oak_slab"
+    }
+  ],
+  "result": {
+  "item":"urushi:smooth_dark_oak_slab"
+  }
 }

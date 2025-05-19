@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "BBB",
-
-    "BDB",
-
-    "BBB"
-
-  ],
-
-  "key": {
-
-    "D": {
-
-     "item": "urushi:red_urushi_ball"
-
-    },
-
-    "B": {
-
-    "tag": "minecraft:wooden_doors"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:red_urushi_door",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BDB",
+    "BBB"
+  ],
+  "key": {
+    "D": {
+     "item": "urushi:red_urushi_ball"
+    },
+    "B": {
+    "tag": "minecraft:wooden_doors"
+    }
+  },
+  "result": {
+    "item": "urushi:red_urushi_door",
+    "count": 8
+  }
 }

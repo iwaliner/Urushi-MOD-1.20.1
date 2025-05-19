@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:diorite_stairs"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:polished_diorite_stairs"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:diorite_stairs"
+    }
+  ],
+  "result": {
+  "item":"minecraft:polished_diorite_stairs"
+  }
 }

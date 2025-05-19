@@ -1,39 +1,20 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "BBB",
-
-    "BDB",
-
-    "BBB"
-
-  ],
-
-  "key": {
-
-    "D": {
-
-     "item": "urushi:black_urushi_ball"
-
-    },
-
-    "B": {
-
-    "tag": "minecraft:wooden_buttons"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:black_urushi_button",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BDB",
+    "BBB"
+  ],
+  "key": {
+    "D": {
+     "item": "urushi:black_urushi_ball"
+    },
+    "B": {
+    "tag": "minecraft:wooden_buttons"
+    }
+  },
+  "result": {
+    "item": "urushi:black_urushi_button",
+    "count": 8
+  }
 }

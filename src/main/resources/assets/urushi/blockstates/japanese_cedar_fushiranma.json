@@ -1,19 +1,19 @@
-{
-  "variants": {
-    "facing=east": {
-      "model": "urushi:block/fushiranma_cedar",
-      "y": 270
-    },
-    "facing=north": {
-      "model": "urushi:block/fushiranma_cedar",
-      "y": 180
-    },
-    "facing=south": {
-      "model": "urushi:block/fushiranma_cedar"
-    },
-    "facing=west": {
-      "model": "urushi:block/fushiranma_cedar",
-      "y": 90
-    }
-  }
+{
+  "variants": {
+    "facing=east": {
+      "model": "urushi:block/fushiranma_cedar",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "urushi:block/fushiranma_cedar",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "urushi:block/fushiranma_cedar"
+    },
+    "facing=west": {
+      "model": "urushi:block/fushiranma_cedar",
+      "y": 90
+    }
+  }
 }

@@ -1,37 +1,19 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-   
-
-   {
-
-       "item": "urushi:smooth_birch_planks"
-
-  },
-
-     {
-
-      "tag": "forge:ingots/iron"
-
-    },
-
-    {
-
-     "tag": "forge:nuggets/gold"
-
-   }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:mirror_tier1",
-
-    "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+   {
+       "item": "urushi:smooth_birch_planks"
+  },
+     {
+      "tag": "forge:ingots/iron"
+    },
+    {
+     "tag": "forge:nuggets/gold"
+   }
+  ],
+  "result": {
+    "item": "urushi:mirror_tier1",
+    "count": 1
+  }
 }

@@ -1,37 +1,19 @@
 {
-
   "variants": {
-
     "facing=east": {
-
       "model": "urushi:block/fushiranma_mangrove",
-
       "y": 270
-
     },
-
     "facing=north": {
-
       "model": "urushi:block/fushiranma_mangrove",
-
       "y": 180
-
     },
-
     "facing=south": {
-
       "model": "urushi:block/fushiranma_mangrove"
-
     },
-
     "facing=west": {
-
       "model": "urushi:block/fushiranma_mangrove",
-
       "y": 90
-
     }
-
   }
-
 }

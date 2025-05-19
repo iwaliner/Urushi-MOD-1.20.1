@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "minecraft:quartz_stairs"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"minecraft:smooth_quartz_stairs"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "minecraft:quartz_stairs"
+    }
+  ],
+  "result": {
+  "item":"minecraft:smooth_quartz_stairs"
+  }
 }

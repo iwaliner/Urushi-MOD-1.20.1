@@ -1,41 +1,11 @@
 {
-
-
-
   "type": "urushi:frying",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "tag": "forge:tofu"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:abura_age"
-
-
-
   }
-
-
-
 }

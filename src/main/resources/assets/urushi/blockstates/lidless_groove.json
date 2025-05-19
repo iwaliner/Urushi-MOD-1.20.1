@@ -1,48 +1,48 @@
-{
-  "multipart": [
-    {
-      "apply": {
-        "model": "urushi:block/groove_lidless_junction_center"
-      }
-    },
-    {
-      "when": {
-        "north": "false"
-      },
-      "apply": {
-        "model": "urushi:block/groove_lidless_junction_side",
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "east": "false"
-      },
-      "apply": {
-        "model": "urushi:block/groove_lidless_junction_side",
-        "y": 90,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "south": "false"
-      },
-      "apply": {
-        "model": "urushi:block/groove_lidless_junction_side",
-        "y": 180,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "west": "false"
-      },
-      "apply": {
-        "model": "urushi:block/groove_lidless_junction_side",
-        "y": 270,
-        "uvlock": true
-      }
-    }
-  ]
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "urushi:block/groove_lidless_junction_center"
+      }
+    },
+    {
+      "when": {
+        "north": "false"
+      },
+      "apply": {
+        "model": "urushi:block/groove_lidless_junction_side",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "false"
+      },
+      "apply": {
+        "model": "urushi:block/groove_lidless_junction_side",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "false"
+      },
+      "apply": {
+        "model": "urushi:block/groove_lidless_junction_side",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "false"
+      },
+      "apply": {
+        "model": "urushi:block/groove_lidless_junction_side",
+        "y": 270,
+        "uvlock": true
+      }
+    }
+  ]
 }

@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/dirty_concrete"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/dirty_concrete"
+    }
+  }
 }

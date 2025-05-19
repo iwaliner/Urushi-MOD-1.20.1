@@ -1,33 +1,17 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "#  ",
-
-    "## ",
-
-    "###"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-      "item": "urushi:thatched_block"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:thatched_stairs",
-
-    "count": 4
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:thatched_block"
+    }
+  },
+  "result": {
+    "item": "urushi:thatched_stairs",
+    "count": 4
+  }
 }

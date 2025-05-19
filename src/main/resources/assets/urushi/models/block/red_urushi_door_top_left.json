@@ -1,7 +1,7 @@
-{
-  "parent": "minecraft:block/door_top_left",
-  "textures": {
-    "bottom": "urushi:block/door_red_under",
-    "top": "urushi:block/door_red_upper"
-  }
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "urushi:block/door_red_under",
+    "top": "urushi:block/door_red_upper"
+  }
 }

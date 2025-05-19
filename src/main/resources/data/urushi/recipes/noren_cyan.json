@@ -1,37 +1,19 @@
-{
-
-  "type": "minecraft:crafting_shaped",
-
-  "pattern": [
-
-    "XX",
-
-    "##"
-
-  ],
-
-  "key": {
-
-    "#": {
-
-     "item": "minecraft:cyan_wool"
-
-    },
-
-    "X": {
-
-    "tag": "forge:bamboo"
-
-    }
-
-  },
-
-  "result": {
-
-    "item": "urushi:cyan_noren",
-
-    "count": 8
-
-  }
-
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "##"
+  ],
+  "key": {
+    "#": {
+     "item": "minecraft:cyan_wool"
+    },
+    "X": {
+    "tag": "forge:bamboo"
+    }
+  },
+  "result": {
+    "item": "urushi:cyan_noren",
+    "count": 8
+  }
 }

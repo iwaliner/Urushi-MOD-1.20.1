@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/water_element_tank_tier1"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/water_element_tank_tier1"
+    }
+  }
 }

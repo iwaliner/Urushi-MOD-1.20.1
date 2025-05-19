@@ -1,6 +1,6 @@
-{
-  "type": "forge:add_features",
-  "biomes": "minecraft:forest",
-  "features": "urushi:forest_japanese_apricot",
-  "step": "vegetal_decoration"
+{
+  "type": "forge:add_features",
+  "biomes": "minecraft:forest",
+  "features": "urushi:forest_japanese_apricot",
+  "step": "vegetal_decoration"
 }

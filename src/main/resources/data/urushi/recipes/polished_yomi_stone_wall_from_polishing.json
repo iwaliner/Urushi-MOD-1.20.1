@@ -1,21 +1,11 @@
-{
-
-  "type": "urushi:polishing",
-
-  "ingredients": [
-
-  {
-
-     "item": "urushi:cobbled_yomi_stone_wall"
-
-    }
-
-  ],
-
-  "result": {
-
-  "item":"urushi:polished_yomi_stone_wall"
-
-  }
-
+{
+  "type": "urushi:polishing",
+  "ingredients": [
+  {
+     "item": "urushi:cobbled_yomi_stone_wall"
+    }
+  ],
+  "result": {
+  "item":"urushi:polished_yomi_stone_wall"
+  }
 }

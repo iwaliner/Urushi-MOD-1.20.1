@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/raw_urushi_layer"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/raw_urushi_layer"
+    }
+  }
 }

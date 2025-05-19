@@ -1,94 +1,26 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "rpr",
-
-
-
     "gcg",
-
-
-
     "rpr"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
     "g": {
-
-
-
      "tag": "forge:ingots/gold"
-
-
-
     },
-
 "c": {
-
-
-
       "item": "minecraft:crafting_table"
-
-
-
     },
-
     "p": {
-
-
-
       "item": "urushi:plaster"
-
-
-
     },
     "r": {
-
-
-
       "item": "urushi:red_urushi_planks"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:auto_crafting_table",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

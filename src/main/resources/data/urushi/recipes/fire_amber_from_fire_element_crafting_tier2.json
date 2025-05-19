@@ -1,75 +1,21 @@
 {
-
-
-
   "type": "urushi:fire_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
     "item": "minecraft:flint"
-
-
-
-    },
-
-
-
-    {
-
-
-
-   "item": "minecraft:flint"
-
-
-
     },
     {
-
-
-
    "item": "minecraft:flint"
-
-
-
     },
     {
-
-
-
    "item": "minecraft:flint"
-
-
-
+    },
+    {
+   "item": "minecraft:flint"
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:fire_amber"
-
-
-
   },
-
-
-
   "reiryoku": 200
-
-
-
 }

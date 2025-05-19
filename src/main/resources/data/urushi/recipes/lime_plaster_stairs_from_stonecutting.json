@@ -1,29 +1,8 @@
 {
-
-
-
   "type": "minecraft:stonecutting",
-
-
-
   "ingredient": {
-
-
-
     "item": "urushi:lime_plaster"
-
-
-
   },
-
-
-
   "result": "urushi:lime_plaster_stairs",
-
-
-
   "count": 1
-
-
-
 }

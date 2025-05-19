@@ -1,14 +1,14 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "urushi:wooden_cabinetry"
-    },
-    {
-    "tag": "forge:dyes/red"
-    }
-  ],
-  "result": {
-    "item": "urushi:red_stained_wooden_cabinetry"
-  }
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:wooden_cabinetry"
+    },
+    {
+    "tag": "forge:dyes/red"
+    }
+  ],
+  "result": {
+    "item": "urushi:red_stained_wooden_cabinetry"
+  }
 }

@@ -1,13 +1,13 @@
-{
-  "variants": {
-    "type=bottom": {
-      "model": "urushi:block/half_slab_bamboo"
-    },
-    "type=double": {
-      "model": "urushi:block/bamboo_block"
-    },
-    "type=top": {
-      "model": "urushi:block/upper_slab_bamboo"
-    }
-  }
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_bamboo"
+    },
+    "type=double": {
+      "model": "urushi:block/bamboo_block"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_bamboo"
+    }
+  }
 }

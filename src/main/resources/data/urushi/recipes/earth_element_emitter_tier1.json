@@ -1,101 +1,26 @@
 {
-
-
-
   "type": "minecraft:crafting_shaped",
-
-
-
   "pattern": [
-
-
-
     "pjp",
-
-
-
     "jej",
-
-
-
     "pap"
-
-
-
   ],
-
-
-
   "key": {
-
-
-
   "j": {
-
-
-
      "item": "minecraft:quartz"
-
-
-
     },
-
-
-
    "a": {
-
-
-
      "item": "urushi:earth_amber"
-
-
-
     },
-
-
-
     "e": {
-
-
-
      "item": "minecraft:gunpowder"
-
-
-
     },
-
-
-
     "p": {
-
-
-
      "item": "urushi:smooth_birch_planks"
-
-
-
     }
-
-
-
   },
-
-
-
   "result": {
-
-
-
     "item": "urushi:earth_element_emitter_tier1",
-
-
-
     "count": 1
-
-
-
   }
-
-
-
 }

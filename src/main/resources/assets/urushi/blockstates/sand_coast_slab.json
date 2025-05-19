@@ -1,25 +1,13 @@
 {
-
   "variants": {
-
     "type=bottom": {
-
       "model": "urushi:block/half_slab_sand_coast"
-
     },
-
     "type=double": {
-
       "model": "urushi:block/sand_coast"
-
     },
-
     "type=top": {
-
       "model": "urushi:block/upper_slab_sand_coast"
-
     }
-
   }
-
 }

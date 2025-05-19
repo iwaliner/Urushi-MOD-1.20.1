@@ -1,75 +1,21 @@
 {
-
-
-
   "type": "urushi:earth_element_tier2_crafting",
-
-
-
   "ingredients": [
-
-
-
   {
-
-
-
    "item": "urushi:raw_urushi_ball"
-
-
-
     },
-
-
-
     {
-
-
-
   "item": "urushi:raw_urushi_ball"
-
-
-
     },
     {
-
-
-
   "item": "urushi:raw_urushi_ball"
-
-
-
     },
     {
-
-
-
  "item": "urushi:raw_urushi_ball"
-
-
-
     }
-
-
-
   ],
-
-
-
   "result": {
-
-
-
   "item":"urushi:earth_amber"
-
-
-
   },
-
-
-
   "reiryoku": 200
-
-
-
 }

@@ -1,29 +1,15 @@
-{
-
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-
-    {
-
-      "item": "urushi:red_urushi_slab"
-
-    },
-
-    {
-
-      "item": "urushi:red_urushi_slab"
-
-    }
-
-  ],
-
-  "result": {
-
-    "item": "urushi:smooth_red_urushi_planks",
-
-      "count": 1
-
-  }
-
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:red_urushi_slab"
+    },
+    {
+      "item": "urushi:red_urushi_slab"
+    }
+  ],
+  "result": {
+    "item": "urushi:smooth_red_urushi_planks",
+      "count": 1
+  }
 }

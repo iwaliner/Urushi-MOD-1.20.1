@@ -1,7 +1,7 @@
-{
-  "variants": {
-    "": {
-      "model": "urushi:block/hiwadabuki_block"
-    }
-  }
+{
+  "variants": {
+    "": {
+      "model": "urushi:block/hiwadabuki_block"
+    }
+  }
 }
