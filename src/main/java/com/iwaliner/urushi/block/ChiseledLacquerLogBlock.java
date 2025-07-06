@@ -20,6 +20,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageSources;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MoverType;
@@ -69,31 +70,36 @@ public class ChiseledLacquerLogBlock extends HorizonalRotateBlock{
            level.setBlockAndUpdate(pos,state.setValue(FILLED, Boolean.TRUE));
            level.playSound((Player) null,(double) pos.getX()+0.5D,(double) pos.getY()+0.5D,(double) pos.getZ()+0.5D, SoundEvents.HONEY_BLOCK_BREAK, SoundSource.BLOCKS,1F,1F);
        }
-       if(random.nextInt(5)==0&&state.getBlock() instanceof ChiseledLacquerLogBlock&& state.getValue(FILLED)){
+       if(state.getBlock() instanceof ChiseledLacquerLogBlock&& state.getValue(FILLED)){
            ElementType element=null;
            if(isPressured(level,pos)){
                AABB aabb =new AABB(pos).inflate(1.4D,1.4D,1.4D);
                List<LivingEntity> list2 = level.getEntitiesOfClass(LivingEntity.class, aabb);
                if(!list2.isEmpty()) {
                    for (LivingEntity entity : list2) {
+                       boolean flag=false;
                        if(ElementUtils.isWoodElementMob(entity)) {
                            element=ElementType.WoodElement;
-                           break;
+                           flag=true;
                        }else if(ElementUtils.isFireElementMob(entity)) {
                            element=ElementType.FireElement;
-                           break;
+                           flag=true;
                        }else if(ElementUtils.isEarthElementMob(entity)) {
                            element=ElementType.EarthElement;
-                           break;
+                           flag=true;
                        }else if(ElementUtils.isMetalElementMob(entity)) {
                            element=ElementType.MetalElement;
-                           break;
+                           flag=true;
                        }else if(ElementUtils.isWaterElementMob(entity)) {
                            element=ElementType.WaterElement;
-                           break;
+                           flag=true;
                        }
                        level.playSound((Player) null,pos,SoundEvents.STONE_PLACE,SoundSource.BLOCKS,1F,1F);
-                       entity.discard();
+                       if(flag) {
+                           entity.hurt(entity.damageSources().magic(),1F);
+                           break;
+                       }
+
                    }
                }
 
@@ -112,7 +118,6 @@ public class ChiseledLacquerLogBlock extends HorizonalRotateBlock{
                        case MetalElement -> {
                            spawnBlock = ItemAndBlockRegister.petrified_log_with_metal_amber;
                        }
-                       // case WaterElement -> {
                        default -> {
                            spawnBlock = ItemAndBlockRegister.petrified_log_with_water_amber;
                        }

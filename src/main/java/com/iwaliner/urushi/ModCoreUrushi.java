@@ -48,6 +48,7 @@ import net.minecraft.world.entity.animal.Fox;
 import net.minecraft.world.entity.animal.Squid;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.PlayerModelPart;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.crafting.Recipe;
@@ -629,7 +630,7 @@ public class ModCoreUrushi {
         BlockPos pos=event.getPos();
         RandomSource randomSource=level.getRandom();
         BlockState state=event.getFinalState();
-        if(!level.isClientSide()) {
+        if(!level.isClientSide()&&level.getBlockState(pos.above()).isAir()) {
             if (randomSource.nextInt(6) == 0) {
                 ItemStack crop=new ItemStack(ItemAndBlockRegister.rice_crop.get());
                 int i=randomSource.nextInt(4);
@@ -720,8 +721,11 @@ public class ModCoreUrushi {
                 if(itemGet == null){
                     return;
                 }
-                livingEntity.setItemInHand(hand, new ItemStack(itemGet, livingEntity.getItemInHand(hand).getCount()));
-                event.getLevel().playSound((Player) null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 1F, 1F);
+                if (!event.getEntity().getInventory().add(new ItemStack(itemGet))) {
+                    event.getEntity().drop(new ItemStack(itemGet), false);
+                }
+                livingEntity.getItemInHand(hand).shrink(1);
+              event.getLevel().playSound((Player) null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 1F, 1F);
             }
         }
     }
@@ -736,9 +740,6 @@ public class ModCoreUrushi {
                 long j = event.getLevel().getServer().getLevel(Level.OVERWORLD).getDayTime() + 24000L;
                 event.getLevel().getServer().getLevel(Level.OVERWORLD).setDayTime((long) j - j % 24000L);
             }
-            /*for (ServerLevel serverlevel : Objects.requireNonNull(event.getEntity().level().getServer()).getAllLevels()) {
-                serverlevel.setDayTime((long) 24000);
-            }*/
         }
     }
 

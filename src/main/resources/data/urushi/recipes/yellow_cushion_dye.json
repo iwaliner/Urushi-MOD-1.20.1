@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "urushi:cushions"
+    },
+    {
+    "tag": "forge:dyes/yellow"
+    }
+  ],
+  "result": {
+    "item": "urushi:yellow_cushion"
+  }
+}

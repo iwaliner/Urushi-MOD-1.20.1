@@ -111,9 +111,7 @@ public class RainwaterTankBlock extends AbstractHorizontalRotateHighBlock{
                     }
                     if (stack.getItem() == Items.BUCKET) {
                         stack.shrink(1);
-                        if (stack.isEmpty()) {
-                            player.setItemInHand(hand, new ItemStack(Items.WATER_BUCKET));
-                        } else if (!player.getInventory().add(new ItemStack(Items.WATER_BUCKET))) {
+                         if (!player.getInventory().add(new ItemStack(Items.WATER_BUCKET))) {
                             player.drop(new ItemStack(Items.WATER_BUCKET), false);
                         }
                         level.playSound((Player) null, (double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, SoundEvents.BUCKET_FILL, SoundSource.BLOCKS, 1F, 1F);
@@ -121,9 +119,7 @@ public class RainwaterTankBlock extends AbstractHorizontalRotateHighBlock{
 
                     } else if (stack.getItem() == Items.GLASS_BOTTLE) {
                         stack.shrink(1);
-                        if (stack.isEmpty()) {
-                            player.setItemInHand(hand, PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.WATER));
-                        } else if (!player.getInventory().add(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.WATER))) {
+                       if (!player.getInventory().add(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.WATER))) {
                             player.drop(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.WATER), false);
                         }
                         level.playSound((Player) null, (double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, SoundEvents.BOTTLE_FILL, SoundSource.BLOCKS, 1F, 1F);

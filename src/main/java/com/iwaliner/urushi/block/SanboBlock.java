@@ -95,19 +95,19 @@ public class SanboBlock extends BaseEntityBlock {
                 tileEntity.setItem(0,insertStack);
                 tileEntity.markUpdated();
                 heldStack.shrink(1);
-                world.playSound((Player) null,pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS,30F,10F);
+                world.playSound((Player) null,pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS,1F,1F);
                 return InteractionResult.SUCCESS;
             }else {
                 ItemStack pickedStack = tileEntity.pickItem().copy();
                 if (heldStack.isEmpty()) {
                     tileEntity.markUpdated();
                     player.setItemInHand(hand, pickedStack);
-                    world.playSound((Player) null, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 30F, 10F);
+                    world.playSound((Player) null, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1F, 1F);
                     return InteractionResult.SUCCESS;
                 } else if (!player.getInventory().add(pickedStack)) {
                     tileEntity.markUpdated();
                     player.drop(pickedStack, false);
-                    world.playSound((Player) null, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 30F, 10F);
+                    world.playSound((Player) null, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1F, 1F);
                     return InteractionResult.SUCCESS;
                 }
             }

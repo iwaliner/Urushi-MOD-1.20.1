@@ -204,7 +204,7 @@ public class SlideDoorBlock extends AbstractHighBlock {
         if(openProcess!=0&&openProcess!=13){
 
             int nextProcess= isOpening? ++openProcess : --openProcess;
-           level.setBlockAndUpdate(pos,state.setValue(OPEN,nextProcess));
+           level.setBlock(pos,state.setValue(OPEN,nextProcess),82);
            level.scheduleTick(new BlockPos(pos), this, 1);
         }
     }
@@ -299,10 +299,12 @@ public class SlideDoorBlock extends AbstractHighBlock {
             }
 
             if (state.getValue(OPEN) == 0 || state.getValue(OPEN) == 13) {
-                world.setBlock(pos, state.setValue(OPEN, Integer.valueOf(state.getValue(OPEN) == 0 ? 1 : 12)).setValue(IS_OPENING, state.getValue(OPEN) == 0), 10);
+                world.setBlock(pos, state.setValue(OPEN, Integer.valueOf(state.getValue(OPEN) == 0 ? 1 : 12)).setValue(IS_OPENING, state.getValue(OPEN) == 0), 82);
+                world.setBlock(pos2, state2.setValue(OPEN, Integer.valueOf(state.getValue(OPEN) == 0 ? 1 : 12)).setValue(IS_OPENING, state.getValue(OPEN) == 0), 82);
                 world.playSound(player, pos, SoundEvents.BARREL_OPEN, SoundSource.BLOCKS, 1.0F, 1.0F);
 
                 world.scheduleTick(new BlockPos(pos), this, 2);
+                world.scheduleTick(new BlockPos(pos2), this, 2);
 
 
                 return InteractionResult.sidedSuccess(world.isClientSide);
@@ -321,8 +323,6 @@ public class SlideDoorBlock extends AbstractHighBlock {
         boolean flag = world.hasNeighborSignal(pos) || world.hasNeighborSignal(pos.relative(state.getValue(HALF) == DoubleBlockHalf.LOWER ? Direction.UP : Direction.DOWN));
         BlockPos anotherPos = state.getValue(HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         BlockState anotherState=world.getBlockState(anotherPos);
-
-        if (block != this&& flag != state.getValue(POWERED)) {
             if(ConfigUrushi.instantlySlidingDoor.get()){
                 if (state.getValue(OPEN) == 0 || state.getValue(OPEN) == 13) {
                     if (flag == isClose(state)) {
@@ -331,17 +331,23 @@ public class SlideDoorBlock extends AbstractHighBlock {
                     }
                     if(flag&&state.getValue(OPEN) == 0){
                         world.setBlock(pos, state.setValue(POWERED, false).setValue(OPEN, 13).setValue(IS_OPENING, flag), 2);
-                       // world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 13).setValue(IS_OPENING, flag), 2);
+                        world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 13).setValue(IS_OPENING, flag), 2);
                         world.scheduleTick(new BlockPos(pos), this, 1);
-                    //    world.scheduleTick(new BlockPos(anotherPos), this, 1);
+                        world.scheduleTick(new BlockPos(anotherPos), this, 1);
                     }else if(!flag&&state.getValue(OPEN) == 13) {
                         world.setBlock(pos, state.setValue(POWERED, false).setValue(OPEN, 0).setValue(IS_OPENING, flag), 2);
-                  //      world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 0).setValue(IS_OPENING, flag), 2);
+                        world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 0).setValue(IS_OPENING, flag), 2);
                         world.scheduleTick(new BlockPos(pos), this, 1);
-                      //  world.scheduleTick(new BlockPos(anotherPos), this, 1);
+                        world.scheduleTick(new BlockPos(anotherPos), this, 1);
                     }
                 }
-            }else {
+            }else if(flag&&state.getValue(OPEN) != 0&&!state.getValue(POWERED)){
+                world.setBlock(pos, state.setValue(POWERED, true), 82);
+                if(anotherState.getBlock() instanceof SlideDoorBlock) {
+                    world.setBlock(anotherPos, anotherState.setValue(POWERED, true), 82);
+                 }
+                }
+            else if((flag&&state.getValue(OPEN) == 0)||(!flag&&state.getValue(OPEN) == 13&&state.getValue(POWERED))){
                 Display.BlockDisplay blockDisplay=new Display.BlockDisplay(EntityType.BLOCK_DISPLAY,world);
                 SynchedEntityData entityData=blockDisplay.getEntityData();
                 entityData.set(BlockDisplayMixin.getData(),state.setValue(SlideDoorBlock.OPEN,0));
@@ -412,21 +418,22 @@ public class SlideDoorBlock extends AbstractHighBlock {
                         world.addFreshEntity(blockDisplay2);
                     }
                 }
-                if (state.getValue(OPEN) == 0 || state.getValue(OPEN) == 13) {
-                    if (flag == isClose(state)) {
+                   if (flag == isClose(state)) {
                         world.playSound((Player) null, pos, SoundEvents.BARREL_OPEN, SoundSource.BLOCKS, 1.0F, 1.0F);
 
                     }
                     if(flag&&state.getValue(OPEN) == 0){
-                        world.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, 1).setValue(IS_OPENING, flag), 2);
-                         world.scheduleTick(new BlockPos(pos), this, 2);
+                        world.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, 1).setValue(IS_OPENING, flag), 82);
+                        world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 1).setValue(IS_OPENING, flag), 82);
+                        world.scheduleTick(new BlockPos(pos), this, 2);
+                        world.scheduleTick(new BlockPos(anotherPos), this, 2);
                     }else if(!flag&&state.getValue(OPEN) == 13) {
-                        world.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, 12).setValue(IS_OPENING, flag), 2);
-                       world.scheduleTick(new BlockPos(pos), this, 2);
+                        world.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, 12).setValue(IS_OPENING, flag), 82);
+                        world.setBlock(anotherPos, anotherState.setValue(POWERED, flag).setValue(OPEN, 12).setValue(IS_OPENING, flag), 82);
+                        world.scheduleTick(new BlockPos(pos), this, 2);
+                        world.scheduleTick(new BlockPos(anotherPos), this, 2);
                     }
-                }
             }
-        }
     }
 
    @Override

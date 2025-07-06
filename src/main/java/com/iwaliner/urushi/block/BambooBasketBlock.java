@@ -71,12 +71,18 @@ public class BambooBasketBlock extends BaseEntityBlock {
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
         if(world.getBlockEntity(pos)instanceof BambooBasketBlockEntity) {
-            if(!player.isSuppressingBounce()) {
-                BambooBasketBlockEntity tileEntity = (BambooBasketBlockEntity) world.getBlockEntity(pos);
-                ItemStack heldStack = player.getItemInHand(hand);
+            if(!player.isSuppressingBounce()&&world.getBlockEntity(pos) instanceof  BambooBasketBlockEntity tileEntity) {
+                 ItemStack heldStack = player.getItemInHand(hand);
                 ItemStack insertStack = heldStack.copy();
                 insertStack.setCount(1);
-                if(!heldStack.isEmpty()){
+                boolean isFull=true;
+                for (int i = 0; i < 5; i++) {
+                    if (tileEntity.canPlaceItem(i)) {
+                        isFull=false;
+                        break;
+                    }
+                }
+                if(!heldStack.isEmpty()&&!isFull){
                 for (int i = 0; i < 5; i++) {
                     if (tileEntity.canPlaceItem(i)) {
                         tileEntity.setItem(i, insertStack);
@@ -89,12 +95,6 @@ public class BambooBasketBlock extends BaseEntityBlock {
                 } else {
                     for (int i = 0; i < 5; i++) {
                         ItemStack pickedStack = Objects.requireNonNull(tileEntity).pickItem(i).copy();
-                      /*  if (heldStack.isEmpty()) {
-                            tileEntity.markUpdated();
-                            player.setItemInHand(hand, pickedStack);
-                            world.playSound((Player) null, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 30F, 10F);
-
-                        } else */
                             if (!player.getInventory().add(pickedStack)) {
                             tileEntity.markUpdated();
                             player.drop(pickedStack, false);

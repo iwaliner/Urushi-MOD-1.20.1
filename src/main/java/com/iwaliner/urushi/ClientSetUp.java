@@ -323,7 +323,6 @@ public class ClientSetUp {
         ModCoreUrushi.urushiTabContents.add(ItemAndBlockRegister.kakuriyo_villager_spawn_egg);
 
 
-
         /**jsonファイルを自動生成するために開発環境のパスを登録*/
         if(ModCoreUrushi.isDebug) {
         FMLPaths.GAMEDIR.get();

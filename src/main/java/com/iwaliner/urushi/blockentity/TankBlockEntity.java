@@ -24,7 +24,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class TankBlockEntity extends AbstractReiryokuStorableBlockEntity implements ReiryokuImportable,ReiryokuExportable {
     public TankBlockEntity(BlockPos p_155550_, BlockState p_155551_) {
-        super(BlockEntityRegister.Tank.get(),1000, p_155550_, p_155551_);
+        super(BlockEntityRegister.Tank.get(),6000, p_155550_, p_155551_);
     }
 
 

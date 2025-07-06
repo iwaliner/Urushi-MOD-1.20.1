@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "urushi:white_cushion",
+    "urushi:orange_cushion",
+    "urushi:magenta_cushion",
+    "urushi:light_blue_cushion",
+    "urushi:yellow_cushion",
+    "urushi:lime_cushion",
+    "urushi:pink_cushion",
+    "urushi:light_gray_cushion",
+    "urushi:gray_cushion",
+    "urushi:cyan_cushion",
+    "urushi:purple_cushion",
+    "urushi:blue_cushion",
+    "urushi:green_cushion",
+    "urushi:red_cushion",
+    "urushi:brown_cushion",
+    "urushi:black_cushion"
+  ]
+}

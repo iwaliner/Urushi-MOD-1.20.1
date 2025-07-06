@@ -3,7 +3,7 @@
   "start_pool": "urushi:wood_circle",
   "size": 1,
   "max_distance_from_center": 80,
-  "biomes": "#urushi:has_normal_kakuriyo_structures",
+  "biomes": "#urushi:any_kakuriyo_biome",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {

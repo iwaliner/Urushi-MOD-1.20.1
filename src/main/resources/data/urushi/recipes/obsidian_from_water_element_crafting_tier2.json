@@ -1,0 +1,21 @@
+{
+  "type": "urushi:water_element_tier2_crafting",
+  "ingredients": [
+  {
+    "item":"minecraft:magma_block"
+    },
+    {
+		"item":"minecraft:magma_block"
+    },
+    {
+	"item":"minecraft:magma_block"
+    },
+    {
+   "item":"minecraft:magma_block"
+    }
+  ],
+  "result": {
+  "item":"minecraft:obsidian"
+  },
+  "reiryoku": 100
+}

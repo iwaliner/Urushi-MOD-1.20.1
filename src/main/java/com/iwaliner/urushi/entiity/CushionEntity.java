@@ -180,8 +180,7 @@ public class CushionEntity extends Entity {
         if(!level().isClientSide()&&this.getPassengers().isEmpty()){
             if(!list.isEmpty()) {
                 for (LivingEntity entity : list) {
-                    if (entity instanceof Player) {
-                    } else {
+                    if (!(entity instanceof Player)&&!entity.isPassenger()) {
                         entity.startRiding(this);
                         level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
                         break;

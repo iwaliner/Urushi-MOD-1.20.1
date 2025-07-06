@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "urushi:cushions"
+    },
+    {
+    "tag": "forge:dyes/lime"
+    }
+  ],
+  "result": {
+    "item": "urushi:lime_cushion"
+  }
+}

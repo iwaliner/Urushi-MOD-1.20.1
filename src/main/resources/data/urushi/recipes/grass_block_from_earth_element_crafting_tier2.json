@@ -1,0 +1,21 @@
+{
+  "type": "urushi:earth_element_tier2_crafting",
+  "ingredients": [
+  {
+    "item":"minecraft:dirt"
+    },
+    {
+		"item":"minecraft:dirt"
+    },
+    {
+	"item":"minecraft:dirt"
+    },
+    {
+   "item":"minecraft:dirt"
+    }
+  ],
+  "result": {
+  "item":"minecraft:grass_block"
+  },
+  "reiryoku": 10
+}

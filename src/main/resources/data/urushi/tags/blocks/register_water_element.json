@@ -4,6 +4,7 @@
   "minecraft:dried_kelp_block",
   "minecraft:cactus",
   "minecraft:kelp",
+  "minecraft:kelp_plant",
   "minecraft:clay",
   "#minecraft:ice",
   "#minecraft:snow",
@@ -17,6 +18,7 @@
   "minecraft:prismarine_brick_stairs",
   "minecraft:dark_prismarine",
   "minecraft:dark_prismarine_slab",
-  "minecraft:dark_prismarine_stairs"
+  "minecraft:dark_prismarine_stairs",
+  "minecraft:melon"
   ]
 }

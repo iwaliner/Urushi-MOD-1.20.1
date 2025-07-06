@@ -1352,13 +1352,13 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> earth_amber =ITEMS.register("earth_amber", () -> {return new ToolchipItem("earth_amber",(new Item.Properties()));});
     public static final RegistryObject<Item> metal_amber =ITEMS.register("metal_amber", () -> {return new ToolchipItem("metal_amber",(new Item.Properties()));});
     public static final RegistryObject<Item> water_amber =ITEMS.register("water_amber", () -> {return new ToolchipItem("water_amber",(new Item.Properties()));});
-    public static final RegistryObject<Block> petrified_log =BW("petrified_log","p",-1,() -> {return new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F).requiresCorrectToolForDrops());});
-    public static final RegistryObject<Block> petrified_log_with_wood_amber =BM("petrified_log_with_wood_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F).requiresCorrectToolForDrops());});
-    public static final RegistryObject<Block> petrified_log_with_fire_amber =BM("petrified_log_with_fire_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F).requiresCorrectToolForDrops());});
-    public static final RegistryObject<Block> petrified_log_with_earth_amber =BM("petrified_log_with_earth_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F).requiresCorrectToolForDrops());});
-    public static final RegistryObject<Block> petrified_log_with_metal_amber =BM("petrified_log_with_metal_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F).requiresCorrectToolForDrops());});
-    public static final RegistryObject<Block> petrified_log_with_water_amber =BM("petrified_log_with_water_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F).requiresCorrectToolForDrops());});
-    public static final RegistryObject<Block> petrified_planks =BW("petrified_planks","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F).requiresCorrectToolForDrops());});
+    public static final RegistryObject<Block> petrified_log =BW("petrified_log","p",-1,() -> {return new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
+    public static final RegistryObject<Block> petrified_log_with_wood_amber =BM("petrified_log_with_wood_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
+    public static final RegistryObject<Block> petrified_log_with_fire_amber =BM("petrified_log_with_fire_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
+    public static final RegistryObject<Block> petrified_log_with_earth_amber =BM("petrified_log_with_earth_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
+    public static final RegistryObject<Block> petrified_log_with_metal_amber =BM("petrified_log_with_metal_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
+    public static final RegistryObject<Block> petrified_log_with_water_amber =BM("petrified_log_with_water_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
+    public static final RegistryObject<Block> petrified_planks =BW("petrified_planks","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> sanbo_tier1 =BM("sanbo_tier1","a",-1,() -> {return new SanboBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.WOOD).strength(1.0F, 10.0F).dynamicShape());});
     public static final RegistryObject<Block> wood_element_sacred_rock =BM("wood_element_sacred_rock","p",-1,() -> {return new SacredRockBlock(ElementType.WoodElement,BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> fire_element_sacred_rock =BM("fire_element_sacred_rock","p",-1,() -> {return new SacredRockBlock(ElementType.FireElement,BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1.0F, 10.0F));});
@@ -1511,6 +1511,7 @@ public class ItemAndBlockRegister {
                 output.accept(lantern_plant_torch_item.get());
                 output.accept(empty_bamboo_cup.get());
                 output.accept(water_bamboo_cup.get());
+                output.accept(straw.get());
                 //output.accept(kakuriyo_chronicles_1.get());
             })
             .build());

@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.entity.ItemRenderer;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
@@ -35,7 +36,7 @@ public class DoubledWoodenCabinetryRenderer implements BlockEntityRenderer<Doubl
                 float f = -direction1.toYRot();
                 poseStack.mulPose(Axis.YP.rotationDegrees(f));
                 poseStack.scale(0.5F, 0.5F, 0.5F);
-                this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, 16777215, i2, poseStack, bufferSource, blockEntity.getLevel(), (int) blockEntity.getBlockPos().relative(direction).asLong());
+                this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, 15728880, OverlayTexture.NO_OVERLAY, poseStack, bufferSource, blockEntity.getLevel(), (int) blockEntity.getBlockPos().relative(direction).asLong());
                 poseStack.popPose();
             }
 

@@ -56,7 +56,7 @@ public class EmptyBambooCup extends Item {
                 if (level.getFluidState(blockpos).is(FluidTags.WATER)) {
                     level.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.BOTTLE_FILL, SoundSource.NEUTRAL, 1.0F, 1.0F);
                     level.gameEvent(player, GameEvent.FLUID_PICKUP, blockpos);
-                    this.turnBottleIntoItem(itemstack,player,new ItemStack(ItemAndBlockRegister.water_bamboo_cup.get()));
+                    player.setItemInHand(hand,new ItemStack(ItemAndBlockRegister.water_bamboo_cup.get(),itemstack.getCount()));
                     return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
                 }
             }
@@ -72,21 +72,11 @@ public class EmptyBambooCup extends Item {
         if (entity instanceof Cow||entity instanceof Goat) {
             if(entity.isAlive()&&!entity.isBaby()) {
                 player.playSound(SoundEvents.COW_MILK, 1.0F, 1.0F);
-                this.turnBottleIntoItem(stack, player, new ItemStack(ItemAndBlockRegister.milk_bamboo_cup.get()));
+                player.setItemInHand(hand,new ItemStack(ItemAndBlockRegister.milk_bamboo_cup.get(),player.getItemInHand(hand).getCount()));
                 return InteractionResult.sidedSuccess(player.level().isClientSide);
             }
         }
         return InteractionResult.FAIL;
-    }
-
-
-    protected void turnBottleIntoItem(ItemStack stack, Player player, ItemStack result) {
-        stack.shrink(1);
-        if (!player.getInventory().add(result)) {
-            player.drop(result, false);
-        }
-        player.playSound(SoundEvents.COW_MILK,1F,0.5F);
-
     }
     @Override
     public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> list, TooltipFlag p_41424_) {

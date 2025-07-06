@@ -9,6 +9,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
@@ -48,7 +49,12 @@ public class BearingMandarinLeavesBlock extends LeavesBlock {
         boolean flag = i == 1;
        if (i ==1) {
             int j = 1 + level.random.nextInt(2);
-            popResource(level, pos.above(), new ItemStack(ItemAndBlockRegister.mandarin.get(), j ));
+           // popResource(level, pos.above(), new ItemStack(ItemAndBlockRegister.mandarin.get(), j ));
+            BlockPos relativePos=pos.relative(result.getDirection());
+           ItemEntity itemEntity=new ItemEntity(level,relativePos.getX()+0.5D,relativePos.getY()+0.5D,relativePos.getZ()+0.5D,new ItemStack(ItemAndBlockRegister.mandarin.get()));
+           if(!level.isClientSide()){
+               level.addFreshEntity(itemEntity);
+           }
             level.playSound((Player)null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
             BlockState blockstate = state.setValue(AGE, Integer.valueOf(0));
             level.setBlock(pos, blockstate, 2);

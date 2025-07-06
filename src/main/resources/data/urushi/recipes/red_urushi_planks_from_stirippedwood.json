@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:stripped_red_urushi_wood"
+    }
+  ],
+  "result": {
+    "item": "urushi:red_urushi_planks",
+      "count": 4
+  }
+}
