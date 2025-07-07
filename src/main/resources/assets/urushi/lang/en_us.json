@@ -1468,7 +1468,7 @@
    "info.urushi.fluid_erasion_jufu1": "Erase fluids in an area of 11 ×11. (except for Grass Block)",
    "info.urushi.spike_jufu1": "Generate metal spikes and hurts mobs.",
    "info.urushi.spike_jufu2": "The damage by the spikes is treated as an attack by the player, so the mob drops experiences and rare drops.",
-   "info.urushi.freezing_jufu1": "Holds mobs for 5 seconds.",
+   "info.urushi.freezing_jufu1": "Holds mobs for 10 seconds.",
    "block.urushi.green_tatami_slab": "Green Tatami Slab",
    "block.urushi.brown_tatami_slab": "Brown Tatami Slab",
    "block.urushi.sand_coast_slab": "Sand Coast Slab",

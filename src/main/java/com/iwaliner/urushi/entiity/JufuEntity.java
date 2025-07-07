@@ -63,7 +63,7 @@ public class JufuEntity extends ThrowableItemProjectile  {
             entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20 * 5, 20), this);
 
             BlockState state=ItemAndBlockRegister.freezing_display.get().defaultBlockState();
-            JufuEffectDisplayEntity ice = JufuEffectDisplayEntity.create(level(),entity, state,5,0);
+            JufuEffectDisplayEntity ice = JufuEffectDisplayEntity.create(level(),entity, state,10,0);
             ice.startRiding(entity);
             level().addFreshEntity(ice);
             return true;
@@ -96,7 +96,7 @@ public class JufuEntity extends ThrowableItemProjectile  {
         }else if(this.getItemRaw().getItem()==ItemAndBlockRegister.jump_jufu.get()) {
             this.level().playSound((Player)null, this.blockPosition(), SoundEvents.GENERIC_EXPLODE, SoundSource.BLOCKS, 1.0F, 1.0F);
 
-            entity.move(MoverType.SELF, entity.getDeltaMovement().add(0D,8D,0D));
+            entity.move(MoverType.SELF, entity.getDeltaMovement().add(0D,16D,0D));
             return true;
         }
         return false;

@@ -99,7 +99,7 @@ public class SpikeBlock extends BaseEntityBlock {
 
         if(!(entity instanceof Player)&&entity instanceof LivingEntity livingEntity&&level.getBlockEntity(pos) instanceof SpikeBlockEntity spikeBlockEntity){
 
-            livingEntity.hurt(livingEntity.damageSources().playerAttack(spikeBlockEntity.getPlayer()), 3F);
+            livingEntity.hurt(livingEntity.damageSources().playerAttack(spikeBlockEntity.getPlayer()), 8F);
         }
     }
 

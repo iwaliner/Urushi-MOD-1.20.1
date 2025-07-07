@@ -25,6 +25,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.network.NetworkHooks;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CushionEntity extends Entity {
@@ -68,7 +69,7 @@ public class CushionEntity extends Entity {
     }
 
     public boolean canBeCollidedWith() {
-        return true;
+        return false;
     }
     /**目線の高さ。0.0Fだと当たり判定の底面部分。*/
     @Override
@@ -77,7 +78,11 @@ public class CushionEntity extends Entity {
     }
 
     public double getPassengersRidingOffset() {
-        return -0.05D;
+        if(getFirstPassenger() instanceof CushionEntity){
+            return 0.2D;
+        }else {
+            return -0.05D;
+        }
     }
     public Item getDropItem() {
         switch(this.getCushionType()) {
@@ -135,10 +140,19 @@ public class CushionEntity extends Entity {
             return true;
         }
     }
-
     @Override
     public boolean canRiderInteract() {
         return true;
+    }
+    private void searchRiderCushion(CushionEntity cushionEntity,List<Entity> list,boolean flag){
+        if(cushionEntity.getFirstPassenger() instanceof CushionEntity entity2){
+            searchRiderCushion(entity2,list,flag);
+        }else{
+            list.add(cushionEntity);
+            if(cushionEntity.getFirstPassenger()!=null&&flag){
+                cushionEntity.getFirstPassenger().stopRiding();
+            }
+        }
     }
     /**右クリック時の処理*/
     @Override
@@ -146,8 +160,8 @@ public class CushionEntity extends Entity {
         if(hand==InteractionHand.OFF_HAND){
             return InteractionResult.FAIL;
         }
-        if(player.getItemInHand(hand).getItem() instanceof CushionItem){
-            CushionItem cushionItem= (CushionItem) player.getItemInHand(hand).getItem();
+        if(!this.level().isClientSide()&&player.getItemInHand(hand).getItem() instanceof CushionItem cushionItem){
+            /*CushionItem cushionItem= (CushionItem) player.getItemInHand(hand).getItem();
             CushionEntity entity = new CushionEntity(level(), this.getX(), this.getY(),  this.getZ());
             entity.moveTo(this.getX(), this.getY()+0.2D,  this.getZ(),player.getYRot(), 0.0F);
             entity.setType(cushionItem.getColor());
@@ -155,14 +169,32 @@ public class CushionEntity extends Entity {
             player.getItemInHand(hand).shrink(1);
             level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
 
+            return InteractionResult.SUCCESS;*/
+            player.getItemInHand(hand).shrink(1);
+            level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+            if(!level().isClientSide()) {
+                CushionEntity entity = new CushionEntity(level(), this.getX(), this.getY(), this.getZ());
+                entity.moveTo(this.getX(), this.getY() + 0.2D, this.getZ(), player.getYRot(), 0.0F);
+                entity.setType(cushionItem.getColor());
+                level().addFreshEntity(entity);
+                List<Entity> list=new ArrayList<>();
+                searchRiderCushion(this,list,true);
+                if (!list.isEmpty()) {
+                    Entity top = list.get(0);
+                    entity.startRiding(top);
+                }
+            }
             return InteractionResult.SUCCESS;
         }
-        if (!this.level().isClientSide()&&this.getPassengers().isEmpty())
+        if (!this.level().isClientSide())
         {
-
-            player.startRiding(this);
-            level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
-            return InteractionResult.SUCCESS;
+            List<Entity> list=new ArrayList<>();
+            searchRiderCushion(this,list,false);
+            if(!list.isEmpty()) {
+                player.startRiding(list.get(0));
+                level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+                return InteractionResult.SUCCESS;
+            }
         }
         return InteractionResult.FAIL;
     }
@@ -182,7 +214,7 @@ public class CushionEntity extends Entity {
                 for (LivingEntity entity : list) {
                     if (!(entity instanceof Player)&&!entity.isPassenger()) {
                         entity.startRiding(this);
-                        level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+                       // level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
                         break;
                     }
                 }

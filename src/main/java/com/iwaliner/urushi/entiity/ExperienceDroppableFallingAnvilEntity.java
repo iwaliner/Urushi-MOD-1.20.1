@@ -88,7 +88,7 @@ public class ExperienceDroppableFallingAnvilEntity extends Entity {
                 Predicate<Entity> predicate = EntitySelector.NO_CREATIVE_OR_SPECTATOR.and(EntitySelector.LIVING_ENTITY_STILL_ALIVE);
                 this.level().getEntities(this, this.getBoundingBox(), predicate).forEach((p_149649_) -> {
                     if(getPlayer()!=null) {
-                        p_149649_.hurt(p_149649_.damageSources().playerAttack(getPlayer()), 18F);
+                        p_149649_.hurt(p_149649_.damageSources().playerAttack(getPlayer()), 30F);
                     }
                 });
 

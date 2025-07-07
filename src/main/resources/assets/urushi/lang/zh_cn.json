@@ -1469,7 +1469,7 @@
    "info.urushi.fluid_erasion_jufu1": "清除11×11区域范围内的流体。",
    "info.urushi.spike_jufu1": "从地下生成铁棘刺并对其上的生物造成伤害",
    "info.urushi.spike_jufu2": "铁棘刺造成的伤害视作玩家造成的伤害，且生物死亡时会掉落经验及稀有掉落物等",
-   "info.urushi.freezing_jufu1": "令生物在5秒内无法移动",
+   "info.urushi.freezing_jufu1": "令生物在10秒内无法移动",
    "block.urushi.green_tatami_slab": "绿色榻榻米台阶",
    "block.urushi.brown_tatami_slab": "棕色榻榻米台阶",
    "block.urushi.sand_coast_slab": "砂墙台阶",
