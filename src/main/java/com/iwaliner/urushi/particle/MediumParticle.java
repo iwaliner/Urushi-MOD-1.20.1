@@ -37,7 +37,8 @@ public class MediumParticle extends TextureSheetParticle {
     @Override
     public void tick() {
         super.tick();
-        BlockPos pos=BlockPos.containing(this.getPos());
+        //BlockPos pos=BlockPos.containing(this.getPos());
+        BlockPos pos=BlockPos.containing(this.x, this.y, this.z);
         BlockState state=level.getBlockState(pos);
         BlockState frontState=level.getBlockState(pos.offset(this.xd==0D? 0 : this.xd>0D? 1 : -1,this.yd==0D? 0 : this.yd>0D? 1 : -1,this.zd==0D? 0 : this.zd>0D? 1 : -1));
         VoxelShape shape= state.getCollisionShape(level,pos).optimize();
