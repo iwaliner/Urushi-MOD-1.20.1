@@ -1,0 +1,89 @@
+{
+  "parent": "urushi:obtain_rice",
+  "display": {
+    "icon": {
+      "item": "urushi:tsuna_sushi"
+    },
+    "title": {
+      "translate": "advancements.urushi.sushi.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.sushi.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tsuna": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:tsuna_sushi"
+            ]
+          }
+        ]
+      }
+    },
+    "salmon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:salmon_sushi"
+            ]
+          }
+        ]
+      }
+    },
+    "salmon_roe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:salmon_roe_sushi"
+            ]
+          }
+        ]
+      }
+    },
+    "egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:egg_sushi"
+            ]
+          }
+        ]
+      }
+    },
+    "squid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:squid_sushi"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tsuna",
+      "salmon",
+      "salmon_roe",
+      "egg",
+      "squid"
+    ]
+  ]
+}

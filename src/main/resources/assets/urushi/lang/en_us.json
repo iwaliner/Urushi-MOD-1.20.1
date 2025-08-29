@@ -1629,7 +1629,7 @@
    "info.urushi.furigana.so": "蘇(そ)",
    "info.urushi.furigana.ayu": "鮎(あゆ)",
    "#comment-furigana-end": "↑No need to translate furiganas. Keep these lines for diff experience with ja_jp",
-   "block.urushi.concrete_block_wall": "Concrete Block Wall",
+   "block.urushi.concrete_block_wall": "Scalloped Concrete Block Wall",
    "block.urushi.limonite_ore": "Limonite Ore",
    "block.urushi.chalcopyrite_ore": "Chalcopyrite Ore",
    "block.urushi.smooth_mangrove_planks": "Smooth Mangrove Planks",
@@ -1814,6 +1814,16 @@
    "advancements.urushi.silkworm.title": "Generate String",
    "advancements.urushi.silkworm.description": "Obtain Silkworm",
    "advancements.urushi.silk_thread.title": "Encouragement of New Industry",
-   "advancements.urushi.silk_thread.description": "Obtain Silk Thread"
+   "advancements.urushi.silk_thread.description": "Obtain Silk Thread",
+   "advancements.urushi.rice.title": "Eat Rice!",
+   "advancements.urushi.rice.description": "Obtain Rice",
+   "advancements.urushi.sushi.title": "3, 2, 1, Hello！",
+   "advancements.urushi.sushi.description": "Get any Sushi\n\n(Based on SCP-1134-JP - 爆転ニギリ スシブレード\n by bamboon\nhttp://scp-jp.wikidot.com/scp-1134-jp\nCC BY-SA 3.0)",
+   "block.urushi.smooth_stone_brick": "Smooth Stone Brick",
+   "block.urushi.smooth_stone_tile": "Smooth Stone Tile",
+   "block.urushi.concrete_blocks": "Concrete Blocks",
+   "block.urushi.concrete_block_slab": "Concrete Block Slab",
+   "block.urushi.concrete_block_stairs": "Concrete Block Stairs",
+   "block.urushi.concrete_block_normal_wall": "Normal Concrete Block Wall"
   
 }

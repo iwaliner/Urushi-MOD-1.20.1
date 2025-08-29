@@ -77,6 +77,8 @@ public class DoubledWoodenCabinetryScreen  extends AbstractContainerScreen<Doubl
                 p_230450_1_.blit(CONTAINER_BACKGROUND, i + 248, j + 145, 376, 0, 32, 89, 512, 512);
             } else if (UrushiUtils.isTanabata()) {
                 p_230450_1_.blit(CONTAINER_BACKGROUND, i + 248, j + 145, 409, 0, 32, 89, 512, 512);
+            }else if (UrushiUtils.isTsukimi()) {
+                p_230450_1_.blit(CONTAINER_BACKGROUND, i + 248, j + 145, 442, 0, 32, 89, 512, 512);
             }
         }
     }

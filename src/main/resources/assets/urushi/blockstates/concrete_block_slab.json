@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "urushi:block/half_slab_concrete_block"
+    },
+    "type=double": {
+      "model": "urushi:block/concrete_blocks"
+    },
+    "type=top": {
+      "model": "urushi:block/upper_slab_concrete_block"
+    }
+  }
+}

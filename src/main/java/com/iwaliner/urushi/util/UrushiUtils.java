@@ -161,6 +161,12 @@ public class UrushiUtils {
         int j = localdate.get(ChronoField.MONTH_OF_YEAR);
         return j == 7 && i>=5&& i <=7;
     }
+    public static boolean isTsukimi() {
+        LocalDate localdate = LocalDate.now();
+        int i = localdate.get(ChronoField.DAY_OF_MONTH);
+        int j = localdate.get(ChronoField.MONTH_OF_YEAR);
+        return j==9 || (j==10&&i<10);
+    }
     public static boolean isAprilFoolsDay() {
         LocalDate localdate = LocalDate.now();
         int i = localdate.get(ChronoField.DAY_OF_MONTH);

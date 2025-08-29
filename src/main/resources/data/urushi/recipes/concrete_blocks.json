@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "urushi:concrete"
+    }
+  },
+  "result": {
+    "item": "urushi:concrete_blocks",
+    "count": 4
+  }
+}

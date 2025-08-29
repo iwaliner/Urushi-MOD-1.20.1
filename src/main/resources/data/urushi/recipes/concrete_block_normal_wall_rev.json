@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:concrete_block_wall"
+    }
+  ],
+  "result": {
+    "item": "urushi:concrete_block_normal_wall",
+      "count": 1
+  }
+}

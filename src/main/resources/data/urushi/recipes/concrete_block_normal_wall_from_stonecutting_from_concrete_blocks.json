@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "urushi:concrete_blocks"
+  },
+  "result": "urushi:concrete_block_normal_wall",
+  "count": 2
+}

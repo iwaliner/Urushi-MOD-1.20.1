@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "urushi:block/concrete_wall_top",
+        "top": "urushi:block/concrete_wall_top",
+        "side": "urushi:block/concrete_wall_side"
+    }
+}

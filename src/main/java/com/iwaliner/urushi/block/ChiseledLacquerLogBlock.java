@@ -70,10 +70,10 @@ public class ChiseledLacquerLogBlock extends HorizonalRotateBlock{
            level.setBlockAndUpdate(pos,state.setValue(FILLED, Boolean.TRUE));
            level.playSound((Player) null,(double) pos.getX()+0.5D,(double) pos.getY()+0.5D,(double) pos.getZ()+0.5D, SoundEvents.HONEY_BLOCK_BREAK, SoundSource.BLOCKS,1F,1F);
        }
-       if(state.getBlock() instanceof ChiseledLacquerLogBlock&& state.getValue(FILLED)){
+       if(state.getBlock() instanceof ChiseledLacquerLogBlock){
            ElementType element=null;
            if(isPressured(level,pos)){
-               AABB aabb =new AABB(pos).inflate(1.4D,1.4D,1.4D);
+               AABB aabb =new AABB(pos).inflate(1.7D,1.7D,1.7D);
                List<LivingEntity> list2 = level.getEntitiesOfClass(LivingEntity.class, aabb);
                if(!list2.isEmpty()) {
                    for (LivingEntity entity : list2) {

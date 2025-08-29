@@ -1,0 +1,23 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"1": "urushi:block/concrete_wall_top",
+		"particle": "urushi:block/concrete_wall_side",
+		"texture": "urushi:block/concrete_wall_side"
+	},
+	"elements": [
+		{
+			"name": "Center post",
+			"from": [4, 0, 0],
+			"to": [12, 16, 16],
+			"faces": {
+				"north": {"uv": [16, 0, 8, 16], "texture": "#texture"},
+				"east": {"uv": [16, 0, 0, 16], "texture": "#texture"},
+				"south": {"uv": [16, 0, 8, 16], "texture": "#texture"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#texture"},
+				"up": {"uv": [0, 0, 8, 16], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [0, 0, 8, 16], "texture": "#1", "cullface": "down"}
+			}
+		}
+	]
+}

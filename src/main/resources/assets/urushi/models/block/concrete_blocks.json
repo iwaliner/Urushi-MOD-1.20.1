@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/concrete_wall_top",
+        "down": "urushi:block/concrete_wall_top",
+        "up": "urushi:block/concrete_wall_top",
+        "north": "urushi:block/concrete_wall_side",
+        "east": "urushi:block/concrete_wall_side",
+        "south": "urushi:block/concrete_wall_side",
+        "west": "urushi:block/concrete_wall_side"
+    }
+}

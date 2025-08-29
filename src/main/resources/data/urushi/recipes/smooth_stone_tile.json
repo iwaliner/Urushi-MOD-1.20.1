@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "urushi:smooth_stone_brick"
+    }
+  },
+  "result": {
+    "item": "urushi:smooth_stone_tile",
+    "count": 4
+  }
+}

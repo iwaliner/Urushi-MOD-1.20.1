@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "urushi:concrete_blocks"
+    }
+  },
+  "result": {
+    "item": "urushi:concrete_block_stairs",
+    "count": 4
+  }
+}

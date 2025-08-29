@@ -1627,7 +1627,7 @@
    "info.urushi.furigana.hiyayakko": "冷奴(ひややっこ)",
    "info.urushi.furigana.so": "蘇(そ)",
    "info.urushi.furigana.ayu": "鮎(あゆ)",
-   "block.urushi.concrete_block_wall": "コンクリート塀",
+   "block.urushi.concrete_block_wall": "透かし松型のコンクリート塀",
    "block.urushi.limonite_ore": "褐鉄鉱",
    "block.urushi.chalcopyrite_ore": "黄銅鉱",
    "block.urushi.smooth_mangrove_planks": "滑らかなマングローブの板材",
@@ -1831,7 +1831,18 @@
    "info.urushi.filler_mode_8_description": "ブロックを壊す(アイテム化する)",
    "info.urushi.filler_mode_9_description": "範囲より下を埋め立て、範囲内は撤去",
    "info.urushi.filler_mode_10_description": "アイテム化させずブロックを消す",
-   "info.urushi.filler_mode_11_description": "液体のみ消す"
+   "info.urushi.filler_mode_11_description": "液体のみ消す",
+   "advancements.urushi.rice.title": "お米食べろ！",
+   "advancements.urushi.rice.description": "ご飯を手に入れる",
+   "advancements.urushi.sushi.title": "3、2、1、へいらっしゃい！",
+   "advancements.urushi.sushi.description": "いずれかの寿司を手に入れる\n\n(bamboon作\n「SCP-1134-JP - 爆転ニギリ スシブレード」に基づきます\nhttp://scp-jp.wikidot.com/scp-1134-jp\nCC BY-SA 3.0)",
+   "block.urushi.smooth_stone_brick": "滑らかな石のレンガ",
+   "block.urushi.smooth_stone_tile": "滑らかな石のタイル",
+   "block.urushi.concrete_blocks": "コンクリートブロック",
+   "block.urushi.concrete_block_slab": "コンクリートブロックのハーフブロック",
+   "block.urushi.concrete_block_stairs": "コンクリートブロックの階段",
+   "block.urushi.concrete_block_normal_wall": "透かし無しのコンクリート塀"
+   
    
    
 }

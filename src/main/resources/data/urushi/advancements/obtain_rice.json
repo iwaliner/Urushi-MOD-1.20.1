@@ -1,0 +1,37 @@
+{
+  "parent": "urushi:root",
+  "display": {
+    "icon": {
+      "item": "urushi:rice"
+    },
+    "title": {
+      "translate": "advancements.urushi.rice.title"
+    },
+    "description": {
+      "translate": "advancements.urushi.rice.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "urushi:rice"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "rice"
+    ]
+  ]
+}
