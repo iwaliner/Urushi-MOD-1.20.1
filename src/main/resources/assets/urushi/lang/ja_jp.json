@@ -1841,7 +1841,10 @@
    "block.urushi.concrete_blocks": "コンクリートブロック",
    "block.urushi.concrete_block_slab": "コンクリートブロックのハーフブロック",
    "block.urushi.concrete_block_stairs": "コンクリートブロックの階段",
-   "block.urushi.concrete_block_normal_wall": "透かし無しのコンクリート塀"
+   "block.urushi.concrete_block_normal_wall": "透かし無しのコンクリート塀",
+   "item.urushi.drawstring_bag": "巾着袋",
+   "info.urushi.drawstring_bag": "ラージチェストと同等の容量をもつバッグ",
+   "info.urushi.dyeable": "革防具と同様に染料で染めることができる"
    
    
    

@@ -1,6 +1,7 @@
 package com.iwaliner.urushi;
 
 import com.iwaliner.urushi.blockentity.menu.*;
+import com.iwaliner.urushi.item.menu.DrawstringBagMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,7 @@ public class MenuRegister {
     public static final RegistryObject<MenuType<KettleMenu>> KettleMenu = MENUS.register("kettle", () -> IForgeMenuType.create((windowId, inv, data) -> {return new KettleMenu(windowId, inv);}));
     public static final RegistryObject<MenuType<TranslatableBookMenu>> TranslatableBookMenu = MENUS.register("translatable_book", () -> IForgeMenuType.create((windowId, inv, data) -> {return new TranslatableBookMenu(windowId);}));
     public static final RegistryObject<MenuType<FillerMenu>> FillerMenu = MENUS.register("filler", () -> IForgeMenuType.create((windowId, inv, data) -> {return new FillerMenu(windowId,inv);}));
+    public static final RegistryObject<MenuType<DrawstringBagMenu>> DrawstringBagMenu = MENUS.register("drawstring_bag", () -> IForgeMenuType.create((windowId, inv, data) -> {return new DrawstringBagMenu(windowId, inv);}));
 
 
 

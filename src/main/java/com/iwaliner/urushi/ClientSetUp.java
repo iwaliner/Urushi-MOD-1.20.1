@@ -10,6 +10,8 @@ import com.iwaliner.urushi.entiity.food.renderer.*;
 import com.iwaliner.urushi.entiity.model.CushionModel;
 import com.iwaliner.urushi.entiity.model.OniModel;
 import com.iwaliner.urushi.entiity.renderer.*;
+import com.iwaliner.urushi.item.menu.DrawstringBagMenu;
+import com.iwaliner.urushi.item.screen.DrawstringBagScreen;
 import com.iwaliner.urushi.json.*;
 import com.iwaliner.urushi.particle.*;
 import com.iwaliner.urushi.util.ElementUtils;
@@ -23,6 +25,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.AttackIndicatorStatus;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -41,6 +44,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.DyeableLeatherItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -205,7 +209,7 @@ public class ClientSetUp {
         event.register((stack, i) -> {return 12300080;},ItemAndBlockRegister.kakuriyo_grass_block.get());
         event.register((stack, i) -> {return 13886461;},ItemAndBlockRegister.onsen_egg.get());
         event.register((stack, i) -> {return event.getItemColors().getColor(new ItemStack(Items.OAK_LEAVES),0);},ItemAndBlockRegister.mandarin_leaves.get());
-
+        event.register((stack, i) -> {return i > 0 ? -1 : ((DyeableLeatherItem)stack.getItem()).getColor(stack);},ItemAndBlockRegister.drawstring_bag.get());
     }
     @SubscribeEvent
     public static void registerBlockColorEvent(RegisterColorHandlersEvent.Block event) {
@@ -268,11 +272,13 @@ public class ClientSetUp {
             ItemProperties.register(ItemAndBlockRegister.raw_rice.get(), new ResourceLocation(ModCoreUrushi.ModID, "is_april_fools"), (itemStack, clientWorld, livingEntity,i) -> UrushiUtils.isAprilFoolsDay()? 1 : 0);
             ItemProperties.register(ItemAndBlockRegister.rice.get(), new ResourceLocation(ModCoreUrushi.ModID, "is_april_fools"), (itemStack, clientWorld, livingEntity,i) -> UrushiUtils.isAprilFoolsDay()? 1 : 0);
 
+
         });
 
        /**コンテナにGUIを登録*/
         MenuScreens.register(MenuRegister.FryerMenu.get(), FryerScreen::new);
         MenuScreens.register(MenuRegister.DoubledWoodenCabinetryMenu.get(), DoubledWoodenCabinetryScreen::new);
+        MenuScreens.register(MenuRegister.DrawstringBagMenu.get(), DrawstringBagScreen::new);
         MenuScreens.register(MenuRegister.UrushiHopperMenu.get(), UrushiHopperScreen::new);
         MenuScreens.register(MenuRegister.AutoCraftingTableMenu.get(), AutoCraftingTableScreen::new);
         MenuScreens.register(MenuRegister.SilkwormFarmMenu.get(), SilkwormFarmScreen::new);

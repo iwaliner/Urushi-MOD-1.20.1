@@ -1254,6 +1254,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> iron_katana =ITEMS.register("iron_katana", () -> {return new NormalKatanaItem(Tiers.IRON,4,-2.9F,(new Item.Properties()).durability(1024));});
     public static final RegistryObject<Block> rope =B("rope","a",-1,() -> {return new RopeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.LADDER).strength(0.1F, 10.0F));});
     public static final RegistryObject<Item> climbing_rope =ITEMS.register("climbing_rope", () -> {return new ClimbingRopesItem((new Item.Properties()));});
+    public static final RegistryObject<Item> drawstring_bag =ITEMS.register("drawstring_bag", () -> {return new DrawstringBagItem((new Item.Properties().stacksTo(1)));});
     public static final RegistryObject<Item> open_wagasa =ITEMS.register("open_wagasa", () -> {return new WagasaItem(true,(new Item.Properties()).stacksTo(1));});
     public static final RegistryObject<Item> close_wagasa =ITEMS.register("close_wagasa", () -> {return new WagasaItem(false,(new Item.Properties()).stacksTo(1));});
     public static final RegistryObject<LiquidBlock> HotSpringBlock =BLOCKS.register("hot_spring_water",() -> {return new HotSpringWaterBlock(()->FluidRegister.HotSpringStill.get(),BlockBehaviour.Properties.of().mapColor(MapColor.WATER).liquid().pushReaction(PushReaction.DESTROY).replaceable().noLootTable().strength(1000F).noCollission());});
@@ -1490,6 +1491,7 @@ public class ItemAndBlockRegister {
                         }
                     }
                 }
+                output.accept(drawstring_bag.get());
                 output.accept(white_cushion.get());
                 output.accept(orange_cushion.get());
                 output.accept(magenta_cushion.get());

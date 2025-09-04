@@ -8,6 +8,7 @@ import com.iwaliner.urushi.network.FramedBlockTextureConnectionData;
 import com.iwaliner.urushi.network.FramedBlockTextureConnectionProvider;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
+import com.iwaliner.urushi.util.MemoryScreen;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.util.interfaces.ElementBlock;
 import com.iwaliner.urushi.util.interfaces.ElementItem;
@@ -21,6 +22,7 @@ import net.minecraft.advancements.FrameType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -258,6 +260,18 @@ public class ModCoreUrushi {
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.mandarin_sapling.get().asItem(),0.3F);
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.mandarin.get().asItem(),0.3F);
         ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.mandarin_slice.get().asItem(),0.1F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.tsuna_sashimi.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.salmon_sashimi.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.salmon_roe.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.squid_sashimi.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.tsuna.get().asItem(),1F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.shrimp.get().asItem(),0.65F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.sweetfish.get().asItem(),0.8F);
+        ComposterBlock.COMPOSTABLES.put(ItemAndBlockRegister.sweetfish_with_salt.get().asItem(),0.8F);
+        ComposterBlock.COMPOSTABLES.put(Items.SALMON.asItem(),0.8F);
+        ComposterBlock.COMPOSTABLES.put(Items.COD.asItem(),0.8F);
+        ComposterBlock.COMPOSTABLES.put(Items.PUFFERFISH.asItem(),0.8F);
+        ComposterBlock.COMPOSTABLES.put(Items.TROPICAL_FISH.asItem(),0.8F);
 
 
 
@@ -769,13 +783,34 @@ public class ModCoreUrushi {
 
         }
     }
-
+    @SubscribeEvent
+    public static void onScreenDrawPost(ScreenEvent.Init.Post event) {
+        if ( event.getScreen() instanceof TitleScreen titleScreen) {
+            long maxMemory   = Runtime.getRuntime().maxMemory() / 1024 / 1024;
+            long totalMemory = Runtime.getRuntime().totalMemory() / 1024 / 1024;
+            long freeMemory  = Runtime.getRuntime().freeMemory() / 1024 / 1024;
+            long usedMemory  = totalMemory - freeMemory;
+            logger.info(String.format("Memory: %d / %d MB", usedMemory, maxMemory));
+          //  if(maxMemory<=2048){
+           /* Component component = ComponentUtils.wrapInSquareBrackets(Component.translatable("info.urushi.max_memory_is_not_enough")).withStyle((p_214489_) -> {
+                return p_214489_.withColor(ChatFormatting.RED);
+            });*/
+                //Component c1=Component.translatable("info.urushi.max_memory_is_not_enough");
+                //Minecraft.getInstance().setScreen(new MemoryScreen(c1));
+         //   }
+        }
+    }
     @SubscribeEvent
     public void PlayerLoggedInEvent(PlayerEvent.PlayerLoggedInEvent event) {
-        if(BedBlock.canSetSpawn(event.getEntity().level())){
-            ModCoreUrushi.logger.info("canSetSpawn");
-        }else{
-            ModCoreUrushi.logger.info("cannotSetSpawn");
+        long maxMemory   = Runtime.getRuntime().maxMemory() / 1024 / 1024;
+        long totalMemory = Runtime.getRuntime().totalMemory() / 1024 / 1024;
+        long freeMemory  = Runtime.getRuntime().freeMemory() / 1024 / 1024;
+        long usedMemory  = totalMemory - freeMemory;
+        logger.info(String.format("Memory: %d / %d MB", usedMemory, maxMemory));
+        if(maxMemory<=2048){
+           /* Component component = ComponentUtils.wrapInSquareBrackets(Component.translatable("info.urushi.max_memory_is_not_enough")).withStyle((p_214489_) -> {
+                return p_214489_.withColor(ChatFormatting.RED);
+            });*/
         }
         if(ConfigUrushi.noticeNewerVersion.get()) {
             VersionChecker.CheckResult checkResult = VersionChecker.getResult(ModList.get().getModFileById(ModCoreUrushi.ModID).getMods().get(0));
