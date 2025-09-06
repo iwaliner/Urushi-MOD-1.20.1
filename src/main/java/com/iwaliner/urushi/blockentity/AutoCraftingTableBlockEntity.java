@@ -59,7 +59,6 @@ import java.util.stream.IntStream;
 public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer, StackedContentsCompatible, RecipeHolder, MenuProvider {
     public int litTime;
     public String savedRecipe;
-
     protected final ContainerData dataAccess = new ContainerData() {
         public int get(int p_58431_) {
             switch(p_58431_) {

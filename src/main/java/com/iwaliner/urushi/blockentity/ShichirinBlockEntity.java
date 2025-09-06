@@ -39,10 +39,7 @@ import net.minecraft.world.inventory.RecipeHolder;
 import net.minecraft.world.inventory.StackedContentsCompatible;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.AbstractCookingRecipe;
-import net.minecraft.world.item.crafting.CampfireCookingRecipe;
-import net.minecraft.world.item.crafting.Recipe;
-import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
@@ -55,6 +52,7 @@ import org.apache.commons.lang3.StringUtils;
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer, StackedContentsCompatible, RecipeHolder {
     private final Object2IntOpenHashMap<ResourceLocation> recipesUsed = new Object2IntOpenHashMap<>();
@@ -67,21 +65,22 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
     public int prePerfectFire;
     public int fire;
     private int differ;
+    public String savedRecipe;
     private final int iconAmount=ConfigUrushi.shichirinIconAmount.get();
     private NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
 
     public ShichirinBlockEntity(BlockPos p_155052_, BlockState p_155053_) {
         super(BlockEntityRegister.Shichirin.get(), p_155052_, p_155053_);
     }
-    public void load(CompoundTag p_155025_) {
-        super.load(p_155025_);
+    public void load(CompoundTag tag) {
+        super.load(tag);
         this.items.clear();
-        ContainerHelper.loadAllItems(p_155025_, this.items);
-        this.processingTime = p_155025_.getInt("processTime");
-        this.fire = p_155025_.getInt("fire");
-        this.differ = p_155025_.getInt("differ");
-        this.prePerfectFire = p_155025_.getInt("prePerfectFire");
-
+        ContainerHelper.loadAllItems(tag, this.items);
+        this.processingTime = tag.getInt("processTime");
+        this.fire = tag.getInt("fire");
+        this.differ = tag.getInt("differ");
+        this.prePerfectFire = tag.getInt("prePerfectFire");
+        this.savedRecipe=tag.getString("savedRecipe");
 
     }
 
@@ -92,6 +91,9 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
         p_187452_.putInt("differ", this.differ);
         p_187452_.putInt("prePerfectFire", this.prePerfectFire);
         ContainerHelper.saveAllItems(p_187452_, this.items,true);
+        if(savedRecipe!=null) {
+            p_187452_.putString("savedRecipe", this.savedRecipe);
+        }
     }
     public CompoundTag getUpdateTag() {
         CompoundTag compoundtag = new CompoundTag();
@@ -101,6 +103,9 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
         compoundtag.putInt("prePerfectFire", this.prePerfectFire);
 
         ContainerHelper.saveAllItems(compoundtag, this.items, true);
+        if(savedRecipe!=null) {
+            compoundtag.putString("savedRecipe", this.savedRecipe);
+        }
         return compoundtag;
     }
     public ClientboundBlockEntityDataPacket getUpdatePacket() {
@@ -207,12 +212,35 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
     public static void tick(Level level, BlockPos pos, BlockState state, ShichirinBlockEntity blockEntity) {
 
         if (!level.isClientSide&&state.getBlock() instanceof ShichirinBlock) {
-            Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeType<CampfireCookingRecipe>) blockEntity.recipeType, blockEntity, level).orElse(null);
-            AbstractCookingRecipe campfireCookingRecipe = (AbstractCookingRecipe) recipe;
             ItemStack slot0Stack = blockEntity.items.get(0);
             ItemStack slot1Stack = blockEntity.items.get(1);
             ItemStack fuelStack = blockEntity.items.get(2);
+            AbstractCookingRecipe campfireCookingRecipe;
+            if (blockEntity.savedRecipe==null) {
+                campfireCookingRecipe = level.getRecipeManager().getRecipeFor((RecipeType<CampfireCookingRecipe>) blockEntity.recipeType, blockEntity, level).orElse(null);
+                if (campfireCookingRecipe != null) {
+                    blockEntity.savedRecipe = campfireCookingRecipe.getId().toString();
+                }
+            } else {
+                Optional<? extends Recipe<?>> r = level.getRecipeManager().byKey(Objects.requireNonNull(ResourceLocation.tryParse(blockEntity.savedRecipe)));
+                if (r.isPresent()) {
+                    AbstractCookingRecipe cr = (AbstractCookingRecipe) r.get();
+                    if (cr.getIngredients().get(0).getItems()[0]==slot0Stack) {
+                        campfireCookingRecipe = cr;
 
+                    } else {
+                        campfireCookingRecipe = level.getRecipeManager().getRecipeFor((RecipeType<CampfireCookingRecipe>) blockEntity.recipeType, blockEntity, level).orElse(null);
+                        if (campfireCookingRecipe != null) {
+                            blockEntity.savedRecipe = campfireCookingRecipe.getId().toString();
+                        }
+                    }
+                } else {
+                    campfireCookingRecipe = level.getRecipeManager().getRecipeFor((RecipeType<CampfireCookingRecipe>) blockEntity.recipeType, blockEntity, level).orElse(null);
+                    if (campfireCookingRecipe != null) {
+                        blockEntity.savedRecipe = campfireCookingRecipe.getId().toString();
+                    }
+                }
+            }
 
 
             if (fuelStack.isEmpty() && state.getValue(ShichirinBlock.SHICHIRIN) != 0) {
@@ -231,20 +259,21 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
                 } else {
                     blockEntity.fire = 0;
                 }
-                if (blockEntity.canWork() && blockEntity.canBurn(recipe, blockEntity.items, blockEntity.getMaxStackSize())) {
-                    blockEntity.processingTime++;
-                    if (blockEntity.processingTime > 20 * 5) {
-                        blockEntity.differ += blockEntity.fire - blockEntity.getPerfectFire(campfireCookingRecipe);
+                if (campfireCookingRecipe != null){
+                    if (blockEntity.canWork() && blockEntity.canBurn(campfireCookingRecipe, blockEntity.items, blockEntity.getMaxStackSize())) {
+                        blockEntity.processingTime++;
+                        if (blockEntity.processingTime > 20 * 5) {
+                            blockEntity.differ += blockEntity.fire - blockEntity.getPerfectFire(campfireCookingRecipe);
+                        }
+                    } else {
+                        blockEntity.processingTime = 0;
                     }
-                } else {
-                    blockEntity.processingTime = 0;
-                }
-                if (!blockEntity.canBurn(recipe, blockEntity.items, blockEntity.getMaxStackSize())) {
+                if (!blockEntity.canBurn(campfireCookingRecipe, blockEntity.items, blockEntity.getMaxStackSize())) {
                     blockEntity.moveItemToExportSlot();
                 }
-                if (blockEntity.processingTime >= blockEntity.getMaxProcessTime(campfireCookingRecipe) && blockEntity.canBurn(recipe, blockEntity.items, blockEntity.getMaxStackSize())) {
-                    blockEntity.prePerfectFire=blockEntity.getPerfectFire(campfireCookingRecipe);
-                    ItemStack resultStack = ((Recipe<WorldlyContainer>) recipe).assemble(blockEntity,level.registryAccess());
+                if (blockEntity.processingTime >= blockEntity.getMaxProcessTime(campfireCookingRecipe) && blockEntity.canBurn(campfireCookingRecipe, blockEntity.items, blockEntity.getMaxStackSize())) {
+                    blockEntity.prePerfectFire = blockEntity.getPerfectFire(campfireCookingRecipe);
+                    ItemStack resultStack = campfireCookingRecipe.assemble(blockEntity, level.registryAccess());
                     resultStack.grow(slot0Stack.getCount() - 1);
                     if (resultStack.getTag() == null) {
                         resultStack.setTag(new CompoundTag());
@@ -260,8 +289,9 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
                     if (level.random.nextInt(5) == 0) {
                         fuelStack.shrink(1);
                     }
-                    level.playSound((Player) null,pos,SoundEvents.FIRE_EXTINGUISH,SoundSource.BLOCKS,1F,1F);
+                    level.playSound((Player) null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 1F, 1F);
                 }
+            }
                 if (blockEntity.fire == 0 && state.getValue(ShichirinBlock.SHICHIRIN) != 0 && state.getValue(ShichirinBlock.SHICHIRIN) != 1) {
                     //火を消す
                     level.setBlock(pos, state.setValue(ShichirinBlock.SHICHIRIN, 1), 2);
