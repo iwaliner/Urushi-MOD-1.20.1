@@ -251,7 +251,7 @@ public class SilkwormFarmBlockEntity extends BaseContainerBlockEntity implements
        return 1600;
     }
     protected int getTotalCookTime() {
-        return 100;
+        return 200;
     }
     public int[] getSlotsForFace(Direction p_180463_1_) {
         if (p_180463_1_ == Direction.DOWN) {
