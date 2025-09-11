@@ -1,0 +1,21 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:shiitake"
+  },
+  "categories": [
+    "mulch"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "urushi:shiitake"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "urushi:shiitake"
+      }
+    }
+  ]
+}
