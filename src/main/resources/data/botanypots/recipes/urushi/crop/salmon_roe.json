@@ -1,0 +1,24 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:salmon_roe"
+  },
+  "categories": [
+    "water"
+  ],
+  "growthTicks": 1360,
+  "display": {
+    "block": "urushi:goldfish_bowl",
+    "renderFluid": false
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "urushi:salmon_roe"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

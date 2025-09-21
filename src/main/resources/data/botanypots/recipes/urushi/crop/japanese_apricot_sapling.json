@@ -1,21 +1,20 @@
 {
   "type": "botanypots:crop",
   "seed": {
-    "item": "urushi:soy_crop"
+    "item": "urushi:japanese_apricot_sapling"
   },
   "categories": [
-    "dirt",
-    "farmland"
+    "dirt"
   ],
-  "growthTicks": 900,
+  "growthTicks": 1200,
   "display": {
-    "block": "urushi:soy_crop"
+    "block": "urushi:japanese_apricot_sapling"
   },
   "drops": [
     {
       "chance": 1,
       "output": {
-        "item": "urushi:soy_crop"
+        "item": "urushi:matured_japanese_apricot_fruit"
       },
       "minRolls": 1,
       "maxRolls": 1
@@ -23,10 +22,10 @@
     {
       "chance": 0.1,
       "output": {
-        "item": "urushi:soy_crop"
+        "item": "urushi:matured_japanese_apricot_fruit"
       },
       "minRolls": 1,
-      "maxRolls": 2
+      "maxRolls": 3
     }
   ]
 }

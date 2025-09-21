@@ -1,23 +1,23 @@
 {
   "type": "botanypots:crop",
   "seed": {
-    "item": "urushi:shiitake"
+    "item": "urushi:cypress_sapling"
   },
   "categories": [
-    "stone",
-    "mushroom",
-    "mulch"
+    "dirt"
   ],
   "growthTicks": 1200,
   "display": {
-    "block": "urushi:shiitake"
+    "block": "urushi:cypress_sapling"
   },
   "drops": [
     {
       "chance": 1,
       "output": {
-        "item": "urushi:shiitake"
-      }
+        "item": "urushi:cypress_bark"
+      },
+      "minRolls": 4,
+      "maxRolls": 24
     }
   ]
 }

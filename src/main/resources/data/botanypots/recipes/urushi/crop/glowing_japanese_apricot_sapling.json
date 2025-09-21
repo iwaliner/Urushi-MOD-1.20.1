@@ -1,0 +1,32 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:glowing_japanese_apricot_sapling"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "lightLevel": 14,
+  "display": {
+    "block": "urushi:glowing_japanese_apricot_sapling"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:matured_japanese_apricot_fruit"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "item": "urushi:matured_japanese_apricot_fruit"
+      },
+      "minRolls": 1,
+      "maxRolls": 3
+    }
+  ]
+}

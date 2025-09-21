@@ -1,21 +1,20 @@
 {
   "type": "botanypots:crop",
   "seed": {
-    "item": "urushi:soy_crop"
+    "item": "urushi:japanese_timber_bamboo"
   },
   "categories": [
-    "dirt",
-    "farmland"
+    "dirt"
   ],
   "growthTicks": 900,
   "display": {
-    "block": "urushi:soy_crop"
+    "block": "urushi:japanese_timber_bamboo"
   },
   "drops": [
     {
       "chance": 1,
       "output": {
-        "item": "urushi:soy_crop"
+        "item": "urushi:japanese_timber_bamboo"
       },
       "minRolls": 1,
       "maxRolls": 1
@@ -23,7 +22,7 @@
     {
       "chance": 0.1,
       "output": {
-        "item": "urushi:soy_crop"
+        "item": "urushi:japanese_timber_bamboo"
       },
       "minRolls": 1,
       "maxRolls": 2

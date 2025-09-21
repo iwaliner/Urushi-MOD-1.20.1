@@ -1,7 +1,7 @@
 {
   "type": "botanypots:crop",
   "seed": {
-    "item": "urushi:soy_crop"
+    "item": "urushi:rice_crop"
   },
   "categories": [
     "dirt",
@@ -9,13 +9,13 @@
   ],
   "growthTicks": 900,
   "display": {
-    "block": "urushi:soy_crop"
+    "block": "urushi:rice_crop"
   },
   "drops": [
     {
       "chance": 1,
       "output": {
-        "item": "urushi:soy_crop"
+        "item": "urushi:rice_crop"
       },
       "minRolls": 1,
       "maxRolls": 1
@@ -23,7 +23,7 @@
     {
       "chance": 0.1,
       "output": {
-        "item": "urushi:soy_crop"
+        "item": "urushi:rice_crop"
       },
       "minRolls": 1,
       "maxRolls": 2

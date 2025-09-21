@@ -1,32 +1,32 @@
 {
   "type": "botanypots:crop",
   "seed": {
-    "item": "urushi:soy_crop"
+    "item": "urushi:green_onion_crop"
   },
   "categories": [
     "dirt",
     "farmland"
   ],
-  "growthTicks": 900,
+  "growthTicks": 1200,
   "display": {
-    "block": "urushi:soy_crop"
+    "block": "urushi:green_onion_crop"
   },
   "drops": [
     {
       "chance": 1,
       "output": {
-        "item": "urushi:soy_crop"
-      },
-      "minRolls": 1,
-      "maxRolls": 1
-    },
-    {
-      "chance": 0.1,
-      "output": {
-        "item": "urushi:soy_crop"
+        "item": "urushi:green_onion_crop"
       },
       "minRolls": 1,
       "maxRolls": 2
+    },
+    {
+      "chance": 0.2,
+      "output": {
+        "item": "urushi:green_onion_crop"
+      },
+      "minRolls": 1,
+      "maxRolls": 3
     }
   ]
 }
