@@ -8,6 +8,7 @@
   ],
   "growthTicks": 1800,
   "display": {
+    "type": "botanypots:aging",
     "block": "urushi:tea_bush"
   },
   "drops": [
@@ -17,15 +18,15 @@
         "item": "urushi:tea_leaf"
       },
       "minRolls": 1,
-      "maxRolls": 2
+      "maxRolls": 4
     },
     {
-      "chance": 0.3,
+      "chance": 0.35,
       "output": {
         "item": "urushi:tea_leaf"
       },
       "minRolls": 2,
-      "maxRolls": 4
+      "maxRolls": 5
     }
   ]
 }

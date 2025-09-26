@@ -16,14 +16,14 @@
         "block": "urushi:lantern_plant",
         "properties": {
           "age": 0,
-          "lit": true
+          "lit": false
         }
       },
       {
         "block": "urushi:lantern_plant",
         "properties": {
-          "age": 0,
-          "lit": true
+          "age": 1,
+          "lit": false
         }
       },
       {

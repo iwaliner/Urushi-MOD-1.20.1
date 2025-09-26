@@ -4,12 +4,23 @@
     "item": "urushi:salmon_roe"
   },
   "categories": [
-    "water"
+    "water",
+    "fish"
   ],
   "growthTicks": 1360,
   "display": {
     "block": "urushi:goldfish_bowl",
-    "renderFluid": false
+    "renderFluid": false,
+    "offset": [
+      -0.02,
+      -0.2,
+      -0.02
+    ],
+    "scale": [
+      1.04,
+      1.04,
+      1.04
+    ]
   },
   "drops": [
     {

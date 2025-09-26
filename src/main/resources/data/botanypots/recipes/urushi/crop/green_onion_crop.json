@@ -9,6 +9,7 @@
   ],
   "growthTicks": 1200,
   "display": {
+    "type": "botanypots:aging",
     "block": "urushi:green_onion_crop"
   },
   "drops": [

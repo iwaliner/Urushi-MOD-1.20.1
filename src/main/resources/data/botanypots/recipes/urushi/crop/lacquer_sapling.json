@@ -20,7 +20,7 @@
       "maxRolls": 2
     },
     {
-      "chance": 0.15,
+      "chance": 0.1,
       "output": {
         "item": "urushi:raw_urushi_ball"
       },

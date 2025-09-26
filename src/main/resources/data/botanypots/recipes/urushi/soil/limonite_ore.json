@@ -1,0 +1,18 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:limonite_ore"
+  },
+  "display": {
+    "block": "urushi:limonite_ore"
+  },
+  "categories": [
+    "limonite_ore",
+    "yomi",
+    "ore",
+    "stone",
+    "mushroom",
+    "iron_ore"
+  ],
+  "growthModifier": 1.1
+}

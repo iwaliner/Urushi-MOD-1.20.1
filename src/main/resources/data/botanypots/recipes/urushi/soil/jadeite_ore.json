@@ -1,0 +1,18 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:jadeite_ore"
+  },
+  "display": {
+    "block": "urushi:jadeite_ore"
+  },
+  "categories": [
+    "jadeite_ore",
+    "yomi",
+    "ore",
+    "stone",
+    "mushroom",
+    "jade_ore"
+  ],
+  "growthModifier": 1.1
+}

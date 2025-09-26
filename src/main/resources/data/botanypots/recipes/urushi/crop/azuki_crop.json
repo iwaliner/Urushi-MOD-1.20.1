@@ -9,6 +9,7 @@
   ],
   "growthTicks": 1200,
   "display": {
+    "type": "botanypots:aging",
     "block": "urushi:azuki_crop"
   },
   "drops": [

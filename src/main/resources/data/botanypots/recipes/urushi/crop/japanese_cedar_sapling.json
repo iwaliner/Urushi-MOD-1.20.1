@@ -16,8 +16,8 @@
       "output": {
         "item": "urushi:japanese_cedar_bark"
       },
-      "minRolls": 4,
-      "maxRolls": 24
+      "minRolls": 1,
+      "maxRolls": 3
     }
   ]
 }

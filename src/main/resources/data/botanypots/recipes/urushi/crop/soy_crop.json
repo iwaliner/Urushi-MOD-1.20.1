@@ -9,6 +9,7 @@
   ],
   "growthTicks": 900,
   "display": {
+    "type": "botanypots:aging",
     "block": "urushi:soy_crop"
   },
   "drops": [
@@ -16,9 +17,7 @@
       "chance": 1,
       "output": {
         "item": "urushi:soy_crop"
-      },
-      "minRolls": 1,
-      "maxRolls": 1
+      }
     },
     {
       "chance": 0.1,
