@@ -1,18 +1,17 @@
 {
   "type": "botanypots:soil",
   "input": {
-    "item": "urushi:yomi_gold_ore"
+    "item": "urushi:cobbled_yomi_stone"
   },
   "display": {
-    "block": "urushi:yomi_gold_ore"
+    "block": "urushi:cobbled_yomi_stone"
   },
   "categories": [
-    "yomi_gold_ore",
+    "cobbled_yomi_stone",
     "yomi",
-    "ore",
     "stone",
-    "mushroom",
-    "gold_ore"
+    "cobblestone",
+    "mushroom"
   ],
   "growthModifier": 1.09
 }

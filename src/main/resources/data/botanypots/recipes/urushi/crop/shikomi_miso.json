@@ -1,7 +1,7 @@
 {
   "type": "botanypots:crop",
   "seed": {
-    "item": "urushi:rice_malt"
+    "item": "urushi:shikomi_miso"
   },
   "categories": [
     "mushroom",
@@ -14,14 +14,14 @@
       {
         "block": "urushi:fermentation_barrel",
         "properties": {
-          "type": 1,
+          "type": 2,
           "level": 8
         }
       },
       {
         "block": "urushi:fermentation_barrel",
         "properties": {
-          "type": 1,
+          "type": 2,
           "level": 16
         }
       }
@@ -31,7 +31,7 @@
     {
       "chance": 1,
       "output": {
-        "item": "urushi:rice_malt"
+        "item": "urushi:shikomi_miso"
       },
       "minRolls": 1,
       "maxRolls": 2
@@ -39,7 +39,7 @@
     {
       "chance": 0.1,
       "output": {
-        "item": "urushi:rice_malt"
+        "item": "urushi:shikomi_miso"
       },
       "minRolls": 1,
       "maxRolls": 3

@@ -1,0 +1,15 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:wattle_and_daub"
+  },
+  "display": {
+    "block": "urushi:wattle_and_daub"
+  },
+  "categories": [
+    "wattle_and_daub",
+    "mushroom",
+    "loose_soil"
+  ],
+  "growthModifier": 1.05
+}

@@ -5,7 +5,9 @@
   },
   "categories": [
     "dirt",
-    "farmland"
+    "farmland",
+    "yomi",
+    "ghost_block"
   ],
   "growthTicks": 900,
   "lightLevel": 15,

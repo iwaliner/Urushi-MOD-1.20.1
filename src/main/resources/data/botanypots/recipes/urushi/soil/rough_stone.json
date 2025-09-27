@@ -1,0 +1,17 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:rough_stone"
+  },
+  "display": {
+    "block": "urushi:rough_stone"
+  },
+  "categories": [
+    "rough_stone",
+    "stone",
+    "moss",
+    "mossy_cobblestone",
+    "cobblestone"
+  ],
+  "growthModifier": 1.05
+}

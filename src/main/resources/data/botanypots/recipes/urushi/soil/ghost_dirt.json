@@ -1,0 +1,21 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:ghost_dirt"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block": "urushi:ghost_dirt",
+    "properties": {
+      "powered": true
+    }
+  },
+  "categories": [
+    "ghost_dirt",
+    "yomi",
+    "dirt",
+    "mushroom",
+    "ghost_block"
+  ],
+  "growthModifier": 0.44
+}

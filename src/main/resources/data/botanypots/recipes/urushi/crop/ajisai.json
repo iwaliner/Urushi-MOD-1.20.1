@@ -4,7 +4,8 @@
     "item": "urushi:ajisai"
   },
   "categories": [
-    "dirt"
+    "dirt",
+    "yomi"
   ],
   "growthTicks": 1200,
   "display": {

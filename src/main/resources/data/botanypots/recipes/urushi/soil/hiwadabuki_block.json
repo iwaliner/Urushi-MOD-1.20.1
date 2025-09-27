@@ -1,0 +1,15 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:hiwadabuki_block"
+  },
+  "display": {
+    "block": "urushi:hiwadabuki_block"
+  },
+  "categories": [
+    "hiwadabuki_block",
+    "mushroom",
+    "mulch"
+  ],
+  "growthModifier": 1.05
+}

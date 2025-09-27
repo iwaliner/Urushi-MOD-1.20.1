@@ -4,7 +4,9 @@
     "item": "urushi:lycoris"
   },
   "categories": [
-    "dirt"
+    "dirt",
+    "yomi",
+    "ghost_block"
   ],
   "growthTicks": 1200,
   "display": {

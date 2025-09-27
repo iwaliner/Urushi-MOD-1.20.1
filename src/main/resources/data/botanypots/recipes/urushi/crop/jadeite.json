@@ -6,7 +6,8 @@
   "categories": [
     "stone",
     "deepslate",
-    "ore"
+    "ore",
+    "yomi"
   ],
   "growthTicks": 1360,
   "display": {

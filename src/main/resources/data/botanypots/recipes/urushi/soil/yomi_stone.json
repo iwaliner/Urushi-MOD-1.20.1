@@ -1,0 +1,16 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:yomi_stone"
+  },
+  "display": {
+    "block": "urushi:yomi_stone"
+  },
+  "categories": [
+    "yomi_stone",
+    "yomi",
+    "stone",
+    "mushroom"
+  ],
+  "growthModifier": 1.14
+}

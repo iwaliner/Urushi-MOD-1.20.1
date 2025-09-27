@@ -1,0 +1,20 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:ghost_concrete"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block": "urushi:ghost_concrete",
+    "properties": {
+      "powered": true
+    }
+  },
+  "categories": [
+    "ghost_concrete",
+    "yomi",
+    "concrete",
+    "ghost_block"
+  ],
+  "growthModifier": 0.44
+}
