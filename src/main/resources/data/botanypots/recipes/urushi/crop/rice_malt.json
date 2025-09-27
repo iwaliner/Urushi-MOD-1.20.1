@@ -8,7 +8,7 @@
     "mulch",
     "grass"
   ],
-  "growthTicks": 2400,
+  "growthTicks": 1200,
   "display": {
     "type": "botanypots:transitional",
     "phases": [

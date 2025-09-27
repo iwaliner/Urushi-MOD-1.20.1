@@ -5,7 +5,7 @@
 		"0": "urushi:block/tansu_stained_back_red",
 		"1": "urushi:block/tansu_stained_front_red",
 		"2": "urushi:block/tansu_stained_top_red",
-		"particle": "urushi:block/tansu_stained_back"
+		"particle": "urushi:block/tansu_stained_back_red"
 	},
 	"elements": [
 		{
