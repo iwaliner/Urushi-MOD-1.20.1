@@ -192,7 +192,7 @@ public class CushionEntity extends Entity {
             searchRiderCushion(this,list,false);
             if(!list.isEmpty()) {
                 player.startRiding(list.get(0));
-                level().playSound((Player) null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level().playSound(null, this.blockPosition(), SoundEvents.WOOL_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
                 return InteractionResult.SUCCESS;
             }
         }
@@ -202,14 +202,16 @@ public class CushionEntity extends Entity {
 
     @Override
     public void tick() {
-        this.setDeltaMovement(this.getDeltaMovement().add(0.0D, -0.04D, 0.0D));
+
+        this.checkBelowWorld();
+        if(!this.isNoGravity()) {
+            this.setDeltaMovement(this.getDeltaMovement().add(0.0D, -0.04D, 0.0D));
+        }
         this.move(MoverType.SELF, this.getDeltaMovement()); //移動(落下)
 
-
-
-        AABB axisalignedbb =this.getBoundingBox() .inflate(0.1D, 0.1D, 0.1D);
-        List<LivingEntity> list =level().getEntitiesOfClass(LivingEntity.class, axisalignedbb);
         if(!level().isClientSide()&&this.getPassengers().isEmpty()){
+            AABB axisalignedbb =this.getBoundingBox().inflate(0.55D, 0.1D, 0.55D);
+            List<LivingEntity> list =level().getEntitiesOfClass(LivingEntity.class, axisalignedbb);
             if(!list.isEmpty()) {
                 for (LivingEntity entity : list) {
                     if (!(entity instanceof Player)&&!entity.isPassenger()) {
@@ -234,4 +236,5 @@ public class CushionEntity extends Entity {
     public  Packet<?> getAddEntityPacket() {
         return NetworkHooks.getEntitySpawningPacket(this);
     }*/
+
 }
