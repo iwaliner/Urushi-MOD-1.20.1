@@ -1,18 +1,9 @@
 {
   "type": "botanypots:pot_interaction",
   "held_ingredient": {
-    "tag": "urushi:yomotsuhegui_fruit"
+    "item": "urushi:yomotsuhegui_fruit"
   },
   "soil_ingredient": [
-    {
-      "item": "minecraft:grass_block"
-    },
-    {
-      "item": "minecraft:podzol"
-    },
-    {
-      "item": "minecraft:mycelium"
-    },
     {
       "item": "minecraft:dirt"
     },
@@ -25,11 +16,11 @@
     }
   ],
   "soil_output": {
-    "item": "minecraft:dirt_path",
+    "item": "urushi:kakuriyo_dirt",
     "count": 1
   },
   "sound": {
-    "sound": "minecraft:item.shovel.flatten",
+    "sound": "minecraft:block.soul_sand.place",
     "category": "blocks"
   }
 }
