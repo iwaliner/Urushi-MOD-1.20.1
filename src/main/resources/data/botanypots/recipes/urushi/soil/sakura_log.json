@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:soil",
+  "input": [
+    {
+      "item": "urushi:sakura_log"
+    },
+    {
+      "item": "urushi:sakura_wood"
+    }
+  ],
+  "display": {
+    "block": "urushi:sakura_wood"
+  },
+  "categories": [
+    "wood",
+    "log",
+    "mushroom",
+    "sakura",
+    "sakura_wood"
+  ],
+  "growthModifier": 1
+}

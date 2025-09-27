@@ -1,0 +1,13 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:salt_and_sand"
+  },
+  "display": {
+    "block": "urushi:salt_and_sand"
+  },
+  "categories": [
+    "sand"
+  ],
+  "growthModifier": 0.95
+}

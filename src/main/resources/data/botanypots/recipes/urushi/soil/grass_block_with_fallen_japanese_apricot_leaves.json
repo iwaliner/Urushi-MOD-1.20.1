@@ -1,0 +1,16 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:grass_block_with_fallen_japanese_apricot_leaves"
+  },
+  "display": {
+    "block": "urushi:grass_block_with_fallen_japanese_apricot_leaves"
+  },
+  "categories": [
+    "grass_block_with_fallen_leaves",
+    "dirt",
+    "grass",
+    "mulch"
+  ],
+  "growthModifier": 1.05
+}
