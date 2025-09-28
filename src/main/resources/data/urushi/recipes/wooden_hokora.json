@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "kkk",
+    "r r",
+    "ppp"
+  ],
+  "key": {
+  "k": {
+     "item": "urushi:ibushi_kawara_block"
+    },
+    "r": {
+    "tag": "forge:rods/wooden"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "urushi:wooden_hokora",
+    "count": 1
+  }
+}

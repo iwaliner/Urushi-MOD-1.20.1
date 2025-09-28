@@ -130,6 +130,41 @@ public class SlideDoorBlock extends AbstractHighBlock {
     }
 
     @Override
+    public VoxelShape getVisualShape(BlockState state, BlockGetter p_60480_, BlockPos p_60481_, CollisionContext p_60482_) {
+        Direction direction = state.getValue(FACING);
+        boolean invert = !state.getValue(INVERTED);
+        int open=state.getValue(OPEN);
+        boolean isOpening=state.getValue(IS_OPENING);
+        boolean isMoving=isMoving(state);
+
+
+        if(!isMoving&&open==0){
+            switch(direction) {
+                case EAST:
+                    return  invert? EAST_CLOSE_INV:EAST_CLOSE;
+                case SOUTH:
+                    return  invert? SOUTH_CLOSE_INV:SOUTH_CLOSE;
+                case WEST:
+                    return  invert? WEST_CLOSE_INV:WEST_CLOSE;
+                case NORTH:
+                    return  invert? NORTH_CLOSE_INV:NORTH_CLOSE;
+            }
+        }else if((!isMoving&&open==13)||isMoving){
+            switch(direction) {
+                case EAST:
+                    return  invert? EAST_OPEN_INV:EAST_OPEN;
+                case SOUTH:
+                    return  invert? SOUTH_OPEN_INV:SOUTH_OPEN;
+                case WEST:
+                    return  invert? WEST_OPEN_INV:WEST_OPEN;
+                case NORTH:
+                    return  invert? NORTH_OPEN_INV:NORTH_OPEN;
+            }
+        }
+        return Shapes.block();
+    }
+
+    @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState state2, LevelAccessor world, BlockPos pos, BlockPos pos2) {
         DoubleBlockHalf doubleblockhalf = state.getValue(HALF);
         if (direction.getAxis() == Direction.Axis.Y && doubleblockhalf == DoubleBlockHalf.LOWER == (direction == Direction.UP)) {
