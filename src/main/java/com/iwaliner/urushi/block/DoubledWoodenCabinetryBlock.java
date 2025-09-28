@@ -96,7 +96,7 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return   new DoubledWoodenCabinetryBlockEntity(pos,state);
+        return new DoubledWoodenCabinetryBlockEntity(pos,state);
     }
 
     public RenderShape getRenderShape(BlockState p_49090_) {
@@ -109,7 +109,8 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
             if (tileentity instanceof DoubledWoodenCabinetryBlockEntity) {
                 ((DoubledWoodenCabinetryBlockEntity)tileentity).setCustomName(stack.getHoverName());
             }
-        }    }
+        }
+    }
 
     @Override
     public int getAnalogOutputSignal(BlockState state, Level level, BlockPos pos) {

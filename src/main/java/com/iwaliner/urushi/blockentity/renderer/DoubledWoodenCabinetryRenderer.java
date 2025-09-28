@@ -26,11 +26,11 @@ public class DoubledWoodenCabinetryRenderer implements BlockEntityRenderer<Doubl
 
     public void render(DoubledWoodenCabinetryBlockEntity blockEntity, float f1, PoseStack poseStack, MultiBufferSource bufferSource, int i1, int i2) {
         if(blockEntity.getBlockState().getBlock() instanceof DoubledWoodenCabinetryBlock) {
-            Direction direction = blockEntity.getBlockState().getValue(DoubledWoodenCabinetryBlock.FACING);
             ItemStack itemstack = blockEntity.getDisplayStack();
             if (!itemstack.isEmpty()) {
                 poseStack.pushPose();
                 double d=2D;
+                Direction direction = blockEntity.getBlockState().getValue(DoubledWoodenCabinetryBlock.FACING);
                 poseStack.translate(0.5D+(double) direction.getStepX()/d, 0.5D, 0.5D+(double) direction.getStepZ()/d);
                 Direction direction1 = Direction.from2DDataValue((direction.getOpposite().get2DDataValue()) % 4);
                 float f = -direction1.toYRot();

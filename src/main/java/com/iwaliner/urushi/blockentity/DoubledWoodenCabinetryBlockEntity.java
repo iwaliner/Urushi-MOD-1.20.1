@@ -63,12 +63,7 @@ public class DoubledWoodenCabinetryBlockEntity extends RandomizableContainerBloc
         }
 
     }
-
-    @Override
-    public void setItem(int i, ItemStack stack) {
-        setChanged();
-        super.setItem(i, stack);
-    }
+	
     public CompoundTag getUpdateTag() {
         CompoundTag compoundtag = new CompoundTag();
         ContainerHelper.saveAllItems(compoundtag, this.items, true);
@@ -76,15 +71,17 @@ public class DoubledWoodenCabinetryBlockEntity extends RandomizableContainerBloc
     }
     public void load(CompoundTag tag) {
         super.load(tag);
-        this.items = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
+        this.items = NonNullList.withSize(this.containerSize, ItemStack.EMPTY);
         if (!this.tryLoadLootTable(tag)) {
             ContainerHelper.loadAllItems(tag, this.items);
         }
 
     }
 
+    private final int containerSize = 108;
+
     public int getContainerSize() {
-        return 108;
+        return containerSize;
     }
 
     protected NonNullList<ItemStack> getItems() {
@@ -133,10 +130,13 @@ public class DoubledWoodenCabinetryBlockEntity extends RandomizableContainerBloc
         double d0 = (double)this.worldPosition.getX() + 0.5D + (double)vec3i.getX() / 2.0D;
         double d1 = (double)this.worldPosition.getY() + 0.5D + (double)vec3i.getY() / 2.0D;
         double d2 = (double)this.worldPosition.getZ() + 0.5D + (double)vec3i.getZ() / 2.0D;
-        this.level.playSound((Player)null, d0, d1, d2, p_58602_, SoundSource.BLOCKS, 0.5F, this.level.random.nextFloat() * 0.1F + 0.9F);
+        this.level.playSound(null, d0, d1, d2, p_58602_, SoundSource.BLOCKS, 0.5F, this.level.random.nextFloat() * 0.1F + 0.9F);
     }
     public ItemStack getDisplayStack(){
-        this.setChanged();
+        assert level != null;
+        if(!level.isClientSide){
+            return null;
+        }
         return getItem(0);
     }
     public ClientboundBlockEntityDataPacket getUpdatePacket() {
