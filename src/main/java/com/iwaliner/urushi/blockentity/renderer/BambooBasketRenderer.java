@@ -28,12 +28,11 @@ public class BambooBasketRenderer implements BlockEntityRenderer<BambooBasketBlo
         Direction direction = blockEntity.getBlockState().getValue(BambooBasketBlock.FACING);
 
 //        int l = (int) blockEntity.getBlockPos().asLong();
-
-        List<RenderItemInfo> renderItems = new ArrayList<>();
         int size = blockEntity.getItemsSize();
-        if(size<0){
+        if(size<0 || size>5){
             return;
         }
+        List<RenderItemInfo> renderItems = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             ItemStack itemStack = blockEntity.getItem(i);
             if (!itemStack.isEmpty()) {
