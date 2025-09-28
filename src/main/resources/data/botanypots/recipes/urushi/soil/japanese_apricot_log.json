@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:soil",
+  "input": [
+    {
+      "item": "urushi:japanese_apricot_log"
+    },
+    {
+      "item": "urushi:japanese_apricot_wood"
+    }
+  ],
+  "display": {
+    "block": "urushi:japanese_apricot_wood"
+  },
+  "categories": [
+    "wood",
+    "log",
+    "mushroom",
+    "japanese_apricot",
+    "japanese_apricot_wood"
+  ],
+  "growthModifier": 1
+}

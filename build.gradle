@@ -170,6 +170,8 @@ dependencies {
     runtimeOnly(  fg.deobf("curse.maven:jade-324717:5672013"))
     runtimeOnly(  fg.deobf("curse.maven:crafttweaker-239197:5648765"))
     runtimeOnly(  fg.deobf("curse.maven:spark-361579:4587309"))
+    runtimeOnly(  fg.deobf("curse.maven:bookshelf-228525:5423987"))
+    runtimeOnly(  fg.deobf("curse.maven:botany-pots-353928:6348581"))
    // compileOnly(  fg.deobf("curse.maven:supplementaries-412082:6889003"))
     //runtimeOnly(  fg.deobf("curse.maven:supplementaries-412082:6889003"))
 

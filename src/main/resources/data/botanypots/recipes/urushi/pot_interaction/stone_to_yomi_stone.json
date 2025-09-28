@@ -1,0 +1,37 @@
+{
+  "type": "botanypots:pot_interaction",
+  "held_ingredient": {
+    "item": "urushi:yomotsuhegui_fruit"
+  },
+  "soil_ingredient": [
+    {
+      "item": "minecraft:stone"
+    },
+    {
+      "item": "minecraft:granite"
+    },
+    {
+      "item": "minecraft:andesite"
+    },
+    {
+      "item": "minecraft:calcite"
+    },
+    {
+      "item": "minecraft:deepslate"
+    },
+    {
+      "item": "minecraft:tuff"
+    },
+    {
+      "item": "minecraft:dripstone_block"
+    }
+  ],
+  "soil_output": {
+    "item": "urushi:yomi_stone",
+    "count": 1
+  },
+  "sound": {
+    "sound": "minecraft:block.soul_soil.place",
+    "category": "blocks"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:soil",
+  "input": [
+    {
+      "item": "urushi:lacquer_log"
+    },
+    {
+      "item": "urushi:lacquer_wood"
+    }
+  ],
+  "display": {
+    "block": "urushi:lacquer_wood"
+  },
+  "categories": [
+    "wood",
+    "log",
+    "mushroom",
+    "lacquer",
+    "lacquer_wood"
+  ],
+  "growthModifier": 1
+}

@@ -1,0 +1,19 @@
+{
+  "type": "botanypots:pot_interaction",
+  "held_ingredient": {
+    "item": "urushi:kitsunebi"
+  },
+  "soil_ingredient": [
+    {
+      "item": "urushi:kakuriyo_dirt"
+    }
+  ],
+  "soil_output": {
+    "item": "minecraft:dirt",
+    "count": 1
+  },
+  "sound": {
+    "sound": "minecraft:block.soul_sand.break",
+    "category": "blocks"
+  }
+}

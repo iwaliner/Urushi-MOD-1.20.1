@@ -1,0 +1,34 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:jadeite"
+  },
+  "categories": [
+    "stone",
+    "deepslate",
+    "ore",
+    "yomi"
+  ],
+  "growthTicks": 1360,
+  "display": {
+    "block": "urushi:jadeite_ore"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:jadeite"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.10,
+      "output": {
+        "item": "urushi:jadeite"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

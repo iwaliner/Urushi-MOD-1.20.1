@@ -1,0 +1,44 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:ghost_core"
+  },
+  "categories": [
+    "ghost_block"
+  ],
+  "growthTicks": 916,
+  "#comment": "916/0.44/20=104s=1:44",
+  "lightLevel": 1,
+
+  "display": {
+    "block": "urushi:invisible_button",
+    "offset": [
+      1.78,
+      -0.47,
+      0.2
+    ],
+    "scale": [
+      0.2,
+      1.47,
+      0.4
+    ]
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "urushi:ghost_core"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.24,
+      "output": {
+        "item": "urushi:ghost_core"
+      },
+      "minRolls": 1,
+      "maxRolls": 4
+    }
+  ]
+}

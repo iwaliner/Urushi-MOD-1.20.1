@@ -1,0 +1,17 @@
+{
+  "type": "botanypots:pot_interaction",
+  "held_ingredient": {
+    "item": "minecraft:lava_bucket"
+  },
+  "soil_ingredient": {
+    "item": "urushi:hot_spring_water_bucket"
+  },
+  "soil_output": {
+    "item": "urushi:yomi_stone",
+    "count": 1
+  },
+  "sound": {
+    "sound": "minecraft:block.fire.extinguish",
+    "category": "blocks"
+  }
+}

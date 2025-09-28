@@ -1,0 +1,33 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:rice_crop"
+  },
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "growthTicks": 900,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "urushi:rice_crop"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:rice_crop"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "item": "urushi:rice_crop"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

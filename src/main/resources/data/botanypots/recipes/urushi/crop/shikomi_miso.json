@@ -1,0 +1,48 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:shikomi_miso"
+  },
+  "categories": [
+    "mushroom",
+    "mulch"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:transitional",
+    "phases": [
+      {
+        "block": "urushi:fermentation_barrel",
+        "properties": {
+          "type": 2,
+          "level": 8
+        }
+      },
+      {
+        "block": "urushi:fermentation_barrel",
+        "properties": {
+          "type": 2,
+          "level": 16
+        }
+      }
+    ]
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:shikomi_miso"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "item": "urushi:shikomi_miso"
+      },
+      "minRolls": 1,
+      "maxRolls": 3
+    }
+  ]
+}

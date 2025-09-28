@@ -144,5 +144,9 @@ public  class BambooBasketBlockEntity extends RandomizableContainerBlockEntity  
         return items;
     }
 
+    public int getItemsSize(){
+        return items.size();
+    }
+
 
 }

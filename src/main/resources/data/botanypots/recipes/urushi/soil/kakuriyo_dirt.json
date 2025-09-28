@@ -1,0 +1,16 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:kakuriyo_dirt"
+  },
+  "display": {
+    "block": "urushi:kakuriyo_dirt"
+  },
+  "categories": [
+    "kakuriyo_dirt",
+    "yomi",
+    "dirt",
+    "mushroom"
+  ],
+  "growthModifier": 1.09
+}

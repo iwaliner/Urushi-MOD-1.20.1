@@ -63,18 +63,13 @@ public abstract class AbstractFryerBlockEntity extends BaseContainerBlockEntity 
     public int cookingTotalTime;
     protected final ContainerData dataAccess = new ContainerData() {
         public int get(int p_58431_) {
-            switch(p_58431_) {
-                case 0:
-                    return AbstractFryerBlockEntity.this.litTime;
-                case 1:
-                    return AbstractFryerBlockEntity.this.litDuration;
-                case 2:
-                    return AbstractFryerBlockEntity.this.cookingProgress;
-                case 3:
-                    return AbstractFryerBlockEntity.this.cookingTotalTime;
-                default:
-                    return 0;
-            }
+            return switch (p_58431_) {
+                case 0 -> AbstractFryerBlockEntity.this.litTime;
+                case 1 -> AbstractFryerBlockEntity.this.litDuration;
+                case 2 -> AbstractFryerBlockEntity.this.cookingProgress;
+                case 3 -> AbstractFryerBlockEntity.this.cookingTotalTime;
+                default -> 0;
+            };
         }
 
         public void set(int p_58433_, int p_58434_) {

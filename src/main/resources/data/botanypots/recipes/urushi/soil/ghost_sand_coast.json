@@ -1,0 +1,21 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:ghost_sand_coast"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block": "urushi:ghost_sand_coast",
+    "properties": {
+      "powered": true
+    }
+  },
+  "categories": [
+    "ghost_sand_coast",
+    "yomi",
+    "sand_coast",
+    "loose_soil",
+    "ghost_block"
+  ],
+  "growthModifier": 0.44
+}

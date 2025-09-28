@@ -1,0 +1,35 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:quartz_cluster"
+  },
+  "categories": [
+    "stone",
+    "cobblestone",
+    "deepslate",
+    "nether",
+    "ore"
+  ],
+  "growthTicks": 1800,
+  "display": {
+    "block": "urushi:quartz_cluster"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "minecraft:quartz"
+      },
+      "minRolls": 1,
+      "maxRolls": 3
+    },
+    {
+      "chance": 0.15,
+      "output": {
+        "item": "minecraft:quartz"
+      },
+      "minRolls": 2,
+      "maxRolls": 4
+    }
+  ]
+}

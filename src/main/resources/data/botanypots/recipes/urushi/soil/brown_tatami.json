@@ -1,0 +1,16 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:brown_tatami"
+  },
+  "display": {
+    "block": "urushi:brown_tatami"
+  },
+  "categories": [
+    "brown_tatami",
+    "tatami",
+    "mushroom",
+    "mulch"
+  ],
+  "growthModifier": 0.95
+}

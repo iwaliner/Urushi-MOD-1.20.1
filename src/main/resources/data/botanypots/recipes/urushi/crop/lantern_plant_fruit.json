@@ -1,0 +1,56 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:lantern_plant_fruit"
+  },
+  "categories": [
+    "dirt",
+    "farmland",
+    "yomi",
+    "ghost_block"
+  ],
+  "growthTicks": 900,
+  "lightLevel": 15,
+  "display": {
+    "type": "botanypots:transitional",
+    "phases": [
+      {
+        "block": "urushi:lantern_plant",
+        "properties": {
+          "age": 0,
+          "lit": false
+        }
+      },
+      {
+        "block": "urushi:lantern_plant",
+        "properties": {
+          "age": 1,
+          "lit": false
+        }
+      },
+      {
+        "block": "urushi:lantern_plant",
+        "properties": {
+          "age": 1,
+          "lit": true
+        }
+      }
+    ]
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:lantern_plant_fruit"
+      }
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "item": "urushi:lantern_plant_fruit"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:pot_interaction",
+  "held_ingredient": {
+    "item": "urushi:yomotsuhegui_fruit"
+  },
+  "soil_ingredient": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  ],
+  "soil_output": {
+    "item": "urushi:cobbled_yomi_stone",
+    "count": 1
+  },
+  "sound": {
+    "sound": "minecraft:block.soul_soil.place",
+    "category": "blocks"
+  }
+}

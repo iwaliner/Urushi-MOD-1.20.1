@@ -53,7 +53,7 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
 
     public FermentationBarrelBlock(Properties p_49795_) {
         super(p_49795_);
-        this.registerDefaultState(this.stateDefinition.any().setValue(LEVEL, Integer.valueOf(0)).setValue(TYPE,0));
+        this.registerDefaultState(this.stateDefinition.any().setValue(LEVEL, 0).setValue(TYPE,0));
     }
 
     @Override
@@ -69,7 +69,7 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
     public void tick(BlockState p_51935_, ServerLevel p_51936_, BlockPos p_51937_, RandomSource p_51938_) {
         if (p_51935_.getValue(LEVEL) == 8) {
             p_51936_.setBlock(p_51937_, p_51935_.cycle(LEVEL), 3);
-            p_51936_.playSound((Player)null, p_51937_, SoundEvents.HONEY_BLOCK_HIT, SoundSource.BLOCKS, 1.0F, 1.0F);
+            p_51936_.playSound(null, p_51937_, SoundEvents.HONEY_BLOCK_HIT, SoundSource.BLOCKS, 1.0F, 1.0F);
         }
     }
     public boolean hasAnalogOutputSignal(BlockState p_149740_1_) {
@@ -104,69 +104,57 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
                 player.drop(sakeStack, false);
             }
             itemstack.shrink(1);
-            level.playSound((Player)null, pos, SoundEvents.BOTTLE_FILL, SoundSource.BLOCKS, 1.0F, 1.0F);
+            level.playSound(null, pos, SoundEvents.BOTTLE_FILL, SoundSource.BLOCKS, 1.0F, 1.0F);
             return InteractionResult.SUCCESS;
         }
-        if (i < 9 ) {
 
-            boolean flag=false;
-            if(itemstack.is(ItemAndBlockRegister.rice.get())&&(i==0||type==Type.RICE_MALT||type==Type.MOROMI)){
-                if(type==Type.RICE_MALT) {
-                    flag=true;
-                }else{
-                    if(i==0){
-                        flag=true;
-                    }else if(i==2){
-                        flag=true;
-                    }else if(i==3){
-                        flag=true;
-                    }else if(i==5){
-                        flag=true;
-                    }
-                }
-            }else if(itemstack.is(ItemAndBlockRegister.shikomi_miso.get())&&(i==0||type==Type.MISO)){
-                flag=true;
-            }else if(itemstack.is(ItemAndBlockRegister.rice_malt.get())&&(i==0||type==Type.MOROMI||(type==Type.RICE_MALT&&i==1))){
-               if(i==0){
-                    flag=true;
-                }else if(i==1){
-                    flag=true;
-                }else if(i==3){
-                    flag=true;
-                }else if(i==6){
-                    flag=true;
-                }
-            }else if(itemstack.is(ItemAndBlockRegister.water_bamboo_cup.get())&&(i==0||type==Type.MOROMI||(type==Type.RICE_MALT&&i==1))){
-                if(i==0){
-                   flag=true;
-                }else if(i==2){
-                    flag=true;
-                }else if(i==1){
-                    flag=true;
-                }else if(i==4){
-                    flag=true;
-                }
-
+        if (i >=9) {
+            if (type!=Type.MOROMI) {
+                extractProduce(state, level, pos);
+                return InteractionResult.sidedSuccess(level.isClientSide);
             }
-            if (i < 8 && !level.isClientSide&&flag) {
-                    BlockState blockstate = addItem(state, level, pos, itemstack);
-                level.playSound((Player)null, pos, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
-
-                //  level.levelEvent(1500, pos, state != blockstate ? 1 : 0);
-                player.awardStat(Stats.ITEM_USED.get(itemstack.getItem()));
-                    if (!player.getAbilities().instabuild) {
-                        itemstack.shrink(1);
-
-                }
-            }
-
-            return InteractionResult.sidedSuccess(level.isClientSide);
-        } else if (type!=Type.MOROMI) {
-            extractProduce(state, level, pos);
-            return InteractionResult.sidedSuccess(level.isClientSide);
-        } else {
             return InteractionResult.FAIL;
         }
+
+        boolean flag=false;
+        if(itemstack.is(ItemAndBlockRegister.rice.get())&&(i==0||type==Type.RICE_MALT||type==Type.MOROMI)){
+            if(type==Type.RICE_MALT) {
+                flag=true;
+            }else{
+                flag = switch (i) {
+                    case 0, 2, 3, 5 -> true;
+                    default -> false;
+                };
+            }
+        }else if(itemstack.is(ItemAndBlockRegister.shikomi_miso.get())&&(i==0||type==Type.MISO)){
+            flag=true;
+        }else if(itemstack.is(ItemAndBlockRegister.rice_malt.get())&&(i==0||type==Type.MOROMI||(type==Type.RICE_MALT&&i==1))){
+            flag = switch (i) {
+                case 0, 1, 3, 6 -> true;
+                default -> false;
+            };
+        }else if(itemstack.is(ItemAndBlockRegister.water_bamboo_cup.get())&&(i==0||type==Type.MOROMI||(type==Type.RICE_MALT&&i==1))){
+            flag = switch (i) {
+                case 0, 1, 2, 4 -> true;
+                default -> false;
+            };
+
+        }
+        if (i < 8 && !level.isClientSide&&flag) {
+                BlockState blockstate = addItem(state, level, pos, itemstack);
+            level.playSound(null, pos, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+
+            //  level.levelEvent(1500, pos, state != blockstate ? 1 : 0);
+            player.awardStat(Stats.ITEM_USED.get(itemstack.getItem()));
+                if (!player.getAbilities().instabuild) {
+                    itemstack.shrink(1);
+
+            }
+        }
+
+        return InteractionResult.sidedSuccess(level.isClientSide);
+
+
     }
     @Override
     public void appendHoverText(ItemStack stack, @org.jetbrains.annotations.Nullable BlockGetter p_49817_, List<Component> list, TooltipFlag p_49819_) {
@@ -180,9 +168,13 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
         if(type==Type.NONE||level==0){
             return ItemStack.EMPTY;
         }else if(type==Type.RICE_MALT){
-            return level>8?  new ItemStack(ItemAndBlockRegister.rice_malt.get(),9-(level-8)) :new ItemStack(ItemAndBlockRegister.rice.get(),level);
+            return level>8?
+                new ItemStack(ItemAndBlockRegister.rice_malt.get(),9-(level-8))
+                : new ItemStack(ItemAndBlockRegister.rice.get(),level);
         }else if(type==Type.MISO){
-            return level>8?  new ItemStack(ItemAndBlockRegister.miso.get(),9-(level-8)) :new ItemStack(ItemAndBlockRegister.shikomi_miso.get(),level);
+            return level>8?
+                new ItemStack(ItemAndBlockRegister.miso.get(),9-(level-8))
+                : new ItemStack(ItemAndBlockRegister.shikomi_miso.get(),level);
         }
         return ItemStack.EMPTY;
     }
@@ -198,102 +190,96 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
         }
 
         BlockState blockstate = empty(state, p_52000_, p_52001_);
-        p_52000_.playSound((Player)null, p_52001_, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+        p_52000_.playSound(null, p_52001_, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
         return blockstate;
     }
     static BlockState empty(BlockState p_52003_, LevelAccessor p_52004_, BlockPos p_52005_) {
-        BlockState blockstate = p_52003_.setValue(LEVEL, Integer.valueOf(0));
+        BlockState blockstate = p_52003_.setValue(LEVEL, 0);
         p_52004_.setBlock(p_52005_, blockstate, 3);
         return blockstate;
     }
 
-    static BlockState addItem(BlockState state, LevelAccessor p_51985_, BlockPos p_51986_, ItemStack stack) {
-        int i = state.getValue(LEVEL);
-        Type type=Type.getType(state.getValue(TYPE));
-        Type newType=type;
-        boolean flag=false;
-        int j=i;
-        if(stack.is(ItemAndBlockRegister.rice.get())&&(i==0||type==Type.RICE_MALT||type==Type.MOROMI)){
-            if(type==Type.RICE_MALT) {
-                flag=true;
-                j = i + 1;
-                newType= Type.RICE_MALT;
-            }else{
-                if(i==0){
-                    flag=true;
-                    j=1;
-                    newType= Type.RICE_MALT;
-                }else if(i==1){
-                    flag=true;
-                    j=2;
-                    newType= Type.RICE_MALT;
-                }else if(i==2){
-                    flag=true;
-                    j=4;
-                    newType= Type.MOROMI;
-                }else if(i==3){
-                    flag=true;
-                    j=6;
-                    newType= Type.MOROMI;
-                }else if(i==5){
-                    flag=true;
-                    j=8;
-                    newType= Type.MOROMI;
+    static BlockState addItem(BlockState state, LevelAccessor levelAccessor, BlockPos pos, ItemStack stack) {
+        int currentLevel = state.getValue(LEVEL);
+        Type currentType = Type.getType(state.getValue(TYPE));
+
+        if (currentLevel >= 9) {
+            return state;
+        }
+
+        Type newType = currentType;
+        boolean isValid = false;
+        int newLevel = currentLevel;
+
+        if (stack.is(ItemAndBlockRegister.rice.get()) && isValidForRice(currentLevel, currentType)) {
+            if (currentType == Type.RICE_MALT) {
+                isValid = true;
+                newLevel = currentLevel + 1;
+                // newType = Type.RICE_MALT;
+            } else {
+                switch (currentLevel) {
+                    case 0 -> { newLevel = 1; newType = Type.RICE_MALT; isValid = true; }
+                    case 1 -> { newLevel = 2; newType = Type.RICE_MALT; isValid = true; }
+                    case 2 -> { newLevel = 4; newType = Type.MOROMI; isValid = true; }
+                    case 3 -> { newLevel = 6; newType = Type.MOROMI; isValid = true; }
+                    case 5 -> { newLevel = 8; newType = Type.MOROMI; isValid = true; }
                 }
             }
-        }else if(stack.is(ItemAndBlockRegister.shikomi_miso.get())&&(i==0||type==Type.MISO)){
-            newType= Type.MISO;
-            j=i+1;
-            flag=true;
-        }else if(stack.is(ItemAndBlockRegister.rice_malt.get())&&(i==0||type==Type.MOROMI||(type==Type.RICE_MALT&&i==1))){
-            newType= Type.MOROMI;
-            if(i==0){
-                j=2;
-                flag=true;
-            }else if(i==1){
-                j=4;
-                flag=true;
-            }else if(i==3){
-                j=5;
-                flag=true;
-            }else if(i==6){
-                j=8;
-                flag=true;
+        } else if (stack.is(ItemAndBlockRegister.shikomi_miso.get()) && (currentLevel == 0 || currentType == Type.MISO)) {
+            newType = Type.MISO;
+            newLevel = currentLevel + 1;
+            isValid = true;
+        } else if (stack.is(ItemAndBlockRegister.rice_malt.get()) && isValidForRiceMalt(currentLevel, currentType)) {
+            newType = Type.MOROMI;
+            switch (currentLevel) {
+                case 0 -> { newLevel = 2; isValid = true; }
+                case 1 -> { newLevel = 4; isValid = true; }
+                case 3 -> { newLevel = 5; isValid = true; }
+                case 6 -> { newLevel = 8; isValid = true; }
             }
-        }else if(stack.is(ItemAndBlockRegister.water_bamboo_cup.get())&&(i==0||type==Type.MOROMI||(type==Type.RICE_MALT&&i==1))){
-            newType= Type.MOROMI;
-            if(i==0){
-                j=3;
-                flag=true;
-            }else if(i==2){
-                j=5;
-                flag=true;
-            }else if(i==1){
-                j=6;
-                flag=true;
-            }else if(i==4){
-                j=8;
-                flag=true;
+        } else if (stack.is(ItemAndBlockRegister.water_bamboo_cup.get()) && isValidForWaterBambooCup(currentLevel, currentType)) {
+            newType = Type.MOROMI;
+            switch (currentLevel) {
+                case 0 -> { newLevel = 3; isValid = true; }
+                case 2 -> { newLevel = 5; isValid = true; }
+                case 1 -> { newLevel = 6; isValid = true; }
+                case 4 -> { newLevel = 8; isValid = true; }
+            }
+        }
+
+        if (isValid) {
+            BlockState newState = state.setValue(LEVEL, newLevel).setValue(TYPE, newType.getID());
+            levelAccessor.setBlock(pos, newState, 3);
+
+            if (newLevel == 8) {
+                levelAccessor.scheduleTick(pos, state.getBlock(), 20);
             }
 
+            return newState;
         }
-        if(i<9&&flag) {
-            BlockState blockstate = state.setValue(LEVEL, Integer.valueOf(j)).setValue(TYPE,newType.getID());
-            p_51985_.setBlock(p_51986_, blockstate, 3);
-            if (j == 8) {
-                p_51985_.scheduleTick(p_51986_, state.getBlock(), 20);
-            }
-            return blockstate;
-        }
-            return state;
+
+        return state;
     }
+
+    private static boolean isValidForRice(int level, Type type) {
+        return level == 0 || type == Type.RICE_MALT || type == Type.MOROMI;
+    }
+
+    private static boolean isValidForRiceMalt(int level, Type type) {
+        return level == 0 || type == Type.MOROMI || (type == Type.RICE_MALT && level == 1);
+    }
+
+    private static boolean isValidForWaterBambooCup(int level, Type type) {
+        return level == 0 || type == Type.MOROMI || (type == Type.RICE_MALT && level == 1);
+    }
+
     public WorldlyContainer getContainer(BlockState state, LevelAccessor p_51957_, BlockPos p_51958_) {
         int i = state.getValue(LEVEL);
         if (i >8) {
             return new OutputContainer(state, p_51957_, p_51958_, new ItemStack(getFilledStack(i,Type.getType(state.getValue(TYPE))).getItem()));
-        } else {
-            return (WorldlyContainer)(i < 8 ? new InputContainer(state, p_51957_, p_51958_) : new EmptyContainer());
         }
+
+        return i < 8 ? new InputContainer(state, p_51957_, p_51958_) : new EmptyContainer();
     }
     static class EmptyContainer extends SimpleContainer implements WorldlyContainer {
         public EmptyContainer() {
@@ -338,24 +324,31 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
             int stage=state.getValue(LEVEL);
             Type type=Type.getType(state.getValue(TYPE));
             if(!this.changed && direction == Direction.UP){
+                Item item = stack.getItem();
                 if(stage==0){
-                    if(stack.getItem()==ItemAndBlockRegister.rice.get()||stack.getItem()==ItemAndBlockRegister.shikomi_miso.get()||stack.getItem()==ItemAndBlockRegister.rice_malt.get()||stack.getItem()==ItemAndBlockRegister.water_bamboo_cup.get()){
-                        return true;
-                    }
+                    return item == ItemAndBlockRegister.rice.get() || item == ItemAndBlockRegister.shikomi_miso.get()
+                        || item == ItemAndBlockRegister.rice_malt.get() || item == ItemAndBlockRegister.water_bamboo_cup.get();
                 }else if(stage<8){
                     if(type==Type.MOROMI||(type==Type.RICE_MALT&&stage==1)){
                         switch (stage){
-                            case 1 :return stack.getItem()==ItemAndBlockRegister.rice.get()||stack.getItem()==ItemAndBlockRegister.rice_malt.get()||stack.getItem()==ItemAndBlockRegister.water_bamboo_cup.get();
-                            case 2 :return stack.getItem()==ItemAndBlockRegister.rice.get()||stack.getItem()==ItemAndBlockRegister.water_bamboo_cup.get();
-                            case 3 :return stack.getItem()==ItemAndBlockRegister.rice.get()||stack.getItem()==ItemAndBlockRegister.rice_malt.get();
-                            case 4 :return stack.getItem()==ItemAndBlockRegister.water_bamboo_cup.get();
-                            case 5 :return stack.getItem()==ItemAndBlockRegister.rice.get();
-                            case 6 :return stack.getItem()==ItemAndBlockRegister.rice_malt.get();
+                            case 1 :return item==ItemAndBlockRegister.rice.get()
+                                        || item==ItemAndBlockRegister.rice_malt.get()
+                                        || item==ItemAndBlockRegister.water_bamboo_cup.get();
+
+                            case 2 :return item==ItemAndBlockRegister.rice.get()
+                                        || item==ItemAndBlockRegister.water_bamboo_cup.get();
+
+                            case 3 :return item==ItemAndBlockRegister.rice.get()
+                                        || item==ItemAndBlockRegister.rice_malt.get();
+
+                            case 4 :return item==ItemAndBlockRegister.water_bamboo_cup.get();
+                            case 5 :return item==ItemAndBlockRegister.rice.get();
+                            case 6 :return item==ItemAndBlockRegister.rice_malt.get();
                         }
                     }else if(type==Type.RICE_MALT){
-                        return stack.getItem()==ItemAndBlockRegister.rice.get();
+                        return item==ItemAndBlockRegister.rice.get();
                     }else if(type==Type.MISO){
-                        return stack.getItem()==ItemAndBlockRegister.shikomi_miso.get();
+                        return item==ItemAndBlockRegister.shikomi_miso.get();
                     }
                 }
             }
@@ -372,7 +365,7 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
                 this.changed = true;
                 BlockState blockstate =FermentationBarrelBlock.addItem(this.state, this.level, this.pos, itemstack);
                 //this.level.levelEvent(1500, this.pos, blockstate != this.state ? 1 : 0);
-                level.playSound((Player)null, pos, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound(null, pos, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
 
                 this.removeItemNoUpdate(0);
             }
@@ -416,7 +409,7 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
                 BlockState blockstate = this.state.cycle(LEVEL);
                 level.setBlock(pos, blockstate, 3);
                 //this.level.levelEvent(1500, this.pos, blockstate != this.state ? 1 : 0);
-                level.playSound((Player)null, pos, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound(null, pos, SoundEvents.HONEY_BLOCK_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
 
             }
         }
@@ -435,7 +428,6 @@ public class FermentationBarrelBlock extends Block implements WorldlyContainerHo
         }
         public static Type getType(int id){
             return switch (id) {
-                case 0 -> NONE;
                 case 1 -> RICE_MALT;
                 case 2 -> MISO;
                 case 3 -> MOROMI;
