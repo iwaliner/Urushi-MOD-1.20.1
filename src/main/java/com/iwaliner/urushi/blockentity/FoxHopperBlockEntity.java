@@ -95,46 +95,52 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
         return Component.translatable("container.foxhopper");
     }
 
-    public static void pushItemsTick(Level p_155574_, BlockPos p_155575_, BlockState p_155576_, FoxHopperBlockEntity p_155577_) {
-        --p_155577_.cooldownTime;
-        p_155577_.tickedGameTime = p_155574_.getGameTime();
-        if (!p_155577_.isOnCooldown()) {
-            p_155577_.setCooldown(0);
-            tryMoveItems(p_155574_, p_155575_, p_155576_, p_155577_, () -> {
-                return suckInItems(p_155574_, p_155577_);
-            });
+    public static void pushItemsTick(Level level, BlockPos blockPos, BlockState blockState, FoxHopperBlockEntity hopperBlockEntity) {
+
+        if(level == null){
+            return;
         }
+        hopperBlockEntity.tickedGameTime = level.getGameTime();
+        if (hopperBlockEntity.isOnCooldown()) {
+            --hopperBlockEntity.cooldownTime;
+            return;
+        }
+
+        hopperBlockEntity.setCooldown(0);
+        tryMoveItems(level, blockPos, blockState, hopperBlockEntity, () -> suckInItems(level, hopperBlockEntity));
 
     }
 
     private static boolean tryMoveItems(Level p_155579_, BlockPos p_155580_, BlockState p_155581_, FoxHopperBlockEntity p_155582_, BooleanSupplier p_155583_) {
         if (p_155579_.isClientSide) {
             return false;
-        } else {
-            if (!p_155582_.isOnCooldown() && p_155581_.getValue(FoxHopperBlock.ENABLED)) {
-                boolean flag = false;
-                if (!p_155582_.isEmpty()) {
-                    flag = ejectItems(p_155579_, p_155580_, p_155581_, p_155582_);
-                }
-
-                if (!p_155582_.inventoryFull()) {
-                    flag |= p_155583_.getAsBoolean();
-                }
-
-                if (flag) {
-                    p_155582_.setCooldown(0);
-                    setChanged(p_155579_, p_155580_, p_155581_);
-                    return true;
-                }
-            }
-
+        }
+        if (p_155582_.isOnCooldown() || !p_155581_.getValue(FoxHopperBlock.ENABLED)) {
             return false;
         }
+        boolean flag = false;
+        if (!p_155582_.isEmpty()) {
+            flag = ejectItems(p_155579_, p_155580_, p_155581_, p_155582_);
+        }
+
+        if (!p_155582_.inventoryFull()) {
+            flag |= p_155583_.getAsBoolean();
+        }
+
+        if (flag) {
+            p_155582_.setCooldown(0);
+            setChanged(p_155579_, p_155580_, p_155581_);
+            return true;
+        }
+
+
+        return false;
+
     }
 
     private boolean inventoryFull() {
         for(ItemStack itemstack : this.items) {
-            if (itemstack.isEmpty() || itemstack.getCount() != itemstack.getMaxStackSize()) {
+            if (itemstack.isEmpty() || itemstack.getCount() < itemstack.getMaxStackSize()) {
                 return false;
             }
         }
@@ -238,27 +244,25 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
                     {
                         return false;
                     }
-                    else
+                    for (int i = 0; i < hopper.getContainerSize(); ++i)
                     {
-                        for (int i = 0; i < hopper.getContainerSize(); ++i)
+                        if (!hopper.getItem(i).isEmpty())
                         {
-                            if (!hopper.getItem(i).isEmpty())
+                            ItemStack originalSlotContents = hopper.getItem(i).copy();
+                            ItemStack insertStack = hopper.removeItem(i, 1);
+                            ItemStack remainder = putStackInInventoryAllSlots(hopper, destination, itemHandler, insertStack);
+
+                            if (remainder.isEmpty())
                             {
-                                ItemStack originalSlotContents = hopper.getItem(i).copy();
-                                ItemStack insertStack = hopper.removeItem(i, 1);
-                                ItemStack remainder = putStackInInventoryAllSlots(hopper, destination, itemHandler, insertStack);
-
-                                if (remainder.isEmpty())
-                                {
-                                    return true;
-                                }
-
-                                hopper.setItem(i, originalSlotContents);
+                                return true;
                             }
-                        }
 
-                        return false;
+                            hopper.setItem(i, originalSlotContents);
+                        }
                     }
+
+                    return false;
+
                 })
                 .orElse(false);
     }
@@ -267,27 +271,27 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
         Container container = getAttachedContainer(p_155563_, p_155564_, p_155565_);
         if (container == null) {
             return false;
-        } else {
-            Direction direction = p_155565_.getValue(FoxHopperBlock.FACING).getOpposite();
-            if (isFullContainer(container, direction)) {
-                return false;
-            } else {
-                for(int i = 0; i < p_155566_.getContainerSize(); ++i) {
-                    if (!p_155566_.getItem(i).isEmpty()) {
-                        ItemStack itemstack = p_155566_.getItem(i).copy();
-                        ItemStack itemstack1 = addItem(p_155566_, container, p_155566_.removeItem(i, 1), direction);
-                        if (itemstack1.isEmpty()) {
-                            container.setChanged();
-                            return true;
-                        }
-
-                        p_155566_.setItem(i, itemstack);
-                    }
+        }
+        Direction direction = p_155565_.getValue(FoxHopperBlock.FACING).getOpposite();
+        if (isFullContainer(container, direction)) {
+            return false;
+        }
+        for(int i = 0; i < p_155566_.getContainerSize(); ++i) {
+            if (!p_155566_.getItem(i).isEmpty()) {
+                ItemStack itemstack = p_155566_.getItem(i).copy();
+                ItemStack itemstack1 = addItem(p_155566_, container, p_155566_.removeItem(i, 1), direction);
+                if (itemstack1.isEmpty()) {
+                    container.setChanged();
+                    return true;
                 }
 
-                return false;
+                p_155566_.setItem(i, itemstack);
             }
         }
+
+        return false;
+
+
     }
 
     private static IntStream getSlots(Container p_59340_, Direction p_59341_) {
@@ -302,28 +306,25 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
     }
 
     private static boolean isEmptyContainer(Container p_59398_, Direction p_59399_) {
-        return getSlots(p_59398_, p_59399_).allMatch((p_59319_) -> {
-            return p_59398_.getItem(p_59319_).isEmpty();
-        });
+        return getSlots(p_59398_, p_59399_).allMatch((p_59319_) -> p_59398_.getItem(p_59319_).isEmpty());
     }
 
     public static boolean suckInItems(Level p_155553_, IFoxHopper p_155554_) {
-        Boolean ret = net.minecraftforge.items.VanillaInventoryCodeHooks.extractHook(p_155553_, p_155554_);
+//        Boolean ret = net.minecraftforge.items.VanillaInventoryCodeHooks.extractHook(p_155553_, p_155554_);
         Container container = getSourceContainer(p_155553_, p_155554_);
         if (container != null) {
             Direction direction = Direction.DOWN;
-            return isEmptyContainer(container, direction) ? false : getSlots(container, direction).anyMatch((p_59363_) -> {
-                return tryTakeInItemFromSlot(p_155554_, container, p_59363_, direction);
-            });
-        } else {
-            for(ItemEntity itementity : getItemsAtAndAbove(p_155553_, p_155554_)) {
-                if (addItem(p_155554_, itementity)) {
-                    return true;
-                }
-            }
-
-            return false;
+            return !isEmptyContainer(container, direction) && getSlots(container, direction).anyMatch((p_59363_)
+                -> tryTakeInItemFromSlot(p_155554_, container, p_59363_, direction));
         }
+        for(ItemEntity itementity : getItemsAtAndAbove(p_155553_, p_155554_)) {
+            if (addItem(p_155554_, itementity)) {
+                return true;
+            }
+        }
+
+        return false;
+
     }
 
     private static boolean tryTakeInItemFromSlot(IFoxHopper p_59355_, Container p_59356_, int p_59357_, Direction p_59358_) {
@@ -378,9 +379,9 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
     static boolean canPlaceItemInContainer(Container p_59335_, ItemStack p_59336_, int p_59337_, @Nullable Direction p_59338_) {
         if (!p_59335_.canPlaceItem(p_59337_, p_59336_)) {
             return false;
-        } else {
-            return !(p_59335_ instanceof WorldlyContainer) || ((WorldlyContainer)p_59335_).canPlaceItemThroughFace(p_59337_, p_59336_, p_59338_);
         }
+        return canTakeItemFromContainer(p_59335_, p_59336_,p_59337_, p_59338_);
+
     }
 
     private static boolean canTakeItemFromContainer(Container p_59381_, ItemStack p_59382_, int p_59383_, Direction p_59384_) {
@@ -389,40 +390,42 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
 
     private static ItemStack tryMoveInItem(@Nullable Container p_59321_, Container p_59322_, ItemStack p_59323_, int p_59324_, @Nullable Direction p_59325_) {
         ItemStack itemstack = p_59322_.getItem(p_59324_);
-        if (canPlaceItemInContainer(p_59322_, p_59323_, p_59324_, p_59325_)) {
-            boolean flag = false;
-            boolean flag1 = p_59322_.isEmpty();
-            if (itemstack.isEmpty()) {
-                p_59322_.setItem(p_59324_, p_59323_);
-                p_59323_ = ItemStack.EMPTY;
-                flag = true;
-            } else if (canMergeItems(itemstack, p_59323_)) {
-                int i = p_59323_.getMaxStackSize() - itemstack.getCount();
-                int j = Math.min(p_59323_.getCount(), i);
-                p_59323_.shrink(j);
-                itemstack.grow(j);
-                flag = j > 0;
-            }
+        if (!canPlaceItemInContainer(p_59322_, p_59323_, p_59324_, p_59325_)) {
+            return p_59323_;
+        }
+        boolean flag = false;
+        boolean flag1 = p_59322_.isEmpty();
+        if (itemstack.isEmpty()) {
+            p_59322_.setItem(p_59324_, p_59323_);
+            p_59323_ = ItemStack.EMPTY;
+            flag = true;
+        } else if (canMergeItems(itemstack, p_59323_)) {
+            int i = p_59323_.getMaxStackSize() - itemstack.getCount();
+            int j = Math.min(p_59323_.getCount(), i);
+            p_59323_.shrink(j);
+            itemstack.grow(j);
+            flag = j > 0;
+        }
 
-            if (flag) {
-                if (flag1 && p_59322_ instanceof FoxHopperBlockEntity) {
-                    FoxHopperBlockEntity hopperblockentity1 = (FoxHopperBlockEntity)p_59322_;
-                    if (!hopperblockentity1.isOnCustomCooldown()) {
-                        int k = 0;
-                        if (p_59321_ instanceof FoxHopperBlockEntity) {
-                            FoxHopperBlockEntity hopperblockentity = (FoxHopperBlockEntity)p_59321_;
-                            if (hopperblockentity1.tickedGameTime >= hopperblockentity.tickedGameTime) {
-                                k = 1;
-                            }
-                        }
-
-                        hopperblockentity1.setCooldown(8 - k);
+        if (!flag) {
+            return p_59323_;
+        }
+        if (flag1 && p_59322_ instanceof FoxHopperBlockEntity hopperblockentity1) {
+            if (!hopperblockentity1.isOnCustomCooldown()) {
+                int k = 0;
+                if (p_59321_ instanceof FoxHopperBlockEntity hopperblockentity) {
+                    if (hopperblockentity1.tickedGameTime >= hopperblockentity.tickedGameTime) {
+                        k = 1;
                     }
                 }
 
-                p_59322_.setChanged();
+                hopperblockentity1.setCooldown(8 - k);
             }
         }
+
+        p_59322_.setChanged();
+
+
 
         return p_59323_;
     }
@@ -439,9 +442,10 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
     }
 
     public static List<ItemEntity> getItemsAtAndAbove(Level p_155590_, IFoxHopper p_155591_) {
-        return p_155591_.getSuckShape().toAabbs().stream().flatMap((p_155558_) -> {
-            return p_155590_.getEntitiesOfClass(ItemEntity.class, p_155558_.move(p_155591_.getLevelX() - 0.5D, p_155591_.getLevelY() - 0.5D, p_155591_.getLevelZ() - 0.5D), EntitySelector.ENTITY_STILL_ALIVE).stream();
-        }).collect(Collectors.toList());
+        return p_155591_.getSuckShape().toAabbs().stream().flatMap((p_155558_)
+            -> p_155590_.getEntitiesOfClass(ItemEntity.class,
+            p_155558_.move(p_155591_.getLevelX() - 0.5D, p_155591_.getLevelY() - 0.5D, p_155591_.getLevelZ() - 0.5D),
+            EntitySelector.ENTITY_STILL_ALIVE).stream()).collect(Collectors.toList());
     }
 
     @Nullable
@@ -515,9 +519,7 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
 
     public static void entityInside(Level p_155568_, BlockPos p_155569_, BlockState p_155570_, Entity p_155571_, FoxHopperBlockEntity p_155572_) {
         if (p_155571_ instanceof ItemEntity && Shapes.joinIsNotEmpty(Shapes.create(p_155571_.getBoundingBox().move((double)(-p_155569_.getX()), (double)(-p_155569_.getY()), (double)(-p_155569_.getZ()))), p_155572_.getSuckShape(), BooleanOp.AND)) {
-            tryMoveItems(p_155568_, p_155569_, p_155570_, p_155572_, () -> {
-                return addItem(p_155572_, (ItemEntity)p_155571_);
-            });
+            tryMoveItems(p_155568_, p_155569_, p_155570_, p_155572_, () -> addItem(p_155572_, (ItemEntity)p_155571_));
         }
 
     }

@@ -1,6 +1,7 @@
 package com.iwaliner.urushi.blockentity.menu;
 
 import com.iwaliner.urushi.MenuRegister;
+import com.iwaliner.urushi.blockentity.DoubledWoodenCabinetryBlockEntity;
 import net.minecraft.core.NonNullList;
 import net.minecraft.util.Mth;
 import net.minecraft.world.Container;
@@ -16,20 +17,22 @@ import net.minecraft.world.item.Items;
 
 import java.util.*;
 
+import static com.iwaliner.urushi.blockentity.DoubledWoodenCabinetryBlockEntity.containerSize;
+
 public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
     //private static final int SLOTS_PER_ROW = 18;
     private static final int SLOTS_PER_ROW = 16;
     private final Container container;
     private final int containerRows=6;
     public DoubledWoodenCabinetryMenu( int p_39225_, Inventory p_39226_) {
-        this(MenuRegister.DoubledWoodenCabinetryMenu.get(), p_39225_, p_39226_, new SimpleContainer(108));
+        this(MenuRegister.DoubledWoodenCabinetryMenu.get(), p_39225_, p_39226_, new SimpleContainer(containerSize));
     }
     public static DoubledWoodenCabinetryMenu twRows(int p_39247_, Inventory p_39248_, Container p_39249_) {
         return new DoubledWoodenCabinetryMenu(MenuRegister.DoubledWoodenCabinetryMenu.get(), p_39247_, p_39248_, p_39249_);
     }
     public DoubledWoodenCabinetryMenu(MenuType<?> menuType, int p_39230_, Inventory inventory, Container container) {
         super(menuType, p_39230_);
-        checkContainerSize(container, 108);
+        checkContainerSize(container, containerSize);
         this.container = container;
         container.startOpen(inventory.player);
         //int i = 2*18;
@@ -56,7 +59,7 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
 
 
     }
-    public ItemStack quickMoveStack(Player p_82846_1_, int slotNumber) {
+    public ItemStack quickMoveStack(Player player, int slotNumber) {
         ItemStack itemstack = ItemStack.EMPTY;
         Slot slot = this.slots.get(slotNumber);
         if (slot != null && slot.hasItem()) {
@@ -93,27 +96,27 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
 
     public boolean clickMenuButton(Player player, int p) {
         int startNumber=1;
-        NonNullList<ItemStack> list1=NonNullList.withSize(108,ItemStack.EMPTY);
+        int dwcSize = DoubledWoodenCabinetryBlockEntity.containerSize;
+        NonNullList<ItemStack> list1=NonNullList.withSize(dwcSize,ItemStack.EMPTY);
 
         List<Integer> idList=new ArrayList<>();
-        for(int i=0;i<108;i++){
+        for(int i=0;i<dwcSize;i++){
             ItemStack stack=this.slots.get(i).getItem();
             if(i<startNumber) {
                 list1.set(i, ItemStack.EMPTY);
-                idList.add(Item.getId(stack.getItem()));
             }else {
                 list1.set(i, stack.copy());
-                idList.add(Item.getId(stack.getItem()));
             }
+            idList.add(Item.getId(stack.getItem()));
         }
 
 
         LinkedHashMap<Integer, int[]> map = new LinkedHashMap<>();
-        for(int i=0;i<108;i++){
+        for(int i=0;i<dwcSize;i++){
             int id=idList.get(i);
             if (map.containsKey(id)) {
                 int[] a=map.get(id);
-                for(int j=0;j<108;j++){
+                for(int j=0;j<dwcSize;j++){
                     if(a[j]==-2){
                         a[j]=i;
                         break;
@@ -121,11 +124,11 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
                 }
                 map.put(id, a);
             } else {
-                int[] a=new int[108];
-                for(int j=0;j<108;j++){
+                int[] a=new int[dwcSize];
+                for(int j=0;j<dwcSize;j++){
                     a[j]=-2;
                 }
-                    a[0] = i;
+                a[0] = i;
 
                 map.put(id, a);
             }
@@ -134,9 +137,9 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
         List<int[]> mapIdList = new ArrayList<>(map.values());
         int n=0;
 
-        NonNullList<ItemStack> list2=NonNullList.withSize(108*108,ItemStack.EMPTY);
-        NonNullList<ItemStack> list3=NonNullList.withSize(108*108,ItemStack.EMPTY);
-        NonNullList<ItemStack> list4=NonNullList.withSize(108*108,ItemStack.EMPTY);
+        NonNullList<ItemStack> list2=NonNullList.withSize(dwcSize*dwcSize,ItemStack.EMPTY);
+        NonNullList<ItemStack> list3=NonNullList.withSize(dwcSize*dwcSize,ItemStack.EMPTY);
+        NonNullList<ItemStack> list4=NonNullList.withSize(dwcSize*dwcSize,ItemStack.EMPTY);
 
         for(int j=0;j<map.size();j++) {
             int[] sameItemSlots=mapIdList.get(j);
@@ -172,8 +175,7 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
         }
 
         List<Integer> idList2=new ArrayList<>();
-        for(int i=0;i<list2.size();i++){
-            ItemStack stack=list2.get(i);
+        for (ItemStack stack : list2) {
             idList2.add(Item.getId(stack.getItem()));
         }
 
@@ -208,7 +210,7 @@ public class DoubledWoodenCabinetryMenu extends AbstractContainerMenu {
         }
 
 
-        for(int i=startNumber;i<108;i++){
+        for(int i=startNumber;i<dwcSize;i++){
             if(i<list4.size()){
                 this.slots.get(i).set(list4.get(i-startNumber));
             }else{

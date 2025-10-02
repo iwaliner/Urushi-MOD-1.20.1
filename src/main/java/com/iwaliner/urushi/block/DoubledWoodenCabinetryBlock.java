@@ -56,21 +56,21 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
 
         if (level.isClientSide) {
             return InteractionResult.SUCCESS;
-        } else {
-            BlockEntity blockentity = level.getBlockEntity(pos);
-            if (blockentity instanceof DoubledWoodenCabinetryBlockEntity) {
-                if(player.getItemInHand(hand).getItem()== Items.BARRIER&&player.isCreative()){
-                    for(int i=0;i< ModCoreUrushi.underDevelopmentList.size();i++){
-                        ((DoubledWoodenCabinetryBlockEntity) blockentity).setItem(i,new ItemStack(ModCoreUrushi.underDevelopmentList.get(i)));
-                    }
-                    return InteractionResult.SUCCESS;
-                }
-                player.openMenu((DoubledWoodenCabinetryBlockEntity)blockentity);
-                player.awardStat(Stats.OPEN_BARREL);
-            }
-
-            return InteractionResult.CONSUME;
         }
+        BlockEntity blockentity = level.getBlockEntity(pos);
+        if (blockentity instanceof DoubledWoodenCabinetryBlockEntity) {
+            if(player.getItemInHand(hand).getItem()== Items.BARRIER&&player.isCreative()){
+                for(int i=0;i< ModCoreUrushi.underDevelopmentList.size();i++){
+                    ((DoubledWoodenCabinetryBlockEntity) blockentity).setItem(i,new ItemStack(ModCoreUrushi.underDevelopmentList.get(i)));
+                }
+                return InteractionResult.SUCCESS;
+            }
+            player.openMenu((DoubledWoodenCabinetryBlockEntity)blockentity);
+            player.awardStat(Stats.OPEN_BARREL);
+        }
+
+        return InteractionResult.CONSUME;
+
     }
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState state2, boolean boo) {

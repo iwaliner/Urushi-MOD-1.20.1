@@ -28,7 +28,9 @@ import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class DoubledWoodenCabinetryBlockEntity extends RandomizableContainerBlockEntity {
-    private NonNullList<ItemStack> items = NonNullList.withSize(108, ItemStack.EMPTY);
+    public static final int containerSize = 108;
+
+    private NonNullList<ItemStack> items = NonNullList.withSize(containerSize, ItemStack.EMPTY);
     private ContainerOpenersCounter openersCounter = new ContainerOpenersCounter() {
         protected void onOpen(Level p_155062_, BlockPos p_155063_, BlockState p_155064_) {
             DoubledWoodenCabinetryBlockEntity.this.playSound(p_155064_, SoundEvents.BARREL_OPEN);
@@ -77,8 +79,6 @@ public class DoubledWoodenCabinetryBlockEntity extends RandomizableContainerBloc
         }
 
     }
-
-    private final int containerSize = 108;
 
     public int getContainerSize() {
         return containerSize;
