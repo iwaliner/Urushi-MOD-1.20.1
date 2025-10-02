@@ -50,6 +50,7 @@ import net.minecraft.world.phys.Vec3;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.Nullable;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -505,67 +506,40 @@ public  class ShichirinBlockEntity extends BaseContainerBlockEntity implements W
         {
             return this.id;
         }
-    }
-    public ShichirinEnum getEnum(){
-        int i=ConfigUrushi.shichirincookingDifficlutly.get();
-       // int i=2000;
-        if(differ<-i/2-i*8){
-           return ShichirinEnum.undercookedLevel5;
-        }else if(differ<-i/2-i*7){
-          return  ShichirinEnum.undercookedLevel4;
-        }else if(differ<-i/2-i*6){
-            return  ShichirinEnum.undercookedLevel3;
-        } else if(differ<-i/2-i*5){
-            return  ShichirinEnum.undercookedLevel2;
-        }else if(differ<-i/2-i*4){
-            return  ShichirinEnum.undercookedLevel1;
-        }else if(differ<-i/2-i*3){
-            return  ShichirinEnum.wellcookedLevel1A;
-        }else if(differ<-i/2-i*2){
-            return  ShichirinEnum.wellcookedLevel2A;
-        }else if(differ<-i/2-i){
-            return  ShichirinEnum.wellcookedLevel3A;
-        }else if(differ<-i/2){
-            return  ShichirinEnum.wellcookedLevel4A;
-        }else if(differ<i/2){
-            return  ShichirinEnum.wellcookedLevel5;
-        }else if(differ<i/2+i){
-            return  ShichirinEnum.wellcookedLevel4B;
-        } else if(differ<i/2+i*2){
-            return  ShichirinEnum.wellcookedLevel3B;
-        }else if(differ<i/2+i*3){
-            return  ShichirinEnum.wellcookedLevel2B;
-        }else if(differ<i/2+i*4){
-            return  ShichirinEnum.wellcookedLevel1B;
-        }else if(differ<i/2+i*5){
-            return  ShichirinEnum.overcookedLevel1;
-        }else if(differ<i/2+i*6){
-            return  ShichirinEnum.overcookedLevel2;
-        }else if(differ<i/2+i*7){
-            return  ShichirinEnum.overcookedLevel3;
-        }else if(differ<i/2+i*8){
-            return  ShichirinEnum.overcookedLevel4;
-        }else {
-            return  ShichirinEnum.overcookedLevel5;
-        }
-    }
 
+        public static ShichirinEnum fromDiffer(int differ, int difficulty) {
+            int base = -difficulty / 2;
+            int[] thresholds = new int[ShichirinEnum.values().length - 1];
 
-    public static int getCookingLevel(int ID){
-        int level;
-       if(ID<5){
-            level=-ID+5;
-        }else if(ID<14){
-            if(ID<9){
-                level=ID-4;
-            }else{
-                level=-ID+14;
+            for (int i = 0; i < thresholds.length; i++) {
+                thresholds[i] = base + (i - 8) * difficulty;
             }
-          }else{
-           level=ID-13;
+
+            int index = Arrays.binarySearch(thresholds, differ);
+            if (index < 0) index = -index - 1;
+            return ShichirinEnum.values()[Math.min(index, ShichirinEnum.values().length - 1)];
         }
-       return level;
     }
+
+    public ShichirinEnum getEnum() {
+        int difficulty = ConfigUrushi.shichirincookingDifficlutly.get();
+        // int i=2000;
+        return ShichirinEnum.fromDiffer(differ, difficulty);
+    }
+
+
+    public static int getCookingLevel(int ID) {
+        if (ID < 5) {
+            return 5 - ID; // undercooked: 5 → 1
+        } else if (ID < 9) {
+            return ID - 4; // wellcooked A: 5 → 8 → 1 → 4
+        } else if (ID < 14) {
+            return 14 - ID; // wellcooked B: 9 → 13 → 5 → 1
+        } else {
+            return ID - 13; // overcooked: 14 → 18 → 1 → 5
+        }
+    }
+
     public static String getCookingType(int ID){
         if(ID<5){
             return "undercooked";

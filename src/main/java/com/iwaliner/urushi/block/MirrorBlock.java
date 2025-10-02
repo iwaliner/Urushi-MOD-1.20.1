@@ -2,11 +2,8 @@ package com.iwaliner.urushi.block;
 
 import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.blockentity.MirrorBlockEntity;
-import com.iwaliner.urushi.blockentity.TankBlockEntity;
 import com.iwaliner.urushi.util.ComplexDirection;
-import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.UrushiUtils;
-import com.iwaliner.urushi.util.interfaces.ElementBlock;
 import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,7 +25,6 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -119,36 +115,36 @@ public class MirrorBlock extends BaseEntityBlock implements Tiered {
                 }else if(canFaceAbove(complexDirection)){
                     ComplexDirection newDirection=ComplexDirection.FAIL;
                     if(complexDirection==ComplexDirection.N||complexDirection==ComplexDirection.S){
-                        newDirection=ComplexDirection.N_AN;
-                    }else if(complexDirection==ComplexDirection.N_AN){
-                        newDirection=ComplexDirection.AN;
-                    }else if(complexDirection==ComplexDirection.AN){
-                        newDirection=ComplexDirection.A_AN;
-                    }else if(complexDirection==ComplexDirection.A_AN){
-                        newDirection=ComplexDirection.A1;
-                    }else if(complexDirection==ComplexDirection.A1){
-                        newDirection=ComplexDirection.A_AS;
-                    }else if(complexDirection==ComplexDirection.A_AS){
-                        newDirection=ComplexDirection.AS;
-                    }else if(complexDirection==ComplexDirection.AS){
-                        newDirection=ComplexDirection.S_AS;
-                    }else if(complexDirection==ComplexDirection.S_AS){
+                        newDirection=ComplexDirection.N_UN;
+                    }else if(complexDirection==ComplexDirection.N_UN){
+                        newDirection=ComplexDirection.UN;
+                    }else if(complexDirection==ComplexDirection.UN){
+                        newDirection=ComplexDirection.U_UN;
+                    }else if(complexDirection==ComplexDirection.U_UN){
+                        newDirection=ComplexDirection.U_NSdir;
+                    }else if(complexDirection==ComplexDirection.U_NSdir){
+                        newDirection=ComplexDirection.U_US;
+                    }else if(complexDirection==ComplexDirection.U_US){
+                        newDirection=ComplexDirection.US;
+                    }else if(complexDirection==ComplexDirection.US){
+                        newDirection=ComplexDirection.S_US;
+                    }else if(complexDirection==ComplexDirection.S_US){
                         newDirection=ComplexDirection.N;
                     }else if(complexDirection==ComplexDirection.E||complexDirection==ComplexDirection.W){
-                        newDirection=ComplexDirection.E_AE;
-                    }else if(complexDirection==ComplexDirection.E_AE){
-                        newDirection=ComplexDirection.AE;
-                    }else if(complexDirection==ComplexDirection.AE){
-                        newDirection=ComplexDirection.A_AE;
-                    }else if(complexDirection==ComplexDirection.A_AE){
-                        newDirection=ComplexDirection.A2;
-                    }else if(complexDirection==ComplexDirection.A2){
-                        newDirection=ComplexDirection.A_AW;
-                    }else if(complexDirection==ComplexDirection.A_AW){
-                        newDirection=ComplexDirection.AW;
-                    }else if(complexDirection==ComplexDirection.AW){
-                        newDirection=ComplexDirection.W_AW;
-                    }else if(complexDirection==ComplexDirection.W_AW){
+                        newDirection=ComplexDirection.E_UE;
+                    }else if(complexDirection==ComplexDirection.E_UE){
+                        newDirection=ComplexDirection.UE;
+                    }else if(complexDirection==ComplexDirection.UE){
+                        newDirection=ComplexDirection.U_UE;
+                    }else if(complexDirection==ComplexDirection.U_UE){
+                        newDirection=ComplexDirection.U_WEdir;
+                    }else if(complexDirection==ComplexDirection.U_WEdir){
+                        newDirection=ComplexDirection.U_UW;
+                    }else if(complexDirection==ComplexDirection.U_UW){
+                        newDirection=ComplexDirection.UW;
+                    }else if(complexDirection==ComplexDirection.UW){
+                        newDirection=ComplexDirection.W_UW;
+                    }else if(complexDirection==ComplexDirection.W_UW){
                         newDirection=ComplexDirection.E;
                     }else{
                         return InteractionResult.FAIL;
@@ -162,11 +158,11 @@ public class MirrorBlock extends BaseEntityBlock implements Tiered {
         return InteractionResult.FAIL;
     }
     private  boolean canFaceAbove(ComplexDirection direction){
-        return direction==ComplexDirection.N||direction==ComplexDirection.N_AN||direction==ComplexDirection.AN||direction==ComplexDirection.A_AN||
-                direction==ComplexDirection.E||direction==ComplexDirection.E_AE||direction==ComplexDirection.AE||direction==ComplexDirection.A_AE||
-                direction==ComplexDirection.S||direction==ComplexDirection.S_AS||direction==ComplexDirection.AS||direction==ComplexDirection.A_AS||
-                direction==ComplexDirection.W||direction==ComplexDirection.W_AW||direction==ComplexDirection.AW||direction==ComplexDirection.A_AW
-                ||direction==ComplexDirection.A1||direction==ComplexDirection.A2;
+        return direction==ComplexDirection.N||direction==ComplexDirection.N_UN ||direction==ComplexDirection.UN ||direction==ComplexDirection.U_UN ||
+                direction==ComplexDirection.E||direction==ComplexDirection.E_UE ||direction==ComplexDirection.UE ||direction==ComplexDirection.U_UE ||
+                direction==ComplexDirection.S||direction==ComplexDirection.S_US ||direction==ComplexDirection.US ||direction==ComplexDirection.U_US ||
+                direction==ComplexDirection.W||direction==ComplexDirection.W_UW ||direction==ComplexDirection.UW ||direction==ComplexDirection.U_UW
+                ||direction==ComplexDirection.U_NSdir ||direction==ComplexDirection.U_WEdir;
     }
 
 }
