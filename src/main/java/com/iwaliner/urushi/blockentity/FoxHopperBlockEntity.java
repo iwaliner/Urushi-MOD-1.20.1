@@ -111,6 +111,17 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
 
     }
 
+    // @debug
+    @Override
+    public boolean isEmpty(){
+        for(ItemStack itemstack : this.items) {
+            if (!itemstack.isEmpty()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     private static boolean tryMoveItems(Level p_155579_, BlockPos p_155580_, BlockState p_155581_, FoxHopperBlockEntity p_155582_, BooleanSupplier p_155583_) {
         if (p_155579_.isClientSide) {
             return false;
@@ -277,15 +288,14 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
             return false;
         }
         for(int i = 0; i < p_155566_.getContainerSize(); ++i) {
-            if (!p_155566_.getItem(i).isEmpty()) {
-                ItemStack itemstack = p_155566_.getItem(i).copy();
+            ItemStack item = p_155566_.getItem(i);
+            if (!item.isEmpty()) {
                 ItemStack itemstack1 = addItem(p_155566_, container, p_155566_.removeItem(i, 1), direction);
                 if (itemstack1.isEmpty()) {
                     container.setChanged();
                     return true;
                 }
-
-                p_155566_.setItem(i, itemstack);
+                p_155566_.setItem(i, item.copy());
             }
         }
 
@@ -305,8 +315,8 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
         });
     }
 
-    private static boolean isEmptyContainer(Container p_59398_, Direction p_59399_) {
-        return getSlots(p_59398_, p_59399_).allMatch((p_59319_) -> p_59398_.getItem(p_59319_).isEmpty());
+    private static boolean isEmptyContainer(Container container, Direction direction) {
+        return getSlots(container, direction).allMatch(slot -> container.getItem(slot).isEmpty());
     }
 
     public static boolean suckInItems(Level p_155553_, IFoxHopper p_155554_) {
@@ -330,14 +340,13 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
     private static boolean tryTakeInItemFromSlot(IFoxHopper p_59355_, Container p_59356_, int p_59357_, Direction p_59358_) {
         ItemStack itemstack = p_59356_.getItem(p_59357_);
         if (!itemstack.isEmpty() && canTakeItemFromContainer(p_59356_, itemstack, p_59357_, p_59358_)) {
-            ItemStack itemstack1 = itemstack.copy();
             ItemStack itemstack2 = addItem(p_59356_, p_59355_, p_59356_.removeItem(p_59357_, 1), (Direction)null);
             if (itemstack2.isEmpty()) {
                 p_59356_.setChanged();
                 return true;
             }
 
-            p_59356_.setItem(p_59357_, itemstack1);
+            p_59356_.setItem(p_59357_, itemstack.copy());
         }
 
         return false;
@@ -454,27 +463,31 @@ public class FoxHopperBlockEntity extends RandomizableContainerBlockEntity imple
     }
 
     @Nullable
-    private static Container getContainerAt(Level p_59348_, double x, double y, double z) {
+    private static Container getContainerAt(Level level, double x, double y, double z) {
         Container container = null;
         BlockPos blockpos = new BlockPos(Mth.floor(x), Mth.floor(y), Mth.floor(z));
-        BlockState blockstate = p_59348_.getBlockState(blockpos);
+        BlockState blockstate = level.getBlockState(blockpos);
         Block block = blockstate.getBlock();
+
         if (block instanceof WorldlyContainerHolder) {
-            container = ((WorldlyContainerHolder)block).getContainer(blockstate, p_59348_, blockpos);
+            container = ((WorldlyContainerHolder)block).getContainer(blockstate, level, blockpos);
         } else if (blockstate.hasBlockEntity()) {
-            BlockEntity blockentity = p_59348_.getBlockEntity(blockpos);
+            BlockEntity blockentity = level.getBlockEntity(blockpos);
             if (blockentity instanceof Container) {
                 container = (Container)blockentity;
                 if (container instanceof ChestBlockEntity && block instanceof ChestBlock) {
-                    container = ChestBlock.getContainer((ChestBlock)block, blockstate, p_59348_, blockpos, true);
+                    container = ChestBlock.getContainer((ChestBlock)block, blockstate, level, blockpos, true);
                 }
             }
         }
 
-        if (container == null) {
-            List<Entity> list = p_59348_.getEntities((Entity)null, new AABB(x - 0.5D, y - 0.5D, z - 0.5D, x + 0.5D, y + 0.5D, z + 0.5D), EntitySelector.CONTAINER_ENTITY_SELECTOR);
+        // if upper block is solid block, we do not try to absorb dropped items
+        // also effective for foxhopper: it will not try to absorb items on top of 3 blocks
+        if (container == null && !blockstate.isSolidRender(level, blockpos)) {
+            List<Entity> list = level.getEntities((Entity)null, new AABB(x - 0.5D, y - 0.5D, z - 0.5D,
+                x + 0.5D, y + 0.5D, z + 0.5D), EntitySelector.CONTAINER_ENTITY_SELECTOR);
             if (!list.isEmpty()) {
-                container = (Container)list.get(p_59348_.random.nextInt(list.size()));
+                container = (Container)list.get(level.random.nextInt(list.size()));
             }
         }
 

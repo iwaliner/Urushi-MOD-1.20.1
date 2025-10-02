@@ -26,6 +26,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.HopperBlock;
+import net.minecraft.world.level.block.RailBlock;
 import net.minecraft.world.level.block.entity.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
@@ -111,6 +112,12 @@ public class UrushiHopperBlockEntity extends RandomizableContainerBlockEntity im
         tryMoveItems(level, blockPos, blockState, hopperBlockEntity, () -> suckInItems(level, hopperBlockEntity));
 
 
+    }
+
+    // @debug
+    @Override
+    public boolean isEmpty(){
+        return this.items.get(0).isEmpty();
     }
 
     private static boolean tryMoveItems(Level level, BlockPos blockPos, BlockState blockState, UrushiHopperBlockEntity hopperBlockEntity, BooleanSupplier booleanSupplier) {
@@ -279,20 +286,18 @@ public class UrushiHopperBlockEntity extends RandomizableContainerBlockEntity im
             return false;
         }
         for(int i = 0; i < p_155566_.getContainerSize(); ++i) {
-            if (!p_155566_.getItem(i).isEmpty()) {
-                ItemStack itemstack = p_155566_.getItem(i).copy();
+            ItemStack item = p_155566_.getItem(i);
+            if (!item.isEmpty()) {
                 ItemStack itemstack1 = addItem(p_155566_, container, p_155566_.removeItem(i, 1), direction);
                 if (itemstack1.isEmpty()) {
                     container.setChanged();
                     return true;
                 }
-
-                p_155566_.setItem(i, itemstack);
+                p_155566_.setItem(i, item.copy());
             }
         }
 
         return false;
-
 
     }
 
@@ -336,14 +341,13 @@ public class UrushiHopperBlockEntity extends RandomizableContainerBlockEntity im
     private static boolean tryTakeInItemFromSlot(Hopper p_59355_, Container p_59356_, int p_59357_, Direction p_59358_) {
         ItemStack itemstack = p_59356_.getItem(p_59357_);
         if (!itemstack.isEmpty() && canTakeItemFromContainer(p_59356_, itemstack, p_59357_, p_59358_)) {
-            ItemStack itemstack1 = itemstack.copy();
             ItemStack itemstack2 = addItem(p_59356_, p_59355_, p_59356_.removeItem(p_59357_, 1), (Direction)null);
             if (itemstack2.isEmpty()) {
                 p_59356_.setChanged();
                 return true;
             }
 
-            p_59356_.setItem(p_59357_, itemstack1);
+            p_59356_.setItem(p_59357_, itemstack.copy());
         }
 
         return false;
@@ -368,13 +372,11 @@ public class UrushiHopperBlockEntity extends RandomizableContainerBlockEntity im
             WorldlyContainer worldlycontainer = (WorldlyContainer)p_59328_;
             int[] aint = worldlycontainer.getSlotsForFace(p_59330_);
 
-            for(int k = 0; k < aint.length && !p_59329_.isEmpty(); ++k) {
-                p_59329_ = tryMoveInItem(p_59327_, p_59328_, p_59329_, aint[k], p_59330_);
+            for(int i = 0; i < aint.length && !p_59329_.isEmpty(); ++i) {
+                p_59329_ = tryMoveInItem(p_59327_, p_59328_, p_59329_, aint[i], p_59330_);
             }
         } else {
-            int i = p_59328_.getContainerSize();
-
-            for(int j = 0; j < i && !p_59329_.isEmpty(); ++j) {
+            for(int j = 0; j < p_59328_.getContainerSize() && !p_59329_.isEmpty(); ++j) {
                 p_59329_ = tryMoveInItem(p_59327_, p_59328_, p_59329_, j, p_59330_);
             }
         }
@@ -456,11 +458,12 @@ public class UrushiHopperBlockEntity extends RandomizableContainerBlockEntity im
     }
 
     @Nullable
-    private static Container getContainerAt(Level level, double p_59349_, double p_59350_, double p_59351_) {
+    private static Container getContainerAt(Level level, double x, double y, double z) {
         Container container = null;
-        BlockPos blockpos = new BlockPos(Mth.floor(p_59349_), Mth.floor(p_59350_), Mth.floor(p_59351_));
+        BlockPos blockpos = new BlockPos(Mth.floor(x), Mth.floor(y), Mth.floor(z));
         BlockState blockstate = level.getBlockState(blockpos);
         Block block = blockstate.getBlock();
+
         if (block instanceof WorldlyContainerHolder) {
             container = ((WorldlyContainerHolder)block).getContainer(blockstate, level, blockpos);
         } else if (blockstate.hasBlockEntity()) {
@@ -473,8 +476,10 @@ public class UrushiHopperBlockEntity extends RandomizableContainerBlockEntity im
             }
         }
 
-        if (container == null) {
-            List<Entity> list = level.getEntities((Entity)null, new AABB(p_59349_ - 0.5D, p_59350_ - 0.5D, p_59351_ - 0.5D, p_59349_ + 0.5D, p_59350_ + 0.5D, p_59351_ + 0.5D), EntitySelector.CONTAINER_ENTITY_SELECTOR);
+        // if upper block is solid block, we do not try to absorb dropped items
+        if (container == null && !blockstate.isSolidRender(level, blockpos)) {
+            List<Entity> list = level.getEntities((Entity)null, new AABB(x - 0.5D, y - 0.5D, z - 0.5D,
+                x + 0.5D, y + 0.5D, z + 0.5D), EntitySelector.CONTAINER_ENTITY_SELECTOR);
             if (!list.isEmpty()) {
                 container = (Container)list.get(level.random.nextInt(list.size()));
             }
