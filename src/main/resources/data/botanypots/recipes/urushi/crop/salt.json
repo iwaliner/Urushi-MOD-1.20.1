@@ -1,0 +1,30 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:salt"
+  },
+  "categories": [
+    "sand",
+    "water"
+  ],
+  "growthTicks": 900,
+  "display": {
+    "block": "urushi:salt_and_sand"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:salt"
+      }
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "item": "urushi:salt"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

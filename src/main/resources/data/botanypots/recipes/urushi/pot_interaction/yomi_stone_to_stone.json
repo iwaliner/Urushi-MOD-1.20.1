@@ -1,0 +1,19 @@
+{
+  "type": "botanypots:pot_interaction",
+  "held_ingredient": {
+    "item": "urushi:kitsunebi"
+  },
+  "soil_ingredient": [
+    {
+      "item": "urushi:yomi_stone"
+    }
+  ],
+  "soil_output": {
+    "item": "minecraft:stone",
+    "count": 1
+  },
+  "sound": {
+    "sound": "minecraft:block.soul_soil.break",
+    "category": "blocks"
+  }
+}

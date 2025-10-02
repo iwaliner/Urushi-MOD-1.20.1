@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:ghost_wattle_and_daub"
+  },
+  "display": {
+    "type": "botanypots:simple",
+    "block": "urushi:ghost_wattle_and_daub",
+    "properties": {
+      "powered": true
+    }
+  },
+  "categories": [
+    "ghost_wattle_and_daub",
+    "yomi",
+    "wattle_and_daub",
+    "mushroom",
+    "loose_soil",
+    "ghost_block"
+  ],
+  "growthModifier": 0.44
+}

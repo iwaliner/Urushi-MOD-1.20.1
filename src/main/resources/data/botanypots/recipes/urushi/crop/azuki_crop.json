@@ -1,0 +1,33 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:azuki_crop"
+  },
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "urushi:azuki_crop"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:azuki_crop"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.2,
+      "output": {
+        "item": "urushi:azuki_crop"
+      },
+      "minRolls": 1,
+      "maxRolls": 3
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:soy_crop"
+  },
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "growthTicks": 900,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "urushi:soy_crop"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:soy_crop"
+      }
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "item": "urushi:soy_crop"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

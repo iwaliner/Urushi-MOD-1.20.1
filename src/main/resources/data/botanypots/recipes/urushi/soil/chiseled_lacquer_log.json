@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:soil",
+  "input": [
+    {
+      "item": "urushi:chiseled_lacquer_log"
+    },
+    {
+      "item": "urushi:chiseled_lacquer_wood"
+    }
+  ],
+  "display": {
+    "block": "urushi:chiseled_lacquer_wood"
+  },
+  "categories": [
+    "wood",
+    "log",
+    "mushroom",
+    "chiseled_lacquer",
+    "chiseled_lacquer_wood"
+  ],
+  "growthModifier": 1.05
+}

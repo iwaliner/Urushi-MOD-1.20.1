@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:eulalia"
+  },
+  "categories": [
+    "dirt",
+    "yomi"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "urushi:eulalia"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:eulalia"
+      }
+    }
+  ]
+}

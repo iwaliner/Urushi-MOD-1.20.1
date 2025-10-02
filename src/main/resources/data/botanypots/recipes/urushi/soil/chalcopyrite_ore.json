@@ -1,0 +1,18 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:chalcopyrite_ore"
+  },
+  "display": {
+    "block": "urushi:chalcopyrite_ore"
+  },
+  "categories": [
+    "chalcopyrite_ore",
+    "yomi",
+    "ore",
+    "stone",
+    "mushroom",
+    "copper_ore"
+  ],
+  "growthModifier": 1.09
+}

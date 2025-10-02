@@ -1,0 +1,15 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:hot_spring_water_bucket"
+  },
+  "display": {
+    "block": "urushi:hot_spring_water",
+    "renderFluid": true
+  },
+  "categories": [
+    "water",
+    "lava"
+  ],
+  "growthModifier": 0.95
+}

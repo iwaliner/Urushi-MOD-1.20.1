@@ -1824,6 +1824,11 @@
    "block.urushi.concrete_blocks": "Concrete Blocks",
    "block.urushi.concrete_block_slab": "Concrete Block Slab",
    "block.urushi.concrete_block_stairs": "Concrete Block Stairs",
-   "block.urushi.concrete_block_normal_wall": "Normal Concrete Block Wall"
+   "block.urushi.concrete_block_normal_wall": "Normal Concrete Block Wall",
+   "item.urushi.drawstring_bag": "Drawstring Bag",
+   "info.urushi.drawstring_bag": "A bag with the same capacity as a large chest",
+   "info.urushi.dyeable": "Dyeable same as leather armors",
+   "block.urushi.small_torii": "Small Torii",
+   "block.urushi.wooden_hokora": "Hokora"
   
 }

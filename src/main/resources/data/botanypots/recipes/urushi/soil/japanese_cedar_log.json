@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:soil",
+  "input": [
+    {
+      "item": "urushi:japanese_cedar_log"
+    },
+    {
+      "item": "urushi:japanese_cedar_wood"
+    }
+  ],
+  "display": {
+    "block": "urushi:japanese_cedar_wood"
+  },
+  "categories": [
+    "wood",
+    "log",
+    "mushroom",
+    "japanese_cedar",
+    "japanese_cedar_wood"
+  ],
+  "growthModifier": 1
+}

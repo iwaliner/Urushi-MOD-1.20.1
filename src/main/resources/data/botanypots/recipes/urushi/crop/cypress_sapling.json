@@ -1,0 +1,23 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:cypress_sapling"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "urushi:cypress_sapling"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:cypress_bark"
+      },
+      "minRolls": 1,
+      "maxRolls": 3
+    }
+  ]
+}

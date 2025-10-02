@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "RSR",
+    "R R"
+  ],
+  "key": {
+  "B": {
+    "item": "urushi:smooth_black_urushi_planks"
+    },
+    "S": {
+    "item": "urushi:smooth_red_urushi_slab"
+    },
+    "R": {
+    "item": "urushi:smooth_red_urushi_planks"
+    }
+  },
+  "result": {
+    "item": "urushi:small_torii",
+    "count": 8
+  }
+}

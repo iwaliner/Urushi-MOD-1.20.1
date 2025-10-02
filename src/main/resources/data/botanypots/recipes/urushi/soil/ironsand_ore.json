@@ -1,0 +1,17 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:ironsand_ore"
+  },
+  "display": {
+    "block": "urushi:ironsand_ore"
+  },
+  "categories": [
+    "ironsand_ore",
+    "sand",
+    "ore",
+    "loose_soil",
+    "iron_ore"
+  ],
+  "growthModifier": 1.09
+}

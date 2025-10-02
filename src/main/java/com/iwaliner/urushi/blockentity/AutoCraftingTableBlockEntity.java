@@ -150,7 +150,14 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
     private LazyOptional<ItemStackHandler> resultSampleOptional = LazyOptional.empty();
 
     private LazyOptional<ItemStackHandler> ingredientsSampleOptional = LazyOptional.empty();
-    private final NonNullList<ItemStack> slotList = NonNullList.of(resultSample.getStackInSlot(0), ingredientsSample.getStackInSlot(0),ingredientsSample.getStackInSlot(1),ingredientsSample.getStackInSlot(2),ingredientsSample.getStackInSlot(3),ingredientsSample.getStackInSlot(4),ingredientsSample.getStackInSlot(5),ingredientsSample.getStackInSlot(6),ingredientsSample.getStackInSlot(7),ingredientsSample.getStackInSlot(8),result.getStackInSlot(0), ingredients.getStackInSlot(0),ingredients.getStackInSlot(1),ingredients.getStackInSlot(2),ingredients.getStackInSlot(3),ingredients.getStackInSlot(4),ingredients.getStackInSlot(5),ingredients.getStackInSlot(6),ingredients.getStackInSlot(7),ingredients.getStackInSlot(8));
+    private final NonNullList<ItemStack> slotList = NonNullList.of(resultSample.getStackInSlot(0),
+        ingredientsSample.getStackInSlot(0),ingredientsSample.getStackInSlot(1),ingredientsSample.getStackInSlot(2),
+        ingredientsSample.getStackInSlot(3),ingredientsSample.getStackInSlot(4),ingredientsSample.getStackInSlot(5),
+        ingredientsSample.getStackInSlot(6),ingredientsSample.getStackInSlot(7),ingredientsSample.getStackInSlot(8),
+        result.getStackInSlot(0),
+        ingredients.getStackInSlot(0),ingredients.getStackInSlot(1),ingredients.getStackInSlot(2),
+        ingredients.getStackInSlot(3),ingredients.getStackInSlot(4),ingredients.getStackInSlot(5),
+        ingredients.getStackInSlot(6),ingredients.getStackInSlot(7),ingredients.getStackInSlot(8));
     protected final RecipeType<? extends CraftingRecipe> recipeType;
     private int processTime;
     private final Object2IntOpenHashMap<ResourceLocation> recipesUsed = new Object2IntOpenHashMap<>();
@@ -267,8 +274,11 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         for (int i = 11; i < 20; i++) {
             ItemStack slotStack=blockEntity.getItem(i);
             if(slotStack.hasCraftingRemainingItem()){
-                if (level.getBlockState(blockEntity.getBlockPos()).getBlock() instanceof AutoCraftingTableBlock && level.getBlockEntity(pos2) instanceof BaseContainerBlockEntity) {
-                    BaseContainerBlockEntity baseContainerBlockEntity = (BaseContainerBlockEntity) level.getBlockEntity(blockEntity.getBlockPos().relative(level.getBlockState(blockEntity.getBlockPos()).getValue(AutoCraftingTableBlock.FACING)));
+                if (level.getBlockState(blockEntity.getBlockPos()).getBlock()
+                    instanceof AutoCraftingTableBlock && level.getBlockEntity(pos2) instanceof BaseContainerBlockEntity) {
+                    BaseContainerBlockEntity baseContainerBlockEntity = (BaseContainerBlockEntity) level.getBlockEntity(
+                        blockEntity.getBlockPos().relative(
+                            level.getBlockState(blockEntity.getBlockPos()).getValue(AutoCraftingTableBlock.FACING)));
                     if (isExportable(blockEntity, baseContainerBlockEntity, slotStack.getCraftingRemainingItem(), facing.getOpposite())) {
                         addItem(blockEntity, baseContainerBlockEntity, slotStack.getCraftingRemainingItem(), facing.getOpposite());
                         blockEntity.getItem(10).shrink(1);
@@ -331,22 +341,22 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
             Direction direction = p_155565_.getValue(AutoCraftingTableBlock.FACING).getOpposite();
             if (isFullContainer(container, direction)) {
                 return false;
-            } else {
+            }
 
-                if (!p_155566_.getItem(10).isEmpty()) {
-                    ItemStack itemstack = p_155566_.getItem(10).copy();
-                    ItemStack itemstack1 = addItem(p_155566_, container, p_155566_.removeItem(10, 1), direction);
-                    if (itemstack1.isEmpty()) {
-                        container.setChanged();
-                        return true;
-                    }
-
-                    p_155566_.setItem(10, itemstack);
+            if (!p_155566_.getItem(10).isEmpty()) {
+                ItemStack itemstack = p_155566_.getItem(10).copy();
+                ItemStack itemstack1 = addItem(p_155566_, container, p_155566_.removeItem(10, 1), direction);
+                if (itemstack1.isEmpty()) {
+                    container.setChanged();
+                    return true;
                 }
 
-
-                return false;
+                p_155566_.setItem(10, itemstack);
             }
+
+
+            return false;
+
         }
     }
     private static ItemStack tryMoveInItem(@Nullable Container p_59321_, Container p_59322_, ItemStack p_59323_, int p_59324_, @Nullable Direction p_59325_) {
@@ -403,18 +413,17 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
     }
     public static boolean isExportable(AutoCraftingTableBlockEntity autoCratingTable,BaseContainerBlockEntity baseContainer,ItemStack craftResultStack,Direction direction) {
         boolean flag=false;
-        if (baseContainer instanceof WorldlyContainer && direction != null) {
-            WorldlyContainer worldlycontainer = (WorldlyContainer)baseContainer;
+        if (baseContainer instanceof WorldlyContainer worldlycontainer && direction != null) {
             int[] aint = worldlycontainer.getSlotsForFace(direction);
-            for(int k = 0; k < aint.length; ++k) {
-                ItemStack itemstack = worldlycontainer.getItem(aint[k]);
-                if (FoxHopperBlockEntity.canPlaceItemInContainer(worldlycontainer, craftResultStack, aint[k], direction)) {
+            for (int i : aint) {
+                ItemStack itemstack = worldlycontainer.getItem(i);
+                if (FoxHopperBlockEntity.canPlaceItemInContainer(worldlycontainer, craftResultStack, i, direction)) {
 
                     if (itemstack.isEmpty()) {
                         flag = true;
                     } else if (FoxHopperBlockEntity.canMergeItems(itemstack, craftResultStack)) {
-                        if(itemstack.getMaxStackSize()-itemstack.getCount()>=craftResultStack.getCount()){
-                            flag=true;
+                        if (itemstack.getMaxStackSize() - itemstack.getCount() >= craftResultStack.getCount()) {
+                            flag = true;
                         }
                     }
 

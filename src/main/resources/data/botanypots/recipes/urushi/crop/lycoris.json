@@ -1,0 +1,23 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:lycoris"
+  },
+  "categories": [
+    "dirt",
+    "yomi",
+    "ghost_block"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "urushi:lycoris"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:lycoris"
+      }
+    }
+  ]
+}
