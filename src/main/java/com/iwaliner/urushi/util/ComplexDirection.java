@@ -26,11 +26,11 @@ public enum ComplexDirection {
     S_US(23),
     US(24),
     U_US(25),
-    W_UW(26),
-    UW(27),
-    U_UW(28),
-    U_NSdir(29),
-    U_WEdir(30),
+    W_UW(26), // West by Up West
+    UW(27), // Up West
+    U_UW(28), // Up by Up West
+    U_NSdir(29), // Facing Up, and the mirror goes North-South
+    U_WEdir(30), // Facing Up, and the mirror goes East-West
     N_BN(31),
     BN(32),
     B_BN(33),
