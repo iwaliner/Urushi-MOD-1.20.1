@@ -33,10 +33,16 @@ public class WagasaItem extends Item implements ElementItem {
        if(isOpen){
            player.setItemInHand(hand,new ItemStack(ItemAndBlockRegister.close_wagasa.get()));
            level.playSound(player,player.getX(),player.getY(),player.getZ(), SoundEvents.ENDER_DRAGON_FLAP, SoundSource.PLAYERS,1F,1F);
+           //player.setInvisible(true);
+           //player.setGlowingTag(true);
+           //player.getAbilities().mayfly=false;
            return InteractionResultHolder.success(player.getItemInHand(hand));
        }else{
            player.setItemInHand(hand,new ItemStack(ItemAndBlockRegister.open_wagasa.get()));
            level.playSound(player,player.getX(),player.getY(),player.getZ(), SoundEvents.ENDER_DRAGON_FLAP, SoundSource.PLAYERS,1F,1F);
+           //player.setInvisible(false);
+           //player.setGlowingTag(false);
+           //player.getAbilities().mayfly=true;
            return InteractionResultHolder.success(player.getItemInHand(hand));
        }
     }

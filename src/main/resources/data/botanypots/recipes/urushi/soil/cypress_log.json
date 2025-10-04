@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:soil",
+  "input": [
+    {
+      "item": "urushi:cypress_log"
+    },
+    {
+      "item": "urushi:cypress_wood"
+    }
+  ],
+  "display": {
+    "block": "urushi:cypress_wood"
+  },
+  "categories": [
+    "wood",
+    "log",
+    "mushroom",
+    "cypress",
+    "cypress_wood"
+  ],
+  "growthModifier": 1
+}

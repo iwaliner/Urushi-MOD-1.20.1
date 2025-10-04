@@ -20,8 +20,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.List;
 
 public class TwoDirectionShapedBlock extends HorizonalRotateBlock{
-    private final   VoxelShape SHAPEA;
-    private final   VoxelShape SHAPEB;
+    public final   VoxelShape SHAPEA;
+    public final   VoxelShape SHAPEB;
     private final boolean canSurvive;
 
     public TwoDirectionShapedBlock(double d1,double d2,double d3,double d4,double d5,double d6,boolean canSurvive,Properties p_i48377_1_) {

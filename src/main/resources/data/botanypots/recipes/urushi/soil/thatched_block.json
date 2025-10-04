@@ -1,0 +1,15 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:thatched_block"
+  },
+  "display": {
+    "block": "urushi:thatched_block"
+  },
+  "categories": [
+    "thatched_block",
+    "mushroom",
+    "mulch"
+  ],
+  "growthModifier": 0.95
+}

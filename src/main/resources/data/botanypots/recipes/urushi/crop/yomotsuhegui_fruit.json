@@ -1,0 +1,54 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:yomotsuhegui_fruit"
+  },
+  "categories": [
+    "dirt",
+    "farmland",
+    "yomi"
+  ],
+  "growthTicks": 1200,
+  "lightLevel": 3,
+  "display": {
+    "type": "botanypots:transitional",
+    "phases": [
+      {
+        "block": "urushi:yomi_vines",
+        "rotation": "X_180",
+        "properties": {
+          "age": 25
+        }
+      },
+      {
+        "block": "urushi:yomi_vines",
+        "rotation": "X_180",
+        "properties": {
+          "age": 25
+        }
+      },
+      {
+        "block": "urushi:yomi_vines",
+        "rotation": "X_180",
+        "properties": {
+          "age": 25,
+          "berries": true
+        }
+      }
+    ]
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:yomotsuhegui_fruit"
+      }
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "urushi:yomotsuhegui_fruit"
+      }
+    }
+  ]
+}

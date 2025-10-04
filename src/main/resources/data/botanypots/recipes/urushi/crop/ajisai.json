@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:ajisai"
+  },
+  "categories": [
+    "dirt",
+    "yomi"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "urushi:ajisai"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:ajisai"
+      }
+    }
+  ]
+}

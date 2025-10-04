@@ -1,0 +1,25 @@
+{
+  "type": "botanypots:pot_interaction",
+  "held_ingredient": {
+    "item": "urushi:yomotsuhegui_fruit"
+  },
+  "soil_ingredient": [
+    {
+      "item": "minecraft:grass_block"
+    },
+    {
+      "item": "minecraft:podzol"
+    },
+    {
+      "item": "minecraft:mycelium"
+    }
+  ],
+  "soil_output": {
+    "item": "urushi:kakuriyo_grass_block",
+    "count": 1
+  },
+  "sound": {
+    "sound": "minecraft:block.soul_sand.place",
+    "category": "blocks"
+  }
+}

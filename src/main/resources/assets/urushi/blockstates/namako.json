@@ -1,7 +1,181 @@
 {
-  "variants": {
-    "": {
-      "model": "urushi:block/namako"
-    }
-  }
+    "multipart": [
+        {   "when": { "north": "true","south": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_55",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_55",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_0", "uvlock": true }
+        },
+        {   "when": {"north": "false","south": "false","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_1", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_2", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_3", "uvlock": true }
+        },
+       {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_4", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_50", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_51", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_52", "uvlock": true }
+        },
+         {   "when": { "east": "true","west": "true","north": "true","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_16", "uvlock": true }
+        },
+        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_17", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_18", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_19", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_20", "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_21", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_22", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_23", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_24", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_25", "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_26", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_27", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_28", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_8",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_8", "y": 180, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_8", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_8", "y":270, "uvlock": true }
+        },
+        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_29", "uvlock": true}
+        },
+        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_33", "uvlock": true}
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_34", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_35", "uvlock": true}
+        },
+        {   "when": { "east": "false","west": "false","north": "true","south": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_30",  "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_39" , "uvlock": true}
+        },
+        {   "when": { "east": "false","west": "true","north": "true","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_31", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "false","north": "true","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_36", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_37", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "true","south": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_38" , "uvlock": true}
+        },
+        {   "when": { "east": "false","west": "false","north": "true","south": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_32", "uvlock": true }
+        },
+        {   "when": { "east": "true","west": "true","north": "false","south": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_40", "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_12",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_41",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_42",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_43",  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_13",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_44",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_45",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_46",  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_14",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_47",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_48",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "false","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_49",  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","east": "true","west": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_55",  "uvlock": true }
+        },
+        
+        {   "when": { "north": "true","south": "false","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_15",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_15", "y": 180,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "false","east": "true","west": "false","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_15", "y": 90,  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "true","east": "false","west": "true","up": "true","down": "true"},
+            "apply": { "model": "urushi:block/framed_namako/namako_15", "y": 270,  "uvlock": true }
+        },
+        {   "when": { "north": "true","south": "true","east": "false","west": "false","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_53",  "uvlock": true }
+        },
+        {   "when": { "north": "false","south": "false","east": "true","west": "true","up": "false","down": "false"},
+            "apply": { "model": "urushi:block/framed_namako/namako_54",  "uvlock": true }
+        }
+    ]
 }

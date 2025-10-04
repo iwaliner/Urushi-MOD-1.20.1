@@ -1,0 +1,13 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:tawara"
+  },
+  "display": {
+    "block": "urushi:tawara"
+  },
+  "categories": [
+    "mulch"
+  ],
+  "growthModifier": 1.25
+}

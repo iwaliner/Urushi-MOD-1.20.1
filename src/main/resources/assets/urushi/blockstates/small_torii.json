@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "facing=west": [
+     { "model": "urushi:block/small_torii",
+      "y": 270
+      },
+      { "model": "urushi:block/small_torii2",
+      "y": 270
+      }
+    ],
+    "facing=south": [
+    {
+      "model": "urushi:block/small_torii",
+      "y": 180
+    },
+    {
+      "model": "urushi:block/small_torii2",
+      "y": 180
+    }
+    ],
+    "facing=north": [
+    {
+      "model": "urushi:block/small_torii"
+    },
+    {
+      "model": "urushi:block/small_torii2"
+    }
+    ],
+    "facing=east": [
+    {
+      "model": "urushi:block/small_torii",
+      "y": 90
+    },
+    {
+      "model": "urushi:block/small_torii2",
+      "y": 90
+    }
+    ]
+  }
+}

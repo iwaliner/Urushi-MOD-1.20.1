@@ -1,0 +1,32 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:tea_bush"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1800,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "urushi:tea_bush"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:tea_leaf"
+      },
+      "minRolls": 1,
+      "maxRolls": 4
+    },
+    {
+      "chance": 0.35,
+      "output": {
+        "item": "urushi:tea_leaf"
+      },
+      "minRolls": 2,
+      "maxRolls": 5
+    }
+  ]
+}

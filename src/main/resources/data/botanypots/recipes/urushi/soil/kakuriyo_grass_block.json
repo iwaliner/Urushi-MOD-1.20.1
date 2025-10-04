@@ -1,0 +1,17 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "urushi:kakuriyo_grass_block"
+  },
+  "display": {
+    "block": "urushi:kakuriyo_grass_block"
+  },
+  "categories": [
+    "kakuriyo_grass_block",
+    "yomi",
+    "dirt",
+    "grass",
+    "mushroom"
+  ],
+  "growthModifier": 1.14
+}

@@ -1,0 +1,23 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "urushi:japanese_cedar_sapling"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "block": "urushi:japanese_cedar_sapling"
+  },
+  "drops": [
+    {
+      "chance": 1,
+      "output": {
+        "item": "urushi:japanese_cedar_bark"
+      },
+      "minRolls": 1,
+      "maxRolls": 3
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube", "render_type": "minecraft:cutout",
+    "textures": {
+        "particle": "urushi:block/connectable/namako/namako_0",
+        "down": "urushi:block/connectable/namako/namako_0",
+        "up": "urushi:block/connectable/namako/namako_0",
+        "north": "urushi:block/connectable/namako/namako_0",
+        "east": "urushi:block/connectable/namako/namako_0",
+        "south": "urushi:block/connectable/namako/namako_0",
+        "west": "urushi:block/connectable/namako/namako_0"
+    }
+}

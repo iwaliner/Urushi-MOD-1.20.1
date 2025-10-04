@@ -436,6 +436,13 @@ public class ModCoreUrushi {
             UrushiUtils.setBlinkingInfoWithColor(tooltipList,"bars", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
         }else if(block instanceof KakejikuBlock&&event.getEntity()!=null){
             UrushiUtils.setBlinkingInfoWithColor(tooltipList,"kakejiku", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+        }else if((block ==ItemAndBlockRegister.ironsand_ore.get()||item==ItemAndBlockRegister.ironsand.get())&&event.getEntity()!=null){
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"ironsand_ore", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+        }else if(block ==ItemAndBlockRegister.hot_ironsand.get()&&event.getEntity()!=null){
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"hot_ironsand", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+        }else if(block instanceof UrushiCropBlock&&event.getEntity()!=null){
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"crop", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
+            UrushiUtils.setBlinkingInfoWithColor(tooltipList,"crop2", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
         }else if(block instanceof AbstractFramedBlock||block instanceof FramedPaneBlock&&event.getEntity()!=null){
             try{
                 long gametime = Objects.requireNonNull(event.getEntity()).level().getGameTime() % 20;
