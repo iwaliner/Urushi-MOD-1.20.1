@@ -9,7 +9,7 @@
   "pages": [
     {
       "type": "text",
-      "text": "当采掘Limonite Ore、Chalcopyrite Ore、　黄泉金矿石或翡翠矿石时，哪怕没有时运附魔也可以获得复数个原矿。$(br2)Limonite Ore drops not only Raw Iron, but Nether Quartz. Chalcopyrite Ore drops not only Raw Copper, but Raw Iron."
+      "text": "当采掘褐铁矿石、黄铜矿石、黄泉金矿石或翡翠矿石时，哪怕没有时运附魔也可以获得复数个粗矿物品。$(br2)褐铁矿石会掉落粗铁与下界石英；而黄铜矿石会掉落粗铁与粗铜。"
     },
     {
       "type": "patchouli:image",

@@ -12,29 +12,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class InvisiblePressurePlateBlockEntity extends BlockEntity {
-    public int time;
+public class InvisiblePressurePlateBlockEntity extends AbstractInvisibleBlockEntity {
 
-    public InvisiblePressurePlateBlockEntity(BlockPos p_155550_, BlockState p_155551_) {
-        super(BlockEntityRegister.InvisiblePressurePlate.get(), p_155550_, p_155551_);
-    }
-    public void load(CompoundTag tag) {
-        super.load(tag);
-        this.time = tag.getInt("time");
-    }
-
-    protected void saveAdditional(CompoundTag tag) {
-        super.saveAdditional(tag);
-        tag.putInt("time", this.time);
+    public InvisiblePressurePlateBlockEntity(BlockPos pos, BlockState state) {
+        super(BlockEntityRegister.InvisiblePressurePlate.get(), pos, state);
     }
     public static void tick(Level level, BlockPos pos, BlockState state, InvisiblePressurePlateBlockEntity blockEntity) {
-        if(state.getBlock() instanceof InvisiblePressurePlateBlock) {
-            --blockEntity.time;
-            if (!level.isClientSide() && blockEntity.time <= 0) {
-                level.setBlock(pos, ItemAndBlockRegister.hidden_invisible_pressure_plate.get().defaultBlockState(), 2);
-            }
-        }
+        tick(level, pos, state, blockEntity, ItemAndBlockRegister.invisible_pressure_plate.get(), () -> {
+            level.setBlock(pos, ItemAndBlockRegister.hidden_invisible_pressure_plate.get().defaultBlockState(), 2);
+        });
     }
 
 
-    }
+}
