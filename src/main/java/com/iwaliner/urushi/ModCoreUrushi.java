@@ -124,7 +124,7 @@ public class ModCoreUrushi {
     public static List<String> axeList=new ArrayList<>();
     public static List<String> shovelList=new ArrayList<>();
     public static List<String> hoeList=new ArrayList<>();
-    public static List<String> woodenToolList=new ArrayList<>();
+    //public static List<String> woodenToolList=new ArrayList<>();
     public static List<String> stoneToolList=new ArrayList<>();
     public static List<String> ironToolList=new ArrayList<>();
     public static List<String> goldenToolList=new ArrayList<>();

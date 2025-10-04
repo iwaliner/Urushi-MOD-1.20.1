@@ -362,7 +362,6 @@ public class ClientSetUp {
             MineableTagGenerator.INSTANCE.registerAxeMineableTag(ModCoreUrushi.axeList);
             MineableTagGenerator.INSTANCE.registerShovelMineableTag(ModCoreUrushi.shovelList);
             MineableTagGenerator.INSTANCE.registerHoeMineableTag(ModCoreUrushi.hoeList);
-            RequiredToolMaterialTagGenerator.INSTANCE.registerWoodenToolTag(ModCoreUrushi.woodenToolList);
             RequiredToolMaterialTagGenerator.INSTANCE.registerStoneToolTag(ModCoreUrushi.stoneToolList);
             RequiredToolMaterialTagGenerator.INSTANCE.registerIronToolTag(ModCoreUrushi.ironToolList);
             RequiredToolMaterialTagGenerator.INSTANCE.registerGoldenToolTag(ModCoreUrushi.goldenToolList);

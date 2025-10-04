@@ -1800,9 +1800,9 @@ if(ModCoreUrushi.isDebug) {
         ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + name);
     }
 
-    if (l == 0) {
+   /* if (l == 0) {
         ModCoreUrushi.woodenToolList.add("urushi:" + name);
-    } else if (l == 1) {
+    } else */if (l == 1) {
         ModCoreUrushi.stoneToolList.add("urushi:" + name);
     } else if (l == 2) {
         ModCoreUrushi.ironToolList.add("urushi:" + name);
@@ -1833,9 +1833,9 @@ if(ModCoreUrushi.isDebug) {
                 ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + name);
             }
 
-            if (l == 0) {
+            /*if (l == 0) {
                 ModCoreUrushi.woodenToolList.add("urushi:" + name);
-            } else if (l == 1) {
+            } else */if (l == 1) {
                 ModCoreUrushi.stoneToolList.add("urushi:" + name);
             } else if (l == 2) {
                 ModCoreUrushi.ironToolList.add("urushi:" + name);
@@ -1865,9 +1865,9 @@ if(ModCoreUrushi.isDebug) {
                 ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + name);
             }
 
-            if (l == 0) {
+            /*if (l == 0) {
                 ModCoreUrushi.woodenToolList.add("urushi:" + name);
-            } else if (l == 1) {
+            } else */if (l == 1) {
                 ModCoreUrushi.stoneToolList.add("urushi:" + name);
             } else if (l == 2) {
                 ModCoreUrushi.ironToolList.add("urushi:" + name);
@@ -1897,9 +1897,9 @@ if(ModCoreUrushi.isDebug) {
                 ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + name);
             }
 
-            if (l == 0) {
+            /*if (l == 0) {
                 ModCoreUrushi.woodenToolList.add("urushi:" + name);
-            } else if (l == 1) {
+            } else */if (l == 1) {
                 ModCoreUrushi.stoneToolList.add("urushi:" + name);
             } else if (l == 2) {
                 ModCoreUrushi.ironToolList.add("urushi:" + name);
@@ -1929,9 +1929,9 @@ if(ModCoreUrushi.isDebug) {
                 ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + name);
             }
 
-            if (l == 0) {
+            /*if (l == 0) {
                 ModCoreUrushi.woodenToolList.add("urushi:" + name);
-            } else if (l == 1) {
+            } else */if (l == 1) {
                 ModCoreUrushi.stoneToolList.add("urushi:" + name);
             } else if (l == 2) {
                 ModCoreUrushi.ironToolList.add("urushi:" + name);
@@ -1969,9 +1969,9 @@ if(ModCoreUrushi.isDebug) {
                 ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + name);
             }
 
-            if (l == 0) {
+            /*if (l == 0) {
                 ModCoreUrushi.woodenToolList.add("urushi:" + name);
-            } else if (l == 1) {
+            } else */if (l == 1) {
                 ModCoreUrushi.stoneToolList.add("urushi:" + name);
             } else if (l == 2) {
                 ModCoreUrushi.ironToolList.add("urushi:" + name);
