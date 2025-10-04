@@ -1848,5 +1848,9 @@
   "block.urushi.concrete_block_normal_wall": "实心混凝土墙",
   "item.urushi.drawstring_bag": "束口布袋",
   "info.urushi.drawstring_bag": "与大型箱子容积相等",
-  "info.urushi.dyeable": "可染色"
+  "info.urushi.dyeable": "可染色",
+  "block.urushi.small_torii": "小型鸟居",
+  "block.urushi.wooden_hokora": "神龛",
+  "info.urushi.ironsand_ore": "铁矿沙会在沙漠群系以外的沙地生成",
+  "info.urushi.hot_ironsand": "投入水中会变成粗铁"
 }
