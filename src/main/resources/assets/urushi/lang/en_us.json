@@ -1829,6 +1829,8 @@
    "info.urushi.drawstring_bag": "A bag with the same capacity as a large chest",
    "info.urushi.dyeable": "Dyeable same as leather armors",
    "block.urushi.small_torii": "Small Torii",
-   "block.urushi.wooden_hokora": "Hokora"
+   "block.urushi.wooden_hokora": "Hokora",
+   "info.urushi.ironsand_ore": "Ironsand Ore is generated in sandy terrain outside desert biome type.",
+   "info.urushi.hot_ironsand": "It becomes Raw Iron if you throw into water."
   
 }

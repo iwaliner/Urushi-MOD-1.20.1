@@ -9,6 +9,7 @@
     "DisplayMixin2",
     "IronBarsMixin",
     "ItemEntityMixin",
+    "PlayerMixin",
     "WeatherCommandMixin"
   ],
   "client": [

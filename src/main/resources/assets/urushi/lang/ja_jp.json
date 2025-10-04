@@ -1846,7 +1846,9 @@
    "info.urushi.drawstring_bag": "ラージチェストと同等の容量をもつバッグ",
    "info.urushi.dyeable": "革防具と同様に染料で染めることができる",
    "block.urushi.small_torii": "小さな鳥居",
-   "block.urushi.wooden_hokora": "祠"
+   "block.urushi.wooden_hokora": "祠",
+   "info.urushi.ironsand_ore": "砂鉄鉱石は砂漠系バイオーム以外の砂地に生成されます",
+   "info.urushi.hot_ironsand": "水に投げ入れると鉄の原石になります"
    
    
    
