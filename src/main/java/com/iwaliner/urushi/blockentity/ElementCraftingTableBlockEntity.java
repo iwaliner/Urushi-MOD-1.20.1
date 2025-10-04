@@ -132,89 +132,90 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
              SanboBlockEntity southSanbo = (SanboBlockEntity) level.getBlockEntity(pos.south());
              SanboBlockEntity westSanbo = (SanboBlockEntity) level.getBlockEntity(pos.west());
              boolean b2 = northSanbo != null && eastSanbo != null && southSanbo != null && westSanbo != null;
-             if (b1 && b2) {
+             if(!(b1&&b2)){
+                 return;
+             }
 
-                 ElementType craftingTableElementType = elementCraftingTable.getStoredElementType();
+             ElementType craftingTableElementType = elementCraftingTable.getStoredElementType();
 
-                 ItemStack northStack = northSanbo.getItem(0);
-                 ItemStack eastStack = eastSanbo.getItem(0);
-                 ItemStack southStack = southSanbo.getItem(0);
-                 ItemStack westStack = westSanbo.getItem(0);
-
-
-                 SimpleContainer container = new SimpleContainer(northStack, eastStack, southStack, westStack);
-                 Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeType<AbstractElementCraftingRecipe>) elementCraftingTable.getRecipeType(), container, level).orElse(null);
-                 if (recipe != null
-                     //&& northSanboTier == elementCraftingTableTier && eastSanboTier == elementCraftingTableTier && southSanboTier == elementCraftingTableTier && westSanboTier == elementCraftingTableTier
-                 ) {
-                     IElementCraftingRecipe iElementCraftingRecipe = (IElementCraftingRecipe) recipe;
-                     int consumeReiryoku = iElementCraftingRecipe.getReiryoku();
-                     if (elementCraftingTable.canDecreaseReiryoku(consumeReiryoku)) {
-                         if (elementCraftingTable.getCoolTime() == 0) {
-                             elementCraftingTable.coolTime = elementCraftingTable.getMaxCooltime();
-                             level.playSound((Player) null,pos, SoundEvents.PORTAL_AMBIENT, SoundSource.BLOCKS,1F,1.5F);
-                         } else if (elementCraftingTable.getCoolTime() == 1) {
+             ItemStack northStack = northSanbo.getItem(0);
+             ItemStack eastStack = eastSanbo.getItem(0);
+             ItemStack southStack = southSanbo.getItem(0);
+             ItemStack westStack = westSanbo.getItem(0);
 
 
-                             ItemStack resultStack = recipe.getResultItem(level.registryAccess());
-                             ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, resultStack.copy());
-                             level.addFreshEntity(itemEntity);
-                             if(northStack.hasCraftingRemainingItem()){
-                                    if(!northStack.getCraftingRemainingItem().is(northStack.getItem())) {
-                                        ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() - 1D + 0.5D, northStack.getCraftingRemainingItem());
-                                        level.addFreshEntity(itemEntity2);
-                                        northSanbo.clearContent();
-                                    }
-                             }else if(northStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
-                                     ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() - 1D + 0.5D, new ItemStack(Items.BOWL));
-                                     level.addFreshEntity(itemEntity2);
-                                     northSanbo.clearContent();
-                             }else {
+             SimpleContainer container = new SimpleContainer(northStack, eastStack, southStack, westStack);
+             Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeType<AbstractElementCraftingRecipe>) elementCraftingTable.getRecipeType(), container, level).orElse(null);
+             if (recipe != null
+                 //&& northSanboTier == elementCraftingTableTier && eastSanboTier == elementCraftingTableTier && southSanboTier == elementCraftingTableTier && westSanboTier == elementCraftingTableTier
+             ) {
+                 IElementCraftingRecipe iElementCraftingRecipe = (IElementCraftingRecipe) recipe;
+                 int consumeReiryoku = iElementCraftingRecipe.getReiryoku();
+                 if (elementCraftingTable.canDecreaseReiryoku(consumeReiryoku)) {
+                     if (elementCraftingTable.getCoolTime() == 0) {
+                         elementCraftingTable.coolTime = elementCraftingTable.getMaxCooltime();
+                         level.playSound((Player) null,pos, SoundEvents.PORTAL_AMBIENT, SoundSource.BLOCKS,1F,1.5F);
+                     } else if (elementCraftingTable.getCoolTime() == 1) {
+
+
+                         ItemStack resultStack = recipe.getResultItem(level.registryAccess());
+                         ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, resultStack.copy());
+                         level.addFreshEntity(itemEntity);
+                         if(northStack.hasCraftingRemainingItem()){
+                                if(!northStack.getCraftingRemainingItem().is(northStack.getItem())) {
+                                    ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() - 1D + 0.5D, northStack.getCraftingRemainingItem());
+                                    level.addFreshEntity(itemEntity2);
+                                    northSanbo.clearContent();
+                                }
+                         }else if(northStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
+                                 ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() - 1D + 0.5D, new ItemStack(Items.BOWL));
+                                 level.addFreshEntity(itemEntity2);
                                  northSanbo.clearContent();
-                             }
-                             if(eastStack.hasCraftingRemainingItem()){
-                                     if(!eastStack.getCraftingRemainingItem().is(eastStack.getItem())) {
-                                         ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, eastStack.getCraftingRemainingItem());
-                                         level.addFreshEntity(itemEntity2);
-                                         eastSanbo.clearContent();
-                                     }
-                             }else if(eastStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
-                                 ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, new ItemStack(Items.BOWL));
-                                 level.addFreshEntity(itemEntity2);
-                                 eastSanbo.clearContent();
-                             }else {
-                                 eastSanbo.clearContent();
-                             }
-                             if(southStack.hasCraftingRemainingItem()){
-                                    if(!southStack.getCraftingRemainingItem().is(southStack.getItem())) {
-                                        ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 1D + 0.5D, southStack.getCraftingRemainingItem());
-                                        level.addFreshEntity(itemEntity2);
-                                        southSanbo.clearContent();
-                                    }
-                             }else if(southStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
-                                 ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 1D + 0.5D, new ItemStack(Items.BOWL));
-                                 level.addFreshEntity(itemEntity2);
-                                 southSanbo.clearContent();
-                             }else {
-                                 southSanbo.clearContent();
-                             }
-                             if(westStack.hasCraftingRemainingItem()){
-                             if(!westStack.getCraftingRemainingItem().is(westStack.getItem())) {
-                                 ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() - 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, westStack.getCraftingRemainingItem());
-                                 level.addFreshEntity(itemEntity2);
-                                 westSanbo.clearContent();
-                             }
-                             }else if(westStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
-                                 ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() - 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, new ItemStack(Items.BOWL));
-                                 level.addFreshEntity(itemEntity2);
-                                 westSanbo.clearContent();
-                             }else {
-                                 westSanbo.clearContent();
-                             }
-                             elementCraftingTable.decreaseStoredReiryoku(consumeReiryoku);
-                             for (int i = 0; i < 20; i++) {
-                                 level.addParticle(ParticleTypes.COMPOSTER, pos.getX() + 0.0625D * 4 + 0.0625D * level.getRandom().nextInt(8), pos.getY() + 1D + 0.0625D * level.getRandom().nextInt(8), pos.getZ() + 0.0625D * 4 + 0.0625D * level.getRandom().nextInt(8), 0.0D, 0.0D, 0.0D);
-                             }
+                         }else {
+                             northSanbo.clearContent();
+                         }
+                         if(eastStack.hasCraftingRemainingItem()){
+                                 if(!eastStack.getCraftingRemainingItem().is(eastStack.getItem())) {
+                                     ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, eastStack.getCraftingRemainingItem());
+                                     level.addFreshEntity(itemEntity2);
+                                     eastSanbo.clearContent();
+                                 }
+                         }else if(eastStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
+                             ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, new ItemStack(Items.BOWL));
+                             level.addFreshEntity(itemEntity2);
+                             eastSanbo.clearContent();
+                         }else {
+                             eastSanbo.clearContent();
+                         }
+                         if(southStack.hasCraftingRemainingItem()){
+                                if(!southStack.getCraftingRemainingItem().is(southStack.getItem())) {
+                                    ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 1D + 0.5D, southStack.getCraftingRemainingItem());
+                                    level.addFreshEntity(itemEntity2);
+                                    southSanbo.clearContent();
+                                }
+                         }else if(southStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
+                             ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1D, pos.getZ() + 1D + 0.5D, new ItemStack(Items.BOWL));
+                             level.addFreshEntity(itemEntity2);
+                             southSanbo.clearContent();
+                         }else {
+                             southSanbo.clearContent();
+                         }
+                         if(westStack.hasCraftingRemainingItem()){
+                         if(!westStack.getCraftingRemainingItem().is(westStack.getItem())) {
+                             ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() - 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, westStack.getCraftingRemainingItem());
+                             level.addFreshEntity(itemEntity2);
+                             westSanbo.clearContent();
+                         }
+                         }else if(westStack.getItem()== ItemAndBlockRegister.raw_urushi_ball.get()){
+                             ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() - 1D + 0.5D, pos.getY() + 1D, pos.getZ() + 0.5D, new ItemStack(Items.BOWL));
+                             level.addFreshEntity(itemEntity2);
+                             westSanbo.clearContent();
+                         }else {
+                             westSanbo.clearContent();
+                         }
+                         elementCraftingTable.decreaseStoredReiryoku(consumeReiryoku);
+                         for (int i = 0; i < 20; i++) {
+                             level.addParticle(ParticleTypes.COMPOSTER, pos.getX() + 0.0625D * 4 + 0.0625D * level.getRandom().nextInt(8), pos.getY() + 1D + 0.0625D * level.getRandom().nextInt(8), pos.getZ() + 0.0625D * 4 + 0.0625D * level.getRandom().nextInt(8), 0.0D, 0.0D, 0.0D);
                          }
                      }
                  }

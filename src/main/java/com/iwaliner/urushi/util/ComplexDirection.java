@@ -17,20 +17,20 @@ public enum ComplexDirection {
     W_NW(14),
     NW(15),
     N_NW(16),
-    N_AN(17),
-    AN(18),
-    A_AN(19),
-    E_AE(20),
-    AE(21),
-    A_AE(22),
-    S_AS(23),
-    AS(24),
-    A_AS(25),
-    W_AW(26),
-    AW(27),
-    A_AW(28),
-    A1(29),
-    A2(30),
+    N_UN(17),
+    UN(18),
+    U_UN(19),
+    E_UE(20),
+    UE(21),
+    U_UE(22),
+    S_US(23),
+    US(24),
+    U_US(25),
+    W_UW(26), // West by Up West
+    UW(27), // Up West
+    U_UW(28), // Up by Up West
+    U_NSdir(29), // Facing Up, and the mirror goes North-South
+    U_WEdir(30), // Facing Up, and the mirror goes East-West
     N_BN(31),
     BN(32),
     B_BN(33),
@@ -43,7 +43,7 @@ public enum ComplexDirection {
     W_BW(40),
     BW(41),
     B_BW(42),
-    B1(43),
+    B1(43), // I DON'T KNOW WHAT IS B1 AND B2
     B2(44),
     FAIL(0);
 
