@@ -1,28 +1,31 @@
 {
+
   "variants": {
-    "axis=x,flip=false": {
-      "model": "urushi:block/brown_tatami_horizontal",
+
+    "axis=x": {
+
+      "model": "urushi:block/brown_tatami_horizontal_old",
+
       "x": 90,
+
       "y": 90
+
     },
-    "axis=y,flip=false": {
-      "model": "urushi:block/brown_tatami"
+
+    "axis=y": {
+
+      "model": "urushi:block/brown_tatami_old"
+
     },
-    "axis=z,flip=false": {
-      "model": "urushi:block/brown_tatami_horizontal",
+
+    "axis=z": {
+
+      "model": "urushi:block/brown_tatami_horizontal_old",
+
       "x": 90
-    },
-    "axis=x,flip=true": {
-      "model": "urushi:block/brown_tatami_horizontal_flip",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y,flip=true": {
-      "model": "urushi:block/brown_tatami_flip"
-    },
-    "axis=z,flip=true": {
-      "model": "urushi:block/brown_tatami_horizontal_flip",
-      "x": 90
+
     }
+
   }
+
 }

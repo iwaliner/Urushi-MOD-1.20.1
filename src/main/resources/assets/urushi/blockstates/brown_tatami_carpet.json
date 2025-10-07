@@ -1,34 +1,37 @@
 {
+
   "variants": {
-    "facing=east,flip=false": {
-      "model": "urushi:block/brown_tatami_carpet",
+
+    "facing=east": {
+
+      "model": "urushi:block/brown_tatami_carpet_old",
+
       "y": 270
+
     },
-    "facing=north,flip=false": {
-      "model": "urushi:block/brown_tatami_carpet",
+
+    "facing=north": {
+
+      "model": "urushi:block/brown_tatami_carpet_old",
+
       "y": 180
+
     },
-    "facing=south,flip=false": {
-      "model": "urushi:block/brown_tatami_carpet"
+
+    "facing=south": {
+
+      "model": "urushi:block/brown_tatami_carpet_old"
+
     },
-    "facing=west,flip=false": {
-      "model": "urushi:block/brown_tatami_carpet",
+
+    "facing=west": {
+
+      "model": "urushi:block/brown_tatami_carpet_old",
+
       "y": 90
-    },
-    "facing=east,flip=true": {
-      "model": "urushi:block/brown_tatami_carpet_flip",
-      "y": 270
-    },
-    "facing=north,flip=true": {
-      "model": "urushi:block/brown_tatami_carpet_flip",
-      "y": 180
-    },
-    "facing=south,flip=true": {
-      "model": "urushi:block/brown_tatami_carpet_flip"
-    },
-    "facing=west,flip=true": {
-      "model": "urushi:block/brown_tatami_carpet_flip",
-      "y": 90
+
     }
+
   }
+
 }

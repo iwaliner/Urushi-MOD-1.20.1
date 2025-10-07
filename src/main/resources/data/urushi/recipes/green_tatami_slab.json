@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "urushi:green_tatami"
+      "item": "urushi:green_tatami_mat"
     }
   },
   "result": {
-    "item": "urushi:green_tatami_slab",
+    "item": "urushi:green_tatami_mat_slab",
     "count": 6
   }
 }

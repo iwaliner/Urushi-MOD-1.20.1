@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "urushi:brown_tatami"
+      "item": "urushi:brown_tatami_mat"
     }
   },
   "result": {
-    "item": "urushi:brown_tatami_carpet",
+    "item": "urushi:brown_tatami_mat_carpet",
     "count": 16
   }
 }

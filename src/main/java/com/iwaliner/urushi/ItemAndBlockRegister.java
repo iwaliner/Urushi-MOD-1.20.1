@@ -488,12 +488,18 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> hiwadabuki_stairs =B("hiwadabuki_stairs","h",-1,() -> {return new FlammableStairBlock(hiwadabuki_block.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(0.2F, 3.0F).sound(SoundType.GRASS));});
     public static final RegistryObject<Block> hiwadabuki_roof_45 =B("hiwadabuki_roof_45","h",-1,() -> {return new FlammableRoof45Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(0.2F, 3.0F).sound(SoundType.GRASS).noCollission());});
     public static final RegistryObject<Block> hiwadabuki_roof_225 =B("hiwadabuki_roof_225","h",-1,() -> {return new FlammableRoof225Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLACK).strength(0.2F, 3.0F).sound(SoundType.GRASS));});
-    public static final RegistryObject<Block> green_tatami =B("green_tatami","h",-1,() -> {return new TatamiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
-    public static final RegistryObject<Block> green_tatami_slab =B("green_tatami_slab","h",-1,() -> {return new TatamiSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
-    public static final RegistryObject<Block> green_tatami_carpet =B("green_tatami_carpet","h",-1,() -> {return new TatamiCarpetBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noCollission());});
-    public static final RegistryObject<Block> brown_tatami =B("brown_tatami","h",-1,() -> {return new TatamiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
-    public static final RegistryObject<Block> brown_tatami_slab =B("brown_tatami_slab","h",-1,() -> {return new TatamiSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
-    public static final RegistryObject<Block> brown_tatami_carpet =B("brown_tatami_carpet","h",-1,() -> {return new TatamiCarpetBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noOcclusion());});
+    public static final RegistryObject<Block> green_tatami_old =BNoTab("green_tatami","n",-1,() -> {return new FlammableRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
+    public static final RegistryObject<Block> green_tatami_slab_old =BNoTab("green_tatami_slab","n",-1,() -> {return new FlammableHorizonalRotateSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
+    public static final RegistryObject<Block> green_tatami_carpet_old =BNoTab("green_tatami_carpet","n",-1,() -> {return new FlammableTwoDirectionShapedBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noCollission());});
+    public static final RegistryObject<Block> brown_tatami_old =BNoTab("brown_tatami","n",-1,() -> {return new FlammableRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
+    public static final RegistryObject<Block> brown_tatami_slab_old =BNoTab("brown_tatami_slab","n",-1,() -> {return new FlammableHorizonalRotateSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
+    public static final RegistryObject<Block> brown_tatami_carpet_old =BNoTab("brown_tatami_carpet","n",-1,() -> {return new FlammableTwoDirectionShapedBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noOcclusion());});
+    public static final RegistryObject<Block> green_tatami =B("green_tatami_mat","h",-1,() -> {return new TatamiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
+    public static final RegistryObject<Block> green_tatami_slab =B("green_tatami_mat_slab","h",-1,() -> {return new TatamiSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
+    public static final RegistryObject<Block> green_tatami_carpet =B("green_tatami_mat_carpet","h",-1,() -> {return new TatamiCarpetBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noCollission());});
+    public static final RegistryObject<Block> brown_tatami =B("brown_tatami_mat","h",-1,() -> {return new TatamiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS));});
+    public static final RegistryObject<Block> brown_tatami_slab =B("brown_tatami_mat_slab","h",-1,() -> {return new TatamiSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).strength(0.2F, 10.0F));});
+    public static final RegistryObject<Block> brown_tatami_carpet =B("brown_tatami_mat_carpet","h",-1,() -> {return new TatamiCarpetBlock(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).strength(0.2F, 10.0F).sound(SoundType.GRASS).noOcclusion());});
     public static final RegistryObject<Block> goldfish_bowl =B("goldfish_bowl","p",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(0.2F, 10.0F).sound(SoundType.GLASS).noOcclusion());});
     public static final RegistryObject<Block> stone_trapdoor =B("stone_trapdoor","p",-1,() -> {return new TrapDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1.0F, 10.0F).noOcclusion().isValidSpawn(ItemAndBlockRegister::never).requiresCorrectToolForDrops(), BlockSetType.STONE);});
     public static final RegistryObject<Block> smooth_stone_brick =B("smooth_stone_brick","p",0,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(1.0F, 10.0F));});
@@ -1917,6 +1923,37 @@ if(ModCoreUrushi.isDebug) {
         RegistryObject<T> object = BLOCKS.register(name, sup);
         RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         ModCoreUrushi.urushiMagicTabContents.add(Objects.requireNonNull(object2));
+        if(ModCoreUrushi.isDebug) {
+            ModCoreUrushi.blockSelfDropList.add(name);
+            if (tool == "p") {
+                ModCoreUrushi.pickaxeList.add(ModCoreUrushi.ModID + ":" + name);
+            } else if (tool == "a") {
+                ModCoreUrushi.axeList.add(ModCoreUrushi.ModID + ":" + name);
+            } else if (tool == "s") {
+                ModCoreUrushi.shovelList.add(ModCoreUrushi.ModID + ":" + name);
+            } else if (tool == "h") {
+                ModCoreUrushi.hoeList.add(ModCoreUrushi.ModID + ":" + name);
+            }
+
+            /*if (l == 0) {
+                ModCoreUrushi.woodenToolList.add("urushi:" + name);
+            } else */if (l == 1) {
+                ModCoreUrushi.stoneToolList.add("urushi:" + name);
+            } else if (l == 2) {
+                ModCoreUrushi.ironToolList.add("urushi:" + name);
+            } else if (l == 3) {
+                ModCoreUrushi.goldenToolList.add("urushi:" + name);
+            } else if (l == 4) {
+                ModCoreUrushi.diamondToolList.add("urushi:" + name);
+            } else if (l == 5) {
+                ModCoreUrushi.netheriteToolList.add("urushi:" + name);
+            }
+        }
+        return object;
+    }
+    private static <T extends Block> RegistryObject<T> BNoTab(String name,String tool,int l, Supplier<T > sup) {
+        RegistryObject<T> object = BLOCKS.register(name, sup);
+        RegistryObject<Item> object2 =ITEMS.register(name,() -> {return new UrushiBlockItem( Objects.requireNonNull(object.get()), (new Item.Properties()));});
         if(ModCoreUrushi.isDebug) {
             ModCoreUrushi.blockSelfDropList.add(name);
             if (tool == "p") {

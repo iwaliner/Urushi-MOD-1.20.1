@@ -47,23 +47,23 @@ public class TatamiCarpetBlock extends TwoDirectionShapedBlock{
         if(direction.getAxis()== Direction.Axis.X){
             BlockState eastState=level.getBlockState(pos.east());
             BlockState westState=level.getBlockState(pos.west());
-            if(eastState.getBlock() instanceof TatamiCarpetBlock&&eastState.getValue(FACING).getAxis()== Direction.Axis.X){
+            if(eastState.getBlock().equals(state.getBlock())&&eastState.getValue(FACING)== direction){
                 flag=!eastState.getValue(FLIP);
-            }else if(westState.getBlock() instanceof TatamiCarpetBlock&&westState.getValue(FACING).getAxis()== Direction.Axis.X){
+            }else if(westState.getBlock().equals(state.getBlock())&&westState.getValue(FACING)== direction){
                 flag=!westState.getValue(FLIP);
             }
         }else if(direction.getAxis()== Direction.Axis.Z){
             BlockState northState=level.getBlockState(pos.north());
             BlockState southState=level.getBlockState(pos.south());
-            if(northState.getBlock() instanceof TatamiCarpetBlock&&northState.getValue(FACING).getAxis()== Direction.Axis.Z){
+            if(northState.getBlock().equals(state.getBlock())&&northState.getValue(FACING)==direction){
                 flag=!northState.getValue(FLIP);
-            }else if(southState.getBlock() instanceof TatamiCarpetBlock&&southState.getValue(FACING).getAxis()== Direction.Axis.Z){
+            }else if(southState.getBlock().equals(state.getBlock())&&southState.getValue(FACING)== direction){
                 flag=!southState.getValue(FLIP);
             }
         }
         return state.setValue(FLIP,flag);
     }
-    @Override
+    /*@Override
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos pos2, boolean b) {
         this.updateShape(state,Direction.NORTH,level.getBlockState(pos2),level,pos,pos2);
         super.neighborChanged(state, level, pos, block, pos2, b);
@@ -71,50 +71,50 @@ public class TatamiCarpetBlock extends TwoDirectionShapedBlock{
     @Override
     public BlockState updateShape(BlockState state, Direction facing, BlockState state2, LevelAccessor level, BlockPos pos, BlockPos pos2) {
         BlockState finalState = super.updateShape(state, facing, state2, level, pos, pos2);
-        if (finalState.getBlock() instanceof TatamiCarpetBlock) {
+        if (finalState.getBlock().equals(state.getBlock())) {
              boolean flip=finalState.getValue(FLIP);
             if(finalState.getValue(FACING).getAxis()== Direction.Axis.X){
                 BlockState eastState=level.getBlockState(pos.east());
                 BlockState westState=level.getBlockState(pos.west());
-                if(eastState.getBlock() instanceof TatamiCarpetBlock&&eastState.getValue(FACING).getAxis()== Direction.Axis.X){
+                if(eastState.getBlock().equals(state.getBlock())&&eastState.getValue(FACING).getAxis()== Direction.Axis.X){
                     if(flip==eastState.getValue(FLIP)){
                         finalState= finalState.setValue(FLIP,!flip);
                     }
-                }else if(westState.getBlock() instanceof TatamiCarpetBlock&&westState.getValue(FACING).getAxis()== Direction.Axis.X){
+                }else if(westState.getBlock().equals(state.getBlock())&&westState.getValue(FACING).getAxis()== Direction.Axis.X){
                     if(flip==westState.getValue(FLIP)){
                         finalState= finalState.setValue(FLIP,!flip);
                     }
-                }else if(((!(eastState.getBlock() instanceof TatamiCarpetBlock)||eastState.getBlock()instanceof TatamiCarpetBlock&&eastState.getValue(FACING).getAxis()!=finalState.getValue(FACING).getAxis())&&finalState.getValue(FLIP))||((!(westState.getBlock() instanceof TatamiCarpetBlock)||westState.getBlock()instanceof TatamiCarpetBlock&&westState.getValue(FACING).getAxis()!=finalState.getValue(FACING).getAxis())&&!finalState.getValue(FLIP))){
+                }else if(((!(eastState.getBlock().equals(state.getBlock()))||eastState.getBlock().equals(state.getBlock())&&eastState.getValue(FACING).getAxis()!=finalState.getValue(FACING).getAxis())&&finalState.getValue(FLIP))||((!(westState.getBlock().equals(state.getBlock()))||westState.getBlock().equals(state.getBlock())&&westState.getValue(FACING).getAxis()!=finalState.getValue(FACING).getAxis())&&!finalState.getValue(FLIP))){
                     finalState=finalState.setValue(FLIP,!finalState.getValue(FLIP));
-                    /*if(finalState.getValue(FACING)==Direction.NORTH||finalState.getValue(FACING)==Direction.EAST||finalState.getValue(FACING)==Direction.UP){
+                    *//*if(finalState.getValue(FACING)==Direction.NORTH||finalState.getValue(FACING)==Direction.EAST||finalState.getValue(FACING)==Direction.UP){
                         finalState=finalState.setValue(FLIP,!finalState.getValue(FLIP));
-                    }*/
+                    }*//*
                 }
             }else if(finalState.getValue(FACING).getAxis()== Direction.Axis.Z){
                 BlockState northState=level.getBlockState(pos.north());
                 BlockState southState=level.getBlockState(pos.south());
-                if(northState.getBlock() instanceof TatamiCarpetBlock&&northState.getValue(FACING).getAxis()== Direction.Axis.Z){
+                if(northState.getBlock().equals(state.getBlock())&&northState.getValue(FACING).getAxis()== Direction.Axis.Z){
                     if(flip==northState.getValue(FLIP)){
                         finalState= finalState.setValue(FLIP,!flip);
                     }
-                }else if(southState.getBlock() instanceof TatamiCarpetBlock&&southState.getValue(FACING).getAxis()== Direction.Axis.Z){
+                }else if(southState.getBlock().equals(state.getBlock())&&southState.getValue(FACING).getAxis()== Direction.Axis.Z){
                     if(flip==southState.getValue(FLIP)){
                         finalState= finalState.setValue(FLIP,!flip);
                     }
-                }else if(((!(northState.getBlock() instanceof TatamiCarpetBlock)||northState.getBlock()instanceof TatamiCarpetBlock&&northState.getValue(FACING).getAxis()!=finalState.getValue(FACING).getAxis())&&finalState.getValue(FLIP))||((!(southState.getBlock() instanceof TatamiCarpetBlock)||southState.getBlock()instanceof TatamiCarpetBlock&&southState.getValue(FACING).getAxis()!=finalState.getValue(FACING).getAxis())&&!finalState.getValue(FLIP))){
+                }else if(((!(northState.getBlock().equals(state.getBlock()))||northState.getBlock().equals(state.getBlock())&&northState.getValue(FACING).getAxis()!=finalState.getValue(FACING).getAxis())&&finalState.getValue(FLIP))||((!(southState.getBlock().equals(state.getBlock()))||southState.getBlock().equals(state.getBlock())&&southState.getValue(FACING).getAxis()!=finalState.getValue(FACING).getAxis())&&!finalState.getValue(FLIP))){
                     finalState=finalState.setValue(FLIP,!finalState.getValue(FLIP));
-                    /*if(finalState.getValue(FACING)==Direction.NORTH||finalState.getValue(FACING)==Direction.EAST||finalState.getValue(FACING)==Direction.UP){
+                    *//*if(finalState.getValue(FACING)==Direction.NORTH||finalState.getValue(FACING)==Direction.EAST||finalState.getValue(FACING)==Direction.UP){
                         finalState=finalState.setValue(FLIP,!finalState.getValue(FLIP));
-                    }*/
+                    }*//*
                 }
             }
-            /*if(finalState.getValue(FACING)==Direction.NORTH||finalState.getValue(FACING)==Direction.EAST||finalState.getValue(FACING)==Direction.UP){
+            *//*if(finalState.getValue(FACING)==Direction.NORTH||finalState.getValue(FACING)==Direction.EAST||finalState.getValue(FACING)==Direction.UP){
                 finalState=finalState.setValue(FLIP,!finalState.getValue(FLIP));
-            }*/
+            }*//*
             return finalState;
         }
 
 
         return super.updateShape(state, facing, state2, level, pos, pos2);
-    }
+    }*/
 }

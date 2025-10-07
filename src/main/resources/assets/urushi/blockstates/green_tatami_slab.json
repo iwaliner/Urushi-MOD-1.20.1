@@ -1,93 +1,48 @@
 {
   "variants": {
-    "facing=south,type=bottom,flip=false": {
-      "model": "urushi:block/half_slab_green_tatami"
+    "facing=south,type=bottom": {
+      "model": "urushi:block/half_slab_green_tatami_old"
     },
-    "facing=south,type=double,flip=false": {
-      "model": "urushi:block/green_tatami"
+    "facing=south,type=double": {
+      "model": "urushi:block/green_tatami_old"
     },
-    "facing=south,type=top,flip=false": {
-      "model": "urushi:block/upper_slab_green_tatami"
+    "facing=south,type=top": {
+      "model": "urushi:block/upper_slab_green_tatami_old"
     },
-    "facing=north,type=bottom,flip=false": {
-      "model": "urushi:block/half_slab_green_tatami",
+    "facing=north,type=bottom": {
+      "model": "urushi:block/half_slab_green_tatami_old",
       "y": 180
     },
-    "facing=north,type=double,flip=false": {
-      "model": "urushi:block/green_tatami",
+    "facing=north,type=double": {
+      "model": "urushi:block/green_tatami_old",
       "y": 180
     },
-    "facing=north,type=top,flip=false": {
-      "model": "urushi:block/upper_slab_green_tatami",
+    "facing=north,type=top": {
+      "model": "urushi:block/upper_slab_green_tatami_old",
       "y": 180
     },
-    "facing=east,type=bottom,flip=false": {
-      "model": "urushi:block/half_slab_green_tatami",
+    "facing=east,type=bottom": {
+      "model": "urushi:block/half_slab_green_tatami_old",
       "y": 270
     },
-    "facing=east,type=double,flip=false": {
-      "model": "urushi:block/green_tatami",
+    "facing=east,type=double": {
+      "model": "urushi:block/green_tatami_old",
       "y": 270
     },
-    "facing=east,type=top,flip=false": {
-      "model": "urushi:block/upper_slab_green_tatami",
+    "facing=east,type=top": {
+      "model": "urushi:block/upper_slab_green_tatami_old",
       "y": 270
     },
-    "facing=west,type=bottom,flip=false": {
-      "model": "urushi:block/half_slab_green_tatami",
+    "facing=west,type=bottom": {
+      "model": "urushi:block/half_slab_green_tatami_old",
       "y": 90
     },
-    "facing=west,type=double,flip=false": {
-      "model": "urushi:block/green_tatami",
+    "facing=west,type=double": {
+      "model": "urushi:block/green_tatami_old",
       "y": 90
     },
-    "facing=west,type=top,flip=false": {
-      "model": "urushi:block/upper_slab_green_tatami",
-      "y": 90
-    },
-    "facing=south,type=bottom,flip=true": {
-      "model": "urushi:block/half_slab_green_tatami_flip"
-    },
-    "facing=south,type=double,flip=true": {
-      "model": "urushi:block/green_tatami_flip"
-    },
-    "facing=south,type=top,flip=true": {
-      "model": "urushi:block/upper_slab_green_tatami_flip"
-    },
-    "facing=north,type=bottom,flip=true": {
-      "model": "urushi:block/half_slab_green_tatami_flip",
-      "y": 180
-    },
-    "facing=north,type=double,flip=true": {
-      "model": "urushi:block/green_tatami_flip",
-      "y": 180
-    },
-    "facing=north,type=top,flip=true": {
-      "model": "urushi:block/upper_slab_green_tatami_flip",
-      "y": 180
-    },
-    "facing=east,type=bottom,flip=true": {
-      "model": "urushi:block/half_slab_green_tatami_flip",
-      "y": 270
-    },
-    "facing=east,type=double,flip=true": {
-      "model": "urushi:block/green_tatami_flip",
-      "y": 270
-    },
-    "facing=east,type=top,flip=true": {
-      "model": "urushi:block/upper_slab_green_tatami_flip",
-      "y": 270
-    },
-    "facing=west,type=bottom,flip=true": {
-      "model": "urushi:block/half_slab_green_tatami_flip",
-      "y": 90
-    },
-    "facing=west,type=double,flip=true": {
-      "model": "urushi:block/green_tatami_flip",
-      "y": 90
-    },
-    "facing=west,type=top,flip=true": {
-      "model": "urushi:block/upper_slab_green_tatami_flip",
+    "facing=west,type=top": {
+      "model": "urushi:block/upper_slab_green_tatami_old",
       "y": 90
     }
   }
