@@ -7,7 +7,9 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -31,7 +33,26 @@ public class TatamiBlock extends RotatedPillarBlock {
     public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 60;
     }
+    public BlockState rotate(BlockState p_55930_, Rotation p_55931_) {
+        return rotatePillar(p_55930_, p_55931_);
+    }
 
+    public static BlockState rotatePillar(BlockState state, Rotation rotation) {
+        switch (rotation) {
+            case COUNTERCLOCKWISE_90:
+            case CLOCKWISE_90:
+                switch ((Direction.Axis)state.getValue(AXIS)) {
+                    case X:
+                        return state.setValue(AXIS, Direction.Axis.Z).setValue(FLIP,rotation==Rotation.CLOCKWISE_90? !state.getValue(FLIP) : state.getValue(FLIP));
+                    case Z:
+                        return state.setValue(AXIS, Direction.Axis.X).setValue(FLIP,rotation==Rotation.COUNTERCLOCKWISE_90? !state.getValue(FLIP) : state.getValue(FLIP));
+                    default:
+                        return state;
+                }
+            default:
+                return state.setValue(FLIP,rotation==Rotation.CLOCKWISE_180? !state.getValue(FLIP) : state.getValue(FLIP));
+        }
+    }
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         boolean flag=false;
@@ -70,69 +91,4 @@ public class TatamiBlock extends RotatedPillarBlock {
 
         return this.defaultBlockState().setValue(AXIS,axis).setValue(FLIP,flag);
     }
-  /*  @Override
-    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos pos2, boolean b) {
-        this.updateShape(state,Direction.NORTH,level.getBlockState(pos2),level,pos,pos2);
-        super.neighborChanged(state, level, pos, block, pos2, b);
-    }
-    @Override
-    public BlockState updateShape(BlockState state, Direction facing, BlockState state2, LevelAccessor level, BlockPos pos, BlockPos pos2) {
-        if(state.getBlock() instanceof TatamiBlock){
-            boolean flip=state.getValue(FLIP);
-            BlockState finalState=state;
-            if(state.getValue(RotatedPillarBlock.AXIS)== Direction.Axis.X){
-                BlockState eastState=level.getBlockState(pos.east());
-                BlockState westState=level.getBlockState(pos.west());
-                if(eastState.getBlock().equals(state.getBlock())&&eastState.getValue(AXIS)== Direction.Axis.X){
-                    if(flip==eastState.getValue(FLIP)){
-                        finalState= state.setValue(FLIP,!flip);
-                    }
-                }else if(westState.getBlock().equals(state.getBlock())&&westState.getValue(AXIS)== Direction.Axis.X){
-                    if(flip==westState.getValue(FLIP)){
-                        finalState= state.setValue(FLIP,!flip);
-                    }
-                }
-
-                if(((!(eastState.getBlock().equals(state.getBlock()))||eastState.getBlock().equals(state.getBlock())&&eastState.getValue(AXIS)!=finalState.getValue(AXIS))&&finalState.getValue(FLIP))||((!(westState.getBlock().equals(state.getBlock()))||westState.getBlock().equals(state.getBlock())&&westState.getValue(AXIS)!=finalState.getValue(AXIS))&&!finalState.getValue(FLIP))){
-                    finalState=finalState.setValue(FLIP,!finalState.getValue(FLIP));
-                }
-            }else if(state.getValue(RotatedPillarBlock.AXIS)== Direction.Axis.Z){
-                BlockState northState=level.getBlockState(pos.north());
-                BlockState southState=level.getBlockState(pos.south());
-                if(northState.getBlock().equals(state.getBlock())&&northState.getValue(AXIS)== Direction.Axis.Z){
-                    if(flip==northState.getValue(FLIP)){
-                        finalState= state.setValue(FLIP,!flip);
-                    }
-                }else if(southState.getBlock().equals(state.getBlock())&&southState.getValue(AXIS)== Direction.Axis.Z){
-                    if(flip==southState.getValue(FLIP)){
-                        finalState= state.setValue(FLIP,!flip);
-                    }
-                }
-
-                if(((!(northState.getBlock().equals(state.getBlock()))||northState.getBlock().equals(state.getBlock())&&northState.getValue(AXIS)!=finalState.getValue(AXIS))&&finalState.getValue(FLIP))||((!(southState.getBlock().equals(state.getBlock()))||southState.getBlock().equals(state.getBlock())&&southState.getValue(AXIS)!=finalState.getValue(AXIS))&&!finalState.getValue(FLIP))){
-                    finalState=finalState.setValue(FLIP,!finalState.getValue(FLIP));
-                }
-            }else if(state.getValue(RotatedPillarBlock.AXIS)== Direction.Axis.Y){
-                BlockState aboveState=level.getBlockState(pos.above());
-                BlockState belowState=level.getBlockState(pos.below());
-                if(aboveState.getBlock().equals(state.getBlock())&&aboveState.getValue(AXIS)== Direction.Axis.Y){
-                    if(flip==aboveState.getValue(FLIP)){
-                        finalState= state.setValue(FLIP,!flip);
-                    }
-                }else if(belowState.getBlock().equals(state.getBlock())&&belowState.getValue(AXIS)== Direction.Axis.Y){
-                    if(flip==belowState.getValue(FLIP)){
-                        finalState= state.setValue(FLIP,!flip);
-                    }
-                }
-
-                if(((!(aboveState.getBlock().equals(state.getBlock()))||aboveState.getBlock().equals(state.getBlock())&&aboveState.getValue(AXIS)!=finalState.getValue(AXIS))&&finalState.getValue(FLIP))||((!(belowState.getBlock().equals(state.getBlock()))||belowState.getBlock().equals(state.getBlock())&&belowState.getValue(AXIS)!=finalState.getValue(AXIS))&&!finalState.getValue(FLIP))){
-                    finalState=finalState.setValue(FLIP,!finalState.getValue(FLIP));
-                }
-            }
-            return finalState;
-        }
-        return state;
-    }
-*/
-
     }
