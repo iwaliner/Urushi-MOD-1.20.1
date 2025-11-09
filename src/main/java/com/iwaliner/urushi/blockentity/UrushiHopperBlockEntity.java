@@ -21,6 +21,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ChestMenu;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -288,12 +289,13 @@ public class UrushiHopperBlockEntity extends RandomizableContainerBlockEntity im
         for(int i = 0; i < p_155566_.getContainerSize(); ++i) {
             ItemStack item = p_155566_.getItem(i);
             if (!item.isEmpty()) {
+                ItemStack itemstack = item.copy(); // save itemstack
                 ItemStack itemstack1 = addItem(p_155566_, container, p_155566_.removeItem(i, 1), direction);
                 if (itemstack1.isEmpty()) {
                     container.setChanged();
                     return true;
                 }
-                p_155566_.setItem(i, item.copy());
+                p_155566_.setItem(i, itemstack);
             }
         }
 
@@ -341,13 +343,14 @@ public class UrushiHopperBlockEntity extends RandomizableContainerBlockEntity im
     private static boolean tryTakeInItemFromSlot(Hopper p_59355_, Container p_59356_, int p_59357_, Direction p_59358_) {
         ItemStack itemstack = p_59356_.getItem(p_59357_);
         if (!itemstack.isEmpty() && canTakeItemFromContainer(p_59356_, itemstack, p_59357_, p_59358_)) {
+            ItemStack itemStack1 = itemstack.copy(); // save itemstack
             ItemStack itemstack2 = addItem(p_59356_, p_59355_, p_59356_.removeItem(p_59357_, 1), (Direction)null);
             if (itemstack2.isEmpty()) {
                 p_59356_.setChanged();
                 return true;
             }
 
-            p_59356_.setItem(p_59357_, itemstack.copy());
+            p_59356_.setItem(p_59357_, itemStack1);
         }
 
         return false;
