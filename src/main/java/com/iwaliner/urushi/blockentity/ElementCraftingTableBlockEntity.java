@@ -87,7 +87,9 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
 
 
     public static void tick(Level level, BlockPos pos, BlockState state, ElementCraftingTableBlockEntity elementCraftingTable) {
-     if(state.getBlock()instanceof ElementCraftingTableBlock) {
+         if(!(state.getBlock()instanceof ElementCraftingTableBlock)) {
+             return;
+         }
          elementCraftingTable.recieveReiryoku(level, pos);
 
          if (elementCraftingTable.getCoolTime() > 0) {
@@ -125,14 +127,16 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
          BlockState eastState = level.getBlockState(pos.east());
          BlockState southState = level.getBlockState(pos.south());
          BlockState westState = level.getBlockState(pos.west());
-         boolean b1 = northState.getBlock() instanceof SanboBlock && eastState.getBlock() instanceof SanboBlock && southState.getBlock() instanceof SanboBlock && westState.getBlock() instanceof SanboBlock;
-         if (level.getBlockEntity(pos.north()) instanceof SanboBlockEntity && level.getBlockEntity(pos.east()) instanceof SanboBlockEntity && level.getBlockEntity(pos.south()) instanceof SanboBlockEntity && level.getBlockEntity(pos.west()) instanceof SanboBlockEntity) {
-             SanboBlockEntity northSanbo = (SanboBlockEntity) level.getBlockEntity(pos.north());
-             SanboBlockEntity eastSanbo = (SanboBlockEntity) level.getBlockEntity(pos.east());
-             SanboBlockEntity southSanbo = (SanboBlockEntity) level.getBlockEntity(pos.south());
-             SanboBlockEntity westSanbo = (SanboBlockEntity) level.getBlockEntity(pos.west());
-             boolean b2 = northSanbo != null && eastSanbo != null && southSanbo != null && westSanbo != null;
-             if(!(b1&&b2)){
+         boolean b1 = northState.getBlock() instanceof SanboBlock
+             && eastState.getBlock() instanceof SanboBlock
+             && southState.getBlock() instanceof SanboBlock
+             && westState.getBlock() instanceof SanboBlock;
+
+         if (level.getBlockEntity(pos.north()) instanceof SanboBlockEntity northSanbo
+             && level.getBlockEntity(pos.east()) instanceof SanboBlockEntity eastSanbo
+             && level.getBlockEntity(pos.south()) instanceof SanboBlockEntity southSanbo
+             && level.getBlockEntity(pos.west()) instanceof SanboBlockEntity westSanbo) {
+             if(!b1){
                  return;
              }
 
@@ -219,9 +223,9 @@ public class ElementCraftingTableBlockEntity extends AbstractReiryokuStorableBlo
                          }
                      }
                  }
+
              }
          }
-     }
     }
 
     @Override
