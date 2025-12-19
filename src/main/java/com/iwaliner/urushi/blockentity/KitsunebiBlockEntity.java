@@ -32,10 +32,10 @@ public class KitsunebiBlockEntity extends BlockEntity {
         if (state.getBlock() instanceof KitsunebiBlock) {
             --blockEntity.time;
 
-        if (!level.isClientSide() && blockEntity.time <= 0) {
-            level.setBlock(pos, ItemAndBlockRegister.kitsunebiBlock.get().defaultBlockState(), 2);
+            if (!level.isClientSide() && blockEntity.time <= 0) {
+                level.setBlock(pos, ItemAndBlockRegister.kitsunebiBlock.get().defaultBlockState(), 2);
+            }
         }
     }
-}
 
-    }
+}
