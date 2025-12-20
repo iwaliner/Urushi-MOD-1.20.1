@@ -18,6 +18,11 @@ public class AutoCraftingTableResultMatrixSlot extends Slot {
     }
 
     @Override
+    public boolean isHighlightable() {
+        return false;
+    }
+
+    @Override
     @NotNull
     public ItemStack remove(int amount)
     {
