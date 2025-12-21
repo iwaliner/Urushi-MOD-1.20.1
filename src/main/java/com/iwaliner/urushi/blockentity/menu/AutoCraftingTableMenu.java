@@ -31,14 +31,14 @@ public class AutoCraftingTableMenu extends RecipeBookMenu<Container> {
         this.player = inventory.player;
 
         container.startOpen(player);
-        this.addSlot(new AutoCraftingTableResultSlot(container, 10, 146, 40));
+        this.addSlot(new AutoCraftingTableResultSlot(container, 10, 125, 36));
         for(int i = 0; i < 9; ++i) {
             this.addSlot(new AutoCraftingTableIngredientsSlot(this.container, i +11, 8 + i * 18, 79-5));
         }
-        this.addSlot(new AutoCraftingTableResultMatrixSlot(container, 0, 124, 35-6+7));
+        this.addSlot(new AutoCraftingTableResultMatrixSlot(container, 0, 87, 36));
         for(int i = 0; i < 3; ++i) {
             for(int j = 0; j < 3; ++j) {
-                this.addSlot(new AutoCraftingTableIngredientsMatrixSlot(this.container, j + i * 3+1, 30 + j * 18, 17 + i * 18-6+7));
+                this.addSlot(new AutoCraftingTableIngredientsMatrixSlot(this.container, j + i * 3+1, 26 + j * 18, 17 + i * 18-6+7));
             }
         }
 

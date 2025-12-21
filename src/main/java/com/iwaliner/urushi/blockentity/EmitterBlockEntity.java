@@ -93,37 +93,39 @@ public class EmitterBlockEntity extends AbstractReiryokuStorableBlockEntity impl
             /**後ろにあるブロックから霊力を吸いだす処理　終了*/
 
 
-            if (!state.getValue(EmitterBlock.POWERED)) {
-                if (emitterBlockEntity.sendDistance(level, pos) != 0 && emitterBlockEntity.getStoredReiryoku() > 0) {
-                    double vX = 0D, vY = 0D, vZ = 0D;
-                    double v0 = emitterBlockEntity.getParticleSpeed();
-
-                    Direction direction = state.getValue(FACING);
-                    double dx = 0D, dy = 0D, dz = 0D;
-                    if (direction == Direction.UP) {
-                        vY = v0;
-                        dy = -0.25D;
-                    } else if (direction == Direction.DOWN) {
-                        vY = -v0;
-                        dy = 0.25D;
-                    } else if (direction == Direction.NORTH) {
-                        vZ = -v0;
-                        dz = 0.25D;
-                    } else if (direction == Direction.SOUTH) {
-                        vZ = v0;
-                        dz = -0.25D;
-                    } else if (direction == Direction.EAST) {
-                        vX = v0;
-                        dx = -0.25D;
-                    } else if (direction == Direction.WEST) {
-                        vX = -v0;
-                        dx = 0.25D;
-                    }
-                    emitterBlockEntity.send(level, pos, pos.getX() + 0.5D + dx, pos.getY() + 0.5D + dy, pos.getZ() + 0.5D + dz, vX, vY, vZ);
-
-
-                }
+            if (state.getValue(EmitterBlock.POWERED)) {
+                return;
             }
+            if (emitterBlockEntity.sendDistance(level, pos) != 0 && emitterBlockEntity.getStoredReiryoku() > 0) {
+                double vX = 0D, vY = 0D, vZ = 0D;
+                double v0 = emitterBlockEntity.getParticleSpeed();
+
+                Direction direction = state.getValue(FACING);
+                double dx = 0D, dy = 0D, dz = 0D;
+                if (direction == Direction.UP) {
+                    vY = v0;
+                    dy = -0.25D;
+                } else if (direction == Direction.DOWN) {
+                    vY = -v0;
+                    dy = 0.25D;
+                } else if (direction == Direction.NORTH) {
+                    vZ = -v0;
+                    dz = 0.25D;
+                } else if (direction == Direction.SOUTH) {
+                    vZ = v0;
+                    dz = -0.25D;
+                } else if (direction == Direction.EAST) {
+                    vX = v0;
+                    dx = -0.25D;
+                } else if (direction == Direction.WEST) {
+                    vX = -v0;
+                    dx = 0.25D;
+                }
+                emitterBlockEntity.send(level, pos, pos.getX() + 0.5D + dx, pos.getY() + 0.5D + dy, pos.getZ() + 0.5D + dz, vX, vY, vZ);
+
+
+            }
+
         }
     }
 
@@ -134,42 +136,46 @@ public class EmitterBlockEntity extends AbstractReiryokuStorableBlockEntity impl
         BlockState emitterState = level.getBlockState(emitterPos);
         double corner = 6D;
         int j = 0;
-        if (emitterState.getBlock() instanceof EmitterBlock) {
-            Direction direction = emitterState.getValue(FACING);
-            EmitterBlockEntity emitterBlockEntity = (EmitterBlockEntity) level.getBlockEntity(emitterPos);
-            VoxelShape particleShape = Block.box(corner, corner, corner, 16D - corner, 16D - corner, 16D - corner);
-            int range = Mth.floor(this.getParticleSpeed() * 80 - 0.25D);
+        if (!(emitterState.getBlock() instanceof EmitterBlock) ) {
+            return j;
+        }
+        Direction direction = emitterState.getValue(FACING);
+        EmitterBlockEntity emitterBlockEntity = (EmitterBlockEntity) level.getBlockEntity(emitterPos);
+        VoxelShape particleShape = Block.box(corner, corner, corner, 16D - corner, 16D - corner, 16D - corner);
+        int range = Mth.floor(this.getParticleSpeed() * 80 - 0.25D);
 
-            int sendAmount = 0;
-            ElementType storedElementType = null;
-            if (emitterBlockEntity != null){
-                sendAmount = emitterBlockEntity.getSendAmount();
-                storedElementType = emitterBlockEntity.getStoredElementType();
-            }
-            for (int i = 1; i < range; i++) {
-                BlockEntity blockEntity = level.getBlockEntity(emitterPos.relative(direction, i));
-                BlockState state = level.getBlockState(emitterPos.relative(direction, i));
-                VoxelShape shape = state.getCollisionShape(level, emitterPos.relative(direction, i)).optimize();
-                if (storedElementType!=null && blockEntity != null) {
-                    if (blockEntity instanceof ReiryokuImportable || blockEntity instanceof MirrorBlockEntity) {
-                        if (!(blockEntity instanceof EmitterBlockEntity)) {
-                            ReiryokuStorable reiryokuStorable = (ReiryokuStorable) blockEntity;
-                            if (reiryokuStorable.canAddReiryoku(sendAmount)) {
-                                if (blockEntity instanceof Mirror || reiryokuStorable.getStoredElementType() == storedElementType) {
-                                    j = i;
-                                    break;
-                                }
-                            }
-                        }
-                        break;
-                    }
-
-                } else if (Shapes.joinIsNotEmpty(shape, particleShape, BooleanOp.AND)) {
+        int sendAmount = 0;
+        ElementType storedElementType = null;
+        if (emitterBlockEntity != null){
+            sendAmount = emitterBlockEntity.getSendAmount();
+            storedElementType = emitterBlockEntity.getStoredElementType();
+        }
+        for (int i = 1; i < range; i++) {
+            BlockPos relativePos = emitterPos.relative(direction, i);
+            BlockEntity blockEntity = level.getBlockEntity(relativePos);
+            BlockState state = level.getBlockState(relativePos);
+            VoxelShape shape = state.getCollisionShape(level, relativePos).optimize();
+            if (storedElementType!=null && blockEntity != null) {
+                if ((blockEntity instanceof EmitterBlockEntity)) {
                     break;
                 }
+                if (blockEntity instanceof ReiryokuImportable || blockEntity instanceof MirrorBlockEntity) {
+                    ReiryokuStorable reiryokuStorable = (ReiryokuStorable) blockEntity;
+                    if (reiryokuStorable.canAddReiryoku(sendAmount)) {
+                        if (blockEntity instanceof Mirror || reiryokuStorable.getStoredElementType() == storedElementType) {
+                            j = i;
+                            break;
+                        }
+                    }
 
+                }
+
+            } else if (Shapes.joinIsNotEmpty(shape, particleShape, BooleanOp.AND)) {
+                break;
             }
+
         }
+
 
         return j;
     }
@@ -180,30 +186,32 @@ public class EmitterBlockEntity extends AbstractReiryokuStorableBlockEntity impl
      */
     private void send(Level level, BlockPos emitterPos, double dX, double dY, double dZ, double vX, double vY, double vZ) {
         BlockState emitterState = level.getBlockState(emitterPos);
-        if (emitterState.getBlock() instanceof EmitterBlock) {
-            Direction direction = emitterState.getValue(FACING);
-            int distance = sendDistance(level, emitterPos);
-            BlockPos goalPos = emitterPos.relative(direction, distance);
-            EmitterBlockEntity emitterBlockEnitity = (EmitterBlockEntity) level.getBlockEntity(emitterPos);
-            ReiryokuStorable goalBlockEntity = (ReiryokuStorable) level.getBlockEntity(goalPos);
-            int arriveTick = Mth.floor((distance - 1) / getParticleSpeed()) <= 0 ? 1 : Mth.floor((distance - 1) / getParticleSpeed());
-            if (emitterBlockEnitity != null && goalBlockEntity != null && emitterBlockEnitity.canDecreaseReiryoku(emitterBlockEnitity.getSendAmount()) && goalBlockEntity.canAddReiryoku(emitterBlockEnitity.getSendAmount())) {
-                if (goalBlockEntity.isIdle()) {
-                    goalBlockEntity.setReceiveWaitingTime(arriveTick);
-                    goalBlockEntity.setReceiveAmount(emitterBlockEnitity.getSendAmount());
-                    goalBlockEntity.setReceiveElementType(emitterBlockEnitity.getExportElementType());
-                    if (goalBlockEntity instanceof Mirror) {
-                        Mirror mirror = (Mirror) goalBlockEntity;
-                        mirror.setIncidentDirection(direction.getOpposite());
-                    }
-                    goalBlockEntity.markUpdated();
-                    emitterBlockEnitity.decreaseStoredReiryoku(emitterBlockEnitity.getSendAmount());
-                    emitterBlockEnitity.markUpdated();
-                    level.addParticle(ElementUtils.getMediumElementParticle(this.getExportElementType()), dX, dY, dZ, vX, vY, vZ);
-
+        if (!(emitterState.getBlock() instanceof EmitterBlock)) {
+            return;
+        }
+        Direction direction = emitterState.getValue(FACING);
+        int distance = sendDistance(level, emitterPos);
+        BlockPos goalPos = emitterPos.relative(direction, distance);
+        EmitterBlockEntity emitterBlockEnitity = (EmitterBlockEntity) level.getBlockEntity(emitterPos);
+        ReiryokuStorable goalBlockEntity = (ReiryokuStorable) level.getBlockEntity(goalPos);
+        int arriveTick = Mth.floor((distance - 1) / getParticleSpeed()) <= 0 ? 1 : Mth.floor((distance - 1) / getParticleSpeed());
+        if (emitterBlockEnitity != null && goalBlockEntity != null && emitterBlockEnitity.canDecreaseReiryoku(emitterBlockEnitity.getSendAmount()) && goalBlockEntity.canAddReiryoku(emitterBlockEnitity.getSendAmount())) {
+            if (goalBlockEntity.isIdle()) {
+                goalBlockEntity.setReceiveWaitingTime(arriveTick);
+                goalBlockEntity.setReceiveAmount(emitterBlockEnitity.getSendAmount());
+                goalBlockEntity.setReceiveElementType(emitterBlockEnitity.getExportElementType());
+                if (goalBlockEntity instanceof Mirror) {
+                    Mirror mirror = (Mirror) goalBlockEntity;
+                    mirror.setIncidentDirection(direction.getOpposite());
                 }
+                goalBlockEntity.markUpdated();
+                emitterBlockEnitity.decreaseStoredReiryoku(emitterBlockEnitity.getSendAmount());
+                emitterBlockEnitity.markUpdated();
+                level.addParticle(ElementUtils.getMediumElementParticle(this.getExportElementType()), dX, dY, dZ, vX, vY, vZ);
+
             }
         }
+
     }
 
     /**
@@ -217,17 +225,21 @@ public class EmitterBlockEntity extends AbstractReiryokuStorableBlockEntity impl
 
     // change mirror incidentDirection tag when removing emitter
     public void onBlockRemove() {
-        if(this.level!=null) {
-            Direction direction = this.getBlockState().getValue(FACING);
-            int distance = this.sendDistance(level, this.getBlockPos());
-            if (distance > 0) {
-                BlockPos targetPos = this.getBlockPos().relative(direction, distance);
-                BlockEntity targetEntity = level.getBlockEntity(targetPos);
-                if (targetEntity instanceof MirrorBlockEntity mirror) {
-                    mirror.setIncidentDirection(ComplexDirection.FAIL);
-                    mirror.markUpdated();
-                }
-            }
+        if(this.level==null) {
+            return;
         }
+        int distance = this.sendDistance(level, this.getBlockPos());
+        if (distance <= 0) {
+            return;
+        }
+        Direction direction = this.getBlockState().getValue(FACING);
+        BlockPos targetPos = this.getBlockPos().relative(direction, distance);
+        BlockEntity targetEntity = level.getBlockEntity(targetPos);
+        if (targetEntity instanceof MirrorBlockEntity mirror) {
+            mirror.setIncidentDirection(ComplexDirection.FAIL);
+            mirror.markUpdated();
+        }
+
+
     }
 }
