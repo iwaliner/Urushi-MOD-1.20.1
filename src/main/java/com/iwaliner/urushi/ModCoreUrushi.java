@@ -790,7 +790,7 @@ public class ModCoreUrushi {
 
         }
     }
-    @SubscribeEvent
+    /*@SubscribeEvent
     public static void onScreenDrawPost(ScreenEvent.Init.Post event) {
         if ( event.getScreen() instanceof TitleScreen titleScreen) {
             long maxMemory   = Runtime.getRuntime().maxMemory() / 1024 / 1024;
@@ -799,14 +799,14 @@ public class ModCoreUrushi {
             long usedMemory  = totalMemory - freeMemory;
             logger.info(String.format("Memory: %d / %d MB", usedMemory, maxMemory));
           //  if(maxMemory<=2048){
-           /* Component component = ComponentUtils.wrapInSquareBrackets(Component.translatable("info.urushi.max_memory_is_not_enough")).withStyle((p_214489_) -> {
+           *//* Component component = ComponentUtils.wrapInSquareBrackets(Component.translatable("info.urushi.max_memory_is_not_enough")).withStyle((p_214489_) -> {
                 return p_214489_.withColor(ChatFormatting.RED);
-            });*/
+            });*//*
                 //Component c1=Component.translatable("info.urushi.max_memory_is_not_enough");
                 //Minecraft.getInstance().setScreen(new MemoryScreen(c1));
          //   }
         }
-    }
+    }*/
     @SubscribeEvent
     public void PlayerLoggedInEvent(PlayerEvent.PlayerLoggedInEvent event) {
         long maxMemory   = Runtime.getRuntime().maxMemory() / 1024 / 1024;
