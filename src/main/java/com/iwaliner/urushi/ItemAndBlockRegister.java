@@ -1480,6 +1480,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> giant_skeleton_spawn_egg =ITEMS.register("giant_skeleton_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.GianntSkeleton, 12698049, 4802889,(new Item.Properties()));});
     public static final RegistryObject<Item> kakuriyo_villager_spawn_egg =ITEMS.register("kakuriyo_villager_spawn_egg", () -> {return new ForgeSpawnEggItem(EntityRegister.KakuriyoVillager, 16638153, 16734589,(new Item.Properties()));});
     public static final RegistryObject<Block> coin =B("coin","p",-1,() -> {return new CoinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(0.5F, 10.0F).noOcclusion());});
+    public static final RegistryObject<Item> sakura_head =ITEMS.register("sakura_head", () -> {return new SakuraHeadItem("sakura_head",(new Item.Properties()).stacksTo(1));});
     public static final RegistryObject<Item> kakuriyo_chronicles_1 =ITEMS.register("kakuriyo_chronicles_1", () -> {return new TranslatableBookItem((new Item.Properties()));});
 
 

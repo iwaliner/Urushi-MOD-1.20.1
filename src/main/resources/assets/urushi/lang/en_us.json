@@ -1856,5 +1856,7 @@
   "block.urushi.small_torii": "Small Torii",
   "block.urushi.wooden_hokora": "Hokora",
   "info.urushi.ironsand_ore": "Ironsand Ore is generated in sandy terrain except Desert biomes.",
-  "info.urushi.hot_ironsand": "It becomes Raw Iron if you throw into water."
+  "info.urushi.hot_ironsand": "It becomes Raw Iron if you throw into water.",
+  "item.urushi.sakura_head": "Sakura Hair Ornament (April Fools' Day)",
+   "info.urushi.sakura_head": "It is epuipable on the head slot. One of the April Fools' contents in Urushi."
 }

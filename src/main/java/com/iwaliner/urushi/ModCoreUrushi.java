@@ -819,6 +819,16 @@ public class ModCoreUrushi {
                 return p_214489_.withColor(ChatFormatting.RED);
             });*/
         }
+        if(UrushiUtils.isAprilFoolsDay()){
+            Player player = event.getEntity();
+            if(player.getItemBySlot(EquipmentSlot.HEAD).isEmpty()){
+                player.setItemSlot(EquipmentSlot.HEAD,new ItemStack(ItemAndBlockRegister.sakura_head.get()));
+            }else{
+                if (!player.getInventory().add(new ItemStack(ItemAndBlockRegister.sakura_head.get()))) {
+                    player.drop(new ItemStack(ItemAndBlockRegister.sakura_head.get()), false);
+                }
+            }
+        }
         if(ConfigUrushi.noticeNewerVersion.get()) {
             VersionChecker.CheckResult checkResult = VersionChecker.getResult(ModList.get().getModFileById(ModCoreUrushi.ModID).getMods().get(0));
             if (checkResult.status() == VersionChecker.Status.OUTDATED) {
