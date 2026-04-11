@@ -1780,7 +1780,7 @@
   "info.urushi.ochoko_1": "Give a Resistance effect and a Slowness effect.",
   "info.urushi.ochoko_2": "Effects will be stronger and the duration will be longer if you drink many times.",
   "info.urushi.sake": "Put a Rice, a Rice Malt, and a Water Bamboo Cup in a Fermentation Barrel and use a Glass Bottle to the barrel to obtain.",
-  "info.urushi.noodle": "Holding the Noodle Knife in the main hand and the dough in the off hand and holding down the right mouse button makes it easier to cut noodles.",
+  "info.urushi.noodle": "Holding the Noodle Knife in the main hand and the dough in the off hand, and holding down the right mouse button makes it easier to cut noodles.",
   "item.urushi.sake": "Sake Bottle",
   "item.urushi.tokkuri": "Tokkuri",
   "item.urushi.ochoko": "Ochoko",
@@ -1856,7 +1856,7 @@
   "block.urushi.small_torii": "Small Torii",
   "block.urushi.wooden_hokora": "Hokora",
   "info.urushi.ironsand_ore": "Ironsand Ore is generated in sandy terrain except Desert biomes.",
-  "info.urushi.hot_ironsand": "It becomes Raw Iron if you throw into water.",
+  "info.urushi.hot_ironsand": "Becomes Raw Iron when thrown into water.",
   "item.urushi.sakura_head": "Sakura Hair Ornament (April Fools' Day)",
-   "info.urushi.sakura_head": "It is epuipable on the head slot. One of the April Fools' contents in Urushi."
+   "info.urushi.sakura_head": "Epuipable on the head slot. One of the April Fools' contents in Urushi."
 }
