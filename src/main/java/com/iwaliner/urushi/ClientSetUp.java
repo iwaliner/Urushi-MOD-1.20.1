@@ -30,10 +30,12 @@ import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.*;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.FallingBlockRenderer;
+import net.minecraft.client.renderer.entity.MinecartRenderer;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
@@ -163,7 +165,9 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.OchokoFoodEntity.get(), OchokoFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.TokkuriFoodEntity.get(), TokkuriFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.ExperienceDroppableFallingAnvil.get(), ExperienceDroppableAnvilRenderer::new);
-
+        event.registerEntityRenderer(EntityRegister.TestPowerMinecart.get(),  (p_174088_) -> {
+            return new MinecartRenderer<>(p_174088_, ModelLayers.CHEST_MINECART);
+        });
 
     }
 

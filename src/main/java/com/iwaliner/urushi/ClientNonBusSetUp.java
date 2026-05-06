@@ -33,6 +33,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.ForgeHooksClient;
 import net.minecraftforge.client.event.*;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.common.ToolActions;
@@ -152,4 +153,24 @@ public class ClientNonBusSetUp {
         }
 
     }
+
+    /*@SubscribeEvent
+    public static void renderTooltipEvent(ForgeHooksClient.renderMainMenu event) {
+        ItemStack stack = event.getItemStack();
+        Item heldItem=stack.getItem();
+        GuiGraphics guiGraphics = event.getGraphics();
+        Block heldBlock=Block.byItem(stack.getItem());
+        if (heldBlock instanceof AbstractFramedBlock ||heldBlock instanceof FramedPaneBlock){
+            UrushiUtils.displayImage(guiGraphics,"connectable_block",20,55);
+        }else if(heldBlock instanceof RiceCauldronBlock ||heldBlock instanceof DirtFurnaceBlock ||heldItem==ItemAndBlockRegister.raw_rice.get()){
+            UrushiUtils.displayImage(guiGraphics,"rice_cauldron_and_dirt_furnace",20,55);
+        }else if(heldBlock instanceof Roof45Block){
+            UrushiUtils.displayImage(guiGraphics,"roof_45",20,55);
+        }else if(heldBlock instanceof Roof225Block){
+            UrushiUtils.displayImage(guiGraphics,"roof_225",20,55);
+        }else if(heldBlock instanceof SenbakokiBlock||heldBlock==ItemAndBlockRegister.rice_crop.get()){
+            UrushiUtils.displayImage(guiGraphics,"senbakoki",20,55);
+        }
+
+    }*/
 }
