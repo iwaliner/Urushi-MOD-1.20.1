@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/plaster_revolving_door_display",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/plaster_revolving_door_display",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/plaster_revolving_door_display"
+    },
+    "facing=east": {
+      "model": "urushi:block/plaster_revolving_door_display",
+      "y": 90
+    }
+  }
+}

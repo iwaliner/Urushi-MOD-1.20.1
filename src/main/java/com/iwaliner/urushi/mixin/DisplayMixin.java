@@ -6,6 +6,7 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.entity.Display;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.block.state.BlockState;
+import org.joml.Quaternionf;
 import org.joml.Vector3f;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -34,5 +35,19 @@ public interface DisplayMixin {
         throw new AssertionError();
     }
 
+    @Accessor("DATA_LEFT_ROTATION_ID")
+    public static EntityDataAccessor<Quaternionf> getLeftRotationData() {
+        throw new AssertionError();
+    }
+
+    @Accessor("DATA_RIGHT_ROTATION_ID")
+    public static EntityDataAccessor<Quaternionf> getRightRotationData() {
+        throw new AssertionError();
+    }
+
+    @Accessor("DATA_SCALE_ID")
+    public static EntityDataAccessor<Vector3f> getScaleData() {
+        throw new AssertionError();
+    }
 
 }

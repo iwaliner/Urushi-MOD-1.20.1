@@ -1482,6 +1482,8 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> coin =B("coin","p",-1,() -> {return new CoinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(0.5F, 10.0F).noOcclusion());});
     public static final RegistryObject<Item> sakura_head =ITEMS.register("sakura_head", () -> {return new SakuraHeadItem("sakura_head",(new Item.Properties()).stacksTo(1));});
     public static final RegistryObject<Item> kakuriyo_chronicles_1 =ITEMS.register("kakuriyo_chronicles_1", () -> {return new TranslatableBookItem((new Item.Properties()));});
+    public static final RegistryObject<Block> plaster_revolving_door =BP("plaster_revolving_door","p",-1,() -> {return new RevolvingDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).strength(1F, 10.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noOcclusion().noParticlesOnBreak());});
+    public static final RegistryObject<Block> plaster_revolving_door_display =BN("plaster_revolving_door_display","p",-1,() -> {return new HorizonalRotateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).strength(1F, 10.0F).sound(SoundType.STONE).noOcclusion());});
 
 
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()

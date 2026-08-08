@@ -1857,6 +1857,8 @@
    "info.urushi.hot_ironsand": "水に投げ入れると鉄の原石になります。",
    "item.urushi.sakura_head": "桜の髪飾り (エイプリルフール)",
    "info.urushi.sakura_head": "頭スロットに装着できる。漆MODのエイプリルフール限定要素のひとつ。",
+   "block.urushi.plaster_revolving_door": "漆喰のどんでん返し",
+   "block.urushi.plaster_revolving_door_display": "漆喰のどんでん返し",
    "info.urushi.max_memory_is_not_enough": "メモリ割り当てが少ないです。\nMOD環境で遊ぶために、メモリの割り当て量を増やすことをオススメします。\nMinecraftへのメモリ割り当てが少ないと、動作が重くなることがあります。\n方法はググってください。",
    "accessibility.urushi.max_memory_is_not_enough.narrator": "モッド環境で遊ぶために、メモリの割り当て量を増やしてください。"
    

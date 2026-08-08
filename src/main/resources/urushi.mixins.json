@@ -10,7 +10,8 @@
     "IronBarsMixin",
     "ItemEntityMixin",
     "PlayerMixin",
-    "WeatherCommandMixin"
+    "WeatherCommandMixin",
+    "BlockLightEngineMixin"
   ],
   "client": [
     "LevelRendererMixin",
