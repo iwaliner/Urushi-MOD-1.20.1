@@ -1857,11 +1857,25 @@
    "info.urushi.hot_ironsand": "水に投げ入れると鉄の原石になります。",
    "item.urushi.sakura_head": "桜の髪飾り (エイプリルフール)",
    "info.urushi.sakura_head": "頭スロットに装着できる。漆MODのエイプリルフール限定要素のひとつ。",
-   "block.urushi.plaster_revolving_door": "漆喰のどんでん返し",
+   "accessibility.urushi.not_enough_memory.narrator": "モッド環境で遊ぶために、メモリの割り当て量を増やしてください。",
+   "info.urushi.not_enough_memory_title1": "メモリの割り当て量を増やしてください!",
+   "info.urushi.not_enough_memory_title2": "\n\nMOD環境で遊ぶために、メモリの割り当て量を増やすことをオススメします。\nMinecraftへのメモリ割り当てが少ないと、動作が重くなることがあります。\n(漆MODによる警告)",
+   "info.urushi.not_enough_memory_howto1": "デフォルトのランチャーで起動している場合、「起動構成」から使用している起動構成を探して右側の「...」から「編集」を選び、下側にある「その他のオプション」を開いて表示される「JVMの引数」にて設定できます。\nJVMの引数の中に「-Xmx2G」という部分があり、このままだとMinecraftへのメモリ割り当て量が2GBなため、この「2」という数字の値を書き換えてください。",
+   "info.urushi.not_enough_memory_howto2": "CurseForgeのランチャーで起動している場合、左下の歯車マークをクリックして設定を開き、「ゲーム固有」の中にある「Minecraft」を選択し、下側へスクロールすると「メモリ割り当て」と書かれたバーがあるので、このバーを動かすことでメモリ割り当てを変更できます。",
+   "info.urushi.show_howto": "メモリ割り当ての設定方法はこちら",
+   "info.urushi.close_howto": "メモリ割り当ての設定方法を閉じる",
+   "info.urushi.close_screen": "理解した",
+   "entity.urushi.sweetfish_food": "生の鮎",
+   "entity.urushi.sweetfish_with_salt_food": "塩をかけた鮎",
+   "entity.urushi.cooked_sweetfish_food": "鮎の炭火焼き",
+   "entity.urushi.cooked_sweetfish_with_salt_food": "鮎の塩焼き",
+   "block.urushi.plaster_revolving_door": "漆喰",
    "block.urushi.plaster_revolving_door_display": "漆喰のどんでん返し",
-   "info.urushi.max_memory_is_not_enough": "メモリ割り当てが少ないです。\nMOD環境で遊ぶために、メモリの割り当て量を増やすことをオススメします。\nMinecraftへのメモリ割り当てが少ないと、動作が重くなることがあります。\n方法はググってください。",
-   "accessibility.urushi.max_memory_is_not_enough.narrator": "モッド環境で遊ぶために、メモリの割り当て量を増やしてください。"
-   
+   "item.urushi.plaster_revolving_door_item": "漆喰のどんでん返し",
+   "info.urushi.revolving_door": "右クリックすると回転する扉。",
+   "block.urushi.ghost_lantern": "魂の月明かり",
+   "block.urushi.long_chochin_two_tone": "紅白の提灯"
+
    
    
 }

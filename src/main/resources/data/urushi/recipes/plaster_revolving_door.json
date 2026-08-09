@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "sis",
+    "sss"
+  ],
+  "key": {
+    "s": {
+     "item": "urushi:plaster"
+    },
+    "i": {
+      "tag": "forge:ingots/copper"
+    }
+  },
+  "result": {
+    "item": "urushi:plaster_revolving_door_item",
+    "count": 1
+  }
+}

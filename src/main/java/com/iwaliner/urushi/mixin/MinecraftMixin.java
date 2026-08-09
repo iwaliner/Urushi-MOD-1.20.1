@@ -32,7 +32,7 @@ public abstract class MinecraftMixin {
         if (quickPlayData.isEnabled()) {
             QuickPlay.connect(((Minecraft) (Object) this), quickPlayData, reloadInstance, realmsClient);
         }else if(maxMemory<=2048){
-                ((Minecraft) (Object) this).setScreen(new MemoryScreen(((Minecraft) (Object) this).options));
+                ((Minecraft) (Object) this).setScreen(new MemoryScreen(((Minecraft) (Object) this).options,false,true));
         } else if (((Minecraft) (Object)this).options.onboardAccessibility) {
             ((Minecraft) (Object) this).setScreen(new AccessibilityOnboardingScreen(((Minecraft) (Object) this).options));
         } else {

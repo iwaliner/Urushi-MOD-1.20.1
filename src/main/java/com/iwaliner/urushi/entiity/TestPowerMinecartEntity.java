@@ -39,8 +39,8 @@ import net.minecraft.world.phys.Vec3;
 import javax.annotation.Nullable;
 import java.util.*;
 
-public class TestPowerMinecartEntity extends AbstractMinecart {
-    public ArrayList<UUID> linkedCartList=new ArrayList<>();
+public class TestPowerMinecartEntity/* extends AbstractMinecart */{
+    /*public ArrayList<UUID> linkedCartList=new ArrayList<>();
     public double xPush;
     public double zPush;
      public TestPowerMinecartEntity(EntityType<? extends TestPowerMinecartEntity> p_i48580_1_, Level p_i48580_2_) {
@@ -207,7 +207,7 @@ public class TestPowerMinecartEntity extends AbstractMinecart {
                         linkedCart.setDeltaMovement(linkedCart.getDeltaMovement().x*10D,linkedCart.getDeltaMovement().y,linkedCart.getDeltaMovement().z*10D);
                         //linkedCart.setDeltaMovement(this.getDeltaMovemenet());
                         //RailShape railshape = ((BaseRailBlock)getBlockStateOn().getBlock()).getRailDirection(getBlockStateOn(), this.level(), getOnPos(), linkedCart);
-                        /*switch (railshape) {
+                        switch (railshape) {
                             case NORTH_EAST:
                                 linkedCart.setDeltaMovement(vec31.add(-d3, 0.0D, 0.0D));
                                 ++d1;
@@ -223,11 +223,11 @@ public class TestPowerMinecartEntity extends AbstractMinecart {
                             case ASCENDING_SOUTH:
                                 this.setDeltaMovement(vec31.add(0.0D, 0.0D, -d3));
                                 ++d1;
-                        }*/
+                        }
                     }
                 }
             }
         }
 
-    }
+    }*/
 }

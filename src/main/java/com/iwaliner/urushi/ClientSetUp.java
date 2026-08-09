@@ -1,8 +1,6 @@
 package com.iwaliner.urushi;
 
 
-import com.iwaliner.urushi.block.*;
-import com.iwaliner.urushi.blockentity.menu.FillerMenu;
 import com.iwaliner.urushi.blockentity.renderer.*;
 import com.iwaliner.urushi.blockentity.screen.*;
 import com.iwaliner.urushi.entiity.food.model.*;
@@ -10,7 +8,6 @@ import com.iwaliner.urushi.entiity.food.renderer.*;
 import com.iwaliner.urushi.entiity.model.CushionModel;
 import com.iwaliner.urushi.entiity.model.OniModel;
 import com.iwaliner.urushi.entiity.renderer.*;
-import com.iwaliner.urushi.item.menu.DrawstringBagMenu;
 import com.iwaliner.urushi.item.screen.DrawstringBagScreen;
 import com.iwaliner.urushi.json.*;
 import com.iwaliner.urushi.particle.*;
@@ -18,57 +15,28 @@ import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.ToggleKeyMappingPlus;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.mojang.blaze3d.platform.InputConstants;
-import com.mojang.blaze3d.platform.Window;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.minecraft.client.AttackIndicatorStatus;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.color.item.ItemColors;
-import net.minecraft.client.gui.Gui;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelLayers;
-import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.*;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.FallingBlockRenderer;
 import net.minecraft.client.renderer.entity.MinecartRenderer;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.client.resources.sounds.SimpleSoundInstance;
-import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeableLeatherItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.ForgeHooksClient;
-import net.minecraftforge.client.RenderTypeHelper;
 import net.minecraftforge.client.event.*;
-import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.client.settings.KeyConflictContext;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.ToolActions;
-import net.minecraftforge.event.entity.player.AdvancementEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -87,6 +55,7 @@ public class ClientSetUp {
     public static final ModelLayerLocation TOFU = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "tofu_food"), "tofu_food");
     public static final ModelLayerLocation ABURAAGE = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "aburaage_food"), "aburaage_food");
     public static final ModelLayerLocation DANGO = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "dango_food"), "dango_food");
+    public static final ModelLayerLocation SWEETFISH = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "sweetfish_food"), "sweetfish_food");
     public static final ModelLayerLocation RICE_CAKE = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "rice_cake_food"), "rice_cake_food");
     public static final ModelLayerLocation ROASTED_RICE_CAKE = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "roasted_rice_cake_food"), "roasted_rice_cake_food");
     public static final ModelLayerLocation CUSHION = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "cushion"), "cushion");
@@ -164,10 +133,12 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.SakeFoodEntity.get(), SakeFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.OchokoFoodEntity.get(), OchokoFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.TokkuriFoodEntity.get(), TokkuriFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.SweetfishFoodEntity.get(), SweetfishFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.SweetfishWithSaltFoodEntity.get(), SweetfishWithSaltFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.CookedSweetfishFoodEntity.get(), CookedSweetfishFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.CookedSweetfishWithSaltFoodEntity.get(), CookedSweetfishWithSaltFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.ExperienceDroppableFallingAnvil.get(), ExperienceDroppableAnvilRenderer::new);
-        event.registerEntityRenderer(EntityRegister.TestPowerMinecart.get(),  (p_174088_) -> {
-            return new MinecartRenderer<>(p_174088_, ModelLayers.CHEST_MINECART);
-        });
+        //event.registerEntityRenderer(EntityRegister.TestPowerMinecart.get(),  (p_174088_) -> {return new MinecartRenderer<>(p_174088_, ModelLayers.CHEST_MINECART);});
 
     }
 
@@ -194,6 +165,7 @@ public class ClientSetUp {
         event.registerLayerDefinition(SAKE, SakeFoodModel::createBodyLayer);
         event.registerLayerDefinition(TOKKURI, TokkuriFoodModel::createBodyLayer);
         event.registerLayerDefinition(OCHOKO, OchokoFoodModel::createBodyLayer);
+        event.registerLayerDefinition(SWEETFISH, SweetfishFoodModel::createBodyLayer);
 
 
 

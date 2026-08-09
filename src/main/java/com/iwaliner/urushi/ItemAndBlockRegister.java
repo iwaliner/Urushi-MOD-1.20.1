@@ -919,6 +919,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> ariake_andon =B("ariake_andon","a",-1,() -> {return new AriakeAndonBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 13;}));});
     public static final RegistryObject<Block> kasuga_lantern =B("kasuga_lantern","a",-1,() -> {return new KasugaLanternBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PODZOL).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
     public static final RegistryObject<Block> long_chochin =B("long_chochin","n",-1,() -> {return new LongChochinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
+    public static final RegistryObject<Block> long_chochin_two_tone =B("long_chochin_two_tone","n",-1,() -> {return new LongChochinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
     public static final RegistryObject<Block> eigyouchu_long_chochin =B("eigyouchu_long_chochin","n",-1,() -> {return new LongChochinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
     public static final RegistryObject<Block> izakaya_long_chochin =B("izakaya_long_chochin","n",-1,() -> {return new LongChochinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
     public static final RegistryObject<Block> oden_long_chochin =B("oden_long_chochin","n",-1,() -> {return new LongChochinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOD).strength(0.2F, 10.0F).noOcclusion().lightLevel((p_235470_0_) -> {return 15;}));});
@@ -1197,10 +1198,10 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> salt_ramen =ITEMS.register("salt_ramen", () -> {return new PlaceableFoodItem(()->EntityRegister.SaltRamenFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Ramen));});
     public static final RegistryObject<Item> syari =ITEMS.register("syari", () -> {return new Item((new Item.Properties()).food(FoodUrushi.RawFish));});
     public static final RegistryObject<Item> tsuna =ITEMS.register("tsuna", () -> {return new Item((new Item.Properties()).food(FoodUrushi.RawFish));});
-    public static final RegistryObject<Item> sweetfish =ITEMS.register("sweetfish", () -> {return new Item((new Item.Properties()).food(FoodUrushi.RawFish));});
-    public static final RegistryObject<Item> sweetfish_with_salt =ITEMS.register("sweetfish_with_salt", () -> {return new Item((new Item.Properties()).food(FoodUrushi.RawFishWithSalt));});
-    public static final RegistryObject<Item> cooked_sweetfish =ITEMS.register("cooked_sweetfish", () -> {return new Item((new Item.Properties()).food(FoodUrushi.CookedFish));});
-    public static final RegistryObject<Item> cooked_sweetfish_with_salt =ITEMS.register("cooked_sweetfish_with_salt", () -> {return new Item((new Item.Properties()).food(FoodUrushi.CookedFishWithSalt));});
+    public static final RegistryObject<Item> sweetfish =ITEMS.register("sweetfish", () -> {return new PlaceableFoodItem(()->EntityRegister.SweetfishFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.RawFish));});
+    public static final RegistryObject<Item> sweetfish_with_salt =ITEMS.register("sweetfish_with_salt", () -> {return new PlaceableFoodItem(()->EntityRegister.SweetfishWithSaltFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.RawFishWithSalt));});
+    public static final RegistryObject<Item> cooked_sweetfish =ITEMS.register("cooked_sweetfish", () -> {return new PlaceableFoodItem(()->EntityRegister.CookedSweetfishFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.CookedFish));});
+    public static final RegistryObject<Item> cooked_sweetfish_with_salt =ITEMS.register("cooked_sweetfish_with_salt", () -> {return new PlaceableFoodItem(()->EntityRegister.CookedSweetfishWithSaltFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.CookedFishWithSalt));});
     public static final RegistryObject<Item> tsuna_sashimi =ITEMS.register("tsuna_sashimi", () -> {return new Item((new Item.Properties()).food(FoodUrushi.RawFish));});
     public static final RegistryObject<Item> tsuna_sushi =ITEMS.register("tsuna_sushi", () -> {return new PlaceableFoodItem(()->EntityRegister.TsunaSushiFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Sushi));});
     public static final RegistryObject<Item> salmon_sashimi =ITEMS.register("salmon_sashimi", () -> {return new Item((new Item.Properties()).food(FoodUrushi.RawFish));});
@@ -1340,6 +1341,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> black_kakuriyo_portal_frame =BN("black_kakuriyo_portal_frame","a",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.WOOD).strength(2.0F, 10.0F).noLootTable());});
     public static final RegistryObject<Block> ghost_black_kakuriyo_portal_frame =BN("ghost_black_kakuriyo_portal_frame","a",-1,() -> {return new GhostBlock(false,BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.WOOD).strength(2.0F, 10.0F).noLootTable().noOcclusion().isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never));});
     public static final RegistryObject<Item> ghost_core =I("ghost_core");
+    public static final RegistryObject<Block> ghost_lantern =B("ghost_lantern","h",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).pushReaction(PushReaction.DESTROY).strength(0.2F, 1.0F).sound(SoundType.WET_GRASS).lightLevel((p_235470_0_) -> {return 15;}).noOcclusion());});
     public static final RegistryObject<Block> ghost_dirt =B("ghost_dirt","s",-1,() -> {return new GhostBlock(true,BlockBehaviour.Properties.of().mapColor( MapColor.DIRT).sound(SoundType.GRAVEL).strength(0.5F).noOcclusion().isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never));});
     public static final RegistryObject<Block> ghost_stone =B("ghost_stone","p",-1,() -> {return new GhostBlock(true,BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1F).noOcclusion().isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> ghost_plaster =B("ghost_plaster","p",-1,() -> {return new GhostBlock(true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F).noOcclusion().isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).requiresCorrectToolForDrops());});
@@ -1482,8 +1484,9 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> coin =B("coin","p",-1,() -> {return new CoinBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(0.5F, 10.0F).noOcclusion());});
     public static final RegistryObject<Item> sakura_head =ITEMS.register("sakura_head", () -> {return new SakuraHeadItem("sakura_head",(new Item.Properties()).stacksTo(1));});
     public static final RegistryObject<Item> kakuriyo_chronicles_1 =ITEMS.register("kakuriyo_chronicles_1", () -> {return new TranslatableBookItem((new Item.Properties()));});
-    public static final RegistryObject<Block> plaster_revolving_door =BP("plaster_revolving_door","p",-1,() -> {return new RevolvingDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).strength(1F, 10.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noOcclusion().noParticlesOnBreak());});
-    public static final RegistryObject<Block> plaster_revolving_door_display =BN("plaster_revolving_door_display","p",-1,() -> {return new HorizonalRotateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).strength(1F, 10.0F).sound(SoundType.STONE).noOcclusion());});
+    public static final RegistryObject<Block> plaster_revolving_door =BNoTab("plaster_revolving_door","p",-1,() -> {return new RevolvingDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).strength(1F, 10.0F).sound(SoundType.STONE).requiresCorrectToolForDrops().noOcclusion().noParticlesOnBreak());});
+    public static final RegistryObject<Block> plaster_revolving_door_display =BN("plaster_revolving_door_display","p",-1,() -> {return new HorizonalRotateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).strength(1F, 10.0F).sound(SoundType.STONE).noOcclusion().noParticlesOnBreak());});
+    public static final RegistryObject<Item> plaster_revolving_door_item =ITEMS.register("plaster_revolving_door_item", () -> {return new RevolvingDoorItem((new Item.Properties()));});
 
 
     public static final RegistryObject<CreativeModeTab> URUSHI_TAB = CREATIVE_TABS.register("urushi", () -> CreativeModeTab.builder()
@@ -1542,6 +1545,7 @@ public class ItemAndBlockRegister {
                 for(int i=0;i<ModCoreUrushi.urushiPlasterTabContents.size();i++) {
                     if(!ModCoreUrushi.underDevelopmentList.contains(ModCoreUrushi.urushiPlasterTabContents.get(i).get())) {
                         output.accept(ModCoreUrushi.urushiPlasterTabContents.get(i).get());
+                        output.accept(plaster_revolving_door_item.get());
                     }
                 }
             })

@@ -1,10 +1,10 @@
 {
     "multipart": [
+    {   "when": { "is_opening": "false"},
+            "apply": { "model": "urushi:block/plaster",  "uvlock": true }
+        },
         {   "when": { "is_opening": "true"},
             "apply": { "model": "urushi:block/null",  "uvlock": true }
-        },
-        {   "when": { "is_opening": "false"},
-            "apply": { "model": "urushi:block/plaster",  "uvlock": true }
         }
     ]
 }
