@@ -41,7 +41,7 @@ import net.minecraft.util.RandomSource;
 public class RiceCauldronBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    public static final IntegerProperty VARIANT = IntegerProperty.create("variant",0,4);
+    public static final IntegerProperty VARIANT = IntegerProperty.create("variant",0,5);
 
     private static final VoxelShape BOX = Block.box(2D, 0.0D, 2D, 14D, 5D, 14D);
 
@@ -84,17 +84,26 @@ public class RiceCauldronBlock extends BaseEntityBlock {
                     player.setItemInHand(hand,ItemStack.EMPTY);
                     world.playSound((Player) null,pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS,1F,1F);
                   return InteractionResult.SUCCESS;
+                }else if(player.getItemInHand(hand).is(ItemAndBlockRegister.seasoning_for_gomoku_gohan.get())){
+                    tileEntity.setItem(0, new ItemStack(ItemAndBlockRegister.seasoning_for_gomoku_gohan.get(),player.getItemInHand(hand).getCount()));
+                    player.setItemInHand(hand,ItemStack.EMPTY);
+                    world.playSound((Player) null,pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS,1F,1F);
+                    return InteractionResult.SUCCESS;
                 }else{
                     world.playSound((Player) null,pos,SoundEvents.BARREL_CLOSE,SoundSource.BLOCKS,1F,1F);
                     world.setBlockAndUpdate(pos,this.defaultBlockState().setValue(VARIANT,Integer.valueOf(0)));
                     return InteractionResult.SUCCESS;
                 }
-            }else if(state.getValue(VARIANT)==3){
-                world.setBlockAndUpdate(pos,this.defaultBlockState().setValue(VARIANT,Integer.valueOf(4)));
+            }else if(state.getValue(VARIANT)==3){ //炊きあがり済みで、蓋を閉じている状態
+                int variant=4; //炊きあがったご飯
+                if(tileEntity.getItem(1).is(ItemAndBlockRegister.gomoku_gohan.get())){ //tileEntityの中にあるのが五目炊き込みご飯のとき
+                    variant=5; //炊きあがった五目炊き込みご飯
+                }
+                world.setBlockAndUpdate(pos,this.defaultBlockState().setValue(VARIANT,Integer.valueOf(variant)));
                 world.playSound((Player) null,pos,SoundEvents.BARREL_CLOSE,SoundSource.BLOCKS,1F,1F);
 
                 return InteractionResult.SUCCESS;
-            }else if(state.getValue(VARIANT)==4){
+            }else if(state.getValue(VARIANT)==4||state.getValue(VARIANT)==5){ //炊きあがったご飯(4) or 炊きあがった五目炊き込みご飯(5)
                 ItemStack stack=player.getItemInHand(hand);
                 if (stack.isEmpty()) {
                     player.setItemInHand(hand, tileEntity.getItem(1));
@@ -112,7 +121,7 @@ public class RiceCauldronBlock extends BaseEntityBlock {
 
     @Override
     public void animateTick(BlockState state, Level world, BlockPos pos, RandomSource random) {
-        if(state.getValue(VARIANT)==3||state.getValue(VARIANT)==4) {
+        if(state.getValue(VARIANT)==3||state.getValue(VARIANT)==4||state.getValue(VARIANT)==5) {
             double d0 = (double) pos.getX() + random.nextInt(10) * 0.1D;
             double d1 = (double) pos.getY() + random.nextInt(10) * 0.1D;
             double d2 = (double) pos.getZ() + random.nextInt(10) * 0.1D;

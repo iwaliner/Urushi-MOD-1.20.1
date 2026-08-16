@@ -1874,7 +1874,14 @@
    "item.urushi.plaster_revolving_door_item": "漆喰のどんでん返し",
    "info.urushi.revolving_door": "右クリックすると回転する扉。",
    "block.urushi.ghost_lantern": "魂の月明かり",
-   "block.urushi.long_chochin_two_tone": "紅白の提灯"
+   "block.urushi.long_chochin_two_tone": "紅白の提灯",
+   "item.urushi.seasoning_for_gomoku_gohan": "五目炊き込みご飯の素",
+   "item.urushi.gomoku_gohan": "五目炊き込みご飯",
+   "entity.urushi.gomoku_gohan_food": "五目炊き込みご飯",
+   "entity.urushi.yakitori_food": "ねぎま",
+   "info.urushi.use_for_cauldron": "釜に投入してご飯を炊こう",
+   "item.urushi.matcha_dust": "抹茶の粉末",
+   "item.urushi.matcha_yokan": "抹茶羊羹"
 
    
    

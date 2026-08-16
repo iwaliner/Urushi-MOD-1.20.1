@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+     "item": "urushi:seasoning_for_gomoku_gohan"
+  },
+  "result": "urushi:gomoku_gohan",
+  "experience": 0.1,
+  "cookingtime": 200
+}

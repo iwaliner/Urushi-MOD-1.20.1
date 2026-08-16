@@ -141,7 +141,7 @@ public  class RiceCauldronBlockEntity extends BaseContainerBlockEntity implement
 
 
     public static void tick(Level level, BlockPos pos, BlockState bs, RiceCauldronBlockEntity blockEntity) {
-        if (bs.getBlock() instanceof RiceCauldronBlock) {
+        if (bs.getBlock() instanceof RiceCauldronBlock) { //予期せぬクラッシュ防止
             ItemStack slot0Stack = blockEntity.items.get(0);
             Item slot0Item = slot0Stack.getItem();
             ItemStack slot1Stack = blockEntity.items.get(1);
@@ -160,10 +160,10 @@ public  class RiceCauldronBlockEntity extends BaseContainerBlockEntity implement
             //アイテム変化
             if (level.getBlockState(pos.below()).getBlock() == ItemAndBlockRegister.dirt_furnace.get() && level.getBlockState(pos.below()).getValue(DirtFurnaceBlock.LIT)) {
                 if (slot0Stack.getCount() > 0 && slot1Stack.isEmpty()) {
-                    if (blockEntity.processingTime < 100) {
+                    if (blockEntity.processingTime < 100) { //炊いている最中
                         blockEntity.processingTime++;
                     } else {
-                        blockEntity.setItem(1, new ItemStack(ItemAndBlockRegister.rice.get(), slot0Stack.getCount()));
+                        blockEntity.setItem(1, new ItemStack(blockEntity.getSmeltedItem(), slot0Stack.getCount()));
                         blockEntity.setItem(0, ItemStack.EMPTY);
                         blockEntity.processingTime = 0;
                         if (!level.isClientSide()) {
@@ -176,13 +176,20 @@ public  class RiceCauldronBlockEntity extends BaseContainerBlockEntity implement
             }
         }
     }
+    public Item getSmeltedItem(){ //炊きあがり後に完成品スロットに入るべきアイテム
+        if(this.getItem(0).is(ItemAndBlockRegister.seasoning_for_gomoku_gohan.get())){
+            return ItemAndBlockRegister.gomoku_gohan.get();
+        }
+        return ItemAndBlockRegister.rice.get();
+    }
+
 
 
     public boolean canPlaceItem(int i, ItemStack stack) {
         if (i == 1) {
             return false;
         }  else {
-            return this.items.get(0).getCount()==0&&this.items.get(1).getCount()==0&&stack.is(TagUrushi.RICE);
+            return this.items.get(0).getCount()==0&&this.items.get(1).getCount()==0&&(stack.is(TagUrushi.RICE)||stack.is(ItemAndBlockRegister.seasoning_for_gomoku_gohan.get()));
         }
     }
 

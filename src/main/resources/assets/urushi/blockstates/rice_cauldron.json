@@ -74,6 +74,21 @@
     },
     "variant=4,facing=south": {
       "model": "urushi:block/kama_rice"
+    },
+    "variant=5,facing=east": {
+      "model": "urushi:block/kama_gomoku",
+      "y": 270
+    },
+    "variant=5,facing=west": {
+      "model": "urushi:block/kama_gomoku",
+      "y": 90
+    },
+    "variant=5,facing=north": {
+      "model": "urushi:block/kama_gomoku",
+      "y": 180
+    },
+    "variant=5,facing=south": {
+      "model": "urushi:block/kama_gomoku"
     }
   }
 }

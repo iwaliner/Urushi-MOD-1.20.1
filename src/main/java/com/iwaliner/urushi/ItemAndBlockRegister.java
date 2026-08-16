@@ -800,7 +800,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> chiseled_lacquer_log =BW("chiseled_lacquer_log","a",-1,() -> {return new ChiseledLacquerLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(1.0F, 10.0F).randomTicks());});
     public static final RegistryObject<Item> tiny_red_dye =I("tiny_red_dye");
     public static final RegistryObject<Item> tiny_black_dye =I("tiny_black_dye");
-    public static final RegistryObject<Item> raw_urushi_ball =ITEMS.register("raw_urushi_ball", () -> {return new ToolchipItem("rawurushi",(new Item.Properties()));});
+    public static final RegistryObject<Item> raw_urushi_ball =ITEMS.register("raw_urushi_ball", () -> {return new ToolchipItem((new Item.Properties()),"rawurushi");});
     public static final RegistryObject<Item> red_urushi_ball =ITEMS.register("red_urushi_ball", () -> {return new Item((new Item.Properties()).craftRemainder(Items.BOWL));});
     public static final RegistryObject<Item> black_urushi_ball =ITEMS.register("black_urushi_ball", () -> {return new Item((new Item.Properties()).craftRemainder(Items.BOWL));});
     public static final RegistryObject<Block> stripped_red_urushi_log =BW("stripped_red_urushi_log","a",-1,() -> {return log(MapColor.COLOR_RED, MapColor.COLOR_RED);});
@@ -1131,7 +1131,8 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> hibachi =BF("hibachi","a",-1,() -> {return new HibachiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(1F, 10.0F).sound(SoundType.WOOD).noOcclusion().lightLevel((p_235470_0_) -> {return 10;}));});
     public static final RegistryObject<Block> tea_bush =BF("tea_bush","h",-1,() -> {return new TeaBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.AZALEA).strength(0.3F, 1.0F).randomTicks());});
 
-    public static final RegistryObject<Item> tea_leaf =ITEMS.register("tea_leaf", () -> {return new ToolchipItem("tea_leaf",(new Item.Properties()));});
+    public static final RegistryObject<Item> tea_leaf =ITEMS.register("tea_leaf", () -> {return new ToolchipItem((new Item.Properties()),"tea_leaf");});
+    public static final RegistryObject<Item> matcha_dust =ITEMS.register("matcha_dust", () -> {return new Item((new Item.Properties()));});
     public static final RegistryObject<Item> green_tea =ITEMS.register("green_tea", () -> {return new TeaItem(()->EntityRegister.GreenTeaFoodEntity.get(),(new Item.Properties()));});
 
     public static final RegistryObject<Item> sake =ITEMS.register("sake", () -> {return new PlaceableFoodItem(()->EntityRegister.SakeFoodEntity.get(),(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE)));});
@@ -1145,13 +1146,16 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> azuki_crop =BF("azuki_crop","h",-1,() -> {return new UrushiCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).randomTicks().noCollission().instabreak().pushReaction(PushReaction.DESTROY));});
     public static final RegistryObject<Block> soy_crop =BF("soy_crop","h",-1,() -> {return new UrushiCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).randomTicks().noCollission().instabreak().pushReaction(PushReaction.DESTROY));});
     public static final RegistryObject<Block> green_onion_crop =BF("green_onion_crop","h",-1,() -> {return new UrushiCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).randomTicks().noCollission().instabreak().pushReaction(PushReaction.DESTROY));});
-    public static final RegistryObject<Item> rice_malt =ITEMS.register("rice_malt", () -> {return new ToolchipItem("rice_malt",(new Item.Properties()));});
-    public static final RegistryObject<Item> straw =ITEMS.register("straw", () -> {return new ToolchipItem("senbakoki",(new Item.Properties()));});
-    public static final RegistryObject<Item> raw_rice =ITEMS.register("raw_rice", () -> {return new ToolchipItem("senbakoki",(new Item.Properties()));});
+    public static final RegistryObject<Item> rice_malt =ITEMS.register("rice_malt", () -> {return new ToolchipItem((new Item.Properties()),"rice_malt");});
+    public static final RegistryObject<Item> straw =ITEMS.register("straw", () -> {return new ToolchipItem((new Item.Properties()),"senbakoki");});
+    public static final RegistryObject<Item> raw_rice =ITEMS.register("raw_rice", () -> {return new ToolchipItem((new Item.Properties()),"senbakoki","use_for_cauldron");});
 
+    public static final RegistryObject<Item> seasoning_for_gomoku_gohan =ITEMS.register("seasoning_for_gomoku_gohan", () -> {return new ToolchipItem((new Item.Properties()),"use_for_cauldron");});
     public static final RegistryObject<Item> rice =ITEMS.register("rice", () -> {return new PlaceableFoodItem(()->EntityRegister.RiceFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Rice));});
     public static final RegistryObject<Item> tkg =ITEMS.register("tkg", () -> {return new PlaceableFoodItem(()->EntityRegister.TKGFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.TKG));});
     public static final RegistryObject<Item> sekihan =ITEMS.register("sekihan", () -> {return new PlaceableFoodItem(()->EntityRegister.SekihanFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Sekihan));});
+
+    public static final RegistryObject<Item> gomoku_gohan =ITEMS.register("gomoku_gohan", () -> {return new PlaceableFoodItem(()->EntityRegister.GomokuGohanFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Sekihan));});
     public static final RegistryObject<Item> butadon =ITEMS.register("butadon", () -> {return new PlaceableFoodItem(()->EntityRegister.ButadonFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Butadon));});
     public static final RegistryObject<Item> gyudon =ITEMS.register("gyudon", () -> {return new PlaceableFoodItem(()->EntityRegister.GyudonFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Gyudon));});
     public static final RegistryObject<Item> cheese_gyudon =ITEMS.register("cheese_gyudon", () -> {return new PlaceableFoodItem(()->EntityRegister.CheeseGyudonFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.OtherGyudon));});
@@ -1169,25 +1173,26 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Item> ohagi =ITEMS.register("ohagi", () -> {return new PlaceableFoodItem(()->EntityRegister.OhagiFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Ohagi));});
     public static final RegistryObject<Item> yokan =ITEMS.register("yokan", () -> {return new Item((new Item.Properties()).food(FoodUrushi.Yokan));});
     public static final RegistryObject<Item> sakura_yokan =ITEMS.register("sakura_yokan", () -> {return new Item((new Item.Properties()).food(FoodUrushi.SakuraYokan));});
+    public static final RegistryObject<Item> matcha_yokan =ITEMS.register("matcha_yokan", () -> {return new Item((new Item.Properties()).food(FoodUrushi.SakuraYokan));});
     public static final RegistryObject<Item> baked_mochocho =ITEMS.register("baked_mochocho", () -> {return new BakedMochochoItem((new Item.Properties()).food(FoodUrushi.Yokan));});
     public static final RegistryObject<Item> karaage =ITEMS.register("karaage", () -> {return new PlaceableFoodItem(()->EntityRegister.KaraageFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Karaage));});
-    public static final RegistryObject<Item> yakitori =ITEMS.register("yakitori", () -> {return new Item((new Item.Properties()).food(FoodUrushi.Karaage));});
+    public static final RegistryObject<Item> yakitori =ITEMS.register("yakitori", () -> {return new PlaceableFoodItem(()->EntityRegister.YakitoriFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Karaage));});
     public static final RegistryObject<Item> tofu =ITEMS.register("tofu", () -> {return new PlaceableFoodItem(()->EntityRegister.TofuFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Tofu));});
     public static final RegistryObject<Item> shikomi_miso =IF("shikomi_miso");
-    public static final RegistryObject<Item> miso =ITEMS.register("miso", () -> {return new ToolchipItem("miso",(new Item.Properties()));});
+    public static final RegistryObject<Item> miso =ITEMS.register("miso", () -> {return new ToolchipItem((new Item.Properties()),"miso");});
     public static final RegistryObject<Item> miso_soup =ITEMS.register("miso_soup", () -> {return new PlaceableFoodItem(()->EntityRegister.MisoSoupFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.MisoSoup));});
     public static final RegistryObject<Item> hiyayakko =ITEMS.register("hiyayakko", () -> {return new Item((new Item.Properties()).food(FoodUrushi.Hiyayakko));});
     public static final RegistryObject<Item> aburaage =ITEMS.register("abura_age", () -> {return new PlaceableFoodItem(()->EntityRegister.AburaageFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.Aburaage));});
     //public static final RegistryObject<Item> tonkatsu =ITEMS.register("tonkatsu", () -> {return new Item((new Item.Properties()).food(FoodUrushi.Tonkatsu).tab(ModCoreUrushi.UrushiFoodTab));});
     public static final RegistryObject<Item> roasted_shiitake =ITEMS.register("roasted_shiitake", () -> {return new Item((new Item.Properties()).food(FoodUrushi.Shiitake));});
     public static final RegistryObject<Item> so =ITEMS.register("so", () -> {return new Item((new Item.Properties()).food(FoodUrushi.So));});
-    public static final RegistryObject<Item> onsen_egg =ITEMS.register("onsen_egg", () -> {return new ToolchipItem("onsen_egg",(new Item.Properties()));});
+    public static final RegistryObject<Item> onsen_egg =ITEMS.register("onsen_egg", () -> {return new ToolchipItem((new Item.Properties()),"onsen_egg");});
     public static final RegistryObject<Item> noodle_knife =ITEMS.register("noodle_knife", () -> {return new NoodleKnifeItem((new Item.Properties()).durability(1024));});
     public static final RegistryObject<Block> dough =BF("dough","n",-1,() -> {return new TwoDirectionShapedBlock(3.0D, 0.0D, 0D, 13.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
     public static final RegistryObject<Block> udon =BF("udon","n",-1,() -> {return new NoodleBlock(2.0D, 0.0D, 0D, 14.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).instabreak().sound(SoundType.WOOD));});
     public static final RegistryObject<Item> kitsune_udon =ITEMS.register("kitsune_udon", () -> {return new PlaceableFoodItem(()->EntityRegister.KitsuneUdonFoodEntity.get(),(new Item.Properties()).food(FoodUrushi.KitsuneUdon));});
     public static final RegistryObject<Block> salt_and_sand =BF("salt_and_sand","s",-1,() -> {return new SaltAndSandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(1F, 10F).sound(SoundType.SAND));});
-    public static final RegistryObject<Item> salt =ITEMS.register("salt", () -> {return new ToolchipItem("salt",(new Item.Properties()));});
+    public static final RegistryObject<Item> salt =ITEMS.register("salt", () -> {return new ToolchipItem((new Item.Properties()),"salt");});
     public static final RegistryObject<Item> kanten_powder =IF("kanten_powder");
     public static final RegistryObject<Item> kansui_powder =IF("kansui_powder");
     public static final RegistryObject<Block> alkaline_dough =BF("alkaline_dough","n",-1,() -> {return new TwoDirectionShapedBlock(3.0D, 0.0D, 0D, 13.0D, 2.0D, 16.0D,true,BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).instabreak().sound(SoundType.WOOD));});
@@ -1279,11 +1284,11 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> hidden_invisible_pressure_plate =BLOCKS.register("hidden_invisible_pressure_plate",() -> {return new HiddenInvisiblePressurePlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.SOUL_SAND).pushReaction(PushReaction.DESTROY).strength(0.3F, 10.0F));});
     public static final RegistryObject<Item> invisible_pressure_plate_item =ITEMS.register("invisible_pressure_plate", () -> {return new InvisiblePressurePlateItem(invisible_pressure_plate.get(),(new Item.Properties()));});
     public static final RegistryObject<Item> shide =ITEMS.register("shide", () -> {return new Item((new Item.Properties()));});
-    public static final RegistryObject<Item> wood_element_paper =ITEMS.register("wood_element_paper", () -> {return new ToolchipItem("wood_element_paper",(new Item.Properties()));});
-    public static final RegistryObject<Item> fire_element_paper =ITEMS.register("fire_element_paper", () -> {return new ToolchipItem("fire_element_paper",(new Item.Properties()));});
-    public static final RegistryObject<Item> earth_element_paper =ITEMS.register("earth_element_paper", () -> {return new ToolchipItem("earth_element_paper",(new Item.Properties()));});
-    public static final RegistryObject<Item> metal_element_paper =ITEMS.register("metal_element_paper", () -> {return new ToolchipItem("metal_element_paper",(new Item.Properties()));});
-    public static final RegistryObject<Item> water_element_paper =ITEMS.register("water_element_paper", () -> {return new ToolchipItem("water_element_paper",(new Item.Properties()));});
+    public static final RegistryObject<Item> wood_element_paper =ITEMS.register("wood_element_paper", () -> {return new ToolchipItem((new Item.Properties()),"wood_element_paper");});
+    public static final RegistryObject<Item> fire_element_paper =ITEMS.register("fire_element_paper", () -> {return new ToolchipItem((new Item.Properties()),"fire_element_paper");});
+    public static final RegistryObject<Item> earth_element_paper =ITEMS.register("earth_element_paper", () -> {return new ToolchipItem((new Item.Properties()),"earth_element_paper");});
+    public static final RegistryObject<Item> metal_element_paper =ITEMS.register("metal_element_paper", () -> {return new ToolchipItem((new Item.Properties()),"metal_element_paper");});
+    public static final RegistryObject<Item> water_element_paper =ITEMS.register("water_element_paper", () -> {return new ToolchipItem((new Item.Properties()),"water_element_paper");});
     public static final RegistryObject<Block> rock =BM("rock","p",0,() -> {return new RockBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(1F, 10.0F).sound(SoundType.STONE).randomTicks().requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> sazare_ishi =BM("sazare_ishi","p",0,() -> {return new RockBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(1F, 10.0F).sound(SoundType.STONE).requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> kakuriyo_dirt =B("kakuriyo_dirt","s",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor( MapColor.TERRACOTTA_RED).strength(0.4F, 10.0F).sound(SoundType.ROOTED_DIRT));});
@@ -1341,7 +1346,7 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> black_kakuriyo_portal_frame =BN("black_kakuriyo_portal_frame","a",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.WOOD).strength(2.0F, 10.0F).noLootTable());});
     public static final RegistryObject<Block> ghost_black_kakuriyo_portal_frame =BN("ghost_black_kakuriyo_portal_frame","a",-1,() -> {return new GhostBlock(false,BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.WOOD).strength(2.0F, 10.0F).noLootTable().noOcclusion().isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never));});
     public static final RegistryObject<Item> ghost_core =I("ghost_core");
-    public static final RegistryObject<Block> ghost_lantern =B("ghost_lantern","h",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).pushReaction(PushReaction.DESTROY).strength(0.2F, 1.0F).sound(SoundType.WET_GRASS).lightLevel((p_235470_0_) -> {return 15;}).noOcclusion());});
+    public static final RegistryObject<Block> ghost_lantern =B("ghost_lantern","h",-1,() -> {return new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).pushReaction(PushReaction.DESTROY).strength(0.2F, 1.0F).sound(SoundType.WET_GRASS).lightLevel((p_235470_0_) -> {return 12;}).noOcclusion());});
     public static final RegistryObject<Block> ghost_dirt =B("ghost_dirt","s",-1,() -> {return new GhostBlock(true,BlockBehaviour.Properties.of().mapColor( MapColor.DIRT).sound(SoundType.GRAVEL).strength(0.5F).noOcclusion().isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never));});
     public static final RegistryObject<Block> ghost_stone =B("ghost_stone","p",-1,() -> {return new GhostBlock(true,BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1F).noOcclusion().isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).requiresCorrectToolForDrops());});
     public static final RegistryObject<Block> ghost_plaster =B("ghost_plaster","p",-1,() -> {return new GhostBlock(true,BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.STONE).strength(1F).noOcclusion().isRedstoneConductor(ItemAndBlockRegister::never).isSuffocating(ItemAndBlockRegister::never).isViewBlocking(ItemAndBlockRegister::never).requiresCorrectToolForDrops());});
@@ -1364,11 +1369,11 @@ public class ItemAndBlockRegister {
     public static final RegistryObject<Block> smooth_jadeite_stairs =B("smooth_jadeite_stairs","p",-1,() -> {return new StairBlock(smooth_jadeite_block.get().defaultBlockState(),BlockBehaviour.Properties.of().mapColor(MapColor.EMERALD).sound(SoundType.STONE).requiresCorrectToolForDrops().strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> jadeite_pillar =B("jadeite_pillar","p",-1,() -> {return new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.EMERALD).sound(SoundType.STONE).strength(1.0F, 10.0F).requiresCorrectToolForDrops());});
     //public static final RegistryObject<Item> magonote =ITEMS.register("magonote", () -> {return new MagonoteItem((new Item.Properties()).tab(ModCoreUrushi.UrushiTab).stacksTo(1).durability(4096));});
-    public static final RegistryObject<Item> wood_amber =ITEMS.register("wood_amber", () -> {return new ToolchipItem("wood_amber",(new Item.Properties()));});
-    public static final RegistryObject<Item> fire_amber =ITEMS.register("fire_amber", () -> {return new ToolchipItem("fire_amber",(new Item.Properties()));});
-    public static final RegistryObject<Item> earth_amber =ITEMS.register("earth_amber", () -> {return new ToolchipItem("earth_amber",(new Item.Properties()));});
-    public static final RegistryObject<Item> metal_amber =ITEMS.register("metal_amber", () -> {return new ToolchipItem("metal_amber",(new Item.Properties()));});
-    public static final RegistryObject<Item> water_amber =ITEMS.register("water_amber", () -> {return new ToolchipItem("water_amber",(new Item.Properties()));});
+    public static final RegistryObject<Item> wood_amber =ITEMS.register("wood_amber", () -> {return new ToolchipItem((new Item.Properties()),"wood_amber");});
+    public static final RegistryObject<Item> fire_amber =ITEMS.register("fire_amber", () -> {return new ToolchipItem((new Item.Properties()),"fire_amber");});
+    public static final RegistryObject<Item> earth_amber =ITEMS.register("earth_amber", () -> {return new ToolchipItem((new Item.Properties()),"earth_amber");});
+    public static final RegistryObject<Item> metal_amber =ITEMS.register("metal_amber", () -> {return new ToolchipItem((new Item.Properties()),"metal_amber");});
+    public static final RegistryObject<Item> water_amber =ITEMS.register("water_amber", () -> {return new ToolchipItem((new Item.Properties()),"water_amber");});
     public static final RegistryObject<Block> petrified_log =BW("petrified_log","p",-1,() -> {return new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> petrified_log_with_wood_amber =BM("petrified_log_with_wood_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
     public static final RegistryObject<Block> petrified_log_with_fire_amber =BM("petrified_log_with_fire_amber","p",-1,() -> {return new PetrifiedLogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.STONE).strength(1.0F, 10.0F));});
@@ -1576,14 +1581,17 @@ public class ItemAndBlockRegister {
                     }
                 }
                 output.accept(tea_leaf.get());
+                output.accept(matcha_dust.get());
                 output.accept(pickled_japanese_apricot.get());
                 output.accept(shiitake.get());
                 output.accept(roasted_shiitake.get());
                 output.accept(rice_malt.get());
                 output.accept(raw_rice.get());
+                output.accept(seasoning_for_gomoku_gohan.get());
                 output.accept(rice.get());
                 output.accept(tkg.get());
                 output.accept(sekihan.get());
+                output.accept(gomoku_gohan.get());
                 output.accept(butadon.get());
                 output.accept(gyudon.get());
                 output.accept(cheese_gyudon.get());
@@ -1601,6 +1609,7 @@ public class ItemAndBlockRegister {
                 output.accept(ohagi.get());
                 output.accept(yokan.get());
                 output.accept(sakura_yokan.get());
+                output.accept(matcha_yokan.get());
                 output.accept(baked_mochocho.get());
                 output.accept(karaage.get());
                 output.accept(yakitori.get());

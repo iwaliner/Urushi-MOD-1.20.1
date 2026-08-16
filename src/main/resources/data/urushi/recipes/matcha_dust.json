@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "urushi:matcha_dust"
+      "item": "urushi:tea_leaf"
     }
   ],
   "result": {
-    "item": "minecraft:green_dye",
+    "item": "urushi:matcha_dust",
       "count": 1
   }
 }

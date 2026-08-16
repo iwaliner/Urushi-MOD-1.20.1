@@ -475,7 +475,7 @@ public class UrushiUtils {
                 UrushiUtils.setInfo(tooltipList, "furigana.kanten");
             }else if (item == ItemAndBlockRegister.rice_malt.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.komekouji");
-            }else if (item == ItemAndBlockRegister.yokan.get()||item == ItemAndBlockRegister.sakura_yokan.get()) {
+            }else if (item == ItemAndBlockRegister.yokan.get()||item == ItemAndBlockRegister.sakura_yokan.get()||item == ItemAndBlockRegister.matcha_yokan.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.yokan");
             }else if (item == ItemAndBlockRegister.hiyayakko.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.hiyayakko");

@@ -11,13 +11,15 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class ToolchipItem extends Item {
-    private final String string;
-    public ToolchipItem(String s,Properties p_41383_) {
+    private final String[] string;
+    public ToolchipItem(Properties p_41383_, String... s) {
         super(p_41383_);
         string=s;
     }
     @Override
     public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> list, TooltipFlag p_41424_) {
-        UrushiUtils.setInfo(list,string);
+        for(int i=0;i<string.length;i++) {
+            UrushiUtils.setInfo(list, string[i]);
+        }
     }
 }

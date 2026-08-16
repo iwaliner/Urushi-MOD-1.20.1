@@ -55,6 +55,7 @@ public class ClientSetUp {
     public static final ModelLayerLocation TOFU = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "tofu_food"), "tofu_food");
     public static final ModelLayerLocation ABURAAGE = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "aburaage_food"), "aburaage_food");
     public static final ModelLayerLocation DANGO = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "dango_food"), "dango_food");
+    public static final ModelLayerLocation YAKITORI = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "yakitori_food"), "yakitori_food");
     public static final ModelLayerLocation SWEETFISH = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "sweetfish_food"), "sweetfish_food");
     public static final ModelLayerLocation RICE_CAKE = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "rice_cake_food"), "rice_cake_food");
     public static final ModelLayerLocation ROASTED_RICE_CAKE = new ModelLayerLocation(new ResourceLocation(ModCoreUrushi.ModID, "roasted_rice_cake_food"), "roasted_rice_cake_food");
@@ -85,6 +86,7 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.RiceFoodEntity.get(), RiceFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.TKGFoodEntity.get(), TKGFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.SekihanFoodEntity.get(), SekihanFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.GomokuGohanFoodEntity.get(), GomokuGohanFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.GyudonFoodEntity.get(), GyudonFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.ButadonFoodEntity.get(), ButadonFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.KitsuneUdonFoodEntity.get(), KitsuneUdonFoodRenderer::new);
@@ -137,6 +139,7 @@ public class ClientSetUp {
         event.registerEntityRenderer(EntityRegister.SweetfishWithSaltFoodEntity.get(), SweetfishWithSaltFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.CookedSweetfishFoodEntity.get(), CookedSweetfishFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.CookedSweetfishWithSaltFoodEntity.get(), CookedSweetfishWithSaltFoodRenderer::new);
+        event.registerEntityRenderer(EntityRegister.YakitoriFoodEntity.get(), YakitoriFoodRenderer::new);
         event.registerEntityRenderer(EntityRegister.ExperienceDroppableFallingAnvil.get(), ExperienceDroppableAnvilRenderer::new);
         //event.registerEntityRenderer(EntityRegister.TestPowerMinecart.get(),  (p_174088_) -> {return new MinecartRenderer<>(p_174088_, ModelLayers.CHEST_MINECART);});
 
@@ -166,7 +169,7 @@ public class ClientSetUp {
         event.registerLayerDefinition(TOKKURI, TokkuriFoodModel::createBodyLayer);
         event.registerLayerDefinition(OCHOKO, OchokoFoodModel::createBodyLayer);
         event.registerLayerDefinition(SWEETFISH, SweetfishFoodModel::createBodyLayer);
-
+        event.registerLayerDefinition(YAKITORI, YakitoriFoodModel::createBodyLayer);
 
 
     }
