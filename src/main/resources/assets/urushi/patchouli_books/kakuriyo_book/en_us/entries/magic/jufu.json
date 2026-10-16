@@ -1,0 +1,26 @@
+{
+  "name": "Jufu",
+  "category": "urushi:magic",
+  "icon": "urushi:knockback_jufu",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 35,
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:knockback_jufu",
+        "count": 1
+      },
+      "text": "Jufus are single-use items that function by consuming Reiryoku power of a magatama placed in your inventory. $(br2) Depending on the type of Jufu, they can trigger various effects."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "The Stamps required to create Jufus can be obtained by solving puzzles at a Wood Circle generated in the Kakuriyo Dimension.",
+      "images": [
+        "urushi:textures/gui/patchouli/wood_circle.png"
+      ]
+    }
+  ]
+}

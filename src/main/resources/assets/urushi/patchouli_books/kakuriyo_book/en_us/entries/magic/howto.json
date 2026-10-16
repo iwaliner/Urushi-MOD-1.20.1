@@ -1,0 +1,218 @@
+{
+  "name": "How To Practice Magic",
+  "category": "urushi:magic",
+  "icon": "urushi:wood_enhanced_jadeite",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 5,
+  "pages": [
+   {
+      "type": "patchouli:text",
+      "text": "Based on Wuxing, you can handle magic with 5 elements of Reiryoku energy. Wood, Fire, Earth, Metal, and Water element."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "If there are seperate items for each element, only the Wood element ones will take place as examples."
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:sazare_ishi",
+        "count": 1
+      },
+      "text": "Enter Kakuriyo Dimension and go to Cedar Forest to get a Weathered Rock."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/sazare_ishi.png"
+      ]
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:shide",
+      "text": "Craft a Shide from Papers."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_paper",
+        "count": 1
+      },
+      "text": "Use a Shide to a Wood element block to get a Wood Element Shide."
+    },
+     {
+      "type": "patchouli:text",
+      "text": "Craft a Wood Element Sacred Rock. $(br2)When a Wood element block is placed on the two-sheet-paper side, the rock transforms the block into 5 Reiyoku energy.$(br2)Right-click the Rock to see the amount of stored Reiryoku."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_sacred_rock",
+      "text": "Ureful blocks for generating Reiryoku are...$(br)Wood Element：Suger Cane, Bamboo, Japanese Timber Bamboo$(br)Fire Element：Fire, Lantern Plant$(br)Earth Element：Dirt, Soul Sand$(br)Metal Element：Cobblestone$(br)Water Element：Cactus, Kelp, Snow"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:petrified_log_with_wood_amber",
+        "count": 1
+      },
+      "text": "Place a Yomi Stone or a Cobbled Yomi Stone on top of a Chiseled Lacquer Log and wait when a required animal is nearby. The animal will be harmed and the Chiseled Lacquer Log turns into a Petrified Log with specific element Amber.$(br2)Restraints the animal with a Zabuton make it easier."
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Wood：Chicken    Fire：Sheep$(br)Earth：Cow    Metal：Horse$(br)Water：Pig",
+      "images": [
+        "urushi:textures/gui/patchouli/petrified_log_with_amber.png"
+      ]
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_amber",
+        "count": 1
+      },
+      "text": "Wood Element Amber is dropped from Petrified Log with Wood Element Amber. "
+    },
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:petrified_log",
+        "count": 1
+      },
+      "text": "If a Yomi Stone or a Cobbled Yomi Stone is placed on a Chiseled Lacquer Log without any animals nearby, it will finally become a Petrified Log.$(br2)You can craft Petrified Planks from Petrified Log, and neither the planks nor the log will be burnt by fire.$(br2)The appropriate tool is Pickaxe. "
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Craft a Visualization Goggles.$(br2)Even when Reiryoku is not being transported, you can see the path by which the Reiryoku is being transported if this is equipped on your head. $(br2)Without these glasses, it will be difficult to use magic equipments."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:visualization_goggles",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Craft a Wood Element Emitter and place on the side of a block to export Reiryoku.$(br2)It transports 1 Reiryoku per perticle if a transportation route is established.$(br2)The transportation will be stopped when it recieves a redstone signal.$(br2)Right-click the Emitter to see the amount of stored Reiryoku."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_emitter",
+      "text": ""
+    },
+     {
+      "type": "patchouli:text",
+      "text": "Craft some Sanbos.$(br2)Right-click to place a item on the Sanbo plate.$(br2)Right-click again to get the item back.$(br2)You can use a Hopper to place items."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:sanbo",
+      "text": ""
+    },
+     {
+      "type": "patchouli:text",
+      "text": "Craft a Wood Element Altar.$(br2)Place 4 Sanbos on each side of the Altar, put ingredients on the Sanbos, and provite Reiryoku energy to the Altar to craft items."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:wood_element_crafting_table",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Craft a Mirror.$(br2)By using this mirror, you can bend transportation routes of Reiryoku. $(br2)The path bends in the direction of the angle of reflection equal to the angle of incidence, as how light reflects on a mirror.$(br2)You should use Visualization Goggles to see the path."
+    },
+     {
+      "type": "patchouli:crafting",
+      "title": "",
+      "recipe": "urushi:mirror",
+      "text": ""
+    },
+     {
+      "type": "patchouli:image",
+      "text": "Example 1",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_1.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Example 2",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_2.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "Example 3",
+      "images": [
+        "urushi:textures/gui/patchouli/mirror_3.png"
+      ]
+    },
+    {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/element_crafting.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_tank",
+        "count": 1
+      },
+      "text": "Craft a Wood Element Onusa.$(br2)Onusa is suitable for storing Reiryoku energy, as it can both import and export Reiryoku.$(br2)The paths of Reiryoku transport can be branched and merged by using this as a relay point."
+    },
+     {
+      "type": "patchouli:image",
+      "text": "",
+      "images": [
+        "urushi:textures/gui/patchouli/tank.png"
+      ]
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_amber",
+        "count": 1
+      },
+      "text": "Thanks to the Wood Element Alter, it has become easier to craft Wood Element Amber. $(br2)Using a Alter, you can craft Amber from 4 Raw Urushi Bowl and 10 Reiryoku.$(br)You can also craft it from 4 Flint and 10 Reiryoku."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_enhanced_jadeite",
+        "count": 1
+      },
+      "text": "Craft some Wood Enhanced Jadeite.$(br2)They act as a kind of crafting material."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_hokora",
+        "count": 1
+      },
+      "text": "Wood Element Hokora is also a block that generates Reiryoku.$(br2)Import specific items using a Hopper to generates 5 reiryoku."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Specific item is...$(br2)Wood Element：Sweet Berries$(br)Fire Element：Wheat$(br)Earth Element：Rice Ear$(br)Metal Element：Green Onion$(br)Water Element：Soy Beans"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:wood_element_magatama",
+        "count": 1
+      },
+      "text": "Craft a Wood Element Magatama by Ritual Process.$(br2)By right-clicking on a Wood Element Onusa, Reiyoku will be transfered from the Onusa to the Magatama on hand.$(br2)When using items that consumes Reiryoku power, the player must have a Magatama in their inventory."
+    }
+  ]
+}

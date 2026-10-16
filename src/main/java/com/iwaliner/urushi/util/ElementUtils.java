@@ -3,6 +3,7 @@ package com.iwaliner.urushi.util;
 import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.ParticleRegister;
 import com.iwaliner.urushi.TagUrushi;
+import com.iwaliner.urushi.block.*;
 import com.iwaliner.urushi.item.AbstractMagatamaItem;
 import com.iwaliner.urushi.util.interfaces.*;
 import com.mojang.logging.LogUtils;
@@ -24,6 +25,7 @@ import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.piston.PistonBaseBlock;
@@ -59,7 +61,6 @@ public class ElementUtils {
     public static boolean isWaterElementItem(ItemStack stack) {
         return stack.is(TagUrushi.WATER_ELEMENT_ITEM);
     }
-
 
 
     public static boolean isWoodElement(BlockState state) {
@@ -343,7 +344,9 @@ return false;
         return false;
 
     }
-
+    public static int getMaxExportSuccessiveTime(){ //連続して送る総tick数の上限
+        return 20;
+    }
     public static ItemStack getOverflowStack(ElementType type) {
         ItemStack overflowItem;
         switch (type) {
@@ -469,6 +472,52 @@ return false;
                 });
             }
         }
+    }
+    public static double getReiryokuParticleSpeed() {
+        return 0.2D;
+    }
+    /**一度に送信する霊力の量*/
+    public static int getReiryokuSendAmount() {
+        return 1;
+    }
+    public static void replaceOldBlock(Level level,BlockPos pos,BlockState state){
+        Block block=state.getBlock();
+         if(block==ItemAndBlockRegister.sanbo_tier1.get()){
+            level.setBlockAndUpdate(pos,ItemAndBlockRegister.sanbo.get().defaultBlockState().setValue(SanboBlock.FACING,state.getValue(SanboBlock.FACING)));
+        }else if(block==ItemAndBlockRegister.wood_element_emitter_tier1.get()||block==ItemAndBlockRegister.wood_element_emitter_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.wood_element_emitter.get().defaultBlockState().setValue(EmitterBlock.FACING,state.getValue(EmitterBlock.FACING)).setValue(EmitterBlock.POWERED,state.getValue(EmitterBlock.POWERED)));
+         }else if(block==ItemAndBlockRegister.fire_element_emitter_tier1.get()||block==ItemAndBlockRegister.fire_element_emitter_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.fire_element_emitter.get().defaultBlockState().setValue(EmitterBlock.FACING,state.getValue(EmitterBlock.FACING)).setValue(EmitterBlock.POWERED,state.getValue(EmitterBlock.POWERED)));
+         }else if(block==ItemAndBlockRegister.earth_element_emitter_tier1.get()||block==ItemAndBlockRegister.earth_element_emitter_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.earth_element_emitter.get().defaultBlockState().setValue(EmitterBlock.FACING,state.getValue(EmitterBlock.FACING)).setValue(EmitterBlock.POWERED,state.getValue(EmitterBlock.POWERED)));
+         }else if(block==ItemAndBlockRegister.metal_element_emitter_tier1.get()||block==ItemAndBlockRegister.metal_element_emitter_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.metal_element_emitter.get().defaultBlockState().setValue(EmitterBlock.FACING,state.getValue(EmitterBlock.FACING)).setValue(EmitterBlock.POWERED,state.getValue(EmitterBlock.POWERED)));
+         }else if(block==ItemAndBlockRegister.water_element_emitter_tier1.get()||block==ItemAndBlockRegister.water_element_emitter_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.water_element_emitter.get().defaultBlockState().setValue(EmitterBlock.FACING,state.getValue(EmitterBlock.FACING)).setValue(EmitterBlock.POWERED,state.getValue(EmitterBlock.POWERED)));
+        }else if(block==ItemAndBlockRegister.wood_element_tank_tier1.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.wood_element_tank.get().defaultBlockState());
+         }else if(block==ItemAndBlockRegister.fire_element_tank_tier1.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.fire_element_tank.get().defaultBlockState());
+         }else if(block==ItemAndBlockRegister.earth_element_tank_tier1.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.earth_element_tank.get().defaultBlockState());
+         }else if(block==ItemAndBlockRegister.metal_element_tank_tier1.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.metal_element_tank.get().defaultBlockState());
+         }else if(block==ItemAndBlockRegister.water_element_tank_tier1.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.water_element_tank.get().defaultBlockState());
+         }else if(block==ItemAndBlockRegister.mirror_tier1.get()||block==ItemAndBlockRegister.mirror_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.mirror.get().defaultBlockState().setValue(MirrorBlock.DIRECTION,state.getValue(MirrorBlock.DIRECTION)));
+         }else if(block==ItemAndBlockRegister.wood_element_crafting_table_tier1.get()||block==ItemAndBlockRegister.wood_element_crafting_table_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.wood_element_crafting_table.get().defaultBlockState().setValue(ElementCraftingTableBlock.LIT,state.getValue(ElementCraftingTableBlock.LIT)));
+         }else if(block==ItemAndBlockRegister.fire_element_crafting_table_tier1.get()||block==ItemAndBlockRegister.fire_element_crafting_table_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.fire_element_crafting_table.get().defaultBlockState().setValue(ElementCraftingTableBlock.LIT,state.getValue(ElementCraftingTableBlock.LIT)));
+         }else if(block==ItemAndBlockRegister.earth_element_crafting_table_tier1.get()||block==ItemAndBlockRegister.earth_element_crafting_table_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.earth_element_crafting_table.get().defaultBlockState().setValue(ElementCraftingTableBlock.LIT,state.getValue(ElementCraftingTableBlock.LIT)));
+         }else if(block==ItemAndBlockRegister.metal_element_crafting_table_tier1.get()||block==ItemAndBlockRegister.metal_element_crafting_table_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.metal_element_crafting_table.get().defaultBlockState().setValue(ElementCraftingTableBlock.LIT,state.getValue(ElementCraftingTableBlock.LIT)));
+         }else if(block==ItemAndBlockRegister.water_element_crafting_table_tier1.get()||block==ItemAndBlockRegister.water_element_crafting_table_tier2.get()){
+             level.setBlockAndUpdate(pos,ItemAndBlockRegister.water_element_crafting_table.get().defaultBlockState().setValue(ElementCraftingTableBlock.LIT,state.getValue(ElementCraftingTableBlock.LIT)));
+         }
+
     }
 
 }

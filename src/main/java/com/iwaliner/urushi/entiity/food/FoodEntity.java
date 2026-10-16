@@ -1,12 +1,15 @@
 package com.iwaliner.urushi.entiity.food;
 
 
+import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.util.UrushiUtils;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
@@ -20,11 +23,14 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.network.NetworkHooks;
 
+import java.util.Random;
+
 public abstract class FoodEntity extends Entity {
     private Item itemContains;
     public double xPower;
     public double yPower;
     public double zPower;
+    private int smeltTime;
     public FoodEntity(Item item, EntityType<?> p_i48580_1_, Level p_i48580_2_) {
         super(p_i48580_1_, p_i48580_2_);
         itemContains=item;
@@ -41,6 +47,16 @@ public abstract class FoodEntity extends Entity {
     public boolean isPickable() {
         return true;
     }
+
+    /**熱源ブロックが近くにあるときに精錬できるならtrue*/
+    public boolean canSmelt() {
+        return false;
+    }
+
+    public EntityType<?> getSmeltedEntityType(){
+        return null;
+    }
+
 
 
     /**目線の高さ。0.0Fだと当たり判定の底面部分。*/
@@ -97,7 +113,7 @@ public abstract class FoodEntity extends Entity {
 
     @Override
     public void tick() {
-        double f=0.95D;
+        double f=0.9D;
         this.setDeltaMovement(this.getDeltaMovement().add(0.0D, -0.04D, 0.0D));
         this.setDeltaMovement(new Vec3(this.getDeltaMovement().x*f,this.getDeltaMovement().y-0.04D,this.getDeltaMovement().z*f));
         this.move(MoverType.SELF, this.getDeltaMovement()); //自由落下
@@ -109,9 +125,40 @@ public abstract class FoodEntity extends Entity {
                 this.move(MoverType.SELF, this.getDeltaMovement());
             }
         }
+        if(canSmelt()){
+            EntityType<?> smeltedEntityType=getSmeltedEntityType();
+            if(smeltedEntityType!=null) {
+                boolean hasHeatSource=UrushiUtils.isHeatSource(level().getBlockState(blockPosition()));
+                if(!hasHeatSource){
+                    for (int i = 0; i < 6; i++) {
+                        if (UrushiUtils.isHeatSource(level().getBlockState(blockPosition().relative(UrushiUtils.getDirectionFromInt(i))))) {
+                            hasHeatSource = true;
+                        }
+                    }
+                }
+                if(hasHeatSource) {
+                    if(smeltTime<20*5){
+                        smeltTime++;
+                    }else {
+                        level().playSound((Player) null, blockPosition(), SoundEvents.GENERIC_BURN, SoundSource.BLOCKS, 1.0F, 1F);
+                        FoodEntity foodEntity = (FoodEntity) smeltedEntityType.create(level());
+                        foodEntity.moveTo((double) this.position().x, (double) this.position().y, (double) this.position().z, this.getYRot(), 0.0F);
+                        level().addFreshEntity(foodEntity);
+
+                        this.discard();
+
+
+                        smeltTime=0;
+                    }
+                }else{
+                    smeltTime=0;
+                }
+            }
+        }
 
 
     }
+
     @Override
     protected void defineSynchedData() {
 

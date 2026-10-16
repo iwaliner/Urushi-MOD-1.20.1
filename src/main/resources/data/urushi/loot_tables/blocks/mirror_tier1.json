@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "urushi:mirror_tier1"
+          "name": "urushi:mirror"
         }
       ],
       "conditions": [

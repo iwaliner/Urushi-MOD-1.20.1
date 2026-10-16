@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+        "end": "urushi:block/gold_leaf_block",
+        "side": "urushi:block/planks_smooth_red_urushi"
+  }
+}

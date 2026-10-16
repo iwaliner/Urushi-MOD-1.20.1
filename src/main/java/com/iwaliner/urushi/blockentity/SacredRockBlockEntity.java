@@ -4,9 +4,7 @@ import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.block.SacredRockBlock;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
-import com.iwaliner.urushi.util.interfaces.ElementBlock;
 import com.iwaliner.urushi.util.interfaces.ReiryokuExportable;
-import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.Level;
@@ -42,8 +40,8 @@ public class SacredRockBlockEntity extends AbstractReiryokuStorableBlockEntity i
       return this.getStoredElementType();
     }
 
-    private int getAddAmount(int tier){
-        return 1;
+    private int getAddAmount(){
+        return 5;
     }
 
 
@@ -51,13 +49,12 @@ public class SacredRockBlockEntity extends AbstractReiryokuStorableBlockEntity i
        if(state.getBlock() instanceof SacredRockBlock) {
            BlockPos dedicatedPos = pos.relative(state.getValue(SacredRockBlock.FACING));
            BlockState dedicatedState = level.getBlockState(dedicatedPos);
-           Tiered elementBlock = (Tiered) state.getBlock();
            int maxCoolTime=10;
            if (ElementUtils.isSpecificElement(blockEntity.getStoredElementType(), dedicatedState)) {
                if (blockEntity.coolTime < maxCoolTime) {
                    blockEntity.coolTime++;
-               } else if (blockEntity.canAddReiryoku(blockEntity.getAddAmount(elementBlock.getTier()))) {
-                   blockEntity.addStoredReiryoku(blockEntity.getAddAmount(elementBlock.getTier()));
+               } else if (blockEntity.canAddReiryoku(blockEntity.getAddAmount())) {
+                   blockEntity.addStoredReiryoku(blockEntity.getAddAmount());
                    level.setBlock(dedicatedPos, Blocks.AIR.defaultBlockState(), 2);
                    blockEntity.coolTime = 0;
                }

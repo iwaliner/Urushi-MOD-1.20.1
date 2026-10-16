@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "urushi:block/crafting_table_idle_metal",
+        "down": "urushi:block/crafting_table_idle_bottom_metal",
+        "up": "urushi:block/crafting_table_idle_metal",
+        "north": "urushi:block/crafting_table_idle_side_metal",
+        "east": "urushi:block/crafting_table_idle_side_metal",
+        "south": "urushi:block/crafting_table_idle_side_metal",
+        "west": "urushi:block/crafting_table_idle_side_metal"
+    }
+}

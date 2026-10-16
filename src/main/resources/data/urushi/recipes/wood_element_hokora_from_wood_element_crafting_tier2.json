@@ -1,8 +1,8 @@
 {
-  "type": "urushi:wood_element_tier2_crafting",
+  "type": "urushi:wood_element_crafting",
   "ingredients": [
   {
-    "item": "urushi:wood_enhanced_jadeite_brick"
+    "item": "urushi:wood_enhanced_jadeite"
     },
     {
 "item": "urushi:jadeite_block"

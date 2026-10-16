@@ -1,5 +1,5 @@
 {
-  "type": "urushi:metal_element_tier2_crafting",
+  "type": "urushi:metal_element_crafting",
   "ingredients": [
   {
     "item": "urushi:raw_urushi_ball"

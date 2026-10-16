@@ -1,0 +1,26 @@
+{
+  "name": "呪符",
+  "category": "urushi:magic",
+  "icon": "urushi:knockback_jufu",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 35,
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:knockback_jufu",
+        "count": 1
+      },
+      "text": "呪符はインベントリ内に配置した勾玉の霊力を消費して機能する、使い捨てのアイテムです。$(br2)呪符の種類に応じて様々な効果を発動することができます。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "呪符の作成に必要なハンコは、幽世ディメンション内に生成される環状木柱列にてパズルを解くと入手できる。",
+      "images": [
+        "urushi:textures/gui/patchouli/wood_circle.png"
+      ]
+    }
+  ]
+}

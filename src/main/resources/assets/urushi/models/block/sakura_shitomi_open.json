@@ -1,0 +1,7 @@
+{
+  "parent": "urushi:block/template_shitomi_open",
+  "textures": {
+    "texture": "urushi:block/shitomi_sakura",
+    "side": "urushi:block/planks_smooth_sakura"
+  }
+}

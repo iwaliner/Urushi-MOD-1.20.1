@@ -13,7 +13,7 @@
         "item": "urushi:shichirin",
         "count": 1
       },
-      "text": "Grilling food using a Shichirin Stove adds a potion effect to the baked food. $(br2)Put Coal, Charcoal or Bamboo Charcoal by a Hopper or right-clicking, and ignite with an Amber Igniter. Use an Uchiwa to control the heat."
+      "text": "Grilling food using a Shichirin Stove adds a potion effect to the baked food. $(br2)Put Coal, Charcoal or Bamboo Charcoal by a Hopper or right-clicking, and ignite with Flint and Steel. Use an Uchiwa to control the heat."
     },
      {
       "type": "text",

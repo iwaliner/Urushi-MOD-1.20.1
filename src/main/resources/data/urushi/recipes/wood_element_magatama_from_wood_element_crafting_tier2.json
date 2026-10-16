@@ -1,14 +1,14 @@
 {
-  "type": "urushi:wood_element_tier2_crafting",
+  "type": "urushi:wood_element_crafting",
   "ingredients": [
   {
     "item": "urushi:wood_amber"
     },
     {
-    "item": "minecraft:amethyst_shard"
+    "item": "urushi:jadeite"
     },
     {
-    "tag": "forge:nuggets/gold"
+    "item": "urushi:jadeite"
     },
     {
     "item": "urushi:sandpaper_block"

@@ -38,7 +38,8 @@ public class TankBlockEntity extends AbstractReiryokuStorableBlockEntity impleme
 
 
     public static void tick(Level level, BlockPos pos, BlockState state, TankBlockEntity blockEntity) {
-       blockEntity.recieveReiryoku(level,pos);
+        ElementUtils.replaceOldBlock(level,pos,state);
+       blockEntity.receiveReiryoku(level,pos);
     }
 
 

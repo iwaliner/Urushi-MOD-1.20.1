@@ -1,0 +1,21 @@
+{
+  "type": "urushi:fire_element_crafting",
+  "ingredients": [
+  {
+    "item": "urushi:fire_enhanced_jadeite"
+    },
+    {
+    "item": "urushi:kitsunebi"
+    },
+    {
+    "item": "minecraft:hopper"
+    },
+    {
+    "item": "urushi:abura_age"
+    }
+  ],
+  "result": {
+  "item":"urushi:fox_hopper"
+  },
+  "reiryoku": 100
+}

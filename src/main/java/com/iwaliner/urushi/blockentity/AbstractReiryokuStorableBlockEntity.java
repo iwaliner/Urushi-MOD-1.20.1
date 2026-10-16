@@ -23,6 +23,7 @@ public abstract class AbstractReiryokuStorableBlockEntity extends BlockEntity im
         protected int receiveWaitingTime;
         protected int receiveAmount;
         protected int receiveElementType;
+        protected int receiveSuccsessiveTime;
 
          public AbstractReiryokuStorableBlockEntity(BlockEntityType<?> blockEntity,int capacity, BlockPos p_155550_, BlockState p_155551_) {
             super(blockEntity, p_155550_, p_155551_);
@@ -36,6 +37,7 @@ public abstract class AbstractReiryokuStorableBlockEntity extends BlockEntity im
         this.receiveWaitingTime = tag.getInt("receiveWaitingTime");
         this.receiveAmount = tag.getInt("receiveAmount");
         this.receiveElementType = tag.getInt("receiveElementType");
+        this.receiveSuccsessiveTime = tag.getInt("receiveSuccsessiveTime");
     }
 
     /**データを保存する*/
@@ -45,6 +47,7 @@ public abstract class AbstractReiryokuStorableBlockEntity extends BlockEntity im
         tag.putInt("receiveWaitingTime", this.receiveWaitingTime);
         tag.putInt("receiveAmount", this.receiveAmount);
         tag.putInt("receiveElementType", this.receiveElementType);
+        tag.putInt("receiveSuccsessiveTime", this.receiveSuccsessiveTime);
     }
 
     /**必ず使うデータの新規設定*/
@@ -53,6 +56,7 @@ public abstract class AbstractReiryokuStorableBlockEntity extends BlockEntity im
         compoundtag.putInt("receiveWaitingTime", this.receiveWaitingTime);
         compoundtag.putInt("receiveAmount", this.receiveAmount);
         compoundtag.putInt("receiveElementType", this.receiveElementType);
+        compoundtag.putInt("receiveSuccsessiveTime", this.receiveSuccsessiveTime);
     }
 
     /**非稼働状態ならtrue*/
@@ -147,11 +151,15 @@ public abstract class AbstractReiryokuStorableBlockEntity extends BlockEntity im
         return ElementType.getType(receiveElementType-1);
     }
 
-
+    /**パーティクルが連続して届く数*/
+    @Override
+    public int getReceiveSuccessiveTime() {
+        return this. receiveSuccsessiveTime;
+    }
 
     /**tick更新ごとに、霊力を受信可能なら受信する*/
     @Override
-        public void recieveReiryoku(Level level, BlockPos pos) {
+        public void receiveReiryoku(Level level, BlockPos pos) {
         if (level.getBlockEntity(pos) instanceof ReiryokuStorable) {
 
             ReiryokuStorable blockEntity = (ReiryokuStorable) level.getBlockEntity(pos);
@@ -160,24 +168,36 @@ public abstract class AbstractReiryokuStorableBlockEntity extends BlockEntity im
                 ElementType receiveElementType=blockEntity.getReceiveElementType();
                 int receiveAmount=blockEntity.getReceiveAmount();
                 int storedReiryoku= blockEntity.getStoredReiryoku();
+                int receiveSuccessiveTime= blockEntity.getReceiveSuccessiveTime();
 
                 if((receiveWaitingTime==1&&(blockEntity.getStoredElementType()==receiveElementType||receiveElementType==ElementType.FAIL)&&receiveAmount>0)||(receiveWaitingTime==1&&blockEntity instanceof Mirror &&receiveAmount>0)){
-                    if (blockEntity.canAddReiryoku(receiveAmount)) {
-                        blockEntity.addStoredReiryoku(receiveAmount);
-                        blockEntity.setReceiveAmount(0);
-                        blockEntity.markUpdated();
-                        /**最大貯蔵量の近辺の処理をまだ書いてない*/
-                    }else{
-                        for(int i=0;i<receiveAmount;i++) {
-                            ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1.5D, pos.getZ(), ElementUtils.getOverflowStack(this.getStoredElementType()));
-                            level.addFreshEntity(itemEntity);
+                    if(receiveSuccessiveTime>0) {
+                        if (blockEntity.canAddReiryoku(receiveAmount)) {
+                            int n=blockEntity.getReceiveSuccessiveTime()-1;
+                            blockEntity.addStoredReiryoku(receiveAmount);
+                            blockEntity.setReceiveSuccessiveTime(n);
+                            if(n==0){
+                                blockEntity.setReceiveAmount(0);
+                                blockEntity.setReceiveWaitingTime(0);
+                            }
+                            blockEntity.markUpdated();
+
+                            /**最大貯蔵量の近辺の処理をまだ書いてない*/
+                        } else {
+                            for (int i = 0; i < receiveAmount; i++) {
+                                ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 1.5D, pos.getZ(), ElementUtils.getOverflowStack(this.getStoredElementType()));
+                                level.addFreshEntity(itemEntity);
+                            }
                         }
+                    }else{
+                        blockEntity.setReceiveAmount(0);
+                        blockEntity.setReceiveWaitingTime(0);
                     }
                 }
 
-                if(receiveWaitingTime>0){
+                if(receiveWaitingTime>1){
                     blockEntity.setReceiveWaitingTime(receiveWaitingTime-1);
-                }else{
+                }else if(receiveWaitingTime!=1){
                     blockEntity.setReceiveWaitingTime(0);
                     blockEntity.setReceiveAmount(0);
 
@@ -202,6 +222,12 @@ public abstract class AbstractReiryokuStorableBlockEntity extends BlockEntity im
     @Override
     public void setReceiveWaitingTime(int receiveWaitingTime) {
         this.receiveWaitingTime = receiveWaitingTime;
+    }
+
+    /**パーティクルが連続して届く数を指定*/
+    @Override
+    public void setReceiveSuccessiveTime(int receiveSuccsessiveTime) {
+        this.receiveSuccsessiveTime = receiveSuccsessiveTime;
     }
 
     /**サーバー側とクライアント側を同期させるためのパケット*/

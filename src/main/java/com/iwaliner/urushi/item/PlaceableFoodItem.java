@@ -78,7 +78,7 @@ private java.util.function.Supplier<? extends EntityType<?>> entityType;
                 Vec3 vector3d = Vec3.atBottomCenterOf(context.getClickedPos());
                 AABB axisalignedbb = entity.getDimensions().makeBoundingBox(vector3d.x(), vector3d.y(), vector3d.z());
                 if (context.getLevel().getEntities((Entity) null, axisalignedbb).isEmpty()) {
-                    FoodEntity foodEntity = (FoodEntity) entity.create((ServerLevel) context.getLevel());
+                    FoodEntity foodEntity = (FoodEntity) entity.create( context.getLevel());
                     foodEntity.moveTo((double)context.getClickedPos().getX()+0.5D, (double)context.getClickedPos().getY()+1.001D, (double)context.getClickedPos().getZ()+0.5D, context.getRotation(), 0.0F);
 
                     context.getLevel().addFreshEntity(foodEntity);

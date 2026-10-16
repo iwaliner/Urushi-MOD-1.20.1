@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:warped_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:warped_shitomi",
+    "count": 1
+  }
+}

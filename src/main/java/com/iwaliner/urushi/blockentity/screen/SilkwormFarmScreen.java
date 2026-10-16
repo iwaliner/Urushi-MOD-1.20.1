@@ -19,7 +19,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class SilkwormFarmScreen extends AbstractContainerScreen<SilkwormFarmMenu>
 
 {
-    private boolean widthTooNarrow;
     private final ResourceLocation texture;
 
     public SilkwormFarmScreen(SilkwormFarmMenu p_i51104_1_, Inventory p_i51104_3_, Component p_i51104_4_) {
@@ -29,7 +28,6 @@ public class SilkwormFarmScreen extends AbstractContainerScreen<SilkwormFarmMenu
 
     public void init() {
         super.init();
-        this.widthTooNarrow = this.width < 379;
         this.titleLabelX = (this.imageWidth - this.font.width(this.title)) / 2;
     }
 

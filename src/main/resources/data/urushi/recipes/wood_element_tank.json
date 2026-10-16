@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+   "qcq",
+    "qaq",
+    "ccc"
+  ],
+  "key": {
+  "q": {
+     "item": "urushi:wood_element_paper"
+    },
+   "a": {
+     "item": "urushi:wood_amber"
+    },
+    "c": {
+    "item": "urushi:smooth_birch_planks"
+    }
+  },
+  "result": {
+    "item": "urushi:wood_element_tank",
+    "count": 1
+  }
+}

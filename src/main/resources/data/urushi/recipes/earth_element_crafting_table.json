@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+   "bbb",
+    "qaq",
+    "bcb"
+  ],
+  "key": {
+  "q": {
+     "item": "minecraft:quartz"
+    },
+"b": {
+     "item": "urushi:jadeite"
+    },
+   "a": {
+     "item": "urushi:earth_amber"
+    },
+    "c": {
+     "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "item": "urushi:earth_element_crafting_table",
+    "count": 1
+  }
+}

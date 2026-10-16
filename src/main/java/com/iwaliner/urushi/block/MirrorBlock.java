@@ -4,7 +4,6 @@ import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.blockentity.MirrorBlockEntity;
 import com.iwaliner.urushi.util.ComplexDirection;
 import com.iwaliner.urushi.util.UrushiUtils;
-import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -34,23 +33,17 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class MirrorBlock extends BaseEntityBlock implements Tiered {
+public class MirrorBlock extends BaseEntityBlock {
     private static final VoxelShape BASE = Block.box(6D, 0.0D, 6D, 10D, 1D, 10D);
     private static final VoxelShape PILLAR = Block.box(7D, 1.0D, 7D, 9D, 16D, 9D);
     private static final VoxelShape OUTER_BOX = Block.box(1D, 0.0D, 1D, 15D, 16D, 15D);
     public static final IntegerProperty DIRECTION = IntegerProperty.create("complex_facing",0,30);
 
 
-    private int tier;
-    public MirrorBlock(int tier, Properties p_49224_) {
+
+    public MirrorBlock(Properties p_49224_) {
         super(p_49224_);
-        this.tier = tier;
         this.registerDefaultState(this.stateDefinition.any().setValue(DIRECTION, 1));
-    }
-    @Nullable
-    @Override
-    public int getTier() {
-        return tier;
     }
 
     @Override
