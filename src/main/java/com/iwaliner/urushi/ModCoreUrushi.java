@@ -23,6 +23,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.TitleScreen;
+import net.minecraft.client.main.GameConfig;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -33,6 +34,7 @@ import net.minecraft.core.*;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.*;
+import net.minecraft.network.protocol.game.ClientboundSetEntityLinkPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -51,6 +53,7 @@ import net.minecraft.world.entity.animal.Squid;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.PlayerModelPart;
+import net.minecraft.world.entity.vehicle.AbstractMinecart;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.crafting.Recipe;
@@ -809,16 +812,6 @@ public class ModCoreUrushi {
     }*/
     @SubscribeEvent
     public void PlayerLoggedInEvent(PlayerEvent.PlayerLoggedInEvent event) {
-        long maxMemory   = Runtime.getRuntime().maxMemory() / 1024 / 1024;
-        long totalMemory = Runtime.getRuntime().totalMemory() / 1024 / 1024;
-        long freeMemory  = Runtime.getRuntime().freeMemory() / 1024 / 1024;
-        long usedMemory  = totalMemory - freeMemory;
-        logger.info(String.format("Memory: %d / %d MB", usedMemory, maxMemory));
-        if(maxMemory<=2048){
-           /* Component component = ComponentUtils.wrapInSquareBrackets(Component.translatable("info.urushi.max_memory_is_not_enough")).withStyle((p_214489_) -> {
-                return p_214489_.withColor(ChatFormatting.RED);
-            });*/
-        }
         if(UrushiUtils.isAprilFoolsDay()){
             Player player = event.getEntity();
             if(player.getItemBySlot(EquipmentSlot.HEAD).isEmpty()){
@@ -848,5 +841,4 @@ public class ModCoreUrushi {
               event.getEntity().playNotifySound(SoundRegister.UrushiAdvancements.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
         }
     }
-
 }

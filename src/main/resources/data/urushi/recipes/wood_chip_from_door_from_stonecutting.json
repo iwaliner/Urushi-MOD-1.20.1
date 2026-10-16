@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "minecraft:wodden_doors"
+  },
+  "result": "urushi:wood_chip",
+  "count": 8
+}

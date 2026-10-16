@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "tag": "forge:crops/carrot"
+    },
+    {
+      "item": "minecraft:chicken"
+    },
+    {
+      "item": "urushi:green_onion_crop"
+    },
+    {
+      "item": "urushi:abura_age"
+    },
+    {
+      "item": "urushi:shiitake"
+    },
+    {
+      "item": "urushi:raw_rice"
+    }
+  ],
+  "result": {
+    "item": "urushi:seasoning_for_gomoku_gohan",
+    "count": 2
+  }
+}

@@ -96,7 +96,8 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
             property "mixin.env.remapRefMap", "true"
             arg "-mixin.config=urushi.mixins.json"
-            jvmArgs "-Xms4G", "-Xmx8G"
+            //jvmArgs "-Xms4G", "-Xmx8G"
+            jvmArgs "-Xms1G", "-Xmx2G"
         }
 
         server {
@@ -108,7 +109,8 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
             property "mixin.env.remapRefMap", "true"
             arg "-mixin.config=urushi.mixins.json"
-            jvmArgs "-Xms4G", "-Xmx8G"
+            //jvmArgs "-Xms4G", "-Xmx8G"
+            jvmArgs "-Xms1G", "-Xmx2G"
         }
 
         // This run config launches GameTestServer and runs all registered gametests, then exits.

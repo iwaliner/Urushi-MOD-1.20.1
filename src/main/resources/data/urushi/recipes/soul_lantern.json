@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BDB",
+    "BBB"
+  ],
+  "key": {
+    "D": {
+     "item": "urushi:ghost_core"
+    },
+    "B": {
+     "item": "minecraft:lantern"
+    }
+  },
+  "result": {
+    "item": "minecraft:soul_lantern",
+    "count": 8
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "urushi:tea_leaf"
+    }
+  ],
+  "result": {
+    "item": "urushi:matcha_dust",
+      "count": 1
+  }
+}

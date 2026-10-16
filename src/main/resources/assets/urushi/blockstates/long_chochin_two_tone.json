@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=west": {
+      "model": "urushi:block/long_chochin_two_tone",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "urushi:block/long_chochin_two_tone",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "urushi:block/long_chochin_two_tone"
+    },
+    "facing=east": {
+      "model": "urushi:block/long_chochin_two_tone",
+      "y": 90
+    }
+  }
+}
