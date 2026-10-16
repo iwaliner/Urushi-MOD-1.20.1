@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    "sis",
+    "sss"
+  ],
+  "key": {
+    "s": {
+    "item": "urushi:ghost_lantern"
+    },
+    "i": {
+      "item": "minecraft:suger"
+    }
+  },
+  "result": {
+    "item": "urushi:pink_ghost_lantern",
+    "count": 8
+  }
+}

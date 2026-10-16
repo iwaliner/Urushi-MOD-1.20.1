@@ -1,6 +1,7 @@
 package com.iwaliner.urushi.particle;
 
 import com.iwaliner.urushi.blockentity.EmitterBlockEntity;
+import com.iwaliner.urushi.util.ElementUtils;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
 import net.minecraft.core.BlockPos;
@@ -26,7 +27,7 @@ public class MediumParticle extends TextureSheetParticle {
         this.xd = xd;
         this.yd = yd;
         this.zd = zd;
-        this.quadSize *= 2F;
+        this.quadSize =0.25F;
         this.lifetime = 80;
         this.setSpriteFromAge(p_108353_);
         this.hasPhysics=false;
@@ -49,7 +50,7 @@ public class MediumParticle extends TextureSheetParticle {
             this.remove();
         }
         if(!this.removed && Shapes.joinIsNotEmpty(frontShape,particleShape, BooleanOp.AND)){
-            this.setLifetime(Mth.floor(1/ EmitterBlockEntity.particleSpeed)+5);
+            this.setLifetime(Mth.floor(1/ ElementUtils.getReiryokuParticleSpeed())+5);
         }
 
 

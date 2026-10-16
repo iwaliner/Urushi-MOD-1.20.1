@@ -1,8 +1,8 @@
 {
-  "type": "urushi:fire_element_tier2_crafting",
+  "type": "urushi:fire_element_crafting",
   "ingredients": [
   {
-    "item": "urushi:fire_amber"
+    "item": "urushi:fire_enhanced_jadeite"
     },
     {
     "item": "urushi:unfinished_shichirin"

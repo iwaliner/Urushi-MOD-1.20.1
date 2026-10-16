@@ -10,7 +10,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Kobore Sakura Trees generate in Forest biomes or Kakuriyo Dimension.$(br2)Craft its sapling with glowstone for a Glowing Sapling, which leaves have a light level of 15."
+      "text": "Kobore Sakura Trees generate in Forest biomes or Kakuriyo Dimension.$(br2)Craft its sapling with glowstone for a Glowing Sapling, which leaves have a light level of 8."
     },
     {
       "type": "patchouli:image",

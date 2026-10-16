@@ -10,7 +10,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Japanese Apricot Trees generate in Forest biomes.$(br2)Their leaves drop Ripe Plums along its saplings.$(br2)Craft its sapling with glowstone for a Glowing Sapling, which leaves have a light level of 15."
+      "text": "Japanese Apricot Trees generate in Forest biomes.$(br2)Their leaves drop Ripe Plums along its saplings.$(br2)Craft its sapling with glowstone for a Glowing Sapling, which leaves have a light level of 8."
     },
     {
       "type": "patchouli:image",

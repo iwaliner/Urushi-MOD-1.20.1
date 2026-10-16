@@ -1,6 +1,7 @@
 package com.iwaliner.urushi.blockentity;
 
 import com.iwaliner.urushi.BlockEntityRegister;
+import com.iwaliner.urushi.block.EmitterBlock;
 import com.iwaliner.urushi.block.MirrorBlock;
 import com.iwaliner.urushi.util.ComplexDirection;
 import com.iwaliner.urushi.util.ElementType;
@@ -22,9 +23,12 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Objects;
 
+import static com.iwaliner.urushi.block.EmitterBlock.FACING;
+
 public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  implements Mirror {
     public boolean canReach;
     protected int incidentDirection;
+    public int exportCoolTime=0;
     public MirrorBlockEntity(BlockPos p_155550_, BlockState p_155551_) {
         super(BlockEntityRegister.Mirror.get(),100, p_155550_, p_155551_);
     }
@@ -32,13 +36,14 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         super.load(tag);
         this.canReach = tag.getBoolean("canReach");
         this.incidentDirection = tag.getInt("incidentDirection");
-
+        this.exportCoolTime = tag.getInt("exportCoolTime");
     }
 
     protected void saveAdditional(CompoundTag tag) {
         super.saveAdditional(tag);
         tag.putBoolean("canReach", this.canReach);
         tag.putInt("incidentDirection", this.incidentDirection);
+        tag.putInt("exportCoolTime", this.exportCoolTime);
     }
 
     @Override
@@ -46,9 +51,11 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
         CompoundTag compoundtag = new CompoundTag();
         compoundtag.putBoolean("canReach", this.canReach);
         compoundtag.putInt("incidentDirection", this.incidentDirection);
+        compoundtag.putInt("exportCoolTime", this.exportCoolTime);
         this.putBaseTag(compoundtag);
         return compoundtag;
     }
+
     private void setCanReach(boolean b){
         this.canReach=b;
     }
@@ -916,23 +923,11 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
 
         return reflect;
     }
-    private int getTier(){
-        if(getBlockState().getBlock() instanceof MirrorBlock){
-            return ((MirrorBlock) getBlockState().getBlock()).getTier();
-        }
-        return 0;
-    }
-    private double getParticleSpeed(){
-        if(this.getTier()==1){
-            return 0.2D;
-        }else if(this.getTier()==2){
-            return 0.3D;
-        }
-        return 0.2D;
-    }
+
+
 
     private double[] getParticleVelocity(ComplexDirection reflectedDirection){
-        double speed=getParticleSpeed();
+        double speed=ElementUtils.getReiryokuParticleSpeed();
         double vectorComponent45Degrees=speed/(Math.sqrt(2));
         if(reflectedDirection==ComplexDirection.N){
             return new double[]{0D, 0D, -speed};
@@ -1065,15 +1060,6 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
             return null;
         }
     }
-    /**一度に送信する霊力の量*/
-    private int getSendAmount(){
-        int i=getTier()==2? 5 : 1;
-        if(this.getStoredReiryoku()-i<0){
-            return getStoredReiryoku();
-        }else{
-            return i;
-        }
-    }
 
     @Override
     public ElementType getStoredElementType() {
@@ -1082,7 +1068,8 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
 
     public static void tick(Level level, BlockPos pos, BlockState state, MirrorBlockEntity blockEntity) {
       if(state.getBlock()instanceof MirrorBlock) {
-          blockEntity.recieveReiryoku(level, pos);
+          ElementUtils.replaceOldBlock(level,pos,state);
+          blockEntity.receiveReiryoku(level, pos);
 
           boolean canReach = blockEntity.getCanReach();
           ComplexDirection mirrorDirection = getDirectionFromID(state.getValue(MirrorBlock.DIRECTION));
@@ -1122,21 +1109,37 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
               blockEntity.setCanReach(true);
           }
           if (storedReiryoku > 0) {
-              if (canReach) {
+                  if (canReach&&goalPos != pos) {
 
-                  if (goalPos != pos) {
+                      /**連続して送信を行う(二個目以降)*/
+                      if(blockEntity.exportCoolTime>1){
+                          blockEntity.genParticleAndDecrease(level,pos,blockEntity, blockEntity.exportCoolTime-1,reflectedDirection);
+                      }else{
+                          blockEntity.exportCoolTime=0;
+                      }
 
-                      blockEntity.send(level, pos, goalPos, reflectedDirection);
-                  }
+                        //連続して送る総tick数
+                      int exportSuccessiveTime=0;
+
+                      for(int j=ElementUtils.getMaxExportSuccessiveTime();j>0;j--){
+                          if(blockEntity.canDecreaseReiryoku(ElementUtils.getReiryokuSendAmount()*j)){
+                              exportSuccessiveTime=j;
+                              break;
+                          }
+                      }
+                      if(exportSuccessiveTime>0) {
+                          blockEntity.send(level, pos, goalPos, reflectedDirection,exportSuccessiveTime);
+                      }
               }
 
 
           }
       }
     }
+
     private BlockPos findImportableBlock(Level level,BlockPos mirrorPos,ComplexDirection incidentDirection){
         boolean b1=incidentDirection==ComplexDirection.N||incidentDirection==ComplexDirection.S||incidentDirection==ComplexDirection.E||incidentDirection==ComplexDirection.W;
-        int range= b1? Mth.floor(getParticleSpeed()*80+0.6D) : Mth.floor((getParticleSpeed()*80+0.6D)/Math.sqrt(2));
+        int range= b1? Mth.floor(ElementUtils.getReiryokuParticleSpeed()*80+0.6D) : Mth.floor((ElementUtils.getReiryokuParticleSpeed()*80+0.6D)/Math.sqrt(2));
         MirrorBlockEntity mirrorBlockEntity= (MirrorBlockEntity) level.getBlockEntity(mirrorPos);
 
             int t1=0;
@@ -1152,7 +1155,7 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
 
                     if (blockEntity instanceof ReiryokuImportable) {
                         ReiryokuStorable reiryokuStorable = (ReiryokuStorable) blockEntity;
-                        if (reiryokuStorable.canAddReiryoku(mirrorBlockEntity.getSendAmount())) {
+                        if (reiryokuStorable.canAddReiryoku(ElementUtils.getReiryokuSendAmount())) {
                             if (reiryokuStorable.getStoredElementType() == mirrorBlockEntity.getStoredElementType()) {
                                 t1 = i1;
                                 break;
@@ -1162,7 +1165,7 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
                     } else if (blockEntity instanceof Mirror&&level.getBlockState(pos).getBlock() instanceof MirrorBlock) {
                         ReiryokuStorable reiryokuStorable = (ReiryokuStorable) blockEntity;
                         Mirror mirror = (Mirror) blockEntity;
-                        if (reiryokuStorable.canAddReiryoku(mirrorBlockEntity.getSendAmount())) {
+                        if (reiryokuStorable.canAddReiryoku(ElementUtils.getReiryokuSendAmount())) {
                             ComplexDirection blockDirection = getDirectionFromID(level.getBlockState(pos).getValue(MirrorBlock.DIRECTION));
                             if (getClockwise90DegreesDirection(blockDirection) != incidentDirection && getCounterClockwise90DegreesDirection(blockDirection) != incidentDirection) {
                                 t1 = i1;
@@ -1182,41 +1185,62 @@ public class MirrorBlockEntity extends AbstractReiryokuStorableBlockEntity  impl
             }
             return mirrorPos;
     }
-    private void send(Level level,BlockPos mirrorPos, BlockPos goalPos,ComplexDirection incidentDirection){
+    private void send(Level level,BlockPos mirrorPos, BlockPos goalPos,ComplexDirection incidentDirection,int exportSuccessiveTime){
         MirrorBlockEntity mirrorBlockEntity= (MirrorBlockEntity) level.getBlockEntity(mirrorPos);
         ReiryokuStorable goalBlockEntity= (ReiryokuStorable) level.getBlockEntity(goalPos);
         int distance=Mth.floor( Math.sqrt( (Math.abs(mirrorPos.getX()-goalPos.getX()))^2+(Math.abs(mirrorPos.getY()-goalPos.getY()))^2+(Math.abs(mirrorPos.getZ()-goalPos.getZ()))^2));
 
-        int arriveTick= Mth.floor ((distance-1)/getParticleSpeed())<=0? 1:Mth.floor ((distance-1)/getParticleSpeed());
+        int arriveTick= Mth.floor ((distance-1)/ElementUtils.getReiryokuParticleSpeed())<=0? 1:Mth.floor ((distance-1)/ElementUtils.getReiryokuParticleSpeed());
+        int sendAmount = ElementUtils.getReiryokuSendAmount() * exportSuccessiveTime;
 
-        if(mirrorBlockEntity!=null&&goalBlockEntity!=null&&goalBlockEntity.isIdle()&&mirrorBlockEntity.canDecreaseReiryoku(mirrorBlockEntity.getSendAmount())&&goalBlockEntity.canAddReiryoku(mirrorBlockEntity.getSendAmount())){
-            if(goalBlockEntity instanceof ReiryokuImportable){
-                goalBlockEntity.setReceiveWaitingTime(arriveTick);
-                goalBlockEntity.setReceiveAmount(mirrorBlockEntity.getSendAmount());
-                goalBlockEntity.setReceiveElementType(mirrorBlockEntity.getStoredElementType());
+        if(mirrorBlockEntity!=null&&goalBlockEntity!=null&&goalBlockEntity.isIdle()&&mirrorBlockEntity.canDecreaseReiryoku(sendAmount)){
+            while (true){
+                if(goalBlockEntity.canAddReiryoku(sendAmount)){
+                    if(goalBlockEntity instanceof ReiryokuImportable){
+                        goalBlockEntity.setReceiveWaitingTime(arriveTick);
+                        goalBlockEntity.setReceiveAmount(ElementUtils.getReiryokuSendAmount());
+                        goalBlockEntity.setReceiveElementType(mirrorBlockEntity.getStoredElementType());
+                        goalBlockEntity.setReceiveSuccessiveTime(exportSuccessiveTime);
 
-                goalBlockEntity.markUpdated();
-                mirrorBlockEntity.decreaseStoredReiryoku(mirrorBlockEntity.getSendAmount());
-                mirrorBlockEntity.markUpdated();
-                double[] velocity=mirrorBlockEntity.getParticleVelocity(incidentDirection);
-                double[] position=mirrorBlockEntity.getParticlePos(incidentDirection,mirrorPos);
-                level.addParticle(ElementUtils.getMediumElementParticle(mirrorBlockEntity.getStoredElementType()), position[0], position[1], position[2], velocity[0], velocity[1], velocity[2]);
+                        goalBlockEntity.markUpdated();
 
-            }else if(goalBlockEntity instanceof Mirror){
-                Mirror mirror= (Mirror) goalBlockEntity;
-                if(mirror.getCanReach()) {
-                    goalBlockEntity.setReceiveWaitingTime(arriveTick);
-                    goalBlockEntity.setReceiveAmount(mirrorBlockEntity.getSendAmount());
-                    goalBlockEntity.setReceiveElementType(mirrorBlockEntity.getStoredElementType());
-                       mirror.setIncidentDirection(getOppositeDirection(incidentDirection));
-                    goalBlockEntity.markUpdated();
-                    mirrorBlockEntity.decreaseStoredReiryoku(mirrorBlockEntity.getSendAmount());
-                    mirrorBlockEntity.markUpdated();
-                    double[] velocity = mirrorBlockEntity.getParticleVelocity(incidentDirection);
-                    double[] position = mirrorBlockEntity.getParticlePos(incidentDirection, mirrorPos);
-                    level.addParticle(ElementUtils.getMediumElementParticle(mirrorBlockEntity.getStoredElementType()), position[0], position[1], position[2], velocity[0], velocity[1], velocity[2]);
+                        genParticleAndDecrease(level,mirrorPos,mirrorBlockEntity,exportSuccessiveTime,incidentDirection);
+                        //mirrorBlockEntity.decreaseStoredReiryoku(ElementUtils.getReiryokuSendAmount());
+                        //mirrorBlockEntity.markUpdated();
+                        //double[] velocity=mirrorBlockEntity.getParticleVelocity(incidentDirection);
+                        //double[] position=mirrorBlockEntity.getParticlePos(incidentDirection,mirrorPos);
+                        //level.addParticle(ElementUtils.getMediumElementParticle(mirrorBlockEntity.getStoredElementType()), position[0], position[1], position[2], velocity[0], velocity[1], velocity[2]);
+
+                    }else if(goalBlockEntity instanceof Mirror){
+                        Mirror mirror= (Mirror) goalBlockEntity;
+                        if(mirror.getCanReach()) {
+                            goalBlockEntity.setReceiveWaitingTime(arriveTick);
+                            goalBlockEntity.setReceiveAmount(ElementUtils.getReiryokuSendAmount());
+                            goalBlockEntity.setReceiveElementType(mirrorBlockEntity.getStoredElementType());
+                            goalBlockEntity.setReceiveSuccessiveTime(exportSuccessiveTime);
+                            mirror.setIncidentDirection(getOppositeDirection(incidentDirection));
+                            goalBlockEntity.markUpdated();
+                            genParticleAndDecrease(level,mirrorPos,mirrorBlockEntity,exportSuccessiveTime,incidentDirection);
+                            //mirrorBlockEntity.decreaseStoredReiryoku(ElementUtils.getReiryokuSendAmount());
+                            //mirrorBlockEntity.markUpdated();
+                            //double[] velocity = mirrorBlockEntity.getParticleVelocity(incidentDirection);
+                            //double[] position = mirrorBlockEntity.getParticlePos(incidentDirection, mirrorPos);
+                            //level.addParticle(ElementUtils.getMediumElementParticle(mirrorBlockEntity.getStoredElementType()), position[0], position[1], position[2], velocity[0], velocity[1], velocity[2]);
+                        }
+                    }
+                    break;
+                }else{
+                    --sendAmount;
                 }
             }
         }
+    }
+    private void genParticleAndDecrease(Level level,BlockPos mirrorPos,MirrorBlockEntity mirrorBlockEntity,int newExportCoolTime,ComplexDirection incidentDirection){
+        mirrorBlockEntity.decreaseStoredReiryoku(ElementUtils.getReiryokuSendAmount());
+        double[] velocity=mirrorBlockEntity.getParticleVelocity(incidentDirection);
+        double[] position=mirrorBlockEntity.getParticlePos(incidentDirection,mirrorPos);
+        level.addParticle(ElementUtils.getMediumElementParticle(mirrorBlockEntity.getStoredElementType()), position[0], position[1], position[2], velocity[0], velocity[1], velocity[2]);
+        mirrorBlockEntity.exportCoolTime=newExportCoolTime;
+        mirrorBlockEntity.markUpdated();
     }
 }

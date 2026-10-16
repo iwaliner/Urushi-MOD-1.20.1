@@ -1,8 +1,8 @@
 {
-  "type": "urushi:metal_element_tier2_crafting",
+  "type": "urushi:metal_element_crafting",
   "ingredients": [
   {
-    "item": "urushi:metal_enhanced_jadeite_brick"
+    "item": "urushi:metal_enhanced_jadeite"
     },
     {
 "item": "urushi:jadeite_block"

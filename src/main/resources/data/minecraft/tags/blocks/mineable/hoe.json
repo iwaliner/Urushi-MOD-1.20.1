@@ -62,6 +62,10 @@
     "urushi:lycoris",
     "urushi:ajisai",
     "urushi:lantern_plant_block",
-    "urushi:ghost_lantern"
+    "urushi:ghost_lantern",
+    "urushi:pink_ghost_lantern",
+    "urushi:light_purple_ghost_lantern",
+    "urushi:purple_ghost_lantern",
+    "urushi:light_blue_ghost_lantern"
   ]
 }

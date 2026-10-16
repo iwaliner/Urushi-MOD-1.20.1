@@ -11,6 +11,12 @@ public class SweetfishFoodEntity extends FoodEntity {
     public SweetfishFoodEntity(EntityType<?> p_i48580_1_, Level p_i48580_2_) {
         super(ItemAndBlockRegister.sweetfish.get(), EntityRegister.SweetfishFoodEntity.get(), p_i48580_2_);
     }
+    public boolean canSmelt() {
+        return true;
+    }
 
+    public EntityType<?> getSmeltedEntityType(){
+        return EntityRegister.CookedSweetfishFoodEntity.get();
+    }
 
 }

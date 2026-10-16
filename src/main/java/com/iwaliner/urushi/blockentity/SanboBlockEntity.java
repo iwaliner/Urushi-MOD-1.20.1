@@ -7,6 +7,7 @@ import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.ParticleRegister;
 import com.iwaliner.urushi.block.DirtFurnaceBlock;
 import com.iwaliner.urushi.block.RiceCauldronBlock;
+import com.iwaliner.urushi.util.ElementUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
@@ -160,23 +161,7 @@ public  class SanboBlockEntity extends BaseContainerBlockEntity implements World
 
 
     public static void tick(Level level, BlockPos pos, BlockState bs, SanboBlockEntity blockEntity) {
-        ItemStack slot0Stack=blockEntity.items.get(0);
-        Item slot0Item=slot0Stack.getItem();
-        ItemStack slot1Stack=blockEntity.items.get(1);
-        Item slot1Item=slot1Stack.getItem();
-        BlockState state=level.getBlockState(pos);
-        /*if(!slot0Stack.isEmpty()){
-            level.addParticle(ParticleRegister.EarthElement.get(), pos.getX(),pos.getY()+1,pos.getZ(), 0.0D, 0.0D, 0.0D);
-        }
-        if(!slot1Stack.isEmpty()){
-            level.addParticle(ParticleRegister.WaterElement.get(), pos.getX()+1,pos.getY()+1,pos.getZ(), 0.0D, 0.0D, 0.0D);
-        }
-
-        if(level.getBlockState(pos.above()).getBlock()== Blocks.GLASS){
-            blockEntity.moveItemToExportSlot();
-        }*/
-
-
+        ElementUtils.replaceOldBlock(level,pos,bs);
     }
     public void markUpdated() {
         this.setChanged();

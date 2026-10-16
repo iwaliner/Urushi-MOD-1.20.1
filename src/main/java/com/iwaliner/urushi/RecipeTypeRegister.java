@@ -3,8 +3,6 @@ package com.iwaliner.urushi;
 import com.iwaliner.urushi.recipe.*;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
-import net.minecraft.world.item.crafting.SuspiciousStewRecipe;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -31,26 +29,16 @@ public class RecipeTypeRegister {
             = RECIPE_SERIALIZER.register("polishing", com.iwaliner.urushi.recipe.SandpaperPolishingRecipe.SandpaperPolishingSerializer::new);
     public static final RegistryObject<com.iwaliner.urushi.recipe.ChiseledLacquerLogRecipe.ChiseledLacquerLogSerializer> ChiseledLacquerLogSerializer
             = RECIPE_SERIALIZER.register("chiseled_lacquer_log", com.iwaliner.urushi.recipe.ChiseledLacquerLogRecipe.ChiseledLacquerLogSerializer::new);
-    public static final RegistryObject<WoodElementTier1CraftingRecipe.WoodElementTier1CraftingSerializer> WoodElementTier1CraftingSerializer
-            = RECIPE_SERIALIZER.register("wood_element_tier1_crafting", com.iwaliner.urushi.recipe.WoodElementTier1CraftingRecipe.WoodElementTier1CraftingSerializer::new);
-    public static final RegistryObject<FireElementTier1CraftingRecipe.FireElementTier1CraftingSerializer> FireElementTier1CraftingSerializer
-            = RECIPE_SERIALIZER.register("fire_element_tier1_crafting", com.iwaliner.urushi.recipe.FireElementTier1CraftingRecipe.FireElementTier1CraftingSerializer::new);
-    public static final RegistryObject<EarthElementTier1CraftingRecipe.EarthElementTier1CraftingSerializer> EarthElementTier1CraftingSerializer
-            = RECIPE_SERIALIZER.register("earth_element_tier1_crafting", com.iwaliner.urushi.recipe.EarthElementTier1CraftingRecipe.EarthElementTier1CraftingSerializer::new);
-    public static final RegistryObject<MetalElementTier1CraftingRecipe.MetalElementTier1CraftingSerializer> MetalElementTier1CraftingSerializer
-            = RECIPE_SERIALIZER.register("metal_element_tier1_crafting", com.iwaliner.urushi.recipe.MetalElementTier1CraftingRecipe.MetalElementTier1CraftingSerializer::new);
-    public static final RegistryObject<WaterElementTier1CraftingRecipe.WaterElementTier1CraftingSerializer> WaterElementTier1CraftingSerializer
-            = RECIPE_SERIALIZER.register("water_element_tier1_crafting", com.iwaliner.urushi.recipe.WaterElementTier1CraftingRecipe.WaterElementTier1CraftingSerializer::new);
-    public static final RegistryObject<WoodElementTier2CraftingRecipe.WoodElementTier2CraftingSerializer> WoodElementTier2CraftingSerializer
-            = RECIPE_SERIALIZER.register("wood_element_tier2_crafting", com.iwaliner.urushi.recipe.WoodElementTier2CraftingRecipe.WoodElementTier2CraftingSerializer::new);
-    public static final RegistryObject<FireElementTier2CraftingRecipe.FireElementTier2CraftingSerializer> FireElementTier2CraftingSerializer
-            = RECIPE_SERIALIZER.register("fire_element_tier2_crafting", com.iwaliner.urushi.recipe.FireElementTier2CraftingRecipe.FireElementTier2CraftingSerializer::new);
-    public static final RegistryObject<EarthElementTier2CraftingRecipe.EarthElementTier2CraftingSerializer> EarthElementTier2CraftingSerializer
-            = RECIPE_SERIALIZER.register("earth_element_tier2_crafting", com.iwaliner.urushi.recipe.EarthElementTier2CraftingRecipe.EarthElementTier2CraftingSerializer::new);
-    public static final RegistryObject<MetalElementTier2CraftingRecipe.MetalElementTier2CraftingSerializer> MetalElementTier2CraftingSerializer
-            = RECIPE_SERIALIZER.register("metal_element_tier2_crafting", com.iwaliner.urushi.recipe.MetalElementTier2CraftingRecipe.MetalElementTier2CraftingSerializer::new);
-    public static final RegistryObject<WaterElementTier2CraftingRecipe.WaterElementTier2CraftingSerializer> WaterElementTier2CraftingSerializer
-            = RECIPE_SERIALIZER.register("water_element_tier2_crafting", com.iwaliner.urushi.recipe.WaterElementTier2CraftingRecipe.WaterElementTier2CraftingSerializer::new);
+    public static final RegistryObject<WoodElementCraftingRecipe.WoodElementCraftingSerializer> WoodElementCraftingSerializer
+            = RECIPE_SERIALIZER.register("wood_element_crafting", com.iwaliner.urushi.recipe.WoodElementCraftingRecipe.WoodElementCraftingSerializer::new);
+    public static final RegistryObject<FireElementCraftingRecipe.FireElementCraftingSerializer> FireElementCraftingSerializer
+            = RECIPE_SERIALIZER.register("fire_element_crafting", com.iwaliner.urushi.recipe.FireElementCraftingRecipe.FireElementCraftingSerializer::new);
+    public static final RegistryObject<EarthElementCraftingRecipe.EarthElementCraftingSerializer> EarthElementCraftingSerializer
+            = RECIPE_SERIALIZER.register("earth_element_crafting", com.iwaliner.urushi.recipe.EarthElementCraftingRecipe.EarthElementCraftingSerializer::new);
+    public static final RegistryObject<MetalElementCraftingRecipe.MetalElementCraftingSerializer> MetalElementCraftingSerializer
+            = RECIPE_SERIALIZER.register("metal_element_crafting", com.iwaliner.urushi.recipe.MetalElementCraftingRecipe.MetalElementCraftingSerializer::new);
+    public static final RegistryObject<WaterElementCraftingRecipe.WaterElementCraftingSerializer> WaterElementCraftingSerializer
+            = RECIPE_SERIALIZER.register("water_element_crafting", com.iwaliner.urushi.recipe.WaterElementCraftingRecipe.WaterElementCraftingSerializer::new);
     public static final RegistryObject<SilkFarmRecipe.SilkFarmSerializer> SilkwormFarmSerializer
             = RECIPE_SERIALIZER.register("silkworm", SilkFarmRecipe.SilkFarmSerializer::new);
     public static final RegistryObject<KettleRecipe.KettleSerializer> KettleSerializer
@@ -68,16 +56,11 @@ public class RecipeTypeRegister {
     public static RecipeType<FoxEatingRecipe> FoxEatingRecipe = new FoxEatingRecipe.FoxEatingRecipeType();
     public static RecipeType<SandpaperPolishingRecipe> SandpaperPolishingRecipe = new SandpaperPolishingRecipe.SandpaperPolishingRecipeType();
     public static RecipeType<ChiseledLacquerLogRecipe> ChiseledLacquerLogRecipe = new ChiseledLacquerLogRecipe.ChiseledLacquerLogRecipeType();
-    public static RecipeType<WoodElementTier1CraftingRecipe> WoodElementTier1CraftingRecipe = new WoodElementTier1CraftingRecipe.WoodElementTier1CraftingRecipeType();
-    public static RecipeType<FireElementTier1CraftingRecipe> FireElementTier1CraftingRecipe = new FireElementTier1CraftingRecipe.FireElementTier1CraftingRecipeType();
-    public static RecipeType<EarthElementTier1CraftingRecipe> EarthElementTier1CraftingRecipe = new EarthElementTier1CraftingRecipe.EarthElementTier1CraftingRecipeType();
-    public static RecipeType<MetalElementTier1CraftingRecipe> MetalElementTier1CraftingRecipe = new MetalElementTier1CraftingRecipe.MetalElementTier1CraftingRecipeType();
-    public static RecipeType<WaterElementTier1CraftingRecipe> WaterElementTier1CraftingRecipe = new WaterElementTier1CraftingRecipe.WaterElementTier1CraftingRecipeType();
-    public static RecipeType<WoodElementTier2CraftingRecipe> WoodElementTier2CraftingRecipe = new WoodElementTier2CraftingRecipe.WoodElementTier2CraftingRecipeType();
-    public static RecipeType<FireElementTier2CraftingRecipe> FireElementTier2CraftingRecipe = new FireElementTier2CraftingRecipe.FireElementTier2CraftingRecipeType();
-    public static RecipeType<EarthElementTier2CraftingRecipe> EarthElementTier2CraftingRecipe = new EarthElementTier2CraftingRecipe.EarthElementTier2CraftingRecipeType();
-    public static RecipeType<MetalElementTier2CraftingRecipe> MetalElementTier2CraftingRecipe = new MetalElementTier2CraftingRecipe.MetalElementTier2CraftingRecipeType();
-    public static RecipeType<WaterElementTier2CraftingRecipe> WaterElementTier2CraftingRecipe = new WaterElementTier2CraftingRecipe.WaterElementTier2CraftingRecipeType();
+    public static RecipeType<WoodElementCraftingRecipe> WoodElementCraftingRecipe = new WoodElementCraftingRecipe.WoodElementCraftingRecipeType();
+    public static RecipeType<FireElementCraftingRecipe> FireElementCraftingRecipe = new FireElementCraftingRecipe.FireElementCraftingRecipeType();
+    public static RecipeType<EarthElementCraftingRecipe> EarthElementCraftingRecipe = new EarthElementCraftingRecipe.EarthElementCraftingRecipeType();
+    public static RecipeType<MetalElementCraftingRecipe> MetalElementCraftingRecipe = new MetalElementCraftingRecipe.MetalElementCraftingRecipeType();
+    public static RecipeType<WaterElementCraftingRecipe> WaterElementCraftingRecipe = new WaterElementCraftingRecipe.WaterElementCraftingRecipeType();
     public static RecipeType<SilkFarmRecipe> SilkwormFarmRecipe = new SilkFarmRecipe.SilkFarmRecipeType();
     public static RecipeType<KettleRecipe> KettleRecipe = new KettleRecipe.KettleRecipeType();
     public static RecipeType<RainwaterTankRecipe> RainwaterTankRecipe = new RainwaterTankRecipe.RainwaterTankRecipeType();

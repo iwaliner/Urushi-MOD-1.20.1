@@ -33,7 +33,7 @@ public interface ReiryokuStorable {
 
     /**tick更新ごとに、霊力を受信可能なら受信する*/
 
-    void recieveReiryoku(Level level, BlockPos pos);
+    void receiveReiryoku(Level level, BlockPos pos);
 
 
     /**パーティクルが届いて霊力が増加するまでのtick数*/
@@ -59,6 +59,12 @@ public interface ReiryokuStorable {
 
     /**更新させる*/
     void markUpdated();
+
+    /**パーティクルが連続して届く数*/
+    int getReceiveSuccessiveTime();
+
+    /**パーティクルが連続して届く数を指定*/
+    void setReceiveSuccessiveTime(int i);
 
 
 }

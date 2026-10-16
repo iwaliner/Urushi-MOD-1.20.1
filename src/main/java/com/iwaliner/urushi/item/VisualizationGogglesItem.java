@@ -5,12 +5,11 @@ import com.iwaliner.urushi.block.MirrorBlock;
 import com.iwaliner.urushi.blockentity.EmitterBlockEntity;
 import com.iwaliner.urushi.blockentity.MirrorBlockEntity;
 import com.iwaliner.urushi.util.ComplexDirection;
+import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
-import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.BlockSource;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Position;
 import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.core.dispenser.DispenseItemBehavior;
 import net.minecraft.core.particles.ParticleTypes;
@@ -97,15 +96,6 @@ public class VisualizationGogglesItem extends Item implements Equipable, IForgeI
         UrushiUtils.setInfo(list, string);
     }
 
-    private double getParticleSpeed(Tiered tiered) {
-        if (tiered.getTier() == 1) {
-            return 0.2D;
-        } else if (tiered.getTier() == 2) {
-            return 0.3D;
-        }
-        return 0.2D;
-    }
-
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int i0, boolean b2) {
         if(!level.isClientSide()){
@@ -136,7 +126,7 @@ public class VisualizationGogglesItem extends Item implements Equipable, IForgeI
 
                     BlockEntity blockEntity = level.getBlockEntity(pos);
                     if (block instanceof EmitterBlock emitterBlock && blockEntity instanceof EmitterBlockEntity) {
-                        int range = Mth.floor(this.getParticleSpeed(emitterBlock) * 80 - 0.25D);
+                        int range = Mth.floor(ElementUtils.getReiryokuParticleSpeed() * 80 - 0.25D);
                         Direction relativePosValue = state.getValue(EmitterBlock.FACING);
 
                         for (int j = 0; j < range; j++) {
@@ -158,7 +148,7 @@ public class VisualizationGogglesItem extends Item implements Equipable, IForgeI
                         ComplexDirection incidentDirection = Objects.requireNonNull(mirrorBlockEntity).reflectedDirection(MirrorBlockEntity.getDirectionFromID(state.getValue(MirrorBlock.DIRECTION)), mirrorBlockEntity.getIncidentDirection());
 
                         boolean b1 = ComplexDirection.isNEWS(incidentDirection);
-                        int range = b1 ? Mth.floor(this.getParticleSpeed(mirrorBlock) * 80 + 0.6D) : Mth.floor((this.getParticleSpeed(mirrorBlock) * 80 + 0.6D) / Math.sqrt(2));
+                        int range = b1 ? Mth.floor(ElementUtils.getReiryokuParticleSpeed() * 80 + 0.6D) : Mth.floor((ElementUtils.getReiryokuParticleSpeed() * 80 + 0.6D) / Math.sqrt(2));
 
                         Direction[] complexDirection = MirrorBlockEntity.getDirectionFromComplexDirection(incidentDirection);
 

@@ -1344,9 +1344,10 @@
                               "if_true": {
                                 "type": "minecraft:biome",
                                 "biome_is": [
-                                  "minecraft:warm_ocean",
-                                  "minecraft:beach",
-                                  "minecraft:snowy_beach"
+                                 "urushi:kakuriyo_beach",
+                                 "urushi:kakuriyo_ocean",
+                                 "urushi:kakuriyo_deep_ocean",
+                                 "urushi:kakuriyo_cold_ocean"
                                 ]
                               },
                               "then_run": {
@@ -2120,9 +2121,10 @@
                               "if_true": {
                                 "type": "minecraft:biome",
                                 "biome_is": [
-                                  "minecraft:warm_ocean",
-                                  "minecraft:beach",
-                                  "minecraft:snowy_beach"
+                                  "urushi:kakuriyo_beach",
+                                 "urushi:kakuriyo_ocean",
+                                 "urushi:kakuriyo_deep_ocean",
+                                 "urushi:kakuriyo_cold_ocean"
                                 ]
                               },
                               "then_run": {
@@ -2366,9 +2368,10 @@
                     "if_true": {
                       "type": "minecraft:biome",
                       "biome_is": [
-                        "minecraft:warm_ocean",
-                        "minecraft:beach",
-                        "minecraft:snowy_beach"
+                        "urushi:kakuriyo_beach",
+                                 "urushi:kakuriyo_ocean",
+                                 "urushi:kakuriyo_deep_ocean",
+                                 "urushi:kakuriyo_cold_ocean"
                       ]
                     },
                     "then_run": {

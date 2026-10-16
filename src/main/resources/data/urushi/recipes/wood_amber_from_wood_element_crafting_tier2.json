@@ -1,5 +1,5 @@
 {
-  "type": "urushi:wood_element_tier2_crafting",
+  "type": "urushi:wood_element_crafting",
   "ingredients": [
   {
     "item": "minecraft:flint"

@@ -1,0 +1,21 @@
+{
+  "type": "urushi:wood_element_crafting",
+  "ingredients": [
+  {
+    "item": "urushi:wood_enhanced_jadeite"
+    },
+    {
+    "tag": "forge:rods/wooden"
+    },
+    {
+   "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+  "item":"urushi:open_wagasa"
+  },
+  "reiryoku": 100
+}

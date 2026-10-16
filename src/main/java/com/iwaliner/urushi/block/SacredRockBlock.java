@@ -1,13 +1,10 @@
 package com.iwaliner.urushi.block;
 import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.blockentity.SacredRockBlockEntity;
-import com.iwaliner.urushi.blockentity.ShichirinBlockEntity;
-import com.iwaliner.urushi.blockentity.TankBlockEntity;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.util.interfaces.ElementBlock;
-import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -22,7 +19,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
@@ -39,7 +35,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SacredRockBlock extends BaseEntityBlock implements Tiered, ElementBlock {
+public class SacredRockBlock extends BaseEntityBlock implements ElementBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     private static final VoxelShape NORTH_BOX = Block.box(1D, 0.0D, 1D, 14D, 16D, 14D);
     private static final VoxelShape SOUTH_BOX = Block.box(2D, 0.0D, 2D, 15D, 16D, 15D);
@@ -52,10 +48,7 @@ public class SacredRockBlock extends BaseEntityBlock implements Tiered, ElementB
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 
-    @Nullable
-    @Override
-    public int getTier() {
-        return 1;    }
+
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext context) {

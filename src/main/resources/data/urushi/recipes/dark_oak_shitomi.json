@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:dark_oak_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:dark_oak_shitomi",
+    "count": 1
+  }
+}

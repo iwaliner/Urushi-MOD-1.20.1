@@ -1,0 +1,7 @@
+{
+  "parent": "urushi:block/template_shitomi_top",
+  "textures": {
+    "texture": "urushi:block/shitomi_dark_oak",
+    "side": "urushi:block/planks_smooth_dark_oak"
+  }
+}

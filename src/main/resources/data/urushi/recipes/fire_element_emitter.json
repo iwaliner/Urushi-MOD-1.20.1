@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "pjp",
+    "jaj",
+    "pjp"
+  ],
+  "key": {
+  "j": {
+     "item": "minecraft:quartz"
+    },
+   "a": {
+     "item": "urushi:fire_amber"
+    },
+    "p": {
+     "item": "urushi:jadeite"
+    }
+  },
+  "result": {
+    "item": "urushi:fire_element_emitter",
+    "count": 1
+  }
+}

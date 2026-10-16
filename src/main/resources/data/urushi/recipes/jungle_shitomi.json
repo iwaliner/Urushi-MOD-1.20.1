@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:jungle_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:jungle_shitomi",
+    "count": 1
+  }
+}

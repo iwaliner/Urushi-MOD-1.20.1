@@ -97,7 +97,7 @@ minecraft {
             property "mixin.env.remapRefMap", "true"
             arg "-mixin.config=urushi.mixins.json"
             //jvmArgs "-Xms4G", "-Xmx8G"
-            jvmArgs "-Xms1G", "-Xmx2G"
+            jvmArgs "-Xms1G", "-Xmx4G"
         }
 
         server {
@@ -110,7 +110,7 @@ minecraft {
             property "mixin.env.remapRefMap", "true"
             arg "-mixin.config=urushi.mixins.json"
             //jvmArgs "-Xms4G", "-Xmx8G"
-            jvmArgs "-Xms1G", "-Xmx2G"
+            jvmArgs "-Xms1G", "-Xmx4G"
         }
 
         // This run config launches GameTestServer and runs all registered gametests, then exits.
