@@ -1928,7 +1928,11 @@
 	"block.urushi.red_urushi_shitomi": "朱漆の蔀",
 	"block.urushi.black_urushi_shitomi": "黒漆の蔀",
 	"item.urushi.magonote": "孫の手",
-  "info.urushi.magonote": "オフハンドに持っているとき、ブロックを設置したり破壊したりできる距離が8ブロック分伸びる。"
+  "info.urushi.magonote": "オフハンドに持っているとき、ブロックを設置したり破壊したりできる距離が8ブロック分伸びる。",
+  "biome.urushi.kakuriyo_beach": "幽世の海岸",
+  "biome.urushi.kakuriyo_ocean": "幽世の海",
+  "biome.urushi.kakuriyo_cold_ocean": "幽世の冷たい海",
+  "biome.urushi.kakuriyo_deep_ocean": "幽世の深海"
 
    
    

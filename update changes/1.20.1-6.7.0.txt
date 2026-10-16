@@ -1,0 +1,78 @@
+※1.20.1-6.7.0
+
+【Added Items】
+・魂の月明かり
+・漆喰のどんでん返し
+・紅白の提灯
+・五目炊き込みご飯の素
+・五目炊き込みご飯
+・抹茶の粉末
+・抹茶羊羹
+・蔀 (各種)
+・魂の結月明かり、魂の蜜月明かり、魂の朧月明かり、魂の寒月明かり
+・金箔のボタン
+・金箔付きの樹皮を剥いだ朱漆の原木、金箔付きの滑らかな朱漆の板材、金箔付きの滑らかな朱漆のハーフブロック、金箔付きの滑らかな朱漆の階段
+・孫の手
+・〇気の送信口(各種)
+・〇気の大幣(各種)
+・反射鏡
+・〇気の儀式台(各種)
+・三方
+
+【Removed Items】
+・琥珀の火打金[urushi:amber_igniter]
+・〇気で活性化された翡翠煉瓦[urushi:****_enhanced_jadeite_brick]
+・小石の塊[urushi:rock]
+・シラカバの三方[urushi:sanbo_tier1]
+・シラカバの〇気の伝達口[urushi:****_element_emitter_tier1]
+・翡翠の〇気の伝達口[urushi:****_element_emitter_tier2]
+・シラカバの〇気の儀式台[urushi:****_element_crafting_table_tier1]
+・翡翠の〇気の儀式台[urushi:****_element_crafting_table_tier2]
+・シラカバの〇気の大幣[urushi:****_element_tank_tier1]
+・シラカバの反射鏡[urushi:mirror_tier1]
+・翡翠の反射鏡[urushi:mirror_tier2]
+
+【Translation】
+・translation changed：「info.urushi.shichirin1」(琥珀の火打金→火打石と打ち金)
+・translation changed：「info.urushi.element_crafting_table1」(シラカバの三方→三方)
+・Changed Patchouli text of categories : magic
+・Added Patchouli text of entries : magic/jufu
+・Added Patchouli text of entries : magic/howto
+・Removed Patchouli text of entries : magic/tier1
+・Removed Patchouli text of entries : magic/tier2
+
+【Recipe】
+・木のチップを様々なものから作成可能に
+・茶葉から緑色の染料ではなく、抹茶の粉末から緑色の染料を作るように
+・ねぎまの作成時のレシピ配置が逆でもクラフトできるように
+・砂鉄鉱石を溶鉱炉で焼くことができるように
+・魂の松明と魂のランタンが幽霊の根源から作成可能に
+・さざれ石の単体クラフトで丸石になるように
+・各種儀式台、各種祠のレシピ変更
+・各種勾玉のレシピ変更
+・蛇の目傘のレシピ変更
+
+【Model and Texture】
+・自動作業台のGUIを変更
+・変更：金箔のテクスチャ
+・梅の木枠付き漆喰(16色)のテクスチャバグを修正
+・さざれ石がフルブロックになった
+
+【Else】
+・食べ物エンティティを右クリックすると吹っ飛ぶように
+・起動時のメモリ警告を追加(2GB以下の場合)
+・鮎とその亜種を設置できるように
+・ねぎまを設置できるように
+・自動作業台の搬出先のストレージブロックが満杯の時でも自動作成して完成品を消滅させるバグを修正
+・さざれ石が杉の森に自然生成されるように
+・幽世ディメンションのバイオーム分布が変わった
+・幽世ディメンションに海系のバイオームを複数追加
+・幽世の海に海の生き物がスポーンするように
+・伝達口→送信口へ日本語名変更
+・魔術のtier1とtier2の区別をなくした
+・しめ縄が巻かれた〇気の岩の霊力生産量が1→5
+・一度に複数のパーティクルで霊力伝達が行われるように
+・風鈴の鳴る間隔と音程がランダムに
+・「歪んだの○○」→「歪んだ○○」と日本語名を修正
+・縦ハーフが水没可能になった
+・食べ物エンティティを熱源で精錬できるように(鮎と餅のみ)
