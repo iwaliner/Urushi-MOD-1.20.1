@@ -1845,10 +1845,12 @@
   "block.urushi.concrete_block_stairs": "十字混凝土階梯",
   "block.urushi.concrete_block_normal_wall": "實心混凝土牆",
   "item.urushi.drawstring_bag": "束口布袋",
-  "info.urushi.drawstring_bag": "和大型儲物箱的欄位相等",
+  "info.urushi.drawstring_bag": "和大型儲物箱的欄位相等。",
   "info.urushi.dyeable": "可以染色",
   "block.urushi.small_torii": "小鳥居",
   "block.urushi.wooden_hokora": "神龕",
-  "info.urushi.ironsand_ore": "鐵礦沙在沙漠群系之外的沙地上生成",
-  "info.urushi.hot_ironsand": "投入水中會變成鉄原礦"
+  "info.urushi.ironsand_ore": "鐵礦沙在沙漠群系之外的沙地上生成。",
+  "info.urushi.hot_ironsand": "投入水中會變成鉄原礦。",
+  "item.urushi.sakura_head": "落櫻頭飾（愚人節）",
+  "info.urushi.sakura_head": "可以穿戴在頭部。漆MOD祝你愚人節快樂！"
 }
