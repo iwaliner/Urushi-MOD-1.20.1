@@ -343,14 +343,6 @@ public class SilkwormFarmBlockEntity extends BaseContainerBlockEntity implements
         return null;
     }
 
-    public void awardUsedRecipes(Player p_201560_1_) {
-    }
-
-    public void awardUsedRecipesAndPopExperience(ServerPlayer p_155004_) {
-        List<Recipe<?>> list = this.getRecipesToAwardAndPopExperience(p_155004_.serverLevel(), p_155004_.position());
-        p_155004_.awardRecipes(list);
-        this.recipesUsed.clear();
-    }
 
     public List<Recipe<?>> getRecipesToAwardAndPopExperience(ServerLevel p_235640_1_, Vec3 p_235640_2_) {
         List<Recipe<?>> list = Lists.newArrayList();

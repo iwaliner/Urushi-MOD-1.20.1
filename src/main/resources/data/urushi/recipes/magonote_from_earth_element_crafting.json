@@ -1,0 +1,21 @@
+{
+  "type": "urushi:earth_element_crafting",
+  "ingredients": [
+  {
+    "item": "urushi:earth_enhanced_jadeite"
+    },
+    {
+   "item": "urushi:japanese_timber_bamboo"
+    },
+    {
+  "item": "urushi:japanese_timber_bamboo"
+    },
+    {
+   "item": "urushi:japanese_timber_bamboo"
+    }
+  ],
+  "result": {
+  "item":"urushi:magonote"
+  },
+  "reiryoku": 150
+}

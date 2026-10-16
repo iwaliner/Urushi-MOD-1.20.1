@@ -3,6 +3,7 @@ package com.iwaliner.urushi.util;
 import com.iwaliner.urushi.ConfigUrushi;
 import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.ModCoreUrushi;
+import com.iwaliner.urushi.block.HibachiBlock;
 import com.iwaliner.urushi.block.HorizonalRotateSlabBlock;
 import com.mojang.blaze3d.platform.Window;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -35,12 +36,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 
 import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.LavaFluid;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -445,9 +446,9 @@ public class UrushiUtils {
                 UrushiUtils.setInfo(tooltipList, "furigana.keikaboku");
             }else if (block == ItemAndBlockRegister.shichirin.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.shichirin");
-            }else if (block == ItemAndBlockRegister.sanbo_tier1.get()) {
+            }else if (block == ItemAndBlockRegister.sanbo.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.sanbo");
-            }else if (block == ItemAndBlockRegister.wood_element_tank_tier1.get()||block == ItemAndBlockRegister.fire_element_tank_tier1.get()||block == ItemAndBlockRegister.earth_element_tank_tier1.get()||block == ItemAndBlockRegister.metal_element_tank_tier1.get()||block == ItemAndBlockRegister.water_element_tank_tier1.get()) {
+            }else if (block == ItemAndBlockRegister.wood_element_tank.get()||block == ItemAndBlockRegister.fire_element_tank.get()||block == ItemAndBlockRegister.earth_element_tank.get()||block == ItemAndBlockRegister.metal_element_tank.get()||block == ItemAndBlockRegister.water_element_tank.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.onusa");
             }else if (block == ItemAndBlockRegister.wood_element_hokora.get()||block == ItemAndBlockRegister.fire_element_hokora.get()||block == ItemAndBlockRegister.earth_element_hokora.get()||block == ItemAndBlockRegister.metal_element_hokora.get()||block == ItemAndBlockRegister.water_element_hokora.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.hokora");
@@ -465,8 +466,6 @@ public class UrushiUtils {
                 UrushiUtils.setInfo(tooltipList, "furigana.magatama");
             }else if (item == ItemAndBlockRegister.wood_amber.get()||item == ItemAndBlockRegister.fire_amber.get()||item == ItemAndBlockRegister.earth_amber.get()||item == ItemAndBlockRegister.metal_amber.get()||item == ItemAndBlockRegister.water_amber.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.kohaku");
-            }else if (item == ItemAndBlockRegister.amber_igniter.get()) {
-                UrushiUtils.setInfo(tooltipList, "furigana.hiuchigane");
             }else if (block == ItemAndBlockRegister.oil_extractor.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.assakuki");
             }else if (block == ItemAndBlockRegister.rice_crop.get()) {
@@ -475,7 +474,7 @@ public class UrushiUtils {
                 UrushiUtils.setInfo(tooltipList, "furigana.kanten");
             }else if (item == ItemAndBlockRegister.rice_malt.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.komekouji");
-            }else if (item == ItemAndBlockRegister.yokan.get()||item == ItemAndBlockRegister.sakura_yokan.get()) {
+            }else if (item == ItemAndBlockRegister.yokan.get()||item == ItemAndBlockRegister.sakura_yokan.get()||item == ItemAndBlockRegister.matcha_yokan.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.yokan");
             }else if (item == ItemAndBlockRegister.hiyayakko.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.hiyayakko");
@@ -483,8 +482,22 @@ public class UrushiUtils {
                 UrushiUtils.setInfo(tooltipList, "furigana.so");
             }else if (item == ItemAndBlockRegister.sweetfish.get()||item == ItemAndBlockRegister.sweetfish_with_salt.get()||item == ItemAndBlockRegister.cooked_sweetfish.get()||item == ItemAndBlockRegister.cooked_sweetfish_with_salt.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.ayu");
+            }else if (block == ItemAndBlockRegister.sazare_ishi.get()) {
+                UrushiUtils.setInfo(tooltipList, "sazare_ishi_gen");
             }
         }
+    }
+    public static boolean isHeatSource(BlockState state){
+        if(state.getBlock() instanceof CampfireBlock &&state.getValue(CampfireBlock.LIT)){
+            return true;
+        }else if(state.getBlock() instanceof AbstractFurnaceBlock &&state.getValue(AbstractFurnaceBlock.LIT)){
+            return true;
+        }else if(state.getBlock() instanceof HibachiBlock){
+            return true;
+        }else if(state.getBlock() instanceof FireBlock){
+            return true;
+        }
+        return false;
     }
 
 }

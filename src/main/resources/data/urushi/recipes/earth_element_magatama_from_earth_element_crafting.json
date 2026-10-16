@@ -1,0 +1,21 @@
+{
+  "type": "urushi:earth_element_crafting",
+  "ingredients": [
+  {
+    "item": "urushi:earth_amber"
+    },
+    {
+    "item": "urushi:jadeite"
+    },
+    {
+    "item": "urushi:jadeite"
+    },
+    {
+    "item": "urushi:sandpaper_block"
+    }
+  ],
+  "result": {
+  "item":"urushi:earth_element_magatama"
+  },
+  "reiryoku": 50
+}

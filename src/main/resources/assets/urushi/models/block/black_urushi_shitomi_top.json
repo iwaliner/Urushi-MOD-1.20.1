@@ -1,0 +1,7 @@
+{
+  "parent": "urushi:block/template_shitomi_top",
+  "textures": {
+    "texture": "urushi:block/shitomi_black_urushi",
+    "side": "urushi:block/shitomi_black_urushi_side"
+  }
+}

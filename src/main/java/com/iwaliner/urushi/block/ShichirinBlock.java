@@ -101,7 +101,7 @@ public class ShichirinBlock extends BaseEntityBlock  {
                 }
                 ItemStack heldStack=player.getItemInHand(hand);
                 ItemStack insertStack=heldStack.copy();
-                if(player.getItemInHand(hand).getItem() instanceof AmberIgniterItem &&state.getValue(SHICHIRIN)==1){
+                if(player.getItemInHand(hand).getItem() instanceof FlintAndSteelItem &&state.getValue(SHICHIRIN)==1){
                     ItemStack magatama= ElementUtils.getMagatamaInInventory(player, ElementType.FireElement);
                     if(magatama!=ItemStack.EMPTY&&ElementUtils.willBeInDomain(magatama,-10)){
                         world.playSound((Player) null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS, 1.0F, world.random.nextFloat() * 0.4F + 0.8F);

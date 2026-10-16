@@ -63,6 +63,9 @@ public class DoubledWoodenCabinetryBlock extends BaseEntityBlock {
                 for(int i=0;i< ModCoreUrushi.underDevelopmentList.size();i++){
                     ((DoubledWoodenCabinetryBlockEntity) blockentity).setItem(i,new ItemStack(ModCoreUrushi.underDevelopmentList.get(i)));
                 }
+                for(int i=0;i<ModCoreUrushi.removedItemList.size();i++){
+                    ((DoubledWoodenCabinetryBlockEntity) blockentity).setItem(i+ModCoreUrushi.underDevelopmentList.size(),new ItemStack(ModCoreUrushi.removedItemList.get(i)));
+                }
                 return InteractionResult.SUCCESS;
             }
             player.openMenu((DoubledWoodenCabinetryBlockEntity)blockentity);

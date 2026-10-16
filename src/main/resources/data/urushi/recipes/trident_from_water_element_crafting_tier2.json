@@ -1,5 +1,5 @@
 {
-  "type": "urushi:water_element_tier2_crafting",
+  "type": "urushi:water_element_crafting",
   "ingredients": [
   {
     "item": "minecraft:heart_of_the_sea"

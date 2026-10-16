@@ -2,20 +2,14 @@ package com.iwaliner.urushi.block;
 
 import com.iwaliner.urushi.BlockEntityRegister;
 import com.iwaliner.urushi.blockentity.EmitterBlockEntity;
-import com.iwaliner.urushi.blockentity.SacredRockBlockEntity;
-import com.iwaliner.urushi.blockentity.TankBlockEntity;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.util.interfaces.ElementBlock;
-import com.iwaliner.urushi.util.interfaces.ReiryokuImportable;
-import com.iwaliner.urushi.util.interfaces.ReiryokuStorable;
-import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
- 
-import net.minecraft.server.level.ServerLevel;
+
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -27,7 +21,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
@@ -44,9 +37,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import net.minecraft.util.RandomSource;
 
-public class EmitterBlock extends BaseEntityBlock implements Tiered, ElementBlock {
+public class EmitterBlock extends BaseEntityBlock implements ElementBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     private static final VoxelShape NORTH_BOX = Block.box(2D, 2.0D, 13D, 14D, 14D, 16D);
@@ -54,20 +46,13 @@ public class EmitterBlock extends BaseEntityBlock implements Tiered, ElementBloc
     private static final VoxelShape EAST_BOX = Block.box(0D, 2.0D, 2D, 3D, 14D, 14D);
     private static final VoxelShape WEST_BOX = Block.box(13D, 2.0D, 2D, 16D, 14D, 14D);
     private final ElementType elementType;
-    private final int tier;
 
-    public EmitterBlock(int tier, ElementType type, Properties p_i48377_1_) {
+    public EmitterBlock(ElementType type, Properties p_i48377_1_) {
         super(p_i48377_1_);
         elementType = type;
-        this.tier = tier;
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(POWERED,false));
     }
 
-    @Nullable
-    @Override
-    public int getTier() {
-        return tier;
-    }
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext context) {

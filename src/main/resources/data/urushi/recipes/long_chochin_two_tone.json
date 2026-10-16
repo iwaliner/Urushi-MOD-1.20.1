@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BDB",
+    "BBB"
+  ],
+  "key": {
+    "D": {
+   "tag": "forge:dyes/white"
+      },
+    "B": {
+    "item": "urushi:long_chochin"
+   }
+  },
+  "result": {
+    "item": "urushi:long_chochin_two_tone",
+    "count": 1
+  }
+}

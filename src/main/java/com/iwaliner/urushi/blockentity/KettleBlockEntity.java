@@ -7,6 +7,7 @@ import com.iwaliner.urushi.MenuRegister;
 import com.iwaliner.urushi.RecipeTypeRegister;
 import com.iwaliner.urushi.block.HibachiBlock;
 import com.iwaliner.urushi.blockentity.menu.KettleMenu;
+import com.iwaliner.urushi.util.UrushiUtils;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.core.BlockPos;
@@ -141,23 +142,14 @@ public class KettleBlockEntity extends BaseContainerBlockEntity implements World
         });
         p_187452_.put("RecipesUsed", compoundtag);
     }
-    private boolean isOnHeatSource(BlockState underState){
-        if(underState.getBlock() instanceof CampfireBlock&&underState.getValue(CampfireBlock.LIT)){
-            return true;
-        }else if(underState.getBlock() instanceof AbstractFurnaceBlock&&underState.getValue(AbstractFurnaceBlock.LIT)){
-            return true;
-        }else if(underState.getBlock() instanceof HibachiBlock){
-            return true;
-        }
-        return false;
-    }
+
     public static void serverTick(Level level, BlockPos pos, BlockState state, KettleBlockEntity blockEntity) {
         boolean flag1 = false;
         if (blockEntity.isLit()) {
             --blockEntity.litTime;
         }
 
-        if (!level.isClientSide&&blockEntity.isOnHeatSource(level.getBlockState(pos.below()))) {
+        if (!level.isClientSide&& UrushiUtils.isHeatSource(level.getBlockState(pos.below()))) {
             Recipe<?> recipe = level.getRecipeManager().getRecipeFor((RecipeTypeRegister.KettleRecipe), blockEntity, level).orElse(null);
             ItemStack creatureSlotItem = blockEntity.items.get(0);
             ItemStack feedSlotItem = blockEntity.items.get(1);

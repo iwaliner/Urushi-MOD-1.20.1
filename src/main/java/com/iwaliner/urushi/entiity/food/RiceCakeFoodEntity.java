@@ -11,6 +11,12 @@ public class RiceCakeFoodEntity extends FoodEntity {
     public RiceCakeFoodEntity(EntityType<?> p_i48580_1_, Level p_i48580_2_) {
         super(ItemAndBlockRegister.rice_cake.get(), EntityRegister.RiceCakeFoodEntity.get(), p_i48580_2_);
     }
+    public boolean canSmelt() {
+        return true;
+    }
 
+    public EntityType<?> getSmeltedEntityType(){
+        return EntityRegister.RoastedRiceCakeFoodEntity.get();
+    }
 
 }

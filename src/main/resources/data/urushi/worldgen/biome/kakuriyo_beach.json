@@ -1,0 +1,86 @@
+{
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "downfall": 0.4,
+  "effects": {
+    "sky_color": 8333594,
+    "fog_color": 12747591,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 12300080,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    }
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground",
+      "minecraft:lake_lava_surface"
+    ],
+    [],
+    [],
+    [
+    "urushi:kakuriyo_disk_sand",
+    "minecraft:brown_mushroom_normal",
+    "minecraft:red_mushroom_normal",
+    "minecraft:patch_grass_forest",
+    "urushi:kakuriyo_ore_jadeite",
+    "urushi:kakuriyo_ore_limonite",
+    "urushi:kakuriyo_ore_yomi_gold",
+    "urushi:kakuriyo_ore_chalcopyrite",
+    "urushi:kakuriyo_quartz_cluster",
+    "urushi:kakuriyo_yomi_vines",
+    "urushi:kakuriyo_lantern_plant",
+    "urushi:kakuriyo_disk_ironsand"
+    ],
+    [],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [
+    ],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:turtle",
+        "maxCount": 5,
+        "minCount": 2,
+        "weight": 5
+      }
+    ],
+    "misc": [],
+    "monster": [
+      
+    ],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:glow_squid",
+        "maxCount": 6,
+        "minCount": 4,
+        "weight": 10
+      }
+    ],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.8
+}

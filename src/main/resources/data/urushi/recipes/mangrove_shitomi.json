@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:mangrove_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:mangrove_shitomi",
+    "count": 1
+  }
+}

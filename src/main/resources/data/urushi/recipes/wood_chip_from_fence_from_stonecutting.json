@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "forge:fences/wooden"
+  },
+  "result": "urushi:wood_chip",
+  "count": 6
+}

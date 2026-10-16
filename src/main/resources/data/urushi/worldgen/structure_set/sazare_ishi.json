@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "urushi:sazare_ishi_1",
+      "weight": 1
+    },
+    {
+      "structure": "urushi:sazare_ishi_2",
+      "weight": 1
+    }
+  ],
+  "placement": {
+   "salt": 886594,
+    "spacing": 4,
+    "separation": 1,
+    "type": "minecraft:random_spread"
+  }
+}

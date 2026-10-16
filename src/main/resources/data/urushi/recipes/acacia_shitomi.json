@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+   
+    {
+      "item": "urushi:acacia_wall_for_framed_blocks"
+    }
+  ],
+  "result": {
+    "item": "urushi:acacia_shitomi",
+    "count": 1
+  }
+}

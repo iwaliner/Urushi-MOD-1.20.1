@@ -1,7 +1,0 @@
-{
-	"parent": "urushi:block/emitter_base",
-	"textures": {
-		"0": "urushi:block/emitter_earth_tier1",
-		"particle": "urushi:block/emitter_earth_tier1"
-	}
-}

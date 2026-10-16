@@ -10,7 +10,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "A hopper using Urushi materials and costs cheaper than iron.$(br2)Though its speed is 1/4 of vanilla hoppers, and has only 1 inventory slot."
+      "text": "This hopper costs cheaper than iron ore.$(br2)Transporting speed is 1/4 of vanilla hoppers, and it has only 1 inventory slot."
     },
      {
       "type": "patchouli:crafting",

@@ -30,8 +30,8 @@ public class WIndBellBlock extends Block {
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (ConfigUrushi.WindBellSound.get()) {
-            level.playSound((Player) null, pos, SoundRegister.WindBell.get(), SoundSource.BLOCKS, 1F, 1F);
-            level.scheduleTick(new BlockPos(pos), this, 120);
+            level.playSound((Player) null, pos, SoundRegister.WindBell.get(), SoundSource.BLOCKS, 1F, random.nextFloat() * 0.05F + 0.95F);
+            level.scheduleTick(new BlockPos(pos), this, 20*(random.nextInt(10)));
         }
     }
 

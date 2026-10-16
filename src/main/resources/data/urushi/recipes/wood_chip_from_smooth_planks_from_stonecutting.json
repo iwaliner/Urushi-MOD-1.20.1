@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "urushi:smooth_planks"
+  },
+  "result": "urushi:wood_chip",
+  "count": 4
+}

@@ -7,7 +7,6 @@ import com.iwaliner.urushi.ItemAndBlockRegister;
 import com.iwaliner.urushi.MenuRegister;
 import com.iwaliner.urushi.ModCoreUrushi;
 import com.iwaliner.urushi.block.AutoCraftingTableBlock;
-import com.iwaliner.urushi.block.FoxHopperBlock;
 import com.iwaliner.urushi.blockentity.menu.AutoCraftingTableMenu;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.mojang.authlib.GameProfile;
@@ -60,15 +59,16 @@ import java.util.function.BooleanSupplier;
 import java.util.stream.IntStream;
 
 public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer, StackedContentsCompatible, RecipeHolder, MenuProvider {
-    public int litTime;
+    public int coolTime;
+    public int maxCoolTime;
     public String savedRecipe;
-    protected final ContainerData dataAccess = new ContainerData() {
+    public final ContainerData dataAccess = new ContainerData() {
         public int get(int p_58431_) {
             switch(p_58431_) {
                 case 0:
-                    return AutoCraftingTableBlockEntity.this.litTime;
-
-
+                    return coolTime;
+                case 1:
+                    return maxCoolTime;
                 default:
                     return 0;
             }
@@ -77,26 +77,27 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         public void set(int p_58433_, int p_58434_) {
             switch(p_58433_) {
                 case 0:
-                    AutoCraftingTableBlockEntity.this.litTime = p_58434_;
+                    coolTime = p_58434_;
                     break;
-
-
-
+                case 1:
+                    maxCoolTime = p_58434_;
+                    break;
             }
-
         }
 
         public int getCount() {
-            return 1;
+            return 2;
         }
     };
+
+
     private static final int[] INGREDIENT_SLOTS = new int[]{11,12,13,14,15,16,17,18,19};
     private static final int[] RESULT_SLOT = new int[]{10};
     private final ItemStackHandler ingredients = new ItemStackHandler(9) {
         @Override
         protected void onContentsChanged(int slot) {
             super.onContentsChanged(slot);
-            setChanged();
+            //setChanged();
         }
 
 
@@ -139,7 +140,7 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         @Override
         protected void onContentsChanged(int slot) {
             super.onContentsChanged(slot);
-            setChanged();
+           setChanged();
         }
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
@@ -162,12 +163,17 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         ingredients.getStackInSlot(3),ingredients.getStackInSlot(4),ingredients.getStackInSlot(5),
         ingredients.getStackInSlot(6),ingredients.getStackInSlot(7),ingredients.getStackInSlot(8));
     protected final RecipeType<? extends CraftingRecipe> recipeType;
-    private int processTime;
+
     private final Object2IntOpenHashMap<ResourceLocation> recipesUsed = new Object2IntOpenHashMap<>();
 
-    public AutoCraftingTableBlockEntity(BlockPos p_155052_, BlockState p_155053_) {
-        super(BlockEntityRegister.AutoCraftingTable.get(), p_155052_, p_155053_);
+    public AutoCraftingTableBlockEntity(BlockPos p_155052_, BlockState state) {
+        super(BlockEntityRegister.AutoCraftingTable.get(), p_155052_, state);
         this.recipeType = RecipeType.CRAFTING;
+        if(state.getBlock()==ItemAndBlockRegister.auto_crafting_table.get()){
+            maxCoolTime=60;
+        }else{
+            maxCoolTime=1;
+        }
     }
 
     public LazyOptional<ItemStackHandler> getIngredientsOptional() {
@@ -240,7 +246,7 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         if(data.contains("resultSample", Tag.TAG_COMPOUND)) {
             this.resultSample.deserializeNBT(data.getCompound("resultSample"));
         }
-        this.litTime = tag.getInt("BurnTime");
+        this.coolTime = tag.getInt("BurnTime");
         CompoundTag compoundtag = tag.getCompound("RecipesUsed");
 
         for(String s : compoundtag.getAllKeys()) {
@@ -257,7 +263,7 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         data.put("ingredientsSample",this.ingredientsSample.serializeNBT());
         data.put("resultSample",this.resultSample.serializeNBT());
         p_187452_.put(ModCoreUrushi.ModID,data);
-        p_187452_.putInt("BurnTime", this.litTime);
+        p_187452_.putInt("BurnTime", this.coolTime);
 
         CompoundTag compoundtag = new CompoundTag();
         this.recipesUsed.forEach((p_187449_, p_187450_) -> {
@@ -268,11 +274,9 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
             p_187452_.putString("savedRecipe", this.savedRecipe);
         }
     }
-    public boolean isLit() {
-        return this.litTime > 0;
-    }
-    private void doCraft(Level level,ItemStack itemstack,AutoCraftingTableBlockEntity blockEntity,
-                         AutoCraftingTableBlock block, BlockState blockState){
+
+    public static void doCraft(Level level,BlockPos pos,ItemStack itemstack,AutoCraftingTableBlockEntity blockEntity,
+                          BlockState blockState){
         Direction facing=blockState.getValue(AutoCraftingTableBlock.FACING);
         BlockPos pos2=blockEntity.getBlockPos().relative(facing);
 
@@ -286,28 +290,27 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
             }
         };
 
-        BlockEntity outputEntity = level.getBlockEntity(pos2);
-        BaseContainerBlockEntity baseContainer =
-            (outputEntity instanceof BaseContainerBlockEntity b) ? b : null;
 
-        ItemStack outputStack = blockEntity.getItem(10);
+        Container attachedContainer=getAttachedContainer(level,pos,blockState);
+
+        ItemStack outputStack = blockEntity.getItem(10); //完成品の搬出スロットにあるアイテムを取得
         for (int i = 11; i < 20; i++) {
             ItemStack slotStack = blockEntity.getItem(i);
-            if (slotStack.hasCraftingRemainingItem()) {
+            if (slotStack.hasCraftingRemainingItem()) { //バケツやガラス瓶などの、返却アイテムが存在するアイテムである場合
                 ItemStack craftRemainingItem = slotStack.getCraftingRemainingItem();
 
-                if (baseContainer != null &&
-                    isExportable(blockEntity, baseContainer, craftRemainingItem, facing.getOpposite())) {
-                    addItem(blockEntity, baseContainer, craftRemainingItem, facing.getOpposite());
+                if (attachedContainer != null &&
+                    isExportable(blockEntity, attachedContainer, craftRemainingItem, facing.getOpposite())) {
+                    addItem(blockEntity, attachedContainer, craftRemainingItem, facing.getOpposite());
                     outputStack.shrink(1);
                 } else {
                     spawnItem.accept(craftRemainingItem, level);
                 }
             }
-            slotStack.shrink(1);
+            slotStack.shrink(1); //材料を一個ずつ消費
         }
 
-        if (outputStack.isEmpty()) {
+        if (outputStack.isEmpty()) { //搬出スロットが空のとき
             if(!level.isEmptyBlock(pos2)){
                 blockEntity.setItem(10, itemstack);
             }else{
@@ -316,7 +319,7 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
 
             blockEntity.setChanged();
 
-        } else if (ItemStack.isSameItemSameTags(blockEntity.getItem(0), outputStack)) {
+        } else if (ItemStack.isSameItemSameTags(blockEntity.getItem(0), outputStack)) { //搬出スロットに同一アイテムがあるとき
             ItemStack newStack = itemstack.copy();
             newStack.setCount(itemstack.getCount() + outputStack.getCount());
            if(!level.isEmptyBlock(pos2)){
@@ -329,11 +332,14 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         }
 
     }
+
     @Nullable
     private static Container getAttachedContainer(Level p_155593_, BlockPos p_155594_, BlockState p_155595_) {
         Direction direction = p_155595_.getValue(AutoCraftingTableBlock.FACING);
         return FoxHopperBlockEntity.getContainerAt(p_155593_, p_155594_.relative(direction));
     }
+
+
     private static boolean ejectItems(Level p_155563_, BlockPos p_155564_, BlockState p_155565_, AutoCraftingTableBlockEntity p_155566_) {
 
         Container container = getAttachedContainer(p_155563_, p_155564_, p_155565_);
@@ -435,22 +441,22 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
     }
 
     public static boolean isExportable(AutoCraftingTableBlockEntity autoCratingTable,
-                                       BaseContainerBlockEntity baseContainer,
+                                       Container baseContainer,
                                        ItemStack craftResultStack,Direction direction) {
-        if (baseContainer instanceof WorldlyContainer worldlycontainer && direction != null) {
+        if (baseContainer instanceof WorldlyContainer worldlycontainer && direction != null) { //搬入搬出面が決められているストレージブロックの場合
             int[] slots = worldlycontainer.getSlotsForFace(direction);
             for (int i : slots) {
                 ItemStack itemstack = worldlycontainer.getItem(i);
-                if(canInsertIntoSlot(worldlycontainer, itemstack, i, direction)){
+                if(canInsertIntoSlot(worldlycontainer, craftResultStack, i, direction)){
                     return true;
                 }
             }
-        } else {
+        } else { //搬入搬出面が決められていないストレージブロックの場合
             int containerSize = baseContainer.getContainerSize();
 
             for(int i = 0; i < containerSize ; ++i) {
                 ItemStack itemstack = baseContainer.getItem(i);
-                if(canInsertIntoSlot(baseContainer, itemstack, i, direction)){
+                if(canInsertIntoSlot(baseContainer, craftResultStack, i, direction)){
                     return true;
                 }
             }
@@ -486,20 +492,18 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, AutoCraftingTableBlockEntity blockEntity) {
-        //ejectItems(level,pos,state,blockEntity);
+        boolean exampleExists=false; //見本のレシピが存在しているとtrue
         Block block= state.getBlock();
         if (!(block instanceof AutoCraftingTableBlock)) {
             return;
         }
-        Direction facing = state.getValue(AutoCraftingTableBlock.FACING);
-        BlockPos pos2 = pos.relative(facing);
-        BlockEntity baseContainerBlockEntity = level.getBlockEntity(pos2);
-        if (baseContainerBlockEntity instanceof BaseContainerBlockEntity) {
+        Container attachedBlockEntity=getAttachedContainer(level,pos,state); //搬出面に接しているストレージブロック
+        if (attachedBlockEntity!=null) {
             ItemStack itemStack = blockEntity.getItem(10).copy();
             itemStack.setCount(1);
-            if (isExportable(blockEntity, (BaseContainerBlockEntity) baseContainerBlockEntity, itemStack, facing.getOpposite())) {
-                addItem(blockEntity, (BaseContainerBlockEntity) baseContainerBlockEntity, itemStack, facing.getOpposite());
-                blockEntity.getItem(10).shrink(1);
+            if (isExportable(blockEntity, attachedBlockEntity, itemStack, state.getValue(AutoCraftingTableBlock.FACING).getOpposite())) {
+                addItem(blockEntity,attachedBlockEntity, itemStack, state.getValue(AutoCraftingTableBlock.FACING).getOpposite());
+                blockEntity.getItem(10).shrink(1); //搬出スロットにある完成品を隣接しているストレージへ移動
             }
         }
         if(blockEntity.isMatrixEmpty()) {
@@ -534,16 +538,18 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
                 .orElseGet(() -> findAndSaveRecipe(level, craftingcontainer, blockEntity));
         }
 
-        if (craftingrecipe != null) {
-            itemstack = craftingrecipe.assemble(craftingcontainer,level.registryAccess());
-
+        if (craftingrecipe != null) { //見本のレシピが存在しているとき
+            exampleExists=true;
+            itemstack = craftingrecipe.assemble(craftingcontainer,level.registryAccess()); //完成品
+        }else{
+            blockEntity.coolTime=0;
         }
-        blockEntity.setItem(0, itemstack);
-        if (!level.isClientSide && !blockEntity.isEmpty() && blockEntity.litTime == 0) {
-
+        blockEntity.setItem(0, itemstack); //完成品の見本を表示させる
+        if (!level.isClientSide && !blockEntity.isEmpty() &&exampleExists) {
+            //if(blockEntity.coolTime== blockEntity.maxCoolTime){
             if (!itemstack.isEmpty()) {
 
-                boolean flag = true;
+                boolean flag = true; //見本と実際の素材がすべて一致しているとtrue
                 for (int i = 1; i < 10; i++) {
                     if (!blockEntity.getItem(i).getItem().equals(blockEntity.getItem(i + 10).getItem())) {
                         flag = false;
@@ -551,26 +557,26 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
                     }
 
                 }
-                ItemStack resultSlotStack = blockEntity.getItem(10);
-                if(resultSlotStack.isEmpty()) {
+                ItemStack resultSlotStack = blockEntity.getItem(10); //完成品スロット
+                if (resultSlotStack.isEmpty()) { //完成品スロットが空なら
                     if (flag && resultSlotStack.getCount() + itemstack.getCount() <= itemstack.getMaxStackSize()) {
-                        if (block == ItemAndBlockRegister.auto_crafting_table.get()) {
-                            if (blockEntity.litTime == 0) {
-                                blockEntity.doCraft(level, itemstack, blockEntity, (AutoCraftingTableBlock) block, state);
-                                blockEntity.litTime = 60;
-                            }
-                        } else if (block == ItemAndBlockRegister.advanced_auto_crafting_table.get()) {
-                            blockEntity.doCraft(level, itemstack, blockEntity, (AutoCraftingTableBlock) block, state);
-                            blockEntity.litTime = 0;
+                        if (blockEntity.coolTime< blockEntity.maxCoolTime) {
+                            ++blockEntity.coolTime;
+                        }else{
+                            blockEntity.coolTime=0;
+                            blockEntity.doCraft(level, pos, itemstack, blockEntity, state);
                         }
+                      //  if (blockEntity.coolTime == 0) {
+                          //  blockEntity.doCraft(level, pos, itemstack, blockEntity, state);
+                      //      blockEntity.coolTime = blockEntity.maxCoolTime;
+                      //  }
                     }
                 }
-
             }
+
+           // }
         }
-        if (blockEntity.isLit() && block == ItemAndBlockRegister.auto_crafting_table.get()) {
-            --blockEntity.litTime;
-        }
+
 
     }
 
@@ -582,7 +588,7 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
 
 
     protected AbstractContainerMenu createMenu(int i, Inventory inventory) {
-        return new AutoCraftingTableMenu(i, inventory,this);
+        return new AutoCraftingTableMenu(i, inventory,this,dataAccess);
     }
 
 
@@ -663,9 +669,6 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
 
     }
 
-    public void setChanged() {
-        level.blockUpdated(this.worldPosition,this.getBlockState().getBlock());
-    }
 
     public boolean stillValid(Player p_70300_1_) {
         if (this.level.getBlockEntity(this.worldPosition) != this) {
@@ -694,8 +697,6 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         return null;
     }
 
-    public void awardUsedRecipes(Player p_201560_1_) {
-    }
     public void fillStackedContents(StackedContents p_194018_1_) {
         for(int i=0;i<9;i++) {
             p_194018_1_.accountStack(this.ingredients.getStackInSlot(i));
@@ -735,9 +736,6 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
         this.resultSampleOptional.invalidate();
     }
 
-
-
-
     @Override
     public int @NotNull [] getSlotsForFace(Direction direction) {
 
@@ -754,10 +752,6 @@ public class AutoCraftingTableBlockEntity extends BaseContainerBlockEntity imple
 
         return  slot==10;
 
-    }
-
-    public ClientboundBlockEntityDataPacket getUpdatePacket() {
-        return ClientboundBlockEntityDataPacket.create(this);
     }
 
 }

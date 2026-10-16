@@ -8,29 +8,11 @@ import com.iwaliner.urushi.network.FramedBlockTextureConnectionData;
 import com.iwaliner.urushi.network.FramedBlockTextureConnectionProvider;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
-import com.iwaliner.urushi.util.MemoryScreen;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.util.interfaces.ElementBlock;
 import com.iwaliner.urushi.util.interfaces.ElementItem;
-import com.iwaliner.urushi.util.interfaces.Tiered;
-import com.mojang.blaze3d.platform.Window;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.ChatFormatting;
-import net.minecraft.advancements.FrameType;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.Gui;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.screens.TitleScreen;
-import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.client.renderer.LevelRenderer;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.OutlineBufferSource;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.core.*;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.*;
 import net.minecraft.resources.ResourceLocation;
@@ -38,9 +20,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BiomeTags;
-import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.Container;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -50,32 +30,20 @@ import net.minecraft.world.entity.animal.Fox;
 import net.minecraft.world.entity.animal.Squid;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.PlayerModelPart;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.crafting.Recipe;
-import net.minecraft.world.level.GameRules;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 
-import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.client.event.*;
-import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
+import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
@@ -96,19 +64,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
-import net.minecraftforge.forgespi.language.IConfigurable;
-import net.minecraftforge.forgespi.language.IModFileInfo;
-import net.minecraftforge.forgespi.language.IModInfo;
-import net.minecraftforge.forgespi.locating.ForgeFeature;
 import net.minecraftforge.registries.RegistryObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.maven.artifact.versioning.ArtifactVersion;
-import org.apache.maven.artifact.versioning.DefaultArtifactVersion;
 
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.*;
 
 @Mod("urushi")
@@ -131,6 +91,7 @@ public class ModCoreUrushi {
     public static List<String> diamondToolList=new ArrayList<>();
     public static List<String> netheriteToolList=new ArrayList<>();
     public static List<Item> underDevelopmentList=new ArrayList<>();
+    public static List<Item> removedItemList=new ArrayList<>();
     public static List<RegistryObject<Item>> redstoneTabContents=new ArrayList<>();
     public static List<RegistryObject<Item>> urushiTabContents=new ArrayList<>();
     public static List<RegistryObject<Item>> urushiPlasterTabContents=new ArrayList<>();
@@ -309,31 +270,33 @@ public class ModCoreUrushi {
 
     }
     /**孫の手で手の届く範囲を広げる*/
-  /*  @SubscribeEvent
+    @SubscribeEvent
     public void MagonoteEvent(PlayerInteractEvent event) {
 
                 if(event.getEntity() instanceof Player) {
 
-                    int amount=0;
+                    boolean flag=false;
 
-                    for (int i = 0; i < event.getPlayer().getInventory().getContainerSize(); ++i)
-                    {
-                        ItemStack stack =  event.getPlayer().getInventory().getItem(i);
-                        if(stack.getItem()==ItemAndBlockRegister.magonote.get()){
-                            amount+=stack.getCount();
+                        ItemStack offhandStack=event.getEntity().getItemInHand(InteractionHand.OFF_HAND);
+                        if(offhandStack.getItem()==ItemAndBlockRegister.magonote.get()){
                             if(event instanceof PlayerInteractEvent.RightClickBlock||event instanceof PlayerInteractEvent.LeftClickBlock) {
-                                event.getPlayer().getInventory().getItem(i).hurtAndBreak(1, event.getPlayer(), (x) -> {
+                                offhandStack.hurtAndBreak(1, event.getEntity(), (x) -> {
                                 });
                             }
+                            flag=true;
+
                         }
+                    if(flag){
+                        Objects.requireNonNull(event.getEntity().getAttribute(ForgeMod.BLOCK_REACH.get())).setBaseValue(4.5D+8D);
+                    }else{
+                        Objects.requireNonNull(event.getEntity().getAttribute(ForgeMod.BLOCK_REACH.get())).setBaseValue(4.5D);
                     }
-                      Objects.requireNonNull(event.getPlayer().getAttribute(ForgeMod.REACH_DISTANCE.get())).setBaseValue(5D+amount*1D);
 
 
                 }
 
 
-    }*/
+    }
     /**葉の上に落下したとき落下ダメージを受けないように*/
     @SubscribeEvent
     public void LeavesDamageEvent(LivingHurtEvent event) {
@@ -420,12 +383,7 @@ public class ModCoreUrushi {
             });
             tooltipList.add(ElementUtils.getIconComponent(elementType).append(component));
         }
-        if (block instanceof Tiered tiered) {
-            int tier = tiered.getTier();
-            String tier_id = "info.urushi.tier" + tier;
-            tooltipList.add((Component.translatable(tier_id)).withStyle(ChatFormatting.GRAY));
 
-        }
         if(block instanceof Roof225Block&&event.getEntity()!=null){
             UrushiUtils.setBlinkingInfoWithColor(tooltipList,"roof_225", Objects.requireNonNull(event.getEntity()).level(),ChatFormatting.GRAY,ChatFormatting.YELLOW);
         }else if(block instanceof Roof45Block&&event.getEntity()!=null){
@@ -597,6 +555,9 @@ public class ModCoreUrushi {
         }
         if(underDevelopmentList.contains(stack.getItem())){
             UrushiUtils.setInfoWithColor(event.getToolTip(),"under_development",ChatFormatting.YELLOW);
+        }
+        if(removedItemList.contains(stack.getItem())){
+            UrushiUtils.setInfoWithColor(event.getToolTip(),"removed",ChatFormatting.YELLOW);
         }
         if(stack.getItem()==Item.byBlock(ItemAndBlockRegister.cypress_sapling.get())){
             UrushiUtils.setInfo(event.getToolTip(),"cypress_sapling");
@@ -809,16 +770,6 @@ public class ModCoreUrushi {
     }*/
     @SubscribeEvent
     public void PlayerLoggedInEvent(PlayerEvent.PlayerLoggedInEvent event) {
-        long maxMemory   = Runtime.getRuntime().maxMemory() / 1024 / 1024;
-        long totalMemory = Runtime.getRuntime().totalMemory() / 1024 / 1024;
-        long freeMemory  = Runtime.getRuntime().freeMemory() / 1024 / 1024;
-        long usedMemory  = totalMemory - freeMemory;
-        logger.info(String.format("Memory: %d / %d MB", usedMemory, maxMemory));
-        if(maxMemory<=2048){
-           /* Component component = ComponentUtils.wrapInSquareBrackets(Component.translatable("info.urushi.max_memory_is_not_enough")).withStyle((p_214489_) -> {
-                return p_214489_.withColor(ChatFormatting.RED);
-            });*/
-        }
         if(UrushiUtils.isAprilFoolsDay()){
             Player player = event.getEntity();
             if(player.getItemBySlot(EquipmentSlot.HEAD).isEmpty()){
@@ -848,5 +799,4 @@ public class ModCoreUrushi {
               event.getEntity().playNotifySound(SoundRegister.UrushiAdvancements.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
         }
     }
-
 }

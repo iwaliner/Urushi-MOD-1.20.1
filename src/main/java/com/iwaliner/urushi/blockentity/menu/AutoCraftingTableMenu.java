@@ -1,10 +1,10 @@
 package com.iwaliner.urushi.blockentity.menu;
 
 import com.iwaliner.urushi.MenuRegister;
-import com.iwaliner.urushi.ModCoreUrushi;
-import com.iwaliner.urushi.blockentity.AutoCraftingTableBlockEntity;
-import com.iwaliner.urushi.blockentity.slot.*;
-import net.minecraft.util.Mth;
+import com.iwaliner.urushi.blockentity.slot.AutoCraftingTableIngredientsMatrixSlot;
+import com.iwaliner.urushi.blockentity.slot.AutoCraftingTableIngredientsSlot;
+import com.iwaliner.urushi.blockentity.slot.AutoCraftingTableResultMatrixSlot;
+import com.iwaliner.urushi.blockentity.slot.AutoCraftingTableResultSlot;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
@@ -18,43 +18,56 @@ public class AutoCraftingTableMenu extends RecipeBookMenu<Container> {
 
     private final Container container;
     private final Player player;
+    private final ContainerData containerData;
 
 
     public AutoCraftingTableMenu(int s, Inventory inventory) {
-        this( s, inventory, new SimpleContainer(20));
+        this( s, inventory, new SimpleContainer(20),new SimpleContainerData(2));
     }
 
-    public AutoCraftingTableMenu(int s, Inventory inventory,Container c) {
+    public AutoCraftingTableMenu(int s, Inventory inventory,Container c,ContainerData data) {
         super(MenuRegister.AutoCraftingTableMenu.get(), s);
         checkContainerSize(c, 20);
         this.container=c;
-        this.player = inventory.player;
+        checkContainerDataCount(data, 2);
+        this.containerData=data;
 
-        container.startOpen(player);
-        this.addSlot(new AutoCraftingTableResultSlot(container, 10, 125, 36));
+        this.player = inventory.player;
+        this.addDataSlots(data);
+
+        //container.startOpen(player);
+        this.addSlot(new AutoCraftingTableResultSlot(container, 10, 144, 93));//搬出スロット(完成品)
         for(int i = 0; i < 9; ++i) {
-            this.addSlot(new AutoCraftingTableIngredientsSlot(this.container, i +11, 8 + i * 18, 79-5));
+            this.addSlot(new AutoCraftingTableIngredientsSlot(this.container, i +11, 50 + (i%3) * 18, 75+(i/3)*18));//材料スロット
         }
-        this.addSlot(new AutoCraftingTableResultMatrixSlot(container, 0, 87, 36));
-        for(int i = 0; i < 3; ++i) {
-            for(int j = 0; j < 3; ++j) {
-                this.addSlot(new AutoCraftingTableIngredientsMatrixSlot(this.container, j + i * 3+1, 26 + j * 18, 17 + i * 18-6+7));
-            }
+        this.addSlot(new AutoCraftingTableResultMatrixSlot(container, 0, 144, 35)); //見本の完成品スロット
+
+        for(int i = 0; i < 9; ++i) {
+            this.addSlot(new AutoCraftingTableIngredientsMatrixSlot(this.container, i +1, 50 + (i%3) * 18, 17+(i/3)*18));//見本の材料スロット
         }
 
        for(int k = 0; k < 3; ++k) {
             for(int i1 = 0; i1 < 9; ++i1) {
-                this.addSlot(new Slot(inventory, i1 + k * 9 + 9, 8 + i1 * 18, 103 + k * 18+2));
+                this.addSlot(new Slot(inventory, i1 + k * 9 + 9, 8 + i1 * 18, 143 + k * 18));
             }
         }
 
         for(int l = 0; l < 9; ++l) {
-            this.addSlot(new Slot(inventory, l, 8 + l * 18, 161+2));
+            this.addSlot(new Slot(inventory, l, 8 + l * 18, 201));
         }
     }
 
-
-
+    public int getCoolTime(){
+        return containerData.get(0);
+    }
+    public int getMaxCoolTime(){
+        return containerData.get(1);
+    }
+    public int getCraftingProgress() {
+        int i = this.containerData.get(0);
+        int j = this.containerData.get(1);
+        return j != 0 && i != 0 ? i * 24 / j : 0;
+    }
     public void fillCraftSlotsStackedContents(StackedContents p_38976_) {
         if (this.container instanceof StackedContentsCompatible) {
             ((StackedContentsCompatible)this.container).fillStackedContents(p_38976_);

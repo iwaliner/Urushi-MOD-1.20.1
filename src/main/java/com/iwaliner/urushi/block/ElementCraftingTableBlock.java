@@ -1,29 +1,22 @@
 package com.iwaliner.urushi.block;
 
 import com.iwaliner.urushi.BlockEntityRegister;
-import com.iwaliner.urushi.RecipeTypeRegister;
 import com.iwaliner.urushi.blockentity.ElementCraftingTableBlockEntity;
-import com.iwaliner.urushi.blockentity.EmitterBlockEntity;
-import com.iwaliner.urushi.blockentity.TankBlockEntity;
 import com.iwaliner.urushi.recipe.AbstractElementCraftingRecipe;
 import com.iwaliner.urushi.util.ElementType;
 import com.iwaliner.urushi.util.ElementUtils;
 import com.iwaliner.urushi.util.UrushiUtils;
 import com.iwaliner.urushi.util.interfaces.ElementBlock;
-import com.iwaliner.urushi.util.interfaces.Tiered;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -43,14 +36,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ElementCraftingTableBlock extends BaseEntityBlock implements Tiered, ElementBlock {
+public class ElementCraftingTableBlock extends BaseEntityBlock implements ElementBlock {
     private final   ElementType elementType;
-    private final int tier;
     private final java.util.function.Supplier<? extends RecipeType<? extends AbstractElementCraftingRecipe>> recipe;
     public static final BooleanProperty LIT=BlockStateProperties.LIT;
-    public ElementCraftingTableBlock(int tier, ElementType elementType,java.util.function.Supplier<? extends RecipeType<? extends AbstractElementCraftingRecipe>> recipe, Properties p_49795_) {
+    public ElementCraftingTableBlock(ElementType elementType,java.util.function.Supplier<? extends RecipeType<? extends AbstractElementCraftingRecipe>> recipe, Properties p_49795_) {
         super(p_49795_);
-        this.tier=tier;
         this.elementType=elementType;
         this.recipe=recipe;
         this.registerDefaultState(this.stateDefinition.any().setValue(LIT, Boolean.valueOf(false)));
@@ -59,11 +50,7 @@ public class ElementCraftingTableBlock extends BaseEntityBlock implements Tiered
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_49915_) {
         p_49915_.add(LIT);
     }
-    @Nullable
-    @Override
-    public int getTier() {
-        return tier;
-    }
+
     @org.jetbrains.annotations.Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
