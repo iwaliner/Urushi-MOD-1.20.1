@@ -34,7 +34,7 @@
       "type": "patchouli:crafting",
       "title": "",
       "recipe": "urushi:shide",
-      "text": "Craft a Shide from Papers."
+      "text": "Craft Shide Papers from Papers."
     },
     {
       "type": "patchouli:spotlight",
@@ -42,11 +42,11 @@
         "item": "urushi:wood_element_paper",
         "count": 1
       },
-      "text": "Use a Shide to a Wood element block to get a Wood Element Shide."
+      "text": "Use Shide Papers to a Wood element block to get Wood Element Shide Papers."
     },
      {
       "type": "patchouli:text",
-      "text": "Craft a Wood Element Sacred Rock. $(br2)When a Wood element block is placed on the two-sheet-paper side, the rock transforms the block into 5 Reiyoku energy.$(br2)Right-click the Rock to see the amount of stored Reiryoku."
+      "text": "Craft a Wood Element Sacred Rock. $(br2)When a Wood element block is placed on the two-sheet-paper side, the rock transforms the block into 5 Reiryoku energy.$(br2)Right-click the Rock to see the amount of stored Reiryoku."
     },
      {
       "type": "patchouli:crafting",
@@ -87,7 +87,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Craft a Visualization Goggles.$(br2)Even when Reiryoku is not being transported, you can see the path by which the Reiryoku is being transported if this is equipped on your head. $(br2)Without these glasses, it will be difficult to use magic equipments."
+      "text": "Visualization Goggles are helpful on Reiryoku transpoting.$(br2)You can see the path by which the Reiryoku is being transported if this is equipped on your head, even when no Reiryoku is transporting."
     },
      {
       "type": "patchouli:crafting",
@@ -97,7 +97,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Craft a Wood Element Emitter and place on the side of a block to export Reiryoku.$(br2)It transports 1 Reiryoku per perticle if a transportation route is established.$(br2)The transportation will be stopped when it recieves a redstone signal.$(br2)Right-click the Emitter to see the amount of stored Reiryoku."
+      "text": "Craft a Element Emitter and place on the side of a block to export Reiryoku.$(br2)It transports 1 Reiryoku per perticle if a transportation route is established.$(br2)The transportation will be stopped when it recieves a redstone signal.$(br2)Right-click the Emitter to see the amount of stored Reiryoku."
     },
      {
       "type": "patchouli:crafting",
@@ -107,7 +107,7 @@
     },
      {
       "type": "patchouli:text",
-      "text": "Craft some Sanbos.$(br2)Right-click to place a item on the Sanbo plate.$(br2)Right-click again to get the item back.$(br2)You can use a Hopper to place items."
+      "text": "Sanbo Trays can store items and essential for ritual.$(br2)Right-click to place a item on the Sanbo Tray.$(br2)Right-click again to get the item back.$(br2)Hoppers are helpful to place items."
     },
      {
       "type": "patchouli:crafting",
@@ -117,7 +117,7 @@
     },
      {
       "type": "patchouli:text",
-      "text": "Craft a Wood Element Altar.$(br2)Place 4 Sanbos on each side of the Altar, put ingredients on the Sanbos, and provite Reiryoku energy to the Altar to craft items."
+      "text": "Element Altar is the core of the ritual.$(br2)Place 4 Sanbo Trays, 1 on each side of the Altar, put ingredients on the Sanbo Trays, and provite Reiryoku energy to the Altar to craft items."
     },
      {
       "type": "patchouli:crafting",
@@ -127,7 +127,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "Craft a Mirror.$(br2)By using this mirror, you can bend transportation routes of Reiryoku. $(br2)The path bends in the direction of the angle of reflection equal to the angle of incidence, as how light reflects on a mirror.$(br2)You should use Visualization Goggles to see the path."
+      "text": "Mirrors change and bend Reiryoku routes.$(br2)The path bends in the direction of the angle of reflection equal to the angle of incidence, as how light reflects on a mirror.$(br2)You should use Visualization Goggles to see the path."
     },
      {
       "type": "patchouli:crafting",
@@ -169,7 +169,7 @@
         "item": "urushi:wood_element_tank",
         "count": 1
       },
-      "text": "Craft a Wood Element Onusa.$(br2)Onusa is suitable for storing Reiryoku energy, as it can both import and export Reiryoku.$(br2)The paths of Reiryoku transport can be branched and merged by using this as a relay point."
+      "text": "Onusa Wands acts as Reiryoku Tanks.$(br2)Onusa is suitable for storing Reiryoku energy, as it can both import and export Reiryoku.$(br2)The paths of Reiryoku transport can be branched and merged by using this as a relay point."
     },
      {
       "type": "patchouli:image",
@@ -184,7 +184,7 @@
         "item": "urushi:wood_amber",
         "count": 1
       },
-      "text": "Thanks to the Wood Element Alter, it has become easier to craft Wood Element Amber. $(br2)Using a Alter, you can craft Amber from 4 Raw Urushi Bowl and 10 Reiryoku.$(br)You can also craft it from 4 Flint and 10 Reiryoku."
+      "text": "Thanks to the Wood Element Altar, it has become easier to craft Wood Element Amber. $(br2)By using an Altar, you can craft Amber from 4 Raw Urushi Bowls (or 4 Flints) and 10 Reiryoku."
     },
     {
       "type": "patchouli:spotlight",
@@ -192,7 +192,7 @@
         "item": "urushi:wood_enhanced_jadeite",
         "count": 1
       },
-      "text": "Craft some Wood Enhanced Jadeite.$(br2)They act as a kind of crafting material."
+      "text": "Craft some Wood Enhanced Jadeite for your next step.$(br2)They act as a kind of crafting material."
     },
     {
       "type": "patchouli:spotlight",
@@ -200,11 +200,11 @@
         "item": "urushi:wood_element_hokora",
         "count": 1
       },
-      "text": "Wood Element Hokora is also a block that generates Reiryoku.$(br2)Import specific items using a Hopper to generates 5 reiryoku."
+      "text": "Hokora is another Reiryoku-generating block.$(br2)Import specific items by using a Hopper, each item generates 5 reiryoku."
     },
     {
       "type": "patchouli:text",
-      "text": "Specific item is...$(br2)Wood Element：Sweet Berries$(br)Fire Element：Wheat$(br)Earth Element：Rice Ear$(br)Metal Element：Green Onion$(br)Water Element：Soy Beans"
+      "text": "Specific items are...$(br2)Wood Element：Sweet Berries$(br)Fire Element：Wheat$(br)Earth Element：Rice Ear$(br)Metal Element：Green Onion$(br)Water Element：Soy Beans"
     },
     {
       "type": "patchouli:spotlight",
@@ -212,7 +212,7 @@
         "item": "urushi:wood_element_magatama",
         "count": 1
       },
-      "text": "Craft a Wood Element Magatama by Ritual Process.$(br2)By right-clicking on a Wood Element Onusa, Reiyoku will be transfered from the Onusa to the Magatama on hand.$(br2)When using items that consumes Reiryoku power, the player must have a Magatama in their inventory."
+      "text": "Craft a Wood Element Magatama by Ritual Process.$(br2)By right-clicking on a Wood Element Onusa, Reiryoku will be transfered from the Onusa to the Magatama on hand.$(br2)When using items that consumes Reiryoku power, the player must have a Magatama in their inventory."
     }
   ]
 }

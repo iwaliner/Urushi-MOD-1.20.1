@@ -10,7 +10,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Right-click to set a Zabuton on the ground. Right-lick to sit on it, and sneak to stand up.$(br2)Nearby Mobs will sit on Zabuton and cannot stand up by themselves.$(br2)There are 16 colors of Zabuton to choose from."
+      "text": "Right-click to set a Zabuton Cusion on the ground. Right-lick to sit on it, and sneak to stand up.$(br2)Nearby Mobs will sit on Zabuton Cusions and cannot stand up by themselves.$(br2)There are 16 colors of Zabuton Cusions to choose from."
     },
      {
       "type": "patchouli:crafting",
