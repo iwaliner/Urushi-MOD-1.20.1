@@ -1,0 +1,26 @@
+{
+  "name": "咒符",
+  "category": "urushi:magic",
+  "icon": "urushi:knockback_jufu",
+  "priority": true,
+  "advancement": "urushi:obtain_urushi_book",
+  "turnin": "urushi:obtain_urushi_book",
+  "sortnum": 35,
+  "pages": [
+     {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "urushi:knockback_jufu",
+        "count": 1
+      },
+      "text": "咒符是一种通过消耗勾玉中的灵力进行使用的消耗道具。$(br2)不同种类的咒符的效果也各不相同。"
+    },
+    {
+      "type": "patchouli:image",
+      "text": "制作咒符所需的符刻印，可以通过在幽世维度中生成的木柱围圈里解谜获得。",
+      "images": [
+        "urushi:textures/gui/patchouli/wood_circle.png"
+      ]
+    }
+  ]
+}
