@@ -1,5 +1,5 @@
 {
-  "name": "Uchiwa",
+  "name": "Uchiwa Fan",
   "category": "urushi:magic",
   "icon": "urushi:uchiwa",
   "priority": true,
@@ -13,7 +13,7 @@
         "item": "urushi:uchiwa",
         "count": 1
       },
-      "text": "Uchiwa is a kind of fan. It consumes Wood Reiyoku on use. When sweeps grass, flowers and leaves nearby, it consumes 1 Reiyoku per block; and 1 Reiyoku per use when manipulating the fire on the Shichirin Stove."
+      "text": "Uchiwa Fan is a kind of handheld fan. It consumes Wood Reiryoku on use. When sweeps grass, flowers and leaves nearby, it consumes 1 Reiryoku per block; and 1 Reiryoku per use when manipulating the fire on the Shichirin Stove."
     }
   ]
 }

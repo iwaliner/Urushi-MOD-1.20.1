@@ -1,6 +1,6 @@
 {
   "name": "Magic",
-  "description": "Here is explanations of Magic.$(br2)If there are seperate items for each element, only the Wood element ones will take place as examples.",
+  "description": "Here are the explanations of the Urushi Magic system.$(br2)If there are seperate items for each element, only the Wood element ones will take place as examples.",
   "icon": "urushi:earth_element_magatama",
   "sortnum": 10
 }

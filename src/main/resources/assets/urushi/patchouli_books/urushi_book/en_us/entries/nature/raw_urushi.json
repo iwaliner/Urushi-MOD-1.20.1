@@ -14,7 +14,7 @@
         "item": "urushi:chiseled_lacquer_log",
         "count": 1
       },
-      "text": "Raw Urushi (Japanese Lacquer) is neede to craft colored Urushi. To obtain Urushi, we first need to chisel a Lacquer Log by right-clicking with Flint or any tools.$(br2)Continues on the next page."
+      "text": "Raw Urushi Sap (Japanese Lacquer) is neede to craft colored Urushi. To obtain Urushi, we first need to chisel a Lacquer Log by right-clicking with Flint or any tools.$(br2)Continues on the next page."
     },
     {
       "type": "patchouli:image",
@@ -29,7 +29,7 @@
         "item": "urushi:raw_urushi_ball",
         "count": 1
       },
-      "text": "Chiseled Lacquer Log evolves in texture over time.$(br2)On this stage, right-click with a bowl to get Raw Urushi.$(br2)Automate by using a Dispenser towards the Log, filling it with bowls.$(br2)Continues on the next page."
+      "text": "Chiseled Lacquer Log evolves in texture over time.$(br2)On this stage, right-click with a bowl to get Raw Urushi Sap.$(br2)Automate by using a Dispenser towards the Log, filling it with bowls.$(br2)Continues on the next page."
     },
     {
       "type": "patchouli:image",
@@ -44,7 +44,7 @@
         "item": "urushi:red_urushi_ball",
         "count": 1
       },
-      "text": "Tiny Red Dye or Tiny Black Dye can be crafted from Red or Black Dye.$(br2)Crat them with Raw Urushi for Red Urushi or Black Urushi.$(br2)Colored Urushi can color Planks and other wooden blocks."
+      "text": "Tiny Red Dye or Tiny Black Dye can be crafted from Red or Black Dye.$(br2)Crat them with Raw Urushi Sap for Red (or Black) Urushi Sap.$(br2)Colored Urushi can color Planks and other wooden blocks."
     },
     {
       "type": "patchouli:crafting",
