@@ -403,7 +403,7 @@ public class UrushiUtils {
                 UrushiUtils.setInfo(tooltipList, "furigana.kinuito");
             }else if (item == ItemAndBlockRegister.silk.get()||block == ItemAndBlockRegister.silk_block.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.kempu");
-            }else if (block == ItemAndBlockRegister.kakuriyo_dirt.get()||block == ItemAndBlockRegister.kakuriyo_grass_block.get()||block == ItemAndBlockRegister.kakuriyo_portal.get()||block == ItemAndBlockRegister.kakuriyo_portal_core.get()) {
+            }else if (block == ItemAndBlockRegister.kakuriyo_dirt.get()||block == ItemAndBlockRegister.kakuriyo_grass_block.get()||block == ItemAndBlockRegister.kakuriyo_portal.get()||block == ItemAndBlockRegister.kakuriyo_portal_core.get()||block == ItemAndBlockRegister.ghost_kakuriyo_portal_core.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.kakuriyo");
             }else if (block == ItemAndBlockRegister.yomi_stone.get()||block == ItemAndBlockRegister.cobbled_yomi_stone.get()) {
                 UrushiUtils.setInfo(tooltipList, "furigana.yomi");
